@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2103/T Website - Week 7 - Topics</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="stylesheet" href="/website/css/schedule.css">
+  <link rel="icon" href="/website/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
+        <div class="nav-link temp-dropdown-placeholder">Schedule</div>
+        <dropdown text="Schedule" class="nav-link temp-dropdown">
+          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
+          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
+          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
+          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
+          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
+          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
+          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
+          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
+        </dropdown>
+        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown text="Links" class="nav-link temp-dropdown">
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
+          <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+          <li><a href="/website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+          <hr>
+          <span><strong> Individual Project (iP):</strong></span>
+          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+          <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+          <hr>
+          <span><strong> Team Project (tP):</strong></span>
+          <li><a href="/website/admin/project-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
+          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
+          <li><a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/website/schedule/week6"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week7/index.html"><span><span aria-hidden="true" class="fas fa-bell"></span></span> Summary</a></li>
+              <li class="page-item active"><a class="page-link" href="/website/schedule/week7/topics.html"><span><span aria-hidden="true" class="fas fa-book"></span></span> Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week7/project.html"><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week7/tutorial.html"><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> Tutorial</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week7/admin.html"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Admin Info</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week8"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-7-mar-2-topics">Week 7 <small><small><span class="dimmed">[Mar 2]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-7-mar-2-topics"></a></h1>
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
+            <span id="toc">
+<ul>
+<li>[<a href="/website/schedule/week7/topics.html#W7-1">W7.1</a>] <strong>Java: JAR Files</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+              aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
+<ul>
+<li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-1a">W7.1a</a>] <span>C++ to Java → Miscellaneous Topics →
+</span></span> <span>Using JAR Files</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul></small></div>
+            <ul>
+              <li>[<a href="/website/schedule/week7/topics.html#W7-2">W7.2</a>] <strong>Java: JavaFX</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                  aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
+<ul>
+<li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-2a">W7.2a</a>] <span>C++ to Java → Miscellaneous Topics →
+</span></span> <span>JavaFX</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul></small></div>
+            <p></p>
+            <ul>
+              <li>[<a href="/website/schedule/week7/topics.html#W7-3">W7.3</a>] <strong>Documentation Tools</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+                </span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
+<p>   <strong>Javadoc</strong></p>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-3a">W7.3a</a>] <span>Implementation → Documentation → Tools → JavaDoc →
+</span></span> <span>What</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-3b">W7.3b</a>] <span>Implementation → Documentation → Tools → JavaDoc →
+</span></span> <span>How</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
+<p>   <strong>Markdown</strong></p>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-3c">W7.3c</a>] <span>Implementation → Documentation → Tools → Markdown →
+</span></span> <span>What</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-3d">W7.3d</a>] <span>Implementation → Documentation → Tools → Markdown →
+</span></span> <span>How</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
+<p>   <strong>AsciiDoc</strong></p>
+<ul>
+<li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-3e">W7.3e</a>] <span>Implementation → Documentation → Tools → AsciiDoc →
+</span></span> <span>What</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul></small></div>
+            <p></p>
+            <ul>
+              <li>[<a href="/website/schedule/week7/topics.html#W7-4">W7.4</a>] <strong>CodeQuality: Code Comments</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+                </span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-4a">W7.4a</a>] <span>Implementation → Code Quality → Comments →
+</span></span> <span>Introduction</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-4b">W7.4b</a>] <span>Implementation → Code Quality → Comments → Basic →
+</span></span> <span>Do Not Repeat the Obvious</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-4c">W7.4c</a>] <span>Implementation → Code Quality → Comments → Basic →
+</span></span> <span>Write to the Reader</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-4d">W7.4d</a>] <span>Implementation → Code Quality → Comments → Intermediate →
+</span></span> <span>Explain WHAT and WHY, not HOW</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
+            <p></p>
+            <ul>
+              <li>[<a href="/website/schedule/week7/topics.html#W7-5">W7.5</a>] <strong>Requirements: Intro</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+                </span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-5a">W7.5a</a>] <span>Requirements → Requirements →
+</span></span> <span>Introduction</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-5b">W7.5b</a>] <span>Requirements → Requirements →
+</span></span> <span>Non-Functional Requirements</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-5c">W7.5c</a>] <span>Requirements → Requirements →
+</span></span> <span>Prioritizing Requirements</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-5d">W7.5d</a>] <span>Requirements → Requirements →
+</span></span> <span>Quality of Requirements</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
+            <ul>
+              <li>[<a href="/website/schedule/week7/topics.html#W7-6">W7.6</a>] <strong>Gathering Requirements</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6a">W7.6a</a>] <span>Requirements → Gathering Requirements →
+</span></span> <span>Brainstorming</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6b">W7.6b</a>] <span>Requirements → Gathering Requirements →
+</span></span> <span>Product Surveys</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6c">W7.6c</a>] <span>Requirements → Gathering Requirements →
+</span></span> <span>Observation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6d">W7.6d</a>] <span>Requirements → Gathering Requirements →
+</span></span> <span>User Surveys</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6e">W7.6e</a>] <span>Requirements → Gathering Requirements →
+</span></span> <span>Interviews</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6f">W7.6f</a>] <span>Requirements → Gathering Requirements →
+</span></span> <span>Focus Groups</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6g">W7.6g</a>] <span>Requirements → Gathering Requirements →
+</span></span> <span>Prototyping</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
+            <ul>
+              <li>[<a href="/website/schedule/week7/topics.html#W7-7">W7.7</a>] <strong>Specifying Requirements</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+                </span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
+<p>   <strong>Prose</strong></p>
+<ul>
+<li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-7a">W7.7a</a>] <span>Requirements → Specifying Requirements → Prose →
+</span></span> <span>What</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
+<p>   <strong>Feature Lists</strong></p>
+<ul>
+<li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-7b">W7.7b</a>] <span>Requirements → Specifying Requirements → Feature Lists →
+</span></span> <span>What</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></li></ul>
+<p>   <strong>Use Cases</strong></p>
+<ul>
+<li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-7c">W7.7c</a>] <span>Requirements → Specifying Requirements → Use Cases →
+</span></span> <span>Introduction</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></li></ul>
+<p>   <strong>Glossary</strong></p>
+<ul>
+<li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-7d">W7.7d</a>] <span>Requirements → Specifying Requirements → Glossary →
+</span></span> <span>What</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
+<p>   <strong>Supplementary Requirements</strong></p>
+<ul>
+<li><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-7e">W7.7e</a>] <span>Requirements → Specifying Requirements → Supplementary Requirements →
+</span></span> <span>What</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul></small></div>
+            <p></p>
+            </span>
+          </panel>
+          <hr style="border: 1px dotted #cccccc;">
+          <p><span id="W7-1"></span></p>
+          <panel type="seamless" no-close expandable="true" expanded>
+            <span slot="header" class="card-title"><div><h2 id="w7-1-java-jar-files"><span class="dimmed">[W7.1]</span> <strong>Java: JAR Files</strong> <small><small><span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+            <a class="fa fa-anchor" href="#w7-1-java-jar-files"></a>
+            </h2>
+        </div>
+        </span>
+        <div class="indented-level1">
+          <p><span id="W7-1a"></span></p>
+          <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/jar">
+            <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.1a</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </span>
+              <h4 id="c-to-java-miscellaneous-topics-using-jar-files"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Using JAR Files</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-using-jar-files"></a></h4>
+              </span>
+              <div>
+                <div class="indented">
+                  <div></div>
+                  <p></p>
+                  <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use JAR files</span>
+                    </span>
+                    </span>
+                    </span>
+                  </p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <div>
+                    <p><strong>Java applications are typically delivered as JAR (short for <em>Java Archive</em>) files.</strong> A JAR contains Java classes and other resources (icons, media files, etc.).</p>
+                    <p>An executable JAR file can be launched using the <code>java -jar</code> command.</p>
+                    <box>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>java -jar foo.jar</code> launches the <code>foo.jar</code> file.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can download the Collate-GUI.jar from <a href="https://se-edu.github.io/collate/">https://se-edu.github.io/collate/</a> and run it using the command<code>java -jar Collate-GUI.jar</code>                        command.</p>
+                    </box>
+                    <p>The IDE can help you to package your application as a JAR file.</p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                        <div>
+                          <ul>
+                            <li><a href="https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html">Oracle's tutorial on JAR files</a></li>
+                          </ul>
+                          <p><strong><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Creating a JAR file in Intellij</strong> - A video by Artur Spirin:</p>
+                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3Xo6zSBgdgk" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </panel>
+        </div>
+        </panel>
+        <p><span id="W7-2"></span></p>
+        <panel type="seamless" no-close expandable="true" expanded>
+          <span slot="header" class="card-title"><div><h2 id="w7-2-java-javafx"><span class="dimmed">[W7.2]</span> <strong>Java: JavaFX</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+          <a class="fa fa-anchor" href="#w7-2-java-javafx"></a>
+          </h2>
+      </div>
+      </span>
+      <div class="indented-level1">
+        <p><span id="W7-2a"></span></p>
+        <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/javaFX">
+          <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.2a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <h4 id="c-to-java-miscellaneous-topics-javafx"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>JavaFX</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-javafx"></a></h4>
+          </span>
+          <div>
+            <div class="indented">
+              <div></div>
+              <p></p>
+              <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use JavaFX to build a simple GUI</span>
+                </span>
+                </span>
+                </span>
+              </p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <div>
+                <p>JavaFX is a technology for building Java-based GUIs. Previously it was a part Java itself, but has become a third-party dependency since then. It is now being maintained by <a href="https://wiki.openjdk.java.net/display/OpenJFX">OpenJDK</a>.</p>
+                <box>
+                  <h5 id="javafx-9-tutorial">JavaFx 9 tutorial<a class="fa fa-anchor" href="#javafx-9-tutorial"></a></h5>
+                  <p>Adapted (with permissions) from <a href="http://code.makery.ch/library/javafx-8-tutorial/">Marco Jakob's JavaFX 8 tutorial</a>. Thanks to <a href="https://github.com/marcojakob">Marco Jakob</a> for allowing us to adapt his tutorials
+                    for IntelliJ.
+                  </p>
+                  <p>Table of contents:</p>
+                  <ul>
+                    <li><a href="/website/book/cppToJava/misc/javaFX/part01">Part 1: Scene Builder</a></li>
+                    <li><a href="/website/book/cppToJava/misc/javaFX/part02">Part 2: Model and TableView</a></li>
+                  </ul>
+                  <p>After going through the two parts, you should be familiar with working with IntelliJ. You can continue with the original tutorial (which is written for Eclipse), with the following links:</p>
+                  <ul>
+                    <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part3/">Part 3: Interacting with the User</a></li>
+                    <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part4/">Part 4: CSS Styling</a></li>
+                    <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part5/">Part 5: Storing Data as XML</a></li>
+                  </ul>
+                </box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+      </div>
+      </panel>
+      <p></p>
+      <p><span id="W7-3"></span></p>
+      <panel type="seamless" no-close expandable="true" expanded>
+        <span slot="header" class="card-title"><div><h2 id="w7-3-documentation-tools"><span class="dimmed">[W7.3]</span> <strong>Documentation Tools</strong> <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
+        <a class="fa fa-anchor" href="#w7-3-documentation-tools"></a>
+        </h2>
+    </div>
+    </span>
+    <div class="indented-level1">
+      <br>
+      <h3 id="javadoc"><span class="dimmed"><strong>Javadoc</strong></span><a class="fa fa-anchor" href="#javadoc"></a></h3>
+      <p><span id="W7-3a"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/what">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.3a</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        <h4 id="implementation-documentation-tools-javadoc-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-what"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain JavaDoc</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p><strong>Javadoc is a tool for generating API documentation in HTML format from doc comments in source.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tool tips.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example method header comment in JavaDoc format (adapted from <a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">Oracle's Java documentation</a>)</p>
+                <div class="code-block">
+                  <pre><code class="hljs java"><span class="hljs-comment">/**
+ * Returns an Image object that can then be painted on the screen.
+ * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name
+ * argument is a specifier that is relative to the url argument.
+ * &lt;p&gt;
+ * This method always returns immediately, whether or not the
+ * image exists. When this applet attempts to draw the image on
+ * the screen, the data will be loaded. The graphics primitives
+ * that draw the image will incrementally paint on the screen.
+ *
+ * <span class="hljs-doctag">@param</span> url an absolute URL giving the base location of the image
+ * <span class="hljs-doctag">@param</span> name the location of the image, relative to the url argument
+ * <span class="hljs-doctag">@return</span> the image at the specified URL
+ * <span class="hljs-doctag">@see</span> Image
+ */</span>
+ <span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">(URL url, String name)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">return</span> getImage(<span class="hljs-keyword">new</span> URL(url, name));
+        } <span class="hljs-keyword">catch</span> (MalformedURLException e) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+ }
+</code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Generated HTML documentation:</p>
+                <p><a href="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" target="_self"><img src="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" alt class="img-fluid"></a></p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Tooltip generated by Intellij IDE:</p>
+                <p><img src="/website/book/documentation/tools/javaDoc/what/images/intellijTooltip.png"></p>
+                <p></p>
+                <p></p>
+              </box>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-3b"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/how">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.3b</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="implementation-documentation-tools-javadoc-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-how"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can write Javadoc comments</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p>In the absence of more extensive guidelines (e.g., given in a coding standard adopted by your project), you can follow the two examples below in your code.</p>
+              <p><strong>A minimal javadoc comment example for methods:</strong></p>
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-comment">/**
+ * Returns lateral location of the specified position.
+ * If the position is unset, NaN is returned.
+ *
+ * <span class="hljs-doctag">@param</span> x  X coordinate of position.
+ * <span class="hljs-doctag">@param</span> y Y coordinate of position.
+ * <span class="hljs-doctag">@param</span> zone Zone of position.
+ * <span class="hljs-doctag">@return</span> Lateral location.
+ * <span class="hljs-doctag">@throws</span> IllegalArgumentException  If zone is &lt;= 0.
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span>
+    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{
+  ...
+}
+</code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+              <p><strong>A minimal javadoc comment example for classes:</strong></p>
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">package</span> ...
+
+<span class="hljs-keyword">import</span> ...
+
+<span class="hljs-comment">/**
+ * Represents a location in a 2D space. A &lt;code&gt;Point&lt;/code&gt; object corresponds to
+ * a coordinate represented by two integers e.g., &lt;code&gt;3,6&lt;/code&gt;
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span></span>{
+    <span class="hljs-comment">//...</span>
+}
+</code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                  <div>
+                    <ul>
+                      <li><a href="https://www.tutorialspoint.com/java/java_documentation.htm">A short tutorial on writing JavaDoc comments</a> <span class="dimmed">-- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></span></li>
+                      <li><a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">A more detailed description</a> <span class="dimmed">--from Oracle</span></li>
+                    </ul>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </panel>
+      <br>
+      <h3 id="markdown"><span class="dimmed"><strong>Markdown</strong></span><a class="fa fa-anchor" href="#markdown"></a></h3>
+      <p><span id="W7-3c"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/documentation/tools/markdown/what">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.3c</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="implementation-documentation-tools-markdown-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → Markdown →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-markdown-what"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain Markdown</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p>Markdown is a lightweight markup language with plain text formatting syntax.</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-3d"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/documentation/tools/markdown/how">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.3d</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="implementation-documentation-tools-markdown-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → Markdown →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-markdown-how"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can write documents in Markdown format</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <ul>
+                <li><a href="https://guides.github.com/features/mastering-markdown/">A tutorial on <em>Mastering Markdown</em></a> <span class="dimmed">--from GitHub</span></li>
+              </ul>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <br>
+      <h3 id="asciidoc"><span class="dimmed"><strong>AsciiDoc</strong></span><a class="fa fa-anchor" href="#asciidoc"></a></h3>
+      <p><span id="W7-3e"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/documentation/tools/asciiDoc/what">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.3e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        <h4 id="implementation-documentation-tools-asciidoc-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → AsciiDoc →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-asciidoc-what"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain AsciiDoc</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p>AsciiDoc is similar to Markdown but has more powerful (but also more complex) syntax.</p>
+              <ul>
+                <li><a href="https://asciidoctor.org/docs/asciidoc-writers-guide/">AsciiDoc Writers Guide</a> <span class="dimmed">--from <a href="http://Asciidoctor.org">Asciidoctor.org</a></span></li>
+              </ul>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+    </div>
+    </panel>
+    <p></p>
+    <p><span id="W7-4"></span></p>
+    <panel type="seamless" no-close expandable="true" expanded>
+      <span slot="header" class="card-title"><div><h2 id="w7-4-codequality-code-comments"><span class="dimmed">[W7.4]</span> <strong>CodeQuality: Code Comments</strong> <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
+      <a class="fa fa-anchor" href="#w7-4-codequality-code-comments"></a>
+      </h2>
+  </div>
+  </span>
+  <div class="indented-level1">
+    <p><span id="W7-4a"></span></p>
+    <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/introduction">
+      <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.4a</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+      </span>
+      <h4 id="implementation-code-quality-comments-introduction"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-comments-introduction"></a></h4>
+      </span>
+      <div>
+        <div class="indented">
+          <div></div>
+          <p></p>
+          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain the need for commenting minimally but sufficiently</span>
+            </span>
+            </span>
+            </span>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <div>
+            <blockquote>
+              <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer. <sub>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a>, Author of <em>Clean Code</em></sub></p>
+            </blockquote>
+            <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </panel>
+    <p><span id="W7-4b"></span></p>
+    <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/basic/dontRepeatObvious">
+      <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.4b</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+      </span>
+      <h4 id="implementation-code-quality-comments-basic-do-not-repeat-the-obvious"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments → Basic →</span></span></small> <strong><span>Do Not Repeat the Obvious</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-comments-basic-do-not-repeat-the-obvious"></a></h4>
+      </span>
+      <div>
+        <div class="indented">
+          <div></div>
+          <p></p>
+          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can improve code quality using technique: do not repeat the obvious </span>
+            </span>
+            </span>
+            </span>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <div>
+            <p>If the code is self-explanatory, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
+            <div class="alt-java">
+              <p>
+                <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
+                  </span>
+                </font>
+              </p>
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
+x++;
+
+<span class="hljs-comment">//trim the input</span>
+trimInput();
+</code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+            </div>
+            <div class="alt-python">
+              <p>
+                <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
+                  </span>
+                </font>
+              </p>
+              <div class="code-block">
+                <pre><code class="hljs python">// increment x
+x = x + <span class="hljs-number">1</span>
+
+//trim the input
+trim_input()
+</code></pre>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </panel>
+    <p><span id="W7-4c"></span></p>
+    <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/basic/writeToReader">
+      <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.4c</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+      </span>
+      <h4 id="implementation-code-quality-comments-basic-write-to-the-reader"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments → Basic →</span></span></small> <strong><span>Write to the Reader</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-comments-basic-write-to-the-reader"></a></h4>
+      </span>
+      <div>
+        <div class="indented">
+          <div></div>
+          <p></p>
+          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can improve code quality using technique: write to the reader </span>
+            </span>
+            </span>
+            </span>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <div>
+            <p>Do not write comments as if they are private notes to yourself. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a class
+              or an operation to explain its purpose.</p>
+            <box>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples:</p>
+              <div class="alt-java">
+                <div>
+                  <p>
+                    <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
+                      </span>
+                    </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                  <div class="code-block">
+                    <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
+    ....
+}
+</code></pre>
+                    <div class="code-block-lang"><span>java</span></div>
+                  </div>
+                  <p>
+                    <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
+                      </span>
+                    </font>
+                  </p>
+                  <div class="code-block">
+                    <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
+    ....
+}
+</code></pre>
+                    <div class="code-block-lang"><span>java</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="alt-python">
+                <div>
+                  <p>
+                    <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
+                      </span>
+                    </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                  <div class="code-block">
+                    <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+    ...
+</code></pre>
+                    <div class="code-block-lang"><span>python</span></div>
+                  </div>
+                  <p>
+                    <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
+                      </span>
+                    </font>
+                  </p>
+                  <div class="code-block">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+<span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
+    ...
+</code></pre>
+                    <div class="code-block-lang"><span>python</span></div>
+                  </div>
+                </div>
+              </div>
+            </box>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </panel>
+    <p><span id="W7-4d"></span></p>
+    <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow">
+      <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.4d</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      </span>
+      <h4 id="implementation-code-quality-comments-intermediate-explain-what-and-why-not-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments → Intermediate →</span></span></small> <strong><span>Explain WHAT and WHY, not HOW</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-comments-intermediate-explain-what-and-why-not-how"></a></h4>
+      </span>
+      <div>
+        <div class="indented">
+          <div></div>
+          <p></p>
+          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can improve code quality using technique: explain what and why, not how </span>
+            </span>
+            </span>
+            </span>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <div>
+            <p>Comments should explain <em>what</em> and <em>why</em> aspect of the code, rather than the <em>how</em> aspect.</p>
+            <p><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
+              </span> <strong>What</strong> : The specification of what the code <em>supposed</em> to do. The reader can compare such comments to the implementation to verify if the implementation is correct</p>
+            <box>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: This method is possibly buggy because the implementation does not seem to match the comment. In this case the comment could help the reader to detect the bug.</p>
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-comment">/** Removes all spaces from the {<span class="hljs-doctag">@code</span> input} */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">compact</span><span class="hljs-params">(String input)</span></span>{
+    input.trim();
+}
+</code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+            </box>
+            <p><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
+              </span> <strong>Why</strong> : The rationale for the current implementation.</p>
+            <box>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: Without this comment, the reader will not know the reason for calling this method.</p>
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-comment">// Remove spaces to comply with IE23.5 formatting rules</span>
+compact(input);
+</code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+            </box>
+            <p><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
+              </span> <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
+            <box>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
+              <p>
+                <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
+                  </span>
+                </font> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
+<span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);
+</code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+              <p>
+                <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
+                  </span>
+                </font> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
+              <div class="code-block">
+                <pre><code class="hljs java">
+<span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;
+<span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;
+</code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+            </box>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </panel>
+  </div>
+  </panel>
+  <p></p>
+  <p><span id="W7-5"></span></p>
+  <panel type="seamless" no-close expandable="true" expanded>
+    <span slot="header" class="card-title"><div><h2 id="w7-5-requirements-intro"><span class="dimmed">[W7.5]</span> <strong>Requirements: Intro</strong> <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
+    <a class="fa fa-anchor" href="#w7-5-requirements-intro"></a>
+    </h2>
+    </div>
+    </span>
+    <div class="indented-level1">
+      <p><span id="W7-5a"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/requirements/introduction">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.5a</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        <h4 id="requirements-requirements-introduction"><small><span class="font-weight-bold text-muted"><span>Requirements → Requirements →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#requirements-requirements-introduction"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain requirements</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p><strong>A <em>software requirement</em> specifies a need to be fulfilled by the software product.</strong></p>
+              <p><strong>A software project may be,</strong></p>
+              <ul>
+                <li><strong>a <em>brown-field</em> project</strong> i.e., develop a product to replace/update an existing software product</li>
+                <li><strong>a <em>green-field</em> project</strong> i.e., develop a totally new system with no precedent</li>
+              </ul>
+              <p>In either case, requirements need to be gathered, analyzed, specified, and managed.</p>
+              <p><strong>Requirements come from <em>stakeholders</em>.</strong></p>
+              <box type="definition">
+                <div>
+                  <p><strong>Stakeholder</strong>: A party that is potentially affected by the software project. e.g. users, sponsors, developers, interest groups, government agencies, etc.</p>
+                </div>
+              </box>
+              <p><strong>Identifying requirements is often not easy.</strong> For example, stakeholders may not be aware of their precise needs, may not know how to communicate their requirements correctly, may not be willing to spend effort in identifying
+                requirements, etc.</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-5b"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/requirements/nonFunctionalRequirements">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.5b</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        <h4 id="requirements-requirements-non-functional-requirements"><small><span class="font-weight-bold text-muted"><span>Requirements → Requirements →</span></span></small> <strong><span>Non-Functional Requirements</span></strong><a class="fa fa-anchor" href="#requirements-requirements-non-functional-requirements"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain non-functional requirements</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p>Requirements can be divided into two in the following way:</p>
+              <ol>
+                <li><strong><em>Functional requirements</em> specify what the system should do.</strong></li>
+                <li><strong><em>Non-functional requirements</em> specify the constraints under which system is developed and operated.</strong></li>
+              </ol>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
+                <ul>
+                  <li>Data requirements e.g. size,
+                    <tooltip content="how often do data change">volatility</tooltip>,
+                    <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
+                  <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
+                  <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
+                    Scalability, Security, Stability, Testability, and more ...</li>
+                </ul>
+                <panel type="seamless" header="<md>:fas-cube:</md> Some concrete examples of NFRs" expanded>
+                  <ul>
+                    <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
+                    <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5
+                      million.
+                    </li>
+                    <li>Technical requirements: e.g. the system should work on both 32-bit and 64-bit environments.</li>
+                    <li>Performance requirements: e.g. the system should respond within two seconds.</li>
+                    <li>Quality requirements: e.g. the system should be usable by a novice who has never carried out an online purchase.</li>
+                    <li>Process requirements: e.g. the project is expected to adhere to a schedule that delivers a feature set every one month.</li>
+                    <li>Notes about project scope: e.g. the product is not required to handle the printing of reports.</li>
+                    <li>Any other noteworthy points: e.g. the game should not use images deemed offensive to those injured in real mine clearing activities.
+                    </li>
+                  </ul>
+                </panel>
+              </box>
+              <p>We may have to spend an extra effort in digging NFRs out as early as possible because,</p>
+              <ol>
+                <li><strong>NFRs are easier to miss</strong> <span class="dimmed">e.g., stakeholders tend to think of functional requirements first</span></li>
+                <li>sometimes <strong>NFRs are critical to the success of the software.</strong> <span class="dimmed">E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></li>
+              </ol>
+            </div>
+            <div>
+              <div>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                  <div>
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs">
+                      <question>
+                        <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The response to any use action should become visible within 5 seconds.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The application admin should be able to view a log of user activities.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The source code should be open source.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A course should be able to have up to 2000 students.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As a student user, I can view details of my team members so that I can know who they are.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
+                        </ul>
+                        <div slot="answer">
+                          <p>(a)(c)(d)(f)(g)</p>
+                          <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project is
+                            done, both of which are considered non-functional requirements.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-5c"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/requirements/prioritizing">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.5c</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-requirements-prioritizing-requirements"><small><span class="font-weight-bold text-muted"><span>Requirements → Requirements →</span></span></small> <strong><span>Prioritizing Requirements</span></strong><a class="fa fa-anchor" href="#requirements-requirements-prioritizing-requirements"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain prioritizing requirements</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p><strong>Requirements can be prioritized based the importance and urgency</strong>, while keeping in mind the constraints of schedule, budget, staff resources, quality goals, and other constraints.</p>
+              <p>A common approach is to group requirements into priority categories. Note that all such scales are subjective, and stakeholders define the meaning of each level in the scale for the project at hand.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example scheme for categorizing requirements:</p>
+                <ul>
+                  <li><code>Essential</code>: The product must have this requirement fulfilled or else it does not get user acceptance</li>
+                  <li><code>Typical</code>: Most similar systems have this feature although the product can survive without it.</li>
+                  <li><code>Novel</code>: New features that could differentiate this product from the rest.</li>
+                </ul>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Other schemes:</p>
+                <ul>
+                  <li><code>High</code>, <code>Medium</code>, <code>Low</code></li>
+                  <li><code>Must-have</code>, <code>Nice-to-have</code>, <code>Unlikely-to-have</code></li>
+                  <li><code>Level 0</code>, <code>Level 1</code>, <code>Level 2</code>, ...</li>
+                </ul>
+              </box>
+              <p><strong>Some requirements can be discarded if they are considered ‘out of <em><tooltip content="the extent to which the software features should go">scope</tooltip></em>’.</strong></p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The requirement given below is for a Calendar application. Stakeholder of the software (e.g. product designers) might decide the following requirement is not in the scope
+                  of the software.</p>
+                <blockquote>
+                  <p>The software records the actual time taken by each task and show the difference between the <em>actual</em> and <em>scheduled</em> time for the task.</p>
+                </blockquote>
+              </box>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-5d"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/requirements/quality">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.5d</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-requirements-quality-of-requirements"><small><span class="font-weight-bold text-muted"><span>Requirements → Requirements →</span></span></small> <strong><span>Quality of Requirements</span></strong><a class="fa fa-anchor" href="#requirements-requirements-quality-of-requirements"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain quality of requirements</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p>Here are some characteristics of well-defined requirements
+                <trigger for="pop:zielczynski"><sup>[📖 zielczynski]</sup></trigger>:</p>
+              <ul>
+                <li>Unambiguous</li>
+                <li>Testable (verifiable)</li>
+                <li>Clear (concise, terse, simple, precise)</li>
+                <li>Correct</li>
+                <li>Understandable</li>
+                <li>Feasible (realistic, possible)</li>
+                <li>Independent</li>
+                <li>
+                  <tooltip content="Not divisible any further">Atomic</tooltip>
+                </li>
+                <li>Necessary</li>
+                <li>Implementation-free (i.e. abstract)</li>
+              </ul>
+              <p>Besides these criteria for individual requirements, the set of requirements as a whole should be</p>
+              <ul>
+                <li>Consistent</li>
+                <li>Non-redundant</li>
+                <li>Complete</li>
+              </ul>
+              <popover id="pop:zielczynski">
+                <div slot="content">
+                  <div>
+                    <p>Peter Zielczynski, <em><strong>Requirements Management Using IBM Rational RequisitePro</strong></em>, IBM Press, 2008</p>
+                  </div>
+                </div>
+              </popover>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+    </div>
+  </panel>
+  <p><span id="W7-6"></span></p>
+  <panel type="seamless" no-close expandable="true" expanded>
+    <span slot="header" class="card-title"><div><h2 id="w7-6-gathering-requirements"><span class="dimmed">[W7.6]</span> <strong>Gathering Requirements</strong> <small><small><span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+    <a class="fa fa-anchor" href="#w7-6-gathering-requirements"></a>
+    </h2>
+    </div>
+    </span>
+    <div class="indented-level1">
+      <p><span id="W7-6a"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/brainstorming">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.6a</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-gathering-requirements-brainstorming"><small><span class="font-weight-bold text-muted"><span>Requirements → Gathering Requirements →</span></span></small> <strong><span>Brainstorming</span></strong><a class="fa fa-anchor" href="#requirements-gathering-requirements-brainstorming"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain brainstorming</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <box type="definition">
+                <div>
+                  <p><strong>Brainstorming</strong>: A group activity designed to <em>generate a large number of diverse and creative ideas</em> for the <em>solution</em> of a problem.</p>
+                </div>
+              </box>
+              <p><strong>In a brainstorming session there are no &quot;bad&quot; ideas. The aim is to <em>generate ideas; not to validate</em> them.</strong> Brainstorming encourages you to &quot;think outside the box&quot; and put &quot;crazy&quot; ideas
+                on the table without fear of rejection.</p>
+            </div>
+            <div>
+              <div>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                  <div>
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Characteristic of brainstorming">
+                      <question>
+                        <p>What is the key characteristic about brainstorming?</p>
+                        <ul radio-group="11d89" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> a. There should be at least 5 participants.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> c. Only the best people in the team should take part.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                        </ul>
+                        <div slot="answer">
+                          <p>(b)</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-6b"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/productSurveys">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.6b</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-gathering-requirements-product-surveys"><small><span class="font-weight-bold text-muted"><span>Requirements → Gathering Requirements →</span></span></small> <strong><span>Product Surveys</span></strong><a class="fa fa-anchor" href="#requirements-gathering-requirements-product-surveys"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain product surveys</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p><strong>Studying existing products can unearth shortcomings of existing solutions that can be addressed by a new product.</strong> Product manuals and other forms of documentation of an existing system can tell us how the existing solutions
+                work.
+              </p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> When developing a game for a mobile device, a look at a similar PC game can give insight into the kind of features and interactions the mobile game can offer.
+                </p>
+              </box>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-6c"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/observation">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.6c</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-gathering-requirements-observation"><small><span class="font-weight-bold text-muted"><span>Requirements → Gathering Requirements →</span></span></small> <strong><span>Observation</span></strong><a class="fa fa-anchor" href="#requirements-gathering-requirements-observation"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain observation</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p><strong>Observing users in their natural work environment can uncover product requirements.</strong> Usage data of an existing system can also be used to gather information about how an existing system is being used, which can help in building
+                a better replacement <span class="dimmed">e.g. to find the situations where the user makes mistakes when using the current system</span>.</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-6d"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/userSurveys">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.6d</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-gathering-requirements-user-surveys"><small><span class="font-weight-bold text-muted"><span>Requirements → Gathering Requirements →</span></span></small> <strong><span>User Surveys</span></strong><a class="fa fa-anchor" href="#requirements-gathering-requirements-user-surveys"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain user surveys</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p><strong>Surveys can be used to <em>solicit responses and opinions</em> from a large number of stakeholders</strong> regarding a current product or a new product.</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-6e"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/interviews">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.6e</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-gathering-requirements-interviews"><small><span class="font-weight-bold text-muted"><span>Requirements → Gathering Requirements →</span></span></small> <strong><span>Interviews</span></strong><a class="fa fa-anchor" href="#requirements-gathering-requirements-interviews"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain interviews</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can produce useful information that project requirements.</strong></p>
+              <popover id="pop:interviews-domainExpert" title placement="top">
+                <div slot="content">
+                  <div>
+                    <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed">e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
+                  </div>
+                </div>
+              </popover>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-6f"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/focusGroups">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.6f</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-gathering-requirements-focus-groups"><small><span class="font-weight-bold text-muted"><span>Requirements → Gathering Requirements →</span></span></small> <strong><span>Focus Groups</span></strong><a class="fa fa-anchor" href="#requirements-gathering-requirements-focus-groups"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain focus groups</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <div v-closeable alt="focus group photo" class="non-printable">
+                <p><img src="https://media.defense.gov/2012/Apr/11/2000162334/670/394/0/120403-F-PR861-011.JPG" width="400"><br>
+                  <sub>[<a href="http://www.hanscom.af.mil/News/Article-Display/Article/380048/caring-for-people-forum-identifies-issues/">source</a>]</sub></p>
+              </div>
+              <p></p>
+              <p><strong>Focus groups are a kind of informal interview within an interactive group setting.</strong> A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue, process, product, advertisement,
+                etc.
+              </p>
+              <panel type="seamless" class="non-printable">
+                <span slot="header"><span><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span>: How do focus groups work? - Hector Lanz <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span>                extra</span>
+                </span>
+                </span>
+                </span>
+                </span>
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3TwgVQIZPsw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <p><span id="W7-6g"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/prototyping">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.6g</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-gathering-requirements-prototyping"><small><span class="font-weight-bold text-muted"><span>Requirements → Gathering Requirements →</span></span></small> <strong><span>Prototyping</span></strong><a class="fa fa-anchor" href="#requirements-gathering-requirements-prototyping"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain prototyping</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <box type="definition">
+                <div>
+                  <p><strong>Prototype</strong>: A prototype is a <em>mock up, a scaled down version, or a partial system constructed</em></p>
+                  <ul>
+                    <li>to get users’ feedback.</li>
+                    <li>to validate a technical concept (a &quot;proof-of-concept&quot; prototype).</li>
+                    <li>to give a preview of what is to come, or to compare multiple alternatives on a small scale before committing fully to one alternative.</li>
+                    <li>for early field-testing under controlled conditions.</li>
+                  </ul>
+                </div>
+              </box>
+              <p><strong>Prototyping can uncover requirements, in particular, those related to <em>how users interact with the system</em>.</strong> UI prototypes or <em>mock ups</em> are often used in brainstorming sessions, or in meetings with the users
+                to get quick feedback from them.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A mock up (also called a <em>wireframe</em> diagram) of a dialog box:</p>
+                <p><img class="border" src="/website/book/gatheringRequirements/prototyping/images/wireframeExample.png"><br>
+                  <sub><span class="dimmed">[source: <a href="http://plantuml.com">plantuml.com</a>]</span></sub></p>
+              </box>
+              <p></p>
+              <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Prototyping can be used for <em>discovering</em> as well as <em>specifying</em> requirements <span class="dimmed">e.g. a UI prototype can serve as a specification of what to build</span>.</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+    </div>
+  </panel>
+  <p><span id="W7-7"></span></p>
+  <panel type="seamless" no-close expandable="true" expanded>
+    <span slot="header" class="card-title"><div><h2 id="w7-7-specifying-requirements"><span class="dimmed">[W7.7]</span> <strong>Specifying Requirements</strong> <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
+    <a class="fa fa-anchor" href="#w7-7-specifying-requirements"></a>
+    </h2>
+    </div>
+    </span>
+    <div class="indented-level1">
+      <br>
+      <h3 id="prose"><span class="dimmed"><strong>Prose</strong></span><a class="fa fa-anchor" href="#prose"></a></h3>
+      <p><span id="W7-7a"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/prose/what">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.7a</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-specifying-requirements-prose-what"><small><span class="font-weight-bold text-muted"><span>Requirements → Specifying Requirements → Prose →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#requirements-specifying-requirements-prose-what"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain prose</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p><strong>A textual description (i.e. <em>prose</em>) can be used to describe requirements.</strong> Prose is especially useful when describing abstract ideas such as the vision of a product.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The product vision of the <a href="https://github.com/TEAMMATES/teammates">TEAMMATES Project</a> given below is described using prose.</p>
+                <blockquote>
+                  <p>TEAMMATES aims to become <strong>the biggest student project in the world</strong> (<em>biggest</em> here refers to 'many contributors, many users, large code base, evolving over a long period'). Furthermore, it aims to serve as a training
+                    tool for Software Engineering students who want to learn SE skills in the context of <strong>a non-trivial real software product</strong>.</p>
+                </blockquote>
+              </box>
+              <p>
+                <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Avoid using lengthy prose to describe requirements; they can be hard to follow.</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <br>
+      <h3 id="feature-lists"><span class="dimmed"><strong>Feature Lists</strong></span><a class="fa fa-anchor" href="#feature-lists"></a></h3>
+      <p><span id="W7-7b"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/featureList/what">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.7b</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        <h4 id="requirements-specifying-requirements-feature-lists-what"><small><span class="font-weight-bold text-muted"><span>Requirements → Specifying Requirements → Feature Lists →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#requirements-specifying-requirements-feature-lists-what"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain feature list</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <box type="definition">
+                <div>
+                  <p><strong>Feature List</strong>: A list of features of a product <em>grouped according to some criteria</em> such as aspect, priority, order of delivery, etc.</p>
+                </div>
+              </box>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A sample feature list from a simple Minesweeper game <span class="dimmed">(only a brief description has been provided to save space)</span>:</p>
+                <ol>
+                  <li>Basic play – Single player play.</li>
+                  <li>Difficulty levels
+                    <ul>
+                      <li>Medium-levels</li>
+                      <li>Advanced levels</li>
+                    </ul>
+                  </li>
+                  <li>Versus play – Two players can play against each other.</li>
+                  <li>Timer – Additional fixed time restriction on the player.</li>
+                  <li>...</li>
+                </ol>
+              </box>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <br>
+      <h3 id="use-cases"><span class="dimmed"><strong>Use Cases</strong></span><a class="fa fa-anchor" href="#use-cases"></a></h3>
+      <p><span id="W7-7c"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/useCases/introduction">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.7c</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        <h4 id="requirements-specifying-requirements-use-cases-introduction"><small><span class="font-weight-bold text-muted"><span>Requirements → Specifying Requirements → Use Cases →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#requirements-specifying-requirements-use-cases-introduction"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain use cases</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <box type="definition">
+                <div>
+                  <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
+                    <trigger for="pop:actor">actor</trigger>.[ 📖 :
+                    <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+                    </popover>]</p>
+                  <popover id="pop:actor" title="<md>:glyphicon-eye-open:</md>" placement="top">
+                    <div slot="content">
+                      <div>
+                        <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
+                      </div>
+                    </div>
+                  </popover>
+                </div>
+              </box>
+              <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
+              <box>
+                <panel header="<md>:fas-cube:</md> Example 1: 'check account balance' use case for an ATM" type="seamless" expanded>
+                  <div class="text-monospace">
+                    <ul>
+                      <li>System:
+                        <popover effect="fade" placement="right" content="Automated Teller Machine">
+                          ATM </popover>
+                      </li>
+                      <li>Actor: Customer</li>
+                      <li>Use Case: Check account balance
+                        <ol>
+                          <li>User inserts an ATM card</li>
+                          <li>ATM prompts for PIN</li>
+                          <li>User enters PIN</li>
+                          <li>ATM prompts for withdrawal amount</li>
+                          <li>User enters the amount</li>
+                          <li>ATM ejects the ATM card and issues cash</li>
+                          <li>User collects the card and the cash.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </div>
+                </panel>
+                <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
+                  <div class="text-monospace">
+                    <ul>
+                      <li>System: A Learning Management System (LMS)</li>
+                      <li>Actor: Student</li>
+                      <li>Use Case: Upload file
+                        <ol>
+                          <li>Student requests to upload file</li>
+                          <li>LMS requests for the file location</li>
+                          <li>Student specifies the file location</li>
+                          <li>LMS uploads the file</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </div>
+                </panel>
+              </box>
+              <p></p>
+              <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.
+                In the example below, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
+              <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
+                <div>
+                  <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
+                    Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML).
+                    UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
+                </div>
+              </modal>
+              <p></p>
+              <img src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
+              <p></p>
+              <p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <br>
+      <h3 id="glossary"><span class="dimmed"><strong>Glossary</strong></span><a class="fa fa-anchor" href="#glossary"></a></h3>
+      <p><span id="W7-7d"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/glossary/what">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.7d</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-specifying-requirements-glossary-what"><small><span class="font-weight-bold text-muted"><span>Requirements → Specifying Requirements → Glossary →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#requirements-specifying-requirements-glossary-what"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain glossary</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <box type="definition">
+                <div>
+                  <p><strong>Glossary</strong>: A glossary serves to ensure that <em>all stakeholders have a common understanding</em> of the noteworthy terms, abbreviations, acronyms etc.</p>
+                </div>
+              </box>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is a partial glossary from a variant of the <em>Snakes and Ladders</em> game:</p>
+                <ul>
+                  <li>Conditional square: A square that specifies a specific face value which a player has to throw before his/her piece can leave the square.</li>
+                  <li>Normal square: a normal square does not have any conditions, snakes, or ladders in it.</li>
+                </ul>
+              </box>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+      <br>
+      <h3 id="supplementary-requirements"><span class="dimmed"><strong>Supplementary Requirements</strong></span><a class="fa fa-anchor" href="#supplementary-requirements"></a></h3>
+      <p><span id="W7-7e"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/supplementaryRequirements/what">
+        <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W7.7e</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </span>
+        <h4 id="requirements-specifying-requirements-supplementary-requirements-what"><small><span class="font-weight-bold text-muted"><span>Requirements → Specifying Requirements → Supplementary Requirements →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#requirements-specifying-requirements-supplementary-requirements-what"></a></h4>
+        </span>
+        <div>
+          <div class="indented">
+            <div></div>
+            <p></p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain supplementary requirements</span>
+              </span>
+              </span>
+              </span>
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div>
+              <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most
+                <trigger trigger="click" for="modal:supplementary-nfr">Non Functional Requirements</trigger> will be listed.</p>
+              <modal large title="%%Textbook »%%" id="modal:supplementary-nfr">
+                <div>
+                  <div></div>
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Requirements → Requirements →
+</span></strong>
+                    </span>
+                  </p>
+                  <div id="title-and-body">
+                    <div>
+                      <h4 id="non-functional-requirements"><span>Non-Functional Requirements</span><a class="fa fa-anchor" href="#non-functional-requirements"></a></h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p>Requirements can be divided into two in the following way:</p>
+                        <ol>
+                          <li><strong><em>Functional requirements</em> specify what the system should do.</strong></li>
+                          <li><strong><em>Non-functional requirements</em> specify the constraints under which system is developed and operated.</strong></li>
+                        </ol>
+                        <box>
+                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
+                          <ul>
+                            <li>Data requirements e.g. size,
+                              <tooltip content="how often do data change">volatility</tooltip>,
+                              <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
+                            <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
+                            <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time,
+                              Robustness, Scalability, Security, Stability, Testability, and more ...</li>
+                          </ul>
+                          <panel type="seamless" header="<md>:fas-cube:</md> Some concrete examples of NFRs" expanded>
+                            <ul>
+                              <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
+                              <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed
+                                $1.5 million.</li>
+                              <li>Technical requirements: e.g. the system should work on both 32-bit and 64-bit environments.</li>
+                              <li>Performance requirements: e.g. the system should respond within two seconds.</li>
+                              <li>Quality requirements: e.g. the system should be usable by a novice who has never carried out an online purchase.</li>
+                              <li>Process requirements: e.g. the project is expected to adhere to a schedule that delivers a feature set every one month.</li>
+                              <li>Notes about project scope: e.g. the product is not required to handle the printing of reports.</li>
+                              <li>Any other noteworthy points: e.g. the game should not use images deemed offensive to those injured in real mine clearing activities.
+                              </li>
+                            </ul>
+                          </panel>
+                        </box>
+                        <p>We may have to spend an extra effort in digging NFRs out as early as possible because,</p>
+                        <ol>
+                          <li><strong>NFRs are easier to miss</strong> <span class="dimmed">e.g., stakeholders tend to think of functional requirements first</span></li>
+                          <li>sometimes <strong>NFRs are critical to the success of the software.</strong> <span class="dimmed">E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></li>
+                        </ol>
+                      </div>
+                      <div>
+                        <div>
+                          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                            <div>
+                              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs">
+                                <question>
+                                  <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
+                                  <ul class="task-list">
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The response to any use action should become visible within 5 seconds.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The application admin should be able to view a log of user activities.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The source code should be open source.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A course should be able to have up to 2000 students.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As a student user, I can view details of my team members so that I can know who they are.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
+                                  </ul>
+                                  <div slot="answer">
+                                    <p>(a)(c)(d)(f)(g)</p>
+                                    <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project
+                                      is done, both of which are considered non-functional requirements.</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                          </panel>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </modal>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+    </div>
+  </panel>
+  <p></p>
+  </div>
+  </div>
+  <nav id="page-nav" class="navbar navbar-light bg-transparent">
+    <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+        <a class="nav-link py-1" href="#week-7-mar-2-topics">Week 7 [Mar 2] - Topics&#x200E;</a>
+        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+          <a class="nav-link py-1" href="#w7-1-java-jar-files">[W7.1] Java: JAR Files 
+      
+      &#x200E;</a>
+          <a class="nav-link py-1" href="#w7-2-java-javafx">[W7.2] Java: JavaFX 
+    
+    &#x200E;</a>
+          <a class="nav-link py-1" href="#w7-3-documentation-tools">[W7.3] Documentation Tools 
+  
+  &#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#javadoc">Javadoc&#x200E;</a>
+            <a class="nav-link py-1" href="#markdown">Markdown&#x200E;</a>
+            <a class="nav-link py-1" href="#asciidoc">AsciiDoc&#x200E;</a>
+          </nav>
+          <a class="nav-link py-1" href="#w7-4-codequality-code-comments">[W7.4] CodeQuality: Code Comments 
+  
+  &#x200E;</a>
+          <a class="nav-link py-1" href="#w7-5-requirements-intro">[W7.5] Requirements: Intro 
+  
+  &#x200E;</a>
+          <a class="nav-link py-1" href="#w7-6-gathering-requirements">[W7.6] Gathering Requirements 
+  
+  &#x200E;</a>
+          <a class="nav-link py-1" href="#w7-7-specifying-requirements">[W7.7] Specifying Requirements 
+  
+  &#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#prose">Prose&#x200E;</a>
+            <a class="nav-link py-1" href="#feature-lists">Feature Lists&#x200E;</a>
+            <a class="nav-link py-1" href="#use-cases">Use Cases&#x200E;</a>
+            <a class="nav-link py-1" href="#glossary">Glossary&#x200E;</a>
+            <a class="nav-link py-1" href="#supplementary-requirements">Supplementary Requirements&#x200E;</a>
+          </nav>
+        </nav>
+
+      </nav>
+    </div>
+  </nav>
+  </div>
+  <footer>
+    <div class="text-center">
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Tue, 31 Dec 2019 06:55:56 GMT</small></div>
+  </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/website'
+  const enableSearch = true
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>

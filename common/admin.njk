@@ -1,0 +1,240 @@
+{% from "common/macros.njk" import show_stars with context %}
+
+{% macro show_admin_pagetop_for_topic(topics, topic) %}
+<frontmatter>
+title: "Admin: {{ topic.title }}"
+header: header.md
+footer: footer.md
+siteNav: adminSiteNav.md
+head: adminHead.md
+pageNav: 4
+</frontmatter>
+
+
+<div class="website-content">
+
+{{ show_next_previous(topics, topic.id) }}
+<br>
+{% endmacro %}
+
+
+{% macro show_admin_pagetop(topics, current_topic_id) %}
+{% for topic in topics %}
+{% if topic.id == current_topic_id %}
+  {{ show_admin_pagetop_for_topic(topics, topic) }}
+{% endif %}
+{% endfor %}
+{% endmacro %}
+
+
+{% macro show_previous(topic)-%}
+<span class="float-left algolia-no-index"><b-btn variant="light" href="{{ topic.link }}"><md>:far-arrow-alt-circle-left: {{ topic.title }}</md></b-btn></span>
+{%- endmacro %}
+
+
+{% macro show_next(topic)-%}
+<span class="float-right algolia-no-index"><b-btn variant="light" href="{{ topic.link }}"><md>{{ topic.title }} :far-arrow-alt-circle-right:</md></b-btn></span>
+{%- endmacro %}
+
+
+{# this macro has extra complications in order to avoid a line break between the two spans. Assumes at least two topics. #}
+{% macro show_next_previous(topics, current_topic_id) -%}
+
+{% set linked_topics = [] %}
+{% for topic in topics %}
+{% if topic.level in [1,2] %}
+{% set linked_topics = (linked_topics.push(topic), linked_topics) %}
+{% endif %}
+{% endfor %}
+
+{% for topic in linked_topics %}
+{% if topic.id == current_topic_id %}
+  {% if not loop.first %}
+    {% set  previous_topic = linked_topics[loop.index0 - 1] %}
+  {% endif %}
+  {% if not loop.last %}
+    {% set  next_topic = linked_topics[loop.index0 + 1] %}
+  {% endif %}
+{% if loop.first %}
+{{ show_next(next_topic) }}
+{% elseif loop.last %}
+{{ show_previous(previous_topic) }}
+{% else %}
+{{ show_previous(previous_topic) }}{{ show_next(next_topic) }}
+{% endif %}
+{% endif %}
+{% endfor %}
+{%- endmacro %}
+
+{% macro show_admin_pagebottom(topics, current_topic_id)%}
+<br>
+{{ show_next_previous(topics, current_topic_id) }}
+
+</div>
+{% endmacro %}
+
+{% set topics = [
+  {level: 1, id: "moduleOverview", title: module_pair + " " + module_name, link: "moduleOverview.html", priority: 4},
+  {level: 1, id: "usingThisWebsite", title: "Using this Website", link: "usingThisWebsite.html", highlight: "true", priority: 1},
+  {level: 1, id: "moduleExpectations", title: "Module Expectations", link: "moduleExpectations.html", priority: 2},
+  {level: 0, id: "moduleStructure", title: "Module Structure"},
+    {level: 2, id: "weeklySchedule", title: "Weekly Schedule", link: "weeklySchedule.html", priority: 3},
+    {level: 2, id: "lectures", title: "Lectures", link: "lectures.html", priority: 3},
+    {level: 2, id: "tutorials", title: "Tutorials", link: "tutorials.html", priority: 2},
+  {level: 1, id: "instructors", title: "Instructors", link: "instructors.html", priority: 4},
+  {level: 1, id: "textbooks", title: "Textbooks", link: "textbooks.html", priority: 2},
+  {level: 1, id: "programmingLanguages", title: "Programming Language", link: "programmingLanguages.html", priority: 2},
+  {level: -1, id: "ip", title: "Individual Project (iP)"},
+    {level: 2, id: "ip-overview", title: "iP (Individual Project): Overview", link: "ip-overview.html", priority: 2},
+    {level: 2, id: "ip-w02", title: "iP: Week 2", link: "ip-w02.html", priority: 2},
+    {level: 2, id: "ip-w03", title: "iP: Week 3", link: "ip-w03.html", priority: 2},
+    {level: 2, id: "ip-w04", title: "iP: Week 4", link: "ip-w04.html", priority: 2},
+    {level: 2, id: "ip-w05", title: "iP: Week 5", link: "ip-w05.html", priority: 2},
+    {level: 2, id: "ip-w06", title: "iP: Week 6", link: "ip-w06.html", priority: 2},
+    {level: 2, id: "ip-w07", title: "iP: Week 7", link: "ip-w07.html", priority: 1},
+    {level: 2, id: "ip-w08", title: "iP: Week 8", link: "ip-w08.html", priority: 1},
+    {level: 2, id: "ip-grading", title: "iP: Grading", link: "ip-grading.html", priority: 2},
+  {level: -1, id: "project", title: "Team Project (tP)"},
+    {level: 2, id: "project-expectations", title: "tP (team project): Expectations", link: "project-expectations.html", priority: 2},
+    {level: 2, id: "project-constraints", title: "tP: Constraints", link: "project-constraints.html", priority: 2},
+    {level: 2, id: "project-teams", title: "tP: Forming Teams", link: "project-teams.html", priority: 2},
+    {level: 2, id: "project-w03-kickoff", title: "tP: Kickoff [week 3]", link: "project-w03-kickoff.html", priority: 2},
+    {level: 2, id: "project-w04-inception", title: "tP: Inception [week 4]", link: "project-w04-inception.html", priority: 3},
+    {level: 2, id: "project-w05-v10", title: "tP: v1.0 [week 5]", link: "project-w05-v10.html", priority: 2},
+    {level: 2, id: "project-w06-mid-v11", title: "tP: mid-v1.1 [week 6]", link: "project-w06-mid-v11.html", priority: 2},
+    {level: 2, id: "project-w07-v11", title: "tP: v1.1 [week 7]", link: "project-w07-v11.html", priority: 2},
+    {level: 2, id: "project-w08-mid-v12", title: "tP: mid-v1.2 [week 8]", link: "project-w08-mid-v12.html", priority: 3},
+    {level: 2, id: "project-w09-v12", title: "tP: v1.2 [week 9]", link: "project-w09-v12.html", priority: 2},
+    {level: 2, id: "project-w10-mid-v13", title: "tP: mid-v1.3 [week 10]", link: "project-w10-mid-v13.html", priority: 2},
+    {level: 2, id: "project-w11-v13", title: "tP: v1.3 [week 11]", link: "project-w11-v13.html", priority: 2},
+    {level: 2, id: "project-w12-mid-v14", title: "tP: mid-v1.4 [week 12]", link: "project-w12-mid-v14.html", priority: 3},
+    {level: 2, id: "project-w13-v14", title: "tP: v1.4 [week 13]", link: "project-w13-v14.html", priority: 2},
+    {level: 2, id: "project-deliverables", title: "tP: Deliverables", link: "project-deliverables.html", priority: 2},
+    {level: 2, id: "project-grading", title: "tP: Grading", link: "project-grading.html", priority: 2},
+    {level: 2, id: "project-supervision", title: "tP: Supervision", link: "project-supervision.html", priority: 2},
+  {level: 1, id: "peerEvaluations", title: "Peer Evaluations", link: "peerEvaluations.html", priority: 2},
+  {level: 1, id: "tools", title: "Tools", link: "tools.html", priority: 3},
+  {level: 1, id: "exams", title: "Exams", link: "exams.html", priority: 2},
+  {level: 1, id: "participation", title: "Participation Marks", link: "participation.html", priority: 2},
+  {level: 1, id: "gradeBreakdown", title: "Grade Breakdown", link: "gradeBreakdown.html", priority: 2},
+  {level: 0, id: "appendices", title: "Appendices"},
+    {level: 2, id: "appendixA-principles", title: "Apdx A: Module Principles", link: "appendixA-principles.html", priority: 4},
+    {level: 2, id: "appendixB-policies", title: "Apdx B: Module Policies", link: "appendixB-policies.html", priority: 1},
+    {level: 2, id: "appendixC-faq", title: "Apdx C: FAQ", link: "appendixC-faq.html", priority: 1},
+    {level: 2, id: "appendixD-help", title: "Apdx D: Getting Help", link: "appendixD-help.html", priority: 2},
+    {level: 2, id: "appendixE-gitHub", title: "Apdx E: Using GitHub", link: "appendixE-gitHub.html", priority: 1},
+    {level: 2, id: "appendixF-teamworkIssues", title: "Apdx F: Handling Team Issues", link: "appendixF-teamworkIssues.html", priority: 4}
+]%}
+
+{% set faqs = [
+  {id: "admin-faq-whereIsEverything", title: "Where is everything?", priority: 1},
+  {id: "admin-faq-tVsNonT", title: "What are the differences between the T and the non-T version of the module?", priority: 4},
+  {id: "admin-faq-highWorkload", title: "Why the workload is so high?", priority: 4},
+  {id: "admin-faq-aPlus", title: "What are the extra requirements to get an A+?", priority: 3},
+  {id: "admin-faq-beanCounting", title: "Why so much bean counting?", priority: 4},
+  {id: "admin-faq-separateWebsite", title: "Why you force me to visit a separate website instead of using LumiNUS?", priority: 4},
+  {id: "admin-faq-slideFormat", title: "Why slides are not detailed?", priority: 4},
+  {id: "admin-faq-selfStudy", title: "Why so much self-study?", priority: 4},
+  {id: "admin-faq-noLaptop", title: "What if I don’t carry around a laptop?", priority: 4},
+  {id: "admin-faq-narrowScope", title: "Why very narrow project scope?", priority: 4},
+  {id: "admin-faq-favoriteTool", title: "Why I’m not allowed to use my favorite tool/framework/language etc.?", priority: 4},
+  {id: "admin-faq-manySubmissions", title: "Why so many submissions?", priority: 4},
+  {id: "admin-faq-fromScratch", title: "Why aren't we allowed to build a new product from scratch in the tP?", priority: 4},
+  {id: "admin-faq-cs2101Differences", title: "Why submission requirements differ between " + module_pair + " and CS2101?", priority: 4}
+]%}
+
+{% set policies = [
+  {id: "policy-followingInstructions", title: "Policy on following instructions", priority: 2},
+  {id: "policy-teamSize", title: "Policy on grading smaller/larger teams", priority: 4},
+  {id: "policy-workDistribution", title: "Policy on project work distribution", priority: 3},
+  {id: "policy-validAbsences", title: "Policy on absence due to valid reasons (e.g. MC, LOA, University events)", priority: 4},
+  {id: "policy-responseTime", title: "Policy on email response time", priority: 3},
+  {id: "policy-techHelp", title: "Policy on tech help", priority: 2},
+  {id: "policy-publishingSubmissions", title: "Policy on publishing submissions", priority: 4},
+  {id: "policy-plagiarism", title: "Policy on plagiarism", priority: 1},
+  {id: "policy-reuse", title: "Policy on reuse", priority: 2},
+  {id: "policy-outsiderHelp", title: "Policy on help from outsiders", priority: 2},
+  {id: "policy-deadlineExtensions", title: "Policy on deadline extensions", priority: 4}
+]%}
+
+{% set admin_topics_to_read = {
+week1: [
+  {faq_id: "admin-faq-whereIsEverything"},
+  {topic_id: "project-teams"},
+  {topic_id: "programmingLanguages"},
+  {topic_id: "textbooks"},
+  {topic_id: "gradeBreakdown"},
+  {topic_id: "participation"},
+  {topic_id: "tutorials", div: "exchangeStudentTutorialSignup", div_title: "Exchange Students: Tutorial Registration"},
+  {faq_id: "admin-faq-tVsNonT"},
+  {faq_id: "admin-faq-highWorkload"},
+  {faq_id: "admin-faq-aPlus"}],
+week2: [
+  {policy_id: "policy-plagiarism"},
+  {policy_id: "policy-reuse"},
+  {policy_id: "policy-outsiderHelp"},
+  {policy_id: "policy-followingInstructions"},
+  {policy_id: "policy-techHelp"},
+  {topic_id: "appendixA-principles"},
+  {faq_id: "admin-faq-separateWebsite"},
+  {faq_id: "admin-faq-slideFormat"},
+  {faq_id: "admin-faq-selfStudy"},
+  {faq_id: "admin-faq-noLaptop"}],
+week3: [
+  {topic_id: "tutorials"},
+  {topic_id: "peerEvaluations"},
+  {topic_id: "project-supervision"},
+  {policy_id: "policy-teamSize"}],
+week4: [
+  {faq_id: "admin-faq-fromScratch"},
+  {faq_id: "admin-faq-narrowScope"},
+  {faq_id: "admin-faq-favoriteTool"},
+  {policy_id: "policy-publishingSubmissions"}],
+week5: [
+  {topic_id: "project-grading"},
+  {policy_id: "policy-workDistribution"},
+  {policy_id: "policy-responseTime"},
+  {faq_id: "admin-faq-beanCounting"}],
+week6: [
+  {topic_id: "exams"},
+  {topic_id: "appendixF-teamworkIssues"},
+  {faq_id: "admin-faq-manySubmissions"},
+  {faq_id: "admin-faq-cs2101Differences"}],
+week7: [],
+week8: [],
+week9: [],
+week10: [],
+week11: [],
+week12: [],
+week13: []
+}%}
+
+{% macro show_title(current_topic_id, topics) -%}
+{% for topic in topics  %}
+{% if topic.id == current_topic_id %}
+{% set hashes = "#" %}
+<markdown>{{ hashes }} {{ topic.title }} <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) }} {% for tag in topic.tags %}<span class="badge badge-pill badge-light ">#{{ tag }}</span> {% endfor %}</span></markdown>
+{% endif %}
+{% endfor %}
+{%- endmacro %}
+
+{% macro show_admin_page(current_topic_id, main_text_macro)%}
+{{ show_admin_pagetop(topics, current_topic_id) }}
+{{ show_title(current_topic_id, topics) | trim }}
+{{ main_text_macro() }}
+{{ show_admin_pagebottom(topics, current_topic_id) }}
+{% endmacro %}
+
+{% macro show_admin_summary()%}
+<div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
+
+{{ caller() }}
+</div>
+{% endmacro %}
+
+{% macro show_project_summary_lead()%}
+<div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
+
+{{ caller() }}
+</div>
+{% endmacro %}

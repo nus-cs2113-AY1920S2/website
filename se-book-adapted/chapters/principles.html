@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2103/T Website - Textbook Chapter : Principles</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/site-nav.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <link rel="icon" href="/website/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
+        <div class="nav-link temp-dropdown-placeholder">Schedule</div>
+        <dropdown text="Schedule" class="nav-link temp-dropdown">
+          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
+          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
+          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
+          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
+          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
+          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
+          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
+          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
+        </dropdown>
+        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown text="Links" class="nav-link temp-dropdown">
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
+          <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+          <li><a href="/website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+          <hr>
+          <span><strong> Individual Project (iP):</strong></span>
+          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+          <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+          <hr>
+          <span><strong> Team Project (tP):</strong></span>
+          <li><a href="/website/admin/project-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
+          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
+          <li><a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <nav id="site-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-right-grey nav-inner position-sticky slim-scroll">
+          <ul class="px-0 site-nav-list">
+            <li class="mt-2"><a href="/website/se-book-adapted/index.html" class="site-nav__a">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Design</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/architecture.html" class="site-nav__a">Software Architecture</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designPatterns.html" class="site-nav__a">Software Design Patterns</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designApproaches.html" class="site-nav__a">Design Approaches</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Implementation</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open"><strong>Principles</strong>
+ <i class="dropdown-btn-icon rotate-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container dropdown-container-open">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/principles.html" class="site-nav__a current">Principles</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/intellij.html" class="site-nav__a">Intellij IDEA</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/gitAndGithub.html" class="site-nav__a">Git and Github</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn">Supplementary
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/cppToJava.html" class="site-nav__a">C++ to Java</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/projectDuke/index.html" class="site-nav__a">Project Duke</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
+                  <li class="mt-2"><a href="/website/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="content-wrapper">
+        <link rel="stylesheet" href="/website/book/css/textbook.css">
+        <div class="website-content">
+          <p><span class="dimmed"><strong><span></span></strong>
+            </span>
+          </p>
+          <div id="title">
+            <div>
+              <h1 id="principles"><span>Principles</span><a class="fa fa-anchor" href="#principles"></a></h1>
+            </div>
+          </div>
+          <panel type="seamless" header="#### Single Responsibility Principle<a class='fa fa-anchor' href='#single-responsibility-principle'></a>" expanded>
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
+              <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain single responsibility principle</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <box type="definition">
+                  <div>
+                    <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
+                  </div>
+                </box>
+                <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
+                <box>
+                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the
+                    UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
+                </box>
+                <blockquote>
+                  <p><span aria-hidden="true" class="fas fa-quote-left"></span> Gather together the things that change for the same reasons. Separate those things that change for different reasons. <sub>―<em>Agile Software Development, Principles, Patterns, and Practices</em> by Robert C. Martin</sub></p>
+                </blockquote>
+              </div>
+              <div>
+                <div>
+                  <panel header="<md>:fas-paperclip:</md>  Resources" expanded>
+                    <ul>
+                      <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
+                      <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
+                      <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
+                    </ul>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Separation of Concerns Principle<a class='fa fa-anchor' href='#separation-of-concerns-principle'></a>" expanded>
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
+              <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain separation of concerns principle</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <box type="definition">
+                  <div>
+                    <p><strong>Separation of Concerns Principle (SoC)</strong>: To achieve better modularity, separate the code into distinct sections, such that each section addresses a separate <em>concern</em>. -- Proposed by <a href="https://en.wikipedia.org/wiki/Edsger_W._Dijkstra">Edsger W. Dijkstra</a></p>
+                  </div>
+                </box>
+                <p>A <em>concern</em> in this context is a set of information that affects the code of a computer program.</p>
+                <box>
+                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples for <em>concerns</em>:</p>
+                  <ul>
+                    <li>A specific feature, such as the code related to <code>add employee</code> feature</li>
+                    <li>A specific aspect, such as the code related to <code>persistence</code> or <code>security</code></li>
+                    <li>A specific entity, such as the code related to the <code>Employee</code> entity</li>
+                  </ul>
+                </box>
+                <p><strong>Applying <tooltip content="Separation of Concerns">SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
+                <box>
+                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how
+                    the security is implemented.</p>
+                </box>
+                <p><strong>This principle can be applied at the class level, as well as on higher levels.</strong></p>
+                <box>
+                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The
+                    <trigger trigger="click" for="modal:soc-nTier">n-tier architecture</trigger> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p>
+                </box>
+                <modal title="TextBook <md>:glyphicon-log-in:</md>" id="modal:soc-nTier">
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Architecture → Styles → n-Tier Style →
+</span></strong>
+                      </span>
+                    </p>
+                    <div id="title-and-body">
+                      <div>
+                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                      </div>
+                      <div id="main">
+                        <div>
+                          <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p>
+                          <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
+                          <box>
+                            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Operating systems and network communication software often use n-tier style.<br>
+                              <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
+                          </box>
+                          <p></p>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </modal>
+                <p><strong>This principle should lead to higher <trigger trigger="click" for="soc-cohesion">cohesion</trigger> and lower <trigger trigger="click" for="soc-coupling">coupling</trigger>.</strong></p>
+                <modal title="TextBook <md>:glyphicon-log-in:</md>" id="soc-coupling">
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Coupling →
+</span></strong>
+                      </span>
+                    </p>
+                    <div id="title-and-body">
+                      <div>
+                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                      </div>
+                      <div id="main">
+                        <div>
+                          <p><strong><em>Coupling</em> is a measure of the degree of <em>dependence</em></strong> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. <strong>High coupling (aka <em>tight</em> coupling or <em>strong</em> coupling) is discouraged</strong>                            due to the following disadvantages:</p>
+                          <ul>
+                            <li><strong>Maintenance is harder</strong> because a change in one module could cause changes in other modules coupled to it (i.e. a ripple effect).</li>
+                            <li><strong>Integration is harder</strong> because multiple components coupled with each other have to be integrated at the same time.</li>
+                            <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li>
+                          </ul>
+                          <box>
+                            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code>A</code> appears to have a more coupling between the components than design <code>B</code>.</p>
+                            <img src="/website/book/designFundamentals/coupling/what/images/playerPuzzleManager.png" height="220">
+                            <p></p>
+                          </box>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                              <div>
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling levels of alternative designs">
+                                  <question has-input="true">
+                                    <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
+                                    <box>
+                                      <img src="/website/book/designFundamentals/coupling/what/images/alternativeDesigns.png" height="180">
+                                      <p></p>
+                                    </box>
+                                    <div slot="answer">
+                                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling.
+                                        Some links may be stronger than the others.). However, in <em>x</em>, <code>A</code> is highly-coupled to the rest of the system while <code>B</code>, <code>C</code>, <code>D</code>, and <code>E</code> are standalone
+                                        (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code>A</code> of <em>x</em>. However, only <code>D</code> and <code>E</code> are standalone.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: regressions and coupling.">
+                                  <question has-input="true">
+                                    <p>Explain the link (if any) between regressions and coupling.</p>
+                                    <div slot="answer">
+                                      <p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code>A</code> is modified, all components ‘coupled’ to component <code>A</code> risk ‘unintended behavioral changes’</span>.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling and testability">
+                                  <question has-input="true">
+                                    <p>Discuss the relationship between coupling and
+                                      <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                                    <div slot="answer">
+                                      <p>Coupling decreases testability because if the
+                                        <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about coupling">
+                                  <question>
+                                    <p>Choose the correct statements.</p>
+                                    <ul class="task-list">
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. As coupling increases, testability decreases.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. As coupling increases, the risk of regression increases.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. As coupling increases, the value of automated regression testing increases.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. As coupling increases, integration becomes easier as everything is connected together.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As coupling increases, maintainability decreases.</li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(a)(b)(c)<s>(d)</s>(e)</p>
+                                      <p>Explanation: High coupling means either more components require to be integrated at once in a big-bang fashion (increasing the risk of things going wrong) or more drivers and stubs are required when integrating incrementally.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </modal>
+                <modal title="TextBook <md>:glyphicon-log-in:</md>" id="soc-cohesion">
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Cohesion →
+</span></strong>
+                      </span>
+                    </p>
+                    <div id="title-and-body">
+                      <div>
+                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                      </div>
+                      <div id="main">
+                        <div>
+                          <p><strong><em>Cohesion</em> is a measure of how strongly-related and focused the various responsibilities of a component are.</strong> A highly-cohesive component keeps related functionalities together while keeping out all other
+                            unrelated things.
+                          </p>
+                          <p><strong>Higher cohesion is better.</strong> Disadvantages of low cohesion (aka <em>weak</em> cohesion):</p>
+                          <ul>
+                            <li>Lowers the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
+                            <li>Lowers maintainability because a module can be modified due to unrelated causes <span class="dimmed">(reason: the module contains code unrelated to each other)</span> or many many modules may need to be modified to achieve
+                              a small change in behavior <span class="dimmed">(reason: because the code realated to that change is not localized to a single module)</span>.</li>
+                            <li>Lowers reusability of modules because they do not represent logical units of functionality.</li>
+                          </ul>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </modal>
+              </div>
+              <div>
+                <div>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <div>
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: correct statement about SoC">
+                        <question>
+                          <p>“Only the GUI class should interact with the user. The GUI class should only concern itself with user interactions”. This statement follows from,</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A software design should promote separation of concerns in a design.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A software design should increase cohesion of its components.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A software design should follow single responsibility principle.</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)(b)(c)</p>
+                            <p>Explanation: By making ‘user interaction’ GUI class’ sole responsibility, we increase its cohesion. This is also in line with separation of concerns (i.e., we separated the concern of user interaction) and single responsibility
+                              principle (GUI class has only one responsibility).</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </panel>
+        </div>
+      </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#principles">Principles&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#single-responsibility-principle">Single Responsibility Principle&#x200E;</a>
+              <a class="nav-link py-1" href="#separation-of-concerns-principle">Separation of Concerns Principle&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Tue, 31 Dec 2019 06:55:56 GMT</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/website'
+  const enableSearch = true
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>
