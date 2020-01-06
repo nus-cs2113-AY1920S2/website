@@ -1,80 +1,134 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
-{% set DIs = {
-Level_1: {id: 'Level-1', title: 'Greet, Echo, Exit', tag: ''},
-Level_2: {id: 'Level-2', title: 'Add, List', tag: ''},
-Level_3: {id: 'Level-3', title: 'Mark as Done', tag: ''},
-Level_4: {id: 'Level-4', title: 'ToDo, Event, Deadline', tag: ''},
-Level_5: {id: 'Level-5', title: 'Handle Errors', tag: ''},
-Level_6: {id: 'Level-6', title: 'Delete', tag: ''},
-Level_7: {id: 'Level-7', title: 'Save', tag: ''},
-Level_8: {id: 'Level-8', title: 'Dates and Times', tag: ''},
-Level_9: {id: 'Level-9', title: 'Find', tag: 'optional'},
-Level_10: {id: 'Level-10', title: 'GUI', tag: ''},
-A_TextUiTesting: {id: 'A-TextUiTesting', title: 'Automated Text UI Testing', tag: ''},
-A_Enums: {id: 'A-Enums', title: 'Use Enums', tag: 'if-applicable'},
-A_MoreOOP: {id: 'A-MoreOOP', title: 'Use More OOP', tag: ''},
-A_Packages: {id: 'A-Packages', title: 'Organize into Packages', tag: 'optional'},
-A_JUnit: {id: 'A-JUnit', title: 'Add JUnit Tess', tag: ''},
-A_Jar: {id: 'A-Jar', title: 'Create a JAR File', tag: ''},
-A_JavaDoc: {id: 'A-JavaDoc', title: 'JavaDoc', tag: ''},
-A_CodingStandard: {id: 'A-CodingStandard', title: 'Follow the Coding Standard', tag: ''},
-A_Gradle: {id: 'A-Gradle', title: 'Use Gradle', tag: ''},
-A_CheckStyle: {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
-A_Varargs: {id: 'A-Varargs', title: 'Use Varargs', tag: 'if-applicable'},
-A_Assertions: {id: 'A-Assertions', title: 'Use Assertions', tag: ''},
-A_CodeQuality: {id: 'A-CodeQuality', title: 'Improve Code Quality', tag: ''},
-A_Lambdas: {id: 'A-Lambdas', title: 'Use Lambdas', tag: 'optional'},
-A_Streams: {id: 'A-Streams', title: 'Use Streams', tag: 'optional'},
-A_Travis: {id: 'A-Travis', title: 'Set up Travis', tag: 'optional'}
-} %}
-
-{% set ip_steps = {
-  learn_about_the_project: {id: 'learn_about_the_project', deadline: false},
-  set_up_prerequisites: {id: 'set_up_prerequisites', deadline: false},
-  set_up_project: {id: 'set_up_project', deadline: false},
-  finish_leftover_tasks: {id: 'finish_leftover_tasks', deadline: false},
-  create_pr_to_upstream: {id: 'create_pr_to_upstream', deadline: false},
-  review_two_prs: {id: 'review_two_prs', deadline: false},
-  generate_new_jar: {id: 'generate_new_jar', deadline: false},
-  add_an_extension: {id: 'add_an_extension', deadline: false},
-  finalize_features: {id: 'finalize_features', deadline: false},
-  set_up_website: {id: 'set_up_website', deadline: false},
-  release_product: {id: 'release_product', deadline: false},
-  do_final_cleanups: {id: 'do_final_cleanups', deadline: false},
-  submit_final_version: {id: 'submit_final_version', deadline: 'by Monday 2359'},
-  evaluate_peer_ips: {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
-} %}
-
 {% set ip_schedule = {
-week2: [],
+week2: [
+  {id: 'learn_about_the_project'},
+  {id: 'set_up_prerequisites'},
+  {id: 'set_up_project'},
+  {id: 'add_increments', suffix: ' while committing frequently', deadline: 'by Thursday 2359', increments: [
+    {id: 'Level-1', title: 'Greet, Echo, Exit'},
+    {id: 'Level-2', title: 'Add, List'},
+    {id: 'Level-3', title: 'Mark as Done'},
+    {id: 'Level-4', title: 'ToDo, Event, Deadline'},
+    {id: 'A-TextUiTesting', title: 'Automated Text UI Testing'},
+    {id: 'Level-5', title: 'Handle Errors'},
+    {id: 'Level-6', title: 'Delete'},
+    {id: 'A-Enums', title: 'Use Enums', tag: 'if-applicable'}
+  ]}
+],
 week3: [
-  ip_steps.learn_about_the_project,
-  ip_steps.set_up_prerequisites,
-  ip_steps.set_up_project,
-  {id: 'add_increments', suffix: ' while committing frequently', increments:  [DIs.Level_1, DIs.Level_2], deadline: false}
+  {id: 'finish_leftover_tasks'},
+  {id: 'create_pr_to_upstream'},
+  {id: 'add_increments', suffix: ' as parallel branches', increments:  [
+    {id: 'Level-7', title: 'Save'},
+    {id: 'Level-8', title: 'Dates and Times'}
+  ]},
+  {id: 'add_increments', suffix: '', increments:  [
+    {id: 'A-MoreOOP', title: 'Use More OOP'},
+    {id: 'A-Packages', title: 'Organize into Packages', tag: 'optional'},
+    {id: 'A-JUnit', title: 'Add JUnit Tess'},
+    {id: 'A-Jar', title: 'Create a JAR File'}
+  ]},
+  {id: 'add_increments', suffix: ' as parallel branches', increments:  [
+    {id: 'A-JavaDoc', title: 'JavaDoc'},
+    {id: 'A-CodingStandard', title: 'Follow the Coding Standard'},
+    {id: 'Level-9', title: 'Find'}
+  ]}
 ],
 week4: [
-  ip_steps.finish_leftover_tasks,
-  ip_steps.create_pr_to_upstream,
-  {id: 'add_increments', suffix: '', increments:  [DIs.Level_3, DIs.Level_4, DIs.A_CodingStandard, DIs.A_Packages, DIs.A_TextUiTesting], deadline: false},
-  ip_steps.review_two_prs
+  {id: 'review_two_prs'},
+  {id: 'add_increments', suffix: ' as parallel branches', increments:  [
+    {id: 'A-Gradle', title: 'Use Gradle'},
+    {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
+    {id: 'Level-10', title: 'GUI'},
+    {id: 'A-Varargs', title: 'Use Varargs', tag: 'if-applicable'}
+  ]}
 ],
 week5: [
-  {id: 'add_increments', suffix: '', increments:  [DIs.Level_5, DIs.Level_9, DIs.A_CodeQuality], deadline: false}
+  {id: 'generate_new_jar'},
+  {id: 'add_increments', suffix: ' as PRs', increments:  [
+    {id: 'A-Assertions', title: 'Use Assertions'},
+    {id: 'A-CodeQuality', title: 'Improve Code Quality'},
+    {id: 'A-Lambdas', title: 'Use Lambdas', tag: 'optional'},
+    {id: 'A-Streams', title: 'Use Streams', tag: 'optional'}
+  ]},
+  {id: 'add_increments', suffix: '', increments:  [
+    {id: 'A-Travis', title: 'Set up Travis', tag: 'optional'}
+  ]},
+  {id: 'add_an_extension'}
 ],
 week6: [
-  {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.Level_6, DIs.Level_7, DIs.A_Jar], deadline: false}
+  {id: 'finalize_features'},
+  {id: 'set_up_website'},
+  {id: 'release_product'}
 ],
 week7: [
-  {id: 'add_increments', suffix: ' as PRs', increments:  [DIs.A_MoreOOP, DIs.Level_8, DIs.A_JavaDoc], deadline: false},
-  ip_steps.set_up_website,
-  ip_steps.release_product,
-  ip_steps.submit_final_version
+  {id: 'do_final_cleanups'},
+  {id: 'submit_final_version', deadline: 'by Monday 2359'}
 ],
 week8: [
-  ip_steps.evaluate_peer_ips
+  {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
+]
+} %}
+
+{% set cs2113_ip_schedule = {
+week2: [
+  {id: 'learn_about_the_project'},
+  {id: 'set_up_prerequisites'},
+  {id: 'set_up_project'},
+  {id: 'add_increments', suffix: '', increments: [
+    {id: 'Level-1', title: 'Greet, Echo, Exit'}
+  ]}
+],
+week3: [
+  {id: 'finish_leftover_tasks'},
+  {id: 'add_increments', suffix: ' (+ commit, tag, push)', increments: [
+    {id: 'Level-2', title: 'Add, List'},
+    {id: 'Level-3', title: 'Mark as Done'},
+    {id: 'A-CodingStandard', title: 'Follow the Coding Standard'}
+  ]}
+],
+week4: [
+  {id: 'create_pr_to_upstream'},
+  {id: 'add_increments', suffix: '', increments: [
+    {id: 'Level-4', title: 'ToDo, Event, Deadline'},
+    {id: 'A-TextUiTesting', title: 'Automated Text UI Testing', tag: 'optional'},
+    {id: 'A-CodeQuality', title: 'Improve Code Quality'}
+  ]},
+  {id: 'review_two_prs', deadline: 'before the tutorial'}
+],
+week5: [
+  {id: 'add_increments', suffix: ' as a branch', increments:  [
+    {id: 'Level-5', title: 'Handle Errors'}
+  ]},
+  {id: 'add_increments', suffix: '', increments:  [
+    {id: 'A-Packages', title: 'Organize into Packages', tag: 'optional'}
+  ]}
+],
+week6: [
+  {id: 'add_increments', suffix: ' as parallel branches', increments:  [
+    {id: 'Level-6', title: 'Delete'},
+    {id: 'Level-7', title: 'Save'}
+  ]},
+  {id: 'add_increments', suffix: '', increments:  [
+    {id: 'A-Jar', title: 'Create a JAR File'}
+  ]}
+],
+week7: [
+  {id: 'add_increments', suffix: '', increments:  [
+    {id: 'A-MoreOOP', title: 'Use More OOP'}
+  ]},
+    {id: 'add_increments', suffix: ' as PRs', increments:  [
+    {id: 'Level-8', title: 'Dates and Times', tag: 'optional'},
+    {id: 'Level-9', title: 'Find'},
+    {id: 'A-JavaDoc', title: 'JavaDoc'}
+  ]},
+  {id: 'set_up_website'},
+  {id: 'release_product', deadline: 'by Monday 1200'}
+],
+week8: [
+  {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
 ]
 } %}
 
@@ -82,21 +136,32 @@ week8: [
  # Common text segments
  #====================================================================================================================#}
 
-<span id="commit-tag-push">
+<span id="order">
 
-Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> ==in the given order==.
-   * Commit code at important points. ==Minimally, commit after completing each increment==.
-   * After completing each increment,
-     * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
-     * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
+* Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> ==in the given order==.
+</span>
+<span id="commit">
+
+* From this point onward, commit code at important points. ==Minimally, commit after completing each increment==.
+</span>
+<span id="tag-push">
+
+* From this point onward, after completing each increment,
+  * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
+  * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
+</span>
+<span id="volatile-requirements">
+
+<box type="info">
+
+The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ forum_link }}) so that we can take necessary actions.
+</box>
 </span>
 <span id="no-jumping-ahead">
 
 <box>
 
-{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons:
-1. In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and spread over a longer period**, rather than to be done as a short burst. Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
-1. As a further incentive to not jump ahead, we have left some future project requirements unspecified, and we might change some requirements along the way too.
+{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and spread over a longer period**, rather than to be done as a short burst. Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
 </box>
 </span>
 
@@ -105,17 +170,10 @@ Implement the following <tooltip content="in this context, an _increment_ is a D
  #====================================================================================================================#}
 <span id="cs2103-week2-intro">
 
-<box type="info">
-
-The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ forum_link }}) so that we can take necessary actions.
-</box>
+<include src="ip-tasks.mbdf#volatile-requirements" />
+<include src="ip-tasks.mbdf#no-jumping-ahead" />
 </span>
 
-{#====================================================================================================================#}
-<span id="cs2103-week3-intro">
-
-In this week, we try to practice git branching as we do the iP.
-</span>
 {#====================================================================================================================#}
 <span id="cs2103-week6-intro">
 
@@ -146,8 +204,11 @@ In this week, we try to practice git branching as we do the iP.
 </span>
 {#====================================================================================================================#}
 <span id="extra_Level-1">
-<include src="ip-tasks.mbdf#commit-tag-push" />
-<include src="ip-tasks.mbdf#no-jumping-ahead" />
+<include src="ip-tasks.mbdf#commit" />
+</span>
+<span id="extra_Level-2">
+<include src="ip-tasks.mbdf#order" />
+<include src="ip-tasks.mbdf#tag-push" />
 </span>
 {#====================================================================================================================#}
 <span id="heading_set_up_project">Set up the project in your computer</span>
@@ -156,8 +217,7 @@ In this week, we try to practice git branching as we do the iP.
 1.  ==Enable the issue tracker of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.%%<br>
     {{ icon_tip }} If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/duke/issues` e.g., `https://github.com/johnDoe/duke/issues`
 1. Clone the fork onto your computer.
-1. Set up the project in your IDE as explained in [the README file]({{ module_org }}/duke/blob/master/README.md).<br>
-   {{ icon_tip }} If you are somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning by following [the Gradle tutorial]({{ module_org }}/duke/blob/master/tutorials/gradleTutorial.md).
+1. Set up the project in your IDE as explained in the `Setting up` section of [the README file]({{ module_org }}/duke/blob/master/README.md). There is no need to follow the `Tutorials` section at this point.
 </span>
 {#====================================================================================================================#}
 <span id="heading_finish_leftover_tasks">Do any leftover iP tasks from the previous week</span>
@@ -171,12 +231,55 @@ In this week, we try to practice git branching as we do the iP.
   * PR name: `[{Your name}] Duke Increments` e.g., `[John Doe] Duke Increments` %%If you are reluctant to give full name, you may give the first half of your name only%%
 </span>
 {#====================================================================================================================#}
+<span id="extra_Level-5">
+
+* Use git branches in your work, as explained below:
+  * Do the increment Level-5 as a separate branch named `branch-Level-5`. You are recommended to have multiple commits in that branch.
+  * After the increment is ready, merge the `branch-Level-5` back on to `master`, ==without a _fast-forward_== so that git creates a separate commit for the merge. `git tag` that merge commit as `Level-5`.
+  * Push the branch to your fork so that the bot can detect it. As before, push the tag as well.
+  * {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
+</span>
+<span id="extra_A-Packages">
+
+* Recommended: if you are new to git, do this as a separate branch too (for additional practice), similar to how you did `Level-5`.
+</span>
+<span id="extra_Level-6">
+
+* Practice using parallel git branches, as explained below:
+  1. First, do Level-6 in a branch named `branch-Level-6`, but do not merge it.
+  1. Then, go back to the `master` branch and implement Level-7 in a separate branch named `branch-Level-7`.
+  1. Now, go back to the `master` branch and merge the two branches one after the other.<br>
+     If there are merge conflicts, you'll have to resolve them first.
+  1. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.
+* As before,
+ {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.<br>
+ {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
+ {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
+</span>
+<span id="extra_A-Jar">
+
+* In case this increment does not require any code changes, you may tag the commit at which this was achieved as `A-Jar` (even if that commit has another tag already).
+* Upload the jar file to your fork as explained in the panel below. You can ignore the point about using Gradle.
+</span>
 <span id="extra_Level-7">
 
 * Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-Level-8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
  {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
+</span>
+<span id="extra_Level-8">
+
+* Practice using parallel git branches _and_ PRs, as explained below:
+  1. First, do each increment as a parallel branch (i.e., `branch-Level-8`, `branch-Level-9`, `branch-A-JavaDoc`), but do not merge any.
+  1. Then, push each branch to your fork, and create a PR within your fork (i.e., from the increment branch to the `master` branch).
+  1. Now, let's merge one of the PRs and update the remaining PRs accordingly, as given below:
+     1. Merge one of the PRs on GitHub e.g., Level-8. Remember to choose the `Create merge commit` option when merging.
+     1. Pull the updated `master` branch from your fork to your Computer.
+     1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
+     1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
+     1. As before, tag the merge commit in the master branch and push the tag to your fork.
+  1. Merge the remaining PRs using a procedure similar to the above.
 </span>
 <span id="extra_A-MoreOOP">
 
@@ -187,19 +290,12 @@ In this week, we try to practice git branching as we do the iP.
 * As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 </span>
 {#====================================================================================================================#}
-<span id="heading_review_two_prs">Review some peer PRs</span>
+<span id="heading_review_two_prs">Get ready to review PRs</span>
 <span id="desc_review_two_prs">
-* **Review two PRs** created by your classmates. PRs can be found [here]({{ module_org }}/duke/pulls).
-  * The allocation of which PRs to review will be specified in [this page]({{team_IDs_page}}) (you will be notified when the allocation is ready).
-  * To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
-  * If the student you have been allocated to review has not created a PR by Monday, you can review another PR of your choice.
+
+* **Do the following to prepare for the PR review exercise** you will be doing in the coming tutorial.  for that exercise. In particular, ==read the given blog post== about code review best practices.
 
 <div class="indented-level2">
-
-<box type="success">
-
-We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
-</box>
 
 * Read up the following guidelines:
 
@@ -283,28 +379,19 @@ This activity is worth 2 participation points!
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_set_up_website">Set up a product website</span>
+<span id="heading_set_up_website">Add a brief user guide</span>
 <span id="desc_set_up_website">
-* **Add a representative screenshot** of the product to the `docs` folder.
-  * ==The file name should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
-  * Ideally, the product name is visible in the screenshot e.g., in the title bar of the Window
-
-{{ embed_topic("tp-deliverables-website.mbdf#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
-
-* **Add a brief User Guide (UG)**
 
 <div class="indented">
-
 <include src="dukeFragment.md" boilerplate var-header="**`A-UserGuide`: User Guide**" var-fragment="extensions.mbdf#A-UserGuide" />
 </div>
 <p/>
 
-* {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%%.
 </span>
 {#====================================================================================================================#}
 <span id="heading_release_product">Release the product</span>
 <span id="desc_release_product">
-* **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the project is very simple.
+* **Create a new jar file**. The jar file should be ==cross-platform and should work in a computer that has Java 11==.
 * **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
   1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.
@@ -348,11 +435,6 @@ On a somewhat related note, you can also **create similar product websites for y
 </div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_"></span>
-<span id="desc_">
-
-</span>
-{#====================================================================================================================#}
 <span id="heading_add_an_extension">Add an extension</span>
 <span id="desc_add_an_extension">
 
@@ -374,64 +456,77 @@ On a somewhat related note, you can also **create similar product websites for y
 {%- endmacro %}
 {#====================================================================================================================#}
 
-{% macro get_ip_step_heading(step) -%}
-{% set deadline_badge = timing_badge(step.deadline, 'danger') if step.deadline else ''  %}
+{% macro get_xp_step_heading(step, tasks_file, is_summary=false) -%}
+{% set deadline_type = step.deadline_type if step.deadline_type else 'danger' %}
+{% set deadline_badge = timing_badge(step.deadline, deadline_type if is_summary else 'secondary') if step.deadline else ''  %}
 {% if step.id == 'add_increments' %}
-Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ deadline_badge }}
+{% set prefix = "Add Increment" + ("" if (step.increments | length) == 1 else "s") %}
+{{ prefix }}{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ deadline_badge }}
 {% else %}
-<include src="ip-tasks.mbdf#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
+<include src="{{ tasks_file }}#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
 {% endif %}
 {%- endmacro %}
 {#====================================================================================================================#}
 
-{% macro show_ip_step(number, step) %}
+{% macro show_xp_step(number, step, tasks_file) %}
 
-#### {{ thumb(number) }} {{ get_ip_step_heading(step) | trim }}
+#### {{ thumb(number) }} {{ get_xp_step_heading(step, tasks_file) | trim }}
 
 {% if step.id == 'add_increments' %}
   {% if step.pre != '' %}
-<include src="ip-tasks.mbdf#extra_{{ step.increments[0].id }}" optional />
+<include src="{{ tasks_file }}#extra_{{ step.increments[0].id }}" optional />
   {% endif %}
   {% for i in step.increments %}
     {% set file = 'text.md' if i.id[0] == 'L' else 'extensions.mbdf' %}
-    {% set tag = ('var-tag=' + i.tag) if i.tag != '' else '' %}
+    {% set tag = ('var-tag=' + i.tag) if i.tag else '' %}
 <include src="dukeFragment.md" boilerplate var-header="**`{{ i.id }}`: {{ i.title }}**" {{ tag }} var-fragment="{{ file }}#{{ i.id }}" />
   {% endfor %}
 {% else %}
-<include src="ip-tasks.mbdf#desc_{{ step.id }}" />
+<include src="{{ tasks_file }}#desc_{{ step.id }}" />
 {% endif %}
 <p/>
 {% endmacro %}
 
 {#====================================================================================================================#}
 
-{% macro show_ip_steps(steps) %}
+{% macro show_xp_steps(steps, tasks_file) %}
 {% for step in steps %}
-{{ show_ip_step(loop.index, step) }}
+{{ show_xp_step(loop.index, step, tasks_file) }}
 {% endfor %}
 {% endmacro %}
 {#====================================================================================================================#}
 
-{% macro show_ip_steps_summary(steps) %}
+{% macro show_xp_steps_summary(steps, tasks_file) %}
 {% call show_project_summary_lead()%}
-{% for step in steps %}1. {{ get_ip_step_heading(step) | trim }}
+{% for step in steps %}1. {{ get_xp_step_heading(step, tasks_file, is_summary=true) | trim }}
 {% endfor %}
 {% endcall %}
 {% endmacro %}
 {#====================================================================================================================#}
 
-{% macro show_ip_page(week_num) %}
-{% set this_week_steps = ip_schedule['week' + week_num] %}
+{% macro show_xp_page(week_num, steps, tasks_file) %}
 <div id="main">
 
-{{ show_ip_steps_summary(this_week_steps) }}
+{{ show_xp_steps_summary(steps, tasks_file) }}
 
 <div id="body">
 
-<include src="ip-tasks.mbdf#{{ module | lower }}-week{{ week_num }}-intro" optional/>
+<include src="{{ tasks_file }}#{{ module | lower }}-week{{ week_num }}-intro" optional/>
 
-{{ show_ip_steps(this_week_steps) }}
+{{ show_xp_steps(steps, tasks_file) }}
 
 </div>
 </div>
+{% endmacro %}
+{#====================================================================================================================#}
+
+{% macro show_ip_page(week_num) %}
+{{ show_xp_page(week_num, cs2113_ip_schedule['week' + week_num], 'ip-tasks.mbdf') }}
+{% endmacro %}
+{#====================================================================================================================#}
+
+{% macro show_admin_ip_page(week_num) %}
+{% call show_admin_page("ip-w" + week_num) %}
+{{ show_ip_page(week_num) }}
+{% endcall %}
 {% endmacro %}

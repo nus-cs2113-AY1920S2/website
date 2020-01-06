@@ -1,0 +1,37 @@
+{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+
+#### {{ thumb(1) }} **Discuss tP progress**
+
+* Show your collaborative project doc(s) to the tutor.
+* Share the project direction, user profile, value proposition you have decided upon.
+* Give feedback to the other team. Some examples:
+  * Suppose you belong to the proposed target user group; do you find the value proposition attractive?
+  * Do you foresee any potential violation of the project constraints?
+
+#### {{ thumb(2) }} **Review Peer iP PRs**
+
+* **Review two PRs** created by your classmates. PRs can be found [here]({{ module_org }}/duke/pulls).
+  * The allocation of which PRs to review will be specified nearer to the date.
+  * Recommended to be done in pairs.
+  * To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
+  * If the student you have been allocated to review has not created a PR by Monday, you can review another PR of your choice.
+
+* You are expected to have read the following guidelines as given in this week's iP tasks:
+
+{{ embed_topic("../../admin/appendixE-gitHub.md#pr-review-guidelines", "Admin " + icon_embedding + " **Using GitHub → Guidelines for Reviewing PRs**", "3", indent="2", status="expanded") }}
+
+
+1. **Locate PRs from that team**: Go to the [list of Duke PRs]({{ module_org }}/duke/pulls). Locate the PRs (you can filter using `tutorial.*` and `team.*` labels).
+   <img src="../../admin/images/filterPrsUsingLabels.png" />
+1. **Pick a PR to review**, giving priority to ==PRs with fewer comments==.
+1. **Discuss abstraction aspect of the code**: Go through the code, and discuss <br/>
+   {{ icon_tip }} To identify long methods or deep nesting, zoom out and scroll through the entire PR code to do a visual inspection (no need to read the code line-by-line). After visually locating a method that looks too long/deep, have a closer look to see it can be improved by using better abstraction.If you are unsure about a case, you can also rope the tutor in to the discussion.
+1. **Add comments**: If the team agrees that the abstraction aspect of specific piece of code should be improved some way, add a comment (team members can take turns on adding comments).<br/>
+   e.g., `This method looks rather long; perhaps it can be shortened using SLAP?`
+1. **Repeat for remaining PRs**: Continue to review PRs until the 30 minutes mark.
+
+* Additional guidelines:
+  * Comment on the PR, these aspects in particular:
+    * coding standard violations
+    * ==abstraction (SLAP, arrow-head style code, too-long methods, too-deep nesting)==
+  * At the end of the review, we recommend you to choose `Comment` (i.e., not `Approve` or `Request changes`)

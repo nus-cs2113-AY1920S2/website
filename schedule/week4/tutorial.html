@@ -54,7 +54,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="/website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
           <hr>
           <span><strong> Individual Project (iP):</strong></span>
@@ -96,7 +96,62 @@
           </nav>
           <p></p>
           <h1 id="week-4-feb-3-tutorial">Week 4 <small><small><span class="dimmed">[Feb 3]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-4-feb-3-tutorial"></a></h1>
-          <div></div>
+          <div>
+            <h4 id="1-discuss-tp-progress"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <strong>Discuss tP progress</strong><a class="fa fa-anchor" href="#1-discuss-tp-progress"></a></h4>
+            <ul>
+              <li>Show your collaborative project doc(s) to the tutor.</li>
+              <li>Share the project direction, user profile, value proposition you have decided upon.</li>
+              <li>Give feedback to the other team. Some examples:
+                <ul>
+                  <li>Suppose you belong to the proposed target user group; do you find the value proposition attractive?</li>
+                  <li>Do you foresee any potential violation of the project constraints?</li>
+                </ul>
+              </li>
+            </ul>
+            <h4 id="2-review-peer-ip-prs"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <strong>Review Peer iP PRs</strong><a class="fa fa-anchor" href="#2-review-peer-ip-prs"></a></h4>
+            <ul>
+              <li>
+                <p><strong>Review two PRs</strong> created by your classmates. PRs can be found <a href="https://github.com/nus-cs2113-AY1920S2/duke/pulls">here</a>.</p>
+                <ul>
+                  <li>The allocation of which PRs to review will be specified nearer to the date.</li>
+                  <li>Recommended to be done in pairs.</li>
+                  <li>To find the target PR, you can use a filter <code>author:AuthorUsername</code> e.g., <code>author:johnDoe</code></li>
+                  <li>If the student you have been allocated to review has not created a PR by Monday, you can review another PR of your choice.</li>
+                </ul>
+              </li>
+              <li>
+                <p>You are expected to have read the following guidelines as given in this week's iP tasks:</p>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <panel type src="/website/admin/appendixE-gitHub._include_.html#pr-review-guidelines" header="Admin <md>:glyphicon-log-in:</md> **Using GitHub → Guidelines for Reviewing PRs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
+                class="embedding" expanded fragment="pr-review-guidelines"></panel>
+            </div>
+            <p></p>
+            <ol>
+              <li><strong>Locate PRs from that team</strong>: Go to the <a href="https://github.com/nus-cs2113-AY1920S2/duke/pulls">list of Duke PRs</a>. Locate the PRs (you can filter using <code>tutorial.*</code> and <code>team.*</code> labels).
+                <img src="/website/admin/images/filterPrsUsingLabels.png"></li>
+              <li><strong>Pick a PR to review</strong>, giving priority to <mark>PRs with fewer comments</mark>.</li>
+              <li><strong>Discuss abstraction aspect of the code</strong>: Go through the code, and discuss <br>
+                <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> To identify long methods or deep nesting, zoom out and scroll through the entire PR code to do a visual inspection (no need to
+                read the code line-by-line). After visually locating a method that looks too long/deep, have a closer look to see it can be improved by using better abstraction.If you are unsure about a case, you can also rope the tutor in to the discussion.</li>
+              <li><strong>Add comments</strong>: If the team agrees that the abstraction aspect of specific piece of code should be improved some way, add a comment (team members can take turns on adding comments).<br> e.g., <code>This method looks rather long; perhaps it can be shortened using SLAP?</code></li>
+              <li><strong>Repeat for remaining PRs</strong>: Continue to review PRs until the 30 minutes mark.</li>
+            </ol>
+            <ul>
+              <li>Additional guidelines:
+                <ul>
+                  <li>Comment on the PR, these aspects in particular:
+                    <ul>
+                      <li>coding standard violations</li>
+                      <li><mark>abstraction (SLAP, arrow-head style code, too-long methods, too-deep nesting)</mark></li>
+                    </ul>
+                  </li>
+                  <li>At the end of the review, we recommend you to choose <code>Comment</code> (i.e., not <code>Approve</code> or <code>Request changes</code>)</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
@@ -104,6 +159,10 @@
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#week-4-feb-3-tutorial">Week 4 [Feb 3] - Tutorial&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#1-discuss-tp-progress">1 Discuss tP progress&#x200E;</a>
+              <a class="nav-link py-1" href="#2-review-peer-ip-prs">2 Review Peer iP PRs&#x200E;</a>
+            </nav>
 
           </nav>
         </div>
@@ -111,7 +170,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 02 Jan 2020 12:27:35 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 03:30:50 GMT</small></div>
     </footer>
   </div>
 </body>

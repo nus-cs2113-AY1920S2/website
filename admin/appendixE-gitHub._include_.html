@@ -52,28 +52,32 @@
         </div>
       </modal>
     </div>
+    <h3 id="guidelines-for-reviewing-prs">
+      <div class="text-white bg-dark p-1">Guidelines for Reviewing PRs</div>
+    </h3>
+    <div id="pr-review-guidelines">
+      <box type="success">
+        <p>We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
+        </p>
+      </box>
+      <ul>
+        <li>If you are new to GitHub PRs, see <a href="https://help.github.com/en/articles/about-pull-request-reviews">GitHub help on how to review PRs</a>.</li>
+        <li>Read the blog post <a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - by David Lloyd (a Red Hat developer). In particular, follow the
+          tip about phrasing objections as questions.</li>
+        <li>Rather than give one overall comment for the entire PR, add specific comments at relevant places of the code.</li>
+        <li>Feel free to ask for more info from the author, to help you understand the code/design. For example, you can ask why the author chose to write the code in a specific way.</li>
+        <li>Feel free to compliment the author when appropriate <span class="dimmed">e.g., <em>hey, I like how clean this bit of code is</em> 👍</span></li>
+        <li>You can also suggest alternatives for the author to consider. Feel free to refer back to your own PR if you think a comparison would benefit the author. <mark>You are very welcome to offer to help the author with the project</mark> (in your PR
+          review, or outside of it) if you think the author needs such help i.e., as an informal mentor. Such mentoring will help both the author and you to become stronger programmers.</li>
+        <li>You can use Markdown (specifically, <a href="https://guides.github.com/features/mastering-markdown/">GitHub-Flavored Markdown</a>) in your comments.</li>
+      </ul>
+      <p><strong>Guidelines for authors</strong>:</p>
+      <ul>
+        <li>Don't get into arguments with reviewers. If you disagree with the reviewer, you can explain your own view in a non-confrontational way without trying to prove your way is better.</li>
+        <li>Thank reviewers for their inputs.</li>
+      </ul>
+    </div>
     <div id="organization-setup">
-      <h3 id="guidelines-for-reviewing-prs">
-        <div class="text-white bg-dark p-1">Guidelines for Reviewing PRs</div>
-      </h3>
-      <div id="pr-review-guidelines">
-        <ul>
-          <li>If you are new to GitHub PRs, see <a href="https://help.github.com/en/articles/about-pull-request-reviews">GitHub help on how to review PRs</a>.</li>
-          <li>Read the blog post <a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - by David Lloyd (a Red Hat developer). In particular, follow
-            the tip about phrasing objections as questions.</li>
-          <li>Rather than give one overall comment for the entire PR, add specific comments at relevant places of the code.</li>
-          <li>Feel free to ask for more info from the author, to help you understand the code/design. For example, you can ask why the author chose to write the code in a specific way.</li>
-          <li>Feel free to compliment the author when appropriate <span class="dimmed">e.g., <em>hey, I like how clean this bit of code is</em> 👍</span></li>
-          <li>You can also suggest alternatives for the author to consider. Feel free to refer back to your own PR if you think a comparison would benefit the author. <mark>You are very welcome to offer to help the author with the project</mark> (in your
-            PR review, or outside of it) if you think the author needs such help i.e., as an informal mentor. Such mentoring will help both the author and you to become stronger programmers.</li>
-          <li>You can use Markdown (specifically, <a href="https://guides.github.com/features/mastering-markdown/">GitHub-Flavored Markdown</a>) in your comments.</li>
-        </ul>
-        <p><strong>Guidelines for authors</strong>:</p>
-        <ul>
-          <li>Don't get into arguments with reviewers. If you disagree with the reviewer, you can explain your own view in a non-confrontational way without trying to prove your way is better.</li>
-          <li>Thank reviewers for their inputs.</li>
-        </ul>
-      </div>
       <h3 id="organization-setup">
         <div class="text-white bg-dark p-1">Organization Setup</div>
       </h3>
@@ -84,7 +88,7 @@
       <ul>
         <li>Create a GitHub organization with the following details:
           <ul>
-            <li><strong>Organization name</strong> <mark>(all UPPER CASE) : <code>AY1920S2-TEAM_ID</code></mark>. e.g.  <code>AY1920S2-CS2103T-W12-1</code>, <code>AY1920S2-CS2103-F09-3</code></li>
+            <li><strong>Organization name</strong> <mark>(all UPPER CASE) : <code>AY1920S2-TEAM_ID</code></mark>. e.g.  <code>AY1920S2-CS2113T-W12-1</code>, <code>AY1920S2-CS2113-F09-3</code></li>
             <li>Plan:  Open Source ($0/month)</li>
             <li>This organization belongs to: My personal account</li>
           </ul>
@@ -187,8 +191,8 @@
                       <p>Given below are how to give credit for things you reuse from elsewhere. These requirements are specific to this module <span class="dimmed">i.e., not applicable outside the module (outside the module you should follow the rules specified by your employer and the license of the reused work)</span></p>
                       <p>If you <strong>used a third party library</strong>:</p>
                       <ul>
-                        <li>Mention in the <code>README.adoc</code> (under the <em>Acknowledgements</em> section)</li>
-                        <li>mention in the
+                        <li>iP/tP: Mention in the <code>README</code> file (under the <em>Acknowledgements</em> section)</li>
+                        <li>tP: Mention in the
                           <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented</li>
                       </ul>
                       <p>If you <strong>reused code snippets found on the Internet</strong> <span class="dimmed">e.g. from StackOverflow answers</span> or<br>
