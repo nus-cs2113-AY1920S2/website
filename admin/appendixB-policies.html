@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: Apdx B: Module Policies</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -55,21 +55,19 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+
           <hr>
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+
+
           <hr>
           <span><strong> Team Project (tP):</strong></span>
           <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+
           <li><a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
-          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -275,7 +273,8 @@
               </h3>
               <div class="indented">
                 <div>
-                  <p>As most of the work is graded individually, team sizes of 3, 4, or 5 is not expected to affect your grade. While managing larger teams is harder, larger teams have more collective know-how, which can cancel each other.</p>
+                  <p>As most of the work is graded individually, team sizes of 4 or 6 are not expected to affect your grade. While managing larger teams is harder, larger teams have more collective know-how, which can cancel each other. We'll give some consideration
+                    when grading 3-person teams.</p>
                 </div>
               </div>
             </div>
@@ -418,28 +417,21 @@
                     <ul>
                       <li>If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
                         <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span>
+                        <pre><code class="hljs java"><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span>
 {Your implmentation of the reused solution here ...}
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </li>
                       <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using
                         <trigger trigger="click" for="modal:reusePolicy-authorTags"><code>@@author</code> tags</trigger>)<br> Format:
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span>
+                        <pre><code class="hljs java"><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span>
 <span class="hljs-comment">//{Info about the source...}</span>
 
 {<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}
 
 <span class="hljs-comment">//@@author</span>
 </span></code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):
-                        <div class="code-block">
-                          <pre><code class="hljs java">persons = getList()
+                        <pre><code class="hljs java">persons = getList()
 <span class="hljs-comment">//@@author johndoe-reused</span>
 <span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span>
 Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {
@@ -451,8 +443,6 @@ Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;Cu
 <span class="hljs-comment">//@@author</span>
 <span class="hljs-keyword">return</span> persons;
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </li>
                     </ul>
                   </box>
@@ -764,7 +754,7 @@ method 2 ...
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 12:24:57 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 06 Jan 2020 16:14:12 GMT</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 6 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -55,21 +55,19 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+
           <hr>
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+
+
           <hr>
           <span><strong> Team Project (tP):</strong></span>
           <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+
           <li><a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
-          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -270,8 +268,7 @@
                     <p><strong>You can use polymorphism to write code that can work with multiple types, but that approach has some shortcomings.</strong></p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following <code>Box</code> class. It can be used only for storing <code>Integer</code> objects.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BoxForIntegers</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BoxForIntegers</span> </span>{
     <span class="hljs-keyword">private</span> Integer x;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(Integer x)</span> </span>{
@@ -282,12 +279,9 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>To store <code>String</code> objects, another similar class is needed, resulting in the duplication of the entire class. As you can see, if you need to store many different types of objects, you could end up writing many similar
                         classes.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BoxForString</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BoxForString</span> </span>{
     <span class="hljs-keyword">private</span> String x;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(String x)</span> </span>{
@@ -298,11 +292,8 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>One solution for this problem is to use <em>polymorphism</em> i.e., write the <code>Box</code> class to store <code>Object</code> objects.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
     <span class="hljs-keyword">private</span> Object x;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(Object x)</span> </span>{
@@ -313,8 +304,6 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>The problem with this solution is, since its methods accept or return an <code>Object</code>, you are free to pass in whatever you want, provided that it is not one of the primitive types. There is no way to verify, at compile time,
                         how the class is used. One part of the code may place an <code>Integer</code> in the box and expect to get <code>Integers</code> out of it, while another part of the code may mistakenly pass in a <code>String</code>, resulting
                         in a runtime error.
@@ -355,19 +344,15 @@
                   <p>This section includes extract from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>, with some adaptations.</p>
                   <p><strong>The definition of a generic class includes a <em>type parameter section</em>, delimited by angle brackets (<code>&lt;&gt;</code>).</strong> It specifies the <em>type parameters</em> (also called <em>type variables</em>) <code>T1</code>,
                     <code>T2</code>, ..., and <code>Tn</code>. A generic class is defined with the following format:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">name</span>&lt;<span class="hljs-title">T1</span>, <span class="hljs-title">T2</span>, ..., <span class="hljs-title">Tn</span>&gt; </span>{ <span class="hljs-comment">/* ... */</span> }
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">name</span>&lt;<span class="hljs-title">T1</span>, <span class="hljs-title">T2</span>, ..., <span class="hljs-title">Tn</span>&gt; </span>{ <span class="hljs-comment">/* ... */</span> }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is a generic <code>Box</code> class. The class declaration <code>Box&lt;T&gt;</code> introduces the type variable, <code>T</code>, which is also used inside the
                       class to refer to the same type.</p>
                     <div class="row">
                       <div class="col-sm-6">
                         <p>Using <code>Object</code> as the type:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
     <span class="hljs-keyword">private</span> Object x;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(Object x)</span> </span>{
@@ -379,13 +364,10 @@
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </div>
                       <div class="col-sm-6">
                         <p>A generic <code>Box</code> using type parameter <code>T</code>:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
     <span class="hljs-keyword">private</span> T x;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(T x)</span> </span>{
@@ -397,8 +379,6 @@
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </div>
                     </div>
                     <p>As you can see, all occurrences of <code>Object</code> are replaced by <code>T</code>.
@@ -409,14 +389,11 @@
                     class itself. Note that in some cases you can omit the type parameter i.e., <code>&lt;&gt;</code> if the type parameter can be inferred from the context.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Using the generic <code>Box</code> class to store <code>Integer</code> objects:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java">Box&lt;Integer&gt; integerBox;
+                    <pre><code class="hljs java">Box&lt;Integer&gt; integerBox;
 integerBox = <span class="hljs-keyword">new</span> Box&lt;&gt;(); <span class="hljs-comment">// type parameter omitted as it can be inferred</span>
 integerBox.set(Integer.valueOf(<span class="hljs-number">4</span>));
 Integer i = integerBox.get(); <span class="hljs-comment">// returns an Integer</span>
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <ul>
                       <li><code>Box&lt;Integer&gt; integerBox;</code> simply declares that <code>integerBox</code> will hold a reference to a &quot;Box of Integer&quot;, which is how <code>Box&lt;Integer&gt;</code> is read.</li>
                       <li><code>integerBox = new Box&lt;&gt;();</code> instantiates a <code>Box&lt;Integer&gt;</code> class. Note the <code>&lt;&gt;</code> (an empty pair of angle brackets, also called the <em>diamond operator</em>) between the class name
@@ -427,26 +404,19 @@ Integer i = integerBox.get(); <span class="hljs-comment">// returns an Integer</
                   <p><strong>The compiler is able to check for type errors when using generic code.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below will fail because it creates a <code>Box&lt;String&gt;</code> and then tries to pass <code>Double</code> objects into it.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java">Box&lt;String&gt; stringBox = <span class="hljs-keyword">new</span> Box&lt;&gt;();
+                    <pre><code class="hljs java">Box&lt;String&gt; stringBox = <span class="hljs-keyword">new</span> Box&lt;&gt;();
 stringBox.set(Double.valueOf(<span class="hljs-number">5.0</span>)); <span class="hljs-comment">//compile error!</span>
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </box>
                   <p><strong>A generic class can have multiple type parameters.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The generic <code>OrderedPair</code> class, which implements the generic Pair interface:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Pair</span>&lt;<span class="hljs-title">K</span>, <span class="hljs-title">V</span>&gt; </span>{
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Pair</span>&lt;<span class="hljs-title">K</span>, <span class="hljs-title">V</span>&gt; </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> K <span class="hljs-title">getKey</span><span class="hljs-params">()</span></span>;
     <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">getValue</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OrderedPair</span>&lt;<span class="hljs-title">K</span>, <span class="hljs-title">V</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">Pair</span>&lt;<span class="hljs-title">K</span>, <span class="hljs-title">V</span>&gt; </span>{
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OrderedPair</span>&lt;<span class="hljs-title">K</span>, <span class="hljs-title">V</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">Pair</span>&lt;<span class="hljs-title">K</span>, <span class="hljs-title">V</span>&gt; </span>{
 
     <span class="hljs-keyword">private</span> K key;
     <span class="hljs-keyword">private</span> V value;
@@ -460,15 +430,10 @@ stringBox.set(Double.valueOf(<span class="hljs-number">5.0</span>)); <span class
     <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">getValue</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> value; }
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>The following statements create two instantiations of the <code>OrderedPair</code> class:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java">Pair&lt;String, Integer&gt; p1 = <span class="hljs-keyword">new</span> OrderedPair&lt;&gt;(<span class="hljs-string">"Even"</span>, <span class="hljs-number">8</span>);
+                    <pre><code class="hljs java">Pair&lt;String, Integer&gt; p1 = <span class="hljs-keyword">new</span> OrderedPair&lt;&gt;(<span class="hljs-string">"Even"</span>, <span class="hljs-number">8</span>);
 Pair&lt;String, String&gt;  p2 = <span class="hljs-keyword">new</span> OrderedPair&lt;&gt;(<span class="hljs-string">"hello"</span>, <span class="hljs-string">"world"</span>);
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>The code, <code>new OrderedPair&lt;String, Integer&gt;</code>, instantiates <code>K</code> as a <code>String</code> and <code>V</code> as an <code>Integer</code>. Therefore, the parameter types of <code>OrderedPair</code>'s constructor
                       are
                       <code>String</code> and <code>Integer</code>, respectively.
@@ -603,8 +568,7 @@ Pair&lt;String, String&gt;  p2 = <span class="hljs-keyword">new</span> OrderedPa
               <div>
                 <p>The <code>ArrayList</code> class is a resizable-array implementation of the <code>List</code> interface. Unlike a normal <code>array</code>, an <code>ArrayList</code> can grow in size as you add more items to it. The example below illustrate
                   some of the useful methods of the <code>ArrayList</code> class using an <code>ArrayList</code> of <code>String</code> objects.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;
+                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ArrayListDemo</span> </span>{
 
@@ -648,8 +612,6 @@ Pair&lt;String, String&gt;  p2 = <span class="hljs-keyword">new</span> OrderedPa
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">Before adding any items:[]
@@ -686,8 +648,7 @@ After clearing: []
                           <question>
                             <p>Add the missing methods to the class given below so that it produces the output given.</p>
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Use an <code>ArrayList</code> to store the numbers.</p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> add your methods here</span>
 
@@ -705,8 +666,6 @@ After clearing: []
 
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                             </p>
                             <pre><code class="hljs">Adding numbers to the list
@@ -721,8 +680,7 @@ The total is: 27
 </code></pre>
                             <div slot="hint">
                               <p>Partial solution:</p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;
+                              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ArrayList&lt;Integer&gt; numbers = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
@@ -736,8 +694,6 @@ The total is: 27
 
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                             </div>
                           </question>
                         </panel>
@@ -772,8 +728,7 @@ The total is: 27
               <div>
                 <p><code>HashMap</code> is an implementation of the <code>Map</code> interface. It allows you to store a collection of <em>key-value pairs</em>. The example below illustrates how to use a <code>HashMap&lt;String, Point&gt;</code> to maintain
                   a list of coordinates and their identifiers e.g., the identifier <code>x1</code> is used to identify the point <code>0,0</code> where <code>x1</code> is the <em>key</em> and <code>0,0</code> is the <em>value</em>.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Point;
+                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Point;
 <span class="hljs-keyword">import</span> java.util.HashMap;
 <span class="hljs-keyword">import</span> java.util.Map;
 
@@ -819,8 +774,6 @@ The total is: 27
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">Coordinates of x1: [0,0]
@@ -846,8 +799,7 @@ Number of keys after clearing: 0
                           <question>
                             <p>The class given below keeps track of how many people signup to attend an event on each day of the week. Add the missing methods so that it produces the output given.</p>
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Use an <code>HashMap</code> to store the number of entries for each day.</p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> HashMap&lt;String, Integer&gt; roster = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
 
     <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> add your methods here</span>
@@ -863,8 +815,6 @@ Number of keys after clearing: 0
 
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                             </p>
                             <pre><code class="hljs">Monday =&gt; 2
@@ -873,8 +823,7 @@ Wednesday =&gt; 2
 </code></pre>
                             <div slot="hint">
                               <p>Partial solution:</p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.HashMap;
+                              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.HashMap;
 <span class="hljs-keyword">import</span> java.util.Map;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -892,8 +841,6 @@ Wednesday =&gt; 2
     <span class="hljs-comment">// ...</span>
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                             </div>
                           </question>
                         </panel>
@@ -949,8 +896,7 @@ Wednesday =&gt; 2
               <p><strong>You can use the <a href="https://docs.oracle.com/javase/9/docs/api/java/io/File.html"><code>java.io.File</code></a> class to represent a file object</strong>. It can be used to access properties of the file object.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code creates a <code>File</code> object to represent a file <code>fruits.txt</code> that exists in the <code>data</code> directory <mark>relative to the current working directory</mark>                  and uses that object to print some properties of the file.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
+                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileClassDemo</span> </span>{
 
@@ -963,8 +909,6 @@ Wednesday =&gt; 2
 
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">full path: C:\sample-code\data\fruits.txt
@@ -980,8 +924,7 @@ is Directory?: false
               <p><strong>You can read from a file using a <code>Scanner</code> object that uses a <code>File</code> object as the <em>source</em> of data.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses a <code>Scanner</code> object to read (and print) contents of a text file line-by-line:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
+                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
 <span class="hljs-keyword">import</span> java.io.FileNotFoundException;
 <span class="hljs-keyword">import</span> java.util.Scanner;
 
@@ -1005,8 +948,6 @@ is Directory?: false
 
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> i.e., contents of the <code>data/fruits.txt</code></p>
                 <pre><code class="hljs">5 Apples
 3 Bananas
@@ -1016,8 +957,7 @@ is Directory?: false
               <p><strong>You can use a <a href="https://docs.oracle.com/javase/9/docs/api/java/io/FileWriter.html"><code>java.io.FileWriter</code></a> object to write to a file.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>writeToFile</code> method below uses a <code>FileWrite</code> object to write to a file. The method is being used to write two lines to the file <code>temp/lines.txt</code>.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.FileWriter;
+                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.FileWriter;
 <span class="hljs-keyword">import</span> java.io.IOException;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileWritingDemo</span> </span>{
@@ -1039,8 +979,6 @@ is Directory?: false
 
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> Contents of the <code>temp/lines.txt</code>:</p>
                 <pre><code class="hljs">first line
 second line
@@ -1050,21 +988,17 @@ second line
               <p><strong>You can create a <code>FileWriter</code> object that appends to the file</strong> (instead of overwriting the current content) by specifying an additional boolean parameter to the constructor.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The method below appends to the file rather than overwrites.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{
     FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// create a FileWriter in append mode</span>
     fw.write(textToAppend);
     fw.close();
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
               <p><strong>The <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html"><code>java.nio.file.Files</code></a> is a utility class that provides several useful file operations.</strong> It relies on the <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Paths.html"><code>java.nio.file.Paths</code></a>                file to generate <code>Path</code> objects that represent file paths.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example uses the <code>Files</code> class to copy a file and delete a file.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.IOException;
+                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.IOException;
 <span class="hljs-keyword">import</span> java.nio.file.Files;
 <span class="hljs-keyword">import</span> java.nio.file.Paths;
 
@@ -1077,8 +1011,6 @@ second line
 
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
               <p>The techniques above are good enough to manipulate simple text files. Note that <strong>it is also possible to <a href="https://www.tutorialspoint.com/java/java_files_io.htm">perform file I/O operations using other classes</a></strong>.</p>
             </div>
@@ -1176,13 +1108,10 @@ second line
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>search</code> method below can be called as <code>search()</code>, <code>search(&quot;book&quot;)</code>, <code>search(&quot;book&quot;, &quot;paper&quot;)</code>,
                   etc.
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">search</span><span class="hljs-params">(String ... keywords)</span></span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">search</span><span class="hljs-params">(String ... keywords)</span></span>{
    <span class="hljs-comment">// method body</span>
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
               <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:</p>
               <ul>
@@ -1423,8 +1352,7 @@ second line
               <img src="/website/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
               <p></p>
               <p><strong>3. Try to merge the <code>fix1</code> branch onto the <code>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
-              <div class="code-block">
-                <pre><code class="hljs">COLORS
+              <pre><code class="hljs">COLORS
 ------
 blue
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
@@ -1435,33 +1363,24 @@ green
 red
 white
 </code></pre>
-                <div class="code-block-lang"><span>txt</span></div>
-              </div>
               <p><strong>4. Observe how the conflicted part is marked</strong> between a line starting with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and a line starting with <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>, separated by another line starting with
                 <code>=======</code>.</p>
               <p>This is the conflicting part that is coming from the <code>master</code> branch:</p>
-              <div class="code-block">
-                <pre><code class="hljs">
+              <pre><code class="hljs">
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 black
 =======
 
 </code></pre>
-                <div class="code-block-lang"><span>txt</span></div>
-              </div>
               <p>This is the conflicting part that is coming from the <code>fix1</code> branch:</p>
-              <div class="code-block">
-                <pre><code class="hljs">
+              <pre><code class="hljs">
 =======
 green
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1
 
 </code></pre>
-                <div class="code-block-lang"><span>txt</span></div>
-              </div>
               <p><strong>5. Resolve the conflict by editing the file</strong>. Let us assume you want to keep both lines in the merged version. You can modify the file to be like this:</p>
-              <div class="code-block">
-                <pre><code class="hljs">COLORS
+              <pre><code class="hljs">COLORS
 ------
 blue
 black
@@ -1469,8 +1388,6 @@ green
 red
 white
 </code></pre>
-                <div class="code-block-lang"><span>txt</span></div>
-              </div>
               <p><strong>6. Stage the changes, and commit.</strong></p>
             </div>
             <div></div>
@@ -1509,15 +1426,12 @@ white
                   <div>
                     <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
                     <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs md">
+                    <pre><code class="hljs md">
 <span class="hljs-section"># Introduction</span>
 Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
 This repo can be used to practice creating PRs.
 
 </code></pre>
-                      <div class="code-block-lang"><span>md</span></div>
-                    </div>
                     <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
                     <tabs>
                       <tab header="SourceTree">
@@ -1670,24 +1584,18 @@ git pull origin master
                     </span>
                   </font>
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p>
                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                     </span>
                   </font>
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;
 <span class="hljs-keyword">else</span> error(<span class="hljs-string">"incorrect input"</span>);
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
             </div>
             <div></div>
@@ -1723,29 +1631,23 @@ git pull origin master
                     </span>
                   </font>
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     length = length * width;
     <span class="hljs-keyword">return</span> length;
 }
 
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p>
                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                     </span>
                   </font>
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     <span class="hljs-keyword">double</span> area;
     area = length * width;
     <span class="hljs-keyword">return</span> area;
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
             </div>
             <div></div>
@@ -1951,7 +1853,7 @@ git pull origin master
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 12:24:57 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 06 Jan 2020 16:14:12 GMT</small></div>
   </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 7 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -55,21 +55,19 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+
           <hr>
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+
+
           <hr>
           <span><strong> Team Project (tP):</strong></span>
           <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+
           <li><a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
-          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -304,8 +302,7 @@
                 <p><strong>Javadoc is a tool for generating API documentation in HTML format from doc comments in source.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tool tips.</p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example method header comment in JavaDoc format (adapted from <a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">Oracle's Java documentation</a>)</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-comment">/**
+                  <pre><code class="hljs java"><span class="hljs-comment">/**
  * Returns an Image object that can then be painted on the screen.
  * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name
  * argument is a specifier that is relative to the url argument.
@@ -328,8 +325,6 @@
         }
  }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Generated HTML documentation:</p>
                   <p><a href="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" target="_self"><img src="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" alt class="img-fluid"></a></p>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Tooltip generated by Intellij IDE:</p>
@@ -365,8 +360,7 @@
               <div>
                 <p>In the absence of more extensive guidelines (e.g., given in a coding standard adopted by your project), you can follow the two examples below in your code.</p>
                 <p><strong>A minimal javadoc comment example for methods:</strong></p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-comment">/**
+                <pre><code class="hljs java"><span class="hljs-comment">/**
  * Returns lateral location of the specified position.
  * If the position is unset, NaN is returned.
  *
@@ -381,11 +375,8 @@
   ...
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><strong>A minimal javadoc comment example for classes:</strong></p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">package</span> ...
+                <pre><code class="hljs java"><span class="hljs-keyword">package</span> ...
 
 <span class="hljs-keyword">import</span> ...
 
@@ -397,8 +388,6 @@
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
               <div>
                 <div>
@@ -569,15 +558,12 @@
                     </span>
                   </font>
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
+                <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
 x++;
 
 <span class="hljs-comment">//trim the input</span>
 trimInput();
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
               <div class="alt-python">
                 <p>
@@ -585,15 +571,12 @@ trimInput();
                     </span>
                   </font>
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs python">// increment x
+                <pre><code class="hljs python">// increment x
 x = x + <span class="hljs-number">1</span>
 
 //trim the input
 trim_input()
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
               </div>
             </div>
             <div></div>
@@ -629,27 +612,21 @@ trim_input()
                       <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                         </span>
                       </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+                    <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>
                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                         </span>
                       </font>
                     </p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+                    <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                 </div>
                 <div class="alt-python">
@@ -658,25 +635,19 @@ trim_input()
                       <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                         </span>
                       </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+                    <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
     ...
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p>
                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                         </span>
                       </font>
                     </p>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
 <span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
     ...
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                   </div>
                 </div>
               </box>
@@ -711,25 +682,19 @@ trim_input()
                 </span> <strong>What</strong> : The specification of what the code <em>supposed</em> to do. The reader can compare such comments to the implementation to verify if the implementation is correct</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: This method is possibly buggy because the implementation does not seem to match the comment. In this case the comment could help the reader to detect the bug.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-comment">/** Removes all spaces from the {<span class="hljs-doctag">@code</span> input} */</span>
+                <pre><code class="hljs java"><span class="hljs-comment">/** Removes all spaces from the {<span class="hljs-doctag">@code</span> input} */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">compact</span><span class="hljs-params">(String input)</span></span>{
     input.trim();
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
               <p><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
                 </span> <strong>Why</strong> : The rationale for the current implementation.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: Without this comment, the reader will not know the reason for calling this method.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-comment">// Remove spaces to comply with IE23.5 formatting rules</span>
+                <pre><code class="hljs java"><span class="hljs-comment">// Remove spaces to comply with IE23.5 formatting rules</span>
 compact(input);
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
               <p><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
                 </span> <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
@@ -739,23 +704,17 @@ compact(input);
                   <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                     </span>
                   </font> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
+                <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
 <span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p>
                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                     </span>
                   </font> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
-                <div class="code-block">
-                  <pre><code class="hljs java">
+                <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;
 <span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
             </div>
             <div></div>
@@ -1304,7 +1263,7 @@ compact(input);
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 12:24:57 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 06 Jan 2020 16:14:12 GMT</small></div>
   </footer>
   </div>
 </body>

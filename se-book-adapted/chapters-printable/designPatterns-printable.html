@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter [Printable] : Software Design Patterns</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -146,8 +146,7 @@
               <div class="indented-less">
                 <div>
                   <p>Here is the typical implementation of how the Singleton pattern is applied to a class:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logic theOne = <span class="hljs-keyword">null</span>;
 
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Logic</span><span class="hljs-params">()</span> </span>{
@@ -162,8 +161,6 @@
     }
 }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <p>Notes:</p>
                   <ul>
                     <li>The constructor is <code>private</code>, which prevents instantiation from outside the class.</li>
@@ -172,17 +169,11 @@
                       return the single instance of the class.</li>
                   </ul>
                   <p>If <code>Logic</code> was not a Singleton class, an object is created like this:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java">Logic m = <span class="hljs-keyword">new</span> Logic();
+                  <pre><code class="hljs java">Logic m = <span class="hljs-keyword">new</span> Logic();
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <p>But now, the <code>Logic</code> object needs to be accessed like this:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java">Logic m = Logic.getInstance();
+                  <pre><code class="hljs java">Logic m = Logic.getInstance();
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -253,7 +244,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 12:24:57 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 06 Jan 2020 16:14:12 GMT</small></div>
     </footer>
   </div>
 </body>

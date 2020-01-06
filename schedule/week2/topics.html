@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 2 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -55,21 +55,19 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+
           <hr>
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+
+
           <hr>
           <span><strong> Team Project (tP):</strong></span>
           <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+
           <li><a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
-          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -700,8 +698,7 @@
             <p></p>
             <div>
               <p>In Java, the HelloWorld program looks like this:</p>
-              <div class="code-block">
-                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> </span>{
+              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         <span class="hljs-comment">// generate some simple output</span>
@@ -709,11 +706,8 @@
     }
 }
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
               <p>For reference, the equivalent C++ code is given below:</p>
-              <div class="code-block">
-                <pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+              <pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
 <span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
@@ -722,8 +716,6 @@
     <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
 }
 </code></pre>
-                <div class="code-block-lang"><span>cpp</span></div>
-              </div>
               <p>This HelloWorld Java program defines one method named main: <code class="hljs inline java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span></code></p>
               <p><code class="hljs inline java">System.out.println()</code> displays a given text on the screen.</p>
               <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
@@ -835,18 +827,12 @@
                 explains what happened and where.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, modify the HelloWorld code to include the following line, compile it again, and run it.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
+                <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p>You should get a message like this:</p>
-                <div class="code-block">
-                  <pre><code class="hljs sh">Exception <span class="hljs-keyword">in</span> thread <span class="hljs-string">"main"</span> java.lang.ArithmeticException: / by zero
+                <pre><code class="hljs sh">Exception <span class="hljs-keyword">in</span> thread <span class="hljs-string">"main"</span> java.lang.ArithmeticException: / by zero
     at Hello.main(Hello.java:5)
 </code></pre>
-                  <div class="code-block-lang"><span>sh</span></div>
-                </div>
               </box>
               <p><strong>Integrated Development Environments (IDEs)</strong> can automate the intermediate step of compiling. They usually have a <span style="color:green"><span aria-hidden="true" class="fas fa-play-circle"></span></span> <em>Run</em> button
                 which compiles the code first and then runs it.</p>
@@ -925,12 +911,9 @@
               </span> Java has a built-in type called <code>String</code> to represent strings. While <code>String</code> is not a primitive type, they are used as often, if not more. <code>String</code> values are demarcated by enclosing in a pair of double
               quotes. You can use the plus operator to concatenate strings. E.g.,
             </p>
-            <div class="code-block">
-              <pre><code class="hljs java">String name = <span class="hljs-string">"John Doe"</span>;
+            <pre><code class="hljs java">String name = <span class="hljs-string">"John Doe"</span>;
 System.out.println(<span class="hljs-string">"Hello "</span> + name + <span class="hljs-string">"!"</span>);
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <p>String is not a primitive type. You’ll learn more about strings in a later section.</p>
           </div>
           <div>
@@ -970,8 +953,7 @@ System.out.println(<span class="hljs-string">"Hello "</span> + name + <span clas
             <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
               </span>
               </span> Java is a <em>statically-typed</em> language in that variables have a fixed type. Here are some examples of declaring variables and assigning values to them.</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span> x;
+            <pre><code class="hljs java"><span class="hljs-keyword">int</span> x;
 x = <span class="hljs-number">5</span>;
 <span class="hljs-keyword">int</span> hour = <span class="hljs-number">11</span>;
 <span class="hljs-keyword">boolean</span> isCorrect = <span class="hljs-keyword">true</span>;
@@ -980,13 +962,10 @@ x = <span class="hljs-number">5</span>;
 <span class="hljs-keyword">short</span> s = <span class="hljs-number">10000</span>;
 <span class="hljs-keyword">int</span> i = <span class="hljs-number">100000</span>;
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <p>You can use any name starting with a letter, underscore, or $ as a variable name but you cannot use Java <a href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html">keywords</a> as variables names. You can display the
               value of a variable using <code>System.out.print</code> or <code>System.out.println</code> (the latter goes to the next line after printing). To output multiple values on the same line, it’s common to use several print statements followed
               by println at the end.</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span> hour = <span class="hljs-number">11</span>;
+            <pre><code class="hljs java"><span class="hljs-keyword">int</span> hour = <span class="hljs-number">11</span>;
 <span class="hljs-keyword">int</span> mintue = <span class="hljs-number">59</span>;
 System.out.print(<span class="hljs-string">"The current time is "</span>);
 System.out.print(hour);
@@ -996,8 +975,6 @@ System.out.println(<span class="hljs-string">"."</span>); <span class="hljs-comm
 System.out.println(<span class="hljs-string">"done"</span>);
 
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
             </p>
             <pre><code class="hljs">The current time is 11:59.
@@ -1005,11 +982,8 @@ done
 </code></pre>
             <p>Use the keyword <code>final</code> to indicate that the variable value, once assigned, should not be allowed to change later i.e., act like a ‘constant’. By convention, names for constants are all uppercase, with the underscore character (
               <code>_</code>) between words.</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> CM_PER_INCH = <span class="hljs-number">2.54</span>;
+            <pre><code class="hljs java"><span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> CM_PER_INCH = <span class="hljs-number">2.54</span>;
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
           </div>
           <div>
             <div>
@@ -1089,14 +1063,11 @@ done
               </table>
             </div>
             <p>The following program uses some operators as part of an expression <code>hour * 60 + minute</code>:</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span> hour = <span class="hljs-number">11</span>;
+            <pre><code class="hljs java"><span class="hljs-keyword">int</span> hour = <span class="hljs-number">11</span>;
 <span class="hljs-keyword">int</span> minute = <span class="hljs-number">59</span>;
 System.out.print(<span class="hljs-string">"Number of minutes since midnight: "</span>);
 System.out.println(hour * <span class="hljs-number">60</span> + minute);
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
             </p>
             <pre><code class="hljs">Number of minutes since midnight: 719
@@ -1291,8 +1262,7 @@ System.out.println(hour * <span class="hljs-number">60</span> + minute);
           <p></p>
           <div>
             <p>Arrays are indicated using square brackets (<code>[]</code>). To create the array itself, you have to use the <code>new</code> operator. Here are some example array declarations:</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts;
+            <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts;
 counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>]; <span class="hljs-comment">// create an int array of size 4</span>
 
 <span class="hljs-keyword">int</span> size = <span class="hljs-number">5</span>;
@@ -1301,12 +1271,9 @@ values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double
 
 <span class="hljs-keyword">double</span>[] prices = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[size]; <span class="hljs-comment">// declare and create at the same time</span>
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <blockquote>
               Alternatively, you can use the shortcut syntax to create and initialize an array:
-              <div class="code-block">
-                <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] values = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>};
+              <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] values = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>};
 
 <span class="hljs-keyword">int</span>[] anArray = {
     <span class="hljs-number">100</span>, <span class="hljs-number">200</span>, <span class="hljs-number">300</span>,
@@ -1314,16 +1281,13 @@ values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double
     <span class="hljs-number">700</span>, <span class="hljs-number">800</span>, <span class="hljs-number">900</span>, <span class="hljs-number">1000</span>
 };
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
               <p><small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></p>
             </blockquote>
             <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
               </span>
               </span> The <code>[]</code> operator selects elements from an array. Array elements
               <tooltip content="i.e., the index of the first element is 0, not 1">indices start from 0</tooltip>.</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
+            <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
 
 System.out.println(<span class="hljs-string">"The first element is "</span> + counts[<span class="hljs-number">0</span>]);
 
@@ -1331,18 +1295,13 @@ counts[<span class="hljs-number">0</span>] = <span class="hljs-number">7</span>;
 counts[<span class="hljs-number">1</span>] = counts[<span class="hljs-number">0</span>] * <span class="hljs-number">2</span>;
 counts[<span class="hljs-number">2</span>]++; <span class="hljs-comment">// increment value at index 2</span>
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span><span aria-hidden="true" class="fas fa-not-equal"></span></span>
               </span>
               </span> A Java array is aware of its size. A Java array prevents a programmer from indexing the array out of bounds. If the index is negative or not present in the array, the result is an error named <code>ArrayIndexOutOfBoundsException</code>.</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] scores = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
+            <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] scores = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
 System.out.println(scores.length) <span class="hljs-comment">// prints 4</span>
 scores[<span class="hljs-number">5</span>] = <span class="hljs-number">0</span>; <span class="hljs-comment">// causes an exception</span>
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
             </p>
             <pre><code class="hljs">4
@@ -1353,8 +1312,7 @@ Exception in thread &quot;main&quot; java.lang.ArrayIndexOutOfBoundsException: 5
               </span>
               </span> It is also possible to create arrays of more than one dimension:</p>
             <blockquote>
-              <div class="code-block">
-                <pre><code class="hljs java">String[][] names = {
+              <pre><code class="hljs java">String[][] names = {
     {<span class="hljs-string">"Mr. "</span>, <span class="hljs-string">"Mrs. "</span>, <span class="hljs-string">"Ms. "</span>},
     {<span class="hljs-string">"Smith"</span>, <span class="hljs-string">"Jones"</span>}
 };
@@ -1362,23 +1320,18 @@ Exception in thread &quot;main&quot; java.lang.ArrayIndexOutOfBoundsException: 5
 System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] + names[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]); <span class="hljs-comment">// Mr. Smith</span>
 System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-number">2</span>] + names[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>]); <span class="hljs-comment">// Ms. Jones</span>
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
               <p><small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></p>
             </blockquote>
             <h5 id="passing-arguments-to-a-program">Passing arguments to a program<a class="fa fa-anchor" href="#passing-arguments-to-a-program"></a></h5>
             <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
               </span>
               </span> The <code>args</code> parameter of the <code>main</code> method is an array of Strings containing command line arguments supplied (if any) when running the program.</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         System.out.println(args[<span class="hljs-number">0</span>]);
     }
 }
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <p>You can run this program (after compiling it first) from the command line by typing:</p>
             <p>
               <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>java Foo abc</code></p>
@@ -1405,15 +1358,12 @@ System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-n
                     <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] Compare names</small></small><a class='fa fa-anchor' href='#key-exercise-compare-names'></a>" expanded>
                       <question>
                         <p>Write a Java program that takes two command line arguments and prints <code>true</code> or <code>false</code> to indicate if the two arguments have the same value. Follow the sample output given below.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
       <span class="hljs-comment">// add your code here</span>
   }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>
                           <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>java WordComparator adam eve</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                         </p>
@@ -1427,21 +1377,17 @@ They are the same: false
 They are the same: true
 </code></pre>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Use the following technique to compare two <code>Strings</code>(i.e., don't use <code>==</code>). <span class="dimmed">Reason: to be covered in a later topic</span>.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java">String x = <span class="hljs-string">"foo"</span>;
+                        <pre><code class="hljs java">String x = <span class="hljs-string">"foo"</span>;
 <span class="hljs-keyword">boolean</span> isSame = x.equals(<span class="hljs-string">"bar"</span>) <span class="hljs-comment">// false</span>
 isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comment">// true</span>
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <div slot="hint">
                           <ul>
                             <li>The two command line arguments can be accessed inside the <code>main</code> method using <code>args[0]</code> and <code>args[1]</code>.</li>
                             <li>When using multiple operators in the same expression, you might need to use parentheses to specify operator precedence. e.g., <code>&quot;foo&quot; + x == y</code> vs <code>&quot;foo&quot; + (x == y)</code></li>
                           </ul>
                           <panel type="seamless" header="partial solution">
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
       String first = args[<span class="hljs-number">0</span>];
       String second = args[<span class="hljs-number">1</span>];
@@ -1451,8 +1397,6 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
 }
 
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </panel>
                         </div>
                       </question>
@@ -1499,24 +1443,17 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                 <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                   </span>
                   </span> Java supports the usual forms of <code>if</code> statements:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"x is positive"</span>);
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) {
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"x is even"</span>);
 } <span class="hljs-keyword">else</span> {
     System.out.println(<span class="hljs-string">"x is odd"</span>);
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"x is positive"</span>);
 } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"x is negative"</span>);
@@ -1524,10 +1461,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
     System.out.println(<span class="hljs-string">"x is zero"</span>);
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x == <span class="hljs-number">0</span>) {
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x == <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"x is zero"</span>);
 } <span class="hljs-keyword">else</span> {
     <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
@@ -1537,20 +1471,15 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p>The braces are optional (but recommended) for branches that have only one statement. So we <em>could have</em> written the previous example this way (
                   <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                     </span>
                   </font>):</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
     System.out.println(<span class="hljs-string">"x is even"</span>);
 <span class="hljs-keyword">else</span>
     System.out.println(<span class="hljs-string">"x is odd"</span>);
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
               <h5 id="switch-statements"><code>switch</code> statements<a class="fa fa-anchor" href="#switch-statements"></a></h5>
               <div class="indented">
@@ -1558,8 +1487,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                   enums, <code>String</code>.</p>
                 <p>Here is an example <span class="dimmed">(adapted from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
                   </small>)</span>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SwitchDemo</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SwitchDemo</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
 
         <span class="hljs-keyword">int</span> month = <span class="hljs-number">8</span>;
@@ -1596,8 +1524,6 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>August</code></p>
               </div>
             </div>
@@ -1643,8 +1569,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                           <p>You can assume that the input is always in the correct format <span class="dimmed">i.e., no need to handle invalid input cases</span>.</p>
                           <div slot="hint">
                             <p>Partial solution:</p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeter</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeter</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         String first = args[<span class="hljs-number">0</span>];
         String second = args[<span class="hljs-number">1</span>];
@@ -1658,8 +1583,6 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
     }
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </div>
                         </question>
                       </panel>
@@ -1705,8 +1628,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                           <p>You can assume that the input is always in the correct format <span class="dimmed">i.e., no need to handle invalid input cases</span>.</p>
                           <div slot="hint">
                             <p>Partial solution:</p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GradeHelper</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GradeHelper</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         String grade = args[<span class="hljs-number">0</span>];
         <span class="hljs-keyword">double</span> cutoff = <span class="hljs-number">0</span>;
@@ -1718,8 +1640,6 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
     }
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </div>
                         </question>
                       </panel>
@@ -1762,8 +1682,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
               <h5 id="defining-methods">Defining methods<a class="fa fa-anchor" href="#defining-methods"></a></h5>
               <div class="indented">
                 <p>Here’s an example of adding more methods to a class:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PrintTwice</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PrintTwice</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTwice</span><span class="hljs-params">(String s)</span> </span>{
         System.out.println(s);
@@ -1778,8 +1697,6 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
 }
 
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">Polly likes crackers
@@ -1815,8 +1732,7 @@ Polly likes crackers
                 <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                   </span>
                   </span> <strong>The <code>return</code> statement allows you to terminate a method before you reach the end of it</strong>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printLogarithm</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printLogarithm</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{
     <span class="hljs-keyword">if</span> (x &lt;= <span class="hljs-number">0.0</span>) {
         System.out.println(<span class="hljs-string">"Error: x must be positive."</span>);
         <span class="hljs-keyword">return</span>;
@@ -1825,13 +1741,10 @@ Polly likes crackers
     System.out.println(<span class="hljs-string">"The log of x is "</span> + result);
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                   </span>
                   </span> <strong>It can be used to return a value from a method too</strong>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AreaCalculator</span></span>{
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AreaCalculator</span></span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
         <span class="hljs-keyword">double</span> result = <span class="hljs-number">3.14</span> * radius * radius;
@@ -1844,8 +1757,6 @@ Polly likes crackers
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
               <h5 id="overloading">Overloading<a class="fa fa-anchor" href="#overloading"></a></h5>
               <div class="indented">
@@ -1853,8 +1764,7 @@ Polly likes crackers
                   </span>
                   </span> <strong>Java methods can be <em>overloaded</em>.</strong> If two methods do the same thing, it is natural to give them the same name. Having more than one method with the same name is called overloading, and it is legal in Java as long
                   as each version takes different parameters.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
     <span class="hljs-comment">//...</span>
 }
 
@@ -1862,24 +1772,19 @@ Polly likes crackers
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
               <h5 id="recursion">Recursion<a class="fa fa-anchor" href="#recursion"></a></h5>
               <div class="indented">
                 <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                   </span>
                   </span> <strong>Methods can be <em>recursive</em>.</strong> Here is an example in which the <code>nLines</code> method calls itself recursively:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">nLines</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">nLines</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
     <span class="hljs-keyword">if</span> (n &gt; <span class="hljs-number">0</span>) {
         System.out.println();
         nLines(n - <span class="hljs-number">1</span>);
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
             </div>
             <div>
@@ -1935,8 +1840,7 @@ Polly likes crackers
                               </div>
                             </div>
                           </div>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-comment">// ADD YOUR CODE HERE</span>
 
@@ -1946,8 +1850,6 @@ Polly likes crackers
     }
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                           <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                           </p>
                           <pre><code class="hljs">A+: 5.0
@@ -1955,8 +1857,7 @@ B : 3.5
 </code></pre>
                           <div slot="hint">
                             <p>Partial solution:</p>
-                            <div class="code-block">
-                              <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getGradeCap</span><span class="hljs-params">(String grade)</span> </span>{
+                            <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getGradeCap</span><span class="hljs-params">(String grade)</span> </span>{
         <span class="hljs-keyword">double</span> cap = <span class="hljs-number">0</span>;
         <span class="hljs-keyword">switch</span> (grade) {
         <span class="hljs-keyword">case</span> <span class="hljs-string">"A+"</span>:
@@ -1980,8 +1881,6 @@ B : 3.5
         <span class="hljs-keyword">return</span> cap;
     }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </div>
                         </question>
                       </panel>
@@ -2017,8 +1916,7 @@ B : 3.5
                 <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                   </span>
                   </span> Here is an example while loop:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">countdown</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">countdown</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
     <span class="hljs-keyword">while</span> (n &gt; <span class="hljs-number">0</span>) {
         System.out.println(n);
         n = n - <span class="hljs-number">1</span>;
@@ -2026,8 +1924,6 @@ B : 3.5
     System.out.println(<span class="hljs-string">"Blastoff!"</span>);
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
               <h5 id="for-loops"><code>for</code> loops<a class="fa fa-anchor" href="#for-loops"></a></h5>
               <div class="indented">
@@ -2039,23 +1935,19 @@ B : 3.5
 }
 </code></pre>
                 <p>Here is an example:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTable</span><span class="hljs-params">(<span class="hljs-keyword">int</span> rows)</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTable</span><span class="hljs-params">(<span class="hljs-keyword">int</span> rows)</span> </span>{
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= rows; i = i + <span class="hljs-number">1</span>) {
         printRow(i, rows);
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
               <h5 id="do-while-loops"><code>do-while</code> loops<a class="fa fa-anchor" href="#do-while-loops"></a></h5>
               <div class="indented">
                 <p>The <code>while</code> and <code>for</code> statements are <em>pretest</em> loops; that is, they test the condition first and at the beginning of each pass through the loop. Java also provides a <em>posttest</em> loop: the <code>do-while</code>                  statement. This type of loop is useful when you need to run the body of the loop at least once.</p>
                 <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
                   </small>)</span>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DoWhileDemo</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DoWhileDemo</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
         <span class="hljs-keyword">int</span> count = <span class="hljs-number">1</span>;
         <span class="hljs-keyword">do</span> {
@@ -2065,8 +1957,6 @@ B : 3.5
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
               <h5 id="break-and-continue"><code>break</code> and <code>continue</code><a class="fa fa-anchor" href="#break-and-continue"></a></h5>
               <div class="indented">
@@ -2075,8 +1965,7 @@ B : 3.5
                   </span> <strong>A <code>break</code> statement exits the current loop</strong>.</p>
                 <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
                   </small>)</span>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         <span class="hljs-keyword">int</span>[] numbers = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">0</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0</span> };
         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; numbers.length; i++) {
@@ -2088,8 +1977,6 @@ B : 3.5
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">123
@@ -2100,8 +1987,7 @@ B : 3.5
                   </span> <strong>A <code>continue</code> statement skips the remainder of the current iteration</strong> and moves to the next iteration of the loop.</p>
                 <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
                   </small>)</span>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
     <span class="hljs-keyword">int</span>[] numbers = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">0</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0</span> };
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; numbers.length; i++) {
         <span class="hljs-keyword">if</span> (numbers[i] == <span class="hljs-number">0</span>) {
@@ -2111,8 +1997,6 @@ B : 3.5
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">12345
@@ -2122,22 +2006,16 @@ B : 3.5
               <h5 id="enhanced-for-loops">Enhanced <code>for</code> loops<a class="fa fa-anchor" href="#enhanced-for-loops"></a></h5>
               <div class="indented">
                 <p>Since traversing arrays is so common, Java provides an alternative for-loop syntax that makes the code more compact. For example, consider a for loop that displays the elements of an array on separate lines:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; values.length; i++) {
+                <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; values.length; i++) {
     <span class="hljs-keyword">int</span> value = values[i];
     System.out.println(value);
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p>We could rewrite the loop like this:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> value : values) {
+                <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> value : values) {
     System.out.println(value);
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p>This statement is called an <em>enhanced <code>for</code> loop</em>. You can read it as, “for each value in values”. Notice how the single line <code>for (int value : values)</code> replaces the first two lines of the standard <code>for</code>                  loop.</p>
               </div>
             </div>
@@ -2194,8 +2072,7 @@ B : 3.5
                               </div>
                             </div>
                           </div>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-comment">// ADD YOUR CODE HERE</span>
 
@@ -2235,8 +2112,6 @@ B : 3.5
     }
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                           <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                           </p>
                           <pre><code class="hljs">A+:5.0
@@ -2245,8 +2120,7 @@ A-:4.5
 </code></pre>
                           <div slot="hint">
                             <p>Partial solution:</p>
-                            <div class="code-block">
-                              <pre><code class="hljs java">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span>[] getMultipleGradeCaps(String[] grades) {
+                            <pre><code class="hljs java">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span>[] getMultipleGradeCaps(String[] grades) {
         <span class="hljs-keyword">double</span>[] caps = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[grades.length];
         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; grades.length; i++) {
            <span class="hljs-comment">// ...</span>
@@ -2254,8 +2128,6 @@ A-:4.5
         <span class="hljs-keyword">return</span> caps;
     }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </div>
                         </question>
                       </panel>
@@ -2867,15 +2739,11 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                 <tab header="CLI">
                   <div>
                     <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs sh">git status
+                    <pre><code class="hljs sh">git status
 </code></pre>
-                      <div class="code-block-lang"><span>sh</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <div class="code-block">
-                      <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+                    <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
 <span class="hljs-comment">#</span>
@@ -2885,8 +2753,6 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
 <span class="hljs-comment">#   a.txt</span>
 nothing added to commit but untracked files present (use <span class="hljs-string">"git add"</span> to track)
 </code></pre>
-                      <div class="code-block-lang"><span>sh</span></div>
-                    </div>
                   </div>
                 </tab>
               </tabs>
@@ -2915,16 +2781,12 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
                 <tab header="CLI">
                   <div>
                     <p>You can use the <code>stage</code> or the <code>add</code> command (they are synonyms, <code>add</code> is the more popular choice) to stage files.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs sh">git add fruits.txt
+                    <pre><code class="hljs sh">git add fruits.txt
 git status
 </code></pre>
-                      <div class="code-block-lang"><span>sh</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <div class="code-block">
-                      <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+                    <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
 <span class="hljs-comment">#</span>
@@ -2934,8 +2796,6 @@ git status
 <span class="hljs-comment">#       new file:   fruits.txt</span>
 <span class="hljs-comment">#</span>
 </code></pre>
-                      <div class="code-block-lang"><span>sh</span></div>
-                    </div>
                   </div>
                 </tab>
               </tabs>
@@ -2951,17 +2811,11 @@ git status
                 <tab header="CLI">
                   <div>
                     <p>Use the <code>commit</code> command to commit. The <code>-m</code> switch is used to specify the commit message.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
+                    <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
 </code></pre>
-                      <div class="code-block-lang"><span>sh</span></div>
-                    </div>
                     <p>You can use the <code>log</code> command to see the commit history</p>
-                    <div class="code-block">
-                      <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
+                    <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
 </code></pre>
-                      <div class="code-block-lang"><span>sh</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">commit 8fd30a6910efb28bb258cd01be93e481caeab846
@@ -3196,7 +3050,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 12:24:57 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 06 Jan 2020 16:14:12 GMT</small></div>
   </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 5 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -55,21 +55,19 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+
           <hr>
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+
+
           <hr>
           <span><strong> Team Project (tP):</strong></span>
           <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+
           <li><a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
-          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -319,16 +317,13 @@
                   <p><strong>When you cast a primitive value to another type, there may be a loss of precision.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below cast a <code>double</code> value to an <code>int</code> value and cast it back to a <code>double</code>. Note the loss of precision.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">double</span> d = <span class="hljs-number">5.3</span>;
+                    <pre><code class="hljs java"><span class="hljs-keyword">double</span> d = <span class="hljs-number">5.3</span>;
 System.out.println(<span class="hljs-string">"Before casting to an int: "</span> + d);
 <span class="hljs-keyword">int</span> i = (<span class="hljs-keyword">int</span>)d; <span class="hljs-comment">// cast d to an int</span>
 System.out.println(<span class="hljs-string">"After casting to an int: "</span> + i);
 d = (<span class="hljs-keyword">double</span>)i; <span class="hljs-comment">// cast i back to a double</span>
 System.out.println(<span class="hljs-string">"After casting back a double: "</span> + d);
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">Before casting to an int: 5.3
@@ -339,8 +334,7 @@ After casting back a double: 5.0
                   <p><strong><mark><em>Downcasting</em></mark> is when you cast an object reference from a superclass to a subclass.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Assume the following class hierarchy:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span></span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>{
         System.out.println(<span class="hljs-string">"I'm an animal"</span>);
     }
@@ -360,11 +354,8 @@ After casting back a double: 5.0
     }
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>The <code>foo</code> method below downcasts an <code>Animal</code> object to its subclasses.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Animal a)</span></span>{
+                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Animal a)</span></span>{
     a.speak();
     Cat c = (Cat)a; <span class="hljs-comment">// downcast a to a Cat</span>
     c.speak();
@@ -372,35 +363,27 @@ After casting back a double: 5.0
     dc.speak();
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </box>
                   <p><strong><mark><em>Upcasting</em></mark> is when you cast an object reference from a subclass to a superclass.</strong> However, upcasting is done automatically by the compiler even if you do not specify it explicitly.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example upcasts a <code>Cat</code> object to its superclass <code>Animal</code>:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java">Cat c = <span class="hljs-keyword">new</span> Cat();
+                    <pre><code class="hljs java">Cat c = <span class="hljs-keyword">new</span> Cat();
 Animal a1 = (Animal)c; <span class="hljs-comment">//upcasting c to the Animal class</span>
 Animal a2 = c; <span class="hljs-comment">//upcasting is implicit</span>
 
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </box>
                   <p>Note that due to polymorphism, the behavior of the object will reflect the actual type of the object irrespective of the type of the variable holding a reference to it.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The call to the <code>speak()</code> method in the code below always executes the <code>speak()</code> method of the <code>DomesticCat</code> class because the actual
                       type of the object remains <code>DomesticCat</code> although the reference to it is being downcast/upcast to various other types.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java">Animal a = <span class="hljs-keyword">new</span> DomesticCat(); <span class="hljs-comment">//implicit upcast</span>
+                    <pre><code class="hljs java">Animal a = <span class="hljs-keyword">new</span> DomesticCat(); <span class="hljs-comment">//implicit upcast</span>
 a.speak();
 Cat c = (Cat)a; <span class="hljs-comment">//downcast</span>
 c.speak();
 DomesticCat dc = (DomesticCat)a; <span class="hljs-comment">//downcast</span>
 dc.speak();
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">I'm a DomesticCat
@@ -411,12 +394,9 @@ I'm a DomesticCat
                   <p><strong>Casting to an incompatible type can result in a <code>ClassCastException</code> at runtime.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code will cause a <code>ClassCastException</code>:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java">Object o = <span class="hljs-keyword">new</span> Animal();
+                    <pre><code class="hljs java">Object o = <span class="hljs-keyword">new</span> Animal();
 Integer x = (Integer)o;
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">Exception in thread &quot;main&quot; java.lang.ClassCastException: misc.casting.Animal cannot be cast to java.lang.Integer
@@ -426,14 +406,11 @@ Integer x = (Integer)o;
                   <p>You can use the <code>instanceof</code> operator to check if a cast is safe to perform.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code checks if the object <code>a</code> is an instance of the <code>Cat</code> class before casting it to a <code>Cat</code>.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java">Cat c;
+                    <pre><code class="hljs java">Cat c;
 <span class="hljs-keyword">if</span> (a <span class="hljs-keyword">instanceof</span> Cat){
     c = (Cat)a;
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </box>
                 </div>
                 <div></div>
@@ -520,8 +497,7 @@ Integer x = (Integer)o;
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>speak</code> method in this <code>Animal</code> class is <code>abstract</code>. Note how the method signature ends with a semicolon and there is no method body.
                     This makes sense as the implementation of the <code>speak</code> method depends on the type of the animal and it is meaningless to provide a common implementation for all animal types.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
     <span class="hljs-keyword">protected</span> String name;
 
@@ -531,16 +507,13 @@ Integer x = (Integer)o;
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <p>As one method of the class is <code>abstract</code>, the class itself is <code>abstract</code>.</p>
                 </box>
                 <p><strong>An <em>abstract class</em> is declared with the keyword <code>abstract</code>. Abstract classes can be used as reference type but cannot be instantiated.</strong></p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This <code>Account</code> class has been declared as abstract although it does not have any abstract methods. Attempting to instantiate <code>Account</code> objects will
                     result in a compile error.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
 
     <span class="hljs-keyword">int</span> number;
 
@@ -549,8 +522,6 @@ Integer x = (Integer)o;
     }
 }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <p><code>Account a;</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
                     </span> OK to use as a type <br>
                     <code>a = new Account();</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
@@ -561,19 +532,15 @@ Integer x = (Integer)o;
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Feline</code> class below inherits from the abstract class <code>Animal</code> but it does not provide an implementation for the abstract method <code>speak</code>.
                     As a result, the <code>Feline</code> class needs to be abstract too.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Feline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Feline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Feline</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
     }
 
 }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <p>The <code>DomesticCat</code> class inherits the abstract <code>Feline</code> class and provides the implementation for the abstract method <code>speak</code>. As a result, it need not be (but <em>can</em> be) declared as abstract.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DomesticCat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Feline</span> </span>{
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DomesticCat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Feline</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">DomesticCat</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
     }
@@ -584,8 +551,6 @@ Integer x = (Integer)o;
     }
 }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <ul>
                     <li><code class="hljs inline java">Animal a = <span class="hljs-keyword">new</span> Feline(<span class="hljs-string">"Mittens"</span>);</code><br><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
                       </span>
@@ -613,8 +578,7 @@ Integer x = (Integer)o;
                         <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] print area with abstract `Shape`</small></small><a class='fa fa-anchor' href='#key-exercise-print-area-with-abstract-shape'></a>" expanded>
                           <question>
                             <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
 
@@ -638,8 +602,6 @@ Integer x = (Integer)o;
     }
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                             </p>
                             <pre><code class="hljs">Circle of area 78
@@ -648,8 +610,7 @@ Circle of area 314
 Rectangle of area 16
 </code></pre>
                             <p><code>Circle</code> class and <code>Rectangle</code> class is given below:</p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> radius;
 
@@ -668,10 +629,7 @@ Rectangle of area 16
     }
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> height;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> width;
 
@@ -691,19 +649,14 @@ Rectangle of area 16
     }
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                             <p>Add the missing <code>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
                             <panel type="seamless" header="Partial solution">
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
     <span class="hljs-comment">// ...</span>
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                             </panel>
                           </question>
                         </panel>
@@ -812,16 +765,13 @@ Rectangle of area 16
                 of <code>class</code>.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an interface named <code>DrivableVehicle</code> that defines methods needed to drive a vehicle.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DrivableVehicle</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DrivableVehicle</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span></span>;
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">changeLanes</span><span class="hljs-params">(Direction direction)</span></span>;
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">signalTurn</span><span class="hljs-params">(Direction direction, <span class="hljs-keyword">boolean</span> signalOn)</span></span>;
     <span class="hljs-comment">// more method signatures</span>
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p>Note that the method signatures have no braces (<code>{ }</code>) and are terminated with a semicolon.
                 </p>
               </box>
@@ -829,8 +779,7 @@ Rectangle of area 16
                 of the methods declared in the interface.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is how a class <code>CarModelX</code> can implement the <code>DrivableVehicle</code> interface.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CarModelX</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">DrivableVehicle</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CarModelX</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">DrivableVehicle</span> </span>{
 
     <span class="hljs-meta">@Override</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span> </span>{
@@ -840,20 +789,15 @@ Rectangle of area 16
     <span class="hljs-comment">// implementation of other methods</span>
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
               <p><strong>An interface can be used as a type</strong> e.g., <code class="hljs inline java">DrivableVechile dv = <span class="hljs-keyword">new</span> CarModelX();</code>.</p>
               <p><strong>Interfaces can inherit from other interfaces</strong> using the <code>extends</code> keyword, similar to a class inheriting another.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an interface named <code>SelfDrivableVehicle</code> that inherits the <code>DrivableVehicle</code> interface.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">SelfDrivableVehicle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">DrivableVehicle</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">SelfDrivableVehicle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">DrivableVehicle</span> </span>{
    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">goToAutoPilotMode</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p>Note that the method signatures have no braces and are terminated with a semicolon.
                 </p>
               </box>
@@ -888,15 +832,12 @@ Rectangle of area 16
                           an object. The <code>final</code> modifier causes the variable to be unchangeable. Java constants are normally declared in ALL CAPS separated by underscores.</p>
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example of a constant named <code>MAX_BALANCE</code> which can be accessed as <code>Account.MAX_BALANCE</code>.</p>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{
 
   <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> MAX_BALANCE = <span class="hljs-number">1000000.0</span>;
 
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Math.html#PI"><code>Math.PI</code></a> is an example constant that comes with Java.</p>
                         </box>
                       </div>
@@ -907,8 +848,7 @@ Rectangle of area 16
               </modal>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example adds a constant <code>MAX_SPEED</code> and a static method <code>isSpeedAllowed</code> to the interface <code>DrivableVehicle</code>.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DrivableVehicle</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DrivableVehicle</span> </span>{
 
     <span class="hljs-keyword">int</span> MAX_SPEED = <span class="hljs-number">150</span>;
 
@@ -922,8 +862,6 @@ Rectangle of area 16
     <span class="hljs-comment">// more method signatures</span>
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
               <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Interfaces can contain <a href="https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html"><em>default</em> method implementations</a> and <em>nested types</em>.
                 They are not covered here.</p>
@@ -936,8 +874,7 @@ Rectangle of area 16
                       <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] print `Printable` items</small></small><a class='fa fa-anchor' href='#key-exercise-print-printable-items'></a>" expanded>
                         <question>
                           <p>The <code>Main</code> class below passes a list of <code>Printable</code> objects (i.e., objects that implement the <code>Printable</code> interface) for another method to be printed.</p>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printObjects</span><span class="hljs-params">(Printable[] items)</span> </span>{
         <span class="hljs-keyword">for</span> (Printable p : items) {
@@ -955,8 +892,6 @@ Rectangle of area 16
     }
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                           <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                           </p>
                           <pre><code class="hljs">Circle of area 78
@@ -964,16 +899,12 @@ Rectangle of area 12
 Person of name James Cook
 </code></pre>
                           <p>Classes <code>Shape</code>, <code>Circle</code>, and <code>Rectangle</code> are given below:</p>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> radius;
 
@@ -992,10 +923,7 @@ Person of name James Cook
     }
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> height;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> width;
 
@@ -1015,27 +943,19 @@ Person of name James Cook
     }
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                           <p>Add the missing <code>Printable</code> interface. Add the missing methods of the <code>Person</code> class given below.</p>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
 
     <span class="hljs-keyword">private</span> String name;
 
     <span class="hljs-comment">// todo: add missing methods</span>
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                           <panel type="seamless" header="Partial solution">
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Printable</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Printable</span> </span>{
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </panel>
                         </question>
                       </panel>
@@ -1082,8 +1002,7 @@ Person of name James Cook
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Formatter</code> class below (in <code>&lt;source folder&gt;/seedu/tojava/util/Formatter.java</code> file) is in the package <code>seedu.tojava.util</code>. When
                 it is compiled, the <code>Formatter.class</code> file will be in the location <code>&lt;compiler output folder&gt;/seedu/tojava/util</code>:</p>
-              <div class="code-block">
-                <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
+              <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
@@ -1093,8 +1012,6 @@ Person of name James Cook
     }
 }
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
             </box>
             <p><strong>Package names are written in all lower case</strong> (not camelCase), using the dot as a separator. Packages in the Java language itself begin with <code>java</code>. or <code>javax</code>. Companies use their reversed Internet domain
               name to begin their package names.</p>
@@ -1112,8 +1029,7 @@ Person of name James Cook
                 <li><code>import seedu.tojava.util.StringParser</code>: imports the class <code>StringParser</code> in the <code>seedu.tojava.util</code> package</li>
                 <li><code>import seedu.tojava.frontend.*</code>: imports all the classes in the <code>seedu.tojava.frontend</code> package</li>
               </ul>
-              <div class="code-block">
-                <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava;
+              <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava;
 
 <span class="hljs-keyword">import</span> seedu.tojava.util.StringParser;
 <span class="hljs-keyword">import</span> seedu.tojava.frontend.*;
@@ -1135,8 +1051,6 @@ Person of name James Cook
     }
 }
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
               <p>Note how the class can still use the <code>Processor</code> without importing it first, by using its fully qualified name <code>seedu.tojava.logic.Processor</code></p>
             </box>
             <p><strong>Importing a package does not import its sub-packages</strong>, as packages do not behave as hierarchies despite appearances.</p>
@@ -1147,8 +1061,7 @@ Person of name James Cook
             <p><strong>Optionally, a <em>static import</em> can be used to import static members of a type</strong> so that the imported members can be used without specifying the type name.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The class below uses static imports to import the constant <code>PREFIX</code> and the method <code>format()</code> from the <code>seedu.tojava.util.Formatter</code> class.</p>
-              <div class="code-block">
-                <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
+              <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.format;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -1161,11 +1074,8 @@ Person of name James Cook
     }
 }
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
               <panel type="seamless" header="`Formatter` class">
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
+                <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
@@ -1175,8 +1085,6 @@ Person of name James Cook
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </panel>
               <p>Note how the class can use <code>PREFIX</code> and <code>format()</code> (instead of <code>Formatter.PREFIX</code> and <code>Formatter.format()</code>).</p>
             </box>
@@ -1580,8 +1488,7 @@ Person of name James Cook
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>writeList()</code> method below calls a method <code>process()</code> that can cause two type of exceptions. It uses a try-catch construct to deal with each exception.
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
     print(<span class="hljs-string">"starting method"</span>);
     <span class="hljs-keyword">try</span> {
         print(<span class="hljs-string">"starting process"</span>);
@@ -1598,8 +1505,6 @@ Person of name James Cook
     print(<span class="hljs-string">"finishing method"</span>);
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p>Some possible outputs:</p>
                 <div class="table-responsive">
                   <table class="markbind-table table table-bordered table-striped">
@@ -1626,8 +1531,7 @@ Person of name James Cook
               <p>You can <strong>use a <code>finally</code> block to specify code that is guaranteed to execute with or without the exception.</strong> This is the right place to close files, recover resources, and otherwise clean up after the code enclosed
                 in the <code>try</code> block.</p>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>writeList()</code> method below has a <code>finally</code> block:</p>
-              <div class="code-block">
-                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
+              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
     print(<span class="hljs-string">"starting method"</span>);
     <span class="hljs-keyword">try</span> {
         print(<span class="hljs-string">"starting process"</span>);
@@ -1647,8 +1551,6 @@ Person of name James Cook
     print(<span class="hljs-string">"finishing method"</span>);
 }
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
               <p>Some possible outputs:</p>
               <div class="table-responsive">
                 <table class="markbind-table table table-bordered table-striped">
@@ -1683,13 +1585,10 @@ Person of name James Cook
                 <tooltip content="Throwable objects are instances of any subclass of the `Throwable` class.">throwable</tooltip> object as the argument.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of a <code>throw</code> statement.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
     <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> EmptyStackException();
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
               <p>In Java, <strong>Checked exceptions are subject to the <em>Catch or Specify Requirement</em></strong>: code that might throw checked exceptions must be enclosed by either of the following:</p>
               <ul>
@@ -1699,15 +1598,12 @@ Person of name James Cook
               <p>Unchecked exceptions are not required to follow to the <em>Catch or Specify Requirement</em> but you can apply the requirement to them too.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of a method specifying that it throws certain checked exceptions:</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException, IndexOutOfBoundsException </span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException, IndexOutOfBoundsException </span>{
     print(<span class="hljs-string">"starting method"</span>);
     process();
     print(<span class="hljs-string">"finishing method"</span>);
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <pre><code>Some possible outputs:
 </code></pre>
                 <div class="table-responsive">
@@ -1742,8 +1638,7 @@ Person of name James Cook
                       <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] parse rectangle descriptor</small></small><a class='fa fa-anchor' href='#key-exercise-parse-rectangle-descriptor'></a>" expanded>
                         <question>
                           <p>The <code>Main</code> class below parses a string descriptor of a rectangle of the format <code>&quot;WIDTHxHEIGHT&quot;</code> <span class="dimmed">e.g., <code>&quot;3x4&quot;</code></span> and prints the area of the rectangle.</p>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
         <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> modify the code below</span>
@@ -1762,8 +1657,6 @@ Person of name James Cook
     }
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                           <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                           </p>
                           <pre><code class="hljs">3x4=12
@@ -1786,17 +1679,13 @@ Person of name James Cook
                             </li>
                           </ol>
                           <div class="indented-level2">
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IllegalShapeException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IllegalShapeException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span> </span>{
   <span class="hljs-comment">//no other code needed</span>
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </div>
                           <p>Here is the expected behavior after you have done the above changes:</p>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-comment">//...</span>
 
@@ -1809,8 +1698,6 @@ Person of name James Cook
     }
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                           <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                           </p>
                           <pre><code class="hljs">3x4=12
@@ -1820,8 +1707,7 @@ WIDTH or HEIGHT is missing: 3
 Too many dimensions: 3x4x5
 </code></pre>
                           <panel type="seamless" header="Partial solution">
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
         <span class="hljs-keyword">try</span> {
@@ -1842,8 +1728,6 @@ Too many dimensions: 3x4x5
 
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </panel>
                         </question>
                       </panel>
@@ -2987,26 +2871,49 @@ Too many dimensions: 3x4x5
           </box>
           <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
           <box>
-            <panel header="<md>:fas-cube:</md> Example 1: 'check account balance' use case for an ATM" type="seamless" expanded>
+            <panel header="<md>:fas-cube:</md> Example 1: 'transfer money' use case for an online banking system" type="seamless" expanded>
               <div class="text-monospace">
-                <ul>
-                  <li>System:
-                    <popover effect="fade" placement="right" content="Automated Teller Machine">
-                      ATM </popover>
-                  </li>
-                  <li>Actor: Customer</li>
-                  <li>Use Case: Check account balance
-                    <ol>
-                      <li>User inserts an ATM card</li>
-                      <li>ATM prompts for PIN</li>
-                      <li>User enters PIN</li>
-                      <li>ATM prompts for withdrawal amount</li>
-                      <li>User enters the amount</li>
-                      <li>ATM ejects the ATM card and issues cash</li>
-                      <li>User collects the card and the cash.</li>
-                    </ol>
-                  </li>
-                </ul>
+                <div class="text-monospace">
+                  <ul>
+                    <li>System: Online Banking System (OBS)</li>
+                    <li>Use case: UC23 - Transfer Money</li>
+                    <li>Actor: User</li>
+                    <li>MSS:
+                      <ol>
+                        <li>User chooses to transfer money.</li>
+                        <li>OBS requests for details of the transfer.</li>
+                        <li>User enters the requested details.</li>
+                        <li>OBS requests for confirmation.</li>
+                        <li>User confirms.</li>
+                        <li>OBS transfers the money and displays the new account balance.</li>
+                        <li class="custom-bullet-point">Use case ends.</li>
+                      </ol>
+                    </li><br>
+                    <li> Extensions:
+                      <ol class="custom-bullet-list">
+                        <li>3a. OBS detects an error in the entered data.
+                          <ol class="custom-bullet-list">
+                            <li>3a1. OBS requests for the correct data.</li>
+                            <li>3a2. User enters new data.</li>
+                            <li>Steps 3a1-3a2 are repeated until the data entered are correct.</li>
+                            <li>Use case resumes from step 4.</li><br></ol>
+                        </li>
+                        <li>3b. User requests to effect the transfer in a future date.
+                          <ol class="custom-bullet-list">
+                            <li>3b1. OBS requests for confirmation.</li>
+                            <li>3b2. User confirms future transfer.</li>
+                            <li>Use case ends.</li><br></ol>
+                        </li>
+                        <li>*a. At any time, User chooses to cancel the transfer.
+                          <ol class="custom-bullet-list">
+                            <li>*a1. OBS requests to confirm the cancellation.</li>
+                            <li>*a2. User confirms the cancellation.</li>
+                            <li>Use case ends.</li><br></ol>
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </panel>
             <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
@@ -3435,15 +3342,12 @@ git checkout feature1
             <div>
               <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
               <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
-              <div class="code-block">
-                <pre><code class="hljs md">
+              <pre><code class="hljs md">
 <span class="hljs-section"># Introduction</span>
 Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
 This repo can be used to practice creating PRs.
 
 </code></pre>
-                <div class="code-block-lang"><span>md</span></div>
-              </div>
               <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
               <tabs>
                 <tab header="SourceTree">
@@ -3565,7 +3469,7 @@ This repo can be used to practice creating PRs.
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 12:24:57 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 06 Jan 2020 16:14:12 GMT</small></div>
   </footer>
   </div>
 </body>

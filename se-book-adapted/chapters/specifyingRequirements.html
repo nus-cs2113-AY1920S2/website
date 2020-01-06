@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter : Specifying Requirements</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -54,21 +54,19 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+
           <hr>
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+
+
           <hr>
           <span><strong> Team Project (tP):</strong></span>
           <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+
           <li><a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
-          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
-          <li><a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -766,26 +764,49 @@
           </box>
           <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
           <box>
-            <panel header="<md>:fas-cube:</md> Example 1: 'check account balance' use case for an ATM" type="seamless" expanded>
+            <panel header="<md>:fas-cube:</md> Example 1: 'transfer money' use case for an online banking system" type="seamless" expanded>
               <div class="text-monospace">
-                <ul>
-                  <li>System:
-                    <popover effect="fade" placement="right" content="Automated Teller Machine">
-                      ATM </popover>
-                  </li>
-                  <li>Actor: Customer</li>
-                  <li>Use Case: Check account balance
-                    <ol>
-                      <li>User inserts an ATM card</li>
-                      <li>ATM prompts for PIN</li>
-                      <li>User enters PIN</li>
-                      <li>ATM prompts for withdrawal amount</li>
-                      <li>User enters the amount</li>
-                      <li>ATM ejects the ATM card and issues cash</li>
-                      <li>User collects the card and the cash.</li>
-                    </ol>
-                  </li>
-                </ul>
+                <div class="text-monospace">
+                  <ul>
+                    <li>System: Online Banking System (OBS)</li>
+                    <li>Use case: UC23 - Transfer Money</li>
+                    <li>Actor: User</li>
+                    <li>MSS:
+                      <ol>
+                        <li>User chooses to transfer money.</li>
+                        <li>OBS requests for details of the transfer.</li>
+                        <li>User enters the requested details.</li>
+                        <li>OBS requests for confirmation.</li>
+                        <li>User confirms.</li>
+                        <li>OBS transfers the money and displays the new account balance.</li>
+                        <li class="custom-bullet-point">Use case ends.</li>
+                      </ol>
+                    </li><br>
+                    <li> Extensions:
+                      <ol class="custom-bullet-list">
+                        <li>3a. OBS detects an error in the entered data.
+                          <ol class="custom-bullet-list">
+                            <li>3a1. OBS requests for the correct data.</li>
+                            <li>3a2. User enters new data.</li>
+                            <li>Steps 3a1-3a2 are repeated until the data entered are correct.</li>
+                            <li>Use case resumes from step 4.</li><br></ol>
+                        </li>
+                        <li>3b. User requests to effect the transfer in a future date.
+                          <ol class="custom-bullet-list">
+                            <li>3b1. OBS requests for confirmation.</li>
+                            <li>3b2. User confirms future transfer.</li>
+                            <li>Use case ends.</li><br></ol>
+                        </li>
+                        <li>*a. At any time, User chooses to cancel the transfer.
+                          <ol class="custom-bullet-list">
+                            <li>*a1. OBS requests to confirm the cancellation.</li>
+                            <li>*a2. User confirms the cancellation.</li>
+                            <li>Use case ends.</li><br></ol>
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </panel>
             <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
@@ -1077,6 +1098,7 @@
                       <li>OBS requests for details of the transfer.</li>
                       <li>User enters the requested details.</li>
                       <li>OBS requests for confirmation.</li>
+                      <li>User confirms.</li>
                       <li>OBS transfers the money and displays the new account balance.</li>
                       <li class="custom-bullet-point">Use case ends.</li>
                     </ol>
@@ -1724,7 +1746,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 12:24:57 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 06 Jan 2020 16:14:12 GMT</small></div>
   </footer>
   </div>
 </body>
