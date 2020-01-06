@@ -23,23 +23,29 @@
     <p>
       <box> <span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can contribute production quality SE work to a small/medium software project </box>
     </p>
-    <p>Accordingly, the tP is structured to resemble an intermediate stage of a non-trivial real-life brownfield software project in which you will,</p>
+    <p>Accordingly, the tP is structured to resemble an early stage of a small software project in which you will,</p>
     <ol>
-      <li>conceptualize and implement enhancements to a given product, and,</li>
+      <li>conceptualize and implement a product, and,</li>
       <li>have it ready to be continued by future developers</li>
     </ol>
+    <p>The focus of the tP is to learn the following aspects:</p>
+    <ul>
+      <li><s>coding</s></li>
+      <li>working in a team</li>
+      <li>process/workflow</li>
+      <li>documentation</li>
+      <li>scheduling and tracking project progress, meeting delivery deadline</li>
+      <li>quality assurance</li>
+    </ul>
     <span id="tp-direction">
 <h3 id="direction"><div class="text-white bg-dark p-1">Direction</div></h3>
-<p>The tP uses a generic application called <a href="https://se-edu.github.io/addressbook-level3/">AddressBook-Level3 (AB3)</a> (from <a href="https://se-education.org">https://se-education.org</a>) as the starting point.</p>
-<img src="https://github.com/se-edu/addressbook-level3/raw/master/docs/images/Ui.png" width="600">
-<p></p>
-<p>This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, <mark>Command Line Interface (CLI) is the primary mode of input.</mark></p>
+<p>You may develop any product provide it is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, <mark>Command Line Interface (CLI) is the primary mode of input.</mark></p>
 <div class="indented-level1">
 <panel type src="/website/admin/tp-constraints._include_.html#Constraint-Typing-Preferred" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-Typing-Preferred  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Constraint-Typing-Preferred"></panel></div><p></p>
 <div class="indented-level1">
 <panel type src="/website/admin/tp-constraints._include_.html#Recommendation-CLI-First" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Recommendation-CLI-First  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Recommendation-CLI-First"></panel></div><p></p>
 <p></p>
-<p><strong>You may evolve/morph the <tooltip content="AddressBook-Level3">AB3</tooltip> any direction you wish.</strong> For example, an app to manage one of these:</p>
+<p>For example, an app to manage one of these:</p>
 <ul>
 <li>Contact details</li>
 <li>Bookmarks of websites</li>
@@ -55,6 +61,11 @@
     </ul>
     </span>
 
+    <p><mark>You are strongly discouraged from developing a GUI application</mark> as it can increase the workload unnecessarily.</p>
+    <div class="indented-level1">
+      <panel type src="/website/admin/tp-constraints._include_.html#Recommendation-No-GUI" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Recommendation-No-GUI  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Recommendation-No-GUI"></panel>
+    </div>
+    <p></p>
     <h3 id="target-user-and-value-proposition">
       <div class="text-white bg-dark p-1">Target User &amp; Value Proposition</div>
     </h3>
@@ -94,32 +105,10 @@
     </ul>
     <span id="functionalityExpectations">
 <h3 id="functionality-expectations"><div class="text-white bg-danger p-1">Functionality Expectations</div></h3>
-<p><strong>The expected level of <em>functionality</em> from a 5-person team is roughly the <mark>equivalent effort taken to create AB3 <em>functionality</em></mark></strong>. Some examples meeting that criterion:</p>
-<ul>
-<li>Example 1: A fictional contact management app optimized for a specific target user group:
-<ul>
-<li>Existing AB3 features are optimized to the new target user group.</li>
-<li>Person objects are enhanced to contain more details.</li>
-<li>There are a 4-5 new functionality that are specific to the target user group.</li></ul></li>
-<li>Example 2: a FooBar app that keeps track of two different types of entities <em>Foo</em> entities and <em>Bar</em> entities.
-<ul>
-<li>Foo and Bar entities are tightly-connected e.g., a Foo entity can contain Bar entities. Each type is similar to AB3 Person objects in terms of complexity.</li>
-<li>In addition to <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a 4-5 FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.</li></ul></li></ul>
-<box>
-<p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to
-    reduce the effort required.</p>
-    <ul>
-      <li><a href="https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature">Undo/redo</a></li>
-      <li><a href="https://se-education.org/addressbook-level4/Testing.html#types-of-tests">Automated GUI tests</a></li>
-    </ul>
-    </box>
-
-    <box type="important">
-      <p>Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. <mark>Adding more functionality than the expected level will not increase your marks</mark>.
-        You are better off spending that effort in improving other aspects of the project.
-      </p>
-    </box>
-    </span>
+<p><strong>The expected level of <em>functionality</em> from a team is roughly <mark>what you can achieve if each member contribute roughly the same amount of functional code as required by a <tooltip content="i.e., if all requirements were met at the _minimal_ level specified">typical iP</tooltip></mark></strong>.</p>
+<box type="important">
+<p>Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. <mark>Adding more functionality than the expected level will not increase your marks</mark>. You are better off spending that effort in improving other aspects of the project. In fact, here is the grading criterion for the individual project effort:</p>
+<p><panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-effort-instructions" header="Admin <md>:glyphicon-log-in:</md> tP Deliverables → PE → ==Evaluating the  Implementation Effort==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="projectGrading-effort-instructions"></panel></p></box></span>
     <span id="teamExpectations">
 <h3 id="team-expectations"><div class="text-white bg-success p-1"><span><span aria-hidden="true" class="fas fa-users"></span></span> Team Expectations</div>
   </h3>
@@ -143,36 +132,18 @@
 </h3>
 <h4 id="individual-expectations-on-implementation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Implementation</span></h4>
 <ul>
-  <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Enhance the product in some way(s).</strong></span>
+  <li>
+    <p><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Contribute to the functional code of the product.</strong></span></p>
     <ul>
-      <li>User-visible enhancements are preferred, but it is not a strict requirement.:</li>
+      <li>User-visible features are preferred, but it is not a strict requirement.:</li>
       <li><strong>The enhancement(s) should fit with the rest of the software</strong> (and the target user profile) and should have the consent of the team members. <span class="dimmed">You will lose marks if you go 'rogue' and add things that don't fit with the product.</span></li>
-      <li>Given below are some examples:</li>
     </ul>
   </li>
-</ul>
-<div class="indented-level4">
-  <panel type="seamless" header="Example enhancements" minimized>
-    <ul>
-      <li>Add a new feature <span class="dimmed">e.g. add the ability to view statistics</span></li>
-      <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
-      <li>A redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
-      <li>A redesign of the code <span class="dimmed">e.g. Improve the design to improve the code quality.</span></li>
-    </ul>
-    <p></p>
-  </panel>
-  <p></p>
-</div>
-<ul>
   <li>
     <p><strong>Tip: Contribute to all aspects of the project</strong> e.g. write backend code, frontend code, test code, user documentation, and developer documentation. <span class="dimmed">Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.</span></p>
   </li>
   <li>
     <p><strong>Tip: Do <em>all</em> the work related to your enhancement yourself.</strong> <span class="dimmed">Reason:If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.</span></p>
-  </li>
-  <li>
-    <p><strong>Tip: Divide the components of the product among team members</strong>. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is <em>in charge</em> of one or
-      more components. While others will be modifying those components as necessary for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed">(reason: you are supposed to be the most knowledgeable about that component)</span>      and protect that component from degrading <span class="dimmed">e.g., you can review others' changes to your component and suggest possible changes</span>.</p>
   </li>
 </ul>
 <h4 id="individual-expectations-on-documentation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Documentation</span></h4>
@@ -183,11 +154,11 @@
       class="dimmed">(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)</span>
       <ul>
         <li>UG: at least 1 page</li>
-        <li>DG: at least 3 pages</li>
+        <li>DG: at least 1 pages</li>
       </ul>
   </li>
   <li><strong>Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements</strong>, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.</li>
-  <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Use at least 2 types of UML diagrams in your DG updates</strong></span> i.e., diagrams you added yourself or those you modified significantly.</li>
+  <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Use at least some of the UML diagrams in your DG updates</strong></span> i.e., diagrams you added yourself or those you modified significantly.</li>
 </ul>
 <h4 id="individual-expectations-on-testing"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Testing</span></h4>
 <div id="testing-expectations">
@@ -213,12 +184,8 @@
       <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
-<li>Necessary general code enhancements e.g.,
-<ol>
-<li>Work related to renaming the product</li>
-<li>Work related to changing the product icon</li>
-<li>Morphing the product into a different product</li></ol></li>
-<li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+<li>Necessary general code enhancements</li>
+<li>Setting up tools e.g., GitHub, Travis, Gradle, etc.</li>
 <li>Maintaining the issue tracker</li>
 <li>Release management</li>
 <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
@@ -247,8 +214,7 @@
         <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
         <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
         <li><em>[Tool ABC] expert</em>: <span class="dimmed">e.g. Intellij expert, Git expert, etc.</span> Helps other team member with matters related to the specific tool.</li>
-        <li><em>In charge of[Component XYZ]</em>: <span class="dimmed">e.g. In charge of <code>Model</code>, <code>UI</code>, <code>Storage</code>, etc.</span> If you are in charge of a component, you are expected to know that component well, and review changes
-          done to that component in v1.3-v1.4.
+        <li><em>In charge of[Area XYZ]</em> of the code: <span class="dimmed">e.g. In charge of the code that deals with storage, etc.</span> If you are in charge of an area, you are expected to know that area well, and review changes done to that code.
         </li>
       </ul>
     </panel>

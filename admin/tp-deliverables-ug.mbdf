@@ -1,8 +1,17 @@
 {% from "common/macros.njk" import embed_topic with context %}
 
-* **Should cover all v1.4 features**.<br>
-  **Ensure those descriptions match the product precisely**, as it will be used by peer testers (==inaccuracies will be considered bugs==).
-* **Optionally, can also cover future features**. Mark those as `Coming in v2.0`.
+<box>
 
-Also note the following constraint:
-{{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Contstraints → Constraint-File-Size", "2", indent="1") }}
+{{ icon_info }} **In UG/DG, using hierarchical section numbering and figure numbering is optional** (reason: it's not easy to do in MarkDown), but make sure it does not inconvenience the reader (e.g., use section/figure title and/or hyperlinks to point to the section/figure being referred to). Examples:
+
+>In the section [_Implementation_]() given above ...
+
+</box>
+
+* **Follow the [AddressBook-Level3 (AB3) UG]({{ ab3_website }}/UserGuide.html) structure**.
+* **Should cover all {{ final_version }} features**.<br>
+  **Ensure those descriptions match the product precisely**, as it will be used by peer testers (==inaccuracies will be considered bugs==).
+* **Optionally, can also cover future features**. Mark those as `Coming in {{ future_version }}`.
+* Also note the following constraint:
+
+  {{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Contstraints → Constraint-File-Size", "2", indent="2") }}

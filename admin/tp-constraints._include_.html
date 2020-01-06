@@ -15,14 +15,6 @@
   </p>
   <div id="main">
     <p><strong>Your project should comply with the following constraints.</strong> <span class="dimmed"><strong>Reason</strong>: to increase comparability among projects and to maximize applicability of module learning outcomes in the project.</span></p>
-    <div id="Constraint-Brownfield">
-      <h4 id="constraint-brownfield"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-Brownfield</span>
-      </h4>
-      <div class="indented-level2">
-        <p>The final product should be a result of evolving/enhancing/morphing the given code base. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. <span class="dimmed">e.g. one feature/component at a time</span><br>
-          <span class="dimmed"><strong>Reason:</strong> To ensure your code has a decent quality level from the start.</span></p>
-      </div>
-    </div>
     <div id="Constraint-Typing-Preferred">
       <h4 id="constraint-typing-preferred"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-Typing-Preferred</span>
       </h4>
@@ -162,12 +154,20 @@ module learning outcomes; covering DBMS-related topics will have to be left to d
         </ul>
       </div>
     </div>
+    <div id="Recommendation-No-GUI">
+      <h4 id="recommendation-no-gui"><span class="badge badge-info text-monospace"><span aria-hidden="true" class="far fa-thumbs-up"></span> Recommendation-No-GUI</span>
+      </h4>
+      <div class="indented-level2">
+        <p>Creating a good Java GUI takes a lot of extra effort, which can easily push the tP effort beyond the expected range. In addition, good GUI design is not a learning outcome of this module. Therefore, you are strongly discouraged from creating a
+          GUI application. Choose the GUI path only if you are willing to take the extra workload on top of the module's normal load.</p>
+      </div>
+    </div>
     <div id="Recommendation-CLI-First">
       <h4 id="recommendation-cli-first"><span class="badge badge-info text-monospace"><span aria-hidden="true" class="far fa-thumbs-up"></span> Recommendation-CLI-First</span>
       </h4>
       <div class="indented-level2">
-        <p>Following from the <em>Constraint-Typing-Preferred</em>, if the app is optimized for the target user (graded under the <em>product design</em> criterion), <mark>a user who can type fast should be able to accomplish most tasks faster via CLI, compared to a hypothetical GUI-only version of the app.</mark>          <span class="dimmed">For example, adding a new entity via the CLI should be faster than entering the same data through a GUI form.</span><br> Therefore, the input to the app needs to be primarily CLI. The GUI is used primarily to give visual
-          feedback to the user. While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI inputs, if applicable.<br> Also keep in mind:</p>
+        <p>Following from the <em>Constraint-Typing-Preferred</em>, if the app is optimized for the target user (graded under the <em>product design</em> criterion), <mark>a user who can type fast should be able to accomplish most tasks faster via CLI, compared to a hypothetical GUI-only version of the app.</mark>          <span class="dimmed">For example, adding a new entity via the CLI should be faster than entering the same data through a GUI form.</span><br> Therefore, the input to the app needs to be primarily CLI. If you do implement a GUI, that GUI should
+          primarily be used to give visual feedback to the user. While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI inputs, if applicable.<br>          Also keep in mind:</p>
         <ul>
           <li>Regular typing is usually faster than using key combinations.</li>
           <li>

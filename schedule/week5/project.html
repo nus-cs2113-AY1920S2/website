@@ -221,7 +221,7 @@ blah
             </div>
             <br>
             <hr style="border-top: 3px double #c5c5c5;">
-            <h2 id="tp-user-stories-prioritized">tP: User Stories Prioritized<a class="fa fa-anchor" href="#tp-user-stories-prioritized"></a></h2>
+            <h2 id="tp-user-stories">tP: User Stories<a class="fa fa-anchor" href="#tp-user-stories"></a></h2>
             <div>
               <div></div>
               <h4 id="1-brainstorm-user-stories-before-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Brainstorm user stories</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>                before the tutorial</span>
@@ -231,7 +231,7 @@ blah
                 <ul>
                   <li>Get together with your team members and
                     <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for
-                    <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> <strong> for the v2.0 of the product</strong>.
+                    <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> <strong> for the the product</strong>.
                     <ul>
                       <li>At this stage, aim to have more user stories than you can deliver in the project. <span class="dimmed">Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</span></li>
                       <li>Refer
@@ -536,22 +536,6 @@ blah
                             <li><code>type.Bug</code> : A bug</li>
                           </ul>
                         </box>
-                        <box>
-                          <p><strong>Status</strong> labels:</p>
-                          <ul>
-                            <li><code>status.Ongoing</code> : The issue is currently being worked on. note: remove this label before closing an issue.
-                            </li>
-                          </ul>
-                        </box>
-
-                        <box>
-                          <p><strong>Priority</strong> labels:</p>
-                          <ul>
-                            <li><code>priority.High</code> : Must do</li>
-                            <li><code>priority.Medium</code> : Nice to have</li>
-                            <li><code>priority.Low</code> : Unlikely to do</li>
-                          </ul>
-                        </box>
                         <span id="bug-severity">
 <box>
 <p><strong>Bug Severity</strong> labels:</p>
@@ -562,7 +546,7 @@ blah
 <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li></ul></box></span>
                         <ul>
                           <li>
-                            <p>Create following milestones : <code>v1.0</code>, <code>v1.1</code>, <code>v1.2</code>, <code>v1.3</code>, <code>v1.4</code>,</p>
+                            <p>Create following milestones : <code>v1.0</code>, <code>v2.0</code>, <code>v2.1</code></p>
                           </li>
                           <li>
                             <p>You may configure other project settings as you wish. e.g. more labels, more milestones</p>
@@ -575,7 +559,6 @@ blah
                         <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to
                           reflect the current status of the project. You can also use GitHub's <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
                         <h4 id="using-issues">Using Issues:<a class="fa fa-anchor" href="#using-issues"></a></h4>
-                        <p><big><strong>During the initial stages</strong></big> (latest by the start of v1.2):</p>
                         <ul>
                           <li>
                             <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong>
@@ -583,14 +566,11 @@ blah
                               <code>Description: ... so that I can keep track of my deadlines</code></p>
                           </li>
                           <li>
-                            <p><strong>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</strong></p>
+                            <p><strong>Assign the <code>type.*</code> labels to those issues.</strong></p>
                           </li>
                           <li>
                             <p><strong>Formalize the project plan</strong> by assigning relevant issues to the corresponding milestone.</p>
                           </li>
-                        </ul>
-                        <p><big><strong>From milestone v1.2:</strong></big></p>
-                        <ul>
                           <li>
                             <p><strong>Define project tasks as issues</strong>. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks. <mark>Create issues for each</mark>                              of those tasks so that they can be tracked.<span class="dimmed">e.g.</span></p>
                             <ul>
@@ -599,7 +579,7 @@ blah
                                 <ul>
                                   <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad (reasons: not a one-person task, not small enough): <code>Write the Developer Guide</code></span>
                                   </li>
-                                  <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good: <code>Update class diagram in the Developer Guide for v1.4</code></span>
+                                  <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good: <code>Update class diagram in the Developer Guide for v2.1</code></span>
                                   </li>
                                 </ul>
                               </li>
@@ -627,18 +607,15 @@ blah
                           <li>
                             <p><strong>Assign tasks (i.e., issues) to the corresponding team members using the <code>assignees</code> field.</strong> <mark>Normally, there should be some ongoing tasks and some pending tasks against each team member at any point</mark>.</p>
                           </li>
-                          <li>
-                            <p>Optionally, you can use <code>status.ongoing</code> label to indicate issues currently ongoing.</p>
-                          </li>
                         </ul>
                         <div id="using-milestones">
                           <h4 id="using-milestones">Using Milestones:<a class="fa fa-anchor" href="#using-milestones"></a></h4>
-                          <p>We recommend you do proper milestone management starting from v1.2. <mark>Given below are the conditions to satisfy for a milestone to be considered properly managed</mark>:</p>
+                          <p><mark>Given below are the conditions to satisfy for a milestone to be considered properly managed</mark>:</p>
                           <p><strong>Planning a Milestone</strong>:<br></p>
                           <ul>
                             <li>
                               <p><strong>Issues assigned to the milestone, team members assigned to issues</strong>: Used <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which
-                                milestone by assigning issues to suitable milestones. Also make sure those issues are assigned to team members. <span class="dimmed">Note that you can change the milestone plan along the way as necessary.</span></p>
+                                milestone by assigning issues to suitable milestones. Ensured issues are assigned to team members. <span class="dimmed">Note that you can change the milestone plan along the way as necessary.</span></p>
                             </li>
                             <li>
                               <p><strong>Deadline set for the milestones</strong> (in the GitHub milestone). <span class="dimmed">Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</span></p>
@@ -647,8 +624,7 @@ blah
                           <p><strong>Wrapping up a Milestone</strong>:<br></p>
                           <ul>
                             <li>
-                              <p><strong>A working product tagged</strong> with the correct tag (e.g. <code>v1.2</code>) and is pushed to the main repo<br> or a <strong>product <em>release</em> done on GitHub</strong>. A product release is optional for v1.2
-                                but required from from v1.3. Click <a href="https://github.com/se-edu/addressbook-level3/releases/">here</a> to see an example release.</p>
+                              <p><strong>A working product tagged</strong> with the correct tag (e.g. <code>v2.0</code>) and is pushed to the main repo<br> or a <strong>product <em>release</em> done on GitHub</strong>.</p>
                             </li>
                             <li>
                               <p><strong>All tests passing</strong> on Travis for the version tagged/released.</p>
@@ -717,7 +693,7 @@ blah
                 <a class="nav-link py-1" href="#1-add-increment-as-a-branch-level-5">1 Add Increment as a branch: Level-5&#x200E;</a>
                 <a class="nav-link py-1" href="#2-add-increment-a-packages">2 Add Increment: A-Packages&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#tp-user-stories-prioritized">tP: User Stories Prioritized&#x200E;</a>
+              <a class="nav-link py-1" href="#tp-user-stories">tP: User Stories&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#1-brainstorm-user-stories-before-the-tutorial">1  Brainstorm user stories           before the tutorial
           &#x200E;</a>
@@ -732,7 +708,7 @@ blah
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 03:30:50 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 12:24:57 GMT</small></div>
     </footer>
   </div>
 </body>

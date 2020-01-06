@@ -1,5 +1,5 @@
 <div class="website-content">
-  <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/tp-w13.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: v1.4 [week 13]</span>
+  <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/tp-w13.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: v2.1 [week 13]</span>
     </b-btn>
     </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/tp-grading.html"><span>tP: Grading <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
     </b-btn>
@@ -41,9 +41,9 @@
 <div><div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\tp-deliverables-executable.mbdf">
 <ul>
 <li><strong>Should be an executable jar file</strong>.</li>
-<li><strong>Should be <tooltip content=" i.e., it can be used by end-users"><em>releasable</em></tooltip></strong>. While some features may be scheduled for later versions, the features in v1.4 should be good enough to make it usable by at least some of the target users.</li></ul>
-<p>Also note the following constraint:</p>
-<div class="indented-level1">
+<li><strong>Should be <tooltip content=" i.e., it can be used by end-users"><em>releasable</em></tooltip></strong>. While some features may be scheduled for later versions, the features in v2.1 should be good enough to make it usable by at least some of the target users.</li>
+<li>Also note the following constraint:</li></ul>
+<div class="indented-level2">
 <panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-File-Size  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Constraint-File-Size"></panel></div><p></p></div></div></span>
     <h3 id="deliverable-source-code">
       <div class="text-white bg-info p-1">Deliverable: Source code</div>
@@ -51,49 +51,69 @@
     <span id="tp-deliverables-sourcecode">
 <div><div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\tp-deliverables-sourcecode.mbdf">
 <ul>
-<li><strong>Should match v1.4 deliverables</strong> i.e., executable, docs, website, etc.</li>
+<li><strong>Should match v2.1 deliverables</strong> i.e., executable, docs, website, etc.</li>
 <li><strong>To be delivered as a Git repo.</strong> Ensure your GitHub team repo is updated to match the executable.</li></ul></div></div></span>
     <h3 id="deliverable-user-guide-ug">
       <div class="text-white bg-info p-1">Deliverable: User Guide (UG)</div>
     </h3>
     <span id="tp-deliverables-ug">
 <div><div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\tp-deliverables-ug.mbdf">
-<ul>
-<li><strong>Should cover all v1.4 features</strong>.<br>
-<strong>Ensure those descriptions match the product precisely</strong>, as it will be used by peer testers (<mark>inaccuracies will be considered bugs</mark>).</li>
-<li><strong>Optionally, can also cover future features</strong>. Mark those as <code>Coming in v2.0</code>.</li></ul>
-<p>Also note the following constraint:</p>
-<div class="indented-level1">
-<panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-File-Size  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Constraint-File-Size"></panel></div><p></p></div></div></span>
-    <h3 id="deliverable-developer-guide-dg">
-      <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div>
-    </h3>
-    <span id="tp-deliverables-dg">
+<box>
+<p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <strong>In UG/DG, using hierarchical section numbering and figure numbering is optional</strong> (reason: it's not easy to do in MarkDown), but make sure it does not inconvenience
+    the reader (e.g., use section/figure title and/or hyperlinks to point to the section/figure being referred to). Examples:</p>
+    <blockquote>
+      <p>In the section <a href><em>Implementation</em></a> given above ...</p>
+    </blockquote>
+    </box>
+    <ul>
+      <li><strong>Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/UserGuide.html">AddressBook-Level3 (AB3) UG</a> structure</strong>.</li>
+      <li><strong>Should cover all v2.1 features</strong>.<br>
+        <strong>Ensure those descriptions match the product precisely</strong>, as it will be used by peer testers (<mark>inaccuracies will be considered bugs</mark>).</li>
+      <li><strong>Optionally, can also cover future features</strong>. Mark those as <code>Coming in v3.0</code>.</li>
+      <li>Also note the following constraint:</li>
+    </ul>
+    <div class="indented-level2">
+      <panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-File-Size  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Constraint-File-Size"></panel>
+    </div>
+    <p></p>
+  </div>
+</div>
+</span>
+<h3 id="deliverable-developer-guide-dg">
+  <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div>
+</h3>
+<span id="tp-deliverables-dg">
 <div><div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\tp-deliverables-dg.mbdf">
 <ul>
-<li><strong>Should match the v1.4 implementation</strong>.</li>
-<li><strong>Optionally, can include proposed implementations of future features.</strong></li>
-<li><font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big>
-    </font> <strong>Include an appendix named <em>Instructions for Manual Testing</em></strong>, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.
-    <ul>
-      <li><strong>Cover all user-testable features</strong> but no need to cover existing AB3 features if you did not touch them.</li>
-      <li><strong>No need to give a long list of test cases</strong> including all possible variations. It is upto the tester to come up with those variations.</li>
-      <li><strong>Inaccurate instructions will be considered bugs</strong>.</li>
-    </ul>
-    </li>
-    <li>
-      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>We highly recommend adding an appendix named <code>Effort</code></strong> that evaluators can use to estimate the total project effort.
-      <ul>
-        <li>Keep it brief (~1 page)</li>
-        <li>Explain the difficulty level, challenges faced, effort required, and achievements of the project.</li>
-        <li>Use AB3 as a reference point <span class="dimmed">e.g., you can explain that while AB3 deals with only one entity type, your project was harder because it deals with multiple entity types</span>.</li>
-      </ul>
-    </li>
-    </ul>
-    <h5 id="dg-tips">DG Tips</h5>
-    <span id="dg-tips">
+<li>
+<p><strong>Should match the v2.1 implementation</strong>. Optionally, can include proposed implementations of future features.</p></li>
+<li>
+<p><strong>Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/DeveloperGuide.html">AddressBook-Level3 (AB3) DG</a> structure</strong>. Sections to include in your DG:</p>
 <ul>
-<li><strong>Aim to showcase your documentation skills.</strong> The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).<br>
+<li>Design: similar to AB3 DG except,
+<ul>
+<li>you may omit the <em>Architecture</em> section (no penalty)</li>
+<li>if you have not organized the code into clearly divided components (no penalty if you didn't), you can use a single class diagram (if it is not too complicated) or use several class diagrams each describing a different area of the system.</li></ul></li>
+<li>Implementation: similar to AB3 DG</li>
+<li>Appendix A: Product Scope</li>
+<li>Appendix B: User Stories</li>
+<li>Appendix C: Non Functional Requirements</li>
+<li>Appendix D: Glossary</li>
+<li>Appendix E: Instructions for Manual Testing (more details below)</li></ul></li>
+<li>
+<p><font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big>
+</font> <strong>Include an appendix named <em>Instructions for Manual Testing</em></strong>, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.</p>
+<ul>
+  <li><strong>Cover all user-testable features</strong>.</li>
+  <li><strong>No need to give a long list of test cases</strong> including all possible variations. It is upto the tester to come up with those variations.</li>
+  <li><strong>Inaccurate instructions will be considered bugs</strong>.</li>
+</ul>
+</li>
+</ul>
+<h5 id="dg-tips">DG Tips</h5>
+<span id="dgTips">
+<ul>
+<li><strong>Aim to showcase your documentation skills.</strong> The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v2.1 (hypothetically).<br>
 For an example, see <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/DeveloperGuide.html#proposed-undo-redo-feature">the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide</a>.</li>
 <li><strong>Use multiple UML diagram types.</strong> Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.</li>
 <li><strong>Keep diagrams simple.</strong> The aim is to make diagrams <mark><em>comprehensible</em>, not necessarily <em>comprehensive</em></mark>. Ways to simplify diagrams:
@@ -107,8 +127,7 @@ For an example, see <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-l
 <li><strong>Break diagrams into smaller fragments</strong> when possible.
 <ul>
 <li>If a component has a lot of classes, consider further dividing into sub-components (e.g., a Parser sub-component inside the Logic component). After that, sub-components can be shown as black-boxes in the main diagram and their details can be shown as separate diagrams.</li>
-<li>You can use <code>ref</code> frames to break sequence diagrams to multiple diagrams. Similarly, <code>rake</code>s can be used to divide activity diagrams.</li></ul></li>
-<li><strong>Stay at the highest level of abstraction</strong> possible e.g., note how <trigger trigger="click" for="modal:ipWeek10-archiSd">this sequence diagram</trigger> shows only the interactions between architectural components, abstracting away the interactions that happen inside each component.</li>
+<li>You can use <code>ref</code> frames to break sequence diagrams to multiple diagrams.</li></ul></li>
 <li>For some more examples, see <trigger trigger="click" for="modal:ipWeek10-umlExamples">here</trigger>.</li></ul></li>
 <li><strong>Integrate diagrams into the description.</strong> Place the diagram close to where it is being described.</li>
 <li><strong>Use code snippets sparingly.</strong> The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only.</li>
@@ -144,8 +163,9 @@ It will look more 'polished' if the two text sizes match.
 <span id="tp-deliverables-website">
 <div><div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\tp-deliverables-website.mbdf">
 <ul>
-<li><strong>Should match the submitted deliverables</strong> e.g., the UG on the website should match the submitted PDF file.</li></ul>
-<h4 id="website-readme"><span class="badge badge-info">Website</span> <span class="text-info">README</span></h4>
+<li><strong>Use the GitHub Pages feature to publish your tP</strong> repo as a website.</li></ul>
+<h4 id="website-optional-readme"><span class="badge badge-info">Website</span> <span class="text-info">[optional] README</span></h4>
+<p><mark><strong>This deliverable is optional.</strong></mark></p>
 <ul>
   <li><mark>Ensure the <code>Ui.png</code> matches the current product</mark></li>
 </ul>
@@ -185,7 +205,8 @@ It will look more 'polished' if the two text sizes match.
     </panel>
   </box>
 </div>
-<h4 id="website-aboutus-page"><span class="badge badge-info">Website</span> <span class="text-info">AboutUs Page</span></h4>
+<h4 id="website-optional-aboutus-page"><span class="badge badge-info">Website</span> <span class="text-info">[optional] AboutUs Page</span></h4>
+<p><mark><strong>This deliverable is optional.</strong></mark></p>
 <ul>
   <li><strong>Use a suitable profile photo.</strong></li>
 </ul>
@@ -198,6 +219,14 @@ It will look more 'polished' if the two text sizes match.
 <ul>
   <li><strong>Include a link to each person's PPP page.</strong></li>
   <li><strong>Team member names match full names used by LumiNUS.</strong></li>
+</ul>
+<h4 id="website-ug-web-page"><span class="badge badge-info">Website</span> <span class="text-info">UG (Web Page)</span></h4>
+<ul>
+  <li>Should match the submitted PDF file.</li>
+</ul>
+<h4 id="website-dg-web-page"><span class="badge badge-info">Website</span> <span class="text-info">DG (Web Page)</span></h4>
+<ul>
+  <li>Should match the submitted PDF file.</li>
 </ul>
 </div>
 </div>
@@ -244,12 +273,8 @@ It will look more 'polished' if the two text sizes match.
           <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
-<li>Necessary general code enhancements e.g.,
-<ol>
-<li>Work related to renaming the product</li>
-<li>Work related to changing the product icon</li>
-<li>Morphing the product into a different product</li></ol></li>
-<li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+<li>Necessary general code enhancements</li>
+<li>Setting up tools e.g., GitHub, Travis, Gradle, etc.</li>
 <li>Maintaining the issue tracker</li>
 <li>Release management</li>
 <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
@@ -284,15 +309,8 @@ It will look more 'polished' if the two text sizes match.
 </ul>
 <h4 id="ppp-format"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span></h4>
 <ul>
-  <li>
-    <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/goodcoder123.adoc</code></p>
-  </li>
-  <li>
-    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></p>
-  </li>
-  <li>
-    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a>      to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/team/johndoe.html">sample</a>.</p>
-  </li>
+  <li>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/goodcoder123.adoc</code></li>
+  <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
 </ul>
 <h4 id="ppp-page-limit"><span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span></h4>
 <div class="indented-level2">
@@ -343,8 +361,8 @@ It will look more 'polished' if the two text sizes match.
 </ul>
 <h4 id="demo-target-audience"><span class="badge badge-info">Demo</span> <span class="text-info">Target audience</span></h4>
 <ul>
-  <li><strong>Assume you are giving a demo to a higher-level manager of your company</strong>, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed but they are familiar with the
-    AddressBook-level3 (AB3) product. The actual audience are the evaluators (the team supervisor and another tutor).</li>
+  <li><strong>Assume you are giving a demo to a higher-level manager of your company</strong>, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed. The actual audience are the evaluators
+    (the team supervisor and another tutor).</li>
 </ul>
 <h4 id="demo-scope"><span class="badge badge-info">Demo</span> <span class="text-info">Scope</span></h4>
 <ul>
@@ -373,17 +391,16 @@ sitting periods, and alerts the user if ...
 <ul>
   <li>There is no need to introduce team members or explain who did what. <span class="dimmed">Reason: to save time.</span></li>
   <li><strong>Each person should do a fair share of the demo</strong>. However, it's OK for one member to do all the typing.</li>
-  <li><strong>There is no need for you to demo your own work</strong>.</li>
+  <li><strong>There is no need for each person to demo their own work</strong>.</li>
   <li><strong>Present the features in a reasonable order</strong>: Organize the demo to present a cohesive picture of the product as a whole, presented in a logical order.</li>
   <li><strong>No need to cover design/implementation details</strong> as the manager is not interested in those details.</li>
-  <li><strong>No need to demo features inherited from AB3</strong> unless they are needed to explain your new features. <span class="dimmed">Reason: existing features will not earn you marks, and the audience is already familiar with AB3 features.</span></li>
 </ul>
 <h4 id="demo-structure"><span class="badge badge-info">Demo</span> <span class="text-info">Structure</span></h4>
 <ul>
   <li><strong>Demo the product using the same executable</strong> you submitted, on your own laptop, using the TV.</li>
   <li><strong>It can be a <em>sitting down</em> demo.</strong> You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.</li>
   <li><strong>It will be an uninterrupted demo.</strong> The audience members will not interrupt you during the demo. That means you should finish within the given time.</li>
-  <li><strong>Use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name"><em>realistic</em></tooltip> demo data.</strong> <span class="dimmed">e.g at least 20 contacts</span>. Trying to demo a product using just 1-2 sample data
+  <li><strong>Use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name"><em>realistic</em></tooltip> demo data.</strong> <span class="dimmed">e.g at least 20 data items</span>. Trying to demo a product using just 1-2 sample data
     creates a bad impression.</li>
   <li><strong>Dress code</strong>: The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
 </ul>
@@ -416,8 +433,8 @@ sitting periods, and alerts the user if ...
 <span id="tp-deliverables-practicalexam-dry-run">
 <div><div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\tp-deliverables-ped.mbdf">
 <h4 id="pe-d-overview"><span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span></h4>
-<p><strong>What</strong>: The v1.3 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam (PE) Dry Run</em> as this round of testing will be similar to the graded
-  <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v1.4</trigger>.</p>
+<p><strong>What</strong>: The v2.0 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam (PE) Dry Run</em> as this round of testing will be similar to the graded
+  <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v2.1</trigger>.</p>
 <p><strong>When, where</strong>: uses a 40 minute slot at the start of week 11 lecture</p>
 <modal large title="Admin <md>:glyphicon-log-in:</md> Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
 
@@ -501,8 +518,8 @@ sitting periods, and alerts the user if ...
                                   <p><strong>Type</strong> labels:</p>
                                   <ul>
                                     <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                                    <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not
-                                      'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                                    <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not
+                                      'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
                                     <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
                                   </ul>
                                 </box>
@@ -566,7 +583,7 @@ sitting periods, and alerts the user if ...
                     <div class="text-white bg-secondary p-1">b) What to test</div>
                   </h6>
                   <ul>
-                    <li>PE Dry Run (at <strong>v1.3</strong>):
+                    <li>PE Dry Run (at <strong>v2.0</strong>):
                       <ul>
                         <li>Test the product <mark>based on the User Guide</mark> (the UG is most likely accessible using the <code>help</code> command).</li>
                         <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark>
@@ -574,7 +591,7 @@ sitting periods, and alerts the user if ...
                             class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
                       </ul>
                     </li>
-                    <li>PE (at <strong>v1.4</strong>):
+                    <li>PE (at <strong>v2.1</strong>):
                       <ul>
                         <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you
                           follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
@@ -586,7 +603,7 @@ sitting periods, and alerts the user if ...
                     <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
                   </h6>
                   <ul>
-                    <li>PE Dry Run (at <strong>v1.3</strong>): You may report functionality bugs, UG bugs, and feature flaws.</li>
+                    <li>PE Dry Run (at <strong>v2.0</strong>): You may report functionality bugs, UG bugs, and feature flaws.</li>
                   </ul>
                   <div class="indented-level2">
                     <p>
@@ -603,7 +620,7 @@ sitting periods, and alerts the user if ...
                     </p>
                   </div>
                   <ul>
-                    <li>PE (at <strong>v1.4</strong>): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).</li>
+                    <li>PE (at <strong>v2.1</strong>): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).</li>
                   </ul>
                   <div class="indented-level2">
                     <p>
@@ -614,9 +631,9 @@ sitting periods, and alerts the user if ...
                   <ul>
                     <li><strong>About posting <em>suggestions</em>:</strong>
                       <ul>
-                        <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic when
+                        <li>PE Dry Run (at <strong>v2.0</strong>): You can also post suggestions on how to improve the product. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic when
                           reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
-                        <li>PE (at <strong>v1.4</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code>Type.FeatureFlaw</code>.</li>
+                        <li>PE (at <strong>v2.1</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code>Type.FeatureFlaw</code>.</li>
                       </ul>
                     </li>
                   </ul>
@@ -697,8 +714,8 @@ sitting periods, and alerts the user if ...
                           <p><strong>Type</strong> labels:</p>
                           <ul>
                             <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                            <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'.
-                              In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                            <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'.
+                              In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
                             <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
                           </ul>
                         </box>
@@ -798,12 +815,16 @@ sitting periods, and alerts the user if ...
               <p></p>
               <div id="projectGrading-effort-instructions">
                 <p>
-                  <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>If the implementation effort required to create AB3 from scratch is 10, the estimated implementation effort of this team is,</strong> [<code>0</code>..<code>20</code>] e.g., if you give <code>8</code>,
-                  that means the team's effort is about 80% of that spent on creating AB3. We expect most typical teams to score near to <code>10</code>.</p>
+                  <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong></p>
                 <ul>
-                  <li>Do read the DG appendix named <code>Effort</code>, if any.</li>
                   <li><mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark></li>
-                  <li>Do not give a high value just <em>to be nice</em>. <mark>Your responses will be used to evaluate your effort estimation skills.</mark></li>
+                  <li>The <em>typical iP</em> refers to an iP where all the requirements are met at a minimal expectations given</li>
+                </ul>
+                <ul radio-group="e7d80" class="radio-list">
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Unable to judge</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Significantly less than a typical iP</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Slightly less than a typical iP</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Not less than a typical iP</label></li>
                 </ul>
               </div>
               <p>
@@ -906,7 +927,7 @@ Duplicate of #67
               <p><strong>Response</strong> Labels:</p>
               <ul>
                 <li><code>response.Accepted</code>: You accept it as a bug.</li>
-                <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for <span class="dimmed">e.g., it was not related to features delivered in v1.4</span>.</li>
+                <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for <span class="dimmed">e.g., it was not related to features delivered in v2.1</span>.</li>
                 <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. You can reject bugs that you inherited from AB3.</li>
                 <li><code>response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
                 <li><code>response.IssueUnclear</code>: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.</li>
@@ -921,8 +942,8 @@ Duplicate of #67
               <p><strong>Type</strong> labels:</p>
               <ul>
                 <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other
-                  words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other
+                  words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
                 <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
               </ul>
             </box>
@@ -950,6 +971,8 @@ Duplicate of #67
               <ul>
                 <li>If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated
                   tests and defensive coding techniques.</li>
+                <li>It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never review it), provided the bug should have been reasonably apparent to a reviewer. For example,
+                  if someone put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.</li>
               </ul>
             </li>
           </ul>
@@ -1039,7 +1062,7 @@ Duplicate of #67
 <p>
   <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Grading</strong>: Taking part in the PE dry run is strongly encouraged as it <mark>can affect your grade in the following ways</mark>.</p>
 <ul>
-  <li>If the product you are allocated to test in the Practical Exam (at v1.4) had a very low bug count, we will consider your performance in PE dry run as well when grading the PE.</li>
+  <li>If the product you are allocated to test in the Practical Exam (at v2.1) had a very low bug count, we will consider your performance in PE dry run as well when grading the PE.</li>
   <li>PE dry run will help you practice for the actual PE.</li>
   <li>Taking part in the PE dry run will earn you participation points.</li>
   <li>There is <mark>no penalty for bugs reported</mark> in your product. Every bug you find is a win-win for you and the team whose product you are testing.</li>
@@ -1106,8 +1129,8 @@ Duplicate of #67
                     <p><strong>Type</strong> labels:</p>
                     <ul>
                       <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                      <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'.
-                        In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                      <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'.
+                        In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
                       <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
                     </ul>
                   </box>
@@ -1159,13 +1182,13 @@ Duplicate of #67
       <div class="text-white bg-secondary p-1">b) What to test</div>
     </h6>
     <ul>
-      <li>PE Dry Run (at <strong>v1.3</strong>):
+      <li>PE Dry Run (at <strong>v2.0</strong>):
         <ul>
           <li>Test the product <mark>based on the User Guide</mark> (the UG is most likely accessible using the <code>help</code> command).</li>
           <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
         </ul>
       </li>
-      <li>PE (at <strong>v1.4</strong>):
+      <li>PE (at <strong>v2.1</strong>):
         <ul>
           <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions
             strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
@@ -1177,7 +1200,7 @@ Duplicate of #67
       <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
     </h6>
     <ul>
-      <li>PE Dry Run (at <strong>v1.3</strong>): You may report functionality bugs, UG bugs, and feature flaws.</li>
+      <li>PE Dry Run (at <strong>v2.0</strong>): You may report functionality bugs, UG bugs, and feature flaws.</li>
     </ul>
     <div class="indented-level2">
       <p>
@@ -1194,7 +1217,7 @@ Duplicate of #67
       </p>
     </div>
     <ul>
-      <li>PE (at <strong>v1.4</strong>): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).</li>
+      <li>PE (at <strong>v2.1</strong>): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).</li>
     </ul>
     <div class="indented-level2">
       <p>
@@ -1205,9 +1228,9 @@ Duplicate of #67
     <ul>
       <li><strong>About posting <em>suggestions</em>:</strong>
         <ul>
-          <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic when reporting bugs
+          <li>PE Dry Run (at <strong>v2.0</strong>): You can also post suggestions on how to improve the product. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic when reporting bugs
             or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
-          <li>PE (at <strong>v1.4</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code>Type.FeatureFlaw</code>.</li>
+          <li>PE (at <strong>v2.1</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code>Type.FeatureFlaw</code>.</li>
         </ul>
       </li>
     </ul>
@@ -1285,8 +1308,8 @@ Duplicate of #67
             <p><strong>Type</strong> labels:</p>
             <ul>
               <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-              <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other
-                words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+              <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other
+                words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
               <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
             </ul>
           </box>
@@ -1337,12 +1360,8 @@ Duplicate of #67
                     <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
-<li>Necessary general code enhancements e.g.,
-<ol>
-<li>Work related to renaming the product</li>
-<li>Work related to changing the product icon</li>
-<li>Morphing the product into a different product</li></ol></li>
-<li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+<li>Necessary general code enhancements</li>
+<li>Setting up tools e.g., GitHub, Travis, Gradle, etc.</li>
 <li>Maintaining the issue tracker</li>
 <li>Release management</li>
 <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
@@ -1377,15 +1396,8 @@ Duplicate of #67
           </ul>
           <h4 id="ppp-format-2"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span></h4>
           <ul>
-            <li>
-              <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/goodcoder123.adoc</code></p>
-            </li>
-            <li>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></p>
-            </li>
-            <li>
-              <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a>                to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/team/johndoe.html">sample</a>.</p>
-            </li>
+            <li>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/goodcoder123.adoc</code></li>
+            <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
           </ul>
           <h4 id="ppp-page-limit-2"><span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span></h4>
           <div class="indented-level2">
@@ -1430,8 +1442,8 @@ Duplicate of #67
 <span id="after-ped">
 <h4 id="pe-d-after-the-session"><span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span></h4>
 <ul>
-  <li>We'll transfer the relevant bug reports to your repo over the weekend. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the
-    correct decision could be to reject or postpone to a version beyond v1.4.</li>
+  <li>We'll transfer the relevant bug reports to your repo over the weekend. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission v2.1. For some issues, the
+    correct decision could be to reject or postpone to a version beyond v2.1.</li>
   <li>If you have received bug reports that don't seem to be about your project, do let us know ASAP (email the prof).</li>
   <li>You can navigate to the original bug report (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug <span class="dimmed">e.g. to ask for more info</span>, etc. However,
     the tester is not obliged to respond.
@@ -1527,8 +1539,8 @@ Duplicate of #67
                         <p><strong>Type</strong> labels:</p>
                         <ul>
                           <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                          <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'.
-                            In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                          <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'.
+                            In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
                           <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
                         </ul>
                       </box>
@@ -1592,13 +1604,13 @@ Duplicate of #67
           <div class="text-white bg-secondary p-1">b) What to test</div>
         </h6>
         <ul>
-          <li>PE Dry Run (at <strong>v1.3</strong>):
+          <li>PE Dry Run (at <strong>v2.0</strong>):
             <ul>
               <li>Test the product <mark>based on the User Guide</mark> (the UG is most likely accessible using the <code>help</code> command).</li>
               <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
             </ul>
           </li>
-          <li>PE (at <strong>v1.4</strong>):
+          <li>PE (at <strong>v2.1</strong>):
             <ul>
               <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those
                 instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
@@ -1610,7 +1622,7 @@ Duplicate of #67
           <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
         </h6>
         <ul>
-          <li>PE Dry Run (at <strong>v1.3</strong>): You may report functionality bugs, UG bugs, and feature flaws.</li>
+          <li>PE Dry Run (at <strong>v2.0</strong>): You may report functionality bugs, UG bugs, and feature flaws.</li>
         </ul>
         <div class="indented-level2">
           <p>
@@ -1627,7 +1639,7 @@ Duplicate of #67
           </p>
         </div>
         <ul>
-          <li>PE (at <strong>v1.4</strong>): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).</li>
+          <li>PE (at <strong>v2.1</strong>): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).</li>
         </ul>
         <div class="indented-level2">
           <p>
@@ -1638,9 +1650,9 @@ Duplicate of #67
         <ul>
           <li><strong>About posting <em>suggestions</em>:</strong>
             <ul>
-              <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic when reporting
+              <li>PE Dry Run (at <strong>v2.0</strong>): You can also post suggestions on how to improve the product. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic when reporting
                 bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
-              <li>PE (at <strong>v1.4</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code>Type.FeatureFlaw</code>.</li>
+              <li>PE (at <strong>v2.1</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code>Type.FeatureFlaw</code>.</li>
             </ul>
           </li>
         </ul>
@@ -1718,8 +1730,8 @@ Duplicate of #67
                 <p><strong>Type</strong> labels:</p>
                 <ul>
                   <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                  <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other
-                    words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                  <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other
+                    words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
                   <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
                 </ul>
               </box>
@@ -1820,12 +1832,16 @@ Duplicate of #67
     <p></p>
     <div id="projectGrading-effort-instructions">
       <p>
-        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>If the implementation effort required to create AB3 from scratch is 10, the estimated implementation effort of this team is,</strong> [<code>0</code>..<code>20</code>] e.g., if you give <code>8</code>, that
-        means the team's effort is about 80% of that spent on creating AB3. We expect most typical teams to score near to <code>10</code>.</p>
+        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong></p>
       <ul>
-        <li>Do read the DG appendix named <code>Effort</code>, if any.</li>
         <li><mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark></li>
-        <li>Do not give a high value just <em>to be nice</em>. <mark>Your responses will be used to evaluate your effort estimation skills.</mark></li>
+        <li>The <em>typical iP</em> refers to an iP where all the requirements are met at a minimal expectations given</li>
+      </ul>
+      <ul radio-group="e7d80" class="radio-list">
+        <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Unable to judge</label></li>
+        <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Significantly less than a typical iP</label></li>
+        <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Slightly less than a typical iP</label></li>
+        <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Not less than a typical iP</label></li>
       </ul>
     </div>
     <p>
@@ -1928,7 +1944,7 @@ Duplicate of #67
     <p><strong>Response</strong> Labels:</p>
     <ul>
       <li><code>response.Accepted</code>: You accept it as a bug.</li>
-      <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for <span class="dimmed">e.g., it was not related to features delivered in v1.4</span>.</li>
+      <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for <span class="dimmed">e.g., it was not related to features delivered in v2.1</span>.</li>
       <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. You can reject bugs that you inherited from AB3.</li>
       <li><code>response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
       <li><code>response.IssueUnclear</code>: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.</li>
@@ -1943,8 +1959,8 @@ Duplicate of #67
     <p><strong>Type</strong> labels:</p>
     <ul>
       <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-      <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other words,
-        an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+      <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other words,
+        an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
       <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
     </ul>
   </box>
@@ -1972,6 +1988,8 @@ Duplicate of #67
     <ul>
       <li>If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and
         defensive coding techniques.</li>
+      <li>It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never review it), provided the bug should have been reasonably apparent to a reviewer. For example, if someone
+        put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.</li>
     </ul>
   </li>
 </ul>
@@ -2057,7 +2075,7 @@ Duplicate of #67
 </span>
 </div>
 <br>
-<p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/tp-w13.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: v1.4 [week 13]</span>
+<p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/tp-w13.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: v2.1 [week 13]</span>
   </b-btn>
   </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/tp-grading.html"><span>tP: Grading <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
   </b-btn>
