@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -71,7 +72,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -138,7 +139,7 @@
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>Level-6</code>: Delete</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -172,7 +173,7 @@ delete 3
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel header="**Extension: `A-Collections`**">
+                            <panel header="**Extension: `A-Collections`**" class="algolia-no-index">
                               <div>
                                 <div>
                                   <div></div>
@@ -192,7 +193,7 @@ delete 3
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>Level-7</code>: Save</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -230,7 +231,7 @@ T | 1 | join sports club
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>A-Jar</code>: Create a JAR File</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -254,7 +255,7 @@ T | 1 | join sports club
                         </ul>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Gradle for your project, refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from)
                           to find how to create a jar file using Gradle.</p>
-                        <panel header="**Extension `A-Gradle`**">
+                        <panel header="**Extension `A-Gradle`**" class="algolia-no-index">
                           <div>
                             <div>
                               <div></div>
@@ -310,7 +311,7 @@ T | 1 | join sports club
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>Divide documentation work (in the User Guide and the Developer Guide) among team members equally; preferably based on enhancements/features each person would be adding</strong>                      <span class="dimmed">e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.</p>
                     <p><span class="dimmed">Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.</span></p>
                     <p>
-                      <panel type src="/website/admin/tp-grading._include_.html#criteria-documentation" header="Admin <md>:glyphicon-log-in:</md> **tP: Grading → ==Documentation==**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+                      <panel type src="/website/admin/tp-grading._include_.html#criteria-documentation" header="Admin <md>:glyphicon-log-in:</md> **tP: Grading → ==Documentation==**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
                         minimized fragment="criteria-documentation"></panel>
                     </p>
                     <p></p>
@@ -324,7 +325,7 @@ T | 1 | join sports club
                   <li>Review the UG to ensure the features written by each member fit together to form a cohesive product. Note that cohesiveness of the product can affect the grading of the <em>product design</em> aspect.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-grading._include_.html#criteria-productDesign" header="Admin <md>:glyphicon-log-in:</md> **tP: Grading → ==Product Design==**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+                  <panel type src="/website/admin/tp-grading._include_.html#criteria-productDesign" header="Admin <md>:glyphicon-log-in:</md> **tP: Grading → ==Product Design==**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
                     minimized fragment="criteria-productDesign"></panel>
                 </div>
                 <p></p>
@@ -359,7 +360,7 @@ T | 1 | join sports club
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 06:45:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 02:36:07 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -370,9 +371,24 @@ T | 1 | join sports club
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "3855d3d0d62585efc4f4841564bc73ca",
+      indexName: "nus-cs2113-ay1920s2",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

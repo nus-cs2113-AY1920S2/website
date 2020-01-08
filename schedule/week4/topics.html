@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -71,7 +72,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -94,7 +95,7 @@
           </nav>
           <p></p>
           <h1 id="week-4-feb-3-topics">Week 4 <small><small><span class="dimmed">[Feb 3]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-4-feb-3-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week4/topics.html#W4-1">W4.1</a>] <strong>OOP + Java: Inheritance</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -322,9 +323,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which statements are correct">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which statements are correct" class="algolia-no-index">
                           <question>
                             <p>Which of these are correct?</p>
                             <ul class="task-list">
@@ -334,7 +335,7 @@
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code reuse can be one benefit of inheritance.</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. A change to the superclass will not affect its subclasses.</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(a) (b) (c) (d)</p>
                               <p>Explanation: (e) is incorrect. Because subclasses inherit behavior from the superclass, any changes to the superclass could affect subclasses.</p>
                             </div>
@@ -426,7 +427,7 @@
               <div class="indented">
                 <div>
                   <p>
-                    <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> OOP → Inheritance → What%%" popup-url="/website/book/oop/inheritance/what"></panel>
+                    <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> OOP → Inheritance → What%%" popup-url="/website/book/oop/inheritance/what" class="algolia-no-index"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -470,7 +471,7 @@
                         </tbody>
                       </table>
                     </div>
-                    <modal large title="**Overloading**" id="modal:overriding-overloading">
+                    <modal large title="**Overloading**" id="modal:overriding-overloading" class="algolia-no-index">
                       <div>
                         <div></div>
                         <p></p>
@@ -539,9 +540,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which methods override?">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which methods override?" class="algolia-no-index">
                           <question>
                             <p>Which of these methods override another method? <span class="dimmed"><code>A</code> is the parent class. <code>B</code> inherits <code>A</code>.</span></p>
                             <img src="/website/book/oop/inheritance/overriding/images/overriding.png" height="220">
@@ -553,7 +554,7 @@
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>d</p>
                               <p>Explanation: Method overriding requires a method in a <em>child class</em> to use the same method name and same parameter sequence used by one of its ancestors</p>
                             </div>
@@ -799,7 +800,7 @@ Nov 16
 true
 Postponed to Nov 18th
 </code></pre>
-                              <div slot="hint">
+                              <div slot="hint" class="algolia-no-index">
                                 <p><code>Todo</code> class is given below. You can follow a similar approach for the <code>Deadline</code> class.</p>
                                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Todo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
@@ -1032,7 +1033,7 @@ do by: Postponed to Nov 18th
 </code></pre>
                               <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <code>super.toString</code> from the subclass to invoke the behavior of the method you are overriding.
                                 This is useful here because the overriding method is simply <em>adding onto</em> the behavior of the overridden method.</p>
-                              <div slot="hint">
+                              <div slot="hint" class="algolia-no-index">
                                 <p><code>toString()</code> method of <code>Task</code> class and <code>Todo</code> class are given below. You can follow a similar approach for the <code>Deadline</code> class.</p>
                                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-comment">// ...</span>
@@ -1139,7 +1140,7 @@ do by: Postponed to Nov 18th
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Paradigms → Object Oriented Programming → Inheritance → What%%" popup-url="/website/book/oop/inheritance/what"></panel>
+                  <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Paradigms → Object Oriented Programming → Inheritance → What%%" popup-url="/website/book/oop/inheritance/what" class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -1203,11 +1204,11 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                   </div>
                 </box>
                 <p><strong><trigger trigger="click" for="modal:dynamicAndStatic-overriding">Overridden methods</trigger> are resolved using dynamic binding, and therefore resolves to the implementation in the actual type of the object.</strong></p>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:dynamicAndStatic-overriding">
+                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:dynamicAndStatic-overriding" class="algolia-no-index">
                   <div>
                     <div>
                       <p>
-                        <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> OOP → Inheritance → What%%" popup-url="/website/book/oop/inheritance/what"></panel>
+                        <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> OOP → Inheritance → What%%" popup-url="/website/book/oop/inheritance/what" class="algolia-no-index"></panel>
                       </p>
                     </div>
                     <p></p>
@@ -1252,7 +1253,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                 </tbody>
                               </table>
                             </div>
-                            <modal large title="**Overloading**" id="modal:overriding-overloading">
+                            <modal large title="**Overloading**" id="modal:overriding-overloading" class="algolia-no-index">
                               <div>
                                 <div></div>
                                 <p></p>
@@ -1322,9 +1323,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                         </div>
                         <div>
                           <div>
-                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                               <div>
-                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which methods override?">
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which methods override?" class="algolia-no-index">
                                   <question>
                                     <p>Which of these methods override another method? <span class="dimmed"><code>A</code> is the parent class. <code>B</code> inherits <code>A</code>.</span></p>
                                     <img src="/website/book/oop/inheritance/overriding/images/overriding.png" height="220">
@@ -1336,7 +1337,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e</li>
                                     </ul>
-                                    <div slot="answer">
+                                    <div slot="answer" class="algolia-no-index">
                                       <p>d</p>
                                       <p>Explanation: Method overriding requires a method in a <em>child class</em> to use the same method name and same parameter sequence used by one of its ancestors</p>
                                     </div>
@@ -1367,7 +1368,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                   </div>
                 </box>
                 <p><strong>In contrast, <trigger trigger="click" for="modal:dynamicAndStatic-overloading">overloaded</trigger> methods are resolved using static binding.</strong></p>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:dynamicAndStatic-overloading">
+                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:dynamicAndStatic-overloading" class="algolia-no-index">
                   <div>
                     <div></div>
                     <p></p>
@@ -1471,8 +1472,10 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/oop/inheritance/substitutability/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Paradigms → Object Oriented Programming → Inheritance → Substitutability%%" popup-url="/website/book/oop/inheritance/substitutability"></panel>
-                  <panel src="/website/book/oop/inheritance/dynamicAndStaticBinding/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Paradigms → Object Oriented Programming → Inheritance → Dynamic and Static Binding%%" popup-url="/website/book/oop/inheritance/dynamicAndStaticBinding"></panel>
+                  <panel src="/website/book/oop/inheritance/substitutability/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Paradigms → Object Oriented Programming → Inheritance → Substitutability%%" popup-url="/website/book/oop/inheritance/substitutability"
+                    class="algolia-no-index"></panel>
+                  <panel src="/website/book/oop/inheritance/dynamicAndStaticBinding/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Paradigms → Object Oriented Programming → Inheritance → Dynamic and Static Binding%%" popup-url="/website/book/oop/inheritance/dynamicAndStaticBinding"
+                    class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -1495,9 +1498,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Concepts related to polymorphism">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Concepts related to polymorphism" class="algolia-no-index">
                         <question>
                           <p>Which one of these is least related to how OO programs achieve polymorphism?</p>
                           <ul radio-group="8bdf8" class="radio-list">
@@ -1505,7 +1508,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                             <li class="radio-list-item"><label><input class="radio-list-input" name="8bdf8" type="radio"> b. dynamic binding</label></li>
                             <li class="radio-list-item"><label><input class="radio-list-input" name="8bdf8" type="radio"> c. operation overloading</label></li>
                           </ul>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>(c)</p>
                             <p>Explanation: Operation overriding is the one that is related, not operation overloading.</p>
                           </div>
@@ -1560,7 +1563,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                   <pre><code class="hljs">Mittens: Meow
 Snowball: Meow
 </code></pre>
-                  <panel type="seamless" header="%%The `Cat` class%%">
+                  <panel type="seamless" header="%%The `Cat` class%%" class="algolia-no-index">
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -1599,7 +1602,7 @@ Snowball: Meow
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                  <panel type="seamless" header="%%The `Dog` class%%">
+                  <panel type="seamless" header="%%The `Dog` class%%" class="algolia-no-index">
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -1636,7 +1639,7 @@ Spot: Woof
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                  <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%">
+                  <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%" class="algolia-no-index">
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
     <span class="hljs-keyword">protected</span> String name;
@@ -1744,7 +1747,7 @@ Spot: Woof
 }
 </code></pre>
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You may use an array of size 100 to store the shapes.</p>
-                            <panel type="seamless" header="Partial solution">
+                            <panel type="seamless" header="Partial solution" class="algolia-no-index">
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
@@ -1928,7 +1931,7 @@ Orange indicates medium priority
 Blue indicates medium priority
 Green indicates low priority
 </code></pre>
-                        <div slot="hint">
+                        <div slot="hint" class="algolia-no-index">
                           <p>Use a <code>switch</code> statement to select between possible values for <code>Priority</code>.</p>
                           <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">describe</span><span class="hljs-params">(String color, Priority p)</span> </span>{
         <span class="hljs-keyword">switch</span> (p) {
@@ -2478,7 +2481,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                   <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and
                   'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
               </ul>
-              <modal title="More about enumerations" id="modal:obviousCode-enums">
+              <modal title="More about enumerations" id="modal:obviousCode-enums" class="algolia-no-index">
                 <ul>
                   <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
                   <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
@@ -2670,7 +2673,7 @@ processData();
 displayResult();
 </code></pre>
               </box>
-              <modal title id="modal:slap-abstraction">
+              <modal title id="modal:slap-abstraction" class="algolia-no-index">
                 <div>
                   <div></div>
                   <p></p>
@@ -2849,7 +2852,7 @@ exit();
               </box>
               <p>Given below are two common refactorings (
                 <trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
-              <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what">
+              <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what" class="algolia-no-index">
                 <div>
                   <ul>
                     <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’
@@ -2980,9 +2983,9 @@ send()
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Results of Refactoring">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Results of Refactoring" class="algolia-no-index">
                       <question>
                         <p>Choose the correct statements</p>
                         <ul class="task-list">
@@ -2991,7 +2994,7 @@ send()
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Refactoring can result in better performance</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Refactoring can change the number of methods/classes</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>a, b, c, d</p>
                           <p>Explanation:</p>
                           <ul>
@@ -3003,14 +3006,14 @@ send()
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Do you agree with the following statement? Refactoring and regression testing">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Do you agree with the following statement? Refactoring and regression testing" class="algolia-no-index">
                       <question has-input="true">
                         <p>Do you agree with the following statement? Justify your answer.</p>
                         <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
-                        <div slot="hint">
+                        <div slot="hint" class="algolia-no-index">
                           <p>There are two flaws in the given statement.</p>
                         </div>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>DISAGREE.</p>
                           <ol>
                             <li>Even a minor change can have major repercussions on the system. We MUST do regression testing after each change, no matter how minor it is.</li>
@@ -3021,7 +3024,7 @@ send()
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Explain Refactoring">
+                    <panel header="<md>:glyphicon-question-sign:</md> Explain Refactoring" class="algolia-no-index">
                       <question has-input>
                         <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
                       </question>
@@ -3034,7 +3037,7 @@ send()
         </div>
       </panel>
       <p><span id="W4-6b"></span></p>
-      <panel type="seamless" popup-url="/website/book/intellij/refactoring">
+      <panel type="seamless" popup-url="/website/book/intellij/refactoring" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W4.6b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3044,7 +3047,7 @@ send()
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Implementation → Refactoring → What%%" popup-url="/website/book/refactoring/what"></panel>
+                <panel src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Implementation → Refactoring → What%%" popup-url="/website/book/refactoring/what" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -3095,7 +3098,7 @@ send()
             <div>
               <p>Given below are some more commonly used refactorings. A more comprehensive list is available at
                 <trigger trigger="click" for="modal:refactoring-catalog-how"> refactoring-catalog </trigger>.</p>
-              <modal title="**Refactoring Catalog**" id="modal:refactoring-catalog-how">
+              <modal title="**Refactoring Catalog**" id="modal:refactoring-catalog-how" class="algolia-no-index">
                 <div>
                   <ul>
                     <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’
@@ -3124,7 +3127,7 @@ send()
         </div>
       </panel>
       <p><span id="W4-6d"></span></p>
-      <panel type="seamless" popup-url="/website/book/refactoring/when">
+      <panel type="seamless" popup-url="/website/book/refactoring/when" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W4.6d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3147,16 +3150,16 @@ send()
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: ‘Extract method’ and ‘Inline method’ refactorings">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: ‘Extract method’ and ‘Inline method’ refactorings" class="algolia-no-index">
                       <question>
                         <p>‘Extract method’ and ‘Inline method’ refactorings</p>
                         <ul radio-group="93b6b" class="radio-list">
                           <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> a. are opposites of each other.</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> b. sounds like opposites but they are not.</label></li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>a</p>
                         </div>
                       </question>
@@ -3214,7 +3217,7 @@ send()
                 </ul>
               </box>
               <p><strong>Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.</strong></p>
-              <panel type="seamless">
+              <panel type="seamless" class="algolia-no-index">
                 <span slot="header" class="card-title"><span><span class="dimmed">Other details a test case can contain</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                 </span>
                 </span>
@@ -3241,7 +3244,7 @@ send()
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug causing
                   that failure could be an uninitialized variable.</p>
               </box>
-              <panel type="seamless">
+              <panel type="seamless" class="algolia-no-index">
                 <span slot="header" class="card-title"><span><span class="dimmed">A deeper look at the definition of testing</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                 </span>
                 </span>
@@ -3263,9 +3266,9 @@ send()
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Relate testing, test cases, failure, and defect">
+                    <panel header="<md>:glyphicon-question-sign:</md> Relate testing, test cases, failure, and defect" class="algolia-no-index">
                       <question has-input>
                         <p>Explain how the concepts of <em>testing</em>, <em>test case</em>, <em>test failure</em>, and <em>defect</em> are related to each other.</p>
                       </question>
@@ -3302,9 +3305,9 @@ send()
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Regression Testing defintion T/F?">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Regression Testing defintion T/F?" class="algolia-no-index">
                       <question>
                         <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
                         <ul radio-group="63d56" class="radio-list">
@@ -3312,7 +3315,7 @@ send()
                           <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> b. False</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> c. Partially true</label></li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>c.</p>
                           <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
                         </div>
@@ -3320,7 +3323,7 @@ send()
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Explain regression testing">
+                    <panel header="<md>:glyphicon-question-sign:</md> Explain regression testing" class="algolia-no-index">
                       <question has-input>
                         <p>Explain why and when you would do regression testing in a software project.</p>
                       </question>
@@ -3356,13 +3359,13 @@ send()
                   <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run tests
                     repeatedly and increases precision of testing (because manual testing is susceptible to human errors).</p>
                 </tab>
-                <tab header="<md>:glyphicon-facetime-video:</md>">
+                <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe></tab>
               </tabs>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-paperclip:</md> Resources">
+                <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
                   <p><strong>Side readings:</strong></p>
                   <ul>
                     <li>[Quora post] <a href="http://www.quora.com/What-are-good-ways-to-avoid-bugs-while-programming/answer/Mattias-Petter-Johansson">What is the best way to avoid bugs</a></li>
@@ -3402,7 +3405,7 @@ send()
               <ol>
                 <li>
                   <p>Store the test input in the text file <code>input.txt</code>.</p>
-                  <panel header="%%<md>:fas-cube:</md> Example `input.txt`%%" type="seamless">
+                  <panel header="%%<md>:fas-cube:</md> Example `input.txt`%%" type="seamless" class="algolia-no-index">
                     <pre><code class="hljs">add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
@@ -3410,7 +3413,7 @@ add Valid Name 12345 e/valid@email.butPhonePrefixMissing
                 </li>
                 <li>
                   <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                  <panel header="%%<md>:fas-cube:</md> Example `expected.txt`%%" type="seamless">
+                  <panel header="%%<md>:fas-cube:</md> Example `expected.txt`%%" type="seamless" class="algolia-no-index">
                     <pre><code class="hljs">Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
@@ -3432,7 +3435,7 @@ Invalid command format: add
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                     </li>
                   </ul>
-                  <panel header minimized>
+                  <panel header minimized class="algolia-no-index">
                     <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                     </span>
                     </span>
@@ -3462,7 +3465,7 @@ Invalid command format: add
               <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
               <div>
                 <popover id="pop:cli" placement="top">
-                  <div slot="content">
+                  <div slot="content" class="algolia-no-index">
                     <div>
                       <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
                     </div>
@@ -3524,7 +3527,7 @@ Invalid command format: add
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 06:45:10 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 02:36:07 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -3535,9 +3538,24 @@ Invalid command format: add
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "3855d3d0d62585efc4f4841564bc73ca",
+      indexName: "nus-cs2113-ay1920s2",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

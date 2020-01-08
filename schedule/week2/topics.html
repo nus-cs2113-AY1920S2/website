@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -71,7 +72,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -94,7 +95,7 @@
           </nav>
           <p></p>
           <h1 id="week-2-jan-20-topics">Week 2 <small><small><span class="dimmed">[Jan 20]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-2-jan-20-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week2/topics.html#W2-1">W2.1</a>] <strong>SE: Intro</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -326,7 +327,7 @@
                       of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules with available resources.</p>
                     <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys and woes all its own. For many, the joys far outweigh the woes....</p>
                   </blockquote>
-                  <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm">
+                  <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm" class="algolia-no-index">
                     <table>
                       <tr>
                         <td>
@@ -349,12 +350,12 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: SE vs Civil Engineering">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: SE vs Civil Engineering" class="algolia-no-index">
                           <question has-input="true">
                             <p>Compare Software Engineering with Civil Engineering in terms of how work products in CE (i.e. buildings) differ from those of SE (i.e. software).</p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <div class="table-responsive">
                                 <table class="markbind-table table table-bordered table-striped">
                                   <thead>
@@ -420,10 +421,10 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Software vs Bridges">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Software vs Bridges" class="algolia-no-index">
                           <question has-input="true">
                             <p>Comment on this statement: Building software is cheaper and easier than building bridges (all we need is a PC!).</p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>Depends on the size of the software. Manpower required for software is very costly. On the other hand, we can create a very valuable software (e.g. an iPhone application that can make million dollars in a month) with a just
                                 a PC and a few days of work!</p>
                             </div>
@@ -431,10 +432,10 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coding as a manufacturing activity">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coding as a manufacturing activity" class="algolia-no-index">
                           <question has-input="true">
                             <p>Justify this statement: Coding is still a ‘design’ activity, not a ‘manufacturing’ activity. You may use a comparison (or an analogy) of Software engineering versus Civil Engineering to argue this point.</p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>Arguments to support this statement:</p>
                               <ul>
                                 <li>If coding is a manufacturing activity, we should be able to do it using robotic machines (just like in the car industry) or low-skilled laborers (like in the construction industry).</li>
@@ -447,14 +448,14 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> List pros and cons of SE">
+                        <panel header="<md>:glyphicon-question-sign:</md> List pros and cons of SE" class="algolia-no-index">
                           <question has-input="true">
                             <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
                           </question>
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one of these is not included in Brook’s list of ‘Woes of the Craft’?">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one of these is not included in Brook’s list of ‘Woes of the Craft’?" class="algolia-no-index">
                           <question>
                             <ul class="task-list">
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
@@ -464,7 +465,7 @@
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(c)</p>
                             </div>
                           </question>
@@ -735,7 +736,7 @@
                 <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
               </ul>
               <popover id="pop:helloWorld-statement" title="Statements" placement="top">
-                <div slot="content">
+                <div slot="content" class="algolia-no-index">
                   <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
                   <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
                 </div>
@@ -780,7 +781,7 @@
               <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the
                 <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
               <popover id="pop:compiling-errors" title="Compile-time errors" placement="top">
-                <div slot="content">
+                <div slot="content" class="algolia-no-index">
                   <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
                   <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
                 </div>
@@ -1381,12 +1382,12 @@ They are the same: true
 <span class="hljs-keyword">boolean</span> isSame = x.equals(<span class="hljs-string">"bar"</span>) <span class="hljs-comment">// false</span>
 isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comment">// true</span>
 </code></pre>
-                        <div slot="hint">
+                        <div slot="hint" class="algolia-no-index">
                           <ul>
                             <li>The two command line arguments can be accessed inside the <code>main</code> method using <code>args[0]</code> and <code>args[1]</code>.</li>
                             <li>When using multiple operators in the same expression, you might need to use parentheses to specify operator precedence. e.g., <code>&quot;foo&quot; + x == y</code> vs <code>&quot;foo&quot; + (x == y)</code></li>
                           </ul>
-                          <panel type="seamless" header="partial solution">
+                          <panel type="seamless" header="partial solution" class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
       String first = args[<span class="hljs-number">0</span>];
@@ -1532,7 +1533,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                 <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                   <div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> Greeter">
+                      <panel header="<md>:glyphicon-question-sign:</md> Greeter" class="algolia-no-index">
                         <question>
                           <p>Write a Java program that takes several command line arguments that describe a person or a family | and prints out a greeting. The parameters can be one of two formats.</p>
                           <div class="table-responsive">
@@ -1567,7 +1568,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                           <p>
                             <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>java Greeter Tan M M F</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>Dear Tan family</code></p>
                           <p>You can assume that the input is always in the correct format <span class="dimmed">i.e., no need to handle invalid input cases</span>.</p>
-                          <div slot="hint">
+                          <div slot="hint" class="algolia-no-index">
                             <p>Partial solution:</p>
                             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeter</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
@@ -1626,7 +1627,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                           <p>
                             <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>java GradeHelper B</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>CAP for grade B is 3.5</code></p>
                           <p>You can assume that the input is always in the correct format <span class="dimmed">i.e., no need to handle invalid input cases</span>.</p>
-                          <div slot="hint">
+                          <div slot="hint" class="algolia-no-index">
                             <p>Partial solution:</p>
                             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GradeHelper</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
@@ -1704,7 +1705,7 @@ Polly likes crackers
 </code></pre>
                 <p>By convention, method names should be named in the
                   <trigger trigger="click" for="modal:javaMethods_camelCase"><em>camelCase</em></trigger> format.</p>
-                <modal large title="Defintion: camelCase" id="modal:javaMethods_camelCase">
+                <modal large title="Defintion: camelCase" id="modal:javaMethods_camelCase" class="algolia-no-index">
                   <div>
                     <blockquote>
                       <pic src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" width="200" alt="camelCase"></pic>
@@ -1855,7 +1856,7 @@ Polly likes crackers
                           <pre><code class="hljs">A+: 5.0
 B : 3.5
 </code></pre>
-                          <div slot="hint">
+                          <div slot="hint" class="algolia-no-index">
                             <p>Partial solution:</p>
                             <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getGradeCap</span><span class="hljs-params">(String grade)</span> </span>{
         <span class="hljs-keyword">double</span> cap = <span class="hljs-number">0</span>;
@@ -2118,7 +2119,7 @@ B : 3.5
 A:5.0
 A-:4.5
 </code></pre>
-                          <div slot="hint">
+                          <div slot="hint" class="algolia-no-index">
                             <p>Partial solution:</p>
                             <pre><code class="hljs java">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span>[] getMultipleGradeCaps(String[] grades) {
         <span class="hljs-keyword">double</span>[] caps = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[grades.length];
@@ -2189,9 +2190,9 @@ A-:4.5
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these are features available in IDEs?">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these are features available in IDEs?" class="algolia-no-index">
                       <question>
                         <ul class="task-list">
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling</li>
@@ -2206,7 +2207,7 @@ A-:4.5
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> j. Code generation <span class="dimmed">e.g., to generate the code required by simply specifying which component/structure you want to implement</span></li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> k. Extension <span class="dimmed">i.e., ability add more functionality to the IDE using plugins</span></li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>All.</p>
                           <p>Explanation: While all of these features may not be present in some IDEs, most do have these features in some form or other.</p>
                         </div>
@@ -2249,7 +2250,7 @@ A-:4.5
                     </li>
                   </ul>
                 </tab>
-                <tab header="<md>:glyphicon-facetime-video:</md>">
+                <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
 
 
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -2338,7 +2339,7 @@ A-:4.5
               </blockquote>
               <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
               <popover id="pop:production-code" title="<md>:glyphicon-eye-open:</md> Production Code" placement="top">
-                <div slot="content">
+                <div slot="content" class="algolia-no-index">
                   Code being used in an actual product with actual users
                 </div>
               </popover>
@@ -2374,9 +2375,9 @@ A-:4.5
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is the recommended approach regarding coding standards?">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is the recommended approach regarding coding standards?" class="algolia-no-index">
                       <question>
                         <p>What is the recommended approach regarding coding standards?</p>
                         <ul radio-group="5c5a1" class="radio-list">
@@ -2385,14 +2386,14 @@ A-:4.5
                           <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>c</p>
                         </div>
                       </question>
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> What is the aim? What is the value?">
+                    <panel header="<md>:glyphicon-question-sign:</md> What is the aim? What is the value?" class="algolia-no-index">
                       <question has-input>
                         <p>What is the aim of using a coding standard? How does it help?</p>
                       </question>
@@ -2454,11 +2455,11 @@ A-:4.5
                     </p>
                   </blockquote>
                 </tab>
-                <tab header="<md>:glyphicon-facetime-video:</md>">
+                <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 </tab>
               </tabs>
-              <modal large title="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide">
+              <modal large title="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide" class="algolia-no-index">
                 <div>
                   <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
                 </div>
@@ -2478,21 +2479,21 @@ A-:4.5
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What does RCS stand for?">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What does RCS stand for?" class="algolia-no-index">
                       <question has-input="true">
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>Revision Control Software</p>
                         </div>
                       </question>
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is a Revision?">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is a Revision?" class="algolia-no-index">
                       <question has-input="true">
                         <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>A <em>revision</em> (some seem to use it interchangeably with <em>version</em> while others seem to distinguish the two -- here, let us treat them as the same, for simplicity) is a state of a piece of information at a specific
                             time that is a result of some changes to it. For example, take a file containing program code. If you modify the code and save the file, you have a new revision (or a version) of that file.</p>
                         </div>
@@ -2500,7 +2501,7 @@ A-:4.5
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these is not considered a benefit of a typical RCS?">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these is not considered a benefit of a typical RCS?" class="algolia-no-index">
                       <question>
                         <ul class="task-list">
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
@@ -2510,14 +2511,14 @@ A-:4.5
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Detect when multiple developers make incompatible changes to the same file</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. All of them are benefits of RCS</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>f</p>
                         </div>
                       </question>
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Explain RCS in a team project context">
+                    <panel header="<md>:glyphicon-question-sign:</md> Explain RCS in a team project context" class="algolia-no-index">
                       <question has-input="true">
                         <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
                       </question>
@@ -2561,16 +2562,16 @@ A-:4.5
                   </p>
                   <p><strong>You can have multiple repos in your computer</strong>, each repo revision-controlling files of a different working directly, for examples, files of different projects.</p>
                 </tab>
-                <tab header="<md>:glyphicon-facetime-video:</md>">
+                <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 </tab>
               </tabs>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> What is a repo?">
+                    <panel header="<md>:glyphicon-question-sign:</md> What is a repo?" class="algolia-no-index">
                       <question has-input="true">
                         <p>In the context of RCS, what is a <em>repo</em>?</p>
                       </question>
@@ -2592,7 +2593,7 @@ A-:4.5
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/repositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Repositories%%" popup-url="/website/book/revisionControl/repositories"></panel>
+                <panel src="/website/book/revisionControl/repositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Repositories%%" popup-url="/website/book/revisionControl/repositories" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -2605,7 +2606,7 @@ A-:4.5
             <p></p>
             <p></p>
             <div>
-              <panel header="%%<md>:fas-paperclip:</md> Git Overview%%" class="non-printable">
+              <panel header="%%<md>:fas-paperclip:</md> Git Overview%%" class="non-printable algolia-no-index">
                 <p>Soon you are going to take your first step in using Git. If you would like to see a quick overview of the full Git landscape before jumping in, watch the video below.</p>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 <p></p>
@@ -2624,7 +2625,7 @@ A-:4.5
                     <p>Note: If you are on Windows, you might have to <a href="https://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/">configure Windows Explorer to show hidden files</a>.</p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>Open a Git Bash Terminal.</p>
                     <p>If you installed SourceTree, you can click the <code>Terminal</code> button to open a GitBash terminal.</p>
@@ -2685,7 +2686,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                   <p><strong><mark><em>Committing</em></mark> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
                   <p><strong>When ready to commit, we first <mark><em>stage</em></mark> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
                 </tab>
-                <tab header="<md>:glyphicon-facetime-video:</md>">
+                <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 </tab>
               </tabs>
@@ -2707,7 +2708,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/init/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Git & GitHub → Init%%" popup-url="/website/book/gitAndGithub/init"></panel>
+                <panel src="/website/book/gitAndGithub/init/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Git & GitHub → Init%%" popup-url="/website/book/gitAndGithub/init" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -2736,7 +2737,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
                     <pre><code class="hljs sh">git status
@@ -2778,7 +2779,7 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>You can use the <code>stage</code> or the <code>add</code> command (they are synonyms, <code>add</code> is the more popular choice) to stage files.</p>
                     <pre><code class="hljs sh">git add fruits.txt
@@ -2808,7 +2809,7 @@ git status
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>Use the <code>commit</code> command to commit. The <code>-m</code> switch is used to specify the commit message.</p>
                     <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
@@ -2858,7 +2859,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> Revision Control: Saving History" popup-url="/website/book/revisionControl/savingHistory"></panel>
+                <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> Revision Control: Saving History" popup-url="/website/book/revisionControl/savingHistory" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -2881,7 +2882,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
 </code></pre>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>Create a file named <code>.gitignore</code> in the working directory root and add the following line in it.</p>
                     <pre><code class="hljs">temp.txt
@@ -2956,7 +2957,8 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Remote Respositories%%" popup-url="/website/book/revisionControl/remoteRepositories"></panel>
+                <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Remote Respositories%%" popup-url="/website/book/revisionControl/remoteRepositories"
+                  class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -2981,7 +2983,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                     <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>You can use the <code>clone</code> command to clone a repo.</p>
                     <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -3050,7 +3052,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 06:45:10 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 02:36:07 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -3061,9 +3063,24 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "3855d3d0d62585efc4f4841564bc73ca",
+      indexName: "nus-cs2113-ay1920s2",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

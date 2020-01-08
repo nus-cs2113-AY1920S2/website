@@ -47,12 +47,19 @@
       "searchable": "no"
     }
   ],
-  "enableSearch": true,
+  "enableSearch": false,
   "headingIndexingLevel": 5,
-  "plugins": ["filterTags"],
+  "plugins": ["filterTags", "algolia"],
   "pluginsContext": {
-   "filterTags" : {
-     "tags": []
-   }
- }
+    "filterTags" : {
+      "tags": []
+    },
+    "algolia": {
+      "apiKey": "3855d3d0d62585efc4f4841564bc73ca",
+      "indexName": "nus-cs2113-ay1920s2",
+      "algoliaOptions": { "hitsPerPage": 10 },
+      "facetFilters": [["tags:admin", "tags:se-book-adapted", "tags:schedule"]],
+      "debug": false
+    }
+  }
 }

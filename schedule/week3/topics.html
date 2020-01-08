@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -71,7 +72,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -94,7 +95,7 @@
           </nav>
           <p></p>
           <h1 id="week-3-jan-27-topics">Week 3 <small><small><span class="dimmed">[Jan 27]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-3-jan-27-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week3/topics.html#W3-1">W3.1</a>] <strong>OOP: Classes and Objects</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -329,9 +330,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about OOP">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about OOP" class="algolia-no-index">
                           <question>
                             <p>A) Choose the correct statements</p>
                             <ul class="task-list">
@@ -348,7 +349,7 @@
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Java can be used to write procedural code</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Prolog follows the Logic Programming paradigm</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>A) (a)(b)(c)(e)</p>
                               <p>Explanation: While many languages support the OO paradigm, OO is not a language itself.</p>
                               <p>B) Choose the correct statement</p>
@@ -359,14 +360,14 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: procedural vs OOP">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: procedural vs OOP" class="algolia-no-index">
                           <question>
                             <p>OO is a higher level mechanism than the procedural paradigm.</p>
                             <ul radio-group="07027" class="radio-list">
                               <li class="radio-list-item"><label><input class="radio-list-input" name="07027" type="radio"> True</label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="07027" type="radio"> False</label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>True.</p>
                               <p>Explanation: Procedural languages work at simple data structures (e.g., integers, arrays) and functions level. Because an object is an abstraction over data+related functions, OO works at a higher level.</p>
                             </div>
@@ -561,10 +562,10 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
 
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Describe objects in the given scenario">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Describe objects in the given scenario" class="algolia-no-index">
                           <question has-input="true">
                             <p>Consider the following real-world scenario.</p>
                             <box>
@@ -578,7 +579,7 @@
                               <li>Objects interact by sending messages.</li>
                               <li>OOP does not demand that the virtual world object network follow the real world exactly.</li>
                             </ol>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <blockquote>
                                 <p>[1] Object Oriented Programming (OOP) views the world as a network of interacting objects.</p>
                               </blockquote>
@@ -748,13 +749,13 @@
                     <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                       <div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Identify Classes and Objects">
+                          <panel header="<md>:glyphicon-question-sign:</md> Identify Classes and Objects" class="algolia-no-index">
                             <question>
                               <p>Consider the following scenario. If you were to simulate this in an OOP program, what are the classes and the objects you would use?</p>
                               <box>
                                 <p>A customer (name: John) gave a cheque to the Cashier (name: Peter) to pay for the LoTR and GoT books he bought.</p>
                               </box>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <div class="table-responsive">
                                   <table class="markbind-table table table-bordered table-striped">
                                     <thead>
@@ -788,7 +789,7 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Classes for CityConnect app">
+                          <panel header="<md>:glyphicon-question-sign:</md> Classes for CityConnect app" class="algolia-no-index">
                             <question has-input="true">
                               <p>Assume you are writing a CLI program called <strong><code>CityConnect</code></strong> for storing and querying distances between cities. The behavior is as follows:</p>
                               <pre><code class="hljs">Welcome to CityConnect!
@@ -812,7 +813,7 @@ Enter command: exit
 
 </code></pre>
                               <p>What classes would you have in your code if you write your program based on the OOP paradigm?</p>
-                              <div slot="hint">
+                              <div slot="hint" class="algolia-no-index">
                                 <p>One class you can have is <code>Route</code></p>
                               </div>
                             </question>
@@ -845,7 +846,7 @@ Enter command: exit
                 <p></p>
                 <div>
                   <p>The concept of <strong><em>Objects</em> in OOP is an <trigger trigger="click" for="modal:objectsAsAbstractions-abstraction">abstraction</trigger> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong>                    i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
-                  <modal large title="Definition: Abstraction" id="modal:objectsAsAbstractions-abstraction">
+                  <modal large title="Definition: Abstraction" id="modal:objectsAsAbstractions-abstraction" class="algolia-no-index">
                     <div>
                       <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                     </div>
@@ -887,19 +888,19 @@ Enter command: exit
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Choose the correct statement.">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Choose the correct statement." class="algolia-no-index">
                           <question>
                             <p>Choose the correct statements</p>
                             <ul class="task-list">
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an encapsulation because it packages data and behavior into one bundle.</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
                             </ul>
-                            <div slot="hint">
+                            <div slot="hint" class="algolia-no-index">
                               <p>Don't confuse encapsulation with abstraction.</p>
                             </div>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>Choose the correct statement</p>
                               <p>(a)</p>
                               <p>Explanation: The second statement should be: An object is an <strong>abstraction</strong> <s>encapsulation</s> because it lets ...</p>
@@ -969,7 +970,7 @@ Enter command: exit
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example imports the <code>java.awt.Point</code> (i.e., the <code>Point</code> class in the <code>java.awt</code> package) class -- which can be used to represent
                       <trigger for="pop:usingObjects-coordinates">the coordinates of a location in a Cartesian plane</trigger> -- and use it in the <code>main</code> method.</p>
                     <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top">
-                      <div slot="content">
+                      <div slot="content" class="algolia-no-index">
                         <p>In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, <code>(0,0)</code> indicates the origin, and <code>(x,y)</code> indicates the point <code>x</code> units to
                           the right and <code>y</code> units up from the origin.</p>
                       </div>
@@ -1024,7 +1025,7 @@ Enter command: exit
                             </p>
                             <pre><code class="hljs">java.awt.Rectangle[x=0,y=0,width=5,height=10]
 </code></pre>
-                            <div slot="hint">
+                            <div slot="hint" class="algolia-no-index">
                               <ul>
                                 <li>Import the <code>java.awt.Rectangle</code> class</li>
                                 <li>This is how you create the required object <code>new Rectangle(0, 0, 5, 10)</code></li>
@@ -1138,7 +1139,7 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
 Area: 24
 java.awt.Rectangle[x=0,y=0,width=8,height=10]
 </code></pre>
-                            <div slot="hint">
+                            <div slot="hint" class="algolia-no-index">
                               <ul>
                                 <li>Area can be calculated as <code>r.width * r.height</code></li>
                                 <li>Setting the size can be done as <code>r.setSize(8, 10)</code></li>
@@ -1324,7 +1325,7 @@ argument rectangle after method call: java.awt.Rectangle[x=0,y=0,width=5,height=
 returned point: java.awt.Point[x=2,y=3]
 null
 </code></pre>
-                            <div slot="hint">
+                            <div slot="hint" class="algolia-no-index">
                               <p>Partial solution:</p>
                               <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Point <span class="hljs-title">move</span><span class="hljs-params">(Point p, Rectangle r)</span></span>{
     <span class="hljs-keyword">if</span> (p == <span class="hljs-keyword">null</span> || r == <span class="hljs-keyword">null</span>){
@@ -1434,9 +1435,9 @@ spot = <span class="hljs-keyword">null</span>;
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suitable as a class-level variables">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suitable as a class-level variables" class="algolia-no-index">
                       <question>
                         <p>Which of these are suitable as class-level variables?</p>
                         <ul class="task-list">
@@ -1445,7 +1446,7 @@ spot = <span class="hljs-keyword">null</span>;
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: <code>Task</code>, variable: <code>totalPendingTasks</code></li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: <code>ArrayList</code>, variable: <code>total</code> (i.e., total items in a given <code>ArrayList</code> object)</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>(c)</p>
                           <p>Explanation: <code>totalPendingTasks</code> should not be managed by individual <code>Task</code> objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance level
                             as their value varies from instance to instance. e.g., <code>totalStudents</code> for one <code>Course</code> object will differ from <code>totalStudents</code> of another.</p>
@@ -1625,7 +1626,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                           <pre><code class="hljs">0
 78
 </code></pre>
-                          <div slot="hint">
+                          <div slot="hint" class="algolia-no-index">
                             <ul>
                               <li>Put the <code>Circle</code> class in a file called <code>Circle.java</code></li>
                             </ul>
@@ -1772,7 +1773,7 @@ area   : 113
 radius : 0.0
 radius : 0.0
 </code></pre>
-                          <div slot="hint">
+                          <div slot="hint" class="algolia-no-index">
                             <p>Partial solution:</p>
                             <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">double</span> radius)</span></span>{
     setX(x);
@@ -1975,7 +1976,7 @@ max radius used so far : 10.0
 max radius used so far : 10.0
 max radius used so far : 12.0
 </code></pre>
-                          <div slot="hint">
+                          <div slot="hint" class="algolia-no-index">
                             <p>You can use a <code>static</code> variable <code>maxRadius</code> to track the maximum value used for the <code>radius</code> attribute so far.</p>
                             <p>Partial solution:</p>
                             <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
@@ -2056,7 +2057,7 @@ max radius used so far : 12.0
           <div>
             <p>String is a built-in Java class that you
               <trigger trigger="click" for="modal:stringClass-javaLang">can use without importing</trigger>. Given below are some useful String methods:</p>
-            <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top">
+            <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top" class="algolia-no-index">
               <p>Any class in the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/package-summary.html"><code>java.lang</code></a> package can be used without importing.
               </p>
             </modal>
@@ -2324,7 +2325,7 @@ Second line
 SODA: 10.00
 FRIES: 0.50
 </code></pre>
-                        <div slot="hint">
+                        <div slot="hint" class="algolia-no-index">
                           <p>Partial solution:</p>
                           <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPrice</span><span class="hljs-params">(String item)</span> </span>{
     <span class="hljs-keyword">int</span> dividerPosition = item.indexOf(<span class="hljs-string">"--"</span>);
@@ -2475,7 +2476,7 @@ System.out.println(i);
                         <pre><code class="hljs">0
 109
 </code></pre>
-                        <div slot="hint">
+                        <div slot="hint" class="algolia-no-index">
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <a href="https://www.tutorialspoint.com/java/number_parseint.htm"><code>Integer.parseInt()</code></a>                            method to convert a <code>String</code> to the equivalent <code>int</code> value.</p>
                           <p>Partial solution:</p>
                           <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTotalScore</span><span class="hljs-params">(String[] values)</span></span>{
@@ -2584,7 +2585,7 @@ System.out.println(Arrays.toString(c));
 [@bee.com]
 
 </code></pre>
-                        <div slot="hint">
+                        <div slot="hint" class="algolia-no-index">
                           <ul>
                             <li><strong><code>filterEmailsfilterEmails(String[] items): String[]</code></strong>
                               <ol>
@@ -2599,7 +2600,7 @@ System.out.println(Arrays.toString(c));
                               </ul>
                             </li>
                           </ul>
-                          <panel type="seamless" header="Partial solution">
+                          <panel type="seamless" header="Partial solution" class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
     String[] results = <span class="hljs-keyword">new</span> String[items.length];
     <span class="hljs-keyword">int</span> matchCount = <span class="hljs-number">0</span>;
@@ -2736,11 +2737,11 @@ String[] words = sentence.split(<span class="hljs-string">" "</span>); <span cla
 System.out.println(Arrays.toString(words));
 </code></pre>
                         <p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>[hello, my, dear]</code></p>
-                        <div slot="hint">
+                        <div slot="hint" class="algolia-no-index">
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <code>String.format(&quot;%.2f&quot;, doubleValue)</code> to format <code>doubleValue</code> to two decimal
                             points.
                             <br> e.g., <code>String.format(&quot;%.2f&quot;, 1.3334)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>1.33</code></p>
-                          <panel type="seamless" header="Partial solution">
+                          <panel type="seamless" header="Partial solution" class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Arrays;
 <span class="hljs-keyword">import</span> java.util.Scanner;
 
@@ -2830,9 +2831,9 @@ System.out.println(Arrays.toString(words));
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about APIs">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about APIs" class="algolia-no-index">
                       <question>
                         <p>Choose the correct statements</p>
                         <ul class="task-list">
@@ -2842,7 +2843,7 @@ System.out.println(Arrays.toString(words));
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The API forms the contract between the component developer and the component user.</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Sequence diagrams can be used to show how components interact with each other via APIs.</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>(a) (c) (d) (e)</p>
                           <p>Explanation: (b) is incorrect because private methods cannot be a part of the API</p>
                         </div>
@@ -2850,14 +2851,14 @@ System.out.println(Arrays.toString(words));
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: True or False?">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: True or False?" class="algolia-no-index">
                       <question>
                         <p>Defining component APIs early is useful for developing components in parallel.</p>
                         <ul radio-group="9bd8a" class="radio-list">
                           <li class="radio-list-item"><label><input class="radio-list-input" name="9bd8a" type="radio"> True</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="9bd8a" type="radio"> False</label></li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>True</p>
                           <p>Explanation: Yes, once we know the precise behavior expected of each component, we can start developing them in parallel.</p>
                         </div>
@@ -3302,7 +3303,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                 we are interested in.</p>
               <div>
                 <popover id="pop:rcs" placement="top">
-                  <div slot="content">
+                  <div slot="content" class="algolia-no-index">
                     <div>
                       <p><strong>RCS</strong>: <strong>Revision Control Software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p>
                     </div>
@@ -3324,7 +3325,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/usingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Using History%%" popup-url="/website/book/revisionControl/usingHistory"></panel>
+                <panel src="/website/book/revisionControl/usingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Using History%%" popup-url="/website/book/revisionControl/usingHistory" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -3346,7 +3347,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <pre><code class="hljs sh">git show &lt; part-of-commit-hash &gt;
 </code></pre>
@@ -3386,7 +3387,7 @@ index 15b57f7..17f4528 100644
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>The <code>diff</code> command can be used to view the differences between two points of the history.</p>
                     <ul>
@@ -3405,7 +3406,7 @@ index 15b57f7..17f4528 100644
               </tabs>
               <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to
                 <trigger trigger="click" for="modal:checkout-stash">stash</trigger> them first to prevent them from being overwritten.</p>
-              <modal large title="%%Extract%%" id="modal:checkout-stash">
+              <modal large title="%%Extract%%" id="modal:checkout-stash" class="algolia-no-index">
                 <div>
                   <div></div>
                   <p></p>
@@ -3425,7 +3426,7 @@ index 15b57f7..17f4528 100644
                           <tab header="Source Tree">
                             <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
                           </tab>
-                          <tab header="CLI">
+                          <tab header="CLI" class="algolia-no-index">
                             <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
                           </tab>
                         </tabs>
@@ -3451,7 +3452,7 @@ index 15b57f7..17f4528 100644
                     <p>To go back to the latest commit, double-click it.</p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>Use the <code>checkout &lt;commit-identifier&gt;</code> command to change the working directory to the state it was in at a specific past commit.</p>
                     <ul>
@@ -3484,7 +3485,8 @@ index 15b57f7..17f4528 100644
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Saving History%%" popup-url="/website/book/revisionControl/savingHistory"></panel>
+                <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Saving History%%" popup-url="/website/book/revisionControl/savingHistory"
+                  class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -3508,7 +3510,7 @@ index 15b57f7..17f4528 100644
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>To add a tag to the current commit as <code>v1.0</code>,</p>
                     <pre><code class="hljs">git tag –a v1.0
@@ -3561,7 +3563,7 @@ git push origin --tags
                 <tab header="Source Tree">
                   <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
                 </tab>
               </tabs>
@@ -3590,7 +3592,7 @@ git push origin --tags
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Clone%%" popup-url="/website/book/gitAndGithub/clone"></panel>
+                <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Clone%%" popup-url="/website/book/gitAndGithub/clone" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -3606,7 +3608,7 @@ git push origin --tags
               <p>Clone the sample repo as explained in
                 <trigger for="modal:clone-repository" trigger="click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → Git &amp; GitHub → Clone]</trigger>.</p>
               <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
-              <modal title="**Clone Repository**" id="modal:clone-repository">
+              <modal title="**Clone Repository**" id="modal:clone-repository" class="algolia-no-index">
                 <div>
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div>
@@ -3632,7 +3634,7 @@ git push origin --tags
                             <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                           </div>
                         </tab>
-                        <tab header="CLI">
+                        <tab header="CLI" class="algolia-no-index">
                           <div>
                             <p>You can use the <code>clone</code> command to clone a repo.</p>
                             <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -3660,7 +3662,7 @@ git push origin --tags
                     <p>Arrow marked as <code>a</code>: The local repo is now at this commit, marked by the <code>master</code> label.<br> Arrow marked as <code>b</code>: <code>origin/master</code> label shows what is the latest commit in the <code>master</code>                      branch in the remote repo.</p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>Use the <code>reset</code> command to delete commits at the tip of the revision history.</p>
                     <pre><code class="hljs">git reset --hard HEAD~2
@@ -3681,7 +3683,7 @@ git push origin --tags
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p><code>git pull origin</code></p>
                   </div>
@@ -3702,7 +3704,7 @@ git push origin --tags
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Pull%%" popup-url="/website/book/gitAndGithub/pull"></panel>
+                <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Pull%%" popup-url="/website/book/gitAndGithub/pull" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -3721,7 +3723,7 @@ git push origin --tags
                 </li>
                 <li>
                   <p>Fork the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your GitHub account:</p>
-                  <panel type="seamless" header="%%How to fork a repo?%%">
+                  <panel type="seamless" header="%%How to fork a repo?%%" class="algolia-no-index">
                     <p>Navigate to the on GitHub and click on the <img src="/website/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
                     <p></p>
                   </panel>
@@ -3749,7 +3751,7 @@ git push origin --tags
                     </box>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>Use the command <code>git push origin master</code>. Enter Github username and password when prompted.</p>
                     <box type="warning">
@@ -3759,7 +3761,7 @@ git push origin --tags
                 </tab>
               </tabs>
               <p></p>
-              <panel header minimized>
+              <panel header minimized class="algolia-no-index">
                 <span slot="header" class="card-title"><span> Pushing an existing local repo into a new remote repo on GitHub <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                 </span>
                 </span>
@@ -3797,7 +3799,7 @@ git push origin --tags
                         <img src="/website/book/gitAndGithub/push/images/pushToRemote.png" width="470"></li>
                     </ol>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <ol>
                       <li>Navigate to the folder containing the local repo.</li>
                       <li>Set the new remote repo as a <em>remote</em> of the local repo.<br> command: <code>git remote add {remote_name} {remote_repo_url}</code><br> e.g., <code>git remote add origin https://github.com/johndoe/foobar.git</code></li>
@@ -3871,7 +3873,7 @@ git push origin --tags
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 06:45:10 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 02:36:07 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -3882,9 +3884,24 @@ git push origin --tags
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "3855d3d0d62585efc4f4841564bc73ca",
+      indexName: "nus-cs2113-ay1920s2",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -71,7 +72,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -94,7 +95,7 @@
           </nav>
           <p></p>
           <h1 id="week-5-feb-10-topics">Week 5 <small><small><span class="dimmed">[Feb 10]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-5-feb-10-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week5/topics.html#W5-1">W5.1</a>] <strong>Java: Casting</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -650,7 +651,7 @@ Rectangle of area 16
 }
 </code></pre>
                             <p>Add the missing <code>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
-                            <panel type="seamless" header="Partial solution">
+                            <panel type="seamless" header="Partial solution" class="algolia-no-index">
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
@@ -662,7 +663,7 @@ Rectangle of area 16
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about abstract classes">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about abstract classes" class="algolia-no-index">
                           <question>
                             <p>Choose the correct statements about Java abstract classes and
                               <tooltip content="classes that are not abstract">concrete classes</tooltip>.</p>
@@ -672,7 +673,7 @@ Rectangle of area 16
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An abstract class need not contain any concrete methods.</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An abstract class cannot be instantiated.</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(b)(c)(d)</p>
                               <p>Explanation: A concrete class cannot contain even a single abstract method.</p>
                             </div>
@@ -814,7 +815,7 @@ Rectangle of area 16
                 </ol>
               </box>
               <p><strong>Interfaces can also contain <trigger trigger="click" for="modal:javaInterfaces-constants">constants</trigger> and static methods</strong>.</p>
-              <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants">
+              <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants" class="algolia-no-index">
                 <div>
                   <div></div>
                   <p></p>
@@ -951,7 +952,7 @@ Person of name James Cook
     <span class="hljs-comment">// todo: add missing methods</span>
 }
 </code></pre>
-                          <panel type="seamless" header="Partial solution">
+                          <panel type="seamless" header="Partial solution" class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Printable</span> </span>{
     <span class="hljs-comment">//...</span>
 }
@@ -1074,7 +1075,7 @@ Person of name James Cook
     }
 }
 </code></pre>
-              <panel type="seamless" header="`Formatter` class">
+              <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
                 <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
@@ -1374,9 +1375,9 @@ Person of name James Cook
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Benefit of exceptions">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Benefit of exceptions" class="algolia-no-index">
                       <question>
                         <p>Which are benefits of exceptions?</p>
                         <ul class="task-list">
@@ -1384,7 +1385,7 @@ Person of name James Cook
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>(a) (c)</p>
                           <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
                         </div>
@@ -1706,7 +1707,7 @@ WIDTH or HEIGHT is missing: 3x
 WIDTH or HEIGHT is missing: 3
 Too many dimensions: 3x4x5
 </code></pre>
-                          <panel type="seamless" header="Partial solution">
+                          <panel type="seamless" header="Partial solution" class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
@@ -1872,9 +1873,9 @@ Too many dimensions: 3x4x5
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
                       <question>
                         <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                         <ul class="task-list">
@@ -1886,7 +1887,7 @@ Too many dimensions: 3x4x5
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>(a)(c)(d)(f)(g)</p>
                           <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project is
                             done, both of which are considered non-functional requirements.</p>
@@ -1994,7 +1995,7 @@ Too many dimensions: 3x4x5
                 <li>Complete</li>
               </ul>
               <popover id="pop:zielczynski">
-                <div slot="content">
+                <div slot="content" class="algolia-no-index">
                   <div>
                     <p>Peter Zielczynski, <em><strong>Requirements Management Using IBM Rational RequisitePro</strong></em>, IBM Press, 2008</p>
                   </div>
@@ -2046,9 +2047,9 @@ Too many dimensions: 3x4x5
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Characteristic of brainstorming">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Characteristic of brainstorming" class="algolia-no-index">
                       <question>
                         <p>What is the key characteristic about brainstorming?</p>
                         <ul radio-group="11d89" class="radio-list">
@@ -2057,7 +2058,7 @@ Too many dimensions: 3x4x5
                           <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> c. Only the best people in the team should take part.</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>(b)</p>
                         </div>
                       </question>
@@ -2180,7 +2181,7 @@ Too many dimensions: 3x4x5
             <div>
               <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can produce useful information that project requirements.</strong></p>
               <popover id="pop:interviews-domainExpert" title placement="top">
-                <div slot="content">
+                <div slot="content" class="algolia-no-index">
                   <div>
                     <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed">e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
                   </div>
@@ -2220,7 +2221,7 @@ Too many dimensions: 3x4x5
               <p><strong>Focus groups are a kind of informal interview within an interactive group setting.</strong> A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue, process, product, advertisement,
                 etc.
               </p>
-              <panel type="seamless" class="non-printable">
+              <panel type="seamless" class="non-printable algolia-no-index">
                 <span slot="header"><span><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span>: How do focus groups work? - Hector Lanz <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span>                extra</span>
                 </span>
                 </span>
@@ -2389,16 +2390,16 @@ Too many dimensions: 3x4x5
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="Q: Which of these are true about user stories?">
+                    <panel header="Q: Which of these are true about user stories?" class="algolia-no-index">
                       <question>
                         <ul class="task-list">
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They are based on stories users tell about similar systems</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They are written from the user/customer perspective</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are always written in some physical medium such as index cards or sticky notes</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <ul class="task-list">
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Reason: Despite the name, user stories are not related to 'stories' about the software.</li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b.</li>
@@ -2409,34 +2410,34 @@ Too many dimensions: 3x4x5
                     </panel>
                   </div>
                   <div>
-                    <panel header="Q: What's wrong with this user story?">
+                    <panel header="Q: What's wrong with this user story?" class="algolia-no-index">
                       <question has-input="true">
                         <p>Critique the following user story taken from a software project to build an e-commerce website.</p>
                         <p><code>As a developer, I want to use Python to implement the software, so that we can resue existing Python modules.</code></p>
-                        <div slot="hint">
+                        <div slot="hint" class="algolia-no-index">
                           <p>Refer to the definition of a user story.</p>
                           <p><span></span></p>
                           <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
                           <p></p>
                         </div>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>This user story is not written from the perspective of the user/customer.</p>
                         </div>
                       </question>
                     </panel>
                   </div>
                   <div>
-                    <panel header="Q: Extract user stories from customer statement">
+                    <panel header="Q: Extract user stories from customer statement" class="algolia-no-index">
                       <question has-input="true">
                         <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <popover content="The number of leave days not yet taken">leave balance</popover></em>. What
                           are the user stories you can extract from that statement?</p>
-                        <div slot="hint">
+                        <div slot="hint" class="algolia-no-index">
                           <p>Remember to follow the correct format when writing user stories.</p>
                           <div>
                             <p><strong>User story format</strong>: <code>As a {user type/role} I can {function} so that {benefit}</code></p>
                           </div>
                         </div>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p><code>As an employee, I can view my leave balance, so that I can know how many leave days I have left.</code></p>
                           <p><span class="dimmed">Note: the <code>{benefit}</code> part may vary as it is not specifically mentioned in the question.</span></p>
                         </div>
@@ -2515,7 +2516,7 @@ Too many dimensions: 3x4x5
                 <li>Urgency: how soon the feature is needed</li>
               </ul>
               <span class="non-printable">
-<panel minimized>
+<panel minimized class="algolia-no-index">
 <span slot="header" class="card-title"><span><span aria-hidden="true" class="fas fa-cube"></span></span> More examples <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
               </span>
               </span>
@@ -2548,9 +2549,9 @@ Too many dimensions: 3x4x5
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Correct statements about user stories">
+              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Correct statements about user stories" class="algolia-no-index">
                 <question>
                   <p>Choose the correct statements</p>
                   <ul class="task-list">
@@ -2559,7 +2560,7 @@ Too many dimensions: 3x4x5
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. User stories describes past experiences users had with similar systems. These are helpful in developing the new system.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. User stories are not detailed enough to tell us exact details of the product.</li>
                   </ul>
-                  <div slot="answer">
+                  <div slot="answer" class="algolia-no-index">
                     <ul class="task-list">
                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a.</li>
                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b.</li>
@@ -2604,7 +2605,7 @@ Too many dimensions: 3x4x5
             to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face to work out a more detailed description of the
             requirements. <span class="dimmed">[<trigger for="modal:xp-user-stories" trigger="click">more...</trigger>]</span></p>
           <p><strong>User stories can capture <trigger trigger="click" for="modal:userStoriesUsage-nfr">non-functional requirements</trigger> too</strong> because even NFRs must benefit some stakeholder.</p>
-          <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:userStoriesUsage-nfr">
+          <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:userStoriesUsage-nfr" class="algolia-no-index">
             <div>
               <div></div>
               <p></p>
@@ -2657,9 +2658,9 @@ Too many dimensions: 3x4x5
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
                             <question>
                               <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                               <ul class="task-list">
@@ -2671,7 +2672,7 @@ Too many dimensions: 3x4x5
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(a)(c)(d)(f)(g)</p>
                                 <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project
                                   is done, both of which are considered non-functional requirements.</p>
@@ -2727,7 +2728,7 @@ Too many dimensions: 3x4x5
             <tooltip content="e.g. index cards or sticky notes">physical paper</tooltip> in the initial stages, an online tool is more suitable for longer-term management of user stories, especially if the team is not
             <tooltip content="physically in the same location">co-located</tooltip>.</p>
           <span class="non-printable">
-<panel header="**Tool Examples**: How to use some example online tools to manage user stories" alt="tool examples">
+<panel header="**Tool Examples**: How to use some example online tools to manage user stories" alt="tool examples" class="algolia-no-index">
   <div>
 <tabs> 
   <tab header="GitHub Project Boards">
@@ -2743,13 +2744,13 @@ Too many dimensions: 3x4x5
           <p>A video on GitHub Project Boards:</p>
           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
           </tab>
-          <tab header="Google Sheets">
+          <tab header="Google Sheets" class="algolia-no-index">
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example Google Sheet for recording user stories:</p>
             <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInGoogleSheets.png" width="800"></p>
             <p></p>
             <p></p>
           </tab>
-          <tab header="Trello">
+          <tab header="Trello" class="algolia-no-index">
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
             <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInTrello.png" width="800"></p>
             <p></p>
@@ -2759,7 +2760,7 @@ Too many dimensions: 3x4x5
         </div>
   </panel>
   </span>
-  <modal id="modal:xp-user-stories" title=":bookmark: User stories vs traditional requirement specifications, according to XP">
+  <modal id="modal:xp-user-stories" title=":bookmark: User stories vs traditional requirement specifications, according to XP" class="algolia-no-index">
     <p><span>
 <popover id="pop:xp" title="eXtreme Programming (XP)">eXtreme Programming (XP)</popover></span></p>
     <div slot="content">
@@ -2861,7 +2862,7 @@ Too many dimensions: 3x4x5
                 <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
                 </popover>]</p>
               <popover id="pop:actor" title="<md>:glyphicon-eye-open:</md>" placement="top">
-                <div slot="content">
+                <div slot="content" class="algolia-no-index">
                   <div>
                     <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                   </div>
@@ -2904,7 +2905,7 @@ Extensions:
       Use case ends.
 </pre>
             </panel>
-            <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
+            <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless" class="algolia-no-index">
               <div class="text-monospace">
                 <ul>
                   <li>System: A Learning Management System (LMS)</li>
@@ -2925,7 +2926,7 @@ Extensions:
             <img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
             <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.</p>
             <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-            <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
+            <modal title="**Unified Modeling Language (UML)**" id="modal:uml" class="algolia-no-index">
               <div>
                 <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
                   Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML).
@@ -3004,7 +3005,7 @@ Extensions:
         <div>
           <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most
             <trigger trigger="click" for="modal:supplementary-nfr">Non Functional Requirements</trigger> will be listed.</p>
-          <modal large title="%%Textbook »%%" id="modal:supplementary-nfr">
+          <modal large title="%%Textbook »%%" id="modal:supplementary-nfr" class="algolia-no-index">
             <div>
               <div></div>
               <p></p>
@@ -3057,9 +3058,9 @@ Extensions:
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
                             <question>
                               <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                               <ul class="task-list">
@@ -3071,7 +3072,7 @@ Extensions:
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(a)(c)(d)(f)(g)</p>
                                 <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project
                                   is done, both of which are considered non-functional requirements.</p>
@@ -3131,16 +3132,16 @@ Extensions:
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> What is branching?">
+                    <panel header="<md>:glyphicon-question-sign:</md> What is branching?" class="algolia-no-index">
                       <question has-input="true">
                         <p>In the context of RCS, what is the <em>branching</em>? What is the need for branching?.</p>
                       </question>
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> What is merging?">
+                    <panel header="<md>:glyphicon-question-sign:</md> What is merging?" class="algolia-no-index">
                       <question has-input="true">
                         <p>In the context of RCS, what is the <em>merging</em> branches? How can it lead to <em>merge conflicts</em>?.</p>
                       </question>
@@ -3162,7 +3163,7 @@ Extensions:
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/branching/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Branching%%" popup-url="/website/book/revisionControl/branching"></panel>
+                <panel src="/website/book/revisionControl/branching/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Branching%%" popup-url="/website/book/revisionControl/branching" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -3183,7 +3184,7 @@ Extensions:
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <pre><code class="hljs">git status
 </code></pre>
@@ -3206,7 +3207,7 @@ Extensions:
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>You can use the <code>branch</code> command to create a new branch and the <code>checkout</code> command to switch to a specific branch.</p>
                     <pre><code class="hljs">git branch feature1
@@ -3228,7 +3229,7 @@ git checkout feature1
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <pre><code class="hljs">git checkout master
 </code></pre>
@@ -3248,7 +3249,7 @@ git checkout feature1
                     <p>Right-click on the <code>master</code> branch and choose <code>merge master into the current branch</code>. Click <code>OK</code> in the next dialog.</p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <pre><code class="hljs">git merge master
 </code></pre>
@@ -3265,7 +3266,7 @@ git checkout feature1
                 <tab header="SourceTree">
                   <p>Right-click on the <code>feature1</code> branch and choose <code>Merge...</code>.</p>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <pre><code class="hljs">git merge feature1
 </code></pre>
                 </tab>
@@ -3291,7 +3292,7 @@ git checkout feature1
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <div>
                     <p>Use the <code>--no-ff</code> switch (short for <em>no fast forward</em>):</p>
                     <pre><code class="hljs">git merge --no-ff add-countries
@@ -3314,7 +3315,7 @@ git checkout feature1
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch"></panel>
+                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -3341,7 +3342,7 @@ This repo can be used to practice creating PRs.
                   <img src="/website/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
                   <p></p>
                 </tab>
-                <tab header="CLI">
+                <tab header="CLI" class="algolia-no-index">
                   <pre><code class="hljs">git push origin add-intro
 </code></pre>
                 </tab>
@@ -3456,7 +3457,7 @@ This repo can be used to practice creating PRs.
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 06:45:10 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 02:36:07 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -3467,9 +3468,24 @@ This repo can be used to practice creating PRs.
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "3855d3d0d62585efc4f4841564bc73ca",
+      indexName: "nus-cs2113-ay1920s2",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -71,7 +72,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -94,7 +95,7 @@
           </nav>
           <p></p>
           <h1 id="week-6-feb-17-topics">Week 6 <small><small><span class="dimmed">[Feb 17]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-6-feb-17-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week6/topics.html#W6-1">W6.1</a>] <strong>Java: Generics</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -678,7 +679,7 @@ The total is: 35
 [3, 24]
 The total is: 27
 </code></pre>
-                            <div slot="hint">
+                            <div slot="hint" class="algolia-no-index">
                               <p>Partial solution:</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;
 
@@ -821,7 +822,7 @@ Number of keys after clearing: 0
 Friday =&gt; 1
 Wednesday =&gt; 2
 </code></pre>
-                            <div slot="hint">
+                            <div slot="hint" class="algolia-no-index">
                               <p>Partial solution:</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.HashMap;
 <span class="hljs-keyword">import</span> java.util.Map;
@@ -1084,7 +1085,7 @@ second line
     </span>
     <div class="indented-level1">
       <p><span id="W6-5a"></span></p>
-      <panel type="seamless" popup-url="/website/book/cppToJava/misc/varargs">
+      <panel type="seamless" popup-url="/website/book/cppToJava/misc/varargs" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.5a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1134,7 +1135,7 @@ second line
     </span>
     <div class="indented-level1">
       <p><span id="W6-6a"></span></p>
-      <panel type="seamless" popup-url="/website/book/cppToJava/misc/streams">
+      <panel type="seamless" popup-url="/website/book/cppToJava/misc/streams" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.6a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1172,12 +1173,12 @@ second line
                         </li>
                       </ul>
                     </tab>
-                    <tab header="<md>:glyphicon-facetime-video:</md>">
+                    <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
 
 
                       <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
                       <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                      <panel type="seamless" header="A a more detailed version covering similar grounds">
+                      <panel type="seamless" header="A a more detailed version covering similar grounds" class="algolia-no-index">
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                       </panel>
                     </tab>
@@ -1253,7 +1254,7 @@ second line
         </div>
       </panel>
       <p><span id="W6-7b"></span></p>
-      <panel type="seamless" popup-url="/website/book/intellij/debuggingBasic">
+      <panel type="seamless" popup-url="/website/book/intellij/debuggingBasic" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.7b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1285,7 +1286,7 @@ second line
         </div>
       </panel>
       <p><span id="W6-7c"></span></p>
-      <panel type="seamless" popup-url="/website/book/intellij/productivityShortcuts">
+      <panel type="seamless" popup-url="/website/book/intellij/productivityShortcuts" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.7c</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1334,7 +1335,7 @@ second line
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch"></panel>
+                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -1404,9 +1405,9 @@ white
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch"></panel>
-                <panel src="/website/book/gitAndGithub/createPRs/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Create PRs%%" popup-url="/website/book/gitAndGithub/createPRs"></panel>
-                <panel src="/website/book/gitAndGithub/mergeConflicts/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Merge Conflicts%%" popup-url="/website/book/gitAndGithub/mergeConflicts"></panel>
+                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/createPRs/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Create PRs%%" popup-url="/website/book/gitAndGithub/createPRs" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/mergeConflicts/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Merge Conflicts%%" popup-url="/website/book/gitAndGithub/mergeConflicts" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -1421,7 +1422,7 @@ white
             <div>
               <p><strong>1. Go to the GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [
                 <trigger trigger="click" for="modal:managePrs-createPrs">Tools → Git &amp; GitHub → Create PRs</trigger>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-              <modal large title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs">
+              <modal large title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs" class="algolia-no-index">
                 <div>
                   <div>
                     <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
@@ -1438,7 +1439,7 @@ This repo can be used to practice creating PRs.
                         <img src="/website/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
                         <p></p>
                       </tab>
-                      <tab header="CLI">
+                      <tab header="CLI" class="algolia-no-index">
                         <pre><code class="hljs">git push origin add-intro
 </code></pre>
                       </tab>
@@ -1768,7 +1769,7 @@ git pull origin master
                   <trigger>.</trigger>
                 </trigger>
               </p>
-              <modal title="**<md>:glyphicon-eye-open:</md> DRY Principle**" id="modal:duplication-dry">
+              <modal title="**<md>:glyphicon-eye-open:</md> DRY Principle**" id="modal:duplication-dry" class="algolia-no-index">
                 <div>
                   <div></div>
                   <p></p>
@@ -1853,7 +1854,7 @@ git pull origin master
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 06:45:10 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 02:36:07 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -1864,9 +1865,24 @@ git pull origin master
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "3855d3d0d62585efc4f4841564bc73ca",
+      indexName: "nus-cs2113-ay1920s2",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>
