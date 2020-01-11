@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CS2113/T Website - Admin: CS2113/T Software Engineering &amp;amp; Object-Oriented Programming</title>
+  <title>CS2113/T Website - Schedule</title>
   <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="markbind/fontawesome/css/all.min.css">
@@ -16,10 +16,10 @@
   <link rel="stylesheet" href="markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="markbind/layouts/default/styles.css">
-  <link rel="stylesheet" href="markbind/css/site-nav.css">
+
   <link rel="stylesheet" href="markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
-  <link rel="stylesheet" href="/website/css/admin.css">
+  <link rel="stylesheet" href="/website/css/schedule.css">
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -31,7 +31,7 @@
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
         <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
@@ -78,176 +78,87 @@
       </navbar>
     </header>
     <div id="flex-body">
-      <nav id="site-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/website/admin/moduleOverview.html" class="site-nav__a">CS2113/T Software Engineering & Object-Oriented Programming</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/usingThisWebsite.html" class="site-nav__a"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/moduleExpectations.html" class="site-nav__a">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Module Structure 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/weeklySchedule.html" class="site-nav__a">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/lectures.html" class="site-nav__a">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tutorials.html" class="site-nav__a">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mt-2"><a href="/website/admin/instructors.html" class="site-nav__a">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/textbooks.html" class="site-nav__a">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/programmingLanguages.html" class="site-nav__a">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><button class="dropdown-btn">Individual Project (iP)
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/ip-overview.html" class="site-nav__a">iP (Individual Project): Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w2.html" class="site-nav__a">iP: Week 2</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w3.html" class="site-nav__a">iP: Week 3</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w4.html" class="site-nav__a">iP: Week 4</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w5.html" class="site-nav__a">iP: Week 5</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w6.html" class="site-nav__a">iP: Week 6</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w7.html" class="site-nav__a">iP: Week 7</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w8.html" class="site-nav__a">iP: Week 8</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-grading.html" class="site-nav__a">iP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mt-2"><button class="dropdown-btn">Team Project (tP)
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/tp-expectations.html" class="site-nav__a">tP (team project): Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-constraints.html" class="site-nav__a">tP: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-teams.html" class="site-nav__a">tP: Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w3.html" class="site-nav__a">tP: Kickoff [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w4.html" class="site-nav__a">tP: Inception [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w5.html" class="site-nav__a">tP: User Stories [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w6.html" class="site-nav__a">tP: Product Concept [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w7.html" class="site-nav__a">tP: Plan v1.0 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w8.html" class="site-nav__a">tP: mid-v1.0 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w9.html" class="site-nav__a">tP: v1.0 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w10.html" class="site-nav__a">tP: mid-v2.0 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w11.html" class="site-nav__a">tP: v2.0 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w12.html" class="site-nav__a">tP: mid-v2.1 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w13.html" class="site-nav__a">tP: v2.1 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-deliverables.html" class="site-nav__a">tP: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-grading.html" class="site-nav__a">tP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-supervision.html" class="site-nav__a">tP: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mt-2"><a href="/website/admin/peerEvaluations.html" class="site-nav__a">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/tools.html" class="site-nav__a">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/exams.html" class="site-nav__a">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/participation.html" class="site-nav__a">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/gradeBreakdown.html" class="site-nav__a">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Appendices 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/appendixA-principles.html" class="site-nav__a">Apdx A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixB-policies.html" class="site-nav__a">Apdx B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixC-faq.html" class="site-nav__a">Apdx C: FAQ</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixD-help.html" class="site-nav__a">Apdx D: Getting Help</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixE-gitHub.html" class="site-nav__a">Apdx E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixF-teamworkIssues.html" class="site-nav__a">Apdx F: Handling Team Issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
       <div id="content-wrapper">
-        <div id="website-content">
+        <div>
+
+
           <div>
             <div class="website-content">
-              <p><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/usingThisWebsite.html"><span>Using this Website <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-                </b-btn>
-                </span>
-              </p>
-              <br>
-              <p>
+              <nav>
+                <ul class="pagination mt-2">
+                  <li class="page-item disabled"><a class="page-link" href="/website/schedule/week0"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+                  <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+                  <li class="page-item active"><a class="page-link" href="/website/schedule/week1/index.html"><span><span aria-hidden="true" class="fas fa-bell"></span></span> Summary</a></li>
+                  <li class="page-item"><a class="page-link" href="/website/schedule/week1/topics.html"><span><span aria-hidden="true" class="fas fa-book"></span></span> Topics</a></li>
+                  <li class="page-item"><a class="page-link" href="/website/schedule/week1/project.html"><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project</a></li>
+                  <li class="page-item"><a class="page-link" href="/website/schedule/week1/tutorial.html"><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> Tutorial</a></li>
+                  <li class="page-item"><a class="page-link" href="/website/schedule/week1/admin.html"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Admin Info</a></li>
+                  <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+                  <li class="page-item"><a class="page-link" href="/website/schedule/week2"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+                </ul>
+              </nav>
+              <p></p>
+              <h1 id="week-1-jan-13-summary">Week 1 <small><small><span class="dimmed">[Jan 13]</span> - Summary</small></small><a class="fa fa-anchor" href="#week-1-jan-13-summary"></a></h1>
+              <div>
                 <div>
-                  <h1 id="cs2113-t-software-engineering-and-object-oriented-programming-optional">CS2113/T Software Engineering &amp; Object-Oriented Programming <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-                    </span><a class="fa fa-anchor" href="#cs2113-t-software-engineering-and-object-oriented-programming-optional"></a></h1>
+                  <box type="info" dismissible>
+                    <p>A summary of the week, and announcements relevant to that week, will appear in this tab. Refer to the respective tabs (i.e., <a href="/website/schedule/week1/topics.html"><span class="border"> <span><span aria-hidden="true" class="fas fa-book"></span></span> Topics </span></a>,
+                      <a href="/website/schedule/week1/project.html"><span class="border"> <span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project </span></a>, ... given at the top of this page) for more details.</p>
+                    <p>A <strong><a href="/website/schedule/timeline.html">full timeline</a></strong> is available too.
+                    </p>
+                  </box>
                 </div>
-              </p>
-              <div id="admin-moduleOverview-anchor"></div>
-              <div id="admin-moduleOverview">
-                <div>
-                  <p><big><p class="lead text-secondary">An iterative introduction to Software Engineering...</p></big></p>
-                  <img src="/website/images/growingPlant.png" width="700">
-                  <p class="lead"><span>CS2113/T is an introductory Software Engineering module covering <strong>a balance of basic SE theory and practical skills</strong> needed to work in a project that has a software component. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially"><strong>iterative approach</strong></tooltip> to covering topics. The module also introduces you to the Java programming language, the OOP paradigm, and some basic UML models.</span></p>
+                <box type="tip">
                   <ul>
-                    <li>
-                      <p><strong>The theory side</strong> of this module is supported by a customized online textbook <a href="/website/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module
-                        website.
-                      </p>
-                    </li>
-                    <li>
-                      <p><strong>On the practice side</strong>, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called <a href="/website/se-book-adapted/projectDuke/index.html">Duke</a>.
-                        Then, you will move to a team project in which you will build another small
-                        <tooltip content="Comman Line Interface">CLI</tooltip> app while working as a team.</p>
+                    <li><strong>Our first lecture</strong> will be on week 1 Wednesday (Jan 15th).</li>
+                    <li><strong>Our tutorials</strong> start on week 3.</li>
+                    <li><strong>[CS2113T Students]</strong>: Of the many weekly sessions that appear under CS2113T, only two actually belongs to CS2113T. Those are, the lecture on Wednesday 1200-1400, and the 1-hour tutorial slot on Monday or Tuesday. The
+                      other two 2-hour slots belong to the CS2101 module.
                     </li>
                   </ul>
-                  <p>
-                    <panel src="/website/admin/appendixC-faq._include_.html#admin-faq-tVsNonT" header="Admin <md>:glyphicon-log-in:</md> **FAQ: What are the differences between CS2113 and CS2113T?**" class="embedding algolia-no-index" minimized fragment="admin-faq-tVsNonT"></panel>
-                  </p>
-                </div>
+                </box>
               </div>
-              <br>
-              <p><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/usingThisWebsite.html"><span>Using this Website <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-                </b-btn>
+              <span id="summary">
+<div class="container">
+  <div class="row">
+  <div class="col-sm border-right border-bottom"></div>
+  <div class="col-sm border-bottom">
+<p><strong>Admin:</strong></p>
+<div>
+<ol>
+<li><span>Set up the tools</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the lecture</span>
+              </span>
+              </li>
+              <li><span>Submit the pre-module survey</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Wednesday 2359</span>
                 </span>
-              </p>
+              </li>
+              <li><span>Learn about the module</span></li>
+              <li><span>Attend the first lecture</span></li>
+              </ol>
             </div>
+            <div></div>
           </div>
         </div>
       </div>
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+      </span>
+      <br></div>
+  </div>
+  </div>
+  </div>
+  <nav id="page-nav" class="navbar navbar-light bg-transparent">
+    <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#cs2113-t-software-engineering-and-object-oriented-programming-optional">CS2113/T Software Engineering &amp; Object-Oriented Programming 
-              : OPTIONAL
-              &#x200E;</a>
+      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+        <a class="nav-link py-1" href="#week-1-jan-13-summary">Week 1 [Jan 13] - Summary&#x200E;</a>
 
-          </nav>
-        </div>
       </nav>
     </div>
-    <footer>
-      <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Fri, 10 Jan 2020 06:55:45 GMT</small></div>
-    </footer>
+  </nav>
+  </div>
+  <footer>
+    <div class="text-center">
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Sat, 11 Jan 2020 14:03:21 GMT</small></div>
+  </footer>
   </div>
 </body>
 <script src="markbind/js/vue.min.js"></script>
