@@ -220,7 +220,18 @@
               <div>
                 <div>
                   <ul>
-                    <li>From this point onward, commit code at important points. <mark>Minimally, commit after completing each increment</mark>.</li>
+                    <li>Implement the following
+                      <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> <mark>in the given order</mark>.</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>From this point onward, after completing each increment,
+                      <ul>
+                        <li><strong><code>git tag</code></strong> the commit with the exact increment ID e.g., <code>Level-2</code>, <code>A-TextUiTesting</code></li>
+                        <li><strong><code>git push</code></strong> the code to your fork (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> git doesn't push tags unless you specifically ask it to)</li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -442,7 +453,7 @@ t.markAsDone()
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Sun, 19 Jan 2020 14:07:12 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Sun, 19 Jan 2020 14:16:36 GMT</small></div>
     </footer>
   </div>
 </body>
