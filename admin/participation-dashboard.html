@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2113/T Website - Participation Dashboard</title>
+  <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
+
+
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="stylesheet" href="/website/css/schedule.css">
+  <link rel="icon" href="/website/favicon.ico">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
+        <div class="nav-link temp-dropdown-placeholder">Schedule</div>
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
+          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
+          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
+          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
+          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
+          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
+          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
+        </dropdown>
+        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
+          <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
+          <hr>
+          <span><strong> Individual Project (iP):</strong></span>
+          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+
+
+          <hr>
+          <span><strong> Team Project (tP):</strong></span>
+          <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+
+          <li><a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
+
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <h2 id="participation-dashboard">Participation Dashboard<a class="fa fa-anchor" href="#participation-dashboard"></a></h2>
+        <box>
+          <ul>
+            <li>Details about participation marks calculations are <a href="/website/admin/participation.html">here</a>.</li>
+            <li>Meaning of colors/icons:
+              <ul>
+                <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                  </span> uou can click/hover on this icon to find more info.</li>
+                <li><span class="badge badge-success">N</span> you reached the participation bar for week <code>N</code></li>
+                <li><span class="badge badge-danger">N</span> you did not reach the participation bar for week <code>N</code></li>
+              </ul>
+            </li>
+          </ul>
+        </box>
+
+
+
+        <div>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Matric (partial)</th>
+                  <th>Weeks participated
+                    <tooltip content="i.e., programming exercises, post-lecture quizzes"><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                      </span>
+                    </tooltip>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A0148048 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0148048"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0154601 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0154601"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0156202 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0156202"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0166966 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0166966"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0167031 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0167031"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0167107 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0167107"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0169610 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0169610"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0172032 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0172032"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0177907 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0177907"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0180295 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0180295"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0182341 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0182341"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0182520 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0182520"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0182581 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0182581"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0182619 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0182619"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0182637 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0182637"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0182648 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0182648"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0182761 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0182761"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0182776 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0182776"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0183020 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0183020"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0183086 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0183086"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0183318 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0183318"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0183366 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0183366"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-danger mr-1">1</span><span class="badge badge-danger mr-1">2</span> → <strong>0</strong></td>
+                </tr>
+                <tr>
+                  <td>A0183398 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0183398"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0183909 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0183909"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0183924 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0183924"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0183972 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0183972"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0183979 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0183979"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0184030 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0184030"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0184281 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0184281"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0184296 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0184296"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0184534 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0184534"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185030 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185030"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185080 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185080"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185406 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185406"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185430 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185430"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185434 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185434"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185627 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185627"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185662 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185662"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185683 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185683"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185707 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185707"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185775 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185775"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185894 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185894"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0185955 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0185955"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0187253 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0187253"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0187915 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0187915"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0188591 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0188591"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0188625 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0188625"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0188758 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0188758"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0188871 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0188871"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0188991 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0188991"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0189629 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0189629"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0189944 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0189944"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0190016 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0190016"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0190306 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0190306"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0192255 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0192255"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0192257 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0192257"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0207464 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0207464"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0212641 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0212641"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0212651 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0212651"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0212716 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0212716"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0212737 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0212737"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0212755 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0212755"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0212778 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0212778"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-danger mr-1">2</span> → <strong>1</strong></td>
+                </tr>
+                <tr>
+                  <td>A0212780 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0212780"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0212805 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0212805"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0212895 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0212895"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0213638 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0213638"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0213708 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0213708"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-danger mr-1">2</span> → <strong>1</strong></td>
+                </tr>
+                <tr>
+                  <td>A0213855 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0213855"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0213909 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0213909"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0214317 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0214317"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-danger mr-1">2</span> → <strong>1</strong></td>
+                </tr>
+                <tr>
+                  <td>A0214405 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0214405"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0214435 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0214435"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0214700 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0214700"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+                <tr>
+                  <td>A0214952 <span class="dimmed"><trigger trigger="click" for="modal:pD-A0214952"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </trigger>
+                    </span>
+                  </td>
+                  <td><span class="badge badge-success mr-1">1</span><span class="badge badge-success mr-1">2</span> → <strong>2</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <modal large title="A0148048_: Participation Details" id="modal:pD-A0148048" class="algolia-no-index">
+            <h5 id="week-1-2-2-points">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0154601_: Participation Details" id="modal:pD-A0154601" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-2">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-2"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-2">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-2"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0156202_: Participation Details" id="modal:pD-A0156202" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-3">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-3"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-3">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-3"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0166966_: Participation Details" id="modal:pD-A0166966" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-4">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-4"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-4">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-4"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0167031_: Participation Details" id="modal:pD-A0167031" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-5">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-5"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-5">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-5"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0167107_: Participation Details" id="modal:pD-A0167107" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-6">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-6"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-6">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-6"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0169610_: Participation Details" id="modal:pD-A0169610" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-7">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-7"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-7">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-7"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0172032_: Participation Details" id="modal:pD-A0172032" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-8">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-8"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-8">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-8"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0177907_: Participation Details" id="modal:pD-A0177907" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-9">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-9"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-9">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-9"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0180295_: Participation Details" id="modal:pD-A0180295" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-10">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-10"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-10">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-10"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0182341_: Participation Details" id="modal:pD-A0182341" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-11">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-11"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-11">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-11"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0182520_: Participation Details" id="modal:pD-A0182520" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-12">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-12"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-12">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-12"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0182581_: Participation Details" id="modal:pD-A0182581" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-13">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-13"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-13">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-13"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0182619_: Participation Details" id="modal:pD-A0182619" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-14">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-14"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-14">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-14"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0182637_: Participation Details" id="modal:pD-A0182637" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-15">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-15"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-15">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-15"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0182648_: Participation Details" id="modal:pD-A0182648" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-16">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-16"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-16">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-16"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0182761_: Participation Details" id="modal:pD-A0182761" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-17">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-17"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-17">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-17"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0182776_: Participation Details" id="modal:pD-A0182776" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-18">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-18"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-18">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-18"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0183020_: Participation Details" id="modal:pD-A0183020" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-19">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-19"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-19">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-19"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0183086_: Participation Details" id="modal:pD-A0183086" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-20">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-20"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-20">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-20"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0183318_: Participation Details" id="modal:pD-A0183318" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-21">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-21"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-21">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-21"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0183366_: Participation Details" id="modal:pD-A0183366" class="algolia-no-index">
+            <h5 id="week-1-0-2-points">Week <span class="badge badge-danger mr-1">1</span>: <small>0/2 points</small><a class="fa fa-anchor" href="#week-1-0-2-points"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: not done <span class="dimmed">(0/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-0-6-points">Week <span class="badge badge-danger mr-1">2</span>: <small>0/6 points</small><a class="fa fa-anchor" href="#week-2-0-6-points"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>0%</code> <span class="dimmed">(0/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>0%</code> <span class="dimmed">(0/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0183398_: Participation Details" id="modal:pD-A0183398" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-22">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-22"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-22">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-22"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0183909_: Participation Details" id="modal:pD-A0183909" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-23">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-23"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-23">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-23"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0183924_: Participation Details" id="modal:pD-A0183924" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-24">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-24"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-24">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-24"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0183972_: Participation Details" id="modal:pD-A0183972" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-25">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-25"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-25">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-25"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0183979_: Participation Details" id="modal:pD-A0183979" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-26">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-26"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-26">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-26"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0184030_: Participation Details" id="modal:pD-A0184030" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-27">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-27"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-27">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-27"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0184281_: Participation Details" id="modal:pD-A0184281" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-28">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-28"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-28">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-28"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0184296_: Participation Details" id="modal:pD-A0184296" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-29">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-29"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-29">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-29"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0184534_: Participation Details" id="modal:pD-A0184534" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-30">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-30"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-30">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-30"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185030_: Participation Details" id="modal:pD-A0185030" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-31">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-31"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-31">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-31"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185080_: Participation Details" id="modal:pD-A0185080" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-32">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-32"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-32">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-32"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185406_: Participation Details" id="modal:pD-A0185406" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-33">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-33"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-33">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-33"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185430_: Participation Details" id="modal:pD-A0185430" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-34">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-34"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-34">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-34"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185434_: Participation Details" id="modal:pD-A0185434" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-35">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-35"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-35">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-35"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185627_: Participation Details" id="modal:pD-A0185627" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-36">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-36"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-36">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-36"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185662_: Participation Details" id="modal:pD-A0185662" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-37">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-37"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-37">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-37"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185683_: Participation Details" id="modal:pD-A0185683" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-38">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-38"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-38">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-38"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185707_: Participation Details" id="modal:pD-A0185707" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-39">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-39"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-39">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-39"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185775_: Participation Details" id="modal:pD-A0185775" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-40">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-40"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-40">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-40"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185894_: Participation Details" id="modal:pD-A0185894" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-41">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-41"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-41">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-41"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>75%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>75%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0185955_: Participation Details" id="modal:pD-A0185955" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-42">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-42"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-42">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-42"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0187253_: Participation Details" id="modal:pD-A0187253" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-43">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-43"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-43">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-43"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0187915_: Participation Details" id="modal:pD-A0187915" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-44">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-44"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-44">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-44"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0188591_: Participation Details" id="modal:pD-A0188591" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-45">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-45"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-45">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-45"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0188625_: Participation Details" id="modal:pD-A0188625" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-46">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-46"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-46">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-46"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0188758_: Participation Details" id="modal:pD-A0188758" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-47">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-47"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-47">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-47"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0188871_: Participation Details" id="modal:pD-A0188871" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-48">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-48"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-48">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-48"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0188991_: Participation Details" id="modal:pD-A0188991" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-49">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-49"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-49">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-49"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0189629_: Participation Details" id="modal:pD-A0189629" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-50">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-50"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-50">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-50"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0189944_: Participation Details" id="modal:pD-A0189944" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-51">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-51"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-51">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-51"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0190016_: Participation Details" id="modal:pD-A0190016" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-52">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-52"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-52">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-52"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0190306_: Participation Details" id="modal:pD-A0190306" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-53">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-53"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-53">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-53"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0192255_: Participation Details" id="modal:pD-A0192255" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-54">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-54"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-54">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-54"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0192257_: Participation Details" id="modal:pD-A0192257" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-55">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-55"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-55">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-55"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0207464_: Participation Details" id="modal:pD-A0207464" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-56">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-56"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-56">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-56"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0212641_: Participation Details" id="modal:pD-A0212641" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-57">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-57"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-57">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-57"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0212651_: Participation Details" id="modal:pD-A0212651" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-58">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-58"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-58">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-58"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0212716_: Participation Details" id="modal:pD-A0212716" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-59">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-59"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-59">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-59"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0212737_: Participation Details" id="modal:pD-A0212737" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-60">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-60"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-60">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-60"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0212755_: Participation Details" id="modal:pD-A0212755" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-61">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-61"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-61">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-61"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0212778_: Participation Details" id="modal:pD-A0212778" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-62">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-62"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-0-6-points-2">Week <span class="badge badge-danger mr-1">2</span>: <small>0/6 points</small><a class="fa fa-anchor" href="#week-2-0-6-points-2"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>0%</code> <span class="dimmed">(0/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>0%</code> <span class="dimmed">(0/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0212780_: Participation Details" id="modal:pD-A0212780" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-63">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-63"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-62">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-62"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0212805_: Participation Details" id="modal:pD-A0212805" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-64">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-64"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-63">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-63"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0212895_: Participation Details" id="modal:pD-A0212895" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-65">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-65"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-64">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-64"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0213638_: Participation Details" id="modal:pD-A0213638" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-66">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-66"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-65">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-65"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0213708_: Participation Details" id="modal:pD-A0213708" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-67">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-67"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-0-6-points-3">Week <span class="badge badge-danger mr-1">2</span>: <small>0/6 points</small><a class="fa fa-anchor" href="#week-2-0-6-points-3"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>0%</code> <span class="dimmed">(0/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>0%</code> <span class="dimmed">(0/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0213855_: Participation Details" id="modal:pD-A0213855" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-68">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-68"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-66">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-66"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0213909_: Participation Details" id="modal:pD-A0213909" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-69">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-69"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-67">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-67"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0214317_: Participation Details" id="modal:pD-A0214317" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-70">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-70"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-0-6-points-4">Week <span class="badge badge-danger mr-1">2</span>: <small>0/6 points</small><a class="fa fa-anchor" href="#week-2-0-6-points-4"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>0%</code> <span class="dimmed">(0/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>0%</code> <span class="dimmed">(0/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0214405_: Participation Details" id="modal:pD-A0214405" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-71">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-71"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-68">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-68"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0214435_: Participation Details" id="modal:pD-A0214435" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-72">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-72"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-69">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-69"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0214700_: Participation Details" id="modal:pD-A0214700" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-73">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-73"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-70">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-70"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+
+          <modal large title="A0214952_: Participation Details" id="modal:pD-A0214952" class="algolia-no-index">
+            <h5 id="week-1-2-2-points-74">Week <span class="badge badge-success mr-1">1</span>: <small>2/2 points</small><a class="fa fa-anchor" href="#week-1-2-2-points-74"></a></h5>
+            <ul>
+              <li><strong>Submit pre-module survey</strong>: done <span class="dimmed">(2/2 points)</span></li>
+            </ul>
+            <h5 id="week-2-6-6-points-71">Week <span class="badge badge-success mr-1">2</span>: <small>6/6 points</small><a class="fa fa-anchor" href="#week-2-6-6-points-71"></a></h5>
+            <ul>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+              <li><strong>Programming Exercises</strong>: percentage of correct solutions: <code>100%</code> <span class="dimmed">(3/3 points)</span></li>
+            </ul>
+          </modal>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Fri, 24 Jan 2020 12:24:05 GMT</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../markbind/js/vue.min.js"></script>
+<script src="../markbind/js/vue-strap.min.js"></script>
+<script src="../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../markbind/js/polyfill.min.js"></script>
+<script src="../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/website'
+  const enableSearch = false
+</script>
+<script src="../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "3855d3d0d62585efc4f4841564bc73ca",
+      indexName: "nus-cs2113-ay1920s2",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+<script src="../markbind/layouts/default/scripts.js"></script>
+
+</html>
