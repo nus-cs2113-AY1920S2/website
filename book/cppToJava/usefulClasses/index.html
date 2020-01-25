@@ -182,8 +182,10 @@ System.out.println(name1 == name2);
                     <p>If the strings differ, you can use <code>compareTo</code> to see which comes first in alphabetical order. The return value from <code>compareTo</code> is the difference between the first characters in the strings that differ. If the
                       strings are equal, their difference is zero. If the first string (the one on which the method is invoked) comes first in the alphabet, the difference is negative. Otherwise, the difference is positive.</p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>compareTo</code> returns positive 8, because the second letter of &quot;Ada&quot; comes before the second letter of &quot;Alan&quot; by 8 letters.</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">int</span> diff = name1.compareTo(name2);
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>compareTo</code> returns positive 8, because the second letter of &quot;Alan&quot; comes 8 letters <em>after</em> the second letter of &quot;Ada&quot;.</p>
+                      <pre><code class="hljs java">String name1 = <span class="hljs-string">"Alan"</span>;
+String name2 = <span class="hljs-string">"Ada"</span>;
+<span class="hljs-keyword">int</span> diff = name1.compareTo(name2);
 <span class="hljs-keyword">if</span> (diff == <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"The names are the same."</span>);
 } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (diff &lt; <span class="hljs-number">0</span>) {
