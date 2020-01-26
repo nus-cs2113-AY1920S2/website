@@ -91,7 +91,7 @@ week3: [
   ]}
 ],
 week4: [
-  {id: 'create_pr_to_upstream'},
+  {id: 'create_pr_to_upstream', deadline: 'by Friday before the tutorial'},
   {id: 'add_increments', suffix: '', increments: [
     {id: 'Level-4', title: 'ToDo, Event, Deadline'},
     {id: 'A-TextUiTesting', title: 'Automated Text UI Testing', tag: 'optional'},
@@ -228,7 +228,7 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 {#====================================================================================================================#}
 <span id="heading_create_pr_to_upstream">Create a PR to the upstream repo</span>
 <span id="desc_create_pr_to_upstream">
-* Create a pull request (PR) from the `master` branch of your fork to the upstream repo. Here are the steps:
+* Create a <trigger trigger="click" for="modal:ipTasks-createPr">pull request (PR)</trigger> from the `master` branch of your fork to the upstream repo. Here are the steps:
   * Go to your Duke fork on GitHub
   * Click on the <button type="button" class="btn btn-light btn-sm border">**New pull request**</button> button in that page.
   * In the next page, click on the green <button type="button" class="btn btn-success btn-sm">**:fas-code-branch: Create pull request**</button> button.
@@ -236,6 +236,22 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
    You may leave the description as empty.
   * Click the <button type="button" class="btn btn-success btn-sm">**Create pull request**</button> button to create the PR.
   * As an additional precaution, you can go to the [upstream Duke repo]({{ module_org }}/duke/pulls) to double-check that your PR is in the list of PRs.
+
+<div class="indented-level2">
+
+<box type="tip" light>
+
+The PR will update automatically to reflect your latest code every time you push code to your fork.
+</box>
+</div>
+
+<modal large title="Pull Request (PR)" id="modal:ipTasks-createPr">
+
+A _Pull Request_ a mechanism for offering code to a repository e.g., a bug fix or a new feature. PRs allow developers to review, discuss, and refine proposed code changes before incorporating (i.e., _merging_) the new code to the repository.
+
+Resources:
+* [GitHub Help page on PRs](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+</modal>
 </span>
 {#====================================================================================================================#}
 <span id="extra_Level-5">
@@ -314,7 +330,7 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 
 </div>
 
-* {{ icon_tip }} **Use the iP Code Dashboard to view others' code**: You can now easily view [iP code written by classmates](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard), using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
+* {{ icon_tip }} **Use the iP Code Dashboard to view others' code**: We'll let you know when you can start using the [iP Code Dashboard](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard) %%(also available via `Links → iP Code Dashboard` item in the top navigation menu of the module website)%% to easily view iP code written by classmates. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent="2") }}
 </span>

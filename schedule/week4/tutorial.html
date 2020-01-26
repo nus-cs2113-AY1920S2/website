@@ -109,46 +109,76 @@
               </li>
             </ul>
             <h4 id="2-review-peer-ip-prs"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <strong>Review Peer iP PRs</strong><a class="fa fa-anchor" href="#2-review-peer-ip-prs"></a></h4>
+            <div class="indented-level2">
+              <box type="important">
+                <p>The quality of the work you will do in this tutorial task will be considered for your iP grade.
+                </p>
+              </box>
+              <p><strong>Review a PR</strong> created by your classmates by following the steps given below. Note that you are expected to have read the following guidelines as given in this week's iP tasks:</p>
+              <div class="indented-level1">
+                <panel type src="/website/admin/appendixE-gitHub._include_.html#pr-review-guidelines" header="Admin <md>:glyphicon-log-in:</md> **Using GitHub → Guidelines for Reviewing PRs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
+                  class="embedding algolia-no-index" minimized fragment="pr-review-guidelines"></panel>
+              </div>
+              <p></p>
+            </div>
             <ul>
-              <li>
-                <p><strong>Review two PRs</strong> created by your classmates. PRs can be found <a href="https://github.com/nus-cs2113-AY1920S2/duke/pulls">here</a>.</p>
-                <ul>
-                  <li>The allocation of which PRs to review will be specified nearer to the date.</li>
-                  <li>Recommended to be done in pairs.</li>
-                  <li>To find the target PR, you can use a filter <code>author:AuthorUsername</code> e.g., <code>author:johnDoe</code></li>
-                  <li>If the student you have been allocated to review has not created a PR by Monday, you can review another PR of your choice.</li>
-                </ul>
-              </li>
-              <li>
-                <p>You are expected to have read the following guidelines as given in this week's iP tasks:</p>
-              </li>
+              <li><span class="badge badge-dark">Step 1</span> <strong>Form sub-groups</strong> of 2 (preferred) or 3 (if unavoidable) members. <span class="dimmed">You can form sub-groups between tP teams that are under the same tutor.</span></li>
+              <li><span class="badge badge-dark">Step 2</span> <strong>Open the PR allocated to you</strong>, as given in the panel below.</li>
             </ul>
             <div class="indented-level2">
-              <panel type src="/website/admin/appendixE-gitHub._include_.html#pr-review-guidelines" header="Admin <md>:glyphicon-log-in:</md> **Using GitHub → Guidelines for Reviewing PRs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                class="embedding" expanded fragment="pr-review-guidelines"></panel>
+              <panel header="iP PR review allocation" minimized class="algolia-no-index">
+                (The allocation of which PRs to review will be specified nearer to the date)
+              </panel>
+              <p></p>
+              <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the student you have been allocated to review has not created a PR, you can review the same PR as your sub-team member(s). Failing that too, you can choose another
+                PR that is allocated to another student in your own team, or your own tutorial.</p>
+              <p></p>
+              <box type="tip" light>
+                <p>Tip for future reference: GitHub allows you to filter PRs/Issues using various criteria such as <code>author:AuthorUsername</code> (<a href="https://github.com/reposense/RepoSense/pulls?utf8=%E2%9C%93&amp;q=is%3Apr+author%3Afzdy1914+">example</a>                  -- see the <code>filters</code> text box in the target page).</p>
+                <p>Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
+                  <img src="/website/admin/images/filterPrsUsingLabels.png"></p>
+              </box>
             </div>
-            <p></p>
-            <ol>
-              <li><strong>Locate PRs from that team</strong>: Go to the <a href="https://github.com/nus-cs2113-AY1920S2/duke/pulls">list of Duke PRs</a>. Locate the PRs (you can filter using <code>tutorial.*</code> and <code>team.*</code> labels).
-                <img src="/website/admin/images/filterPrsUsingLabels.png"></li>
-              <li><strong>Pick a PR to review</strong>, giving priority to <mark>PRs with fewer comments</mark>.</li>
-              <li><strong>Discuss abstraction aspect of the code</strong>: Go through the code, and discuss <br>
-                <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> To identify long methods or deep nesting, zoom out and scroll through the entire PR code to do a visual inspection (no need to
-                read the code line-by-line). After visually locating a method that looks too long/deep, have a closer look to see it can be improved by using better abstraction.If you are unsure about a case, you can also rope the tutor in to the discussion.</li>
-              <li><strong>Add comments</strong>: If the team agrees that the abstraction aspect of specific piece of code should be improved some way, add a comment (team members can take turns on adding comments).<br> e.g., <code>This method looks rather long; perhaps it can be shortened using SLAP?</code></li>
-              <li><strong>Repeat for remaining PRs</strong>: Continue to review PRs until the 30 minutes mark.</li>
-            </ol>
             <ul>
-              <li>Additional guidelines:
-                <ul>
-                  <li>Comment on the PR, these aspects in particular:
+              <li>
+                <p><span class="badge badge-dark">Step 3</span> <strong>Review the code for <a href="/website/coding-standards/java/basic.html">coding standard</a> compliance</strong>. When you find a possible coding standard violation, do the following:</p>
+                <ol>
+                  <li><strong>Show it to your review partner(s) to confirm</strong> it is indeed a violation. You can seek tutor's opinion if you are not sure.</li>
+                  <li><strong>Add a comment</strong> to communicate your finding with the author.<br>
                     <ul>
-                      <li>coding standard violations</li>
-                      <li><mark>abstraction (SLAP, arrow-head style code, too-long methods, too-deep nesting)</mark></li>
+                      <li>Hover over the offending line of code and click on the <button type="button" class="btn btn-primary btn-sm"><strong>+</strong></button> that appears to start the comment.</li>
+                      <li>Write your comment (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <a href="https://guides.github.com/features/mastering-markdown/">GFMD</a> syntax in your
+                        comment)<br> e.g., <code>Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:</code><br>
+                        <blockquote>
+                          <p>Shouldn't this be <strong>in a new line</strong>, as per our <em>coding standard</em>? 🤔</p>
+                        </blockquote>
+                      </li>
+                      <li>When you are done writing the comment, click on the <button type="button" class="btn btn-success btn-sm"><strong>Start a review</strong></button> (not the <button type="button" class="btn btn-light border btn-sm"><strong>Add single comment</strong></button>)</li>
                     </ul>
                   </li>
-                  <li>At the end of the review, we recommend you to choose <code>Comment</code> (i.e., not <code>Approve</code> or <code>Request changes</code>)</li>
+                </ol>
+              </li>
+              <li>
+                <p><span class="badge badge-dark">Step 4</span> <strong>Review the code for code quality</strong> best practices you have learned so far. When you find an potential opportunity to improve the code quality, confirm with your review partners
+                  (and the tutor, if needed) and add a comment as before.</p>
+                <ul>
+                  <li>Naming</li>
+                  <li>Readability</li>
                 </ul>
+              </li>
+              <li>
+                <p><span class="badge badge-dark">Step 5</span> <strong>Finish the review</strong>. When it is time to end the tutorial, finish the review as follows:</p>
+                <ol>
+                  <li>Click on the <button type="button" class="btn btn-success btn-sm"><strong>Finish your review</strong></button> at the top of the page.</li>
+                  <li>Choose the <code>Comment</code> option (not <code>Approve</code> or <code>Request changes</code>).</li>
+                  <li>In the comment box, mention your review partners e.g., <code>Also took part in this review @JonhDoe</code>. You can also give an overall comment about the code e.g.,
+                    <pre><code class="hljs">Overall, we found your code easy to read for the most part except a few places
+where the nesting was too deep. Hope our comments help you improve the code further.
+All the best for your iP :-)
+</code></pre>
+                  </li>
+                  <li>Click on the <button type="button" class="btn btn-success btn-sm"><strong>Submit review</strong></button> button to finish the review.</li>
+                </ol>
               </li>
             </ul>
           </div>
@@ -170,7 +200,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sat, 25 Jan 2020 15:26:08 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 26 Jan 2020 06:43:44 GMT</small></div>
     </footer>
   </div>
 </body>
