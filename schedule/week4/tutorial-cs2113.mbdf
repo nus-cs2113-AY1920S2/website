@@ -1,9 +1,9 @@
-{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, step, thumb, timing_badge with context %}
 
 #### {{ thumb(1) }} **Discuss tP progress**
 
 * Show your collaborative project doc(s) to the tutor.
-* Share the project direction, user profile, value proposition you have decided upon.
+* Share the project direction (i.e., user profile, value proposition) you have decided upon.
 * Give feedback to the other team. Some examples:
   * Suppose you belong to the proposed target user group; do you find the value proposition attractive?
   * Do you foresee any potential violation of the project constraints?
@@ -21,8 +21,8 @@ The quality of the work you will do in this tutorial task will be considered for
 {{ embed_topic("../../admin/appendixE-gitHub.md#pr-review-guidelines", "Admin " + icon_embedding + " **Using GitHub → Guidelines for Reviewing PRs**", "3", indent="1") }}
 </div>
 
-* <span class="badge badge-dark">Step 1</span> **Form sub-groups** of 2 (preferred) or 3 (if unavoidable) members. %%You can form sub-groups between tP teams that are under the same tutor.%%
-* <span class="badge badge-dark">Step 2</span> **Open the PR allocated to you**, as given in the panel below.
+* {{ step(1) }} **Form sub-groups** of 2 (preferred) or 3 (if unavoidable) members. %%You can form sub-groups between tP teams that are under the same tutor.%%
+* {{ step(2) }} **Open the PR allocated to you**, as given in the panel below.
 <div class="indented-level2">
 
 <panel header="iP PR review allocation" minimized >
@@ -30,7 +30,7 @@ The quality of the work you will do in this tutorial task will be considered for
 </panel>
 <p/>
 
-{{ icon_info }} If the student you have been allocated to review has not created a PR, you can review the same PR as your sub-team member(s). Failing that too, you can choose another PR that is allocated to another student in your own team, or your own tutorial.
+{{ icon_info }} If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the same PR as your sub-team member(s) instead. Failing that too, you can choose another PR that is allocated to another student in your own team, or your own tutorial.
 <p/>
 <box type="tip" light>
 
@@ -41,24 +41,24 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 </box>
 </div>
 
-* <span class="badge badge-dark">Step 3</span> **Review the code for [coding standard]({{ java_coding_standard }}) compliance**. When you find a possible coding standard violation, do the following:
+* {{ step(3) }} **Review the code for [coding standard]({{ java_coding_standard }}) compliance**. You can view the code in the PR by clicking on the {{ show_as_rounded_tab('Files changed') }} tab. When you find a possible coding standard violation, do the following:
   1. **Show it to your review partner(s) to confirm** it is indeed a violation. You can seek tutor's opinion if you are not sure.
   1. **Add a comment** to communicate your finding with the author.<br>
-     * Hover over the offending line of code and click on the <button type="button" class="btn btn-primary btn-sm">**+**</button> that appears to start the comment.
+     * Hover over the offending line of code and click on the {{ button('**+**', 'primary') }} that appears to start the comment.
      * Write your comment ({{ icon_tip }} You can use [GFMD](https://guides.github.com/features/mastering-markdown/) syntax in your comment)<br>
        e.g., `Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:`<br>
        > Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:
-     * When you are done writing the comment, click on the <button type="button" class="btn btn-success btn-sm">**Start a review**</button> (not the <button type="button" class="btn btn-light border btn-sm">**Add single comment**</button>)
+     * When you are done writing the comment, click on the {{ button('**Start a review**', 'success') }} (not the {{ button('**Add single comment**') }} button)
 
-* <span class="badge badge-dark">Step 4</span> **Review the code for code quality** best practices you have learned so far. When you find an potential opportunity to improve the code quality, confirm with your review partners (and the tutor, if needed) and add a comment as before. Some code quality issues you can check for (not an exhaustive list):
+* {{ step(4) }} **Review the code for code quality** best practices you have learned so far. When you find a potential opportunity to improve the code quality, confirm with your review partners (and the tutor, if needed) and add a comment as before. Some code quality issues you can check for (not an exhaustive list):
   * Methods that are too long
   * Code nested too deeply
   * Not enough SLAP
   * Names that can be improved
   * Logic hard to understand
 
-* <span class="badge badge-dark">Step 5</span> **Finish the review**. When it is time to end the tutorial, finish the review as follows:
-  1. Click on the <button type="button" class="btn btn-success btn-sm">**Finish your review**</button> at the top of the page.
+* {{ step(5) }} **Finish the review**. When it is time to end the tutorial, finish the review as follows:
+  1. Click on the {{ button('**Finish your review**', 'success') }} at the top of the page.
   1. Choose the `Comment` option (not `Approve` or `Request changes`).
   1. In the comment box, mention your review partners e.g., `Also took part in this review @JonhDoe`. You can also give an overall comment about the code e.g.,
      ```
@@ -66,4 +66,4 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
      where the nesting was too deep. Hope our comments help you improve the code further.
      All the best for your iP :-)
      ```
-  1. Click on the <button type="button" class="btn btn-success btn-sm">**Submit review**</button> button to finish the review.
+  1. Click on the {{ button('**Submit review**', 'success') }} button to finish the review.
