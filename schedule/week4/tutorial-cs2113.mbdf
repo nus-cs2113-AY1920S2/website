@@ -13,7 +13,8 @@
 <div class="indented-level2">
 <box type="important">
 
-The quality of the work you will do in this tutorial task will be considered for your iP grade.
+* The quality of the work you will do in this tutorial task will be considered for your iP grade.
+* This task is applicable even if you have been exempted from the iP.
 </box>
 
 **Review a PR** created by your classmates by following the steps given below. Note that you are expected to have read the following guidelines as given in this week's iP tasks:
@@ -26,7 +27,10 @@ The quality of the work you will do in this tutorial task will be considered for
 <div class="indented-level2">
 
 <panel header="iP PR review allocation" minimized >
-(The allocation of which PRs to review will be specified nearer to the date)
+{% from "data-" + (module | lower) + "/studentData.njk" import ip_review_allocation with context %}
+Team       | Reviewer | PR to review
+-----------|----------|--------------{% for line in ip_review_allocation  %}
+{{ line[0] }} | {{ line[1] }} | [{{ line[2] }}]({{ module_org }}/duke/pulls/{{ line[2] }}){% endfor %}
 </panel>
 <p/>
 
@@ -65,5 +69,6 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
      Overall, we found your code easy to read for the most part except a few places
      where the nesting was too deep. Hope our comments help you improve the code further.
      All the best for your iP :-)
+     [Also took part in this review: @JonhDoe]
      ```
   1. Click on the {{ button('**Submit review**', 'success') }} button to finish the review.
