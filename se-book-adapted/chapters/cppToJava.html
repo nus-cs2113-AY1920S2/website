@@ -6201,10 +6201,10 @@ second line
         </span>
         <p></p>
         <div>
-          <p><strong><mark><em>Casting</em></mark> is the action of converting from one type to another</strong>. You can use the <code>(newType)</code> syntax to cast a value to a new type.</p>
+          <p><strong><mark><em>Casting</em></mark> is the action of converting from one type to another</strong>. You can use the <code>(newType)</code> syntax to cast a value to a type named <code>newType</code>.</p>
           <p><strong>When you cast a primitive value to another type, there may be a loss of precision.</strong></p>
           <box>
-            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below cast a <code>double</code> value to an <code>int</code> value and cast it back to a <code>double</code>. Note the loss of precision.</p>
+            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below casts a <code>double</code> value to an <code>int</code> value and casts it back to a <code>double</code>. Note the loss of precision.</p>
             <pre><code class="hljs java"><span class="hljs-keyword">double</span> d = <span class="hljs-number">5.3</span>;
 System.out.println(<span class="hljs-string">"Before casting to an int: "</span> + d);
 <span class="hljs-keyword">int</span> i = (<span class="hljs-keyword">int</span>)d; <span class="hljs-comment">// cast d to an int</span>
@@ -6287,8 +6287,8 @@ Integer x = (Integer)o;
 </code></pre>
             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
             </p>
-            <pre><code class="hljs">Exception in thread &quot;main&quot; java.lang.ClassCastException: misc.casting.Animal cannot be cast to java.lang.Integer
-	at misc.casting.CastingExamples.main(CastingExamples.java:14)
+            <pre><code class="hljs">Exception in thread &quot;main&quot; java.lang.ClassCastException: misc.casting.Animal cannot be
+cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.java:14)
 </code></pre>
           </box>
           <p>You can use the <code>instanceof</code> operator to check if a cast is safe to perform.</p>
@@ -6644,7 +6644,7 @@ Integer x = (Integer)o;
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sat, 01 Feb 2020 12:32:40 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 02 Feb 2020 11:18:20 GMT</small></div>
   </footer>
   </div>
 </body>

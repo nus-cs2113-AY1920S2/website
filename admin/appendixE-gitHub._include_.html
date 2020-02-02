@@ -107,21 +107,18 @@
       </h3>
       <p>Only one team member:</p>
       <ol>
-        <li><strong>Fork</strong> <a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3">Address Book - Level 3 (AB3)</a> to your team org.</li>
-        <li><mark><strong>Rename</strong> the forked repo as <code>main</code></mark>. This repo (let's call it the <em>team repo</em>) is to be used as the repo for your project.</li>
+        <li><strong>Fork</strong> the <a href="https://github.com/nus-cs2113-AY1920S2/tP">tP repo</a> to your team org. This repo is almost an exact copy the repo you used for the iP.<br> This repo (let's call it the <em>team repo</em>) is to be used as the
+          repo for your project.</li>
         <li><mark>Ensure the issue tracker of your team repo is enabled.</mark> <span class="dimmed">Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.</span></li>
         <li>Ensure your team members have the desired level of access to your team repo.</li>
-        <li><a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/UsingTravis.html#setting-up-travis-ci"><strong>Enable Travis CI for the team repo</strong></a>.</li>
-        <li><a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/UsingTravis.html#enabling-auto-publishing-of-documentation"><strong>Set up <em>auto-publishing</em> of docs</strong></a>. When set up correctly, your project website should be available
-          via the URL <code>https://ay1920s2-{team-id}.github.io/main</code> e.g., <code>https://ay1920s2-cs2113-w13-1.github.io/main/</code>. This also requires you to <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages">enable the <em>GitHub Pages</em> feature of your team repo and configure it to serve the website from the <code>gh-pages</code> branch</a>.</li>
-        <li><strong>create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2113-AY1920S2/addressbook-level3">nus-cs2113-AY1920S2/addressbook-level3</a>]
-          <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[CS2103T-T09-2] Contact List Pro</code>. <span class="dimmed">As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span>          In the PR description
+        <li><strong>create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2113-AY1920S2/tP">nus-cs2113-AY1920S2/tP</a>]
+          <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[CS2113T-T09-2] Contact List Pro</code>. <span class="dimmed">As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span>          In the PR description
           <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
       </ol>
       <p>All team members:</p>
       <ol>
-        <li><strong>Watch</strong> the <code>main</code> repo (created above) i.e., go to the repo and click on the <code>watch</code> button to subscribe to activities of the repo</li>
-        <li><strong>Fork</strong> the <code>main</code> repo to your personal GitHub account.</li>
+        <li><strong>Watch</strong> the <code>tP</code> repo (created above) i.e., go to the repo and click on the <code>watch</code> button to subscribe to activities of the repo</li>
+        <li><strong>Fork</strong> the <code>tP</code> repo to your personal GitHub account.</li>
         <li><strong>Clone</strong> the fork to your computer.</li>
         <li><strong>Set up</strong> the developer environment in your computer.<br> Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).</li>
       </ol>
@@ -481,12 +478,6 @@ method 2 ...
             indicate that a PR is not yet ready for merging.<br>
             <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span> PRO TIP</span> <code>LGTM</code> is common abbreviation you can use in the review comments to mean <code>Looks Good To Merge</code>.</li>
           <li><strong>Get team members to review PRs.</strong> A workflow without PR reviews is a risky workflow.</li>
-          <li><strong>Do not merge PRs failing <tooltip content="Continuous Integration e.g., Travis">CI</tooltip>.</strong> After setting up Travis, the CI status of a PR is reported at the bottom of the PR page. The screenshot below shows the status of
-            a PR that is passing all CI checks.
-            <ul>
-              <li><strong>If there is a failure</strong>, you can click on the <code>Details</code> link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.<br></li>
-            </ul>
-          </li>
           <li>After merging a PR, close the corresponding issue.<br>
             <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span> PRO TIP</span> You can use GitHub's <a href="https://help.github.com/en/articles/closing-issues-using-keywords"><code>Fixes #123</code> trick</a>            to get the issue to close automatically when the PR is merged.</li>
         </ul>
@@ -574,7 +565,7 @@ method 2 ...
       <h3 id="issue-tracker-setup">
         <div class="text-white bg-dark p-1">Issue Tracker Setup</div>
       </h3>
-      <p>We recommend you configure the issue tracker of the <code>main</code> repo as follows:</p>
+      <p>We recommend you configure the issue tracker of the <code>tP</code> repo as follows:</p>
       <ul>
         <li>Delete existing labels and add the following labels.<br>
           <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Issue type</strong> labels are useful from the beginning of the project. The other labels are needed only when you start implementing
