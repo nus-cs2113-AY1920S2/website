@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Software Design Fundamentals</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -38,13 +38,13 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="abstraction">
                     <span slot="header" class="card-title"><div><h2 id="abstraction"><span>Abstraction</span><a class="fa fa-anchor" href="#abstraction"></a></h2>
                 </div>
                 </span>
                 <div>
                   <div>
-                    <panel type="seamless" expanded>
+                    <panel type="seamless" expanded id="what">
                       <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                   </div>
                   </span>
@@ -101,14 +101,14 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="coupling">
                 <span slot="header" class="card-title"><div><h2 id="coupling"><span>Coupling</span><a class="fa fa-anchor" href="#coupling"></a></h2>
             </div>
             </span>
             <div>
               <div>
-                <panel type="seamless" expanded>
-                  <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                <panel type="seamless" expanded id="what-2">
+                  <span slot="header" class="card-title"><div><h4 id="what-2"><span>What</span><a class="fa fa-anchor" href="#what-2"></a></h4>
               </div>
               </span>
               <div class="indented">
@@ -135,9 +135,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling levels of alternative designs" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
                           <question has-input="true">
                             <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
                             <box>
@@ -153,7 +153,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: regressions and coupling." class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> regressions and coupling.</p></template>
                           <question has-input="true">
                             <p>Explain the link (if any) between regressions and coupling.</p>
                             <div slot="answer" class="algolia-no-index">
@@ -163,19 +163,19 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling and testability" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
                           <question has-input="true">
                             <p>Discuss the relationship between coupling and
-                              <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                              <tooltip><template slot="_content">a measure of how easily a given component can be tested</template>testability</tooltip>.</p>
                             <div slot="answer" class="algolia-no-index">
                               <p>Coupling decreases testability because if the
-                                <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                                <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                             </div>
                           </question>
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about coupling" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
                           <question>
                             <p>Choose the correct statements.</p>
                             <ul class="task-list">
@@ -199,7 +199,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="how">
                 <span slot="header" class="card-title"><div><h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how"></a></h4>
             </div>
             </span>
@@ -217,7 +217,7 @@
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If <code>Foo</code> class calls the method <code>Bar#read()</code>, <code>Foo</code> is coupled to <code>Bar</code> because a change to <code>Bar</code> can potentially
                     (but not always) require a change in the <code>Foo</code> class <span class="dimmed">e.g. if the signature of the <code>Bar#read()</code> is changed, <code>Foo</code> needs to change as well, but a change to the <code>Bar#write()</code> method may not require a change in the <code>Foo</code> class because <code>Foo</code> does not call <code>Bar#write()</code></span>.</p>
-                  <panel type="seamless" header="%%code for the above example%%" class="algolia-no-index">
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">code for the above example</span></p></template>
                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     ...
     <span class="hljs-keyword">new</span> Bar().read();
@@ -250,9 +250,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which indicate coupling?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which indicate coupling?</p></template>
                         <question>
                           <p>Which of these indicate a coupling between components A and B?</p>
                           <ul class="task-list">
@@ -277,7 +277,7 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="types-of-coupling">
               <span slot="header" class="card-title"><div><h4 id="types-of-coupling"><span>Types of Coupling</span><a class="fa fa-anchor" href="#types-of-coupling"></a></h4>
           </div>
           </span>
@@ -310,14 +310,14 @@
       </panel>
     </div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="cohesion">
         <span slot="header" class="card-title"><div><h2 id="cohesion"><span>Cohesion</span><a class="fa fa-anchor" href="#cohesion"></a></h2>
     </div>
     </span>
     <div>
       <div>
-        <panel type="seamless" expanded>
-          <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+        <panel type="seamless" expanded id="what-3">
+          <span slot="header" class="card-title"><div><h4 id="what-3"><span>What</span><a class="fa fa-anchor" href="#what-3"></a></h4>
       </div>
       </span>
       <div class="indented">
@@ -345,8 +345,8 @@
       </panel>
     </div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how"></a></h4>
+      <panel type="seamless" expanded id="how-2">
+        <span slot="header" class="card-title"><div><h4 id="how-2"><span>How</span><a class="fa fa-anchor" href="#how-2"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -372,9 +372,9 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class is more cohesive?" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which class is more cohesive?</p></template>
                 <question has-input="true">
                   <p>Compare the cohesion of the following two versions of the <code>EmailMessage</code> class. Which one is more cohesive and why?</p>
                   <pre><code class="hljs java"><span class="hljs-comment">// version-1</span>
@@ -439,7 +439,9 @@
   </div>
   </div>
   </div>
+
   </div>
+
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
@@ -467,6 +469,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: Using this Website</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -62,6 +62,7 @@
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+          <li><a href="/website/admin/ip-progress-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
           <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
 
           <hr>
@@ -214,17 +215,17 @@
                 <p>This book tries to <em>layer</em> information so that readers can decide to omit less important layers if they wish to.</p>
                 <p><strong>More important information are in bold</strong> or <mark>highlighted</mark> while <span class="dimmed">less important information are dimmed</span> or in collapsed panels such as the below.</p>
                 <box>
-                  <panel header="Some less important info in a minimized panel" minimized class="algolia-no-index">
+                  <panel minimized class="algolia-no-index"><template slot="_header"><p>Some less important info in a minimized panel</p></template>
                     <p>Less important info</p>
                     <p></p>
                   </panel>
                   <p></p>
-                  <panel header="%%Some less important info in a boarder-less panel%%" type="seamless" class="algolia-no-index">
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Some less important info in a boarder-less panel</span></p></template>
                     <p>Less important info</p>
                     <p></p>
                   </panel>
                   <p></p>
-                  <panel header="%%Some less important info in a panel%%" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Some less important info in a panel</span></p></template>
                     <p>Less important info</p>
                     <p></p>
                   </panel>
@@ -233,27 +234,26 @@
                 <p><strong>Tabs indicate alternative formats of the same content</strong> (e.g. video vs text). You can choose the one you like and ignore the other tabs.</p>
                 <box>
                   <tabs>
-                    <tab header="<md>:far-file-alt:</md>">
+                    <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                       <p>Some textual description of X</p>
                     </tab>
-                    <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                       <p>Video describing X</p>
                     </tab>
                   </tabs>
                 </box>
                 <p><strong>Dotted underlines indicate <trigger for="pop:tooltip-example">tool tips</trigger></strong> (activated by hovering over it) and <strong>dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger></strong>                  (activated by clicking) containing additional information.</p>
-                <popover id="pop:tooltip-example" title="Tooltip Example" placement="top">
+                <popover id="pop:tooltip-example" placement="top"><template slot="header">Tooltip Example</template>
                   <div slot="content" class="algolia-no-index">
                     Additional information
                   </div>
                 </popover>
-                <modal title="Modal Example" id="modal:modal-example" class="algolia-no-index">
-                  Additional information
+                <modal id="modal:modal-example" class="algolia-no-index"><template slot="_header">Modal Example</template> Additional information
                 </modal>
               </div>
               <p>This website <mark>uses a star rating system</mark> to indicate the priority level of contents.</p>
               <p>
-                <panel type src="/website/admin/moduleExpectations._include_.html#starRatingSystem" header="Admin <md>:glyphicon-log-in:</md> Module Expectations → Star Rating System  " class="embedding algolia-no-index" minimized fragment="starRatingSystem"></panel>
+                <panel type src="/website/admin/moduleExpectations._include_.html#starRatingSystem" class="embedding algolia-no-index" minimized fragment="starRatingSystem"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Module Expectations → Star Rating System</p></template></panel>
               </p>
             </div>
             <div id="more">
@@ -265,25 +265,25 @@
                   <li>
                     <p><big><strong>What</strong></big> : the <strong>meaning</strong> of the concept in concern</p>
                     <p>
-                      <panel header="%%Example%%" src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"></panel>
+                      <panel src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
                     </p>
                   </li>
                   <li>
                     <p><big><strong>Why</strong></big> : the <strong>motivation</strong> behind the concept in concern</p>
                     <p>
-                      <panel header="%%Example%%" src="/website/book/documentation/guidelines/goTopDown/why/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"></panel>
+                      <panel src="/website/book/documentation/guidelines/goTopDown/why/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
                     </p>
                   </li>
                   <li>
                     <p><big><strong>How</strong></big> : the <strong>usage</strong> of the concept in concern</p>
                     <p>
-                      <panel header="%%Example%%" src="/website/book/refactoring/how/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"></panel>
+                      <panel src="/website/book/refactoring/how/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
                     </p>
                   </li>
                   <li>
                     <p><big><strong>When</strong></big> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
                     <p>
-                      <panel header="%%Example%%" src="/website/book/refactoring/when/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"></panel>
+                      <panel src="/website/book/refactoring/when/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
                     </p>
                   </li>
                 </ul>
@@ -398,7 +398,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 12:28:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sat, 08 Feb 2020 11:12:01 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -427,6 +427,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

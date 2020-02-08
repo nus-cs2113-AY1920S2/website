@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Object Oriented Programming: Classes</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="what">
                     <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                 </div>
                 </span>
@@ -60,7 +60,7 @@
                     </ol>
                     <p><strong>A <mark><em>class</em></mark> contains instructions for creating a specific kind of objects</strong>. It turns out sometimes multiple objects keep the same type of data and have the same behavior because they are of the <em>same kind</em>.
                       Instructions for creating a 'kind' (or ‘class’) of objects can be done once and that same instructions can be used to
-                      <tooltip content="i.e. create instances of"><em>instantiate</em></tooltip> objects of that kind. We call such instructions a <em>Class</em>.</p>
+                      <tooltip><template slot="_content">i.e. create instances of</template><em>instantiate</em></tooltip> objects of that kind. We call such instructions a <em>Class</em>.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Classes and objects in an example scenario</p>
                       <p>Consider the example of writing an OOP program to calculate the average age of Adam, Beth, Charlie, and Daisy.</p>
@@ -99,10 +99,10 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md> Identify Classes and Objects" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Identify Classes and Objects</p></template>
                               <question>
                                 <p>Consider the following scenario. If you were to simulate this in an OOP program, what are the classes and the objects you would use?</p>
                                 <box>
@@ -142,7 +142,7 @@
                             </panel>
                           </div>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md> Classes for CityConnect app" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Classes for CityConnect app</p></template>
                               <question has-input="true">
                                 <p>Assume you are writing a CLI program called <strong><code>CityConnect</code></strong> for storing and querying distances between cities. The behavior is as follows:</p>
                                 <pre><code class="hljs">Welcome to CityConnect!
@@ -180,7 +180,7 @@ Enter command: exit
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="class-level-members">
                   <span slot="header" class="card-title"><div><h4 id="class-level-members"><span>Class-Level Members</span><a class="fa fa-anchor" href="#class-level-members"></a></h4>
               </div>
               </span>
@@ -216,9 +216,9 @@ Enter command: exit
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suitable as a class-level variables" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Suitable as a class-level variables</p></template>
                           <question>
                             <p>Which of these are suitable as class-level variables?</p>
                             <ul class="task-list">
@@ -242,7 +242,7 @@ Enter command: exit
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="enumerations">
                 <span slot="header" class="card-title"><div><h4 id="enumerations"><span>Enumerations</span><a class="fa fa-anchor" href="#enumerations"></a></h4>
             </div>
             </span>
@@ -274,7 +274,9 @@ Enter command: exit
     </div>
   </div>
   </div>
+
   </div>
+
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -302,6 +304,7 @@ Enter command: exit
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

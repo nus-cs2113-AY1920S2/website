@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Getting Started</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="installation">
                     <span slot="header" class="card-title"><div><h4 id="installation"><span>Installation</span><a class="fa fa-anchor" href="#installation"></a></h4>
                 </div>
                 </span>
@@ -62,7 +62,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="helloworld">
                   <span slot="header" class="card-title"><div><h4 id="helloworld"><span>HelloWorld</span><a class="fa fa-anchor" href="#helloworld"></a></h4>
               </div>
               </span>
@@ -103,7 +103,7 @@
                   <ul>
                     <li>Java programs consists of
                       <trigger for="pop:helloWorld-statement">statements</trigger>, grouped
-                      <tooltip content="A _method_ is a named sequence of statements">methods</tooltip>, which are then grouped into classes.</li>
+                      <tooltip><template slot="_content">A <em>method</em> is a named sequence of statements</template>methods</tooltip>, which are then grouped into classes.</li>
                     <li>Java is “case-sensitive”, which means <code>SYSTEM</code> is different from <code>System</code>.</li>
                     <li><code>public</code> is an <em>access modifier</em> that indicates the method is accessible from outside this class. Similarly, <code>private</code> access modifier indicates that a method/attribute is not accessible outside the class.</li>
                     <li><code>static</code> indicates this method is defined as a class-level member. Do not worry if you don’t know what that means. It will be explained later.</li>
@@ -113,7 +113,7 @@
                     <li>Java uses squiggly braces (<code>{</code> and <code>}</code>) to group things together.</li>
                     <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
                   </ul>
-                  <popover id="pop:helloWorld-statement" title="Statements" placement="top">
+                  <popover id="pop:helloWorld-statement" placement="top"><template slot="header">Statements</template>
                     <div slot="content" class="algolia-no-index">
                       <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
                       <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
@@ -135,7 +135,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="compiling-a-program">
                 <span slot="header" class="card-title"><div><h4 id="compiling-a-program"><span>Compiling a Program</span><a class="fa fa-anchor" href="#compiling-a-program"></a></h4>
             </div>
             </span>
@@ -154,7 +154,7 @@
                   <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>javac HelloWorld.java</code></p>
                 <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the
                   <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
-                <popover id="pop:compiling-errors" title="Compile-time errors" placement="top">
+                <popover id="pop:compiling-errors" placement="top"><template slot="header">Compile-time errors</template>
                   <div slot="content" class="algolia-no-index">
                     <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
                     <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
@@ -171,7 +171,7 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="running-a-program">
               <span slot="header" class="card-title"><div><h4 id="running-a-program"><span>Running a Program</span><a class="fa fa-anchor" href="#running-a-program"></a></h4>
           </div>
           </span>
@@ -194,8 +194,8 @@
                 <li>Similar to <code>javac</code>, your console should be able to find the java executable.</li>
               </ul>
               <p>When you run a Java program, you can encounter a
-                <tooltip content="so-called because it does not appear until after the program has started running">run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that
-                explains what happened and where.</p>
+                <tooltip><template slot="_content">so-called because it does not appear until after the program has started running</template>run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something
+                exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains what happened and where.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, modify the HelloWorld code to include the following line, compile it again, and run it.</p>
                 <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
@@ -216,10 +216,10 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
                     <div>
-                      <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] Run HelloWorld</small></small><a class='fa fa-anchor' href='#key-exercise-run-helloworld'></a>" expanded>
+                      <panel type="dark" expanded id="key-exercise-run-helloworld"><template slot="_header"><h3 id="key-exercise-run-helloworld"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] Run HelloWorld</small></small><a class="fa fa-anchor" href="#key-exercise-run-helloworld"></a></h3></template>
                         <question>
                           <ul>
                             <li>Install Java in your computer, if you haven't done so already.</li>
@@ -241,7 +241,9 @@
   </div>
   </div>
   </div>
+
   </div>
+
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -269,6 +271,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

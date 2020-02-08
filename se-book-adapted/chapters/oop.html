@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter : Object-Oriented Programming</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -61,6 +61,7 @@
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+          <li><a href="/website/admin/ip-progress-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
           <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
 
           <hr>
@@ -208,11 +209,11 @@
               <h1 id="object-oriented-programming"><span>Object-Oriented Programming</span><a class="fa fa-anchor" href="#object-oriented-programming"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="introduction">
             <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+        <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -271,9 +272,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about OOP" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about OOP</p></template>
                       <question>
                         <p>A) Choose the correct statements</p>
                         <ul class="task-list">
@@ -301,7 +302,7 @@
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: procedural vs OOP" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> procedural vs OOP</p></template>
                       <question>
                         <p>OO is a higher level mechanism than the procedural paradigm.</p>
                         <ul radio-group="07027" class="radio-list">
@@ -321,11 +322,11 @@
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="objects">
           <span slot="header" class="card-title"><div><h2 id="objects"><span>Objects</span><a class="fa fa-anchor" href="#objects"></a></h2>
       </div>
       </span>
-      <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+      <panel type="seamless" expanded id="what-2"><template slot="_header"><h4 id="what-2">What<a class="fa fa-anchor" href="#what-2"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -502,10 +503,10 @@
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
 
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Describe objects in the given scenario" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Describe objects in the given scenario</p></template>
                     <question has-input="true">
                       <p>Consider the following real-world scenario.</p>
                       <box>
@@ -618,7 +619,7 @@
           </div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Objects as Abstractions<a class='fa fa-anchor' href='#objects-as-abstractions'></a>" expanded>
+      <panel type="seamless" expanded id="objects-as-abstractions"><template slot="_header"><h4 id="objects-as-abstractions">Objects as Abstractions<a class="fa fa-anchor" href="#objects-as-abstractions"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -633,7 +634,7 @@
           <p></p>
           <div>
             <p>The concept of <strong><em>Objects</em> in OOP is an <trigger trigger="click" for="modal:objectsAsAbstractions-abstraction">abstraction</trigger> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong>              i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
-            <modal large title="Definition: Abstraction" id="modal:objectsAsAbstractions-abstraction" class="algolia-no-index">
+            <modal large id="modal:objectsAsAbstractions-abstraction" class="algolia-no-index"><template slot="_header">Definition: Abstraction</template>
               <div>
                 <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
               </div>
@@ -646,7 +647,7 @@
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Encapsulation Of Objects<a class='fa fa-anchor' href='#encapsulation-of-objects'></a>" expanded>
+      <panel type="seamless" expanded id="encapsulation-of-objects"><template slot="_header"><h4 id="encapsulation-of-objects">Encapsulation Of Objects<a class="fa fa-anchor" href="#encapsulation-of-objects"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -669,9 +670,9 @@
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Choose the correct statement." class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Choose the correct statement.</p></template>
                     <question>
                       <p>Choose the correct statements</p>
                       <ul class="task-list">
@@ -695,11 +696,11 @@
         </div>
       </panel>
       </panel>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="classes">
         <span slot="header" class="card-title"><div><h2 id="classes"><span>Classes</span><a class="fa fa-anchor" href="#classes"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-3"><template slot="_header"><h4 id="what-3">What<a class="fa fa-anchor" href="#what-3"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -720,7 +721,7 @@
           </ol>
           <p><strong>A <mark><em>class</em></mark> contains instructions for creating a specific kind of objects</strong>. It turns out sometimes multiple objects keep the same type of data and have the same behavior because they are of the <em>same kind</em>.
             Instructions for creating a 'kind' (or ‘class’) of objects can be done once and that same instructions can be used to
-            <tooltip content="i.e. create instances of"><em>instantiate</em></tooltip> objects of that kind. We call such instructions a <em>Class</em>.</p>
+            <tooltip><template slot="_content">i.e. create instances of</template><em>instantiate</em></tooltip> objects of that kind. We call such instructions a <em>Class</em>.</p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Classes and objects in an example scenario</p>
             <p>Consider the example of writing an OOP program to calculate the average age of Adam, Beth, Charlie, and Daisy.</p>
@@ -760,10 +761,10 @@
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md> Identify Classes and Objects" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Identify Classes and Objects</p></template>
                     <question>
                       <p>Consider the following scenario. If you were to simulate this in an OOP program, what are the classes and the objects you would use?</p>
                       <box>
@@ -803,7 +804,7 @@
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md> Classes for CityConnect app" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Classes for CityConnect app</p></template>
                     <question has-input="true">
                       <p>Assume you are writing a CLI program called <strong><code>CityConnect</code></strong> for storing and querying distances between cities. The behavior is as follows:</p>
                       <pre><code class="hljs">Welcome to CityConnect!
@@ -839,7 +840,7 @@ Enter command: exit
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Class Level Members<a class='fa fa-anchor' href='#class-level-members'></a>" expanded>
+    <panel type="seamless" expanded id="class-level-members"><template slot="_header"><h4 id="class-level-members">Class Level Members<a class="fa fa-anchor" href="#class-level-members"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -874,9 +875,9 @@ Enter command: exit
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suitable as a class-level variables" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Suitable as a class-level variables</p></template>
                   <question>
                     <p>Which of these are suitable as class-level variables?</p>
                     <ul class="task-list">
@@ -898,7 +899,7 @@ Enter command: exit
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Enumerations<a class='fa fa-anchor' href='#enumerations'></a>" expanded>
+    <panel type="seamless" expanded id="enumerations"><template slot="_header"><h4 id="enumerations">Enumerations<a class="fa fa-anchor" href="#enumerations"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -926,11 +927,11 @@ Enter command: exit
       </div>
     </panel>
     </panel>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="associations">
       <span slot="header" class="card-title"><div><h2 id="associations"><span>Associations</span><a class="fa fa-anchor" href="#associations"></a></h2>
   </div>
   </span>
-  <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+  <panel type="seamless" expanded id="what-4"><template slot="_header"><h4 id="what-4">What<a class="fa fa-anchor" href="#what-4"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -964,7 +965,7 @@ Enter command: exit
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### Navigability<a class='fa fa-anchor' href='#navigability'></a>" expanded>
+  <panel type="seamless" expanded id="navigability"><template slot="_header"><h4 id="navigability">Navigability<a class="fa fa-anchor" href="#navigability"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -983,7 +984,7 @@ Enter command: exit
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### Multiplicity<a class='fa fa-anchor' href='#multiplicity'></a>" expanded>
+  <panel type="seamless" expanded id="multiplicity"><template slot="_header"><h4 id="multiplicity">Multiplicity<a class="fa fa-anchor" href="#multiplicity"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1103,7 +1104,7 @@ Enter command: exit
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### Dependencies<a class='fa fa-anchor' href='#dependencies'></a>" expanded>
+  <panel type="seamless" expanded id="dependencies"><template slot="_header"><h4 id="dependencies">Dependencies<a class="fa fa-anchor" href="#dependencies"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1125,7 +1126,7 @@ Enter command: exit
         <h5 id="implementing-dependencies">Implementing dependencies<a class="fa fa-anchor" href="#implementing-dependencies"></a></h5>
         <box>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
-            <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
+            <tooltip><template slot="_content">temporary</template>transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
           <div class="alt-java">
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     
@@ -1160,7 +1161,7 @@ Enter command: exit
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### Composition<a class='fa fa-anchor' href='#composition'></a>" expanded>
+  <panel type="seamless" expanded id="composition"><template slot="_header"><h4 id="composition">Composition<a class="fa fa-anchor" href="#composition"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1207,7 +1208,7 @@ Enter command: exit
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### Aggregation<a class='fa fa-anchor' href='#aggregation'></a>" expanded>
+  <panel type="seamless" expanded id="aggregation"><template slot="_header"><h4 id="aggregation">Aggregation<a class="fa fa-anchor" href="#aggregation"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1255,11 +1256,11 @@ Enter command: exit
     </div>
   </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="inheritance">
     <span slot="header" class="card-title"><div><h2 id="inheritance"><span>Inheritance</span><a class="fa fa-anchor" href="#inheritance"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-5"><template slot="_header"><h4 id="what-5">What<a class="fa fa-anchor" href="#what-5"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1312,9 +1313,9 @@ Enter command: exit
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which statements are correct" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which statements are correct</p></template>
                   <question>
                     <p>Which of these are correct?</p>
                     <ul class="task-list">
@@ -1336,7 +1337,7 @@ Enter command: exit
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Overriding<a class='fa fa-anchor' href='#overriding'></a>" expanded>
+    <panel type="seamless" expanded id="overriding"><template slot="_header"><h4 id="overriding">Overriding<a class="fa fa-anchor" href="#overriding"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1381,7 +1382,7 @@ Enter command: exit
                 </tbody>
               </table>
             </div>
-            <modal large title="**Overloading**" id="modal:overriding-overloading" class="algolia-no-index">
+            <modal large id="modal:overriding-overloading" class="algolia-no-index"><template slot="_header"><strong>Overloading</strong></template>
               <div>
                 <div></div>
                 <p></p>
@@ -1450,9 +1451,9 @@ Enter command: exit
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which methods override?" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which methods override?</p></template>
                   <question>
                     <p>Which of these methods override another method? <span class="dimmed"><code>A</code> is the parent class. <code>B</code> inherits <code>A</code>.</span></p>
                     <img src="/website/book/oop/inheritance/overriding/images/overriding.png" height="220">
@@ -1476,7 +1477,7 @@ Enter command: exit
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Overloading<a class='fa fa-anchor' href='#overloading'></a>" expanded>
+    <panel type="seamless" expanded id="overloading-2"><template slot="_header"><h4 id="overloading-2">Overloading<a class="fa fa-anchor" href="#overloading-2"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1538,7 +1539,7 @@ Enter command: exit
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Interfaces<a class='fa fa-anchor' href='#interfaces'></a>" expanded>
+    <panel type="seamless" expanded id="interfaces"><template slot="_header"><h4 id="interfaces">Interfaces<a class="fa fa-anchor" href="#interfaces"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1553,8 +1554,8 @@ Enter command: exit
         <p></p>
         <div>
           <p><strong>An <em>interface</em> is a behavior specification</strong> i.e. a collection of
-            <tooltip content="Just the method signature without any implementation">method specifications</tooltip>. If a class
-            <tooltip content="implements all methods specified in an interface">implements the interface</tooltip>, it means the class is able to support the behaviors specified by the said interface.</p>
+            <tooltip><template slot="_content">Just the method signature without any implementation</template>method specifications</tooltip>. If a class
+            <tooltip><template slot="_content">implements all methods specified in an interface</template>implements the interface</tooltip>, it means the class is able to support the behaviors specified by the said interface.</p>
           <blockquote>
             <p>There are a number of situations in software engineering when it is important for disparate groups of programmers to agree to a &quot;contract&quot; that spells out how their software interacts. Each group should be able to write their code
               without any knowledge of how the other group's code is written. Generally speaking, interfaces are such contracts. <sub>--<a href="https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html">Oracle Docs on Java</a><sub></sub></sub>
@@ -1574,7 +1575,7 @@ Enter command: exit
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Abstract Classes<a class='fa fa-anchor' href='#abstract-classes'></a>" expanded>
+    <panel type="seamless" expanded id="abstract-classes"><template slot="_header"><h4 id="abstract-classes">Abstract Classes<a class="fa fa-anchor" href="#abstract-classes"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1611,7 +1612,7 @@ Enter command: exit
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Substitutability<a class='fa fa-anchor' href='#substitutability'></a>" expanded>
+    <panel type="seamless" expanded id="substitutability"><template slot="_header"><h4 id="substitutability">Substitutability<a class="fa fa-anchor" href="#substitutability"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1644,7 +1645,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Dynamic and Static Binding<a class='fa fa-anchor' href='#dynamic-and-static-binding'></a>" expanded>
+    <panel type="seamless" expanded id="dynamic-and-static-binding"><template slot="_header"><h4 id="dynamic-and-static-binding">Dynamic and Static Binding<a class="fa fa-anchor" href="#dynamic-and-static-binding"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1661,17 +1662,17 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           <box type="definition">
             <div>
               <p><strong>Dynamic Binding</strong> (
-                <tooltip content="There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document">aka late binding</tooltip>) : a mechanism where method calls in code are
-                <tooltip content="deciding which method implementation to execure">resolved</tooltip> at
-                <tooltip content="at the moment the method call is executed">runtime</tooltip>, rather than at compile time.</p>
+                <tooltip><template slot="_content">There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document</template>aka late binding</tooltip>) : a mechanism where method calls in code are
+                <tooltip><template slot="_content">deciding which method implementation to execure</template>resolved</tooltip> at
+                <tooltip><template slot="_content">at the moment the method call is executed</template>runtime</tooltip>, rather than at compile time.</p>
             </div>
           </box>
           <p><strong><trigger trigger="click" for="modal:dynamicAndStatic-overriding">Overridden methods</trigger> are resolved using dynamic binding, and therefore resolves to the implementation in the actual type of the object.</strong></p>
-          <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:dynamicAndStatic-overriding" class="algolia-no-index">
+          <modal large id="modal:dynamicAndStatic-overriding" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> OOP → Inheritance → What%%" popup-url="/website/book/oop/inheritance/what" class="algolia-no-index"></panel>
+                  <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/oop/inheritance/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → What</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -1681,7 +1682,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="overriding"><span>Overriding</span><a class="fa fa-anchor" href="#overriding"></a></h4>
+                  <h4 id="overriding-2"><span>Overriding</span><a class="fa fa-anchor" href="#overriding-2"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -1716,7 +1717,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           </tbody>
                         </table>
                       </div>
-                      <modal large title="**Overloading**" id="modal:overriding-overloading" class="algolia-no-index">
+                      <modal large id="modal:overriding-overloading" class="algolia-no-index"><template slot="_header"><strong>Overloading</strong></template>
                         <div>
                           <div></div>
                           <p></p>
@@ -1726,7 +1727,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           </p>
                           <div id="title-and-body">
                             <div>
-                              <h4 id="overloading"><span>Overloading</span><a class="fa fa-anchor" href="#overloading"></a></h4>
+                              <h4 id="overloading-3"><span>Overloading</span><a class="fa fa-anchor" href="#overloading-3"></a></h4>
                             </div>
                             <div id="main">
                               <div>
@@ -1785,9 +1786,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which methods override?" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which methods override?</p></template>
                             <question>
                               <p>Which of these methods override another method? <span class="dimmed"><code>A</code> is the parent class. <code>B</code> inherits <code>A</code>.</span></p>
                               <img src="/website/book/oop/inheritance/overriding/images/overriding.png" height="220">
@@ -1830,7 +1831,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </box>
           <p><strong>In contrast, <trigger trigger="click" for="modal:dynamicAndStatic-overloading">overloaded</trigger> methods are resolved using static binding.</strong></p>
-          <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:dynamicAndStatic-overloading" class="algolia-no-index">
+          <modal large id="modal:dynamicAndStatic-overloading" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
             <div>
               <div></div>
               <p></p>
@@ -1840,7 +1841,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="overloading"><span>Overloading</span><a class="fa fa-anchor" href="#overloading"></a></h4>
+                  <h4 id="overloading-4"><span>Overloading</span><a class="fa fa-anchor" href="#overloading-4"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -1921,11 +1922,11 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="polymorphism">
     <span slot="header" class="card-title"><div><h2 id="polymorphism"><span>Polymorphism</span><a class="fa fa-anchor" href="#polymorphism"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-6"><template slot="_header"><h4 id="what-6">What<a class="fa fa-anchor" href="#what-6"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1965,7 +1966,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+    <panel type="seamless" expanded id="how"><template slot="_header"><h4 id="how">How<a class="fa fa-anchor" href="#how"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1989,9 +1990,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Concepts related to polymorphism" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Concepts related to polymorphism</p></template>
                   <question>
                     <p>Which one of these is least related to how OO programs achieve polymorphism?</p>
                     <ul radio-group="8bdf8" class="radio-list">
@@ -2012,11 +2013,11 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="more">
     <span slot="header" class="card-title"><div><h2 id="more"><span>More</span><a class="fa fa-anchor" href="#more"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Miscellaneous<a class='fa fa-anchor' href='#miscellaneous'></a>" expanded>
+    <panel type="seamless" expanded id="miscellaneous"><template slot="_header"><h4 id="miscellaneous">Miscellaneous<a class="fa fa-anchor" href="#miscellaneous"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -2043,7 +2044,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Review<a class='fa fa-anchor' href='#review'></a>" expanded>
+    <panel type="seamless" expanded id="review"><template slot="_header"><h4 id="review">Review<a class="fa fa-anchor" href="#review"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -2062,12 +2063,12 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: In the context of OOP, what is the relationship between abstraction and encapsulation?" class="algolia-no-index">
-                  <panel header="%%Prerequisites%%" expandable expanded>
-                    <panel src="/website/book/oop/objects/encapsulation/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation" class="algolia-no-index"></panel>
-                    <panel src="/website/book/oop/objects/abstraction/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction" class="algolia-no-index"></panel>
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> In the context of OOP, what is the relationship between abstraction and encapsulation?</p></template>
+                  <panel expandable expanded><template slot="_header"><p><span class="dimmed">Prerequisites</span></p></template>
+                    <panel src="/website/book/oop/objects/encapsulation/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Objects: Encapsulation</p></template></panel>
+                    <panel src="/website/book/oop/objects/abstraction/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Objects: Abstraction</p></template></panel>
                   </panel>
                   <p></p>
                   <question>
@@ -2090,13 +2091,13 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                 </panel>
               </div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these do not belong to four main OO principles?" class="algolia-no-index">
-                  <panel header="%%Prerequisites%%" expandable expanded>
-                    <panel src="/website/book/oop/objects/abstraction/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction" class="algolia-no-index"></panel>
-                    <panel src="/website/book/oop/objects/encapsulation/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation" class="algolia-no-index"></panel>
-                    <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Basic" class="algolia-no-index"></panel>
-                    <panel src="/website/book/oop/inheritance/substitutability/unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Substitutability" class="algolia-no-index"></panel>
-                    <panel src="/website/book/oop/polymorphism/what/unit-inElsewhere-asFlat._include_.html" header="OOP: Polymorphism: Introduction" class="algolia-no-index"></panel>
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these do not belong to four main OO principles?</p></template>
+                  <panel expandable expanded><template slot="_header"><p><span class="dimmed">Prerequisites</span></p></template>
+                    <panel src="/website/book/oop/objects/abstraction/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Objects: Abstraction</p></template></panel>
+                    <panel src="/website/book/oop/objects/encapsulation/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Objects: Encapsulation</p></template></panel>
+                    <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Inheritance: Basic</p></template></panel>
+                    <panel src="/website/book/oop/inheritance/substitutability/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Inheritance: Substitutability</p></template></panel>
+                    <panel src="/website/book/oop/polymorphism/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Polymorphism: Introduction</p></template></panel>
                   </panel>
                   <p></p>
                   <question>
@@ -2136,16 +2137,19 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </nav>
           <a class="nav-link py-1" href="#objects">Objects&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-2">What&#x200E;</a>
             <a class="nav-link py-1" href="#objects-as-abstractions">Objects as Abstractions&#x200E;</a>
             <a class="nav-link py-1" href="#encapsulation-of-objects">Encapsulation Of Objects&#x200E;</a>
           </nav>
           <a class="nav-link py-1" href="#classes">Classes&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-3">What&#x200E;</a>
             <a class="nav-link py-1" href="#class-level-members">Class Level Members&#x200E;</a>
             <a class="nav-link py-1" href="#enumerations">Enumerations&#x200E;</a>
           </nav>
           <a class="nav-link py-1" href="#associations">Associations&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-4">What&#x200E;</a>
             <a class="nav-link py-1" href="#navigability">Navigability&#x200E;</a>
             <a class="nav-link py-1" href="#multiplicity">Multiplicity&#x200E;</a>
             <a class="nav-link py-1" href="#dependencies">Dependencies&#x200E;</a>
@@ -2154,8 +2158,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </nav>
           <a class="nav-link py-1" href="#inheritance">Inheritance&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-5">What&#x200E;</a>
             <a class="nav-link py-1" href="#overriding">Overriding&#x200E;</a>
-            <a class="nav-link py-1" href="#overloading">Overloading&#x200E;</a>
+            <a class="nav-link py-1" href="#overloading-2">Overloading&#x200E;</a>
             <a class="nav-link py-1" href="#interfaces">Interfaces&#x200E;</a>
             <a class="nav-link py-1" href="#abstract-classes">Abstract Classes&#x200E;</a>
             <a class="nav-link py-1" href="#substitutability">Substitutability&#x200E;</a>
@@ -2163,6 +2168,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </nav>
           <a class="nav-link py-1" href="#polymorphism">Polymorphism&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-6">What&#x200E;</a>
             <a class="nav-link py-1" href="#how">How&#x200E;</a>
           </nav>
           <a class="nav-link py-1" href="#more">More&#x200E;</a>
@@ -2178,7 +2184,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 12:28:42 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sat, 08 Feb 2020 11:12:01 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -2207,6 +2213,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

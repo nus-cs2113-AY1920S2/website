@@ -33,8 +33,7 @@
         </p>
         <p>Create a GitHub account (if you don't have one yet), as explained in the panel below.</p>
         <p>
-          <panel type src="/website/admin/appendixE-gitHub._include_.html#githubAccount" header="Admin <md>:glyphicon-log-in:</md> **Appendix E - GitHub: Creating an Account**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-            fragment="githubAccount"></panel>
+          <panel type src="/website/admin/appendixE-gitHub._include_.html#githubAccount" class="embedding" minimized fragment="githubAccount"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Appendix E - GitHub: Creating an Account</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
         </p>
       </box>
       <p><strong>More info</strong>: See <a href="/website/admin/appendixE-gitHub.html">Appendix E - Using GitHub</a>.</p>
@@ -173,7 +172,7 @@
             <li>If you add <code>@@author</code> annotations, please follow the guidelines below:</li>
           </ul>
           <div class="indented-level2">
-            <panel header="Adding `@@author` tags to indicate authorship">
+            <panel><template slot="_header"><p>Adding <code>@@author</code> tags to indicate authorship</p></template>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\reposenseAuthorAnnotation.md">
                   <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship</h4>
@@ -308,8 +307,7 @@ method 2 ...
         <p>When you do receive that email, TEAMMATES will allow you to access it without using a Google login. However, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a
           <trigger trigger="click"
             for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. <span class="dimmed">Reason: CS2113/T is a big class. This profile helps us to remember you better, even after the module is over.</span></p>
-        <modal title="%%Admin <md>:glyphicon-log-in:</md> Project → Deliverables → Website (extract)%%" id="modal:peerEvaluations-suitablePhoto">
-        
+        <modal id="modal:peerEvaluations-suitablePhoto"><template slot="_header"><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Website (extract)</span></template>
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\tp-deliverables-website.mbdf">
               <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in

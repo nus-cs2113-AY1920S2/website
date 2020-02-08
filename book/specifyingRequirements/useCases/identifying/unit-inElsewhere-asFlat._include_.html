@@ -29,8 +29,8 @@
           <div class="text-monospace">
             <ul>
               <li>Actors: Guest, Student, Staff, Admin,
-                <tooltip content="an exam management system">ExamSys</tooltip>,
-                <tooltip content="a library management system">LibSys</tooltip>.</li>
+                <tooltip><template slot="_content">an exam management system</template>ExamSys</tooltip>,
+                <tooltip><template slot="_content">a library management system</template>LibSys</tooltip>.</li>
             </ul>
           </div>
         </box>
@@ -96,10 +96,10 @@
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\specifyingRequirements\useCases\identifying\text.md">
         <div>
           <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\specifyingRequirements\useCases\identifying\exercises.md">
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+            <panel expandable><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\specifyingRequirements\useCases\identifying\q-use-case-diagram-ticket-machine.md">
-                  <panel header="Q: Use case diagram for a ticket vending machine">
+                  <panel><template slot="_header"><p>Q: Use case diagram for a ticket vending machine</p></template>
                     <question has-input="false">
                       <p>Consider a simple movie ticket vending machine application. Every week, the theatre staff will enter the weekly schedule as well as ticket price for each show. A customer sees the schedule and the ticket price displayed at the machine.
                         There is a slot to insert money, a keypad to enter a code for a movie, a code for the show time, and the number of tickets. A display shows the customer's balance inside the machine. A customer may choose to cancel a transaction
@@ -117,7 +117,7 @@
               </div>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\specifyingRequirements\useCases\identifying\q-use-case-diagram-qa-system.md">
-                  <panel header="Q: Use case diagram for QA system">
+                  <panel><template slot="_header"><p>Q: Use case diagram for QA system</p></template>
                     <question has-input="false">
                       <p>A software house wishes to automate its Quality Assurance division.</p>
                       <p>The system is to be used by Testers, Programmers and System Administrators. Only an administrator can create new users and assign tasks to programmers. Any tester can create a bug report, as well as set the status of a bug report

@@ -1,7 +1,7 @@
 <div>
   <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\clone\text.md">
     <p>
-      <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Remote Respositories%%" popup-url="/website/book/revisionControl/remoteRepositories"></panel>
+      <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/remoteRepositories"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Remote Respositories</span></p></template></panel>
     </p>
   </div>
 </div>
@@ -26,14 +26,14 @@
           <p>Github project URL: <code>https://github.com/se-edu/samplerepo-things</code> <br> Git repo URL: <code>https://github.com/se-edu/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
         </box>
         <tabs>
-          <tab header="SourceTree">
+          <tab><template slot="_header">SourceTree</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\clone\sourcetree.md">
                 <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
               </div>
             </div>
           </tab>
-          <tab header="CLI">
+          <tab><template slot="_header">CLI</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\clone\cli.md">
                 <p>You can use the <code>clone</code> command to clone a repo.</p>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Data Types: Arrays</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -74,7 +74,7 @@ values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double
                     <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                       </span>
                       </span> The <code>[]</code> operator selects elements from an array. Array elements
-                      <tooltip content="i.e., the index of the first element is 0, not 1">indices start from 0</tooltip>.</p>
+                      <tooltip><template slot="_content">i.e., the index of the first element is 0, not 1</template>indices start from 0</tooltip>.</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
 
 System.out.println(<span class="hljs-string">"The first element is "</span> + counts[<span class="hljs-number">0</span>]);
@@ -129,7 +129,7 @@ System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-n
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                         <div>
                           <ul>
                             <li><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html">Oracle's tutorial on Arrays</a></li>
@@ -140,10 +140,10 @@ System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-n
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
                           <div>
-                            <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] Compare names</small></small><a class='fa fa-anchor' href='#key-exercise-compare-names'></a>" expanded>
+                            <panel type="dark" expanded id="key-exercise-compare-names"><template slot="_header"><h3 id="key-exercise-compare-names"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] Compare names</small></small><a class="fa fa-anchor" href="#key-exercise-compare-names"></a></h3></template>
                               <question>
                                 <p>Write a Java program that takes two command line arguments and prints <code>true</code> or <code>false</code> to indicate if the two arguments have the same value. Follow the sample output given below.</p>
                                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
@@ -174,7 +174,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                                     <li>The two command line arguments can be accessed inside the <code>main</code> method using <code>args[0]</code> and <code>args[1]</code>.</li>
                                     <li>When using multiple operators in the same expression, you might need to use parentheses to specify operator precedence. e.g., <code>&quot;foo&quot; + x == y</code> vs <code>&quot;foo&quot; + (x == y)</code></li>
                                   </ul>
-                                  <panel type="seamless" header="partial solution" class="algolia-no-index">
+                                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>partial solution</p></template>
                                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
       String first = args[<span class="hljs-number">0</span>];
@@ -200,7 +200,9 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -228,6 +230,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

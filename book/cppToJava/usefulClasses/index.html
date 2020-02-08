@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Some Useful Classes</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="java-api">
                     <span slot="header" class="card-title"><div><h4 id="java-api"><span>Java API</span><a class="fa fa-anchor" href="#java-api"></a></h4>
                 </div>
                 </span>
@@ -64,7 +64,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="the-string-class">
                   <span slot="header" class="card-title"><div><h4 id="the-string-class"><span>The <code>String</code> Class</span><a class="fa fa-anchor" href="#the-string-class"></a></h4>
               </div>
               </span>
@@ -80,7 +80,7 @@
                 <div>
                   <p>String is a built-in Java class that you
                     <trigger trigger="click" for="modal:stringClass-javaLang">can use without importing</trigger>. Given below are some useful String methods:</p>
-                  <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top" class="algolia-no-index">
+                  <modal id="modal:stringClass-javaLang" placement="top" class="algolia-no-index"><template slot="_header">💡 <code>java.lang</code> classes can be used without importing</template>
                     <p>Any class in the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/package-summary.html"><code>java.lang</code></a> package can be used without importing.
                     </p>
                   </modal>
@@ -111,10 +111,9 @@ System.out.println(upperName);
 ALAN TURING
 </code></pre>
                     </box>
-                    <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <tooltip content="once created, cannot be modified"><em>immutable</em></tooltip></strong>. For example, when you
-                      invoke
-                      <code>toUpperCase</code> on a string <code>&quot;abc&quot;</code>, you get a new string object <code>&quot;ABC&quot;</code> as the return value rather than the string <code>&quot;abc&quot;</code> being changed to <code>&quot;ABC&quot;</code>.
-                      As a result, for such string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code>toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p>
+                    <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <tooltip><template slot="_content">once created, cannot be modified</template><em>immutable</em></tooltip></strong>.
+                      For example, when you invoke <code>toUpperCase</code> on a string <code>&quot;abc&quot;</code>, you get a new string object <code>&quot;ABC&quot;</code> as the return value rather than the string <code>&quot;abc&quot;</code> being
+                      changed to <code>&quot;ABC&quot;</code>. As a result, for such string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code>toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p>
                     <pre><code class="hljs java">String s = <span class="hljs-string">"Ada"</span>;
 s.toUpperCase(); <span class="hljs-comment">// no effect</span>
 s = s.toUpperCase(); <span class="hljs-comment">// the correct way</span>
@@ -168,9 +167,11 @@ String name2 = <span class="hljs-string">"Alan Turing"</span>;
 System.out.println(name1 == name2);
 </code></pre>
                     <p>This code compiles and runs, and most of the time it shows <code>true</code>. But it is not correct. The problem is,
-                      <tooltip content="i.e., as opposed to comparing primitive values e.g., `2 == 2`">when used for comparing objects</tooltip>, the <code>==</code> operator checks whether the two variables refer to the same object (by comparing the references). If you give it two different string objects that contain the same letters,
-                      it is supposed to yield <code>true</code> because they are two distinct objects even if they contain the same text. However, because Java strings are immutable, <mark>in some cases (but not always)</mark> Java reuses existing string
-                      objects instead of creating multiple objects, which can cause the above code to yield <code>true</code>. Therefore, it is not safe to use <code>==</code> to compare strings if your intention is to check if they contain the same text.</p>
+                      <tooltip><template slot="_content">i.e., as opposed to comparing primitive values e.g., <code>2 == 2</code></template>when used for comparing objects</tooltip>, the <code>==</code> operator checks whether the two variables refer to the same
+                      object (by comparing the references). If you give it two different string objects that contain the same letters, it is supposed to yield <code>true</code> because they are two distinct objects even if they contain the same text.
+                      However, because Java strings are immutable, <mark>in some cases (but not always)</mark> Java reuses existing string objects instead of creating multiple objects, which can cause the above code to yield <code>true</code>. Therefore,
+                      it is not safe to use
+                      <code>==</code> to compare strings if your intention is to check if they contain the same text.</p>
                     <p><strong>The right way to compare strings is with the <code>equals</code> method.</strong></p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example invokes <code>equals</code> on <code>name1</code> and passes <code>name2</code> as an argument. The <code>equals</code> method returns <code>true</code>                        if the strings contain the same characters; otherwise it returns <code>false</code>.</p>
@@ -271,7 +272,9 @@ Second &quot;line&quot;
 </code></pre>
                     </box>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> As the behavior of the <code>\n</code>
-                      <tooltip content="e.g., behavior differs between Windows and OS-X">depends on the platform</tooltip>, the recommended way to print a line break is using the <code>System.lineSeparator()</code> as it works the same in all platforms.</p>
+                      <tooltip><template slot="_content">e.g., behavior differs between Windows and OS-X</template>depends on the platform</tooltip>, the recommended way to print a line break is using the <code>System.lineSeparator()</code> as it works the same
+                      in all platforms.
+                    </p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Using <code>System.lineSeparator()</code> to print a line break.</p>
                       <pre><code class="hljs java">System.out.println(<span class="hljs-string">"First line"</span> + System.lineSeparator() + <span class="hljs-string">"Second line"</span>);
@@ -307,7 +310,7 @@ Second line
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                       <div>
                         <ul>
                           <li><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/String.html"><code>String</code> API</a></li>
@@ -317,10 +320,10 @@ Second line
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
                         <div>
-                          <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] `printPrice` method</small></small><a class='fa fa-anchor' href='#key-exercise-printprice-method'></a>" expanded>
+                          <panel type="dark" expanded id="key-exercise-printprice-method"><template slot="_header"><h3 id="key-exercise-printprice-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code>printPrice</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-printprice-method"></a></h3></template>
                             <question>
                               <p>Implement the <code>printPrice</code> method in the code below to produce the given output. Its behavior:</p>
                               <ul>
@@ -373,7 +376,7 @@ FRIES: 0.50
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="wrapper-classes-for-primitive-types">
                 <span slot="header" class="card-title"><div><h4 id="wrapper-classes-for-primitive-types"><span>Wrapper Classes for Primitive Types</span><a class="fa fa-anchor" href="#wrapper-classes-for-primitive-types"></a></h4>
             </div>
             </span>
@@ -460,18 +463,17 @@ System.out.println(i);
 </code></pre>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>-2147483648 : 2147483647</code></p>
                 </box>
-                <p><strong>Wrapper classes provide methods for <tooltip content="In this context, parse means something like “read and translate”"><em>parsing</em></tooltip> strings to other types</strong> e.g., <code>Integer.parseInt</code> converts a string
-                  to (you guessed it) an integer. The other wrapper classes provide similar methods, like <code>Double.parseDouble</code> and <code>Boolean.parseBoolean</code>.</p>
+                <p><strong>Wrapper classes provide methods for <tooltip><template slot="_content">In this context, parse means something like “read and translate”</template><em>parsing</em></tooltip> strings to other types</strong> e.g., <code>Integer.parseInt</code>                  converts a string to (you guessed it) an integer. The other wrapper classes provide similar methods, like <code>Double.parseDouble</code> and <code>Boolean.parseBoolean</code>.</p>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>Integer.parseInt(&quot;1234&quot;)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>1234</code></p>
                 <p>Wrapper classes also provide <code>toString</code>, which returns a string representation of a value.</p>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>Integer.toString(1234)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>&quot;1234&quot;</code></p>
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                  <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
                       <div>
-                        <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] `printTotalScore` method</small></small><a class='fa fa-anchor' href='#key-exercise-printtotalscore-method'></a>" expanded>
+                        <panel type="dark" expanded id="key-exercise-printtotalscore-method"><template slot="_header"><h3 id="key-exercise-printtotalscore-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code>printTotalScore</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-printtotalscore-method"></a></h3></template>
                           <question>
                             <p>Implement the <code>printTotalScore</code> method in the code below to produce the given output. Its behavior:</p>
                             <ul>
@@ -519,7 +521,7 @@ System.out.println(i);
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="the-arrays-class">
               <span slot="header" class="card-title"><div><h4 id="the-arrays-class"><span>The <code>Arrays</code> class</span><a class="fa fa-anchor" href="#the-arrays-class"></a></h4>
           </div>
           </span>
@@ -554,10 +556,10 @@ System.out.println(Arrays.toString(c));
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
                     <div>
-                      <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] `filterEmails` method</small></small><a class='fa fa-anchor' href='#key-exercise-filteremails-method'></a>" expanded>
+                      <panel type="dark" expanded id="key-exercise-filteremails-method"><template slot="_header"><h3 id="key-exercise-filteremails-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code>filterEmails</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-filteremails-method"></a></h3></template>
                         <question>
                           <p>Implement the following two methods in the code below to produce the given output.</p>
                           <ul>
@@ -616,7 +618,7 @@ System.out.println(Arrays.toString(c));
                                 </ul>
                               </li>
                             </ul>
-                            <panel type="seamless" header="Partial solution" class="algolia-no-index">
+                            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
     String[] results = <span class="hljs-keyword">new</span> String[items.length];
     <span class="hljs-keyword">int</span> matchCount = <span class="hljs-number">0</span>;
@@ -645,7 +647,7 @@ System.out.println(Arrays.toString(c));
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="the-scanner-class">
             <span slot="header" class="card-title"><div><h4 id="the-scanner-class"><span>The <code>Scanner</code> class</span><a class="fa fa-anchor" href="#the-scanner-class"></a></h4>
         </div>
         </span>
@@ -697,10 +699,10 @@ System.out.printf(<span class="hljs-string">"Hello %s, age %d\n"</span>, name, a
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
                   <div>
-                    <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] find total expenditure</small></small><a class='fa fa-anchor' href='#key-exercise-find-total-expenditure'></a>" expanded>
+                    <panel type="dark" expanded id="key-exercise-find-total-expenditure"><template slot="_header"><h3 id="key-exercise-find-total-expenditure"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] find total expenditure</small></small><a class="fa fa-anchor" href="#key-exercise-find-total-expenditure"></a></h3></template>
                       <question>
                         <p>Write a program to ask the user for a description of overseas expenses (presumably, the user has just returned from an overseas trip) and calculate the total in local currency.</p>
                         <ul>
@@ -749,7 +751,7 @@ System.out.println(Arrays.toString(words));
                         <div slot="hint" class="algolia-no-index">
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <code>String.format(&quot;%.2f&quot;, doubleValue)</code> to format <code>doubleValue</code> to two decimal
                             points.<br> e.g., <code>String.format(&quot;%.2f&quot;, 1.3334)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>1.33</code></p>
-                          <panel type="seamless" header="Partial solution" class="algolia-no-index">
+                          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
                             <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Arrays;
 <span class="hljs-keyword">import</span> java.util.Scanner;
 
@@ -803,7 +805,9 @@ System.out.println(Arrays.toString(words));
   </div>
   </div>
   </div>
+
   </div>
+
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -831,6 +835,7 @@ System.out.println(Arrays.toString(words));
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

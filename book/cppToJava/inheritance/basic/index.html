@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Inheritance: Basics</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -116,7 +116,8 @@
                       <p><strong>A subclass inherits all the fields and methods of the superclass.</strong> In the example above, <code>MountainBike</code> inherits all the fields and methods of <code>Bicycle</code> and adds the field <code>seatHeight</code>                        and a method to set it.</p>
                       <h5 id="accessing-superclass-members">Accessing Superclass Members<a class="fa fa-anchor" href="#accessing-superclass-members"></a></h5>
                       <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a
-                        <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable">hidden field</tooltip> (although hiding fields is discouraged).</p>
+                        <tooltip><template slot="_content">when both the superclass and the subclass use the same variable name, the superclass variables is said to be <em>hidden/shadowed</em> by the subclass variable</template>hidden field</tooltip> (although
+                        hiding fields is discouraged).</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this class, <code>Superclass</code> and a subclass, called <code>Subclass</code>, that overrides <code>printMethod()</code>:</p>
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Superclass</span> </span>{
@@ -188,10 +189,10 @@ Printed in Subclass
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
                           <div>
-                            <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] inherit the `Task` class</small></small><a class='fa fa-anchor' href='#key-exercise-inherit-the-task-class'></a>" expanded>
+                            <panel type="dark" expanded id="key-exercise-inherit-the-task-class"><template slot="_header"><h3 id="key-exercise-inherit-the-task-class"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] inherit the <code>Task</code> class</small></small><a class="fa fa-anchor" href="#key-exercise-inherit-the-task-class"></a></h3></template>
                               <question>
                                 <p>Background: Suppose we are creating a software to manage various tasks a person has to do. Two types of such tasks are,</p>
                                 <ul>
@@ -288,7 +289,9 @@ Postponed to Nov 18th
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -316,6 +319,7 @@ Postponed to Nov 18th
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

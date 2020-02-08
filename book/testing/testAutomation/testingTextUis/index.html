@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Testing: Test Automation: Automated Testing of Text UIs</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -58,7 +58,7 @@
                     <ol>
                       <li>
                         <p>Store the test input in the text file <code>input.txt</code>.</p>
-                        <panel header="%%<md>:fas-cube:</md> Example `input.txt`%%" type="seamless" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <code>input.txt</code></span></p></template>
                           <pre><code class="hljs">add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
@@ -66,7 +66,7 @@ add Valid Name 12345 e/valid@email.butPhonePrefixMissing
                       </li>
                       <li>
                         <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                        <panel header="%%<md>:fas-cube:</md> Example `expected.txt`%%" type="seamless" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <code>expected.txt</code></span></p></template>
                           <pre><code class="hljs">Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
@@ -91,7 +91,7 @@ Invalid command format: add
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                           </li>
                         </ul>
-                        <panel header minimized class="algolia-no-index">
+                        <panel minimized class="algolia-no-index"><template slot="_header"></template>
                           <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span>                          extra</span>
                           </span>
                           </span>
@@ -135,7 +135,9 @@ Invalid command format: add
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -163,6 +165,7 @@ Invalid command format: add
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

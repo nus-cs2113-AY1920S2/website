@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: Peer Evaluations</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -62,6 +62,7 @@
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+          <li><a href="/website/admin/ip-progress-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
           <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
 
           <hr>
@@ -203,7 +204,7 @@
             <div id="intro">
               <p>This module leverages peer feedback/evaluations in many ways. In particular, we do several rounds of peer evaluations using TEAMMATES.</p>
               <div class="indented-level1">
-                <panel type src="/website/admin/tools._include_.html#teammates" header="Admin <md>:glyphicon-log-in:</md> Tools → TEAMMATES  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="teammates"></panel>
+                <panel type src="/website/admin/tools._include_.html#teammates" class="embedding algolia-no-index" minimized fragment="teammates"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → TEAMMATES  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
               </div>
               <p></p>
               <p>
@@ -232,7 +233,7 @@
                       <p>
                         <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the User Guide is,</strong></p>
                       <span id="equalShareScale">
-<panel type="seamless" header="Uses the `Equal Share +/- N%` scale for the answer" class="algolia-no-index">
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
 <ul radio-group="070b7" class="radio-list">
 <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label>
                       </li>
@@ -250,7 +251,7 @@
                       <p>
                         <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the Developer Guide is,</strong></p>
                       <div>
-                        <panel type="seamless" header="Uses the `Equal Share +/- N%` scale for the answer" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
                           <ul radio-group="c5570" class="radio-list">
                             <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
                             <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
@@ -267,7 +268,7 @@
                       <p>
                         <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the team-based tasks is,</strong></p>
                       <div>
-                        <panel type="seamless" header="Uses the `Equal Share +/- N%` scale for the answer" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
                           <ul radio-group="c5570" class="radio-list">
                             <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
                             <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
@@ -284,7 +285,7 @@
                       <p>
                         <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong></p>
                       <div>
-                        <panel type="seamless" header="Uses the `Equal Share +/- N%` scale for the answer" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
                           <ul radio-group="c5570" class="radio-list">
                             <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
                             <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
@@ -365,12 +366,11 @@
                 <h3 id="session-final-peer-evaluation">Session: <code>Final Peer Evaluation</code><a class="fa fa-anchor" href="#session-final-peer-evaluation"></a></h3>
                 <ul>
                   <li>Held soon after the final project submission.</li>
-                  <li><mark>There will be bonus marks for <tooltip content="i.e., those who are close to the overall consensus">good</tooltip> peer evaluations</mark>.</li>
+                  <li><mark>There will be bonus marks for <tooltip><template slot="_content">i.e., those who are close to the overall consensus</template>good</tooltip> peer evaluations</mark>.</li>
                   <li>This session includes all questions from the Midterm Peer Evaluation:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/peerEvaluations-midterm._include_.html#questions" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Session: Midterm Peer Evaluation Questions  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="questions"></panel>
+                  <panel type src="/website/admin/peerEvaluations-midterm._include_.html#questions" class="embedding algolia-no-index" minimized fragment="questions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Session: Midterm Peer Evaluation Questions  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
@@ -428,7 +428,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 12:28:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sat, 08 Feb 2020 11:12:01 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -457,6 +457,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

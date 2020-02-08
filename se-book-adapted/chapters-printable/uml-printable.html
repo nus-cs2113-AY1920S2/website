@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter [Printable] : UML</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <link rel="stylesheet" href="/website/book/css/textbook.css">
         <link rel="stylesheet" href="/website/book/css/print.css">
@@ -87,7 +87,7 @@
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code>Table</code> class shown in UML notation:</p>
                     <img src="/website/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
                     <p></p>
-                    <panel type="seamless" header="The equivalent code" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>The equivalent code</p></template>
                       <div class="alt-java">
                         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
 
@@ -132,7 +132,7 @@
                     <li><code>#</code> : protected</li>
                     <li><code>~</code> : package private</li>
                   </ul>
-                  <panel type="seamless" header="How visibilities map to programming language features" class="algolia-no-index">
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>How visibilities map to programming language features</p></template>
                     <div class="table-responsive">
                       <table class="markbind-table table table-bordered table-striped">
                         <thead>
@@ -620,10 +620,10 @@
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="introduction">Introduction <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true"
+              <h4 id="introduction-2">Introduction <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true"
                   class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
                 </small>
-                </span><a class="fa fa-anchor" href="#introduction"></a></h4>
+                </span><a class="fa fa-anchor" href="#introduction-2"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>A UML sequence diagram <em>captures the interactions between multiple objects for a given scenario.</em></strong></p>
@@ -669,7 +669,7 @@
                   <p></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sequence diagram shows some interactions between a human user and the Text UI of a
-                      <tooltip content="Command Line Interface">CLI</tooltip> Minesweeper game.</p>
+                      <tooltip><template slot="_content">Command Line Interface</template>CLI</tooltip> Minesweeper game.</p>
                     <img src="/website/book/uml/sequenceDiagrams/basic/images/playerText.png" height="300">
                     <p></p>
                     <p>The player runs the <code>newgame</code> action on the <code>TextUi</code> object which results in the <code>TextUi</code> showing the minefield to the player. Then, the player runs the <code>clear x y</code> command; in response,
@@ -869,10 +869,10 @@
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="introduction-2">Introduction <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true"
+              <h4 id="introduction-3">Introduction <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true"
                   class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
                 </small>
-                </span><a class="fa fa-anchor" href="#introduction-2"></a></h4>
+                </span><a class="fa fa-anchor" href="#introduction-3"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
@@ -909,10 +909,10 @@
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="associations">Associations <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true"
+              <h4 id="associations-2">Associations <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true"
                   class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
                 </small>
-                </span><a class="fa fa-anchor" href="#associations"></a></h4>
+                </span><a class="fa fa-anchor" href="#associations-2"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>A solid line indicates an association between two objects.</p>
@@ -932,11 +932,11 @@
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="notes">Notes <span class="badge badge-light"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
+              <h4 id="notes-2">Notes <span class="badge badge-light"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
                 <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
                 </small>
                 </small>
-                </span><a class="fa fa-anchor" href="#notes"></a></h4>
+                </span><a class="fa fa-anchor" href="#notes-2"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML notes can augment UML diagrams with additional information.</strong> These notes can be shown connected to a particular element in the diagram or can be shown without a connection. The diagram below shows examples of both.</p>
@@ -989,10 +989,11 @@
           </div>
         </div>
       </div>
+
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 12:28:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sat, 08 Feb 2020 11:12:01 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -1021,6 +1022,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

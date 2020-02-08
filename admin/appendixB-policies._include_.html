@@ -106,8 +106,7 @@
           <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\policies.mbdf">
             <p>As most of the work is graded individually, it is OK to do less or more than equal share in your project team.</p>
             <p>
-              <panel type src="/website/admin/tp-expectations._include_.html#individualExpectations" header="Admin <md>:glyphicon-log-in:</md> tP → Expectations: from each student  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                class="embedding" minimized fragment="individualExpectations"></panel>
+              <panel type src="/website/admin/tp-expectations._include_.html#individualExpectations" class="embedding" minimized fragment="individualExpectations"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: from each student  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
             </p>
           </div>
         </div>
@@ -134,7 +133,7 @@
             <p><strong>Normally, the prof will respond within 24 hours</strong> if it was an email sent to the prof or a forum post directed at the prof. If you don't get a response within that time, <strong>please feel free to remind the prof</strong>.
               It is likely that the prof did not notice your post or the email got stuck somewhere.</p>
             <p>Similarly we expect you to check email regularly and respond to emails written to you personally (not mass email) promptly.</p>
-            <panel header="Email etiquette: ALWAYS respond to direct emails" expanded>
+            <panel expanded><template slot="_header"><p>Email etiquette: ALWAYS respond to direct emails</p></template>
               <p>Not responding to a personal email is a major breach of professional etiquette (and general civility). Imagine how pissed off you would be if you met the prof along the corridor, said 'Hi prof, good morning' and the prof walked away without
                 saying anything back. Not responding to a personal email is just as bad. Always take a few seconds to at least acknowledge such emails.  It doesn't take long to type &quot;Noted. Thanks&quot; and hit 'send'.</p>
               <p>The promptness of a reply is even more important when the email is requesting you for something that you cannot provide. Imagine you wrote to the prof requesting a reference letter and the prof did not respond at all because he/she did not
@@ -156,7 +155,7 @@
             <p><strong>It is ok to ask for help from classmates even for assignments</strong>, even from other teams, as long as you don't copy from others and submit as your own. It doesn't matter who is helping you as long as you are learning from it.</p>
             <p><strong>We encourage you to give tech help to each other</strong>, but do it in a way that the other person learns from it.</p>
             <p><span class="flat"><span class="dimmed">Related: [<a href="#admin-appendixD-help-anchor">Admin: Appendix D: Getting Help</a>]</span></span>
-              <panel src="/website/admin/appendixD-help._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> Appendix D: How to get Help in CS2113/T" class="embedding" minimized fragment="main"></panel>
+              <panel src="/website/admin/appendixD-help._include_.html#main" class="embedding" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D: How to get Help in CS2113/T</p></template></panel>
             </p>
           </div>
         </div>
@@ -273,8 +272,7 @@ Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;Cu
                 </li>
               </ul>
             </box>
-            <modal large title="Admin <md>:glyphicon-log-in:</md> Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">
-            
+            <modal large id="modal:reusePolicy-authorTags"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project mid-v1.3 (extract) →</template>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\reposenseAuthorAnnotation.md">
                   <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship</h4>
@@ -386,8 +384,7 @@ method 2 ...
                 </div>
               </div>
             </modal>
-            <modal large title="Admin <md>:glyphicon-log-in:</md> Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
-            
+            <modal large id="modal:reusePolicy-ppp"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Project Portfolio Page</template>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\tp-deliverables.md">
                   <div>
@@ -419,12 +416,12 @@ method 2 ...
                           </ul>
                         </li>
                       </ul>
-                      <modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks">
+                      <modal large id="modal:deliverablesPPP-teamTasks"><template slot="_header">Team-Based Tasks</template>
                         <div>
                           <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\admin\tp-expectations.md">
                             <box>
                               <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-                              <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks">
+                              <panel type="seamless"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p></template>
                                 <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>

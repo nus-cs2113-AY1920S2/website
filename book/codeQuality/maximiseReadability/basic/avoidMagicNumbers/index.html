@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Coding Best Practices: [Practice] Avoid Magic Numbers</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -50,7 +50,7 @@
                 <div id="main">
                   <div>
                     <p>When the code has a number that does not explain the meaning of the number, we call that a &quot;magic number&quot; (as in &quot;the number appears as if by magic&quot;). Using a
-                      <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
+                      <tooltip><template slot="_content">e.g., <code>PI</code></template><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
                       <div class="alt-java">
@@ -142,7 +142,9 @@ MAX_SIZE = <span class="hljs-number">10</span>
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
 </body>
 <script src="../../../../../markbind/js/vue.min.js"></script>
@@ -170,6 +172,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

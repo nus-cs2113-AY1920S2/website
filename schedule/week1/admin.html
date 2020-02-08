@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 1 - Admin Info</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -62,6 +61,7 @@
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+          <li><a href="/website/admin/ip-progress-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
           <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
 
           <hr>
@@ -78,6 +78,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -122,23 +123,23 @@
                     </span> instructions of the following tools.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/programmingLanguages._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **Programming Language**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
+                  <panel type src="/website/admin/programmingLanguages._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Programming Language</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#github" header="Admin <md>:glyphicon-log-in:</md> **Tools - GitHub**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="github"></panel>
+                  <panel type src="/website/admin/tools._include_.html#github" class="embedding algolia-no-index" minimized fragment="github"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - GitHub</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#rcs" header="Admin <md>:glyphicon-log-in:</md> **Tools - RCS**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="rcs"></panel>
+                  <panel type src="/website/admin/tools._include_.html#rcs" class="embedding algolia-no-index" minimized fragment="rcs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - RCS</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#ide" header="Admin <md>:glyphicon-log-in:</md> **Tools - IDE**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="ide"></panel>
+                  <panel type src="/website/admin/tools._include_.html#ide" class="embedding algolia-no-index" minimized fragment="ide"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - IDE</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#repl" header="Admin <md>:glyphicon-log-in:</md> **Tools - repl.it**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="repl"></panel>
+                  <panel type src="/website/admin/tools._include_.html#repl" class="embedding algolia-no-index" minimized fragment="repl"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - <a href="http://repl.it">repl.it</a></strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -160,26 +161,23 @@
                   <li>Read the following admin info about the module.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type="danger" src="/website/admin/moduleExpectations._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **Module expectations and the ==star rating system==**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="main"></panel>
+                  <panel type="danger" src="/website/admin/moduleExpectations._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module expectations and the <mark>star rating system</mark></strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type="danger" src="/website/admin/usingThisWebsite._include_.html#essential" header="Admin <md>:glyphicon-log-in:</md> **Using this website [essential info]**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="essential"></panel>
+                  <panel type="danger" src="/website/admin/usingThisWebsite._include_.html#essential" class="embedding algolia-no-index" minimized fragment="essential"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using this website [essential info]</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type="info" src="/website/admin/usingThisWebsite._include_.html#more" header="Admin <md>:glyphicon-log-in:</md> **Using this website [more info]**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="more"></panel>
+                  <panel type="info" src="/website/admin/usingThisWebsite._include_.html#more" class="embedding algolia-no-index" minimized fragment="more"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using this website [more info]</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type="warning" src="/website/admin/weeklySchedule._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **Weekly schedule**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
+                  <panel type="warning" src="/website/admin/weeklySchedule._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Weekly schedule</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type="success" src="/website/admin/moduleOverview._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **Module overview**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="main"></panel>
+                  <panel type="success" src="/website/admin/moduleOverview._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module overview</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -257,8 +255,7 @@
                   While it is in a dynamic Web page format, there is a way to save the main text as pdf files. Printer-friendly versions have been provided too. In addition, <mark>a PDF version of the full textbook will be provided</mark> at the start
                   of the semester, via LumiNUS.</p>
                 <p>
-                  <panel type src="/website/book/about/usage._include_.html#saving" header="Admin <md>:glyphicon-log-in:</md> Using this Website → Saving as PDF files  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="saving"></panel>
+                  <panel type src="/website/book/about/usage._include_.html#saving" class="embedding algolia-no-index" minimized fragment="saving"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Using this Website → Saving as PDF files  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </p>
               </div>
             </panel>
@@ -273,19 +270,16 @@
                   <pic src="/website/admin/images/grade-breakdown.png"></pic>
                 </p>
                 <p>
-                  <panel type src="/website/admin/participation._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> Participation Marks  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="main"></panel>
+                  <panel type src="/website/admin/participation._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Participation Marks  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </p>
                 <p>
-                  <panel type src="/website/admin/exams._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> Exams  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
+                  <panel type src="/website/admin/exams._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Exams  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </p>
                 <p>
-                  <panel type src="/website/admin/ip-grading._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> Individual Project (iP) Grading  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="main"></panel>
+                  <panel type src="/website/admin/ip-grading._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Individual Project (iP) Grading  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </p>
                 <p>
-                  <panel type src="/website/admin/tp-grading._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> Team Project (tP) Grading  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="main"></panel>
+                  <panel type src="/website/admin/tp-grading._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Team Project (tP) Grading  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </p>
               </div>
             </panel>
@@ -325,12 +319,10 @@
                 <p><strong><span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span> Received good peer evaluations</strong></p>
                 <div class="indented">
                   <p>
-                    <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-conduct" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Criteria (Conduct)  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                      class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-conduct"></panel>
+                    <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-conduct" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-conduct"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Conduct)  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </p>
                   <p>
-                    <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-competency" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Criteria (Competency)  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                      class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-competency"></panel>
+                    <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-competency" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-competency"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Competency)  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </p>
                   <ul>
                     <li>-1 for each <em>professional conduct</em> criterion in which you score below average (based on the average of ratings received).</li>
@@ -341,7 +333,7 @@
                 <div class="indented">
                   <p>Low attendance/participation can affect participation marks directly (i.e., attended fewer than 7) or indirectly (i.e., it might result in low peer evaluation ratings).</p>
                 </div>
-                <panel type="info" header="**+ Bonus Marks**" expanded no-close no-switch>
+                <panel type="info" expanded no-close no-switch><template slot="_header"><p><strong>+ Bonus Marks</strong></p></template>
                   <p>In addition, you can receive bonus marks in the following ways. Bonus marks can be used to top up your participation marks <mark>but only if your marks from the above falls below 5</mark>.</p>
                   <ul>
                     <li>[For lecture participation] Received at least half of the points for lecture activities in at least 10 lectures: 1 mark
@@ -362,7 +354,7 @@
                   <li>Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he participated in 10 lectures, and hence get a bonus mark to make it 5/5.</li>
                   <li>Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.</li>
                 </ul>
-                <panel type="info" header="##### Where to find your participation marks progress<a class='fa fa-anchor' href='#where-to-find-your-participation-marks-progress'></a>" expanded no-close no-switch>
+                <panel type="info" expanded no-close no-switch id="where-to-find-your-participation-marks-progress"><template slot="_header"><h5 id="where-to-find-your-participation-marks-progress">Where to find your participation marks progress<a class="fa fa-anchor" href="#where-to-find-your-participation-marks-progress"></a></h5></template>
                   <p><strong>Your participation progress can be tracked in <a href="/website/admin/participation-dashboard.html">this page</a></strong> from week 3 onward. The page will be updated about once a week.
                   </p>
                 </panel>
@@ -461,7 +453,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 12:28:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sat, 08 Feb 2020 11:12:01 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -490,6 +482,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

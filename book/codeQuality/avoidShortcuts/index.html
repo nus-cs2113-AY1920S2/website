@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Code Quality: [Guideline] Avoid Unsafe Shortcuts</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="introduction">
                     <span slot="header" class="card-title"><div><h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
                 </div>
                 </span>
@@ -60,13 +60,13 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="basic">
                   <span slot="header" class="card-title"><div><h2 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h2>
               </div>
               </span>
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="use-the-default-branch">
                     <span slot="header" class="card-title"><div><h4 id="use-the-default-branch"><span>Use the Default Branch</span><a class="fa fa-anchor" href="#use-the-default-branch"></a></h4>
                 </div>
                 </span>
@@ -108,7 +108,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="don-t-recycle-variables-or-parameters">
                   <span slot="header" class="card-title"><div><h4 id="don-t-recycle-variables-or-parameters"><span>Don't Recycle Variables or Parameters</span><a class="fa fa-anchor" href="#don-t-recycle-variables-or-parameters"></a></h4>
               </div>
               </span>
@@ -156,7 +156,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="avoid-empty-catch-blocks">
                 <span slot="header" class="card-title"><div><h4 id="avoid-empty-catch-blocks"><span>Avoid Empty Catch Blocks</span><a class="fa fa-anchor" href="#avoid-empty-catch-blocks"></a></h4>
             </div>
             </span>
@@ -177,7 +177,7 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="delete-dead-code">
               <span slot="header" class="card-title"><div><h4 id="delete-dead-code"><span>Delete Dead Code</span><a class="fa fa-anchor" href="#delete-dead-code"></a></h4>
           </div>
           </span>
@@ -202,13 +202,13 @@
       </panel>
     </div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="intermediate">
         <span slot="header" class="card-title"><div><h2 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h2>
     </div>
     </span>
     <div>
       <div>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="minimize-scope-of-variables">
           <span slot="header" class="card-title"><div><h4 id="minimize-scope-of-variables"><span>Minimize Scope of Variables</span><a class="fa fa-anchor" href="#minimize-scope-of-variables"></a></h4>
       </div>
       </span>
@@ -237,7 +237,7 @@
       </panel>
     </div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="minimize-code-duplication">
         <span slot="header" class="card-title"><div><h4 id="minimize-code-duplication"><span>Minimize Code Duplication</span><a class="fa fa-anchor" href="#minimize-code-duplication"></a></h4>
     </div>
     </span>
@@ -258,7 +258,7 @@
             <trigger>.</trigger>
           </trigger>
         </p>
-        <modal title="**<md>:glyphicon-eye-open:</md> DRY Principle**" id="modal:duplication-dry" class="algolia-no-index">
+        <modal id="modal:duplication-dry" class="algolia-no-index"><template slot="_header"><strong><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> DRY Principle</strong></template>
           <div>
             <div></div>
             <p></p>
@@ -301,7 +301,9 @@
   </div>
   </div>
   </div>
+
   </div>
+
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -329,6 +331,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

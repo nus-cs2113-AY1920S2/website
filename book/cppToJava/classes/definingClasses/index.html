@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Objects: Using Java Objects</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -66,16 +66,15 @@
 }
 </code></pre>
                     </box>
-                    <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip content="e.g., `MyHelloWord` rather than `myHelloWorld` or `myhelloword` or `my_hello_world`">PascalCase</tooltip> format for class names</strong>.</p>
+                    <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip><template slot="_content">e.g., <code>MyHelloWord</code> rather than <code>myHelloWorld</code> or <code>myhelloword</code> or <code>my_hello_world</code></template>PascalCase</tooltip> format for class names</strong>.</p>
                     <p>The code is
-                      <tooltip content="there are exceptions to this rule">usually</tooltip> placed in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
+                      <tooltip><template slot="_content">there are exceptions to this rule</template>usually</tooltip> placed in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
                     <p>When a class is <code>public</code> <span class="dimmed">(e.g., the <code>Time</code> class in the above example)</span> it can be used in other classes. But the
-                      <tooltip content="Attributes are also called **instance variables**, because each instance has its own variables.">instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the <code>hour</code>, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span> can only be accessed from
-                      inside the <code>Time</code> class.</p>
+                      <tooltip><template slot="_content">Attributes are also called <strong>instance variables</strong>, because each instance has its own variables.</template>instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the <code>hour</code>, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span>                      can only be accessed from inside the <code>Time</code> class.</p>
                     <h5 id="constructors">Constructors<a class="fa fa-anchor" href="#constructors"></a></h5>
                     <div class="indented">
                       <p>The syntax for
-                        <tooltip content="special methods that construct the object and initialize the instance variables">constructors</tooltip> is similar to that of other methods, except:</p>
+                        <tooltip><template slot="_content">special methods that construct the object and initialize the instance variables</template>constructors</tooltip> is similar to that of other methods, except:</p>
                       <ul>
                         <li>The name of the constructor is the same as the name of the class.</li>
                         <li>The keyword <code>static</code> is omitted.</li>
@@ -94,7 +93,7 @@
                         <p><code class="hljs inline java">Time time = <span class="hljs-keyword">new</span> Time();</code></p>
                       </box>
                       <p>Like other methods, constructors can be
-                        <tooltip content="i.e., you can provide multiple constructors with different parameters">overloaded</tooltip>.</p>
+                        <tooltip><template slot="_content">i.e., you can provide multiple constructors with different parameters</template>overloaded</tooltip>.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can add another constructor to the <code>Time</code> class to allow creating <code>Time</code> objects that are initialized to a specific time:</p>
                         <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">(<span class="hljs-keyword">int</span> h, <span class="hljs-keyword">int</span> m, <span class="hljs-keyword">int</span> s)</span> </span>{
@@ -109,9 +108,8 @@
                     </div>
                     <h5 id="this-keyword"><code>this</code> keyword<a class="fa fa-anchor" href="#this-keyword"></a></h5>
                     <div class="indented">
-                      <p><strong>The <code>this</code> keyword is a reference variable in Java that refers to the <tooltip content="i.e., the enclosing object, or _myself_">current object</tooltip>.</strong> You can use <code>this</code> the same way you
-                        use the name of any other object. For example, you can read and write the instance variables of <code>this</code>, and you can pass <code>this</code> as an argument to other methods. But you do not declare <code>this</code>, and
-                        you can’t make an assignment to it.</p>
+                      <p><strong>The <code>this</code> keyword is a reference variable in Java that refers to the <tooltip><template slot="_content">i.e., the enclosing object, or <em>myself</em></template>current object</tooltip>.</strong> You can use <code>this</code>                        the same way you use the name of any other object. For example, you can read and write the instance variables of <code>this</code>, and you can pass <code>this</code> as an argument to other methods. But you do not declare <code>this</code>,
+                        and you can’t make an assignment to it.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the following version of the constructor, the names and types of the parameters are the same as the instance variables (parameters don’t have to use the same
                           names, but that’s a common style). As a result, the parameters <strong><em>shadow</em></strong> (or hide) the instance variables, so the keyword <code>this</code> is necessary to tell them apart.</p>
@@ -153,10 +151,10 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
                           <div>
-                            <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] define a `Circle` class</small></small><a class='fa fa-anchor' href='#key-exercise-define-a-circle-class'></a>" expanded>
+                            <panel type="dark" expanded id="key-exercise-define-a-circle-class"><template slot="_header"><h3 id="key-exercise-define-a-circle-class"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] define a <code>Circle</code> class</small></small><a class="fa fa-anchor" href="#key-exercise-define-a-circle-class"></a></h3></template>
                               <question>
                                 <p>Define a <code>Circle</code> class so that the code given below produces the given output. The nature of the class is a follows:</p>
                                 <ul>
@@ -236,7 +234,9 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -264,6 +264,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

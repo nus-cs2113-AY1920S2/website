@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 5 - Admin Info</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -62,6 +61,7 @@
           <span><strong> Individual Project (iP):</strong></span>
           <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+          <li><a href="/website/admin/ip-progress-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
           <li><a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
 
           <hr>
@@ -78,6 +78,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -120,18 +121,15 @@
                   <li>You should receive the submission link by Monday noon. Email <code>cs2113@comp.nus.edu.sg</code> if you did not receive the submission link on time.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/peerEvaluations._include_.html#intro" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Introduction  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="intro"></panel>
+                  <panel type src="/website/admin/peerEvaluations._include_.html#intro" class="embedding algolia-no-index" minimized fragment="intro"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Introduction  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/peerEvaluations._include_.html#practicePeerEvaluations" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Session: Practice Peer Evaluation  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="practicePeerEvaluations"></panel>
+                  <panel type src="/website/admin/peerEvaluations._include_.html#practicePeerEvaluations" class="embedding algolia-no-index" minimized fragment="practicePeerEvaluations"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Session: Practice Peer Evaluation  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type="primary" src="/website/admin/appendixB-policies._include_.html#policy-deadlineExtensions" header="Admin <md>:glyphicon-log-in:</md> **Module Policies → Policy on Deadline Extensions**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                    class="embedding algolia-no-index" minimized fragment="policy-deadlineExtensions"></panel>
+                  <panel type="primary" src="/website/admin/appendixB-policies._include_.html#policy-deadlineExtensions" class="embedding algolia-no-index" minimized fragment="policy-deadlineExtensions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module Policies → Policy on Deadline Extensions</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -165,8 +163,7 @@
                     <li>peers from other teams (based on peer testing and user guide)</li>
                   </ul>
                   <p>
-                    <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-featureFit-instructions" header="Admin <md>:glyphicon-log-in:</md> tP Deliverables → PE → ==Grading Instructions for Product Design==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                      class="embedding algolia-no-index" minimized fragment="projectGrading-featureFit-instructions"></panel>
+                    <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-featureFit-instructions" class="embedding algolia-no-index" minimized fragment="projectGrading-featureFit-instructions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Product Design</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </p>
                   <p>In addition, feature flaws reported in the PE will be considered when grading this aspect.</p>
                   <box>
@@ -221,16 +218,14 @@
                   <li>This is evaluated by peers who tested your product, and tutors.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-effort-instructions" header="Admin <md>:glyphicon-log-in:</md> tP Deliverables → PE → ==Question used for Implementation Effort==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                    class="embedding algolia-no-index" minimized fragment="projectGrading-effort-instructions"></panel>
+                  <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-effort-instructions" class="embedding algolia-no-index" minimized fragment="projectGrading-effort-instructions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Question used for Implementation Effort</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
                   <li>The score could be further moderated by this question answered by team members.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-implementation" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → ==Questions used for Evaluating Implementation Effort==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                    class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-implementation"></panel>
+                  <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-implementation" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-implementation"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating Implementation Effort</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
 
@@ -244,8 +239,7 @@
                   <li>functionality bugs in your work found by others during the <a href="/website/admin/tp-deliverables.html#deliverable-practical-exam">Practical Exam (PE)</a></li>
                   <li>your test code <span class="dimmed">(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)</span></li>
                 </ol>
-                <modal large title="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations" class="algolia-no-index">
-
+                <modal large id="modal:projectGradingQA-testingExpectations" class="algolia-no-index"><template slot="_header">Our expectations for automated testing in the project</template>
                   <div>
                     <ul>
                       <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
@@ -285,7 +279,7 @@
                       <li>The penalty for a bug is divided equally among assignees.</li>
                       <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
                       <li>
-                        <tooltip content="i.e., the same bug reported by many testers"><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
+                        <tooltip><template slot="_content">i.e., the same bug reported by many testers</template><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
                       <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance
                         testing.</li>
                       <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
@@ -296,7 +290,7 @@
                       </li>
                       <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
                       <li>Excessive incorrect downgrading/rejecting/
-                        <tooltip content="marking as duplicates">duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+                        <tooltip><template slot="_content">marking as duplicates</template>duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
                     </ul>
                   </div>
                 </box>
@@ -311,26 +305,22 @@
                     <li>Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.</li>
                   </ul>
                   <div class="indented-level2">
-                    <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-userGuide-instructions" header="Admin <md>:glyphicon-log-in:</md> tP Deliverables → PE → ==Grading Instructions for User Guide==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                      class="embedding algolia-no-index" minimized fragment="projectGrading-userGuide-instructions"></panel>
+                    <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-userGuide-instructions" class="embedding algolia-no-index" minimized fragment="projectGrading-userGuide-instructions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for User Guide</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </div>
                   <p></p>
                   <div class="indented-level2">
-                    <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-devGuide-instructions" header="Admin <md>:glyphicon-log-in:</md> tP Deliverables → PE → ==Grading Instructions for Developer Guide==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                      class="embedding algolia-no-index" minimized fragment="projectGrading-devGuide-instructions"></panel>
+                    <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-devGuide-instructions" class="embedding algolia-no-index" minimized fragment="projectGrading-devGuide-instructions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Developer Guide</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </div>
                   <p></p>
                   <ul>
                     <li>Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.</li>
                   </ul>
                   <div class="indented-level2">
-                    <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-ug" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → ==Questions used for Evaluating the Contribution to the UG==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                      class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-ug"></panel>
+                    <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-ug" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-ug"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the UG</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </div>
                   <p></p>
                   <div class="indented-level2">
-                    <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-dg" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → ==Questions used for Evaluating the Contribution to the DG==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                      class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-dg"></panel>
+                    <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-dg" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-dg"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the DG</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </div>
                   <p></p>
                   <ul>
@@ -382,7 +372,7 @@
                     <box>
                       <div>
                         <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
-                        <panel type="seamless" header="Those given as possible UG bugs ..." class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Those given as possible UG bugs ...</p></template>
                           <div>
                             <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
                             <div>
@@ -488,15 +478,14 @@
                   <p><strong>Grading criteria:</strong></p>
                   <ul>
                     <li>No
-                      <tooltip content="e.g., the product is not working at all by the milestone deadline">major mishaps</tooltip> at v1.0 and v2.0.</li>
+                      <tooltip><template slot="_content">e.g., the product is not working at all by the milestone deadline</template>major mishaps</tooltip> at v1.0 and v2.0.</li>
                     <li>Good attempt to use of at least <em>some</em> Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)</li>
                     <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
                   </ul>
                   <p><big><strong>5B. Team-tasks:</strong></big></p>
                   <p><strong>Evaluates:</strong> How much you contributed to team-tasks</p>
                   <div class="indented-level1">
-                    <panel type src="/website/admin/tp-expectations._include_.html#example-team-tasks" header="Admin <md>:glyphicon-log-in:</md> tP → Expectations: Examples of team-tasks  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                      minimized fragment="example-team-tasks"></panel>
+                    <panel type src="/website/admin/tp-expectations._include_.html#example-team-tasks" class="embedding algolia-no-index" minimized fragment="example-team-tasks"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: Examples of team-tasks  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </div>
                   <p></p>
                   <p><strong>Based on:</strong> peer evaluations, tutor observations</p>
@@ -521,8 +510,7 @@
                   <div>
                     <p>As most of the work is graded individually, it is OK to do less or more than equal share in your project team.</p>
                     <p>
-                      <panel type src="/website/admin/tp-expectations._include_.html#individualExpectations" header="Admin <md>:glyphicon-log-in:</md> tP → Expectations: from each student  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                        minimized fragment="individualExpectations"></panel>
+                      <panel type src="/website/admin/tp-expectations._include_.html#individualExpectations" class="embedding algolia-no-index" minimized fragment="individualExpectations"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: from each student  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                     </p>
                   </div>
                 </div>
@@ -542,7 +530,7 @@
                     <p><strong>Normally, the prof will respond within 24 hours</strong> if it was an email sent to the prof or a forum post directed at the prof. If you don't get a response within that time, <strong>please feel free to remind the prof</strong>.
                       It is likely that the prof did not notice your post or the email got stuck somewhere.</p>
                     <p>Similarly we expect you to check email regularly and respond to emails written to you personally (not mass email) promptly.</p>
-                    <panel header="Email etiquette: ALWAYS respond to direct emails" expanded>
+                    <panel expanded><template slot="_header"><p>Email etiquette: ALWAYS respond to direct emails</p></template>
                       <p>Not responding to a personal email is a major breach of professional etiquette (and general civility). Imagine how pissed off you would be if you met the prof along the corridor, said 'Hi prof, good morning' and the prof walked away
                         without saying anything back. Not responding to a personal email is just as bad. Always take a few seconds to at least acknowledge such emails.  It doesn't take long to type &quot;Noted. Thanks&quot; and hit 'send'.</p>
                       <p>The promptness of a reply is even more important when the email is requesting you for something that you cannot provide. Imagine you wrote to the prof requesting a reference letter and the prof did not respond at all because he/she
@@ -596,7 +584,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 12:28:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sat, 08 Feb 2020 11:12:01 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -625,6 +613,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>
