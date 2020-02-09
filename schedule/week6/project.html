@@ -287,8 +287,49 @@ T | 1 | join sports club
               <div>
                 <ul>
                   <li>Based on your user story categorization in the previous week, given module requirements/constraints for the project, select which user stories you are likely to include in v1.0.</li>
-                  <li>Conceptualize the product in terms of how it will look like at v1.0.</li>
+                  <li>Conceptualize the product in terms of how it will look like at v1.0. Suggestion: this can be in the form of a
+                    <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.</li>
                 </ul>
+                <modal large id="modal:v10-featureLists" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Requirements → Specifying Requirements → Feature Lists →
+</span></strong>
+                      </span>
+                    </p>
+                    <div id="title-and-body">
+                      <div>
+                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                      </div>
+                      <div id="main">
+                        <div>
+                          <box type="definition">
+                            <div>
+                              <p><strong>Feature List</strong>: A list of features of a product <em>grouped according to some criteria</em> such as aspect, priority, order of delivery, etc.</p>
+                            </div>
+                          </box>
+                          <box>
+                            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A sample feature list from a simple Minesweeper game <span class="dimmed">(only a brief description has been provided to save space)</span>:</p>
+                            <ol>
+                              <li>Basic play – Single player play.</li>
+                              <li>Difficulty levels
+                                <ul>
+                                  <li>Medium-levels</li>
+                                  <li>Advanced levels</li>
+                                </ul>
+                              </li>
+                              <li>Versus play – Two players can play against each other.</li>
+                              <li>Timer – Additional fixed time restriction on the player.</li>
+                              <li>...</li>
+                            </ol>
+                          </box>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </modal>
               </div>
               <p></p>
               <h4 id="2-draft-the-ug"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Draft the UG</span><a class="fa fa-anchor" href="#2-draft-the-ug"></a></h4>
@@ -296,11 +337,11 @@ T | 1 | join sports club
                 <ul>
                   <li>Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at v1.0.
                     <ul>
-                      <li>We recommend that you follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/UserGuide.html">AB3 User Guide</a> in terms of structure and format.</li>
+                      <li>We recommend that you follow the <a href="https://se-education.org/addressbook-level3/UserGuide.html">AB3 User Guide</a> in terms of structure and format.</li>
                       <li>As this is a very rough draft and the final version will be in a different format altogether <span class="dimmed">(i.e., in markdown format)</span>, don't waste time in formatting, copy editing etc. It is fine as long as the tutor
                         can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.</li>
                       <li>Do try to come up with concrete command syntax for the CLI commands that you will deliver at the end of the semester.</li>
-                      <li>Indicate only features that will be delivered in v1.0.</li>
+                      <li>Include only features that will be delivered in v1.0.</li>
                       <li>
                         <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Submission</strong>: Save the draft UG as a PDF file, name it <code>{team-id}.pdf</code> e.g., <code>CS2113T-W09-1.pdf</code>,
                         and upload to LumiNUS.<br><br></li>
@@ -359,7 +400,7 @@ T | 1 | join sports club
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 11:59:57 GMT</small></div>
     </footer>
   </div>
 </body>

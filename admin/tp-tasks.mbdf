@@ -309,7 +309,12 @@ Given below are some guidance on the recommended progress at this point of the p
 <span id="desc_conceptualize_v1">
 
 * Based on your user story categorization in the previous week, given module requirements/constraints for the project, select which user stories you are likely to include in {{ first_version }}.
-* Conceptualize the product in terms of how it will look like at {{ first_version }}.
+* Conceptualize the product in terms of how it will look like at {{ first_version }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.
+
+<modal large title="Textbook {{ icon_embedding }}" id="modal:v10-featureLists">
+  <include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_conceptualize_v2">{{ icon_team }} Conceptualize {{ penultimate_version }}</span>
@@ -323,10 +328,10 @@ Given below are some guidance on the recommended progress at this point of the p
 <span id="desc_draft_the_ug">
 
 * Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ first_version }}.
-  * We recommend that you follow the [AB3 User Guide]({{ ab3_website }}/UserGuide.html) in terms of structure and format.
+  * We recommend that you follow the [AB3 User Guide](https://se-education.org/addressbook-level3/UserGuide.html) in terms of structure and format.
   * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
   * Do try to come up with concrete command syntax for the CLI commands that you will deliver at the end of the semester.
-  * Indicate only features that will be delivered in {{ first_version }}.
+  * Include only features that will be delivered in {{ first_version }}.
   * {{ icon_important_big_red }} **Submission**: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ module }}T-W09-1.pdf`, and upload to LumiNUS.<br><br>
 
 <div id="divideDocs" class="indented">
