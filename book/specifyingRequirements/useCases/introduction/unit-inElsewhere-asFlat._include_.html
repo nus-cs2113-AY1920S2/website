@@ -23,7 +23,7 @@
                 <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\references.md"><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
                   </span>
                 </popover>]</p>
-              <popover id="pop:actor" placement="top"><template slot="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+              <popover id="pop:actor" title="<md>:glyphicon-eye-open:</md>" placement="top">
                 <div slot="content">
                   <div>
                     <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\definitions.md">
@@ -37,7 +37,7 @@
         </box>
         <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
         <box>
-          <panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 1: 'transfer money' use case for an online banking system</p></template>
+          <panel header="<md>:fas-cube:</md> Example 1: 'transfer money' use case for an online banking system" type="seamless" expanded>
             <pre>
 System: Online Banking System (OBS)
 Use case: UC23 - Transfer Money
@@ -70,7 +70,7 @@ Extensions:
       Use case ends.
 </pre>
           </panel>
-          <panel type="seamless"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 2: 'upload file' use case of an LMS</span></p></template>
+          <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
             <div class="text-monospace">
               <ul>
                 <li>System: A Learning Management System (LMS)</li>
@@ -91,7 +91,7 @@ Extensions:
           <img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
           <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.</p>
           <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-          <modal id="modal:uml"><template slot="_header"><strong>Unified Modeling Language (UML)</strong></template>
+          <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\definitions.md">
                 <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,

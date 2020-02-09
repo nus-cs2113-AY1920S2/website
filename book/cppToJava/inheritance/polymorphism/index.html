@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Inheritance: Polymorphism</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -71,7 +71,7 @@
                       <pre><code class="hljs">Mittens: Meow
 Snowball: Meow
 </code></pre>
-                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Cat</code> class</span></p></template>
+                      <panel type="seamless" header="%%The `Cat` class%%" class="algolia-no-index">
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -110,7 +110,7 @@ Snowball: Meow
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Dog</code> class</span></p></template>
+                      <panel type="seamless" header="%%The `Dog` class%%" class="algolia-no-index">
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -147,7 +147,7 @@ Spot: Woof
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Animal</code>, <code>Cat</code>, and <code>Dog</code> classes</span></p></template>
+                      <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%" class="algolia-no-index">
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
     <span class="hljs-keyword">protected</span> String name;
@@ -196,10 +196,10 @@ Spot: Woof
                   </div>
                   <div>
                     <div>
-                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                         <div>
                           <div>
-                            <panel type="dark" expanded id="key-exercise-print-shape-area"><template slot="_header"><h3 id="key-exercise-print-shape-area"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print shape area</small></small><a class="fa fa-anchor" href="#key-exercise-print-shape-area"></a></h3></template>
+                            <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] print shape area</small></small><a class='fa fa-anchor' href='#key-exercise-print-shape-area'></a>" expanded>
                               <question>
                                 <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
                                 <p>Add the missing variables/methods to the code below so that it produces the output given.</p>
@@ -255,7 +255,7 @@ Spot: Woof
 }
 </code></pre>
                                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You may use an array of size 100 to store the shapes.</p>
-                                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                                <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
@@ -283,9 +283,7 @@ Spot: Woof
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -313,7 +311,6 @@ Spot: Woof
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

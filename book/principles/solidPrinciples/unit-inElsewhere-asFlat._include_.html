@@ -15,7 +15,7 @@
     <div>
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\solidPrinciples\text.md">
         <p>The five OOP principles given below are known as <em>SOLID Principles</em> (an acronym made up of the first letter of each principle):</p>
-        <panel type="seamless"><template slot="_header"><p><strong>S</strong>ingle Responsibility Principle (SRP)</p></template>
+        <panel type="seamless" header="**S**ingle Responsibility Principle (SRP)">
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\singleResponsibilityPrinciple\unit-inElsewhere-asFlat.md">
               <div>
@@ -55,7 +55,7 @@
                     <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\singleResponsibilityPrinciple\text.md">
                       <div>
                         <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\singleResponsibilityPrinciple\resources.md">
-                          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span>  Resources</p></template>
+                          <panel header="<md>:fas-paperclip:</md>  Resources" expanded>
                             <ul>
                               <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
                               <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
@@ -71,7 +71,7 @@
             </div>
           </div>
         </panel>
-        <panel type="seamless"><template slot="_header"><p><strong>O</strong>pen-Closed Principle (OCP)</p></template>
+        <panel type="seamless" header="**O**pen-Closed Principle (OCP)">
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\openClosedPrinciple\unit-inElsewhere-asFlat.md">
               <div>
@@ -121,10 +121,10 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt;Admin&gt;(
                     <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\openClosedPrinciple\text.md">
                       <div>
                         <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\openClosedPrinciple\exercises.md">
-                          <panel expandable><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                             <div>
                               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\openClosedPrinciple\q-tick-ocp.md">
-                                <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Meaning of OCP</p></template>
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Meaning of OCP">
                                   <question>
                                     <p>Which of these is closest to the meaning of the open-closed principle?</p>
                                     <ul radio-group="6906e" class="radio-list">
@@ -151,7 +151,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt;Admin&gt;(
             </div>
           </div>
         </panel>
-        <panel type="seamless"><template slot="_header"><p><strong>L</strong>iskov Substitution Principle (LSP)</p></template>
+        <panel type="seamless" header="**L**iskov Substitution Principle (LSP)">
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\liskovSubstitutionPrinciple\unit-inElsewhere-asFlat.md">
               <div>
@@ -180,13 +180,13 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt;Admin&gt;(
                       <p>LSP sounds same as
                         <trigger large trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for
                         substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
-                      <modal large id="modal:lsp-substitutability"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                      <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:lsp-substitutability">
                         <div>
                           <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\oop\inheritance\substitutability\unit-inElsewhere-asFlat.md">
                             <div>
                               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\oop\inheritance\substitutability\text.md">
                                 <p>
-                                  <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/oop/inheritance/what"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Paradigms → Object Oriented Programming → Inheritance → What</span></p></template></panel>
+                                  <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Paradigms → Object Oriented Programming → Inheritance → What%%" popup-url="/website/book/oop/inheritance/what"></panel>
                                 </p>
                               </div>
                             </div>
@@ -246,7 +246,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           <li><code>Academic</code> class violates LSP because it will not work for percent values over <code>100</code> as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code> objects
                             can potentially break the <code>Payroll</code> class functionality.</li>
                         </ul>
-                        <panel type="seamless"><template slot="_header"><p><span class="dimmed">Another example</span></p></template>
+                        <panel type="seamless" header="%%Another example%%">
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code>                            because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
                           <img src="/website/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                           <p></p>
@@ -283,10 +283,10 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                     <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\liskovSubstitutionPrinciple\text.md">
                       <div>
                         <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\liskovSubstitutionPrinciple\exercises.md">
-                          <panel expandable><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                             <div>
                               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\liskovSubstitutionPrinciple\q-tick-trueFalse.md">
-                                <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Is this LSP?</p></template>
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Is this LSP?">
                                   <question>
                                     <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
                                     <ul radio-group="55ada" class="radio-list">
@@ -311,7 +311,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </div>
         </panel>
-        <panel type="seamless"><template slot="_header"><p><strong>I</strong>nterface Segregation Principle (ISP)</p></template>
+        <panel type="seamless" header="**I**nterface Segregation Principle (ISP)">
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\interfaceSegregationPrinciple\unit-inElsewhere-asFlat.md">
               <div>
@@ -368,7 +368,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </div>
         </panel>
-        <panel type="seamless"><template slot="_header"><p><strong>D</strong>ependency Inversion Principle (DIP)</p></template>
+        <panel type="seamless" header="**D**ependency Inversion Principle (DIP)">
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\dependencyInversionPrinciple\unit-inElsewhere-asFlat.md">
               <div>
@@ -412,10 +412,10 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                     <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\dependencyInversionPrinciple\text.md">
                       <div>
                         <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\dependencyInversionPrinciple\exercises.md">
-                          <panel expandable><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                             <div>
                               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\principles\dependencyInversionPrinciple\q-tick-dip.md">
-                                <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these statements is true about the Dependency Inversion Principle.</p></template>
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these statements is true about the Dependency Inversion Principle.">
                                   <question>
                                     <p>Which of these statements is true about the Dependency Inversion Principle.</p>
                                     <ul class="task-list">

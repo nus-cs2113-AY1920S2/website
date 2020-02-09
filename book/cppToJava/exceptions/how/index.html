@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Exceptions: How to use</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -152,7 +152,7 @@
                       </li>
                     </ul>
                     <p><strong>You can use the <code>throw</code> statement to throw an exception.</strong> The throw statement requires a
-                      <tooltip><template slot="_content">Throwable objects are instances of any subclass of the <code>Throwable</code> class.</template>throwable</tooltip> object as the argument.</p>
+                      <tooltip content="Throwable objects are instances of any subclass of the `Throwable` class.">throwable</tooltip> object as the argument.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of a <code>throw</code> statement.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
@@ -202,10 +202,10 @@
                   </div>
                   <div>
                     <div>
-                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                         <div>
                           <div>
-                            <panel type="dark" expanded id="key-exercise-parse-rectangle-descriptor"><template slot="_header"><h3 id="key-exercise-parse-rectangle-descriptor"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] parse rectangle descriptor</small></small><a class="fa fa-anchor" href="#key-exercise-parse-rectangle-descriptor"></a></h3></template>
+                            <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] parse rectangle descriptor</small></small><a class='fa fa-anchor' href='#key-exercise-parse-rectangle-descriptor'></a>" expanded>
                               <question>
                                 <p>The <code>Main</code> class below parses a string descriptor of a rectangle of the format <code>&quot;WIDTHxHEIGHT&quot;</code> <span class="dimmed">e.g., <code>&quot;3x4&quot;</code></span> and prints the area of the rectangle.</p>
                                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -276,7 +276,7 @@ WIDTH or HEIGHT is missing: 3x
 WIDTH or HEIGHT is missing: 3
 Too many dimensions: 3x4x5
 </code></pre>
-                                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                                <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
@@ -312,9 +312,7 @@ Too many dimensions: 3x4x5
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -342,7 +340,6 @@ Too many dimensions: 3x4x5
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Inheritance</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="inheritance-basics">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div><h4 id="inheritance-basics"><span>Inheritance (Basics)</span><a class="fa fa-anchor" href="#inheritance-basics"></a></h4>
                 </div>
                 </span>
@@ -120,8 +120,7 @@
                       <p><strong>A subclass inherits all the fields and methods of the superclass.</strong> In the example above, <code>MountainBike</code> inherits all the fields and methods of <code>Bicycle</code> and adds the field <code>seatHeight</code>                        and a method to set it.</p>
                       <h5 id="accessing-superclass-members">Accessing Superclass Members<a class="fa fa-anchor" href="#accessing-superclass-members"></a></h5>
                       <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a
-                        <tooltip><template slot="_content">when both the superclass and the subclass use the same variable name, the superclass variables is said to be <em>hidden/shadowed</em> by the subclass variable</template>hidden field</tooltip> (although
-                        hiding fields is discouraged).</p>
+                        <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable">hidden field</tooltip> (although hiding fields is discouraged).</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this class, <code>Superclass</code> and a subclass, called <code>Subclass</code>, that overrides <code>printMethod()</code>:</p>
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Superclass</span> </span>{
@@ -193,10 +192,10 @@ Printed in Subclass
                   </div>
                   <div>
                     <div>
-                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                         <div>
                           <div>
-                            <panel type="dark" expanded id="key-exercise-inherit-the-task-class"><template slot="_header"><h3 id="key-exercise-inherit-the-task-class"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] inherit the <code>Task</code> class</small></small><a class="fa fa-anchor" href="#key-exercise-inherit-the-task-class"></a></h3></template>
+                            <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] inherit the `Task` class</small></small><a class='fa fa-anchor' href='#key-exercise-inherit-the-task-class'></a>" expanded>
                               <question>
                                 <p>Background: Suppose we are creating a software to manage various tasks a person has to do. Two types of such tasks are,</p>
                                 <ul>
@@ -291,7 +290,7 @@ Postponed to Nov 18th
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded id="the-object-class">
+                <panel type="seamless" expanded>
                   <span slot="header" class="card-title"><div><h4 id="the-object-class"><span>The <code>Object</code> Class</span><a class="fa fa-anchor" href="#the-object-class"></a></h4>
               </div>
               </span>
@@ -407,10 +406,10 @@ true
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                       <div>
                         <div>
-                          <panel type="dark" expanded id="key-exercise-override-the-tostring-method"><template slot="_header"><h3 id="key-exercise-override-the-tostring-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] override the <code>toString</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-override-the-tostring-method"></a></h3></template>
+                          <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] override the `toString` method</small></small><a class='fa fa-anchor' href='#key-exercise-override-the-tostring-method'></a>" expanded>
                             <question>
                               <p>Suppose you have the following classes <code>Task</code>, <code>Todo</code>, <code>Deadline</code>:</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
@@ -535,7 +534,7 @@ do by: Postponed to Nov 18th
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded id="polymorphism">
+              <panel type="seamless" expanded>
                 <span slot="header" class="card-title"><div><h4 id="polymorphism"><span>Polymorphism</span><a class="fa fa-anchor" href="#polymorphism"></a></h4>
             </div>
             </span>
@@ -570,7 +569,7 @@ do by: Postponed to Nov 18th
                   <pre><code class="hljs">Mittens: Meow
 Snowball: Meow
 </code></pre>
-                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Cat</code> class</span></p></template>
+                  <panel type="seamless" header="%%The `Cat` class%%" class="algolia-no-index">
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -609,7 +608,7 @@ Snowball: Meow
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Dog</code> class</span></p></template>
+                  <panel type="seamless" header="%%The `Dog` class%%" class="algolia-no-index">
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -646,7 +645,7 @@ Spot: Woof
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Animal</code>, <code>Cat</code>, and <code>Dog</code> classes</span></p></template>
+                  <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%" class="algolia-no-index">
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
     <span class="hljs-keyword">protected</span> String name;
@@ -695,10 +694,10 @@ Spot: Woof
               </div>
               <div>
                 <div>
-                  <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                     <div>
                       <div>
-                        <panel type="dark" expanded id="key-exercise-print-shape-area"><template slot="_header"><h3 id="key-exercise-print-shape-area"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print shape area</small></small><a class="fa fa-anchor" href="#key-exercise-print-shape-area"></a></h3></template>
+                        <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] print shape area</small></small><a class='fa fa-anchor' href='#key-exercise-print-shape-area'></a>" expanded>
                           <question>
                             <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
                             <p>Add the missing variables/methods to the code below so that it produces the output given.</p>
@@ -754,7 +753,7 @@ Spot: Woof
 }
 </code></pre>
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You may use an array of size 100 to store the shapes.</p>
-                            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                            <panel type="seamless" header="Partial solution" class="algolia-no-index">
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
@@ -780,7 +779,7 @@ Spot: Woof
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded id="abstract-classes-and-methods">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title"><div><h4 id="abstract-classes-and-methods"><span>Abstract Classes and Methods</span><a class="fa fa-anchor" href="#abstract-classes-and-methods"></a></h4>
           </div>
           </span>
@@ -864,7 +863,7 @@ Spot: Woof
             </div>
             <div>
               <div>
-                <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+                <panel header="<md>:fas-paperclip:</md> Resources" expanded>
                   <div>
                     <ul>
                       <li><a href="https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html">Oracle’s Java Tutorials: Abstract Methods and Classes</a></li>
@@ -873,10 +872,10 @@ Spot: Woof
                 </panel>
               </div>
               <div>
-                <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                   <div>
                     <div>
-                      <panel type="dark" expanded id="key-exercise-print-area-with-abstract-shape"><template slot="_header"><h3 id="key-exercise-print-area-with-abstract-shape"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print area with abstract <code>Shape</code></small></small><a class="fa fa-anchor" href="#key-exercise-print-area-with-abstract-shape"></a></h3></template>
+                      <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] print area with abstract `Shape`</small></small><a class='fa fa-anchor' href='#key-exercise-print-area-with-abstract-shape'></a>" expanded>
                         <question>
                           <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
                           <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -951,7 +950,7 @@ Rectangle of area 16
 }
 </code></pre>
                           <p>Add the missing <code>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
-                          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                          <panel type="seamless" header="Partial solution" class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
@@ -963,10 +962,10 @@ Rectangle of area 16
                       </panel>
                     </div>
                     <div>
-                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about abstract classes</p></template>
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about abstract classes" class="algolia-no-index">
                         <question>
                           <p>Choose the correct statements about Java abstract classes and
-                            <tooltip><template slot="_content">classes that are not abstract</template>concrete classes</tooltip>.</p>
+                            <tooltip content="classes that are not abstract">concrete classes</tooltip>.</p>
                           <ul class="task-list">
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A concrete class can contain an abstract method.</li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An abstract class can contain concrete methods.</li>
@@ -988,7 +987,7 @@ Rectangle of area 16
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded id="interfaces">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title"><div><h4 id="interfaces"><span>Interfaces</span><a class="fa fa-anchor" href="#interfaces"></a></h4>
         </div>
         </span>
@@ -1057,7 +1056,7 @@ Rectangle of area 16
               </ol>
             </box>
             <p><strong>Interfaces can also contain <trigger trigger="click" for="modal:javaInterfaces-constants">constants</trigger> and static methods</strong>.</p>
-            <modal large id="modal:javaInterfaces-constants" class="algolia-no-index"><template slot="_header"><span class="dimmed">Textbook »</span></template>
+            <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants" class="algolia-no-index">
               <div>
                 <div></div>
                 <p></p>
@@ -1111,10 +1110,10 @@ Rectangle of area 16
           </div>
           <div>
             <div>
-              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                 <div>
                   <div>
-                    <panel type="dark" expanded id="key-exercise-print-printable-items"><template slot="_header"><h3 id="key-exercise-print-printable-items"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print <code>Printable</code> items</small></small><a class="fa fa-anchor" href="#key-exercise-print-printable-items"></a></h3></template>
+                    <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] print `Printable` items</small></small><a class='fa fa-anchor' href='#key-exercise-print-printable-items'></a>" expanded>
                       <question>
                         <p>The <code>Main</code> class below passes a list of <code>Printable</code> objects (i.e., objects that implement the <code>Printable</code> interface) for another method to be printed.</p>
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -1194,7 +1193,7 @@ Person of name James Cook
     <span class="hljs-comment">// todo: add missing methods</span>
 }
 </code></pre>
-                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                        <panel type="seamless" header="Partial solution" class="algolia-no-index">
                           <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Printable</span> </span>{
     <span class="hljs-comment">//...</span>
 }
@@ -1215,9 +1214,7 @@ Person of name James Cook
   </div>
   </div>
   </div>
-
   </div>
-
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -1245,7 +1242,6 @@ Person of name James Cook
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

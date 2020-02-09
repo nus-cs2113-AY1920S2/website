@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Miscellaneous Topics</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="enumerations">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div><h4 id="enumerations"><span>Enumerations</span><a class="fa fa-anchor" href="#enumerations"></a></h4>
                 </div>
                 </span>
@@ -79,10 +79,10 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
                   </div>
                   <div>
                     <div>
-                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                         <div>
                           <div>
-                            <panel type="dark" expanded id="key-exercise-show-priority-color"><template slot="_header"><h3 id="key-exercise-show-priority-color"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] show priority color</small></small><a class="fa fa-anchor" href="#key-exercise-show-priority-color"></a></h3></template>
+                            <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] show priority color</small></small><a class='fa fa-anchor' href='#key-exercise-show-priority-color'></a>" expanded>
                               <question>
                                 <p>Define an enumeration named <code>Priority</code>. Add the missing <code>describe</code> method to the code below so that it produces the output given.</p>
                                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -132,7 +132,7 @@ Green indicates low priority
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded id="packages">
+                <panel type="seamless" expanded>
                   <span slot="header" class="card-title"><div><h4 id="packages"><span>Packages</span><a class="fa fa-anchor" href="#packages"></a></h4>
               </div>
               </span>
@@ -169,9 +169,9 @@ Green indicates low priority
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, <code>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code>foobar.com</code></p>
                   </box>
-                  <p><strong>To use a public <tooltip><template slot="_content">types contained in the package</template>package member</tooltip> from outside its package, you must do one of the following:</strong></p>
+                  <p><strong>To use a public <tooltip content="types contained in the package">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
                   <ol>
-                    <li><strong>Use the <tooltip><template slot="_content">type name prefixed by the package name e.g., <code>java.io.IOException</code></template>fully qualified name</tooltip></strong> to refer to the member</li>
+                    <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`">fully qualified name</tooltip></strong> to refer to the member</li>
                     <li><strong>Import</strong> the package or the specific package member</li>
                   </ol>
                   <box>
@@ -225,7 +225,7 @@ Green indicates low priority
     }
 }
 </code></pre>
-                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><code>Formatter</code> class</p></template>
+                    <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
@@ -252,7 +252,7 @@ Green indicates low priority
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
                       <div>
                         <ul>
                           <li>Oracle's tutorial on packages: [<a href="https://docs.oracle.com/javase/tutorial/java/concepts/package.html">What is a Package?</a>] [<a href="https://docs.oracle.com/javase/tutorial/java/package/index.html">Creating and Using Packages</a>]</li>
@@ -265,7 +265,7 @@ Green indicates low priority
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded id="access-modifiers">
+              <panel type="seamless" expanded>
                 <span slot="header" class="card-title"><div><h4 id="access-modifiers"><span>Access Modifiers</span><a class="fa fa-anchor" href="#access-modifiers"></a></h4>
             </div>
             </span>
@@ -306,16 +306,16 @@ Green indicates low priority
                         <tr>
                           <th>Modifier</th>
                           <th>
-                            <tooltip><template slot="_content">whether the class itself has access to the member defined by the access level</template>Class</tooltip>
+                            <tooltip content="whether the class itself has access to the member defined by the access level">Class</tooltip>
                           </th>
                           <th>
-                            <tooltip><template slot="_content">whether classes in the same package as the class (regardless of their parentage) have access to the member</template>Package</tooltip>
+                            <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member">Package</tooltip>
                           </th>
                           <th>
-                            <tooltip><template slot="_content">whether subclasses of the class declared outside this package have access to the member</template>Subclass</tooltip>
+                            <tooltip content="whether subclasses of the class declared outside this package have access to the member">Subclass</tooltip>
                           </th>
                           <th>
-                            <tooltip><template slot="_content">whether all classes have access to the member</template>World</tooltip>
+                            <tooltip content="whether all classes have access to the member">World</tooltip>
                           </th>
                         </tr>
                       </thead>
@@ -395,7 +395,7 @@ Green indicates low priority
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded id="constants">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title"><div><h4 id="constants"><span>Constants</span><a class="fa fa-anchor" href="#constants"></a></h4>
           </div>
           </span>
@@ -427,7 +427,7 @@ Green indicates low priority
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded id="casting">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title"><div><h4 id="casting"><span>Casting</span><a class="fa fa-anchor" href="#casting"></a></h4>
         </div>
         </span>
@@ -546,7 +546,7 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded id="file-access">
+        <panel type="seamless" expanded>
           <span slot="header" class="card-title"><div><h4 id="file-access"><span>File Access</span><a class="fa fa-anchor" href="#file-access"></a></h4>
       </div>
       </span>
@@ -686,7 +686,7 @@ second line
       </panel>
     </div>
     <div>
-      <panel type="seamless" expanded id="using-jar-files">
+      <panel type="seamless" expanded>
         <span slot="header" class="card-title"><div><h4 id="using-jar-files"><span>Using JAR Files</span><a class="fa fa-anchor" href="#using-jar-files"></a></h4>
     </div>
     </span>
@@ -710,7 +710,7 @@ second line
       </div>
       <div>
         <div>
-          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+          <panel header="<md>:fas-paperclip:</md> Resources" expanded>
             <div>
               <ul>
                 <li><a href="https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html">Oracle's tutorial on JAR files</a></li>
@@ -725,7 +725,7 @@ second line
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="varargs">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h4 id="varargs"><span>Varargs</span><a class="fa fa-anchor" href="#varargs"></a></h4>
   </div>
   </span>
@@ -758,7 +758,7 @@ second line
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="streams-basic">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h4 id="streams-basic"><span>Streams: Basic</span><a class="fa fa-anchor" href="#streams-basic"></a></h4>
   </div>
   </span>
@@ -777,10 +777,10 @@ second line
     </div>
     <div>
       <div>
-        <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+        <panel header="<md>:fas-paperclip:</md> Resources" expanded>
           <p><strong>Tutorials</strong>:</p>
           <tabs>
-            <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
+            <tab header="<md>:far-file-alt:</md>">
               <ul>
                 <li>
                   <p><a href="https://www.tutorialspoint.com/java8/"><strong>Java 8 Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a>. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span>
@@ -791,12 +791,12 @@ second line
                 </li>
               </ul>
             </tab>
-            <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
+            <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
 
 
               <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>A a more detailed version covering similar grounds</p></template>
+              <panel type="seamless" header="A a more detailed version covering similar grounds" class="algolia-no-index">
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
             </tab>
@@ -808,7 +808,7 @@ second line
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="javafx">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h4 id="javafx"><span>JavaFX</span><a class="fa fa-anchor" href="#javafx"></a></h4>
   </div>
   </span>
@@ -848,9 +848,7 @@ second line
   </div>
   </div>
   </div>
-
   </div>
-
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -878,7 +876,6 @@ second line
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

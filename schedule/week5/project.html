@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 5 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -78,7 +79,6 @@
       </navbar>
     </header>
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -165,7 +165,7 @@ blah
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Exceptions</code></strong></p></template>
+                            <panel header="**Extension: `A-Exceptions`**" class="algolia-no-index">
                               <div>
                                 <div>
                                   <div></div>
@@ -242,7 +242,8 @@ blah
                     </ul>
                   </li>
                 </ul>
-                <modal large id="modal:v10-brainstorming" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-brainstorming" class="algolia-no-index">
+
                   <div>
                     <div></div>
                     <p></p>
@@ -266,9 +267,9 @@ blah
                         </div>
                         <div>
                           <div>
-                            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                               <div>
-                                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Characteristic of brainstorming</p></template>
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Characteristic of brainstorming" class="algolia-no-index">
                                   <question>
                                     <p>What is the key characteristic about brainstorming?</p>
                                     <ul radio-group="11d89" class="radio-list">
@@ -290,7 +291,8 @@ blah
                     </div>
                   </div>
                 </modal>
-                <modal large id="modal:v10-userstories" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-userstories" class="algolia-no-index">
+
                   <div>
                     <div></div>
                     <p></p>
@@ -328,16 +330,16 @@ blah
                           <p></p>
                           <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>,
                             Trello, Google Docs, ...) to manage user stories digitally.</p>
-                          <panel class="non-printable" expanded><template slot="_header"><p><span class="dimmed">User stories in use</span></p></template>
-                            <panel type="seamless" expanded><template slot="_header"><p>With sticky notes</p></template>
+                          <panel header="%%User stories in use%%" class="non-printable" expanded>
+                            <panel header="With sticky notes" type="seamless" expanded>
                               <img src="/website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
                               <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
                             </panel>
-                            <panel type="seamless" expanded><template slot="_header"><p>With paper</p></template>
+                            <panel header="With paper" type="seamless" expanded>
                               <img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg" height="400">
                               <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/with/2726048607/">https://www.flickr.com/photos/jakuza/with/2726048607/</a>]</sup></span></p>
                             </panel>
-                            <panel type="seamless" expanded><template slot="_header"><p>With software</p></template>
+                            <panel header="With software" type="seamless" expanded>
                               <img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png" height="400">
                               <p><span class="dimmed"><sup>[credit: <a href="https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png">https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png</a>]</sup></span></p>
                             </panel>
@@ -345,9 +347,9 @@ blah
                         </div>
                         <div>
                           <div>
-                            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                               <div>
-                                <panel class="algolia-no-index"><template slot="_header"><p>Q: Which of these are true about user stories?</p></template>
+                                <panel header="Q: Which of these are true about user stories?" class="algolia-no-index">
                                   <question>
                                     <ul class="task-list">
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They are based on stories users tell about similar systems</li>
@@ -365,7 +367,7 @@ blah
                                 </panel>
                               </div>
                               <div>
-                                <panel class="algolia-no-index"><template slot="_header"><p>Q: What's wrong with this user story?</p></template>
+                                <panel header="Q: What's wrong with this user story?" class="algolia-no-index">
                                   <question has-input="true">
                                     <p>Critique the following user story taken from a software project to build an e-commerce website.</p>
                                     <p><code>As a developer, I want to use Python to implement the software, so that we can resue existing Python modules.</code></p>
@@ -382,9 +384,9 @@ blah
                                 </panel>
                               </div>
                               <div>
-                                <panel class="algolia-no-index"><template slot="_header"><p>Q: Extract user stories from customer statement</p></template>
+                                <panel header="Q: Extract user stories from customer statement" class="algolia-no-index">
                                   <question has-input="true">
-                                    <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <popover><template slot="content">The number of leave days not yet taken</template>leave balance</popover></em>.
+                                    <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <popover content="The number of leave days not yet taken">leave balance</popover></em>.
                                       What are the user stories you can extract from that statement?</p>
                                     <div slot="hint" class="algolia-no-index">
                                       <p>Remember to follow the correct format when writing user stories.</p>
@@ -406,10 +408,11 @@ blah
                     </div>
                   </div>
                 </modal>
-                <modal large id="modal:v10-onlinetools" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories → Usage → (panel)Tool Examples</template>
+                <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools" class="algolia-no-index">
+
                   <div>
                     <tabs>
-                      <tab><template slot="_header">GitHub Project Boards</template>
+                      <tab header="GitHub Project Boards">
                         <p>You can create issues for each of the user stories and use a GitHub <em>Project Board</em> to sort them into categories.</p>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example Project Board:</p>
                         <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInGitHubProjectBoards.png" width="800"></p>
@@ -422,13 +425,13 @@ blah
                         <p>A video on GitHub Project Boards:</p>
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                       </tab>
-                      <tab class="algolia-no-index"><template slot="_header">Google Sheets</template>
+                      <tab header="Google Sheets" class="algolia-no-index">
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example Google Sheet for recording user stories:</p>
                         <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInGoogleSheets.png" width="800"></p>
                         <p></p>
                         <p></p>
                       </tab>
-                      <tab class="algolia-no-index"><template slot="_header">Trello</template>
+                      <tab header="Trello" class="algolia-no-index">
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
                         <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInTrello.png" width="800"></p>
                         <p></p>
@@ -437,7 +440,8 @@ blah
                     </tabs>
                   </div>
                 </modal>
-                <modal large id="modal:v10-userstoryusagetips" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories →  Usage → (section) Tips</template>
+                <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → UserStories →  Usage → (section) Tips" id="modal:v10-userstoryusagetips" class="algolia-no-index">
+
                   <div>
                     <p>Given their lightweight nature, <strong>user stories are quite handy for recording requirements during early stages of requirements gathering</strong>.</p>
                     <box>
@@ -456,7 +460,7 @@ blah
                   </div>
                 </modal>
                 <div class="indented-level3">
-                  <panel minimized class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> User Story examples (from a different product)</p></template>
+                  <panel header="<md>:fas-cube:</md> User Story examples (from a different product)" minimized class="algolia-no-index">
                     <span class="text-monospace">
 <ul>
 <li>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</li>
@@ -519,7 +523,7 @@ blah
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sat, 08 Feb 2020 14:06:23 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -548,7 +552,6 @@ blah
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

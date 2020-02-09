@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Git and Github: Push</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/pull" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Pull</span></p></template></panel>
+                  <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Pull%%" popup-url="/website/book/gitAndGithub/pull" class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -59,7 +59,7 @@
                       </li>
                       <li>
                         <p>Fork the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your GitHub account:</p>
-                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">How to fork a repo?</span></p></template>
+                        <panel type="seamless" header="%%How to fork a repo?%%" class="algolia-no-index">
                           <p>Navigate to the on GitHub and click on the <img src="/website/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
                           <p></p>
                         </panel>
@@ -76,7 +76,7 @@
                       </li>
                     </ol>
                     <tabs>
-                      <tab><template slot="_header">SourceTree</template>
+                      <tab header="SourceTree">
                         <div>
                           <p>Click the <code>Push</code> button on the main menu, ensure the settings are as follows in the next dialog, and click the <code>Push</code> button on the dialog.</p>
                           <img src="/website/book/gitAndGithub/push/images/sourcetree_1.png" height="150">
@@ -87,7 +87,7 @@
                           </box>
                         </div>
                       </tab>
-                      <tab class="algolia-no-index"><template slot="_header">CLI</template>
+                      <tab header="CLI" class="algolia-no-index">
                         <div>
                           <p>Use the command <code>git push origin master</code>. Enter Github username and password when prompted.</p>
                           <box type="warning">
@@ -97,7 +97,7 @@
                       </tab>
                     </tabs>
                     <p></p>
-                    <panel minimized class="algolia-no-index"><template slot="_header"></template>
+                    <panel header minimized class="algolia-no-index">
                       <span slot="header" class="card-title"><span> Pushing an existing local repo into a new remote repo on GitHub <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                       </span>
                       </span>
@@ -119,7 +119,7 @@
                       </ol>
                       <p>Next, you can push the existing local repo to the new remote repo as follows:</p>
                       <tabs>
-                        <tab><template slot="_header">SourceTree</template>
+                        <tab header="SourceTree">
                           <ol>
                             <li>Open the local repo in SourceTree.</li>
                             <li>Choose <code>Repository</code> → <code>Repository Settings</code> menu option.</li>
@@ -135,12 +135,12 @@
                               <img src="/website/book/gitAndGithub/push/images/pushToRemote.png" width="470"></li>
                           </ol>
                         </tab>
-                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
+                        <tab header="CLI" class="algolia-no-index">
                           <ol>
                             <li>Navigate to the folder containing the local repo.</li>
                             <li>Set the new remote repo as a <em>remote</em> of the local repo.<br> command: <code>git remote add {remote_name} {remote_repo_url}</code><br> e.g., <code>git remote add origin https://github.com/johndoe/foobar.git</code></li>
                             <li>Push to the new remote the usual way. You can use the <code>-u</code> flag to inform Git that you wish to
-                              <tooltip><template slot="_content">i.e., remember which branch in the remote repo corresponds to which branch in the local repo</template>track</tooltip> the branch.<br> e.g., <code>git push -u origin master</code></li>
+                              <tooltip content="i.e., remember which branch in the remote repo corresponds to which branch in the local repo">track</tooltip> the branch.<br> e.g., <code>git push -u origin master</code></li>
                           </ol>
                         </tab>
                       </tabs>
@@ -153,9 +153,7 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -183,7 +181,6 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Object Oriented Programming: Associations</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="basic">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div><h4 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h4>
                 </div>
                 </span>
@@ -75,7 +75,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded id="navigability">
+                <panel type="seamless" expanded>
                   <span slot="header" class="card-title"><div><h4 id="navigability"><span>Navigability</span><a class="fa fa-anchor" href="#navigability"></a></h4>
               </div>
               </span>
@@ -96,7 +96,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded id="multiplicity">
+              <panel type="seamless" expanded>
                 <span slot="header" class="card-title"><div><h4 id="multiplicity"><span>Multiplicity</span><a class="fa fa-anchor" href="#multiplicity"></a></h4>
             </div>
             </span>
@@ -218,7 +218,7 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded id="dependencies">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title"><div><h4 id="dependencies"><span>Dependencies</span><a class="fa fa-anchor" href="#dependencies"></a></h4>
           </div>
           </span>
@@ -240,7 +240,7 @@
               <h5 id="implementing-dependencies">Implementing dependencies<a class="fa fa-anchor" href="#implementing-dependencies"></a></h5>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
-                  <tooltip><template slot="_content">temporary</template>transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
+                  <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
                 <div class="alt-java">
                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     
@@ -277,7 +277,7 @@
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded id="composition">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title"><div><h4 id="composition"><span>Composition</span><a class="fa fa-anchor" href="#composition"></a></h4>
         </div>
         </span>
@@ -326,7 +326,7 @@
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded id="aggregation">
+        <panel type="seamless" expanded>
           <span slot="header" class="card-title"><div><h4 id="aggregation"><span>Aggregation</span><a class="fa fa-anchor" href="#aggregation"></a></h4>
       </div>
       </span>
@@ -375,7 +375,7 @@
       </panel>
     </div>
     <div>
-      <panel type="seamless" expanded id="association-classes">
+      <panel type="seamless" expanded>
         <span slot="header" class="card-title"><div><h4 id="association-classes"><span>Association Classes</span><a class="fa fa-anchor" href="#association-classes"></a></h4>
     </div>
     </span>
@@ -397,11 +397,8 @@
           </p>
         </box>
         <p>
-          <panel type="seamless" src="/website/book/uml/classDiagrams/associationClasses/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Association Classes → What</p></template>
-            <template slot="_alt">
-          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/AssociationClasses</p>
-          </template>
-          </panel>
+          <panel type="seamless" src="/website/book/uml/classDiagrams/associationClasses/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Class Diagrams → Association Classes → What" alt="<md>:glyphicon-education:</md> UML/AssociationClasses"
+            fragment="main" class="algolia-no-index"></panel>
         </p>
         <h5 id="implementing-association-classes">Implementing association classes<a class="fa fa-anchor" href="#implementing-association-classes"></a></h5>
         <p>There is no special way to implement an association class. It can be implemented as a normal class that has variables to represent the endpoint of the association it represents.</p>
@@ -424,9 +421,9 @@
       </div>
       <div>
         <div>
-          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
             <div>
-              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which are suitable as an Association Class?</p></template>
+              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which are suitable as an Association Class?" class="algolia-no-index">
                 <question>
                   <p>Which one of these is the suitable as an Association Class?</p>
                   <img src="/website/book/oop/associations/associationClasses/images/exerciseDiagram.png" width="500">
@@ -456,9 +453,7 @@
   </div>
   </div>
   </div>
-
   </div>
-
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -486,7 +481,6 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

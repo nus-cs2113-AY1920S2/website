@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Test Case Design</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -38,13 +38,13 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="introduction">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
                 </div>
                 </span>
                 <div>
                   <div>
-                    <panel type="seamless" expanded id="what">
+                    <panel type="seamless" expanded>
                       <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                   </div>
                   </span>
@@ -58,10 +58,11 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <p><strong>Except for trivial <tooltip><template slot="_content">Software Under Test</template>SUTs</tooltip>, <tooltip><template slot="_content">testing all possible cases</template>exhaustive testing</tooltip> is not practical</strong>                        because such testing often requires a massive/infinite number of test cases.</p>
+                      <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite
+                        number of test cases.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the test cases for adding a string object to a
-                          <tooltip><template slot="_content">Java: <code>ArrayList</code>,<br>Python: <code>list</code></template>collection</tooltip>:</p>
+                          <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
                         <ul>
                           <li>Add an item to an empty collection.</li>
                           <li>Add an item when there is one item in the collection.</li>
@@ -88,14 +89,15 @@
                             <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                           </li>
                         </ul>
-                        <p><strong>For testing to be <tooltip><template slot="_content">Efficient and Effective</template>E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong>                          There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                        <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case
+                          design techniques that can help us improve E&amp;E of testing.</p>
                       </div>
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                        <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                           <div>
-                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Test cases for <code>TriangleDetector</code></p></template>
+                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Test cases for `TriangleDetector`" class="algolia-no-index">
                               <question has-input="true">
                                 <p>Given below is the sample output from a text-based program <code>TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test
                                   this software. Two sample test cases are given below.</p>
@@ -132,7 +134,7 @@ Enter side 1:
                             </panel>
                           </div>
                           <div>
-                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Exhaustive testing in Minesweeper</p></template>
+                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Exhaustive testing in Minesweeper" class="algolia-no-index">
                               <question has-input="true">
                                 <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
                                 <div slot="answer" class="algolia-no-index">
@@ -150,7 +152,7 @@ Enter side 1:
                             </panel>
                           </div>
                           <div>
-                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about E&amp;E of testing</p></template>
+                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about E&E of testing" class="algolia-no-index">
                               <question>
                                 <p>Improving efficiency and effectiveness of test case design can,</p>
                                 <ul class="task-list">
@@ -174,7 +176,7 @@ Enter side 1:
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="positive-vs-negative-test-cases">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div><h4 id="positive-vs-negative-test-cases"><span>Positive vs Negative Test Cases</span><a class="fa fa-anchor" href="#positive-vs-negative-test-cases"></a></h4>
                 </div>
                 </span>
@@ -202,7 +204,7 @@ Enter side 1:
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded id="black-box-vs-glass-box">
+                <panel type="seamless" expanded>
                   <span slot="header" class="card-title"><div><h4 id="black-box-vs-glass-box"><span>Black Box vs Glass Box</span><a class="fa fa-anchor" href="#black-box-vs-glass-box"></a></h4>
               </div>
               </span>
@@ -229,16 +231,16 @@ Enter side 1:
                         than 1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
                     </li>
                   </ul>
-                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> <span class="dimmed">Black-box and white-box testing</span></p></template>
+                  <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> %%Black-box and white-box testing%%" class="algolia-no-index">
                     <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
                     <tabs>
-                      <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box vs White-box testing</template>
+                      <tab header="<md>:glyphicon-facetime-video:</md> Black-box vs White-box testing">
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                       </tab>
-                      <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box testing example</template>
+                      <tab header="<md>:glyphicon-facetime-video:</md> Black-box testing example" class="algolia-no-index">
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                       </tab>
-                      <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> White-box testing example</template>
+                      <tab header="<md>:glyphicon-facetime-video:</md> White-box testing example" class="algolia-no-index">
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                       </tab>
                     </tabs>
@@ -252,14 +254,14 @@ Enter side 1:
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded id="equivalence-partitions">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title"><div><h2 id="equivalence-partitions"><span>Equivalence Partitions</span><a class="fa fa-anchor" href="#equivalence-partitions"></a></h2>
         </div>
         </span>
         <div>
           <div>
-            <panel type="seamless" expanded id="what-2">
-              <span slot="header" class="card-title"><div><h4 id="what-2"><span>What</span><a class="fa fa-anchor" href="#what-2"></a></h4>
+            <panel type="seamless" expanded>
+              <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
           </div>
           </span>
           <div class="indented">
@@ -298,7 +300,7 @@ Enter side 1:
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded id="basic">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title"><div><h4 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h4>
         </div>
         </span>
@@ -322,7 +324,7 @@ Enter side 1:
                 <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
               </ul>
             </box>
-            <popover id="pop:epBasic-isValidMonth" placement="top"><template slot="header"><code>isValidMonth</code></template>
+            <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top">
               <div slot="content" class="algolia-no-index">
                 <div>
                   <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
@@ -395,9 +397,9 @@ Enter side 1:
           </div>
           <div>
             <div>
-              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                 <div>
-                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> EPs for <code>isValidName</code> method</p></template>
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EPs for `isValidName` method" class="algolia-no-index">
                     <question>
                       <p>Consider this SUT:</p>
                       <box>
@@ -434,7 +436,7 @@ Enter side 1:
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded id="intermediate">
+        <panel type="seamless" expanded>
           <span slot="header" class="card-title"><div><h4 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h4>
       </div>
       </span>
@@ -506,14 +508,14 @@ Enter side 1:
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="boundary-value-analysis">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h2 id="boundary-value-analysis"><span>Boundary Value Analysis</span><a class="fa fa-anchor" href="#boundary-value-analysis"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded id="what-3">
-        <span slot="header" class="card-title"><div><h4 id="what-3"><span>What</span><a class="fa fa-anchor" href="#what-3"></a></h4>
+      <panel type="seamless" expanded>
+        <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -536,9 +538,9 @@ Enter side 1:
       </div>
       <div>
         <div>
-          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
             <div>
-              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What BVA recommends</p></template>
+              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What BVA recommends" class="algolia-no-index">
                 <question>
                   <p>Boundary value analysis recommends testing <em>only</em> values that reside on the equivalence class boundary.</p>
                   <ul radio-group="f8ff4" class="radio-list">
@@ -559,7 +561,7 @@ Enter side 1:
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="how">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how"></a></h4>
   </div>
   </span>
@@ -638,13 +640,13 @@ Enter side 1:
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="combining-test-inputs">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h2 id="combining-test-inputs"><span>Combining Test Inputs</span><a class="fa fa-anchor" href="#combining-test-inputs"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded id="why">
+      <panel type="seamless" expanded>
         <span slot="header" class="card-title"><div><h4 id="why"><span>Why</span><a class="fa fa-anchor" href="#why"></a></h4>
     </div>
     </span>
@@ -708,7 +710,7 @@ Enter side 1:
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="test-input-combination-strategies">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h4 id="test-input-combination-strategies"><span>Test Input Combination Strategies</span><a class="fa fa-anchor" href="#test-input-combination-strategies"></a></h4>
   </div>
   </span>
@@ -841,7 +843,7 @@ Enter side 1:
         The resulting number of test cases is lower than the <em>all combinations</em> strategy, but higher than the <em>at least once</em> approach.</p>
       <box>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> this strategy generates 9 test cases:</p>
-        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>see steps</p></template>
+        <panel type="seamless" header="see steps" class="algolia-no-index">
           <p>Let's first consider inputs p1 and p2:</p>
           <div class="table-responsive">
             <table class="markbind-table table table-bordered table-striped">
@@ -864,7 +866,7 @@ Enter side 1:
             </table>
           </div>
           <p>These values can generate
-            <tooltip><template slot="_content">(a,1)(a,2)(a,3)(b,1)(b,2),...</template>3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
+            <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
           <p>Next, let's consider p1 and p3.</p>
           <div class="table-responsive">
             <table class="markbind-table table table-bordered table-striped">
@@ -887,7 +889,7 @@ Enter side 1:
             </table>
           </div>
           <p>These values can generate
-            <tooltip><template slot="_content">(a,T)(a,F)(b,T)(b,F),...</template>3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
+            <tooltip content="(a,T)(a,F)(b,T)(b,F),...">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
           <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
           <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
         </panel>
@@ -1022,7 +1024,7 @@ Enter side 1:
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h4 id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case"><span>Heuristic: Each Valid Input at Least Once in a Positive Test Case</span><a class="fa fa-anchor" href="#heuristic-each-valid-input-at-least-once-in-a-positive-test-case"></a></h4>
   </div>
   </span>
@@ -1202,7 +1204,7 @@ Enter side 1:
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="heuristic-no-more-than-one-invalid-input-in-a-test-case">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h4 id="heuristic-no-more-than-one-invalid-input-in-a-test-case"><span>Heuristic: No More Than One Invalid Input In A Test Case</span><a class="fa fa-anchor" href="#heuristic-no-more-than-one-invalid-input-in-a-test-case"></a></h4>
   </div>
   </span>
@@ -1218,7 +1220,7 @@ Enter side 1:
     <div>
       <p>Consider the
         <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
-      <modal large id="modal:heuristic-valid-test-case" class="algolia-no-index"><template slot="_header"><strong>Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case</strong></template>
+      <modal large title="**Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case**" id="modal:heuristic-valid-test-case" class="algolia-no-index">
         <div>
           <div class="table-responsive">
             <table class="markbind-table table table-bordered table-striped">
@@ -1329,9 +1331,9 @@ Enter side 1:
     </div>
     <div>
       <div>
-        <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+        <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
           <div>
-            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Can define test cases precisely</p></template>
+            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Can define test cases precisely" class="algolia-no-index">
               <question>
                 <p>Applying the heuristics covered so far, we can determine the precise number of test cases required to test any given SUT effectively.</p>
                 <ul radio-group="a7d7f" class="radio-list">
@@ -1353,7 +1355,7 @@ Enter side 1:
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="mix">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h4 id="mix"><span>Mix</span><a class="fa fa-anchor" href="#mix"></a></h4>
   </div>
   </span>
@@ -1724,10 +1726,10 @@ Enter side 1:
     </div>
     <div>
       <div>
-        <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+        <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
           <div>
             <div>
-              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about test input combinations</p></template>
+              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about test input combinations" class="algolia-no-index">
                 <question>
                   <p>Which of these contradict the heuristics recommended when creating test cases with multiple inputs?</p>
                   <ul radio-group="1da4e" class="radio-list">
@@ -1745,7 +1747,7 @@ Enter side 1:
               </panel>
             </div>
             <div>
-              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Combine test inputs for the <code>consume</code> method</p></template>
+              <panel header="<md>:glyphicon-question-sign:</md> Combine test inputs for the `consume` method" class="algolia-no-index">
                 <question>
                   <p>Apply heuristics for combining multiple test inputs to improve the E&amp;E of the following test cases, assuming all 6 values in the table need to be tested. <ins>underlines</ins> indicate invalid values. Point out where the heuristics
                     are contradicted and how to improve the test cases.</p>
@@ -1794,13 +1796,13 @@ Enter side 1:
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="more">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h2 id="more"><span>More</span><a class="fa fa-anchor" href="#more"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded id="testing-based-on-use-cases">
+      <panel type="seamless" expanded>
         <span slot="header" class="card-title"><div><h4 id="testing-based-on-use-cases"><span>Testing Based on Use Cases</span><a class="fa fa-anchor" href="#testing-based-on-use-cases"></a></h4>
     </div>
     </span>
@@ -1820,7 +1822,7 @@ Enter side 1:
         <p>To increase
           <trigger trigger="click" for="modal:usebaseBased-EandE">E&amp;E of testing</trigger>, high-priority use cases are given more attention. For example, a
           <trigger trigger="click" for="modal:usecaseBased-scripted">scripted approach</trigger> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-        <modal large id="modal:usebaseBased-EandE" class="algolia-no-index"><template slot="_header">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
+        <modal large title="Quality Assurance → Test Case Design → Introduction → (extract) E&E of testing" id="modal:usebaseBased-EandE" class="algolia-no-index">
           <div>
             <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>              In particular:</p>
             <ul>
@@ -1831,11 +1833,11 @@ Enter side 1:
                 <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
               </li>
             </ul>
-            <p><strong>For testing to be <tooltip><template slot="_content">Efficient and Effective</template>E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There
-              are test case design techniques that can help us improve E&amp;E of testing.</p>
+            <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques
+              that can help us improve E&amp;E of testing.</p>
           </div>
         </modal>
-        <modal large id="modal:usecaseBased-scripted" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+        <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:usecaseBased-scripted" class="algolia-no-index">
           <div>
             <div></div>
             <p></p>
@@ -1845,7 +1847,7 @@ Enter side 1:
             </p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-4"><span>What</span><a class="fa fa-anchor" href="#what-4"></a></h4>
+                <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
               </div>
               <div id="main">
                 <div>
@@ -1871,7 +1873,7 @@ Enter side 1:
                   <box>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                   </box>
-                  <modal id="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="_header">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                  <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <md>:glyphicon-eye-open:</md>" class="algolia-no-index">
                     <div>
                       <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought
                         leader in software testing).</p>
@@ -1880,9 +1882,9 @@ Enter side 1:
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about exploratory and scripted testing</p></template>
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about exploratory and scripted testing" class="algolia-no-index">
                           <question>
                             <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
                             <ul radio-group="db31a" class="radio-list">
@@ -1897,7 +1899,7 @@ Enter side 1:
                         </panel>
                       </div>
                       <div>
-                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which testing technique is better?</p></template>
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which testing technique is better?" class="algolia-no-index">
                           <question>
                             <p>Which testing technique is better?</p>
                             <ul radio-group="9fd35" class="radio-list">
@@ -1914,7 +1916,7 @@ Enter side 1:
                         </panel>
                       </div>
                       <div>
-                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Explain the concept of exploratory testing using Minesweeper as an example.</p></template>
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Explain the concept of exploratory testing using Minesweeper as an example." class="algolia-no-index">
                           <question has-input="true">
                             <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
                             <div slot="answer" class="algolia-no-index">
@@ -1939,14 +1941,14 @@ Enter side 1:
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="recap">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h2 id="recap"><span>Recap</span><a class="fa fa-anchor" href="#recap"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded id="recap-2">
-        <span slot="header" class="card-title"><div><h4 id="recap-2"><span>Recap</span><a class="fa fa-anchor" href="#recap-2"></a></h4>
+      <panel type="seamless" expanded>
+        <span slot="header" class="card-title"><div><h4 id="recap"><span>Recap</span><a class="fa fa-anchor" href="#recap"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -1966,7 +1968,7 @@ Enter side 1:
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded id="exercises">
+    <panel type="seamless" expanded>
       <span slot="header" class="card-title"><div><h4 id="exercises"><span>Exercises</span><a class="fa fa-anchor" href="#exercises"></a></h4>
   </div>
   </span>
@@ -1982,9 +1984,9 @@ Enter side 1:
     <div></div>
     <div>
       <div>
-        <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+        <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
           <div>
-            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Matric numbers</p></template>
+            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Matric numbers" class="algolia-no-index">
               <question has-input="true">
                 <p>Assume students are given matriculation number according to the following format:</p>
                 <p>[Faculty Alphabet] [Gender Alphabet] [Serial Number] [Check Alphabet]</p>
@@ -2025,7 +2027,7 @@ Enter side 1:
             </panel>
           </div>
           <div>
-            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> isValidDate</p></template>
+            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: isValidDate" class="algolia-no-index">
               <question has-input="true">
                 <p>Identify a set of equivalence partitions for testing isValidDate(String date) method. The method checks if the parameter date is a day that falls in the period 1880/01/01 to 2030/12/31 (both inclusive). The date is given in the format
                   yyyy/mm/dd.</p>
@@ -2046,7 +2048,7 @@ Enter side 1:
             </panel>
           </div>
           <div>
-            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Dispatch resources</p></template>
+            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Dispatch resources" class="algolia-no-index">
               <question has-input="true">
                 <p>Given below is the overview of the method dispatch(Resource, Task), from an emergency management system (e.g. a system used by those who handle emergency calls from the public about incidents such as fires, possible burglaries, domestic
                   disturbances, etc.). A task might need multiple resources of multiple types. For example, the task ‘fire at Clementi MRT’ might need two fire engines and one ambulance.</p>
@@ -2090,7 +2092,7 @@ Enter side 1:
             </panel>
           </div>
           <div>
-            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> transferTable</p></template>
+            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: transferTable" class="algolia-no-index">
               <question has-input="true">
                 <p>Given below is an operation description taken from a restaurant booking system. Use equivalence partitions and boundary value analysis technique to design a set of test cases for it.</p>
                 <ul>
@@ -2189,7 +2191,7 @@ Enter side 1:
             </panel>
           </div>
           <div>
-            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> add(Item)</p></template>
+            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: add(Item)" class="algolia-no-index">
               <question has-input="true">
                 <p>Assume you are testing the add(Item) method specified below.</p>
                 <img src="/website/book/testCaseDesign/summary/exercises/images/itemList.png" height="100">
@@ -2226,7 +2228,7 @@ Enter side 1:
             </panel>
           </div>
           <div>
-            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> setWife</p></template>
+            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: setWife" class="algolia-no-index">
               <question has-input="true">
                 <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p>
                 <img src="/website/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
@@ -2244,7 +2246,7 @@ Enter side 1:
             </panel>
           </div>
           <div>
-            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Pre-Release Game</p></template>
+            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Pre-Release Game" class="algolia-no-index">
               <question>
                 <p>If you download a pre-release version of a new game (executable file) to do a test drive and submit bug reports, you would be doing</p>
                 <ul class="task-list">
@@ -2268,7 +2270,7 @@ Enter side 1:
             </panel>
           </div>
           <div>
-            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> True or False?</p></template>
+            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: True or False?" class="algolia-no-index">
               <question>
                 <p>We can apply equivalence partitioning technique in white-box fashion.</p>
                 <ul class="task-list">
@@ -2288,7 +2290,7 @@ Enter side 1:
             </panel>
           </div>
           <div>
-            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Design test cases for the <code>day</code> parameter</p></template>
+            <panel header="<md>:glyphicon-question-sign:</md> Design test cases for the `day` parameter" class="algolia-no-index">
               <question>
                 <ol>
                   <li>What are the EPs for the parameter <code>day</code> of this method?
@@ -2319,9 +2321,7 @@ Enter side 1:
   </div>
   </div>
   </div>
-
   </div>
-
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
@@ -2349,7 +2349,6 @@ Enter side 1:
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

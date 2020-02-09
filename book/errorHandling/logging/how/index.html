@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Error Handling: Logging: How</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -50,7 +50,7 @@
                 <div id="main">
                   <div>
                     <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging
-                      <tooltip><template slot="_content">how much information to record</template>intensity</tooltip>.</p>
+                      <tooltip content="how much information to record">intensity</tooltip>.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sample Java code uses Java’s default logging mechanism.</p>
                       <p>First, import the relevant Java package:</p>
@@ -60,8 +60,8 @@
                       <pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);
 </code></pre>
                       <p>Now, you can use the <code>Logger</code> object to log information. Note the use of
-                        <popover><template slot="content"><code>INFO</code>, <code>WARNING</code> etc.</template>logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified
-                        as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not be written to the log file at all.</p>
+                        <popover content="`INFO`, `WARNING` etc.">logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>)
+                        will not be written to the log file at all.</p>
                       <pre><code class="hljs java"><span class="hljs-comment">// log a message at INFO level</span>
 logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);
 <span class="hljs-comment">//...</span>
@@ -77,7 +77,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                   </div>
                   <div>
                     <div>
-                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+                      <panel header="<md>:fas-paperclip:</md> Resources" expanded>
                         <p><strong>Tutorials</strong>:</p>
                         <ul>
                           <li><a href="http://www.vogella.com/tutorials/Logging/article.html"><strong>Java Logging API - Tutorial</strong></a> -- A tutorial by <em>Lars Vogella</em></li>
@@ -103,9 +103,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -133,7 +131,6 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Git and Github: Manage PRs</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,9 +39,9 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Branching</span></p></template></panel>
-                  <panel src="/website/book/gitAndGithub/createPRs/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/createPRs" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Create PRs</span></p></template></panel>
-                  <panel src="/website/book/gitAndGithub/mergeConflicts/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/mergeConflicts" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Merge Conflicts</span></p></template></panel>
+                  <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"></panel>
+                  <panel src="/website/book/gitAndGithub/createPRs/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Create PRs%%" popup-url="/website/book/gitAndGithub/createPRs" class="algolia-no-index"></panel>
+                  <panel src="/website/book/gitAndGithub/mergeConflicts/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Merge Conflicts%%" popup-url="/website/book/gitAndGithub/mergeConflicts" class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -57,7 +57,7 @@
                   <div>
                     <p><strong>1. Go to the GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [
                       <trigger trigger="click" for="modal:managePrs-createPrs">Tools → Git &amp; GitHub → Create PRs</trigger>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-                    <modal large id="modal:managePrs-createPrs" class="algolia-no-index"><template slot="_header">Tools → Git &amp; GitHub → Create PRs</template>
+                    <modal large title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs" class="algolia-no-index">
                       <div>
                         <div>
                           <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
@@ -70,11 +70,11 @@ This repo can be used to practice creating PRs.
 </code></pre>
                           <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
                           <tabs>
-                            <tab><template slot="_header">SourceTree</template>
+                            <tab header="SourceTree">
                               <img src="/website/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
                               <p></p>
                             </tab>
-                            <tab class="algolia-no-index"><template slot="_header">CLI</template>
+                            <tab header="CLI" class="algolia-no-index">
                               <pre><code class="hljs">git push origin add-intro
 </code></pre>
                             </tab>
@@ -113,7 +113,7 @@ This repo can be used to practice creating PRs.
                           <img src="/website/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
                           <p></p>
                           <p><strong>7. Push the <code>add-summary</code> to your fork and create a new PR</strong> similar to before.</p>
-                          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+                          <panel header="<md>:fas-paperclip:</md> Resources" expanded>
                             <ul>
                               <li><a href="https://help.github.com/articles/creating-a-pull-request/">GitHub's own documentation on creating a PR</a></li>
                             </ul>
@@ -160,9 +160,7 @@ git pull origin master
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -190,7 +188,6 @@ git pull origin master
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

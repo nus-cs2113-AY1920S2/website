@@ -23,7 +23,7 @@
         <h5 id="implementing-dependencies">Implementing dependencies</h5>
         <box>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
-            <tooltip><template slot="_content">temporary</template>transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
+            <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
           <div class="alt-java">
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Architectural Styles: More</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="more-styles">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div><h4 id="more-styles"><span>More Styles</span><a class="fa fa-anchor" href="#more-styles"></a></h4>
                 </div>
                 </span>
@@ -57,7 +57,7 @@
                   </div>
                   <div>
                     <div>
-                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+                      <panel header="<md>:fas-paperclip:</md> Resources" expanded>
                         <ul>
                           <li>
                             <p><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters"><strong>Pipes and Filters pattern</strong></a> -- an article from Microsoft about the pipes and filters architectural style</p>
@@ -79,7 +79,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded id="using-styles">
+                <panel type="seamless" expanded>
                   <span slot="header" class="card-title"><div><h4 id="using-styles"><span>Using Styles</span><a class="fa fa-anchor" href="#using-styles"></a></h4>
               </div>
               </span>
@@ -100,9 +100,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel class="algolia-no-index"><template slot="_header"><p>Q: Comment on how to use architecture styles in Minesweeper.</p></template>
+                        <panel header="Q: Comment on how to use architecture styles in Minesweeper." class="algolia-no-index">
                           <question has-input="true">
                             <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly before
                               any of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
@@ -137,9 +137,7 @@
       </div>
     </div>
   </div>
-
   </div>
-
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -167,7 +165,6 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

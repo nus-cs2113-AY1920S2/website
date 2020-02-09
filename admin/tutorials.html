@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: Tutorials</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -201,7 +201,7 @@
             </div>
           </p>
           <div id="main">
-            <panel type="seamless" expanded id="tutorial-timetable">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title"><div><h3 id="tutorial-timetable">Tutorial Timetable<a class="fa fa-anchor" href="#tutorial-timetable"></a></h3></div></span>
               <div id="tutorialTimetable">
                 <box>
@@ -286,7 +286,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="tutorial-structure"><template slot="_header"><h3 id="tutorial-structure">Tutorial Structure<a class="fa fa-anchor" href="#tutorial-structure"></a></h3></template>
+            <panel type="seamless" header="### Tutorial Structure<a class='fa fa-anchor' href='#tutorial-structure'></a>" expanded>
               <div id="tutorialStructure">
                 <p><strong>What happens during the tutorial</strong>:</p>
                 <ul>
@@ -302,7 +302,8 @@
                 </ul>
                 <div class="indented-level2">
                   <p>
-                    <panel type src="/website/admin/appendixC-faq._include_.html#admin-faq-noLaptop" class="embedding algolia-no-index" minimized fragment="admin-faq-noLaptop"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix C(FAQ): What if I don't carry around a laptop?  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                    <panel type src="/website/admin/appendixC-faq._include_.html#admin-faq-noLaptop" header="Admin <md>:glyphicon-log-in:</md> Appendix C(FAQ): What if I don't carry around a laptop?  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
+                      class="embedding algolia-no-index" minimized fragment="admin-faq-noLaptop"></panel>
                   </p>
                 </div>
                 <br>
@@ -312,7 +313,7 @@
                 </ul>
                 <div class="indented-level2">
                   <p>
-                    <panel type src="/website/admin/appendixD-help._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D: How to get Help in CS2113/T  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                    <panel type src="/website/admin/appendixD-help._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> Appendix D: How to get Help in CS2113/T  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
                   </p>
                 </div>
                 <br>
@@ -322,7 +323,8 @@
                 </ul>
                 <div class="indented-level2">
                   <p>
-                    <panel type src="/website/admin/appendixD-help._include_.html#questions-for-tutros" class="embedding algolia-no-index" minimized fragment="questions-for-tutros"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D (extract): Questions suitable for tutor  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                    <panel type src="/website/admin/appendixD-help._include_.html#questions-for-tutros" header="Admin <md>:glyphicon-log-in:</md> Appendix D (extract): Questions suitable for tutor  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+                      minimized fragment="questions-for-tutros"></panel>
                   </p>
                 </div>
                 <br>
@@ -387,7 +389,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sat, 08 Feb 2020 14:06:23 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -416,7 +418,6 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

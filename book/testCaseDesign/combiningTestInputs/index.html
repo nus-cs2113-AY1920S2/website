@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Test Case Design: Combining Test Inputs</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="why">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div><h4 id="why"><span>Why</span><a class="fa fa-anchor" href="#why"></a></h4>
                 </div>
                 </span>
@@ -103,7 +103,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded id="test-input-combination-strategies">
+                <panel type="seamless" expanded>
                   <span slot="header" class="card-title"><div><h4 id="test-input-combination-strategies"><span>Test Input Combination Strategies</span><a class="fa fa-anchor" href="#test-input-combination-strategies"></a></h4>
               </div>
               </span>
@@ -236,7 +236,7 @@
                     factors. The resulting number of test cases is lower than the <em>all combinations</em> strategy, but higher than the <em>at least once</em> approach.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> this strategy generates 9 test cases:</p>
-                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>see steps</p></template>
+                    <panel type="seamless" header="see steps" class="algolia-no-index">
                       <p>Let's first consider inputs p1 and p2:</p>
                       <div class="table-responsive">
                         <table class="markbind-table table table-bordered table-striped">
@@ -259,7 +259,7 @@
                         </table>
                       </div>
                       <p>These values can generate
-                        <tooltip><template slot="_content">(a,1)(a,2)(a,3)(b,1)(b,2),...</template>3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
+                        <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
                       <p>Next, let's consider p1 and p3.</p>
                       <div class="table-responsive">
                         <table class="markbind-table table table-bordered table-striped">
@@ -282,7 +282,7 @@
                         </table>
                       </div>
                       <p>These values can generate
-                        <tooltip><template slot="_content">(a,T)(a,F)(b,T)(b,F),...</template>3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
+                        <tooltip content="(a,T)(a,F)(b,T)(b,F),...">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
                       <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
                       <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
                     </panel>
@@ -417,7 +417,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case">
+              <panel type="seamless" expanded>
                 <span slot="header" class="card-title"><div><h4 id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case"><span>Heuristic: Each Valid Input at Least Once in a Positive Test Case</span><a class="fa fa-anchor" href="#heuristic-each-valid-input-at-least-once-in-a-positive-test-case"></a></h4>
             </div>
             </span>
@@ -597,7 +597,7 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded id="heuristic-no-more-than-one-invalid-input-in-a-test-case">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title"><div><h4 id="heuristic-no-more-than-one-invalid-input-in-a-test-case"><span>Heuristic: No More Than One Invalid Input In A Test Case</span><a class="fa fa-anchor" href="#heuristic-no-more-than-one-invalid-input-in-a-test-case"></a></h4>
           </div>
           </span>
@@ -613,7 +613,7 @@
             <div>
               <p>Consider the
                 <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
-              <modal large id="modal:heuristic-valid-test-case" class="algolia-no-index"><template slot="_header"><strong>Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case</strong></template>
+              <modal large title="**Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case**" id="modal:heuristic-valid-test-case" class="algolia-no-index">
                 <div>
                   <div class="table-responsive">
                     <table class="markbind-table table table-bordered table-striped">
@@ -724,9 +724,9 @@
             </div>
             <div>
               <div>
-                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Can define test cases precisely</p></template>
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Can define test cases precisely" class="algolia-no-index">
                       <question>
                         <p>Applying the heuristics covered so far, we can determine the precise number of test cases required to test any given SUT effectively.</p>
                         <ul radio-group="a7d7f" class="radio-list">
@@ -748,7 +748,7 @@
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded id="mix">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title"><div><h4 id="mix"><span>Mix</span><a class="fa fa-anchor" href="#mix"></a></h4>
         </div>
         </span>
@@ -1119,10 +1119,10 @@
           </div>
           <div>
             <div>
-              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                 <div>
                   <div>
-                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about test input combinations</p></template>
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about test input combinations" class="algolia-no-index">
                       <question>
                         <p>Which of these contradict the heuristics recommended when creating test cases with multiple inputs?</p>
                         <ul radio-group="1da4e" class="radio-list">
@@ -1141,7 +1141,7 @@
                     </panel>
                   </div>
                   <div>
-                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Combine test inputs for the <code>consume</code> method</p></template>
+                    <panel header="<md>:glyphicon-question-sign:</md> Combine test inputs for the `consume` method" class="algolia-no-index">
                       <question>
                         <p>Apply heuristics for combining multiple test inputs to improve the E&amp;E of the following test cases, assuming all 6 values in the table need to be tested. <ins>underlines</ins> indicate invalid values. Point out where the heuristics
                           are contradicted and how to improve the test cases.</p>
@@ -1191,9 +1191,7 @@
   </div>
   </div>
   </div>
-
   </div>
-
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -1221,7 +1219,6 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Testing: Test Automation</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="what">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                 </div>
                 </span>
@@ -54,17 +54,17 @@
                   <p></p>
                   <div>
                     <tabs>
-                      <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
+                      <tab header="<md>:far-file-alt:</md>">
                         <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run
                           tests repeatedly and increases precision of testing (because manual testing is susceptible to human errors).</p>
                       </tab>
-                      <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
+                      <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe></tab>
                     </tabs>
                   </div>
                   <div>
                     <div>
-                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+                      <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
                         <p><strong>Side readings:</strong></p>
                         <ul>
                           <li>[Quora post] <a href="http://www.quora.com/What-are-good-ways-to-avoid-bugs-while-programming/answer/Mattias-Petter-Johansson">What is the best way to avoid bugs</a></li>
@@ -77,7 +77,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded id="automated-testing-of-cli-apps">
+                <panel type="seamless" expanded>
                   <span slot="header" class="card-title"><div><h4 id="automated-testing-of-cli-apps"><span>Automated Testing of CLI Apps</span><a class="fa fa-anchor" href="#automated-testing-of-cli-apps"></a></h4>
               </div>
               </span>
@@ -100,7 +100,7 @@
                   <ol>
                     <li>
                       <p>Store the test input in the text file <code>input.txt</code>.</p>
-                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <code>input.txt</code></span></p></template>
+                      <panel header="%%<md>:fas-cube:</md> Example `input.txt`%%" type="seamless" class="algolia-no-index">
                         <pre><code class="hljs">add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
@@ -108,7 +108,7 @@ add Valid Name 12345 e/valid@email.butPhonePrefixMissing
                     </li>
                     <li>
                       <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <code>expected.txt</code></span></p></template>
+                      <panel header="%%<md>:fas-cube:</md> Example `expected.txt`%%" type="seamless" class="algolia-no-index">
                         <pre><code class="hljs">Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
@@ -133,7 +133,7 @@ Invalid command format: add
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                         </li>
                       </ul>
-                      <panel minimized class="algolia-no-index"><template slot="_header"></template>
+                      <panel header minimized class="algolia-no-index">
                         <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                         </span>
                         </span>
@@ -175,7 +175,7 @@ Invalid command format: add
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded id="test-automation-using-test-drivers">
+              <panel type="seamless" expanded>
                 <span slot="header" class="card-title"><div><h4 id="test-automation-using-test-drivers"><span>Test Automation Using Test Drivers</span><a class="fa fa-anchor" href="#test-automation-using-test-drivers"></a></h4>
             </div>
             </span>
@@ -189,8 +189,7 @@ Invalid command format: add
               <p></p>
               <p></p>
               <div>
-                <p><strong>A test driver is the code that ‘drives’ the <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is
-                  as expected.</p>
+                <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>PayrollTest</code> ‘drives’ the <code>Payroll</code> class by sending it test inputs and verifies if the output is as expected.</p>
                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
@@ -225,7 +224,7 @@ Invalid command format: add
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded id="test-automation-tools">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title"><div><h4 id="test-automation-tools"><span>Test Automation Tools</span><a class="fa fa-anchor" href="#test-automation-tools"></a></h4>
           </div>
           </span>
@@ -267,7 +266,7 @@ Invalid command format: add
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded id="automated-testing-of-guis">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title"><div><h4 id="automated-testing-of-guis"><span>Automated Testing of GUIs</span><a class="fa fa-anchor" href="#automated-testing-of-guis"></a></h4>
         </div>
         </span>
@@ -306,7 +305,7 @@ Invalid command format: add
                 </li>
                 <li>
                   <p><a href="http://seleniumhq.org/"><strong>Selenium</strong></a> can be used to automate testing of Web application UIs<br></p>
-                  <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> demo video of automated testing of a Web application</p></template>
+                  <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> demo video of automated testing of a Web application" class="non-printable algolia-no-index">
                     <p>This video shows automated testing of the <a href="http://github.com/teammates/teammates">TEAMMATES</a> Web app using Selenium</p>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ihst69Zq1xM" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </panel>
@@ -316,9 +315,9 @@ Invalid command format: add
           </div>
           <div>
             <div>
-              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                 <div>
-                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> API testing vs GUI testing</p></template>
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: API testing vs GUI testing" class="algolia-no-index">
                     <question>
                       <p>GUI testing is usually easier than API testing because it doesn’t require any extra coding.</p>
                       <ul radio-group="dc574" class="radio-list">
@@ -342,9 +341,7 @@ Invalid command format: add
   </div>
   </div>
   </div>
-
   </div>
-
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -372,7 +369,6 @@ Invalid command format: add
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

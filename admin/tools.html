@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: Tools</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -217,7 +217,8 @@
                 </p>
                 <p>Create a GitHub account (if you don't have one yet), as explained in the panel below.</p>
                 <p>
-                  <panel type src="/website/admin/appendixE-gitHub._include_.html#githubAccount" class="embedding algolia-no-index" minimized fragment="githubAccount"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Appendix E - GitHub: Creating an Account</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/appendixE-gitHub._include_.html#githubAccount" header="Admin <md>:glyphicon-log-in:</md> **Appendix E - GitHub: Creating an Account**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+                    minimized fragment="githubAccount"></panel>
                 </p>
               </box>
               <p><strong>More info</strong>: See <a href="/website/admin/appendixE-gitHub.html">Appendix E - Using GitHub</a>.</p>
@@ -348,7 +349,7 @@
                   <li>If you add <code>@@author</code> annotations, please follow the guidelines below:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel class="algolia-no-index"><template slot="_header"><p>Adding <code>@@author</code> tags to indicate authorship</p></template>
+                  <panel header="Adding `@@author` tags to indicate authorship" class="algolia-no-index">
                     <div>
                       <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship"></a></h4>
                       <ul>
@@ -479,7 +480,8 @@ method 2 ...
                   When the first feedback session is opne on TEAMMATES, you will receive an eamil from TEAMMATES. There is nothing for you to do until then.</p>
                 <p>When you do receive that email, TEAMMATES will allow you to access it without using a Google login. However, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a
                   <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. <span class="dimmed">Reason: CS2113/T is a big class. This profile helps us to remember you better, even after the module is over.</span></p>
-                <modal id="modal:peerEvaluations-suitablePhoto" class="algolia-no-index"><template slot="_header"><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Website (extract)</span></template>
+                <modal title="%%Admin <md>:glyphicon-log-in:</md> Project → Deliverables → Website (extract)%%" id="modal:peerEvaluations-suitablePhoto" class="algolia-no-index">
+
                   <div>
                     <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen
                       in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
@@ -533,7 +535,7 @@ method 2 ...
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sat, 08 Feb 2020 14:06:23 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -562,7 +564,6 @@ method 2 ...
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

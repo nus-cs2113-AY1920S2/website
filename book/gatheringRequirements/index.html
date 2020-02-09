@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Gathering Requirements</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -38,7 +38,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="brainstorming">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div><h4 id="brainstorming"><span>Brainstorming</span><a class="fa fa-anchor" href="#brainstorming"></a></h4>
                 </div>
                 </span>
@@ -62,9 +62,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                         <div>
-                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Characteristic of brainstorming</p></template>
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Characteristic of brainstorming" class="algolia-no-index">
                             <question>
                               <p>What is the key characteristic about brainstorming?</p>
                               <ul radio-group="11d89" class="radio-list">
@@ -86,7 +86,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded id="user-surveys">
+                <panel type="seamless" expanded>
                   <span slot="header" class="card-title"><div><h4 id="user-surveys"><span>User Surveys</span><a class="fa fa-anchor" href="#user-surveys"></a></h4>
               </div>
               </span>
@@ -107,7 +107,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded id="observation">
+              <panel type="seamless" expanded>
                 <span slot="header" class="card-title"><div><h4 id="observation"><span>Observation</span><a class="fa fa-anchor" href="#observation"></a></h4>
             </div>
             </span>
@@ -129,7 +129,7 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded id="interviews">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title"><div><h4 id="interviews"><span>Interviews</span><a class="fa fa-anchor" href="#interviews"></a></h4>
           </div>
           </span>
@@ -144,7 +144,7 @@
             <p></p>
             <div>
               <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can produce useful information that project requirements.</strong></p>
-              <popover id="pop:interviews-domainExpert" placement="top"><template slot="header"></template>
+              <popover id="pop:interviews-domainExpert" title placement="top">
                 <div slot="content" class="algolia-no-index">
                   <div>
                     <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed">e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
@@ -157,7 +157,7 @@
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded id="focus-groups">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title"><div><h4 id="focus-groups"><span>Focus Groups</span><a class="fa fa-anchor" href="#focus-groups"></a></h4>
         </div>
         </span>
@@ -193,7 +193,7 @@
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded id="prototyping">
+        <panel type="seamless" expanded>
           <span slot="header" class="card-title"><div><h4 id="prototyping"><span>Prototyping</span><a class="fa fa-anchor" href="#prototyping"></a></h4>
       </div>
       </span>
@@ -233,7 +233,7 @@
       </panel>
     </div>
     <div>
-      <panel type="seamless" expanded id="product-surveys">
+      <panel type="seamless" expanded>
         <span slot="header" class="card-title"><div><h4 id="product-surveys"><span>Product Surveys</span><a class="fa fa-anchor" href="#product-surveys"></a></h4>
     </div>
     </span>
@@ -262,9 +262,7 @@
   </div>
   </div>
   </div>
-
   </div>
-
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
@@ -292,7 +290,6 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

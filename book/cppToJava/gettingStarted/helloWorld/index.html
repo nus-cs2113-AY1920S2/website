@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Getting Started: HelloWorld</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -76,7 +76,7 @@
                     <ul>
                       <li>Java programs consists of
                         <trigger for="pop:helloWorld-statement">statements</trigger>, grouped
-                        <tooltip><template slot="_content">A <em>method</em> is a named sequence of statements</template>methods</tooltip>, which are then grouped into classes.</li>
+                        <tooltip content="A _method_ is a named sequence of statements">methods</tooltip>, which are then grouped into classes.</li>
                       <li>Java is “case-sensitive”, which means <code>SYSTEM</code> is different from <code>System</code>.</li>
                       <li><code>public</code> is an <em>access modifier</em> that indicates the method is accessible from outside this class. Similarly, <code>private</code> access modifier indicates that a method/attribute is not accessible outside the class.</li>
                       <li><code>static</code> indicates this method is defined as a class-level member. Do not worry if you don’t know what that means. It will be explained later.</li>
@@ -86,7 +86,7 @@
                       <li>Java uses squiggly braces (<code>{</code> and <code>}</code>) to group things together.</li>
                       <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
                     </ul>
-                    <popover id="pop:helloWorld-statement" placement="top"><template slot="header">Statements</template>
+                    <popover id="pop:helloWorld-statement" title="Statements" placement="top">
                       <div slot="content" class="algolia-no-index">
                         <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
                         <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
@@ -110,9 +110,7 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -140,7 +138,6 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

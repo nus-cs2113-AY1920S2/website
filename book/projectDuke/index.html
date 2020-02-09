@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Project Duke</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
+
+
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -238,7 +238,7 @@ done 2
                   <div>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                     <div class="indented">
-                      <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Classes</code></strong></p></template>
+                      <panel header="**Extension: `A-Classes`**" class="algolia-no-index">
                         <div>
                           <div>
                             <div></div>
@@ -246,8 +246,8 @@ done 2
                             <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
                           </div>
                           <p>While it is possible to represent a task list as a multi-dimensional array containing
-                            <tooltip><template slot="_content"><code>String</code>, <code>int</code>, <code>boolean</code> etc.</template>primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
-                          <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                            <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
+                          <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
@@ -332,7 +332,7 @@ deadline do homework /by no idea :-p
                   <div>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                     <div class="indented">
-                      <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Inheritance</code></strong></p></template>
+                      <panel header="**Extension: `A-Inheritance`**" class="algolia-no-index">
                         <div>
                           <div>
                             <div></div>
@@ -341,7 +341,7 @@ deadline do homework /by no idea :-p
                           </div>
                           <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
                           <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
-                          <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                          <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
 
     <span class="hljs-keyword">protected</span> String by;
@@ -389,7 +389,7 @@ blah
                   <div>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                     <div class="indented">
-                      <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Exceptions</code></strong></p></template>
+                      <panel header="**Extension: `A-Exceptions`**" class="algolia-no-index">
                         <div>
                           <div>
                             <div></div>
@@ -436,7 +436,7 @@ delete 3
                   <div>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                     <div class="indented">
-                      <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Collections</code></strong></p></template>
+                      <panel header="**Extension: `A-Collections`**" class="algolia-no-index">
                         <div>
                           <div>
                             <div></div>
@@ -481,7 +481,7 @@ T | 1 | join sports club
                       such as <code>MMM d yyyy</code> e.g., (<code>Oct 15 2019</code>).</li>
                     <li><strong>Stretch goal</strong>: Use dates and times in more meaningful ways. e.g., add a command to print deadlines/events occurring on a specific date.</li>
                   </ul>
-                  <panel minimized class="algolia-no-index"><template slot="_header"><p>Using dates/times in Java</p></template>
+                  <panel header="Using dates/times in Java" minimized class="algolia-no-index">
                     <p>A code snippet using the <code>LocalDate</code> class:</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.time.LocalDate;
 <span class="hljs-keyword">import</span> java.time.format.DateTimeFormatter;
@@ -546,7 +546,7 @@ T | 1 | join sports club
                   <div>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                     <div class="indented">
-                      <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-JavaFx</code></strong></p></template>
+                      <panel header="**Extension: `A-JavaFx`**" class="algolia-no-index">
                         <div>
                           <div>
                             <div></div>
@@ -570,8 +570,8 @@ T | 1 | join sports club
                       <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
                     </div>
                     <p>While it is possible to represent a task list as a multi-dimensional array containing
-                      <tooltip><template slot="_content"><code>String</code>, <code>int</code>, <code>boolean</code> etc.</template>primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
-                    <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                      <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
+                    <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
@@ -602,7 +602,7 @@ t.markAsDone()
                     </div>
                     <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
                     <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
-                    <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                    <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
 
     <span class="hljs-keyword">protected</span> String by;
@@ -746,7 +746,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                     </ul>
                     <p><strong>Adding JUnit support to your project:</strong> As JUnit is a third-party library, you need to add support to it specifically in your project.</p>
                     <tabs>
-                      <tab><template slot="_header">In Intellij, without Gradle</template>
+                      <tab header="In Intellij, without Gradle">
                         <ol>
                           <li>Add a folder named <code>[project root]\src\test\java\</code> (you may have to do this outside of Intellij)</li>
                           <li>Go to Intellij and add a new module to the project as follows.
@@ -796,12 +796,12 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                           </li>
                         </ol>
                       </tab>
-                      <tab class="algolia-no-index"><template slot="_header">With Gradle</template>
+                      <tab header="With Gradle" class="algolia-no-index">
 
 
 
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from) to find how to use JUnit via Gradle.</p>
-                        <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension <code>A-Gradle</code></strong></p></template>
+                        <panel header="**Extension `A-Gradle`**" class="algolia-no-index">
                           <div>
                             <div>
                               <div></div>
@@ -864,7 +864,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                     <p>Use checkStyle to detect coding style violations.</p>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Gradle for your project, refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from)
                       to find how to use CheckStyle via Gradle. Alternatively, you can try the CheckStyle plugin for Intellij.</p>
-                    <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension <code>A-Gradle</code></strong></p></template>
+                    <panel header="**Extension `A-Gradle`**" class="algolia-no-index">
                       <div>
                         <div>
                           <div></div>
@@ -922,7 +922,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                     </ul>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Gradle for your project, refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from)
                       to find how to create a jar file using Gradle.</p>
-                    <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension <code>A-Gradle</code></strong></p></template>
+                    <panel header="**Extension `A-Gradle`**" class="algolia-no-index">
                       <div>
                         <div>
                           <div></div>
@@ -1344,9 +1344,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
@@ -1374,7 +1372,6 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

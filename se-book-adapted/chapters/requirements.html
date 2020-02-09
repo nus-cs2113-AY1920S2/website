@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter : Requirements</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -209,7 +209,7 @@
               <h1 id="requirements"><span>Requirements</span><a class="fa fa-anchor" href="#requirements"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded id="introduction"><template slot="_header"><h4 id="introduction">Introduction<a class="fa fa-anchor" href="#introduction"></a></h4></template>
+          <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -243,7 +243,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" expanded id="non-functional-requirements"><template slot="_header"><h4 id="non-functional-requirements">Non-Functional Requirements<a class="fa fa-anchor" href="#non-functional-requirements"></a></h4></template>
+          <panel type="seamless" header="#### Non-Functional Requirements<a class='fa fa-anchor' href='#non-functional-requirements'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -266,13 +266,13 @@
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
                   <ul>
                     <li>Data requirements e.g. size,
-                      <tooltip><template slot="_content">how often do data change</template>volatility</tooltip>,
-                      <tooltip><template slot="_content">saving data permanenetly</template>persistency</tooltip> etc.,</li>
+                      <tooltip content="how often do data change">volatility</tooltip>,
+                      <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
                     <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                     <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
                       Scalability, Security, Stability, Testability, and more ...</li>
                   </ul>
-                  <panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p></template>
+                  <panel type="seamless" header="<md>:fas-cube:</md> Some concrete examples of NFRs" expanded>
                     <ul>
                       <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                       <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5
@@ -295,9 +295,9 @@
               </div>
               <div>
                 <div>
-                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> TEAMMATES NFRs</p></template>
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
                         <question>
                           <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                           <ul class="task-list">
@@ -322,7 +322,7 @@
               </div>
             </div>
           </panel>
-          <panel type="seamless" expanded id="prioritizing-requirements"><template slot="_header"><h4 id="prioritizing-requirements">Prioritizing Requirements<a class="fa fa-anchor" href="#prioritizing-requirements"></a></h4></template>
+          <panel type="seamless" header="#### Prioritizing Requirements<a class='fa fa-anchor' href='#prioritizing-requirements'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -352,7 +352,7 @@
                     <li><code>Level 0</code>, <code>Level 1</code>, <code>Level 2</code>, ...</li>
                   </ul>
                 </box>
-                <p><strong>Some requirements can be discarded if they are considered ‘out of <em><tooltip><template slot="_content">the extent to which the software features should go</template>scope</tooltip></em>’.</strong></p>
+                <p><strong>Some requirements can be discarded if they are considered ‘out of <em><tooltip content="the extent to which the software features should go">scope</tooltip></em>’.</strong></p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The requirement given below is for a Calendar application. Stakeholder of the software (e.g. product designers) might decide the following requirement is not in the scope
                     of the software.</p>
@@ -364,7 +364,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" expanded id="quality-of-requirements"><template slot="_header"><h4 id="quality-of-requirements">Quality of Requirements<a class="fa fa-anchor" href="#quality-of-requirements"></a></h4></template>
+          <panel type="seamless" header="#### Quality of Requirements<a class='fa fa-anchor' href='#quality-of-requirements'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -389,7 +389,7 @@
                   <li>Feasible (realistic, possible)</li>
                   <li>Independent</li>
                   <li>
-                    <tooltip><template slot="_content">Not divisible any further</template>Atomic</tooltip>
+                    <tooltip content="Not divisible any further">Atomic</tooltip>
                   </li>
                   <li>Necessary</li>
                   <li>Implementation-free (i.e. abstract)</li>
@@ -431,7 +431,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sat, 08 Feb 2020 14:06:23 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -460,7 +460,6 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>
