@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Test Case Design: Combining Test Inputs: Test Input Combination Strategies</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -168,7 +168,7 @@
                       factors. The resulting number of test cases is lower than the <em>all combinations</em> strategy, but higher than the <em>at least once</em> approach.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> this strategy generates 9 test cases:</p>
-                      <panel type="seamless" header="see steps" class="algolia-no-index">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>see steps</p></template>
                         <p>Let's first consider inputs p1 and p2:</p>
                         <div class="table-responsive">
                           <table class="markbind-table table table-bordered table-striped">
@@ -191,7 +191,7 @@
                           </table>
                         </div>
                         <p>These values can generate
-                          <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
+                          <tooltip><template slot="_content">(a,1)(a,2)(a,3)(b,1)(b,2),...</template>3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
                         <p>Next, let's consider p1 and p3.</p>
                         <div class="table-responsive">
                           <table class="markbind-table table table-bordered table-striped">
@@ -214,7 +214,7 @@
                           </table>
                         </div>
                         <p>These values can generate
-                          <tooltip content="(a,T)(a,F)(b,T)(b,F),...">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
+                          <tooltip><template slot="_content">(a,T)(a,F)(b,T)(b,F),...</template>3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
                         <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
                         <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
                       </panel>
@@ -351,7 +351,9 @@
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -379,6 +381,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

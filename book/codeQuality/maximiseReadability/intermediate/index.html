@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Code Quality: [Guideline] Maximise Readability: Intermediate</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -39,7 +39,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="structure-code-logically">
                     <span slot="header" class="card-title"><div><h4 id="structure-code-logically"><span>Structure Code Logically</span><a class="fa fa-anchor" href="#structure-code-logically"></a></h4>
                 </div>
                 </span>
@@ -62,7 +62,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="do-not-trip-up-reader">
                   <span slot="header" class="card-title"><div><h4 id="do-not-trip-up-reader"><span>Do Not 'Trip Up' Reader</span><a class="fa fa-anchor" href="#do-not-trip-up-reader"></a></h4>
               </div>
               </span>
@@ -90,7 +90,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="practice-kissing">
                 <span slot="header" class="card-title"><div><h4 id="practice-kissing"><span>Practice KISSing</span><a class="fa fa-anchor" href="#practice-kissing"></a></h4>
             </div>
             </span>
@@ -120,7 +120,7 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="avoid-premature-optimizations">
               <span slot="header" class="card-title"><div><h4 id="avoid-premature-optimizations"><span>Avoid Premature Optimizations</span><a class="fa fa-anchor" href="#avoid-premature-optimizations"></a></h4>
           </div>
           </span>
@@ -155,7 +155,7 @@
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="slap-hard">
             <span slot="header" class="card-title"><div><h4 id="slap-hard"><span>SLAP Hard</span><a class="fa fa-anchor" href="#slap-hard"></a></h4>
         </div>
         </span>
@@ -191,7 +191,7 @@ processData();
 displayResult();
 </code></pre>
             </box>
-            <modal title id="modal:slap-abstraction" class="algolia-no-index">
+            <modal id="modal:slap-abstraction" class="algolia-no-index"><template slot="_header"></template>
               <div>
                 <div></div>
                 <p></p>
@@ -255,7 +255,9 @@ displayResult();
   </div>
   </div>
   </div>
+
   </div>
+
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
@@ -283,6 +285,7 @@ displayResult();
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

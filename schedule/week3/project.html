@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 3 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -79,6 +78,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -131,7 +131,7 @@
                 <div>
                   <ul>
                     <li>Implement the following
-                      <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> <mark>in the given order</mark>.</li>
+                      <tooltip><template slot="_content">in this context, an <em>increment</em> is a Duke <em>level</em> or a Duke <em>extension</em></template>increments</tooltip> <mark>in the given order</mark>.</li>
                   </ul>
                 </div>
                 <div>
@@ -275,7 +275,7 @@ done 2
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel header="**Extension: `A-Classes`**" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Classes</code></strong></p></template>
                               <div>
                                 <div>
                                   <div></div>
@@ -283,8 +283,8 @@ done 2
                                   <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
                                 </div>
                                 <p>While it is possible to represent a task list as a multi-dimensional array containing
-                                  <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
-                                <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
+                                  <tooltip><template slot="_content"><code>String</code>, <code>int</code>, <code>boolean</code> etc.</template>primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
+                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
@@ -346,7 +346,7 @@ t.markAsDone()
                   <li>After forming teams, <strong>set up a weekly project meeting time/venue (and communication channels) with your team members</strong>:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-teams._include_.html#teamCommunication" header="Admin <md>:glyphicon-log-in:</md> **Teams → Communication**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="teamCommunication"></panel>
+                  <panel type src="/website/admin/tp-teams._include_.html#teamCommunication" class="embedding algolia-no-index" minimized fragment="teamCommunication"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Teams → Communication</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -379,7 +379,7 @@ t.markAsDone()
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -408,6 +408,7 @@ t.markAsDone()
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

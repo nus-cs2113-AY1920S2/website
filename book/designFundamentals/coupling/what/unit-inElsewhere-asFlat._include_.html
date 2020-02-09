@@ -32,10 +32,10 @@
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\designFundamentals\coupling\what\text.md">
         <div>
           <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\designFundamentals\coupling\what\exercises.md">
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+            <panel expandable><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\designFundamentals\coupling\what\q-essay-coupling-levels.md">
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling levels of alternative designs">
+                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
                     <question has-input="true">
                       <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
                       <box>
@@ -53,7 +53,7 @@
               </div>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\designFundamentals\coupling\what\q-essay-regression-coupling.md">
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: regressions and coupling.">
+                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> regressions and coupling.</p></template>
                     <question has-input="true">
                       <p>Explain the link (if any) between regressions and coupling.</p>
                       <div slot="answer">
@@ -65,13 +65,13 @@
               </div>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\designFundamentals\coupling\what\q-essay-coupling-testability.md">
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling and testability">
+                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
                     <question has-input="true">
                       <p>Discuss the relationship between coupling and
-                        <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                        <tooltip><template slot="_content">a measure of how easily a given component can be tested</template>testability</tooltip>.</p>
                       <div slot="answer">
                         <p>Coupling decreases testability because if the
-                          <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                          <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                       </div>
                     </question>
                   </panel>
@@ -79,7 +79,7 @@
               </div>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\designFundamentals\coupling\what\q-tick-statementsAboutCoupling.md">
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about coupling">
+                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
                     <question>
                       <p>Choose the correct statements.</p>
                       <ul class="task-list">

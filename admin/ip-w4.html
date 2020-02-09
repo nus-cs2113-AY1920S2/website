@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: iP: Week 4</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -237,7 +237,7 @@
                     </p>
                   </box>
                 </div>
-                <modal large title="Pull Request (PR)" id="modal:ipTasks-createPr" class="algolia-no-index">
+                <modal large id="modal:ipTasks-createPr" class="algolia-no-index"><template slot="_header">Pull Request (PR)</template>
                   <p><em>Pull Requests</em> is a mechanism for offering code to a repository e.g., a bug fix or a new feature. PRs allow developers to review, discuss, and refine proposed code changes before incorporating (i.e., <em>merging</em>) the new
                     code to the repository.</p>
                   <p>Resources:</p>
@@ -315,7 +315,7 @@ deadline do homework /by no idea :-p
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel header="**Extension: `A-Inheritance`**" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Inheritance</code></strong></p></template>
                               <div>
                                 <div>
                                   <div></div>
@@ -324,7 +324,7 @@ deadline do homework /by no idea :-p
                                 </div>
                                 <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
                                 <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
-                                <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
+                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
 
     <span class="hljs-keyword">protected</span> String by;
@@ -410,8 +410,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                     <li>Read up the following guidelines:</li>
                   </ul>
                   <div class="indented-level2">
-                    <panel type src="/website/admin/appendixE-gitHub._include_.html#pr-review-guidelines" header="Admin <md>:glyphicon-log-in:</md> **Using GitHub → Guidelines for Reviewing PRs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                      class="embedding" expanded fragment="pr-review-guidelines"></panel>
+                    <panel type src="/website/admin/appendixE-gitHub._include_.html#pr-review-guidelines" class="embedding" expanded fragment="pr-review-guidelines"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using GitHub → Guidelines for Reviewing PRs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </div>
                   <p></p>
                   <ul>
@@ -428,7 +427,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                     </span> icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/appendixB-policies._include_.html#policy-reuse" header="Admin <md>:glyphicon-log-in:</md> **Module Policies → Policy on Reuse**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="policy-reuse"></panel>
+                  <panel type src="/website/admin/appendixB-policies._include_.html#policy-reuse" class="embedding algolia-no-index" minimized fragment="policy-reuse"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module Policies → Policy on Reuse</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -465,7 +464,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -494,6 +493,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

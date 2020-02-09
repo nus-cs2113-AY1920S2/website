@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 10 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -79,6 +78,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -96,7 +96,7 @@
           </nav>
           <p></p>
           <h1 id="week-10-mar-23-topics">Week 10 <small><small><span class="dimmed">[Mar 23]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-10-mar-23-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week10/topics.html#W10-1">W10.1</a>] <strong>Logging</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -229,7 +229,7 @@
           </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W10-1"></span></p>
-          <panel type="seamless" no-close expandable="true" expanded>
+          <panel type="seamless" no-close expandable="true" expanded id="w10-1-logging">
             <span slot="header" class="card-title"><div><h2 id="w10-1-logging"><span class="dimmed">[W10.1]</span> <strong>Logging</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
             <a class="fa fa-anchor" href="#w10-1-logging"></a>
             </h2>
@@ -237,7 +237,7 @@
         </span>
         <div class="indented-level1">
           <p><span id="W10-1a"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/errorHandling/logging/what">
+          <panel type="seamless" expanded popup-url="/website/book/errorHandling/logging/what" id="implementation-error-handling-logging-what">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="implementation-error-handling-logging-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Logging →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-error-handling-logging-what"></a></h4>
@@ -262,8 +262,8 @@
                     their associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again.</p>
                   <div v-closeable alt="blackbox photo">
                     <box>
-                      <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <tooltip content="flight data recorder">black box</tooltip> of an airplane</strong>; they
-                        don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
+                      <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <tooltip><template slot="_content">flight data recorder</template>black box</tooltip> of an airplane</strong>;
+                        they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
                       <div class="non-printable">
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG" width="250"><br>
                           <sub>source:<a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG">https://commons.wikimedia.org</a></sub></p>
@@ -273,9 +273,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Logging vs blackbox" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Logging vs blackbox</p></template>
                           <question>
                             <p>Why is logging like having the 'black box' in an airplane?</p>
                             <ul radio-group="6f5b0" class="radio-list">
@@ -297,7 +297,7 @@
             </div>
           </panel>
           <p><span id="W10-1b"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/errorHandling/logging/how">
+          <panel type="seamless" expanded popup-url="/website/book/errorHandling/logging/how" id="implementation-error-handling-logging-how">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -318,7 +318,7 @@
                 <p></p>
                 <div>
                   <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging
-                    <tooltip content="how much information to record">intensity</tooltip>.</p>
+                    <tooltip><template slot="_content">how much information to record</template>intensity</tooltip>.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sample Java code uses Java’s default logging mechanism.</p>
                     <p>First, import the relevant Java package:</p>
@@ -328,8 +328,8 @@
                     <pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);
 </code></pre>
                     <p>Now, you can use the <code>Logger</code> object to log information. Note the use of
-                      <popover content="`INFO`, `WARNING` etc.">logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will
-                      not be written to the log file at all.</p>
+                      <popover><template slot="content"><code>INFO</code>, <code>WARNING</code> etc.</template>logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified
+                      as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not be written to the log file at all.</p>
                     <pre><code class="hljs java"><span class="hljs-comment">// log a message at INFO level</span>
 logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);
 <span class="hljs-comment">//...</span>
@@ -345,7 +345,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                       <p><strong>Tutorials</strong>:</p>
                       <ul>
                         <li><a href="http://www.vogella.com/tutorials/Logging/article.html"><strong>Java Logging API - Tutorial</strong></a> -- A tutorial by <em>Lars Vogella</em></li>
@@ -371,7 +371,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         </div>
         </panel>
         <p><span id="W10-2"></span></p>
-        <panel type="seamless" no-close expandable="true" expanded>
+        <panel type="seamless" no-close expandable="true" expanded id="w10-2-assertions">
           <span slot="header" class="card-title"><div><h2 id="w10-2-assertions"><span class="dimmed">[W10.2]</span> <strong>Assertions</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
           <a class="fa fa-anchor" href="#w10-2-assertions"></a>
           </h2>
@@ -379,7 +379,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
       </span>
       <div class="indented-level1">
         <p><span id="W10-2a"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/what">
+        <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/what" id="implementation-error-handling-assertions-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="implementation-error-handling-assertions-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Assertions →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-error-handling-assertions-what"></a></h4>
@@ -416,7 +416,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           </div>
         </panel>
         <p><span id="W10-2b"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/how">
+        <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/how" id="implementation-error-handling-assertions-how">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -427,7 +427,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/errorHandling/assertions/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Error Handling → Assertions → What%%" popup-url="/website/book/errorHandling/assertions/what" class="algolia-no-index"></panel>
+                  <panel src="/website/book/errorHandling/assertions/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/errorHandling/assertions/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Error Handling → Assertions → What</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -463,7 +463,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                  <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                     <p><strong>Tutorials</strong>:</p>
                     <ul>
                       <li><a href="https://www.javatpoint.com/assertion-in-java"><strong>Java Assertions</strong></a> -- a simple tutorial from <em><a href="http://javatpoint.com">javatpoint.com</a></em></li>
@@ -481,7 +481,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           </div>
         </panel>
         <p><span id="W10-2c"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/when">
+        <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/when" id="implementation-error-handling-assertions-when">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -492,8 +492,8 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/errorHandling/assertions/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Error Handling → Assertions → What%%" popup-url="/website/book/errorHandling/assertions/what" class="algolia-no-index"></panel>
-                  <panel src="/website/book/errorHandling/exceptions/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Error Handling → Exceptions → What%%" popup-url="/website/book/errorHandling/exceptions/what" class="algolia-no-index"></panel>
+                  <panel src="/website/book/errorHandling/assertions/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/errorHandling/assertions/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Error Handling → Assertions → What</span></p></template></panel>
+                  <panel src="/website/book/errorHandling/exceptions/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/errorHandling/exceptions/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Error Handling → Exceptions → What</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -524,9 +524,9 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Assertions failure in Calculator" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Assertions failure in Calculator</p></template>
                         <question>
                           <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
                           <ul radio-group="f7dad" class="radio-list">
@@ -544,7 +544,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statement about exceptions and assertions" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statement about exceptions and assertions</p></template>
                         <question>
                           <p>Which statements are correct?</p>
                           <ul class="task-list">
@@ -567,7 +567,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
       </panel>
       <p></p>
       <p><span id="W10-3"></span></p>
-      <panel type="seamless" no-close expandable="true" expanded>
+      <panel type="seamless" no-close expandable="true" expanded id="w10-3-architecture">
         <span slot="header" class="card-title"><div><h2 id="w10-3-architecture"><span class="dimmed">[W10.3]</span> <strong>Architecture</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
         <a class="fa fa-anchor" href="#w10-3-architecture"></a>
         </h2>
@@ -577,7 +577,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
       <br>
       <h3 id="introduction"><span class="dimmed"><strong>Introduction</strong></span><a class="fa fa-anchor" href="#introduction"></a></h3>
       <p><span id="W10-3a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/designApproaches/multilevelDesign/what">
+      <panel type="seamless" expanded popup-url="/website/book/designApproaches/multilevelDesign/what" id="design-introduction-multi-level-design">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.3a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -610,11 +610,11 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                   <img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300">
                   <p>Here are examples of lower level designs of some components of the same software:</p>
                   <tabs>
-                    <tab header="UI">
+                    <tab><template slot="_header">UI</template>
                       <img src="https://se-edu.github.io/addressbook-level3/images/UiClassDiagram.png" width="700"></tab>
-                    <tab header="Logic" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header">Logic</template>
                       <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="800"></tab>
-                    <tab header="Storage" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header">Storage</template>
                       <img src="https://se-edu.github.io/addressbook-level3/images/StorageClassDiagram.png" width="700"></tab>
                   </tabs>
                 </box>
@@ -625,7 +625,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         </div>
       </panel>
       <p><span id="W10-3b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/architecture/introduction/what">
+      <panel type="seamless" expanded popup-url="/website/book/architecture/introduction/what" id="design-architecture-introduction-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.3b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="design-architecture-introduction-what"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-architecture-introduction-what"></a></h4>
@@ -673,9 +673,9 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about architecture" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about architecture</p></template>
                       <question>
                         <p>Choose the correct statement</p>
                         <ul class="task-list">
@@ -702,7 +702,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         </div>
       </panel>
       <p><span id="W10-3c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/architecture/architectureDiagrams/reading">
+      <panel type="seamless" expanded popup-url="/website/book/architecture/architectureDiagrams/reading" id="design-architecture-architecture-diagrams-reading">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.3c</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="design-architecture-architecture-diagrams-reading"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Architecture Diagrams →</span></span></small> <strong><span>Reading</span></strong><a class="fa fa-anchor" href="#design-architecture-architecture-diagrams-reading"></a></h4>
@@ -711,7 +711,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/architecture/introduction/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Architecture → Introduction → What%%" popup-url="/website/book/architecture/introduction/what" class="algolia-no-index"></panel>
+                <panel src="/website/book/architecture/introduction/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/architecture/introduction/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Architecture → Introduction → What</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -729,21 +729,21 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some example architecture diagrams:</p>
                   <tabs>
-                    <tab header="TEAMMATES">
+                    <tab><template slot="_header">TEAMMATES</template>
                       <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
                     </tab>
-                    <tab header="se-edu/addressbook-level3" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header">se-edu/addressbook-level3</template>
                       <p><img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300"><br></p>
                     </tab>
-                    <tab header="Example 1" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header">Example 1</template>
                       <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
                         <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
                     </tab>
-                    <tab header="Example 2" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header">Example 2</template>
                       <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
                         <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
                     </tab>
-                    <tab header="Example 3" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header">Example 3</template>
                       <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
                         <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
                     </tab>
@@ -758,7 +758,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
       <br>
       <h3 id="architectural-styles"><span class="dimmed"><strong>Architectural Styles</strong></span><a class="fa fa-anchor" href="#architectural-styles"></a></h3>
       <p><span id="W10-3d"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/introduction/what">
+      <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/introduction/what" id="design-architecture-styles-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.3d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="design-architecture-styles-what"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Styles →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-architecture-styles-what"></a></h4>
@@ -767,7 +767,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/architecture/introduction/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Architecture → Introduction → What%%" popup-url="/website/book/architecture/introduction/what" class="algolia-no-index"></panel>
+                <panel src="/website/book/architecture/introduction/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/architecture/introduction/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Architecture → Introduction → What</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -787,7 +787,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                   ...
                 </p>
               </box>
-              <modal large title="Building Architecture Styles" id="modal:archiStyles-buildingArchitectures" class="algolia-no-index">
+              <modal large id="modal:archiStyles-buildingArchitectures" class="algolia-no-index"><template slot="_header">Building Architecture Styles</template>
                 <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg" width="600"><br>
                   <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
               </modal>
@@ -797,7 +797,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         </div>
       </panel>
       <p><span id="W10-3e"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/nTier/what">
+      <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/nTier/what" id="design-architecture-styles-n-tier-style-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.3e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -830,7 +830,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         </div>
       </panel>
       <p><span id="W10-3f"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/clientServer/what">
+      <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/clientServer/what" id="design-architecture-styles-client-server-style-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.3f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -865,7 +865,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     </div>
     </panel>
     <p><span id="W10-4"></span></p>
-    <panel type="seamless" no-close expandable="true" expanded>
+    <panel type="seamless" no-close expandable="true" expanded id="w10-4-design-principles">
       <span slot="header" class="card-title"><div><h2 id="w10-4-design-principles"><span class="dimmed">[W10.4]</span> <strong>Design Principles</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
       <a class="fa fa-anchor" href="#w10-4-design-principles"></a>
       </h2>
@@ -875,7 +875,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     <br>
     <h3 id="abstraction"><span class="dimmed"><strong>Abstraction</strong></span><a class="fa fa-anchor" href="#abstraction"></a></h3>
     <p><span id="W10-4a"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/designFundamentals/abstraction/what">
+    <panel type="seamless" expanded popup-url="/website/book/designFundamentals/abstraction/what" id="design-design-fundamentals-abstraction-what">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.4a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="design-design-fundamentals-abstraction-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Abstraction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-abstraction-what"></a></h4>
@@ -932,7 +932,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     <br>
     <h3 id="coupling"><span class="dimmed"><strong>Coupling</strong></span><a class="fa fa-anchor" href="#coupling"></a></h3>
     <p><span id="W10-4b"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/designFundamentals/coupling/what">
+    <panel type="seamless" expanded popup-url="/website/book/designFundamentals/coupling/what" id="design-design-fundamentals-coupling-what">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.4b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="design-design-fundamentals-coupling-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-what"></a></h4>
@@ -964,9 +964,9 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling levels of alternative designs" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
                     <question has-input="true">
                       <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
                       <box>
@@ -982,7 +982,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: regressions and coupling." class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> regressions and coupling.</p></template>
                     <question has-input="true">
                       <p>Explain the link (if any) between regressions and coupling.</p>
                       <div slot="answer" class="algolia-no-index">
@@ -992,19 +992,19 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling and testability" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
                     <question has-input="true">
                       <p>Discuss the relationship between coupling and
-                        <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                        <tooltip><template slot="_content">a measure of how easily a given component can be tested</template>testability</tooltip>.</p>
                       <div slot="answer" class="algolia-no-index">
                         <p>Coupling decreases testability because if the
-                          <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                          <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                       </div>
                     </question>
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about coupling" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
                     <question>
                       <p>Choose the correct statements.</p>
                       <ul class="task-list">
@@ -1028,7 +1028,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
       </div>
     </panel>
     <p><span id="W10-4c"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/designFundamentals/coupling/how">
+    <panel type="seamless" expanded popup-url="/website/book/designFundamentals/coupling/how" id="design-design-fundamentals-coupling-how">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.4c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1039,7 +1039,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Design Fundamentals → Coupling → What%%" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"></panel>
+              <panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Coupling → What</span></p></template></panel>
             </p>
           </div>
           <p></p>
@@ -1056,7 +1056,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If <code>Foo</code> class calls the method <code>Bar#read()</code>, <code>Foo</code> is coupled to <code>Bar</code> because a change to <code>Bar</code> can potentially (but
                 not always) require a change in the <code>Foo</code> class <span class="dimmed">e.g. if the signature of the <code>Bar#read()</code> is changed, <code>Foo</code> needs to change as well, but a change to the <code>Bar#write()</code> method may not require a change in the <code>Foo</code> class because <code>Foo</code> does not call <code>Bar#write()</code></span>.</p>
-              <panel type="seamless" header="%%code for the above example%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">code for the above example</span></p></template>
                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     ...
     <span class="hljs-keyword">new</span> Bar().read();
@@ -1089,9 +1089,9 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which indicate coupling?" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which indicate coupling?</p></template>
                     <question>
                       <p>Which of these indicate a coupling between components A and B?</p>
                       <ul class="task-list">
@@ -1116,7 +1116,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
       </div>
     </panel>
     <p><span id="W10-4d"></span></p>
-    <panel type="seamless" popup-url="/website/book/designFundamentals/coupling/types" class="algolia-no-index">
+    <panel type="seamless" popup-url="/website/book/designFundamentals/coupling/types" id="design-design-fundamentals-coupling-types-of-coupling" class="algolia-no-index">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.4d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1126,7 +1126,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Design Fundamentals → Coupling → What%%" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"></panel>
+              <panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Coupling → What</span></p></template></panel>
             </p>
           </div>
           <p></p>
@@ -1157,7 +1157,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     <br>
     <h3 id="cohesion"><span class="dimmed"><strong>Cohesion</strong></span><a class="fa fa-anchor" href="#cohesion"></a></h3>
     <p><span id="W10-4e"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/designFundamentals/cohesion/what">
+    <panel type="seamless" expanded popup-url="/website/book/designFundamentals/cohesion/what" id="design-design-fundamentals-cohesion-what">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.4e</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="design-design-fundamentals-cohesion-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Cohesion →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-cohesion-what"></a></h4>
@@ -1190,7 +1190,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
       </div>
     </panel>
     <p><span id="W10-4f"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/designFundamentals/cohesion/how">
+    <panel type="seamless" expanded popup-url="/website/book/designFundamentals/cohesion/how" id="design-design-fundamentals-cohesion-how">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.4f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1201,8 +1201,8 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/designFundamentals/cohesion/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Design Fundamentals → Cohesion →
-What%%" class="algolia-no-index"></panel>
+              <panel src="/website/book/designFundamentals/cohesion/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Cohesion →
+What</span></p></template></panel>
             </p>
           </div>
           <p></p>
@@ -1228,9 +1228,9 @@ What%%" class="algolia-no-index"></panel>
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class is more cohesive?" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which class is more cohesive?</p></template>
                     <question has-input="true">
                       <p>Compare the cohesion of the following two versions of the <code>EmailMessage</code> class. Which one is more cohesive and why?</p>
                       <pre><code class="hljs java"><span class="hljs-comment">// version-1</span>
@@ -1290,7 +1290,7 @@ What%%" class="algolia-no-index"></panel>
     <br>
     <h3 id="some-other-principles"><span class="dimmed"><strong>Some other principles</strong></span><a class="fa fa-anchor" href="#some-other-principles"></a></h3>
     <p><span id="W10-4g"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/principles/singleResponsibilityPrinciple">
+    <panel type="seamless" expanded popup-url="/website/book/principles/singleResponsibilityPrinciple" id="principles-single-responsibility-principle">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.4g</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1326,7 +1326,7 @@ What%%" class="algolia-no-index"></panel>
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-paperclip:</md>  Resources" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span>  Resources</p></template>
                 <ul>
                   <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
                   <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
@@ -1339,7 +1339,7 @@ What%%" class="algolia-no-index"></panel>
       </div>
     </panel>
     <p><span id="W10-4h"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/principles/separationOfConcernsPrinciple">
+    <panel type="seamless" expanded popup-url="/website/book/principles/separationOfConcernsPrinciple" id="principles-separation-of-concerns-principle">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.4h</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1373,7 +1373,7 @@ What%%" class="algolia-no-index"></panel>
                 <li>A specific entity, such as the code related to the <code>Employee</code> entity</li>
               </ul>
             </box>
-            <p><strong>Applying <tooltip content="Separation of Concerns">SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
+            <p><strong>Applying <tooltip><template slot="_content">Separation of Concerns</template>SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how the
                 security is implemented.</p>
@@ -1383,7 +1383,7 @@ What%%" class="algolia-no-index"></panel>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The
                 <trigger trigger="click" for="modal:soc-nTier">n-tier architecture</trigger> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p>
             </box>
-            <modal title="TextBook <md>:glyphicon-log-in:</md>" id="modal:soc-nTier" class="algolia-no-index">
+            <modal id="modal:soc-nTier" class="algolia-no-index"><template slot="_header">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
               <div>
                 <div></div>
                 <p></p>
@@ -1411,7 +1411,7 @@ What%%" class="algolia-no-index"></panel>
               </div>
             </modal>
             <p><strong>This principle should lead to higher <trigger trigger="click" for="soc-cohesion">cohesion</trigger> and lower <trigger trigger="click" for="soc-coupling">coupling</trigger>.</strong></p>
-            <modal title="TextBook <md>:glyphicon-log-in:</md>" id="soc-coupling" class="algolia-no-index">
+            <modal id="soc-coupling" class="algolia-no-index"><template slot="_header">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
               <div>
                 <div></div>
                 <p></p>
@@ -1421,7 +1421,7 @@ What%%" class="algolia-no-index"></panel>
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                    <h4 id="what-2"><span>What</span><a class="fa fa-anchor" href="#what-2"></a></h4>
                   </div>
                   <div id="main">
                     <div>
@@ -1439,9 +1439,9 @@ What%%" class="algolia-no-index"></panel>
                     </div>
                     <div>
                       <div>
-                        <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                        <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling levels of alternative designs" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
                               <question has-input="true">
                                 <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
                                 <box>
@@ -1457,7 +1457,7 @@ What%%" class="algolia-no-index"></panel>
                             </panel>
                           </div>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: regressions and coupling." class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> regressions and coupling.</p></template>
                               <question has-input="true">
                                 <p>Explain the link (if any) between regressions and coupling.</p>
                                 <div slot="answer" class="algolia-no-index">
@@ -1467,19 +1467,19 @@ What%%" class="algolia-no-index"></panel>
                             </panel>
                           </div>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling and testability" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
                               <question has-input="true">
                                 <p>Discuss the relationship between coupling and
-                                  <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                                  <tooltip><template slot="_content">a measure of how easily a given component can be tested</template>testability</tooltip>.</p>
                                 <div slot="answer" class="algolia-no-index">
                                   <p>Coupling decreases testability because if the
-                                    <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                                    <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                                 </div>
                               </question>
                             </panel>
                           </div>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about coupling" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
                               <question>
                                 <p>Choose the correct statements.</p>
                                 <ul class="task-list">
@@ -1503,7 +1503,7 @@ What%%" class="algolia-no-index"></panel>
                 </div>
               </div>
             </modal>
-            <modal title="TextBook <md>:glyphicon-log-in:</md>" id="soc-cohesion" class="algolia-no-index">
+            <modal id="soc-cohesion" class="algolia-no-index"><template slot="_header">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
               <div>
                 <div></div>
                 <p></p>
@@ -1513,7 +1513,7 @@ What%%" class="algolia-no-index"></panel>
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                    <h4 id="what-3"><span>What</span><a class="fa fa-anchor" href="#what-3"></a></h4>
                   </div>
                   <div id="main">
                     <div>
@@ -1536,9 +1536,9 @@ What%%" class="algolia-no-index"></panel>
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: correct statement about SoC" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> correct statement about SoC</p></template>
                     <question>
                       <p>“Only the GUI class should interact with the user. The GUI class should only concern itself with user interactions”. This statement follows from,</p>
                       <ul class="task-list">
@@ -1563,7 +1563,7 @@ What%%" class="algolia-no-index"></panel>
   </div>
   </panel>
   <p><span id="W10-5"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w10-5-design-patterns">
     <span slot="header" class="card-title"><div><h2 id="w10-5-design-patterns"><span class="dimmed">[W10.5]</span> <strong>Design Patterns</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
     <a class="fa fa-anchor" href="#w10-5-design-patterns"></a>
     </h2>
@@ -1573,7 +1573,7 @@ What%%" class="algolia-no-index"></panel>
       <br>
       <h3 id="introduction-2"><span class="dimmed"><strong>Introduction</strong></span><a class="fa fa-anchor" href="#introduction-2"></a></h3>
       <p><span id="W10-5a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/designPatterns/introduction/what">
+      <panel type="seamless" expanded popup-url="/website/book/designPatterns/introduction/what" id="design-design-patterns-introduction-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.5a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="design-design-patterns-introduction-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Patterns → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-patterns-introduction-what"></a></h4>
@@ -1624,9 +1624,9 @@ What%%" class="algolia-no-index"></panel>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Definition of design patterns" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Definition of design patterns</p></template>
                       <question>
                         <p>Which one of these describes the ‘software design patterns’ concept best?</p>
                         <ul radio-group="a7255" class="radio-list">
@@ -1648,7 +1648,7 @@ What%%" class="algolia-no-index"></panel>
         </div>
       </panel>
       <p><span id="W10-5b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/designPatterns/introduction/format">
+      <panel type="seamless" expanded popup-url="/website/book/designPatterns/introduction/format" id="design-design-patterns-introduction-format">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.5b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="design-design-patterns-introduction-format"><small><span class="font-weight-bold text-muted"><span>Design → Design Patterns → Introduction →</span></span></small> <strong><span>Format</span></strong><a class="fa fa-anchor" href="#design-design-patterns-introduction-format"></a></h4>
@@ -1678,9 +1678,9 @@ What%%" class="algolia-no-index"></panel>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Anti-patterns required?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Anti-patterns required?</p></template>
                       <question>
                         <p>When we describe a pattern, we must also specify anti-patterns.</p>
                         <ul radio-group="2350f" class="radio-list">
@@ -1703,7 +1703,7 @@ What%%" class="algolia-no-index"></panel>
       <br>
       <h3 id="singleton-pattern"><span class="dimmed"><strong>Singleton pattern</strong></span><a class="fa fa-anchor" href="#singleton-pattern"></a></h3>
       <p><span id="W10-5c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/designPatterns/singleton/what">
+      <panel type="seamless" expanded popup-url="/website/book/designPatterns/singleton/what" id="design-design-patterns-singleton-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.5c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="design-design-patterns-singleton-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Patterns → Singleton →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-patterns-singleton-what"></a></h4>
@@ -1738,9 +1738,9 @@ What%%" class="algolia-no-index"></panel>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about the Singleton pattern" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about the Singleton pattern</p></template>
                       <question>
                         <p>We use the Singleton pattern when</p>
                         <ul radio-group="d9393" class="radio-list">
@@ -1762,7 +1762,7 @@ What%%" class="algolia-no-index"></panel>
         </div>
       </panel>
       <p><span id="W10-5d"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/designPatterns/singleton/implementation">
+      <panel type="seamless" expanded popup-url="/website/book/designPatterns/singleton/implementation" id="design-design-patterns-singleton-implementation">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.5d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="design-design-patterns-singleton-implementation"><small><span class="font-weight-bold text-muted"><span>Design → Design Patterns → Singleton →</span></span></small> <strong><span>Implementation</span></strong><a class="fa fa-anchor" href="#design-design-patterns-singleton-implementation"></a></h4>
@@ -1815,7 +1815,7 @@ What%%" class="algolia-no-index"></panel>
         </div>
       </panel>
       <p><span id="W10-5e"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/designPatterns/singleton/evaluation">
+      <panel type="seamless" expanded popup-url="/website/book/designPatterns/singleton/evaluation" id="design-design-patterns-singleton-evaluation">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.5e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1857,7 +1857,7 @@ What%%" class="algolia-no-index"></panel>
       <br>
       <h3 id="facade-pattern"><span class="dimmed"><strong>Facade pattern</strong></span><a class="fa fa-anchor" href="#facade-pattern"></a></h3>
       <p><span id="W10-5f"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/designPatterns/facade/what">
+      <panel type="seamless" expanded popup-url="/website/book/designPatterns/facade/what" id="design-design-patterns-facade-pattern-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.5f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1888,7 +1888,9 @@ What%%" class="algolia-no-index"></panel>
               <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed">e.g.  the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
               <p><strong>Solution</strong></p>
               <p>Include a
-                <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
+                <tooltip><template slot="_content">a French word that means 'front of a building'</template>Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade
+                class.
+              </p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
                 <img src="/website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
@@ -1897,9 +1899,9 @@ What%%" class="algolia-no-index"></panel>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Is this Facade?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Is this Facade?</p></template>
                       <question>
                         <p>Does the design below likely to use the Facade pattern?</p>
                         <img src="/website/book/designPatterns/facade/what/images/textStorage.png" height="150">
@@ -1973,7 +1975,7 @@ What%%" class="algolia-no-index"></panel>
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -2002,6 +2004,7 @@ What%%" class="algolia-no-index"></panel>
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

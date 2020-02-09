@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter : Code Quality</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -209,11 +209,11 @@
               <h1 id="code-quality"><span>Code Quality</span><a class="fa fa-anchor" href="#code-quality"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="introduction">
             <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### Basic<a class='fa fa-anchor' href='#basic'></a>" expanded>
+        <panel type="seamless" expanded id="basic"><template slot="_header"><h4 id="basic">Basic<a class="fa fa-anchor" href="#basic"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -231,7 +231,7 @@
                 <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
               </blockquote>
               <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
-              <popover id="pop:production-code" title="<md>:glyphicon-eye-open:</md> Production Code" placement="top">
+              <popover id="pop:production-code" placement="top"><template slot="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> Production Code</template>
                 <div slot="content" class="algolia-no-index">
                   Code being used in an actual product with actual users
                 </div>
@@ -241,11 +241,11 @@
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="guideline-maximise-readability">
           <span slot="header" class="card-title"><div><h2 id="guideline-maximise-readability"><span>Guideline: Maximise Readability</span><a class="fa fa-anchor" href="#guideline-maximise-readability"></a></h2>
       </div>
       </span>
-      <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
+      <panel type="seamless" expanded id="introduction-2"><template slot="_header"><h4 id="introduction-2">Introduction<a class="fa fa-anchor" href="#introduction-2"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -372,11 +372,11 @@
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
+      <panel type="seamless" expanded id="basic-2">
+        <span slot="header" class="card-title"><div><h3 id="basic-2"><span>Basic</span><a class="fa fa-anchor" href="#basic-2"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### Avoid Long Methods<a class='fa fa-anchor' href='#avoid-long-methods'></a>" expanded>
+    <panel type="seamless" expanded id="avoid-long-methods"><template slot="_header"><h4 id="avoid-long-methods">Avoid Long Methods<a class="fa fa-anchor" href="#avoid-long-methods"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -395,7 +395,7 @@
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Avoid Deep Nesting<a class='fa fa-anchor' href='#avoid-deep-nesting'></a>" expanded>
+    <panel type="seamless" expanded id="avoid-deep-nesting"><template slot="_header"><h4 id="avoid-deep-nesting">Avoid Deep Nesting<a class="fa fa-anchor" href="#avoid-deep-nesting"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -523,7 +523,7 @@
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Avoid Complicated Expressions<a class='fa fa-anchor' href='#avoid-complicated-expressions'></a>" expanded>
+    <panel type="seamless" expanded id="avoid-complicated-expressions"><template slot="_header"><h4 id="avoid-complicated-expressions">Avoid Complicated Expressions<a class="fa fa-anchor" href="#avoid-complicated-expressions"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -603,7 +603,7 @@ is_urgent = type_code == URGENT
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Avoid Magic Numbers<a class='fa fa-anchor' href='#avoid-magic-numbers'></a>" expanded>
+    <panel type="seamless" expanded id="avoid-magic-numbers"><template slot="_header"><h4 id="avoid-magic-numbers">Avoid Magic Numbers<a class="fa fa-anchor" href="#avoid-magic-numbers"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -618,7 +618,7 @@ is_urgent = type_code == URGENT
         <p></p>
         <div>
           <p>When the code has a number that does not explain the meaning of the number, we call that a &quot;magic number&quot; (as in &quot;the number appears as if by magic&quot;). Using a
-            <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
+            <tooltip><template slot="_content">e.g., <code>PI</code></template><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
             <div class="alt-java">
@@ -706,7 +706,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Make the Code Obvious<a class='fa fa-anchor' href='#make-the-code-obvious'></a>" expanded>
+    <panel type="seamless" expanded id="make-the-code-obvious"><template slot="_header"><h4 id="make-the-code-obvious">Make the Code Obvious<a class="fa fa-anchor" href="#make-the-code-obvious"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -728,7 +728,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
               <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled'
               respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
           </ul>
-          <modal title="More about enumerations" id="modal:obviousCode-enums" class="algolia-no-index">
+          <modal id="modal:obviousCode-enums" class="algolia-no-index"><template slot="_header">More about enumerations</template>
             <ul>
               <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
               <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
@@ -739,11 +739,11 @@ MAX_SIZE = <span class="hljs-number">10</span>
       </div>
     </panel>
     </panel>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="intermediate">
       <span slot="header" class="card-title"><div><h3 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h3>
   </div>
   </span>
-  <panel type="seamless" header="#### Structure Code Logically<a class='fa fa-anchor' href='#structure-code-logically'></a>" expanded>
+  <panel type="seamless" expanded id="structure-code-logically"><template slot="_header"><h4 id="structure-code-logically">Structure Code Logically<a class="fa fa-anchor" href="#structure-code-logically"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -764,7 +764,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### Do Not 'Trip Up' Reader<a class='fa fa-anchor' href='#do-not-trip-up-reader'></a>" expanded>
+  <panel type="seamless" expanded id="do-not-trip-up-reader"><template slot="_header"><h4 id="do-not-trip-up-reader">Do Not 'Trip Up' Reader<a class="fa fa-anchor" href="#do-not-trip-up-reader"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -790,7 +790,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### Practice KISSing<a class='fa fa-anchor' href='#practice-kissing'></a>" expanded>
+  <panel type="seamless" expanded id="practice-kissing"><template slot="_header"><h4 id="practice-kissing">Practice KISSing<a class="fa fa-anchor" href="#practice-kissing"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -817,7 +817,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### Avoid Premature Optimizations<a class='fa fa-anchor' href='#avoid-premature-optimizations'></a>" expanded>
+  <panel type="seamless" expanded id="avoid-premature-optimizations"><template slot="_header"><h4 id="avoid-premature-optimizations">Avoid Premature Optimizations<a class="fa fa-anchor" href="#avoid-premature-optimizations"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -850,7 +850,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### SLAP Hard<a class='fa fa-anchor' href='#slap-hard'></a>" expanded>
+  <panel type="seamless" expanded id="slap-hard"><template slot="_header"><h4 id="slap-hard">SLAP Hard<a class="fa fa-anchor" href="#slap-hard"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -886,7 +886,7 @@ processData();
 displayResult();
 </code></pre>
         </box>
-        <modal title id="modal:slap-abstraction" class="algolia-no-index">
+        <modal id="modal:slap-abstraction" class="algolia-no-index"><template slot="_header"></template>
           <div>
             <div></div>
             <p></p>
@@ -943,11 +943,11 @@ displayResult();
     </div>
   </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="advanced">
     <span slot="header" class="card-title"><div><h3 id="advanced"><span>Advanced</span><a class="fa fa-anchor" href="#advanced"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### Make the Happy Path Prominent<a class='fa fa-anchor' href='#make-the-happy-path-prominent'></a>" expanded>
+    <panel type="seamless" expanded id="make-the-happy-path-prominent"><template slot="_header"><h4 id="make-the-happy-path-prominent">Make the Happy Path Prominent<a class="fa fa-anchor" href="#make-the-happy-path-prominent"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1020,11 +1020,11 @@ exit();
     </panel>
   </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="guideline-follow-a-standard">
     <span slot="header" class="card-title"><div><h2 id="guideline-follow-a-standard"><span>Guideline: Follow a Standard</span><a class="fa fa-anchor" href="#guideline-follow-a-standard"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
+    <panel type="seamless" expanded id="introduction-3"><template slot="_header"><h4 id="introduction-3">Introduction<a class="fa fa-anchor" href="#introduction-3"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1046,9 +1046,9 @@ exit();
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is the recommended approach regarding coding standards?" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What is the recommended approach regarding coding standards?</p></template>
                   <question>
                     <p>What is the recommended approach regarding coding standards?</p>
                     <ul radio-group="5c5a1" class="radio-list">
@@ -1064,7 +1064,7 @@ exit();
                 </panel>
               </div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> What is the aim? What is the value?" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is the aim? What is the value?</p></template>
                   <question has-input>
                     <p>What is the aim of using a coding standard? How does it help?</p>
                   </question>
@@ -1076,11 +1076,11 @@ exit();
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="guideline-name-well">
     <span slot="header" class="card-title"><div><h2 id="guideline-name-well"><span>Guideline: Name Well</span><a class="fa fa-anchor" href="#guideline-name-well"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
+    <panel type="seamless" expanded id="introduction-4"><template slot="_header"><h4 id="introduction-4">Introduction<a class="fa fa-anchor" href="#introduction-4"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1102,11 +1102,11 @@ exit();
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
+    <panel type="seamless" expanded id="basic-3">
+      <span slot="header" class="card-title"><div><h3 id="basic-3"><span>Basic</span><a class="fa fa-anchor" href="#basic-3"></a></h3>
       </div>
       </span>
-      <panel type="seamless" header="#### Use Nouns for Things and Verbs for Actions<a class='fa fa-anchor' href='#use-nouns-for-things-and-verbs-for-actions'></a>" expanded>
+      <panel type="seamless" expanded id="use-nouns-for-things-and-verbs-for-actions"><template slot="_header"><h4 id="use-nouns-for-things-and-verbs-for-actions">Use Nouns for Things and Verbs for Actions<a class="fa fa-anchor" href="#use-nouns-for-things-and-verbs-for-actions"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1187,7 +1187,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Use Standard Words<a class='fa fa-anchor' href='#use-standard-words'></a>" expanded>
+      <panel type="seamless" expanded id="use-standard-words"><template slot="_header"><h4 id="use-standard-words">Use Standard Words<a class="fa fa-anchor" href="#use-standard-words"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1207,11 +1207,11 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
     </panel>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h3 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h3>
+    <panel type="seamless" expanded id="intermediate-2">
+      <span slot="header" class="card-title"><div><h3 id="intermediate-2"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate-2"></a></h3>
       </div>
       </span>
-      <panel type="seamless" header="#### Use Name to Explain<a class='fa fa-anchor' href='#use-name-to-explain'></a>" expanded>
+      <panel type="seamless" expanded id="use-name-to-explain"><template slot="_header"><h4 id="use-name-to-explain">Use Name to Explain<a class="fa fa-anchor" href="#use-name-to-explain"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1327,7 +1327,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Not Too Long, Not Too Short<a class='fa fa-anchor' href='#not-too-long-not-too-short'></a>" expanded>
+      <panel type="seamless" expanded id="not-too-long-not-too-short"><template slot="_header"><h4 id="not-too-long-not-too-short">Not Too Long, Not Too Short<a class="fa fa-anchor" href="#not-too-long-not-too-short"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1346,7 +1346,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Avoid Misleading Names<a class='fa fa-anchor' href='#avoid-misleading-names'></a>" expanded>
+      <panel type="seamless" expanded id="avoid-misleading-names"><template slot="_header"><h4 id="avoid-misleading-names">Avoid Misleading Names<a class="fa fa-anchor" href="#avoid-misleading-names"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1433,11 +1433,11 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
       </panel>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="guideline-avoid-unsafe-shortcuts">
     <span slot="header" class="card-title"><div><h2 id="guideline-avoid-unsafe-shortcuts"><span>Guideline: Avoid Unsafe Shortcuts</span><a class="fa fa-anchor" href="#guideline-avoid-unsafe-shortcuts"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
+    <panel type="seamless" expanded id="introduction-5"><template slot="_header"><h4 id="introduction-5">Introduction<a class="fa fa-anchor" href="#introduction-5"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1456,11 +1456,11 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
+    <panel type="seamless" expanded id="basic-4">
+      <span slot="header" class="card-title"><div><h3 id="basic-4"><span>Basic</span><a class="fa fa-anchor" href="#basic-4"></a></h3>
       </div>
       </span>
-      <panel type="seamless" header="#### Use the Default Branch<a class='fa fa-anchor' href='#use-the-default-branch'></a>" expanded>
+      <panel type="seamless" expanded id="use-the-default-branch"><template slot="_header"><h4 id="use-the-default-branch">Use the Default Branch<a class="fa fa-anchor" href="#use-the-default-branch"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1500,7 +1500,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Don't Recycle Variables or Parameters<a class='fa fa-anchor' href='#don-t-recycle-variables-or-parameters'></a>" expanded>
+      <panel type="seamless" expanded id="don-t-recycle-variables-or-parameters"><template slot="_header"><h4 id="don-t-recycle-variables-or-parameters">Don't Recycle Variables or Parameters<a class="fa fa-anchor" href="#don-t-recycle-variables-or-parameters"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1546,7 +1546,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Avoid Empty Catch Blocks<a class='fa fa-anchor' href='#avoid-empty-catch-blocks'></a>" expanded>
+      <panel type="seamless" expanded id="avoid-empty-catch-blocks"><template slot="_header"><h4 id="avoid-empty-catch-blocks">Avoid Empty Catch Blocks<a class="fa fa-anchor" href="#avoid-empty-catch-blocks"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1565,7 +1565,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Delete Dead Code<a class='fa fa-anchor' href='#delete-dead-code'></a>" expanded>
+      <panel type="seamless" expanded id="delete-dead-code"><template slot="_header"><h4 id="delete-dead-code">Delete Dead Code<a class="fa fa-anchor" href="#delete-dead-code"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1586,11 +1586,11 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
     </panel>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h3 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h3>
+    <panel type="seamless" expanded id="intermediate-3">
+      <span slot="header" class="card-title"><div><h3 id="intermediate-3"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate-3"></a></h3>
       </div>
       </span>
-      <panel type="seamless" header="#### Minimise Scope of Variables<a class='fa fa-anchor' href='#minimise-scope-of-variables'></a>" expanded>
+      <panel type="seamless" expanded id="minimise-scope-of-variables"><template slot="_header"><h4 id="minimise-scope-of-variables">Minimise Scope of Variables<a class="fa fa-anchor" href="#minimise-scope-of-variables"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1617,7 +1617,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Minimise Code Duplication<a class='fa fa-anchor' href='#minimise-code-duplication'></a>" expanded>
+      <panel type="seamless" expanded id="minimise-code-duplication"><template slot="_header"><h4 id="minimise-code-duplication">Minimise Code Duplication<a class="fa fa-anchor" href="#minimise-code-duplication"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1638,7 +1638,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                 <trigger>.</trigger>
               </trigger>
             </p>
-            <modal title="**<md>:glyphicon-eye-open:</md> DRY Principle**" id="modal:duplication-dry" class="algolia-no-index">
+            <modal id="modal:duplication-dry" class="algolia-no-index"><template slot="_header"><strong><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> DRY Principle</strong></template>
               <div>
                 <div></div>
                 <p></p>
@@ -1674,11 +1674,11 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
       </panel>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="guideline-comment-minimally-but-sufficiently">
     <span slot="header" class="card-title"><div><h2 id="guideline-comment-minimally-but-sufficiently"><span>Guideline: Comment Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline-comment-minimally-but-sufficiently"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
+    <panel type="seamless" expanded id="introduction-6"><template slot="_header"><h4 id="introduction-6">Introduction<a class="fa fa-anchor" href="#introduction-6"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1700,11 +1700,11 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
+    <panel type="seamless" expanded id="basic-5">
+      <span slot="header" class="card-title"><div><h3 id="basic-5"><span>Basic</span><a class="fa fa-anchor" href="#basic-5"></a></h3>
       </div>
       </span>
-      <panel type="seamless" header="#### Do Not Repeat the Obvious<a class='fa fa-anchor' href='#do-not-repeat-the-obvious'></a>" expanded>
+      <panel type="seamless" expanded id="do-not-repeat-the-obvious"><template slot="_header"><h4 id="do-not-repeat-the-obvious">Do Not Repeat the Obvious<a class="fa fa-anchor" href="#do-not-repeat-the-obvious"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1749,7 +1749,7 @@ trim_input()
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Write to the Reader<a class='fa fa-anchor' href='#write-to-the-reader'></a>" expanded>
+      <panel type="seamless" expanded id="write-to-the-reader"><template slot="_header"><h4 id="write-to-the-reader">Write to the Reader<a class="fa fa-anchor" href="#write-to-the-reader"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1817,11 +1817,11 @@ trim_input()
         </div>
       </panel>
     </panel>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h3 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h3>
+    <panel type="seamless" expanded id="intermediate-4">
+      <span slot="header" class="card-title"><div><h3 id="intermediate-4"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate-4"></a></h3>
       </div>
       </span>
-      <panel type="seamless" header="#### Explain WHAT and WHY, not HOW<a class='fa fa-anchor' href='#explain-what-and-why-not-how'></a>" expanded>
+      <panel type="seamless" expanded id="explain-what-and-why-not-how"><template slot="_header"><h4 id="explain-what-and-why-not-how">Explain WHAT and WHY, not HOW<a class="fa fa-anchor" href="#explain-what-and-why-not-how"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1889,20 +1889,22 @@ compact(input);
         <a class="nav-link py-1" href="#code-quality">Code Quality&#x200E;</a>
         <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
           <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
-        </nav>
-        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-          <a class="nav-link py-1" href="#basic">Basic&#x200E;</a>
-        </nav>
-        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#basic">Basic&#x200E;</a>
+          </nav>
           <a class="nav-link py-1" href="#guideline-maximise-readability">Guideline: Maximise Readability&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-            <a class="nav-link py-1" href="#avoid-long-methods">Avoid Long Methods&#x200E;</a>
-            <a class="nav-link py-1" href="#avoid-deep-nesting">Avoid Deep Nesting&#x200E;</a>
-            <a class="nav-link py-1" href="#avoid-complicated-expressions">Avoid Complicated Expressions&#x200E;</a>
-            <a class="nav-link py-1" href="#avoid-magic-numbers">Avoid Magic Numbers&#x200E;</a>
-            <a class="nav-link py-1" href="#make-the-code-obvious">Make the Code Obvious&#x200E;</a>
+            <a class="nav-link py-1" href="#introduction-2">Introduction&#x200E;</a>
           </nav>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#basic-2">Basic&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#avoid-long-methods">Avoid Long Methods&#x200E;</a>
+              <a class="nav-link py-1" href="#avoid-deep-nesting">Avoid Deep Nesting&#x200E;</a>
+              <a class="nav-link py-1" href="#avoid-complicated-expressions">Avoid Complicated Expressions&#x200E;</a>
+              <a class="nav-link py-1" href="#avoid-magic-numbers">Avoid Magic Numbers&#x200E;</a>
+              <a class="nav-link py-1" href="#make-the-code-obvious">Make the Code Obvious&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#intermediate">Intermediate&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#structure-code-logically">Structure Code Logically&#x200E;</a>
@@ -1917,28 +1919,58 @@ compact(input);
             </nav>
           </nav>
           <a class="nav-link py-1" href="#guideline-follow-a-standard">Guideline: Follow a Standard&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#introduction-3">Introduction&#x200E;</a>
+          </nav>
           <a class="nav-link py-1" href="#guideline-name-well">Guideline: Name Well&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-            <a class="nav-link py-1" href="#use-nouns-for-things-and-verbs-for-actions">Use Nouns for Things and Verbs for Actions&#x200E;</a>
-            <a class="nav-link py-1" href="#use-standard-words">Use Standard Words&#x200E;</a>
-            <a class="nav-link py-1" href="#use-name-to-explain">Use Name to Explain&#x200E;</a>
-            <a class="nav-link py-1" href="#not-too-long-not-too-short">Not Too Long, Not Too Short&#x200E;</a>
-            <a class="nav-link py-1" href="#avoid-misleading-names">Avoid Misleading Names&#x200E;</a>
+            <a class="nav-link py-1" href="#introduction-4">Introduction&#x200E;</a>
+          </nav>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#basic-3">Basic&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#use-nouns-for-things-and-verbs-for-actions">Use Nouns for Things and Verbs for Actions&#x200E;</a>
+              <a class="nav-link py-1" href="#use-standard-words">Use Standard Words&#x200E;</a>
+            </nav>
+            <a class="nav-link py-1" href="#intermediate-2">Intermediate&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#use-name-to-explain">Use Name to Explain&#x200E;</a>
+              <a class="nav-link py-1" href="#not-too-long-not-too-short">Not Too Long, Not Too Short&#x200E;</a>
+              <a class="nav-link py-1" href="#avoid-misleading-names">Avoid Misleading Names&#x200E;</a>
+            </nav>
           </nav>
           <a class="nav-link py-1" href="#guideline-avoid-unsafe-shortcuts">Guideline: Avoid Unsafe Shortcuts&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-            <a class="nav-link py-1" href="#use-the-default-branch">Use the Default Branch&#x200E;</a>
-            <a class="nav-link py-1" href="#don-t-recycle-variables-or-parameters">Don't Recycle Variables or Parameters&#x200E;</a>
-            <a class="nav-link py-1" href="#avoid-empty-catch-blocks">Avoid Empty Catch Blocks&#x200E;</a>
-            <a class="nav-link py-1" href="#delete-dead-code">Delete Dead Code&#x200E;</a>
-            <a class="nav-link py-1" href="#minimise-scope-of-variables">Minimise Scope of Variables&#x200E;</a>
-            <a class="nav-link py-1" href="#minimise-code-duplication">Minimise Code Duplication&#x200E;</a>
+            <a class="nav-link py-1" href="#introduction-5">Introduction&#x200E;</a>
+          </nav>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#basic-4">Basic&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#use-the-default-branch">Use the Default Branch&#x200E;</a>
+              <a class="nav-link py-1" href="#don-t-recycle-variables-or-parameters">Don't Recycle Variables or Parameters&#x200E;</a>
+              <a class="nav-link py-1" href="#avoid-empty-catch-blocks">Avoid Empty Catch Blocks&#x200E;</a>
+              <a class="nav-link py-1" href="#delete-dead-code">Delete Dead Code&#x200E;</a>
+            </nav>
+            <a class="nav-link py-1" href="#intermediate-3">Intermediate&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#minimise-scope-of-variables">Minimise Scope of Variables&#x200E;</a>
+              <a class="nav-link py-1" href="#minimise-code-duplication">Minimise Code Duplication&#x200E;</a>
+            </nav>
           </nav>
           <a class="nav-link py-1" href="#guideline-comment-minimally-but-sufficiently">Guideline: Comment Minimally, but Sufficiently&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-            <a class="nav-link py-1" href="#do-not-repeat-the-obvious">Do Not Repeat the Obvious&#x200E;</a>
-            <a class="nav-link py-1" href="#write-to-the-reader">Write to the Reader&#x200E;</a>
-            <a class="nav-link py-1" href="#explain-what-and-why-not-how">Explain WHAT and WHY, not HOW&#x200E;</a>
+            <a class="nav-link py-1" href="#introduction-6">Introduction&#x200E;</a>
+          </nav>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#basic-5">Basic&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#do-not-repeat-the-obvious">Do Not Repeat the Obvious&#x200E;</a>
+              <a class="nav-link py-1" href="#write-to-the-reader">Write to the Reader&#x200E;</a>
+            </nav>
+            <a class="nav-link py-1" href="#intermediate-4">Intermediate&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#explain-what-and-why-not-how">Explain WHAT and WHY, not HOW&#x200E;</a>
+            </nav>
           </nav>
         </nav>
 
@@ -1948,7 +1980,7 @@ compact(input);
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -1977,6 +2009,7 @@ compact(input);
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

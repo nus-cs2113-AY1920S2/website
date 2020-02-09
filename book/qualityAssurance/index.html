@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Quality Assurance</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -38,13 +38,13 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="introduction">
                     <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
                 </div>
                 </span>
                 <div>
                   <div>
-                    <panel type="seamless" expanded>
+                    <panel type="seamless" expanded id="what">
                       <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                   </div>
                   </span>
@@ -66,7 +66,7 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="validation-vs-verification">
                     <span slot="header" class="card-title"><div><h4 id="validation-vs-verification"><span>Validation vs Verification</span><a class="fa fa-anchor" href="#validation-vs-verification"></a></h4>
                 </div>
                 </span>
@@ -90,9 +90,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about validation and verification." class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about validation and verification.</p></template>
                             <question>
                               <p>Choose the correct statements about validation and verification.</p>
                               <ul class="task-list">
@@ -124,14 +124,14 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="code-reviews">
               <span slot="header" class="card-title"><div><h2 id="code-reviews"><span>Code Reviews</span><a class="fa fa-anchor" href="#code-reviews"></a></h2>
           </div>
           </span>
           <div>
             <div>
-              <panel type="seamless" expanded>
-                <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+              <panel type="seamless" expanded id="what-2">
+                <span slot="header" class="card-title"><div><h4 id="what-2"><span>What</span><a class="fa fa-anchor" href="#what-2"></a></h4>
             </div>
             </span>
             <div class="indented">
@@ -160,7 +160,7 @@
                     </ul>
                   </li>
                 </ul>
-                <modal large title="Pair Programming" id="modal:codeReview-pairProgramming" class="algolia-no-index">
+                <modal large id="modal:codeReview-pairProgramming" class="algolia-no-index"><template slot="_header">Pair Programming</template>
                   <box type="definition">
                     <div>
                       <p><strong>Pair Programming</strong>:</p>
@@ -204,7 +204,7 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                  <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                     <ul>
                       <li><a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - a blog post by David Lloyd (a Red Hat developer).</li>
                     </ul>
@@ -218,14 +218,14 @@
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="static-analysis">
           <span slot="header" class="card-title"><div><h2 id="static-analysis"><span>Static Analysis</span><a class="fa fa-anchor" href="#static-analysis"></a></h2>
       </div>
       </span>
       <div>
         <div>
-          <panel type="seamless" expanded>
-            <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+          <panel type="seamless" expanded id="what-3">
+            <span slot="header" class="card-title"><div><h4 id="what-3"><span>What</span><a class="fa fa-anchor" href="#what-3"></a></h4>
         </div>
         </span>
         <div class="indented">
@@ -259,14 +259,14 @@
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="formal-verification">
       <span slot="header" class="card-title"><div><h2 id="formal-verification"><span>Formal Verification</span><a class="fa fa-anchor" href="#formal-verification"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+      <panel type="seamless" expanded id="what-4">
+        <span slot="header" class="card-title"><div><h4 id="what-4"><span>What</span><a class="fa fa-anchor" href="#what-4"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -280,7 +280,7 @@
       <p></p>
       <div>
         <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
-        <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> An introduction to Formal Methods" class="non-printable algolia-no-index">
+        <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> An introduction to Formal Methods</p></template>
           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
           <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
           <p></p>
@@ -298,9 +298,9 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Absence of errors" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Absence of errors</p></template>
                 <question>
                   <p>Testing cannot prove the absence of errors. It can only prove the presence of errors. However, formal methods can prove the absence of errors.</p>
                   <ul radio-group="cefed" class="radio-list">
@@ -329,7 +329,9 @@
   </div>
   </div>
   </div>
+
   </div>
+
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
@@ -357,6 +359,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

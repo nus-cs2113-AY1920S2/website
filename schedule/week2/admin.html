@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 2 - Admin Info</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -79,6 +78,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -116,7 +116,7 @@
                   <li>If you encounter problems, post in the <a href="https://github.com/nus-cs2113-AY1920S2/forum/issues">forum</a>.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#repl" header="Admin <md>:glyphicon-log-in:</md> **Tools - repl.it**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="repl"></panel>
+                  <panel type src="/website/admin/tools._include_.html#repl" class="embedding algolia-no-index" minimized fragment="repl"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - <a href="http://repl.it">repl.it</a></strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -127,8 +127,7 @@
                   <li>Follow the 'Preparation' instructions of the following panel, to get connected with the module forum.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#communication" header="Admin <md>:glyphicon-log-in:</md> **Tools - Communication**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="communication"></panel>
+                  <panel type src="/website/admin/tools._include_.html#communication" class="embedding algolia-no-index" minimized fragment="communication"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - Communication</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -243,8 +242,7 @@ Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;Cu
                         </li>
                       </ul>
                     </box>
-                    <modal large title="Admin <md>:glyphicon-log-in:</md> Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags" class="algolia-no-index">
-
+                    <modal large id="modal:reusePolicy-authorTags" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project mid-v1.3 (extract) →</template>
                       <div>
                         <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship"></a></h4>
                         <ul>
@@ -357,8 +355,7 @@ method 2 ...
                         </ul>
                       </div>
                     </modal>
-                    <modal large title="Admin <md>:glyphicon-log-in:</md> Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp" class="algolia-no-index">
-
+                    <modal large id="modal:reusePolicy-ppp" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Project Portfolio Page</template>
                       <div>
                         <div>
                           <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
@@ -388,11 +385,11 @@ method 2 ...
                               </ul>
                             </li>
                           </ul>
-                          <modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks" class="algolia-no-index">
+                          <modal large id="modal:deliverablesPPP-teamTasks" class="algolia-no-index"><template slot="_header">Team-Based Tasks</template>
                             <div>
                               <box>
                                 <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-                                <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks" class="algolia-no-index">
+                                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p></template>
                                   <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
@@ -532,7 +529,7 @@ method 2 ...
                     </p>
                     <p><strong>We encourage you to give tech help to each other</strong>, but do it in a way that the other person learns from it.</p>
                     <p><span class="flat"><span class="dimmed">Related: [<a href="#admin-appendixD-help-anchor">Admin: Appendix D: Getting Help</a>]</span></span>
-                      <panel src="/website/admin/appendixD-help._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> Appendix D: How to get Help in CS2113/T" class="embedding algolia-no-index" minimized fragment="main"></panel>
+                      <panel src="/website/admin/appendixD-help._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D: How to get Help in CS2113/T</p></template></panel>
                     </p>
                   </div>
                 </div>
@@ -721,7 +718,7 @@ method 2 ...
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -750,6 +747,7 @@ method 2 ...
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

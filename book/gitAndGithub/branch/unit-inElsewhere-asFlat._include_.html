@@ -1,7 +1,7 @@
 <div>
   <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\text.md">
     <p>
-      <panel src="/website/book/revisionControl/branching/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Branching%%" popup-url="/website/book/revisionControl/branching"></panel>
+      <panel src="/website/book/revisionControl/branching/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/branching"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Branching</span></p></template></panel>
     </p>
   </div>
 </div>
@@ -21,7 +21,7 @@
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\text.md">
         <p><strong>0. Observe that you are normally in the branch called <code>master</code>.</strong> For this, you can take any repo you have on your computer (e.g. a clone of the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a>).</p>
         <tabs>
-          <tab header="SourceTree">
+          <tab><template slot="_header">SourceTree</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\sourcetree_0.md">
                 <img src="/website/book/gitAndGithub/branch/images/onMasterBranch.png" height="120">
@@ -29,7 +29,7 @@
               </div>
             </div>
           </tab>
-          <tab header="CLI">
+          <tab><template slot="_header">CLI</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\cli_0.md">
                 <pre><code class="hljs">git status
@@ -44,7 +44,7 @@
         </tabs>
         <p><strong>1. Start a branch named <code>feature1</code> and switch to the new branch.</strong></p>
         <tabs>
-          <tab header="SourceTree">
+          <tab><template slot="_header">SourceTree</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\sourcetree_1.md">
                 <p>Click on the <code>Branch</code> button on the main menu. In the next dialog, enter the branch name and click <code>Create Branch</code></p>
@@ -56,7 +56,7 @@
               </div>
             </div>
           </tab>
-          <tab header="CLI">
+          <tab><template slot="_header">CLI</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\cli_1.md">
                 <p>You can use the <code>branch</code> command to create a new branch and the <code>checkout</code> command to switch to a specific branch.</p>
@@ -73,7 +73,7 @@ git checkout feature1
         <p><strong>2. Create some commits in the new branch.</strong> <span class="dimmed">Just commit as per normal. Commits you add while on a certain branch will become part of that branch.</span></p>
         <p><strong>3. Switch to the <code>master</code> branch.</strong> Note how the changes you did in the <code>feature1</code> branch are no longer in the working directory.</p>
         <tabs>
-          <tab header="SourceTree">
+          <tab><template slot="_header">SourceTree</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\sourcetree_2.md">
                 <p>Double-click the <code>master</code> branch</p>
@@ -82,7 +82,7 @@ git checkout feature1
               </div>
             </div>
           </tab>
-          <tab header="CLI">
+          <tab><template slot="_header">CLI</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\cli_2.md">
                 <pre><code class="hljs">git checkout master
@@ -99,14 +99,14 @@ git checkout feature1
         <img src="/website/book/gitAndGithub/branch/images/sourcetree_5.png" height="120">
         <p></p>
         <tabs>
-          <tab header="SourceTree">
+          <tab><template slot="_header">SourceTree</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\sourcetree_3.md">
                 <p>Right-click on the <code>master</code> branch and choose <code>merge master into the current branch</code>. Click <code>OK</code> in the next dialog.</p>
               </div>
             </div>
           </tab>
-          <tab header="CLI">
+          <tab><template slot="_header">CLI</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\cli_3.md">
                 <pre><code class="hljs">git merge master
@@ -122,10 +122,10 @@ git checkout feature1
         <img src="/website/book/gitAndGithub/branch/images/sourcetree_6.png" height="150">
         <p></p>
         <tabs>
-          <tab header="SourceTree">
+          <tab><template slot="_header">SourceTree</template>
             <p>Right-click on the <code>feature1</code> branch and choose <code>Merge...</code>.</p>
           </tab>
-          <tab header="CLI">
+          <tab><template slot="_header">CLI</template>
             <pre><code class="hljs">git merge feature1
 </code></pre>
           </tab>
@@ -144,7 +144,7 @@ git checkout feature1
           to just put the commits of the <code>add-countries</code> branch in front of the <code>master</code> branch, without going into the trouble of creating an extra merge commit.</p>
         <p><strong>It is possible to force Git to create a merge commit even if fast forwarding is possible.</strong></p>
         <tabs>
-          <tab header="SourceTree">
+          <tab><template slot="_header">SourceTree</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\sourcetree_4.md">
                 <p>Tick the box shown below when you merge a branch:</p>
@@ -153,7 +153,7 @@ git checkout feature1
               </div>
             </div>
           </tab>
-          <tab header="CLI">
+          <tab><template slot="_header">CLI</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\branch\cli_4.md">
                 <p>Use the <code>--no-ff</code> switch (short for <em>no fast forward</em>):</p>

@@ -29,7 +29,7 @@
         </box>
         <p>Given below are two common refactorings (
           <trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
-        <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what">
+        <modal id="modal:refactoring-catalog-what"><template slot="_header"><strong>Refactoring Catalogs</strong></template>
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\references.md">
               <ul>
@@ -172,10 +172,10 @@ send()
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\text.md">
         <div>
           <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\exercises.md">
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+            <panel expandable><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\q-tick-refactoring.md">
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Results of Refactoring">
+                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Results of Refactoring</p></template>
                     <question>
                       <p>Choose the correct statements</p>
                       <ul class="task-list">
@@ -198,7 +198,7 @@ send()
               </div>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\q-essay-refactoringAndRegressionTesting.md">
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Do you agree with the following statement? Refactoring and regression testing">
+                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Do you agree with the following statement? Refactoring and regression testing</p></template>
                     <question has-input="true">
                       <p>Do you agree with the following statement? Justify your answer.</p>
                       <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
@@ -218,7 +218,7 @@ send()
               </div>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\q-essay-explain.md">
-                  <panel header="<md>:glyphicon-question-sign:</md> Explain Refactoring">
+                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Refactoring</p></template>
                     <question has-input>
                       <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
                     </question>

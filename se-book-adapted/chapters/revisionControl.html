@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter : Revision Control</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -209,7 +209,7 @@
               <h1 id="revision-control"><span>Revision Control</span><a class="fa fa-anchor" href="#revision-control"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+          <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -224,7 +224,7 @@
               <p></p>
               <div>
                 <tabs>
-                  <tab header="<md>:far-file-alt:</md>">
+                  <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                     <blockquote>
                       <p><strong><em>Revision control</em> is the process of managing multiple versions of a piece of information.</strong> In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a
                         new name that contains a number, each one higher than the number of the preceding version.</p>
@@ -243,11 +243,11 @@
                       </p>
                     </blockquote>
                   </tab>
-                  <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </tab>
                 </tabs>
-                <modal large title="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide" class="algolia-no-index">
+                <modal large id="modal:rcsWhat-bryanMercurialGuide" class="algolia-no-index"><template slot="_header">Reference » Mercurial: The Definitive Guide</template>
                   <div>
                     <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
                   </div>
@@ -267,9 +267,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What does RCS stand for?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What does RCS stand for?</p></template>
                         <question has-input="true">
                           <div slot="answer" class="algolia-no-index">
                             <p>Revision Control Software</p>
@@ -278,7 +278,7 @@
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is a Revision?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What is a Revision?</p></template>
                         <question has-input="true">
                           <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
                           <div slot="answer" class="algolia-no-index">
@@ -289,7 +289,7 @@
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these is not considered a benefit of a typical RCS?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these is not considered a benefit of a typical RCS?</p></template>
                         <question>
                           <ul class="task-list">
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
@@ -306,7 +306,7 @@
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> Explain RCS in a team project context" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain RCS in a team project context</p></template>
                         <question has-input="true">
                           <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
                         </question>
@@ -317,7 +317,7 @@
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Repositories<a class='fa fa-anchor' href='#repositories'></a>" expanded>
+          <panel type="seamless" expanded id="repositories"><template slot="_header"><h4 id="repositories">Repositories<a class="fa fa-anchor" href="#repositories"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -337,23 +337,23 @@
                   </div>
                 </box>
                 <tabs>
-                  <tab header="<md>:far-file-alt:</md>">
+                  <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                     <p><strong>The <em>repository</em> is the database where the meta-data about the revision history are stored.</strong> Suppose you want to apply revision control on files in a directory called <code>ProjectFoo</code>. In that case you
                       need to set up a <em>repo</em> (short for repository) in <code>ProjectFoo</code> directory, which is referred to as the <em>working directory</em> of the repo. For example, Git uses a hidden folder named <code>.git</code> inside
                       the working directory.
                     </p>
                     <p><strong>You can have multiple repos in your computer</strong>, each repo revision-controlling files of a different working directly, for examples, files of different projects.</p>
                   </tab>
-                  <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </tab>
                 </tabs>
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> What is a repo?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is a repo?</p></template>
                         <question has-input="true">
                           <p>In the context of RCS, what is a <em>repo</em>?</p>
                         </question>
@@ -364,7 +364,7 @@
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Saving History<a class='fa fa-anchor' href='#saving-history'></a>" expanded>
+          <panel type="seamless" expanded id="saving-history"><template slot="_header"><h4 id="saving-history">Saving History<a class="fa fa-anchor" href="#saving-history"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -382,11 +382,11 @@
                 <p><strong>In a repo, we can specify which files to track and which files to <mark>ignore</mark>.</strong> Some files such as temporary log files created during the build/test process should not be revision-controlled.</p>
                 <h5 id="staging-and-committing">Staging and Committing<a class="fa fa-anchor" href="#staging-and-committing"></a></h5>
                 <tabs>
-                  <tab header="<md>:far-file-alt:</md>">
+                  <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                     <p><strong><mark><em>Committing</em></mark> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
                     <p><strong>When ready to commit, we first <mark><em>stage</em></mark> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
                   </tab>
-                  <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </tab>
                 </tabs>
@@ -397,7 +397,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Using History<a class='fa fa-anchor' href='#using-history'></a>" expanded>
+          <panel type="seamless" expanded id="using-history"><template slot="_header"><h4 id="using-history">Using History<a class="fa fa-anchor" href="#using-history"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -428,7 +428,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Remote Repositories<a class='fa fa-anchor' href='#remote-repositories'></a>" expanded>
+          <panel type="seamless" expanded id="remote-repositories"><template slot="_header"><h4 id="remote-repositories">Remote Repositories<a class="fa fa-anchor" href="#remote-repositories"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -459,7 +459,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Branching<a class='fa fa-anchor' href='#branching'></a>" expanded>
+          <panel type="seamless" expanded id="branching"><template slot="_header"><h4 id="branching">Branching<a class="fa fa-anchor" href="#branching"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -484,16 +484,16 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> What is branching?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is branching?</p></template>
                         <question has-input="true">
                           <p>In the context of RCS, what is the <em>branching</em>? What is the need for branching?.</p>
                         </question>
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> What is merging?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is merging?</p></template>
                         <question has-input="true">
                           <p>In the context of RCS, what is the <em>merging</em> branches? How can it lead to <em>merge conflicts</em>?.</p>
                         </question>
@@ -504,7 +504,7 @@
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### DRCS vs CRCS<a class='fa fa-anchor' href='#drcs-vs-crcs'></a>" expanded>
+          <panel type="seamless" expanded id="drcs-vs-crcs"><template slot="_header"><h4 id="drcs-vs-crcs">DRCS vs CRCS<a class="fa fa-anchor" href="#drcs-vs-crcs"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -533,7 +533,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Forking Flow<a class='fa fa-anchor' href='#forking-flow'></a>" expanded>
+          <panel type="seamless" expanded id="forking-flow"><template slot="_header"><h4 id="forking-flow">Forking Flow<a class="fa fa-anchor" href="#forking-flow"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -564,7 +564,7 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                  <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                     <ul>
                       <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
                     </ul>
@@ -573,7 +573,7 @@
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Feature Branch Flow<a class='fa fa-anchor' href='#feature-branch-flow'></a>" expanded>
+          <panel type="seamless" expanded id="feature-branch-flow"><template slot="_header"><h4 id="feature-branch-flow">Feature Branch Flow<a class="fa fa-anchor" href="#feature-branch-flow"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -595,7 +595,7 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                  <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                     <ul>
                       <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">A detailed explanation of the Feature Branch Workflow</a> - From Atlassian</li>
                     </ul>
@@ -604,7 +604,7 @@
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Centralized Flow<a class='fa fa-anchor' href='#centralized-flow'></a>" expanded>
+          <panel type="seamless" expanded id="centralized-flow"><template slot="_header"><h4 id="centralized-flow">Centralized Flow<a class="fa fa-anchor" href="#centralized-flow"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -623,7 +623,7 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                  <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                     <ul>
                       <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">A detailed explanation of the Centralized Workflow</a> - From Atlassian</li>
                     </ul>
@@ -658,7 +658,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -687,6 +687,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

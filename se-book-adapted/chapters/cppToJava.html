@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter : C++ to Java</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -209,7 +209,7 @@
               <h1 id="c-to-java"><span>C++ to Java</span><a class="fa fa-anchor" href="#c-to-java"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### About this Book Chapter<a class='fa fa-anchor' href='#about-this-book-chapter'></a>" expanded>
+          <panel type="seamless" expanded id="about-this-book-chapter"><template slot="_header"><h4 id="about-this-book-chapter">About this Book Chapter<a class="fa fa-anchor" href="#about-this-book-chapter"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -243,11 +243,11 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="the-java-world">
             <span slot="header" class="card-title"><div><h2 id="the-java-world"><span>The Java World</span><a class="fa fa-anchor" href="#the-java-world"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### What is Java?<a class='fa fa-anchor' href='#what-is-java'></a>" expanded>
+        <panel type="seamless" expanded id="what-is-java"><template slot="_header"><h4 id="what-is-java">What is Java?<a class="fa fa-anchor" href="#what-is-java"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -275,7 +275,7 @@
             <div></div>
           </div>
         </panel>
-        <panel type="seamless" header="#### How Java Works<a class='fa fa-anchor' href='#how-java-works'></a>" expanded>
+        <panel type="seamless" expanded id="how-java-works"><template slot="_header"><h4 id="how-java-works">How Java Works<a class="fa fa-anchor" href="#how-java-works"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -289,7 +289,7 @@
             </span>
             <p></p>
             <div>
-              <p><strong>Java is both <tooltip content="generates machine code from source code before executing the program"><em>compiled</em></tooltip> and <tooltip content="the interpreter executes the program directly, one statement at a time"><em>interpreted</em></tooltip>.</strong>                Instead of translating programs directly into machine language, the Java compiler generates <em>byte code</em>. Byte code is <em>portable</em>, so it is possible to compile a Java program on one machine, transfer the byte code to another
+              <p><strong>Java is both <tooltip><template slot="_content">generates machine code from source code before executing the program</template><em>compiled</em></tooltip> and <tooltip><template slot="_content">the interpreter executes the program directly, one statement at a time</template><em>interpreted</em></tooltip>.</strong>                Instead of translating programs directly into machine language, the Java compiler generates <em>byte code</em>. Byte code is <em>portable</em>, so it is possible to compile a Java program on one machine, transfer the byte code to another
                 machine, and run the byte code on the other machine. That’s why Java is considered a <em>platform independent technology</em>, aka <em>WORA</em> (Write Once Run Anywhere). The interpreter that runs byte code is called a “Java Virtual Machine”
                 (JVM).</p>
               <blockquote>
@@ -300,7 +300,7 @@
             <div></div>
           </div>
         </panel>
-        <panel type="seamless" header="#### Java Editions<a class='fa fa-anchor' href='#java-editions'></a>" expanded>
+        <panel type="seamless" expanded id="java-editions"><template slot="_header"><h4 id="java-editions">Java Editions<a class="fa fa-anchor" href="#java-editions"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -335,11 +335,11 @@
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="getting-started">
           <span slot="header" class="card-title"><div><h2 id="getting-started"><span>Getting Started</span><a class="fa fa-anchor" href="#getting-started"></a></h2>
       </div>
       </span>
-      <panel type="seamless" header="#### Installation<a class='fa fa-anchor' href='#installation'></a>" expanded>
+      <panel type="seamless" expanded id="installation"><template slot="_header"><h4 id="installation">Installation<a class="fa fa-anchor" href="#installation"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -361,7 +361,7 @@
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### HelloWorld<a class='fa fa-anchor' href='#helloworld'></a>" expanded>
+      <panel type="seamless" expanded id="helloworld"><template slot="_header"><h4 id="helloworld">HelloWorld<a class="fa fa-anchor" href="#helloworld"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -402,7 +402,7 @@
             <ul>
               <li>Java programs consists of
                 <trigger for="pop:helloWorld-statement">statements</trigger>, grouped
-                <tooltip content="A _method_ is a named sequence of statements">methods</tooltip>, which are then grouped into classes.</li>
+                <tooltip><template slot="_content">A <em>method</em> is a named sequence of statements</template>methods</tooltip>, which are then grouped into classes.</li>
               <li>Java is “case-sensitive”, which means <code>SYSTEM</code> is different from <code>System</code>.</li>
               <li><code>public</code> is an <em>access modifier</em> that indicates the method is accessible from outside this class. Similarly, <code>private</code> access modifier indicates that a method/attribute is not accessible outside the class.</li>
               <li><code>static</code> indicates this method is defined as a class-level member. Do not worry if you don’t know what that means. It will be explained later.</li>
@@ -412,7 +412,7 @@
               <li>Java uses squiggly braces (<code>{</code> and <code>}</code>) to group things together.</li>
               <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
             </ul>
-            <popover id="pop:helloWorld-statement" title="Statements" placement="top">
+            <popover id="pop:helloWorld-statement" placement="top"><template slot="header">Statements</template>
               <div slot="content" class="algolia-no-index">
                 <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
                 <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
@@ -432,7 +432,7 @@
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Compiling Programs<a class='fa fa-anchor' href='#compiling-programs'></a>" expanded>
+      <panel type="seamless" expanded id="compiling-programs"><template slot="_header"><h4 id="compiling-programs">Compiling Programs<a class="fa fa-anchor" href="#compiling-programs"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -451,7 +451,7 @@
               <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>javac HelloWorld.java</code></p>
             <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the
               <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
-            <popover id="pop:compiling-errors" title="Compile-time errors" placement="top">
+            <popover id="pop:compiling-errors" placement="top"><template slot="header">Compile-time errors</template>
               <div slot="content" class="algolia-no-index">
                 <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
                 <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
@@ -466,7 +466,7 @@
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Running Programs<a class='fa fa-anchor' href='#running-programs'></a>" expanded>
+      <panel type="seamless" expanded id="running-programs"><template slot="_header"><h4 id="running-programs">Running Programs<a class="fa fa-anchor" href="#running-programs"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -489,8 +489,8 @@
               <li>Similar to <code>javac</code>, your console should be able to find the java executable.</li>
             </ul>
             <p>When you run a Java program, you can encounter a
-              <tooltip content="so-called because it does not appear until after the program has started running">run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains
-              what happened and where.</p>
+              <tooltip><template slot="_content">so-called because it does not appear until after the program has started running</template>run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something
+              exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains what happened and where.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, modify the HelloWorld code to include the following line, compile it again, and run it.</p>
               <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
@@ -511,10 +511,10 @@
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
                   <div>
-                    <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] Run HelloWorld</small></small><a class='fa fa-anchor' href='#key-exercise-run-helloworld'></a>" expanded>
+                    <panel type="dark" expanded id="key-exercise-run-helloworld"><template slot="_header"><h3 id="key-exercise-run-helloworld"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] Run HelloWorld</small></small><a class="fa fa-anchor" href="#key-exercise-run-helloworld"></a></h3></template>
                       <question>
                         <ul>
                           <li>Install Java in your computer, if you haven't done so already.</li>
@@ -531,11 +531,11 @@
         </div>
       </panel>
       </panel>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="data-types">
         <span slot="header" class="card-title"><div><h2 id="data-types"><span>Data Types</span><a class="fa fa-anchor" href="#data-types"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Primitive Data Types<a class='fa fa-anchor' href='#primitive-data-types'></a>" expanded>
+    <panel type="seamless" expanded id="primitive-data-types"><template slot="_header"><h4 id="primitive-data-types">Primitive Data Types<a class="fa fa-anchor" href="#primitive-data-types"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -573,7 +573,7 @@ System.out.println(<span class="hljs-string">"Hello "</span> + name + <span clas
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <div>
                 <ul>
                   <li><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html">Oracle's tutorial on primitive data types</a></li>
@@ -585,7 +585,7 @@ System.out.println(<span class="hljs-string">"Hello "</span> + name + <span clas
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Variables<a class='fa fa-anchor' href='#variables'></a>" expanded>
+    <panel type="seamless" expanded id="variables"><template slot="_header"><h4 id="variables">Variables<a class="fa fa-anchor" href="#variables"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -636,7 +636,7 @@ done
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <div>
                 <ul>
                   <li><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html">Oracle's tutorial on variables</a></li>
@@ -648,7 +648,7 @@ done
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Operators<a class='fa fa-anchor' href='#operators'></a>" expanded>
+    <panel type="seamless" expanded id="operators"><template slot="_header"><h4 id="operators">Operators<a class="fa fa-anchor" href="#operators"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -872,7 +872,7 @@ System.out.println(hour * <span class="hljs-number">60</span> + minute);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <div>
                 <ul>
                   <li>Oracle's tutorial on operators: <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html">part 1</a>, <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html">part 2</a></li>
@@ -884,7 +884,7 @@ System.out.println(hour * <span class="hljs-number">60</span> + minute);
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Arrays<a class='fa fa-anchor' href='#arrays'></a>" expanded>
+    <panel type="seamless" expanded id="arrays"><template slot="_header"><h4 id="arrays">Arrays<a class="fa fa-anchor" href="#arrays"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -923,7 +923,7 @@ values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double
           <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
             </span>
             </span> The <code>[]</code> operator selects elements from an array. Array elements
-            <tooltip content="i.e., the index of the first element is 0, not 1">indices start from 0</tooltip>.</p>
+            <tooltip><template slot="_content">i.e., the index of the first element is 0, not 1</template>indices start from 0</tooltip>.</p>
           <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
 
 System.out.println(<span class="hljs-string">"The first element is "</span> + counts[<span class="hljs-number">0</span>]);
@@ -978,7 +978,7 @@ System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-n
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <div>
                 <ul>
                   <li><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html">Oracle's tutorial on Arrays</a></li>
@@ -989,10 +989,10 @@ System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-n
             </panel>
           </div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] Compare names</small></small><a class='fa fa-anchor' href='#key-exercise-compare-names'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-compare-names"><template slot="_header"><h3 id="key-exercise-compare-names"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] Compare names</small></small><a class="fa fa-anchor" href="#key-exercise-compare-names"></a></h3></template>
                     <question>
                       <p>Write a Java program that takes two command line arguments and prints <code>true</code> or <code>false</code> to indicate if the two arguments have the same value. Follow the sample output given below.</p>
                       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
@@ -1023,7 +1023,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                           <li>The two command line arguments can be accessed inside the <code>main</code> method using <code>args[0]</code> and <code>args[1]</code>.</li>
                           <li>When using multiple operators in the same expression, you might need to use parentheses to specify operator precedence. e.g., <code>&quot;foo&quot; + x == y</code> vs <code>&quot;foo&quot; + (x == y)</code></li>
                         </ul>
-                        <panel type="seamless" header="partial solution" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>partial solution</p></template>
                           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
       String first = args[<span class="hljs-number">0</span>];
@@ -1046,11 +1046,11 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
       </div>
     </panel>
     </panel>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="control-flow">
       <span slot="header" class="card-title"><div><h2 id="control-flow"><span>Control Flow</span><a class="fa fa-anchor" href="#control-flow"></a></h2>
   </div>
   </span>
-  <panel type="seamless" header="#### Branching<a class='fa fa-anchor' href='#branching'></a>" expanded>
+  <panel type="seamless" expanded id="branching"><template slot="_header"><h4 id="branching">Branching<a class="fa fa-anchor" href="#branching"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1155,10 +1155,10 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Greeter" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Greeter</p></template>
                   <question>
                     <p>Write a Java program that takes several command line arguments that describe a person or a family | and prints out a greeting. The parameters can be one of two formats.</p>
                     <div class="table-responsive">
@@ -1213,7 +1213,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                 </panel>
               </div>
               <div>
-                <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] Grade Helper</small></small><a class='fa fa-anchor' href='#key-exercise-grade-helper'></a>" expanded>
+                <panel type="dark" expanded id="key-exercise-grade-helper"><template slot="_header"><h3 id="key-exercise-grade-helper"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] Grade Helper</small></small><a class="fa fa-anchor" href="#key-exercise-grade-helper"></a></h3></template>
                   <question>
                     <p>Write a Java program that takes a letter grade e.g., <code>A+</code> as a command line argument and prints the CAP value for that grade.</p>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Use a <code>switch</code> statement in your code.</p>
@@ -1273,7 +1273,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
           </panel>
         </div>
         <div>
-          <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
             <div>
               <ul>
                 <li>Oracle's tutorials on [<a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html"><code>if</code>-<code>else</code></a>][<a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html"><code>switch</code></a>]</li>
@@ -1284,7 +1284,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
       </div>
     </div>
   </panel>
-  <panel type="seamless" header="#### Methods<a class='fa fa-anchor' href='#methods'></a>" expanded>
+  <panel type="seamless" expanded id="methods"><template slot="_header"><h4 id="methods">Methods<a class="fa fa-anchor" href="#methods"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1323,7 +1323,7 @@ Polly likes crackers
 </code></pre>
           <p>By convention, method names should be named in the
             <trigger trigger="click" for="modal:javaMethods_camelCase"><em>camelCase</em></trigger> format.</p>
-          <modal large title="Defintion: camelCase" id="modal:javaMethods_camelCase" class="algolia-no-index">
+          <modal large id="modal:javaMethods_camelCase" class="algolia-no-index"><template slot="_header">Defintion: camelCase</template>
             <div>
               <blockquote>
                 <pic src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" width="200" alt="camelCase"></pic>
@@ -1407,7 +1407,7 @@ Polly likes crackers
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
             <div>
               <ul>
                 <li>Oracle's tutorials on [<a href="https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html">methods</a>][<a href="https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html">parameters</a>]</li>
@@ -1417,10 +1417,10 @@ Polly likes crackers
           </panel>
         </div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
               <div>
-                <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] `getGradeCap` Method</small></small><a class='fa fa-anchor' href='#key-exercise-getgradecap-method'></a>" expanded>
+                <panel type="dark" expanded id="key-exercise-getgradecap-method"><template slot="_header"><h3 id="key-exercise-getgradecap-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code>getGradeCap</code> Method</small></small><a class="fa fa-anchor" href="#key-exercise-getgradecap-method"></a></h3></template>
                   <question>
                     <p>Add the following method to the class given below.</p>
                     <ul>
@@ -1509,7 +1509,7 @@ B : 3.5
       </div>
     </div>
   </panel>
-  <panel type="seamless" header="#### Loops<a class='fa fa-anchor' href='#loops'></a>" expanded>
+  <panel type="seamless" expanded id="loops"><template slot="_header"><h4 id="loops">Loops<a class="fa fa-anchor" href="#loops"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1633,7 +1633,7 @@ B : 3.5
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
             <div>
               <ul>
                 <li>Oracle's tutorials on [<a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html"><code>while</code></a>][<a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html"><code>for</code></a>][<a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/branch.html"><code>break</code>/<code>continue</code></a>]</li>
@@ -1642,10 +1642,10 @@ B : 3.5
           </panel>
         </div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
               <div>
-                <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] `getMultipleGradeCaps` Method</small></small><a class='fa fa-anchor' href='#key-exercise-getmultiplegradecaps-method'></a>" expanded>
+                <panel type="dark" expanded id="key-exercise-getmultiplegradecaps-method"><template slot="_header"><h3 id="key-exercise-getmultiplegradecaps-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code>getMultipleGradeCaps</code> Method</small></small><a class="fa fa-anchor" href="#key-exercise-getmultiplegradecaps-method"></a></h3></template>
                   <question>
                     <p>Add the following method to the class given below.</p>
                     <ul>
@@ -1751,11 +1751,11 @@ A-:4.5
     </div>
   </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="java-objects">
     <span slot="header" class="card-title"><div><h2 id="java-objects"><span>Java Objects</span><a class="fa fa-anchor" href="#java-objects"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Using Java Objects<a class='fa fa-anchor' href='#using-java-objects'></a>" expanded>
+    <panel type="seamless" expanded id="using-java-objects"><template slot="_header"><h4 id="using-java-objects">Using Java Objects<a class="fa fa-anchor" href="#using-java-objects"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1794,7 +1794,7 @@ A-:4.5
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example imports the <code>java.awt.Point</code> class (i.e., the <code>Point</code> class in the <code>java.awt</code> package) -- which can be used to represent
                 <trigger for="pop:usingObjects-coordinates">the coordinates of a location in a Cartesian plane</trigger> -- and use it in the <code>main</code> method.</p>
-              <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top">
+              <popover id="pop:usingObjects-coordinates" placement="top"><template slot="header">Coordinates of a location in a Cartesian plane</template>
                 <div slot="content" class="algolia-no-index">
                   <p>In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, <code>(0,0)</code> indicates the origin, and <code>(x,y)</code> indicates the point <code>x</code> units to the right
                     and <code>y</code> units up from the origin.</p>
@@ -1825,10 +1825,10 @@ A-:4.5
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] create `Rectangle` objects</small></small><a class='fa fa-anchor' href='#key-exercise-create-rectangle-objects'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-create-rectangle-objects"><template slot="_header"><h3 id="key-exercise-create-rectangle-objects"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] create <code>Rectangle</code> objects</small></small><a class="fa fa-anchor" href="#key-exercise-create-rectangle-objects"></a></h3></template>
                     <question>
                       <p>Update the code below to create a new <code>Rectangle</code> object as described in the code comments, to produce the given output.</p>
                       <ul>
@@ -1865,7 +1865,7 @@ A-:4.5
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Instance Members<a class='fa fa-anchor' href='#instance-members'></a>" expanded>
+    <panel type="seamless" expanded id="instance-members"><template slot="_header"><h4 id="instance-members">Instance Members<a class="fa fa-anchor" href="#instance-members"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1894,7 +1894,7 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y + <sp
             <pre><code class="hljs">3, 4, 25
 </code></pre>
           </box>
-          <p><strong>You can <tooltip content="i.e., change/modify"><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
+          <p><strong>You can <tooltip><template slot="_content">i.e., change/modify</template><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example changes the x value of the <code>Point</code> object to <code>5</code>.</p>
             <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
@@ -1925,10 +1925,10 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] use `Rectangle` objects</small></small><a class='fa fa-anchor' href='#key-exercise-use-rectangle-objects'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-use-rectangle-objects"><template slot="_header"><h3 id="key-exercise-use-rectangle-objects"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] use <code>Rectangle</code> objects</small></small><a class="fa fa-anchor" href="#key-exercise-use-rectangle-objects"></a></h3></template>
                     <question>
                       <p>Update the code below as described in code comments, to produce the given output.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Rectangle;
@@ -1973,7 +1973,7 @@ java.awt.Rectangle[x=0,y=0,width=8,height=10]
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Passing Objects<a class='fa fa-anchor' href='#passing-objects'></a>" expanded>
+    <panel type="seamless" expanded id="passing-objects"><template slot="_header"><h4 id="passing-objects">Passing Objects<a class="fa fa-anchor" href="#passing-objects"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -2095,10 +2095,10 @@ p3: 3, 2
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] pass objects to `move` method</small></small><a class='fa fa-anchor' href='#key-exercise-pass-objects-to-move-method'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-pass-objects-to-move-method"><template slot="_header"><h3 id="key-exercise-pass-objects-to-move-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] pass objects to <code>move</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-pass-objects-to-move-method"></a></h3></template>
                     <question>
                       <p>Add a method <code>move(Point p, Rectangle r)</code> to the code below, to produce the given output. The behavior of the method is as follows:</p>
                       <ul>
@@ -2158,7 +2158,7 @@ null
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Garbage Collection<a class='fa fa-anchor' href='#garbage-collection'></a>" expanded>
+    <panel type="seamless" expanded id="garbage-collection"><template slot="_header"><h4 id="garbage-collection">Garbage Collection<a class="fa fa-anchor" href="#garbage-collection"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -2188,11 +2188,11 @@ spot = <span class="hljs-keyword">null</span>;
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="java-classes">
     <span slot="header" class="card-title"><div><h2 id="java-classes"><span>Java Classes</span><a class="fa fa-anchor" href="#java-classes"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Defining Classes<a class='fa fa-anchor' href='#defining-classes'></a>" expanded>
+    <panel type="seamless" expanded id="defining-classes"><template slot="_header"><h4 id="defining-classes">Defining Classes<a class="fa fa-anchor" href="#defining-classes"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -2223,16 +2223,15 @@ spot = <span class="hljs-keyword">null</span>;
 }
 </code></pre>
           </box>
-          <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip content="e.g., `MyHelloWord` rather than `myHelloWorld` or `myhelloword` or `my_hello_world`">PascalCase</tooltip> format for class names</strong>.</p>
+          <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip><template slot="_content">e.g., <code>MyHelloWord</code> rather than <code>myHelloWorld</code> or <code>myhelloword</code> or <code>my_hello_world</code></template>PascalCase</tooltip> format for class names</strong>.</p>
           <p>The code is
-            <tooltip content="there are exceptions to this rule">usually</tooltip> placed in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
+            <tooltip><template slot="_content">there are exceptions to this rule</template>usually</tooltip> placed in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
           <p>When a class is <code>public</code> <span class="dimmed">(e.g., the <code>Time</code> class in the above example)</span> it can be used in other classes. But the
-            <tooltip content="Attributes are also called **instance variables**, because each instance has its own variables.">instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the <code>hour</code>, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span> can only be accessed from inside the
-            <code>Time</code> class.</p>
+            <tooltip><template slot="_content">Attributes are also called <strong>instance variables</strong>, because each instance has its own variables.</template>instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the <code>hour</code>, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span>            can only be accessed from inside the <code>Time</code> class.</p>
           <h5 id="constructors">Constructors<a class="fa fa-anchor" href="#constructors"></a></h5>
           <div class="indented">
             <p>The syntax for
-              <tooltip content="special methods that construct the object and initialize the instance variables">constructors</tooltip> is similar to that of other methods, except:</p>
+              <tooltip><template slot="_content">special methods that construct the object and initialize the instance variables</template>constructors</tooltip> is similar to that of other methods, except:</p>
             <ul>
               <li>The name of the constructor is the same as the name of the class.</li>
               <li>The keyword <code>static</code> is omitted.</li>
@@ -2251,7 +2250,7 @@ spot = <span class="hljs-keyword">null</span>;
               <p><code class="hljs inline java">Time time = <span class="hljs-keyword">new</span> Time();</code></p>
             </box>
             <p>Like other methods, constructors can be
-              <tooltip content="i.e., you can provide multiple constructors with different parameters">overloaded</tooltip>.</p>
+              <tooltip><template slot="_content">i.e., you can provide multiple constructors with different parameters</template>overloaded</tooltip>.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can add another constructor to the <code>Time</code> class to allow creating <code>Time</code> objects that are initialized to a specific time:</p>
               <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">(<span class="hljs-keyword">int</span> h, <span class="hljs-keyword">int</span> m, <span class="hljs-keyword">int</span> s)</span> </span>{
@@ -2266,9 +2265,8 @@ spot = <span class="hljs-keyword">null</span>;
           </div>
           <h5 id="this-keyword"><code>this</code> keyword<a class="fa fa-anchor" href="#this-keyword"></a></h5>
           <div class="indented">
-            <p><strong>The <code>this</code> keyword is a reference variable in Java that refers to the <tooltip content="i.e., the enclosing object, or _myself_">current object</tooltip>.</strong> You can use <code>this</code> the same way you use the name
-              of any other object. For example, you can read and write the instance variables of <code>this</code>, and you can pass <code>this</code> as an argument to other methods. But you do not declare <code>this</code>, and you can’t make an assignment
-              to it.</p>
+            <p><strong>The <code>this</code> keyword is a reference variable in Java that refers to the <tooltip><template slot="_content">i.e., the enclosing object, or <em>myself</em></template>current object</tooltip>.</strong> You can use <code>this</code>              the same way you use the name of any other object. For example, you can read and write the instance variables of <code>this</code>, and you can pass <code>this</code> as an argument to other methods. But you do not declare <code>this</code>,
+              and you can’t make an assignment to it.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the following version of the constructor, the names and types of the parameters are the same as the instance variables (parameters don’t have to use the same names, but
                 that’s a common style). As a result, the parameters <strong><em>shadow</em></strong> (or hide) the instance variables, so the keyword <code>this</code> is necessary to tell them apart.</p>
@@ -2310,10 +2308,10 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] define a `Circle` class</small></small><a class='fa fa-anchor' href='#key-exercise-define-a-circle-class'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-define-a-circle-class"><template slot="_header"><h3 id="key-exercise-define-a-circle-class"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] define a <code>Circle</code> class</small></small><a class="fa fa-anchor" href="#key-exercise-define-a-circle-class"></a></h3></template>
                     <question>
                       <p>Define a <code>Circle</code> class so that the code given below produces the given output. The nature of the class is a follows:</p>
                       <ul>
@@ -2390,7 +2388,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Getters and Setters<a class='fa fa-anchor' href='#getters-and-setters'></a>" expanded>
+    <panel type="seamless" expanded id="getters-and-setters"><template slot="_header"><h4 id="getters-and-setters">Getters and Setters<a class="fa fa-anchor" href="#getters-and-setters"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -2434,10 +2432,10 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] add getters/setters to the `Circle` class</small></small><a class='fa fa-anchor' href='#key-exercise-add-getters-setters-to-the-circle-class'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-add-getters-setters-to-the-circle-class"><template slot="_header"><h3 id="key-exercise-add-getters-setters-to-the-circle-class"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] add getters/setters to the <code>Circle</code> class</small></small><a class="fa fa-anchor" href="#key-exercise-add-getters-setters-to-the-circle-class"></a></h3></template>
                     <question>
                       <p>Consider the <code>Circle</code> class below:</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
@@ -2518,7 +2516,7 @@ radius : 0.0
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Class-Level Members<a class='fa fa-anchor' href='#class-level-members'></a>" expanded>
+    <panel type="seamless" expanded id="class-level-members"><template slot="_header"><h4 id="class-level-members">Class-Level Members<a class="fa fa-anchor" href="#class-level-members"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -2618,10 +2616,10 @@ radius : 0.0
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] add getMaxRadius to the `Circle` class</small></small><a class='fa fa-anchor' href='#key-exercise-add-getmaxradius-to-the-circle-class'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-add-getmaxradius-to-the-circle-class"><template slot="_header"><h3 id="key-exercise-add-getmaxradius-to-the-circle-class"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] add getMaxRadius to the <code>Circle</code> class</small></small><a class="fa fa-anchor" href="#key-exercise-add-getmaxradius-to-the-circle-class"></a></h3></template>
                     <question>
                       <p>Consider the <code>Circle</code> class below:</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
@@ -2714,11 +2712,11 @@ max radius used so far : 12.0
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="some-useful-classes">
     <span slot="header" class="card-title"><div><h2 id="some-useful-classes"><span>Some Useful Classes</span><a class="fa fa-anchor" href="#some-useful-classes"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Java API<a class='fa fa-anchor' href='#java-api'></a>" expanded>
+    <panel type="seamless" expanded id="java-api"><template slot="_header"><h4 id="java-api">Java API<a class="fa fa-anchor" href="#java-api"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -2741,7 +2739,7 @@ max radius used so far : 12.0
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### The String Class<a class='fa fa-anchor' href='#the-string-class'></a>" expanded>
+    <panel type="seamless" expanded id="the-string-class"><template slot="_header"><h4 id="the-string-class">The String Class<a class="fa fa-anchor" href="#the-string-class"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -2757,7 +2755,7 @@ max radius used so far : 12.0
         <div>
           <p>String is a built-in Java class that you
             <trigger trigger="click" for="modal:stringClass-javaLang">can use without importing</trigger>. Given below are some useful String methods:</p>
-          <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top" class="algolia-no-index">
+          <modal id="modal:stringClass-javaLang" placement="top" class="algolia-no-index"><template slot="_header">💡 <code>java.lang</code> classes can be used without importing</template>
             <p>Any class in the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/package-summary.html"><code>java.lang</code></a> package can be used without importing.
             </p>
           </modal>
@@ -2788,8 +2786,9 @@ System.out.println(upperName);
 ALAN TURING
 </code></pre>
             </box>
-            <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <tooltip content="once created, cannot be modified"><em>immutable</em></tooltip></strong>. For example, when you invoke <code>toUpperCase</code>              on a string <code>&quot;abc&quot;</code>, you get a new string object <code>&quot;ABC&quot;</code> as the return value rather than the string <code>&quot;abc&quot;</code> being changed to <code>&quot;ABC&quot;</code>. As a result, for such
-              string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code>toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p>
+            <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <tooltip><template slot="_content">once created, cannot be modified</template><em>immutable</em></tooltip></strong>. For
+              example, when you invoke <code>toUpperCase</code> on a string <code>&quot;abc&quot;</code>, you get a new string object <code>&quot;ABC&quot;</code> as the return value rather than the string <code>&quot;abc&quot;</code> being changed to
+              <code>&quot;ABC&quot;</code>. As a result, for such string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code>toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p>
             <pre><code class="hljs java">String s = <span class="hljs-string">"Ada"</span>;
 s.toUpperCase(); <span class="hljs-comment">// no effect</span>
 s = s.toUpperCase(); <span class="hljs-comment">// the correct way</span>
@@ -2843,9 +2842,10 @@ String name2 = <span class="hljs-string">"Alan Turing"</span>;
 System.out.println(name1 == name2);
 </code></pre>
             <p>This code compiles and runs, and most of the time it shows <code>true</code>. But it is not correct. The problem is,
-              <tooltip content="i.e., as opposed to comparing primitive values e.g., `2 == 2`">when used for comparing objects</tooltip>, the <code>==</code> operator checks whether the two variables refer to the same object (by comparing the references). If you give it two different string objects that contain the same letters, it
-              is supposed to yield <code>true</code> because they are two distinct objects even if they contain the same text. However, because Java strings are immutable, <mark>in some cases (but not always)</mark> Java reuses existing string objects
-              instead of creating multiple objects, which can cause the above code to yield <code>true</code>. Therefore, it is not safe to use <code>==</code> to compare strings if your intention is to check if they contain the same text.</p>
+              <tooltip><template slot="_content">i.e., as opposed to comparing primitive values e.g., <code>2 == 2</code></template>when used for comparing objects</tooltip>, the <code>==</code> operator checks whether the two variables refer to the same object
+              (by comparing the references). If you give it two different string objects that contain the same letters, it is supposed to yield <code>true</code> because they are two distinct objects even if they contain the same text. However, because
+              Java strings are immutable, <mark>in some cases (but not always)</mark> Java reuses existing string objects instead of creating multiple objects, which can cause the above code to yield <code>true</code>. Therefore, it is not safe to use
+              <code>==</code> to compare strings if your intention is to check if they contain the same text.</p>
             <p><strong>The right way to compare strings is with the <code>equals</code> method.</strong></p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example invokes <code>equals</code> on <code>name1</code> and passes <code>name2</code> as an argument. The <code>equals</code> method returns <code>true</code> if the
@@ -2947,7 +2947,9 @@ Second &quot;line&quot;
 </code></pre>
             </box>
             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> As the behavior of the <code>\n</code>
-              <tooltip content="e.g., behavior differs between Windows and OS-X">depends on the platform</tooltip>, the recommended way to print a line break is using the <code>System.lineSeparator()</code> as it works the same in all platforms.</p>
+              <tooltip><template slot="_content">e.g., behavior differs between Windows and OS-X</template>depends on the platform</tooltip>, the recommended way to print a line break is using the <code>System.lineSeparator()</code> as it works the same in all
+              platforms.
+            </p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Using <code>System.lineSeparator()</code> to print a line break.</p>
               <pre><code class="hljs java">System.out.println(<span class="hljs-string">"First line"</span> + System.lineSeparator() + <span class="hljs-string">"Second line"</span>);
@@ -2983,7 +2985,7 @@ Second line
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <div>
                 <ul>
                   <li><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/String.html"><code>String</code> API</a></li>
@@ -2993,10 +2995,10 @@ Second line
             </panel>
           </div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] `printPrice` method</small></small><a class='fa fa-anchor' href='#key-exercise-printprice-method'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-printprice-method"><template slot="_header"><h3 id="key-exercise-printprice-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code>printPrice</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-printprice-method"></a></h3></template>
                     <question>
                       <p>Implement the <code>printPrice</code> method in the code below to produce the given output. Its behavior:</p>
                       <ul>
@@ -3047,7 +3049,7 @@ FRIES: 0.50
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Wrapper Classes for Primitive Types<a class='fa fa-anchor' href='#wrapper-classes-for-primitive-types'></a>" expanded>
+    <panel type="seamless" expanded id="wrapper-classes-for-primitive-types"><template slot="_header"><h4 id="wrapper-classes-for-primitive-types">Wrapper Classes for Primitive Types<a class="fa fa-anchor" href="#wrapper-classes-for-primitive-types"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -3134,18 +3136,17 @@ System.out.println(i);
 </code></pre>
             <p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>-2147483648 : 2147483647</code></p>
           </box>
-          <p><strong>Wrapper classes provide methods for <tooltip content="In this context, parse means something like “read and translate”"><em>parsing</em></tooltip> strings to other types</strong> e.g., <code>Integer.parseInt</code> converts a string
-            to (you guessed it) an integer. The other wrapper classes provide similar methods, like <code>Double.parseDouble</code> and <code>Boolean.parseBoolean</code>.</p>
+          <p><strong>Wrapper classes provide methods for <tooltip><template slot="_content">In this context, parse means something like “read and translate”</template><em>parsing</em></tooltip> strings to other types</strong> e.g., <code>Integer.parseInt</code>            converts a string to (you guessed it) an integer. The other wrapper classes provide similar methods, like <code>Double.parseDouble</code> and <code>Boolean.parseBoolean</code>.</p>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>Integer.parseInt(&quot;1234&quot;)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>1234</code></p>
           <p>Wrapper classes also provide <code>toString</code>, which returns a string representation of a value.</p>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>Integer.toString(1234)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>&quot;1234&quot;</code></p>
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] `printTotalScore` method</small></small><a class='fa fa-anchor' href='#key-exercise-printtotalscore-method'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-printtotalscore-method"><template slot="_header"><h3 id="key-exercise-printtotalscore-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code>printTotalScore</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-printtotalscore-method"></a></h3></template>
                     <question>
                       <p>Implement the <code>printTotalScore</code> method in the code below to produce the given output. Its behavior:</p>
                       <ul>
@@ -3191,7 +3192,7 @@ System.out.println(i);
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### The Arrays Class<a class='fa fa-anchor' href='#the-arrays-class'></a>" expanded>
+    <panel type="seamless" expanded id="the-arrays-class"><template slot="_header"><h4 id="the-arrays-class">The Arrays Class<a class="fa fa-anchor" href="#the-arrays-class"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -3226,10 +3227,10 @@ System.out.println(Arrays.toString(c));
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] `filterEmails` method</small></small><a class='fa fa-anchor' href='#key-exercise-filteremails-method'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-filteremails-method"><template slot="_header"><h3 id="key-exercise-filteremails-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code>filterEmails</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-filteremails-method"></a></h3></template>
                     <question>
                       <p>Implement the following two methods in the code below to produce the given output.</p>
                       <ul>
@@ -3288,7 +3289,7 @@ System.out.println(Arrays.toString(c));
                             </ul>
                           </li>
                         </ul>
-                        <panel type="seamless" header="Partial solution" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
                           <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
     String[] results = <span class="hljs-keyword">new</span> String[items.length];
     <span class="hljs-keyword">int</span> matchCount = <span class="hljs-number">0</span>;
@@ -3315,7 +3316,7 @@ System.out.println(Arrays.toString(c));
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### The Scanner Class<a class='fa fa-anchor' href='#the-scanner-class'></a>" expanded>
+    <panel type="seamless" expanded id="the-scanner-class"><template slot="_header"><h4 id="the-scanner-class">The Scanner Class<a class="fa fa-anchor" href="#the-scanner-class"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -3367,10 +3368,10 @@ System.out.printf(<span class="hljs-string">"Hello %s, age %d\n"</span>, name, a
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] find total expenditure</small></small><a class='fa fa-anchor' href='#key-exercise-find-total-expenditure'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-find-total-expenditure"><template slot="_header"><h3 id="key-exercise-find-total-expenditure"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] find total expenditure</small></small><a class="fa fa-anchor" href="#key-exercise-find-total-expenditure"></a></h3></template>
                     <question>
                       <p>Write a program to ask the user for a description of overseas expenses (presumably, the user has just returned from an overseas trip) and calculate the total in local currency.</p>
                       <ul>
@@ -3421,7 +3422,7 @@ System.out.println(Arrays.toString(words));
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <code>String.format(&quot;%.2f&quot;, doubleValue)</code> to format <code>doubleValue</code> to two decimal
                           points.
                           <br> e.g., <code>String.format(&quot;%.2f&quot;, 1.3334)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>1.33</code></p>
-                        <panel type="seamless" header="Partial solution" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
                           <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Arrays;
 <span class="hljs-keyword">import</span> java.util.Scanner;
 
@@ -3470,11 +3471,11 @@ System.out.println(Arrays.toString(words));
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="inheritance">
     <span slot="header" class="card-title"><div><h2 id="inheritance"><span>Inheritance</span><a class="fa fa-anchor" href="#inheritance"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Inheritance (Basic)<a class='fa fa-anchor' href='#inheritance-basic'></a>" expanded>
+    <panel type="seamless" expanded id="inheritance-basic"><template slot="_header"><h4 id="inheritance-basic">Inheritance (Basic)<a class="fa fa-anchor" href="#inheritance-basic"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -3555,7 +3556,8 @@ System.out.println(Arrays.toString(words));
               method to set it.</p>
             <h5 id="accessing-superclass-members">Accessing Superclass Members<a class="fa fa-anchor" href="#accessing-superclass-members"></a></h5>
             <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a
-              <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable">hidden field</tooltip> (although hiding fields is discouraged).</p>
+              <tooltip><template slot="_content">when both the superclass and the subclass use the same variable name, the superclass variables is said to be <em>hidden/shadowed</em> by the subclass variable</template>hidden field</tooltip> (although hiding fields
+              is discouraged).</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this class, <code>Superclass</code> and a subclass, called <code>Subclass</code>, that overrides <code>printMethod()</code>:</p>
               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Superclass</span> </span>{
@@ -3623,10 +3625,10 @@ Printed in Subclass
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] inherit the `Task` class</small></small><a class='fa fa-anchor' href='#key-exercise-inherit-the-task-class'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-inherit-the-task-class"><template slot="_header"><h3 id="key-exercise-inherit-the-task-class"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] inherit the <code>Task</code> class</small></small><a class="fa fa-anchor" href="#key-exercise-inherit-the-task-class"></a></h3></template>
                     <question>
                       <p>Background: Suppose we are creating a software to manage various tasks a person has to do. Two types of such tasks are,</p>
                       <ul>
@@ -3719,7 +3721,7 @@ Postponed to Nov 18th
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### The Object Class<a class='fa fa-anchor' href='#the-object-class'></a>" expanded>
+    <panel type="seamless" expanded id="the-object-class"><template slot="_header"><h4 id="the-object-class">The Object Class<a class="fa fa-anchor" href="#the-object-class"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -3834,10 +3836,10 @@ true
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] override the `toString` method</small></small><a class='fa fa-anchor' href='#key-exercise-override-the-tostring-method'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-override-the-tostring-method"><template slot="_header"><h3 id="key-exercise-override-the-tostring-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] override the <code>toString</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-override-the-tostring-method"></a></h3></template>
                     <question>
                       <p>Suppose you have the following classes <code>Task</code>, <code>Todo</code>, <code>Deadline</code>:</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
@@ -3960,7 +3962,7 @@ do by: Postponed to Nov 18th
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Interfaces<a class='fa fa-anchor' href='#interfaces'></a>" expanded>
+    <panel type="seamless" expanded id="interfaces"><template slot="_header"><h4 id="interfaces">Interfaces<a class="fa fa-anchor" href="#interfaces"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -4029,7 +4031,7 @@ do by: Postponed to Nov 18th
             </ol>
           </box>
           <p><strong>Interfaces can also contain <trigger trigger="click" for="modal:javaInterfaces-constants">constants</trigger> and static methods</strong>.</p>
-          <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants" class="algolia-no-index">
+          <modal large id="modal:javaInterfaces-constants" class="algolia-no-index"><template slot="_header"><span class="dimmed">Textbook »</span></template>
             <div>
               <div></div>
               <p></p>
@@ -4083,10 +4085,10 @@ do by: Postponed to Nov 18th
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] print `Printable` items</small></small><a class='fa fa-anchor' href='#key-exercise-print-printable-items'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-print-printable-items"><template slot="_header"><h3 id="key-exercise-print-printable-items"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print <code>Printable</code> items</small></small><a class="fa fa-anchor" href="#key-exercise-print-printable-items"></a></h3></template>
                     <question>
                       <p>The <code>Main</code> class below passes a list of <code>Printable</code> objects (i.e., objects that implement the <code>Printable</code> interface) for another method to be printed.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -4166,7 +4168,7 @@ Person of name James Cook
     <span class="hljs-comment">// todo: add missing methods</span>
 }
 </code></pre>
-                      <panel type="seamless" header="Partial solution" class="algolia-no-index">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Printable</span> </span>{
     <span class="hljs-comment">//...</span>
 }
@@ -4181,7 +4183,7 @@ Person of name James Cook
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Polymorhism<a class='fa fa-anchor' href='#polymorhism'></a>" expanded>
+    <panel type="seamless" expanded id="polymorhism"><template slot="_header"><h4 id="polymorhism">Polymorhism<a class="fa fa-anchor" href="#polymorhism"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -4216,7 +4218,7 @@ Person of name James Cook
             <pre><code class="hljs">Mittens: Meow
 Snowball: Meow
 </code></pre>
-            <panel type="seamless" header="%%The `Cat` class%%" class="algolia-no-index">
+            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Cat</code> class</span></p></template>
               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -4255,7 +4257,7 @@ Snowball: Meow
 Snowball: Meow
 Spot: Woof
 </code></pre>
-            <panel type="seamless" header="%%The `Dog` class%%" class="algolia-no-index">
+            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Dog</code> class</span></p></template>
               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -4291,7 +4293,7 @@ Spot: Woof
 Snowball: Meow
 Spot: Woof
 </code></pre>
-            <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%" class="algolia-no-index">
+            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Animal</code>, <code>Cat</code>, and <code>Dog</code> classes</span></p></template>
               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
     <span class="hljs-keyword">protected</span> String name;
@@ -4340,10 +4342,10 @@ Spot: Woof
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] print shape area</small></small><a class='fa fa-anchor' href='#key-exercise-print-shape-area'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-print-shape-area"><template slot="_header"><h3 id="key-exercise-print-shape-area"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print shape area</small></small><a class="fa fa-anchor" href="#key-exercise-print-shape-area"></a></h3></template>
                     <question>
                       <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
                       <p>Add the missing variables/methods to the code below so that it produces the output given.</p>
@@ -4399,7 +4401,7 @@ Spot: Woof
 }
 </code></pre>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You may use an array of size 100 to store the shapes.</p>
-                      <panel type="seamless" header="Partial solution" class="algolia-no-index">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
@@ -4423,7 +4425,7 @@ Spot: Woof
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Abstract Classes and Methods<a class='fa fa-anchor' href='#abstract-classes-and-methods'></a>" expanded>
+    <panel type="seamless" expanded id="abstract-classes-and-methods"><template slot="_header"><h4 id="abstract-classes-and-methods">Abstract Classes and Methods<a class="fa fa-anchor" href="#abstract-classes-and-methods"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -4507,7 +4509,7 @@ Spot: Woof
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <div>
                 <ul>
                   <li><a href="https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html">Oracle’s Java Tutorials: Abstract Methods and Classes</a></li>
@@ -4516,10 +4518,10 @@ Spot: Woof
             </panel>
           </div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] print area with abstract `Shape`</small></small><a class='fa fa-anchor' href='#key-exercise-print-area-with-abstract-shape'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-print-area-with-abstract-shape"><template slot="_header"><h3 id="key-exercise-print-area-with-abstract-shape"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print area with abstract <code>Shape</code></small></small><a class="fa fa-anchor" href="#key-exercise-print-area-with-abstract-shape"></a></h3></template>
                     <question>
                       <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -4594,7 +4596,7 @@ Rectangle of area 16
 }
 </code></pre>
                       <p>Add the missing <code>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
-                      <panel type="seamless" header="Partial solution" class="algolia-no-index">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
@@ -4606,10 +4608,10 @@ Rectangle of area 16
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about abstract classes" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about abstract classes</p></template>
                     <question>
                       <p>Choose the correct statements about Java abstract classes and
-                        <tooltip content="classes that are not abstract">concrete classes</tooltip>.</p>
+                        <tooltip><template slot="_content">classes that are not abstract</template>concrete classes</tooltip>.</p>
                       <ul class="task-list">
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A concrete class can contain an abstract method.</li>
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An abstract class can contain concrete methods.</li>
@@ -4630,11 +4632,11 @@ Rectangle of area 16
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="exceptions">
     <span slot="header" class="card-title"><div><h2 id="exceptions"><span>Exceptions</span><a class="fa fa-anchor" href="#exceptions"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What are Exceptions?<a class='fa fa-anchor' href='#what-are-exceptions'></a>" expanded>
+    <panel type="seamless" expanded id="what-are-exceptions"><template slot="_header"><h4 id="what-are-exceptions">What are Exceptions?<a class="fa fa-anchor" href="#what-are-exceptions"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -4690,7 +4692,7 @@ Rectangle of area 16
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How to use Exceptions<a class='fa fa-anchor' href='#how-to-use-exceptions'></a>" expanded>
+    <panel type="seamless" expanded id="how-to-use-exceptions"><template slot="_header"><h4 id="how-to-use-exceptions">How to use Exceptions<a class="fa fa-anchor" href="#how-to-use-exceptions"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -4806,7 +4808,7 @@ Rectangle of area 16
             </li>
           </ul>
           <p><strong>You can use the <code>throw</code> statement to throw an exception.</strong> The throw statement requires a
-            <tooltip content="Throwable objects are instances of any subclass of the `Throwable` class.">throwable</tooltip> object as the argument.</p>
+            <tooltip><template slot="_content">Throwable objects are instances of any subclass of the <code>Throwable</code> class.</template>throwable</tooltip> object as the argument.</p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of a <code>throw</code> statement.</p>
             <pre><code class="hljs java"><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
@@ -4856,10 +4858,10 @@ Rectangle of area 16
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] parse rectangle descriptor</small></small><a class='fa fa-anchor' href='#key-exercise-parse-rectangle-descriptor'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-parse-rectangle-descriptor"><template slot="_header"><h3 id="key-exercise-parse-rectangle-descriptor"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] parse rectangle descriptor</small></small><a class="fa fa-anchor" href="#key-exercise-parse-rectangle-descriptor"></a></h3></template>
                     <question>
                       <p>The <code>Main</code> class below parses a string descriptor of a rectangle of the format <code>&quot;WIDTHxHEIGHT&quot;</code> <span class="dimmed">e.g., <code>&quot;3x4&quot;</code></span> and prints the area of the rectangle.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -4930,7 +4932,7 @@ WIDTH or HEIGHT is missing: 3x
 WIDTH or HEIGHT is missing: 3
 Too many dimensions: 3x4x5
 </code></pre>
-                      <panel type="seamless" header="Partial solution" class="algolia-no-index">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
@@ -4963,11 +4965,11 @@ Too many dimensions: 3x4x5
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="generics">
     <span slot="header" class="card-title"><div><h2 id="generics"><span>Generics</span><a class="fa fa-anchor" href="#generics"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What are Generics?<a class='fa fa-anchor' href='#what-are-generics'></a>" expanded>
+    <panel type="seamless" expanded id="what-are-generics"><template slot="_header"><h4 id="what-are-generics">What are Generics?<a class="fa fa-anchor" href="#what-are-generics"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -5036,7 +5038,7 @@ Too many dimensions: 3x4x5
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How to use Generics<a class='fa fa-anchor' href='#how-to-use-generics'></a>" expanded>
+    <panel type="seamless" expanded id="how-to-use-generics"><template slot="_header"><h4 id="how-to-use-generics">How to use Generics<a class="fa fa-anchor" href="#how-to-use-generics"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -5162,11 +5164,11 @@ Pair&lt;String, String&gt;  p2 = <span class="hljs-keyword">new</span> OrderedPa
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="collections">
     <span slot="header" class="card-title"><div><h2 id="collections"><span>Collections</span><a class="fa fa-anchor" href="#collections"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### The Collections Framework<a class='fa fa-anchor' href='#the-collections-framework'></a>" expanded>
+    <panel type="seamless" expanded id="the-collections-framework"><template slot="_header"><h4 id="the-collections-framework">The Collections Framework<a class="fa fa-anchor" href="#the-collections-framework"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -5240,7 +5242,7 @@ Pair&lt;String, String&gt;  p2 = <span class="hljs-keyword">new</span> OrderedPa
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### The ArrayList Class<a class='fa fa-anchor' href='#the-arraylist-class'></a>" expanded>
+    <panel type="seamless" expanded id="the-arraylist-class"><template slot="_header"><h4 id="the-arraylist-class">The ArrayList Class<a class="fa fa-anchor" href="#the-arraylist-class"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -5319,7 +5321,7 @@ After clearing: []
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <div>
                 <ul>
                   <li><a href="https://docs.oracle.com/javase/9/docs/api/java/util/ArrayList.html"><code>ArrayList</code> API</a></li>
@@ -5329,10 +5331,10 @@ After clearing: []
             </panel>
           </div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] Numbers list</small></small><a class='fa fa-anchor' href='#key-exercise-numbers-list'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-numbers-list"><template slot="_header"><h3 id="key-exercise-numbers-list"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] Numbers list</small></small><a class="fa fa-anchor" href="#key-exercise-numbers-list"></a></h3></template>
                     <question>
                       <p>Add the missing methods to the class given below so that it produces the output given.</p>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Use an <code>ArrayList</code> to store the numbers.</p>
@@ -5392,7 +5394,7 @@ The total is: 27
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### The HashMap Class<a class='fa fa-anchor' href='#the-hashmap-class'></a>" expanded>
+    <panel type="seamless" expanded id="the-hashmap-class"><template slot="_header"><h4 id="the-hashmap-class">The HashMap Class<a class="fa fa-anchor" href="#the-hashmap-class"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -5472,10 +5474,10 @@ Number of keys after clearing: 0
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] weekly roster</small></small><a class='fa fa-anchor' href='#key-exercise-weekly-roster'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-weekly-roster"><template slot="_header"><h3 id="key-exercise-weekly-roster"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] weekly roster</small></small><a class="fa fa-anchor" href="#key-exercise-weekly-roster"></a></h3></template>
                     <question>
                       <p>The class given below keeps track of how many people signup to attend an event on each day of the week. Add the missing methods so that it produces the output given.</p>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Use an <code>HashMap</code> to store the number of entries for each day.</p>
@@ -5529,7 +5531,7 @@ Wednesday =&gt; 2
             </panel>
           </div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <div>
                 <ul>
                   <li><a href="https://docs.oracle.com/javase/9/docs/api/java/util/HashMap.html"><code>HashMap</code> API</a></li>
@@ -5542,11 +5544,11 @@ Wednesday =&gt; 2
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="junit">
     <span slot="header" class="card-title"><div><h2 id="junit"><span>JUnit</span><a class="fa fa-anchor" href="#junit"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### JUnit: Basic<a class='fa fa-anchor' href='#junit-basic'></a>" expanded>
+    <panel type="seamless" expanded id="junit-basic"><template slot="_header"><h4 id="junit-basic">JUnit: Basic<a class="fa fa-anchor" href="#junit-basic"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -5636,7 +5638,7 @@ Wednesday =&gt; 2
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <ul>
                 <li><a href="https://junit.org/junit5/docs/current/user-guide/">JUnit Official User Guide</a></li>
                 <li><a href="https://www.testingexcellence.com/junit-5-annotations/">JUnit 5 Tutorial – Common Annotations With Examples</a> - a short tutorial</li>
@@ -5647,7 +5649,7 @@ Wednesday =&gt; 2
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### JUnit: Intermediate<a class='fa fa-anchor' href='#junit-intermediate'></a>" expanded>
+    <panel type="seamless" expanded id="junit-intermediate"><template slot="_header"><h4 id="junit-intermediate">JUnit: Intermediate<a class="fa fa-anchor" href="#junit-intermediate"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -5667,11 +5669,11 @@ Wednesday =&gt; 2
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="miscellaneous-topics">
     <span slot="header" class="card-title"><div><h2 id="miscellaneous-topics"><span>Miscellaneous Topics</span><a class="fa fa-anchor" href="#miscellaneous-topics"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### Enums<a class='fa fa-anchor' href='#enums'></a>" expanded>
+    <panel type="seamless" expanded id="enums"><template slot="_header"><h4 id="enums">Enums<a class="fa fa-anchor" href="#enums"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -5711,10 +5713,10 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div>
-                  <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] show priority color</small></small><a class='fa fa-anchor' href='#key-exercise-show-priority-color'></a>" expanded>
+                  <panel type="dark" expanded id="key-exercise-show-priority-color"><template slot="_header"><h3 id="key-exercise-show-priority-color"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] show priority color</small></small><a class="fa fa-anchor" href="#key-exercise-show-priority-color"></a></h3></template>
                     <question>
                       <p>Define an enumeration named <code>Priority</code>. Add the missing <code>describe</code> method to the code below so that it produces the output given.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -5762,7 +5764,7 @@ Green indicates low priority
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Packages<a class='fa fa-anchor' href='#packages'></a>" expanded>
+    <panel type="seamless" expanded id="packages"><template slot="_header"><h4 id="packages">Packages<a class="fa fa-anchor" href="#packages"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -5798,9 +5800,9 @@ Green indicates low priority
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, <code>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code>foobar.com</code></p>
           </box>
-          <p><strong>To use a public <tooltip content="types contained in the package">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
+          <p><strong>To use a public <tooltip><template slot="_content">types contained in the package</template>package member</tooltip> from outside its package, you must do one of the following:</strong></p>
           <ol>
-            <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`">fully qualified name</tooltip></strong> to refer to the member</li>
+            <li><strong>Use the <tooltip><template slot="_content">type name prefixed by the package name e.g., <code>java.io.IOException</code></template>fully qualified name</tooltip></strong> to refer to the member</li>
             <li><strong>Import</strong> the package or the specific package member</li>
           </ol>
           <box>
@@ -5854,7 +5856,7 @@ Green indicates low priority
     }
 }
 </code></pre>
-            <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
+            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><code>Formatter</code> class</p></template>
               <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
@@ -5881,7 +5883,7 @@ Green indicates low priority
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <div>
                 <ul>
                   <li>Oracle's tutorial on packages: [<a href="https://docs.oracle.com/javase/tutorial/java/concepts/package.html">What is a Package?</a>] [<a href="https://docs.oracle.com/javase/tutorial/java/package/index.html">Creating and Using Packages</a>]</li>
@@ -5892,7 +5894,7 @@ Green indicates low priority
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### File Access<a class='fa fa-anchor' href='#file-access'></a>" expanded>
+    <panel type="seamless" expanded id="file-access"><template slot="_header"><h4 id="file-access">File Access<a class="fa fa-anchor" href="#file-access"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -6030,7 +6032,7 @@ second line
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Access Modifiers<a class='fa fa-anchor' href='#access-modifiers'></a>" expanded>
+    <panel type="seamless" expanded id="access-modifiers"><template slot="_header"><h4 id="access-modifiers">Access Modifiers<a class="fa fa-anchor" href="#access-modifiers"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -6071,16 +6073,16 @@ second line
                   <tr>
                     <th>Modifier</th>
                     <th>
-                      <tooltip content="whether the class itself has access to the member defined by the access level">Class</tooltip>
+                      <tooltip><template slot="_content">whether the class itself has access to the member defined by the access level</template>Class</tooltip>
                     </th>
                     <th>
-                      <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member">Package</tooltip>
+                      <tooltip><template slot="_content">whether classes in the same package as the class (regardless of their parentage) have access to the member</template>Package</tooltip>
                     </th>
                     <th>
-                      <tooltip content="whether subclasses of the class declared outside this package have access to the member">Subclass</tooltip>
+                      <tooltip><template slot="_content">whether subclasses of the class declared outside this package have access to the member</template>Subclass</tooltip>
                     </th>
                     <th>
-                      <tooltip content="whether all classes have access to the member">World</tooltip>
+                      <tooltip><template slot="_content">whether all classes have access to the member</template>World</tooltip>
                     </th>
                   </tr>
                 </thead>
@@ -6158,7 +6160,7 @@ second line
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Constants<a class='fa fa-anchor' href='#constants'></a>" expanded>
+    <panel type="seamless" expanded id="constants-2"><template slot="_header"><h4 id="constants-2">Constants<a class="fa fa-anchor" href="#constants-2"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -6188,7 +6190,7 @@ second line
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Casting<a class='fa fa-anchor' href='#casting'></a>" expanded>
+    <panel type="seamless" expanded id="casting"><template slot="_header"><h4 id="casting">Casting<a class="fa fa-anchor" href="#casting"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -6305,7 +6307,7 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### JAR Files<a class='fa fa-anchor' href='#jar-files'></a>" expanded>
+    <panel type="seamless" expanded id="jar-files"><template slot="_header"><h4 id="jar-files">JAR Files<a class="fa fa-anchor" href="#jar-files"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -6329,7 +6331,7 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <div>
                 <ul>
                   <li><a href="https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html">Oracle's tutorial on JAR files</a></li>
@@ -6342,7 +6344,7 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Varargs <a class='fa fa-anchor' href='#varargs'></a>" expanded>
+    <panel type="seamless" expanded id="varargs"><template slot="_header"><h4 id="varargs">Varargs<a class="fa fa-anchor" href="#varargs"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -6376,7 +6378,7 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Streams <a class='fa fa-anchor' href='#streams'></a>" expanded>
+    <panel type="seamless" expanded id="streams"><template slot="_header"><h4 id="streams">Streams<a class="fa fa-anchor" href="#streams"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -6396,10 +6398,10 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <p><strong>Tutorials</strong>:</p>
               <tabs>
-                <tab header="<md>:far-file-alt:</md>">
+                <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                   <ul>
                     <li>
                       <p><a href="https://www.tutorialspoint.com/java8/"><strong>Java 8 Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a>. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span>
@@ -6410,12 +6412,12 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
                     </li>
                   </ul>
                 </tab>
-                <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
 
 
                   <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                  <panel type="seamless" header="A a more detailed version covering similar grounds" class="algolia-no-index">
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>A a more detailed version covering similar grounds</p></template>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </panel>
                 </tab>
@@ -6425,7 +6427,7 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### JavaFX <a class='fa fa-anchor' href='#javafx'></a>" expanded>
+    <panel type="seamless" expanded id="javafx"><template slot="_header"><h4 id="javafx">JavaFX<a class="fa fa-anchor" href="#javafx"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -6629,12 +6631,12 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
               <a class="nav-link py-1" href="#packages">Packages&#x200E;</a>
               <a class="nav-link py-1" href="#file-access">File Access&#x200E;</a>
               <a class="nav-link py-1" href="#access-modifiers">Access Modifiers&#x200E;</a>
-              <a class="nav-link py-1" href="#constants">Constants&#x200E;</a>
+              <a class="nav-link py-1" href="#constants-2">Constants&#x200E;</a>
               <a class="nav-link py-1" href="#casting">Casting&#x200E;</a>
               <a class="nav-link py-1" href="#jar-files">JAR Files&#x200E;</a>
-              <a class="nav-link py-1" href="#varargs">Varargs &#x200E;</a>
-              <a class="nav-link py-1" href="#streams">Streams &#x200E;</a>
-              <a class="nav-link py-1" href="#javafx">JavaFX &#x200E;</a>
+              <a class="nav-link py-1" href="#varargs">Varargs&#x200E;</a>
+              <a class="nav-link py-1" href="#streams">Streams&#x200E;</a>
+              <a class="nav-link py-1" href="#javafx">JavaFX&#x200E;</a>
             </nav>
           </nav>
         </nav>
@@ -6645,7 +6647,7 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -6674,6 +6676,7 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: tP: Constraints</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -235,7 +235,7 @@
               <h4 id="constraint-no-dbms"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-No-DBMS</span><a class="fa fa-anchor" href="#constraint-no-dbms"></a></h4>
               <div class="indented-level2">
                 <p>Do not use a
-                  <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data.<br>
+                  <tooltip><template slot="_content">Database Management System e.g., MySQL</template>DBMS</tooltip> to store data.<br>
                   <span class="dimmed"><strong>Reason:</strong> Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we
 need to optimize it for CS2113/T
 module learning outcomes; covering DBMS-related topics will have to be left to database modules or level 3 project modules.</span></p>
@@ -342,8 +342,9 @@ module learning outcomes; covering DBMS-related topics will have to be left to d
                 <ul>
                   <li>Regular typing is usually faster than using key combinations.</li>
                   <li>
-                    <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over
-                    <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert users.<br></li>
+                    <tooltip><template slot="_content">typing the full command and hitting ENTER will complete the task</template>One-shot commands</tooltip> are faster over
+                    <tooltip><template slot="_content">prompting the user to input one parameter at a time</template>multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert
+                    users.<br></li>
                 </ul>
               </div>
             </div>
@@ -392,7 +393,7 @@ module learning outcomes; covering DBMS-related topics will have to be left to d
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -421,6 +422,7 @@ module learning outcomes; covering DBMS-related topics will have to be left to d
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

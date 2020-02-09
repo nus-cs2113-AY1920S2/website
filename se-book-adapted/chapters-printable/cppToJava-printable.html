@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter [Printable] : C++ to Java</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <link rel="stylesheet" href="/website/book/css/textbook.css">
         <link rel="stylesheet" href="/website/book/css/print.css">
@@ -103,7 +103,7 @@
                 </span><a class="fa fa-anchor" href="#how-java-works"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p><strong>Java is both <tooltip content="generates machine code from source code before executing the program"><em>compiled</em></tooltip> and <tooltip content="the interpreter executes the program directly, one statement at a time"><em>interpreted</em></tooltip>.</strong>                    Instead of translating programs directly into machine language, the Java compiler generates <em>byte code</em>. Byte code is <em>portable</em>, so it is possible to compile a Java program on one machine, transfer the byte code to another
+                  <p><strong>Java is both <tooltip><template slot="_content">generates machine code from source code before executing the program</template><em>compiled</em></tooltip> and <tooltip><template slot="_content">the interpreter executes the program directly, one statement at a time</template><em>interpreted</em></tooltip>.</strong>                    Instead of translating programs directly into machine language, the Java compiler generates <em>byte code</em>. Byte code is <em>portable</em>, so it is possible to compile a Java program on one machine, transfer the byte code to another
                     machine, and run the byte code on the other machine. That’s why Java is considered a <em>platform independent technology</em>, aka <em>WORA</em> (Write Once Run Anywhere). The interpreter that runs byte code is called a “Java Virtual
                     Machine” (JVM).
                   </p>
@@ -196,7 +196,7 @@
                   <ul>
                     <li>Java programs consists of
                       <trigger for="pop:helloWorld-statement">statements</trigger>, grouped
-                      <tooltip content="A _method_ is a named sequence of statements">methods</tooltip>, which are then grouped into classes.</li>
+                      <tooltip><template slot="_content">A <em>method</em> is a named sequence of statements</template>methods</tooltip>, which are then grouped into classes.</li>
                     <li>Java is “case-sensitive”, which means <code>SYSTEM</code> is different from <code>System</code>.</li>
                     <li><code>public</code> is an <em>access modifier</em> that indicates the method is accessible from outside this class. Similarly, <code>private</code> access modifier indicates that a method/attribute is not accessible outside the class.</li>
                     <li><code>static</code> indicates this method is defined as a class-level member. Do not worry if you don’t know what that means. It will be explained later.</li>
@@ -206,7 +206,7 @@
                     <li>Java uses squiggly braces (<code>{</code> and <code>}</code>) to group things together.</li>
                     <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
                   </ul>
-                  <popover id="pop:helloWorld-statement" title="Statements" placement="top">
+                  <popover id="pop:helloWorld-statement" placement="top"><template slot="header">Statements</template>
                     <div slot="content" class="algolia-no-index">
                       <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
                       <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
@@ -237,7 +237,7 @@
                     <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>javac HelloWorld.java</code></p>
                   <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the
                     <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
-                  <popover id="pop:compiling-errors" title="Compile-time errors" placement="top">
+                  <popover id="pop:compiling-errors" placement="top"><template slot="header">Compile-time errors</template>
                     <div slot="content" class="algolia-no-index">
                       <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
                       <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
@@ -268,8 +268,8 @@
                     <li>Similar to <code>javac</code>, your console should be able to find the java executable.</li>
                   </ul>
                   <p>When you run a Java program, you can encounter a
-                    <tooltip content="so-called because it does not appear until after the program has started running">run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message
-                    that explains what happened and where.</p>
+                    <tooltip><template slot="_content">so-called because it does not appear until after the program has started running</template>run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something
+                    exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains what happened and where.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, modify the HelloWorld code to include the following line, compile it again, and run it.</p>
                     <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
@@ -621,7 +621,7 @@ values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double
                   <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                     </span>
                     </span> The <code>[]</code> operator selects elements from an array. Array elements
-                    <tooltip content="i.e., the index of the first element is 0, not 1">indices start from 0</tooltip>.</p>
+                    <tooltip><template slot="_content">i.e., the index of the first element is 0, not 1</template>indices start from 0</tooltip>.</p>
                   <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
 
 System.out.println(<span class="hljs-string">"The first element is "</span> + counts[<span class="hljs-number">0</span>]);
@@ -813,7 +813,7 @@ Polly likes crackers
 </code></pre>
                     <p>By convention, method names should be named in the
                       <trigger trigger="click" for="modal:javaMethods_camelCase"><em>camelCase</em></trigger> format.</p>
-                    <modal large title="Defintion: camelCase" id="modal:javaMethods_camelCase" class="algolia-no-index">
+                    <modal large id="modal:javaMethods_camelCase" class="algolia-no-index"><template slot="_header">Defintion: camelCase</template>
                       <div>
                         <blockquote>
                           <pic src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" width="200" alt="camelCase"></pic>
@@ -1056,7 +1056,7 @@ Polly likes crackers
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example imports the <code>java.awt.Point</code> class (i.e., the <code>Point</code> class in the <code>java.awt</code> package) -- which can be used to represent
                         <trigger for="pop:usingObjects-coordinates">the coordinates of a location in a Cartesian plane</trigger> -- and use it in the <code>main</code> method.</p>
-                      <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top">
+                      <popover id="pop:usingObjects-coordinates" placement="top"><template slot="header">Coordinates of a location in a Cartesian plane</template>
                         <div slot="content" class="algolia-no-index">
                           <p>In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, <code>(0,0)</code> indicates the origin, and <code>(x,y)</code> indicates the point <code>x</code> units
                             to the right and <code>y</code> units up from the origin.</p>
@@ -1109,7 +1109,7 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y + <sp
                     <pre><code class="hljs">3, 4, 25
 </code></pre>
                   </box>
-                  <p><strong>You can <tooltip content="i.e., change/modify"><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
+                  <p><strong>You can <tooltip><template slot="_content">i.e., change/modify</template><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example changes the x value of the <code>Point</code> object to <code>5</code>.</p>
                     <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
@@ -1312,16 +1312,15 @@ spot = <span class="hljs-keyword">null</span>;
 }
 </code></pre>
                   </box>
-                  <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip content="e.g., `MyHelloWord` rather than `myHelloWorld` or `myhelloword` or `my_hello_world`">PascalCase</tooltip> format for class names</strong>.</p>
+                  <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip><template slot="_content">e.g., <code>MyHelloWord</code> rather than <code>myHelloWorld</code> or <code>myhelloword</code> or <code>my_hello_world</code></template>PascalCase</tooltip> format for class names</strong>.</p>
                   <p>The code is
-                    <tooltip content="there are exceptions to this rule">usually</tooltip> placed in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
+                    <tooltip><template slot="_content">there are exceptions to this rule</template>usually</tooltip> placed in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
                   <p>When a class is <code>public</code> <span class="dimmed">(e.g., the <code>Time</code> class in the above example)</span> it can be used in other classes. But the
-                    <tooltip content="Attributes are also called **instance variables**, because each instance has its own variables.">instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the <code>hour</code>, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span> can only be accessed from inside
-                    the <code>Time</code> class.</p>
+                    <tooltip><template slot="_content">Attributes are also called <strong>instance variables</strong>, because each instance has its own variables.</template>instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the <code>hour</code>, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span>                    can only be accessed from inside the <code>Time</code> class.</p>
                   <h5 id="constructors">Constructors<a class="fa fa-anchor" href="#constructors"></a></h5>
                   <div class="indented">
                     <p>The syntax for
-                      <tooltip content="special methods that construct the object and initialize the instance variables">constructors</tooltip> is similar to that of other methods, except:</p>
+                      <tooltip><template slot="_content">special methods that construct the object and initialize the instance variables</template>constructors</tooltip> is similar to that of other methods, except:</p>
                     <ul>
                       <li>The name of the constructor is the same as the name of the class.</li>
                       <li>The keyword <code>static</code> is omitted.</li>
@@ -1340,7 +1339,7 @@ spot = <span class="hljs-keyword">null</span>;
                       <p><code class="hljs inline java">Time time = <span class="hljs-keyword">new</span> Time();</code></p>
                     </box>
                     <p>Like other methods, constructors can be
-                      <tooltip content="i.e., you can provide multiple constructors with different parameters">overloaded</tooltip>.</p>
+                      <tooltip><template slot="_content">i.e., you can provide multiple constructors with different parameters</template>overloaded</tooltip>.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can add another constructor to the <code>Time</code> class to allow creating <code>Time</code> objects that are initialized to a specific time:</p>
                       <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">(<span class="hljs-keyword">int</span> h, <span class="hljs-keyword">int</span> m, <span class="hljs-keyword">int</span> s)</span> </span>{
@@ -1355,9 +1354,8 @@ spot = <span class="hljs-keyword">null</span>;
                   </div>
                   <h5 id="this-keyword"><code>this</code> keyword<a class="fa fa-anchor" href="#this-keyword"></a></h5>
                   <div class="indented">
-                    <p><strong>The <code>this</code> keyword is a reference variable in Java that refers to the <tooltip content="i.e., the enclosing object, or _myself_">current object</tooltip>.</strong> You can use <code>this</code> the same way you use
-                      the name of any other object. For example, you can read and write the instance variables of <code>this</code>, and you can pass <code>this</code> as an argument to other methods. But you do not declare <code>this</code>, and you
-                      can’t make an assignment to it.</p>
+                    <p><strong>The <code>this</code> keyword is a reference variable in Java that refers to the <tooltip><template slot="_content">i.e., the enclosing object, or <em>myself</em></template>current object</tooltip>.</strong> You can use <code>this</code>                      the same way you use the name of any other object. For example, you can read and write the instance variables of <code>this</code>, and you can pass <code>this</code> as an argument to other methods. But you do not declare <code>this</code>,
+                      and you can’t make an assignment to it.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the following version of the constructor, the names and types of the parameters are the same as the instance variables (parameters don’t have to use the same names,
                         but that’s a common style). As a result, the parameters <strong><em>shadow</em></strong> (or hide) the instance variables, so the keyword <code>this</code> is necessary to tell them apart.</p>
@@ -1563,7 +1561,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                 <div>
                   <p>String is a built-in Java class that you
                     <trigger trigger="click" for="modal:stringClass-javaLang">can use without importing</trigger>. Given below are some useful String methods:</p>
-                  <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top" class="algolia-no-index">
+                  <modal id="modal:stringClass-javaLang" placement="top" class="algolia-no-index"><template slot="_header">💡 <code>java.lang</code> classes can be used without importing</template>
                     <p>Any class in the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/package-summary.html"><code>java.lang</code></a> package can be used without importing.
                     </p>
                   </modal>
@@ -1594,10 +1592,9 @@ System.out.println(upperName);
 ALAN TURING
 </code></pre>
                     </box>
-                    <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <tooltip content="once created, cannot be modified"><em>immutable</em></tooltip></strong>. For example, when you
-                      invoke
-                      <code>toUpperCase</code> on a string <code>&quot;abc&quot;</code>, you get a new string object <code>&quot;ABC&quot;</code> as the return value rather than the string <code>&quot;abc&quot;</code> being changed to <code>&quot;ABC&quot;</code>.
-                      As a result, for such string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code>toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p>
+                    <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <tooltip><template slot="_content">once created, cannot be modified</template><em>immutable</em></tooltip></strong>.
+                      For example, when you invoke <code>toUpperCase</code> on a string <code>&quot;abc&quot;</code>, you get a new string object <code>&quot;ABC&quot;</code> as the return value rather than the string <code>&quot;abc&quot;</code> being
+                      changed to <code>&quot;ABC&quot;</code>. As a result, for such string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code>toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p>
                     <pre><code class="hljs java">String s = <span class="hljs-string">"Ada"</span>;
 s.toUpperCase(); <span class="hljs-comment">// no effect</span>
 s = s.toUpperCase(); <span class="hljs-comment">// the correct way</span>
@@ -1651,9 +1648,11 @@ String name2 = <span class="hljs-string">"Alan Turing"</span>;
 System.out.println(name1 == name2);
 </code></pre>
                     <p>This code compiles and runs, and most of the time it shows <code>true</code>. But it is not correct. The problem is,
-                      <tooltip content="i.e., as opposed to comparing primitive values e.g., `2 == 2`">when used for comparing objects</tooltip>, the <code>==</code> operator checks whether the two variables refer to the same object (by comparing the references). If you give it two different string objects that contain the same letters,
-                      it is supposed to yield <code>true</code> because they are two distinct objects even if they contain the same text. However, because Java strings are immutable, <mark>in some cases (but not always)</mark> Java reuses existing string
-                      objects instead of creating multiple objects, which can cause the above code to yield <code>true</code>. Therefore, it is not safe to use <code>==</code> to compare strings if your intention is to check if they contain the same text.</p>
+                      <tooltip><template slot="_content">i.e., as opposed to comparing primitive values e.g., <code>2 == 2</code></template>when used for comparing objects</tooltip>, the <code>==</code> operator checks whether the two variables refer to the same
+                      object (by comparing the references). If you give it two different string objects that contain the same letters, it is supposed to yield <code>true</code> because they are two distinct objects even if they contain the same text.
+                      However, because Java strings are immutable, <mark>in some cases (but not always)</mark> Java reuses existing string objects instead of creating multiple objects, which can cause the above code to yield <code>true</code>. Therefore,
+                      it is not safe to use
+                      <code>==</code> to compare strings if your intention is to check if they contain the same text.</p>
                     <p><strong>The right way to compare strings is with the <code>equals</code> method.</strong></p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example invokes <code>equals</code> on <code>name1</code> and passes <code>name2</code> as an argument. The <code>equals</code> method returns <code>true</code>                        if the strings contain the same characters; otherwise it returns <code>false</code>.</p>
@@ -1754,7 +1753,9 @@ Second &quot;line&quot;
 </code></pre>
                     </box>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> As the behavior of the <code>\n</code>
-                      <tooltip content="e.g., behavior differs between Windows and OS-X">depends on the platform</tooltip>, the recommended way to print a line break is using the <code>System.lineSeparator()</code> as it works the same in all platforms.</p>
+                      <tooltip><template slot="_content">e.g., behavior differs between Windows and OS-X</template>depends on the platform</tooltip>, the recommended way to print a line break is using the <code>System.lineSeparator()</code> as it works the same
+                      in all platforms.
+                    </p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Using <code>System.lineSeparator()</code> to print a line break.</p>
                       <pre><code class="hljs java">System.out.println(<span class="hljs-string">"First line"</span> + System.lineSeparator() + <span class="hljs-string">"Second line"</span>);
@@ -1871,8 +1872,7 @@ System.out.println(i);
 </code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>-2147483648 : 2147483647</code></p>
                   </box>
-                  <p><strong>Wrapper classes provide methods for <tooltip content="In this context, parse means something like “read and translate”"><em>parsing</em></tooltip> strings to other types</strong> e.g., <code>Integer.parseInt</code> converts a
-                    string to (you guessed it) an integer. The other wrapper classes provide similar methods, like <code>Double.parseDouble</code> and <code>Boolean.parseBoolean</code>.</p>
+                  <p><strong>Wrapper classes provide methods for <tooltip><template slot="_content">In this context, parse means something like “read and translate”</template><em>parsing</em></tooltip> strings to other types</strong> e.g., <code>Integer.parseInt</code>                    converts a string to (you guessed it) an integer. The other wrapper classes provide similar methods, like <code>Double.parseDouble</code> and <code>Boolean.parseBoolean</code>.</p>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>Integer.parseInt(&quot;1234&quot;)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>1234</code></p>
                   <p>Wrapper classes also provide <code>toString</code>, which returns a string representation of a value.</p>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>Integer.toString(1234)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>&quot;1234&quot;</code></p>
@@ -2033,7 +2033,8 @@ System.out.printf(<span class="hljs-string">"Hello %s, age %d\n"</span>, name, a
                     <p><strong>A subclass inherits all the fields and methods of the superclass.</strong> In the example above, <code>MountainBike</code> inherits all the fields and methods of <code>Bicycle</code> and adds the field <code>seatHeight</code>                      and a method to set it.</p>
                     <h5 id="accessing-superclass-members">Accessing Superclass Members<a class="fa fa-anchor" href="#accessing-superclass-members"></a></h5>
                     <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a
-                      <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable">hidden field</tooltip> (although hiding fields is discouraged).</p>
+                      <tooltip><template slot="_content">when both the superclass and the subclass use the same variable name, the superclass variables is said to be <em>hidden/shadowed</em> by the subclass variable</template>hidden field</tooltip> (although hiding
+                      fields is discouraged).</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this class, <code>Superclass</code> and a subclass, called <code>Subclass</code>, that overrides <code>printMethod()</code>:</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Superclass</span> </span>{
@@ -2276,7 +2277,7 @@ true
                     </ol>
                   </box>
                   <p><strong>Interfaces can also contain <trigger trigger="click" for="modal:javaInterfaces-constants">constants</trigger> and static methods</strong>.</p>
-                  <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants" class="algolia-no-index">
+                  <modal large id="modal:javaInterfaces-constants" class="algolia-no-index"><template slot="_header"><span class="dimmed">Textbook »</span></template>
                     <div>
                       <div></div>
                       <p></p>
@@ -2361,7 +2362,7 @@ true
                     <pre><code class="hljs">Mittens: Meow
 Snowball: Meow
 </code></pre>
-                    <panel type="seamless" header="%%The `Cat` class%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Cat</code> class</span></p></template>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -2400,7 +2401,7 @@ Snowball: Meow
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                    <panel type="seamless" header="%%The `Dog` class%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Dog</code> class</span></p></template>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -2437,7 +2438,7 @@ Spot: Woof
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                    <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">The <code>Animal</code>, <code>Cat</code>, and <code>Dog</code> classes</span></p></template>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
     <span class="hljs-keyword">protected</span> String name;
@@ -2727,7 +2728,7 @@ Spot: Woof
                     </li>
                   </ul>
                   <p><strong>You can use the <code>throw</code> statement to throw an exception.</strong> The throw statement requires a
-                    <tooltip content="Throwable objects are instances of any subclass of the `Throwable` class.">throwable</tooltip> object as the argument.</p>
+                    <tooltip><template slot="_content">Throwable objects are instances of any subclass of the <code>Throwable</code> class.</template>throwable</tooltip> object as the argument.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of a <code>throw</code> statement.</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
@@ -3358,9 +3359,9 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, <code>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code>foobar.com</code></p>
                   </box>
-                  <p><strong>To use a public <tooltip content="types contained in the package">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
+                  <p><strong>To use a public <tooltip><template slot="_content">types contained in the package</template>package member</tooltip> from outside its package, you must do one of the following:</strong></p>
                   <ol>
-                    <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`">fully qualified name</tooltip></strong> to refer to the member</li>
+                    <li><strong>Use the <tooltip><template slot="_content">type name prefixed by the package name e.g., <code>java.io.IOException</code></template>fully qualified name</tooltip></strong> to refer to the member</li>
                     <li><strong>Import</strong> the package or the specific package member</li>
                   </ol>
                   <box>
@@ -3414,7 +3415,7 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
     }
 }
 </code></pre>
-                    <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><code>Formatter</code> class</p></template>
                       <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
@@ -3607,16 +3608,16 @@ second line
                           <tr>
                             <th>Modifier</th>
                             <th>
-                              <tooltip content="whether the class itself has access to the member defined by the access level">Class</tooltip>
+                              <tooltip><template slot="_content">whether the class itself has access to the member defined by the access level</template>Class</tooltip>
                             </th>
                             <th>
-                              <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member">Package</tooltip>
+                              <tooltip><template slot="_content">whether classes in the same package as the class (regardless of their parentage) have access to the member</template>Package</tooltip>
                             </th>
                             <th>
-                              <tooltip content="whether subclasses of the class declared outside this package have access to the member">Subclass</tooltip>
+                              <tooltip><template slot="_content">whether subclasses of the class declared outside this package have access to the member</template>Subclass</tooltip>
                             </th>
                             <th>
-                              <tooltip content="whether all classes have access to the member">World</tooltip>
+                              <tooltip><template slot="_content">whether all classes have access to the member</template>World</tooltip>
                             </th>
                           </tr>
                         </thead>
@@ -3694,10 +3695,10 @@ second line
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="constants">Constants <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true"
+              <h4 id="constants-2">Constants <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true"
                   class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
                 </small>
-                </span><a class="fa fa-anchor" href="#constants"></a></h4>
+                </span><a class="fa fa-anchor" href="#constants-2"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>Java does not directly support constants. The convention is to use a <code>static</code> <code>final</code> variable where a constant is needed. The <code>static</code> modifier causes the variable to be available without instantiating
@@ -3845,10 +3846,11 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
           </div>
         </div>
       </div>
+
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -3877,6 +3879,7 @@ cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.j
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

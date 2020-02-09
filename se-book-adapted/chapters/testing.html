@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter : Testing</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -209,11 +209,11 @@
               <h1 id="testing"><span>Testing</span><a class="fa fa-anchor" href="#testing"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="introduction">
             <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+        <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -292,9 +292,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Relate testing, test cases, failure, and defect" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Relate testing, test cases, failure, and defect</p></template>
                       <question has-input>
                         <p>Explain how the concepts of <em>testing</em>, <em>test case</em>, <em>test failure</em>, and <em>defect</em> are related to each other.</p>
                       </question>
@@ -305,7 +305,7 @@
             </div>
           </div>
         </panel>
-        <panel type="seamless" header="#### Testability<a class='fa fa-anchor' href='#testability'></a>" expanded>
+        <panel type="seamless" expanded id="testability"><template slot="_header"><h4 id="testability">Testability<a class="fa fa-anchor" href="#testability"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -326,15 +326,15 @@
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="testing-types">
           <span slot="header" class="card-title"><div><h2 id="testing-types"><span>Testing Types</span><a class="fa fa-anchor" href="#testing-types"></a></h2>
       </div>
       </span>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="unit-testing">
         <span slot="header" class="card-title"><div><h3 id="unit-testing"><span>Unit Testing</span><a class="fa fa-anchor" href="#unit-testing"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-2"><template slot="_header"><h4 id="what-2">What<a class="fa fa-anchor" href="#what-2"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -418,7 +418,7 @@
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
+            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <p><strong>Side readings:</strong></p>
               <ul>
                 <li>[Web article] <a href="http://blog.goyello.com/2011/10/06/three-pillars-of-unit-tests">The three pillars of unit testing</a> - A short article about what makes a good unit test.</li>
@@ -429,7 +429,7 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Stubs<a class='fa fa-anchor' href='#stubs'></a>" expanded>
+    <panel type="seamless" expanded id="stubs"><template slot="_header"><h4 id="stubs">Stubs<a class="fa fa-anchor" href="#stubs"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -444,11 +444,11 @@
         <p></p>
         <div>
           <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
-            <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+            <tooltip><template slot="_content">code the unit depends on</template>dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code>              class.</p>
           </box>
-          <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+          <p><strong><em>Stubs</em> can isolate the <popover><template slot="content">Software Under Test (in this case, the <em>unit</em> being tested)</template>SUT</popover> from its dependencies</strong>.</p>
           <box type="definition">
             <div>
               <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined
@@ -523,16 +523,16 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <ul>
                 <li><a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>Mocks Aren't Stubs</strong></a> by Martin Fowler -- An in-depth article about how Stubs differ from other types of test helpers.</li>
               </ul>
             </panel>
           </div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Purpose of stubs" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Purpose of stubs</p></template>
                   <question>
                     <p>Stubs help us to test a component in isolation from its dependencies.</p>
                     <ul radio-group="a0303" class="radio-list">
@@ -551,11 +551,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </div>
     </panel>
     </panel>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="integration-testing">
       <span slot="header" class="card-title"><div><h3 id="integration-testing"><span>Integration Testing</span><a class="fa fa-anchor" href="#integration-testing"></a></h3>
   </div>
   </span>
-  <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+  <panel type="seamless" expanded id="what-3"><template slot="_header"><h4 id="what-3">What<a class="fa fa-anchor" href="#what-3"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -579,7 +579,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+  <panel type="seamless" expanded id="how"><template slot="_header"><h4 id="how">How<a class="fa fa-anchor" href="#how"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -614,11 +614,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </div>
   </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="system-testing">
     <span slot="header" class="card-title"><div><h3 id="system-testing"><span>System Testing</span><a class="fa fa-anchor" href="#system-testing"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-4"><template slot="_header"><h4 id="what-4">What<a class="fa fa-anchor" href="#what-4"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -663,11 +663,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="alpha-and-beta-testing">
     <span slot="header" class="card-title"><div><h3 id="alpha-and-beta-testing"><span>Alpha and Beta Testing</span><a class="fa fa-anchor" href="#alpha-and-beta-testing"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-5"><template slot="_header"><h4 id="what-5">What<a class="fa fa-anchor" href="#what-5"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -689,11 +689,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="dogfooding">
     <span slot="header" class="card-title"><div><h3 id="dogfooding"><span>Dogfooding</span><a class="fa fa-anchor" href="#dogfooding"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-6"><template slot="_header"><h4 id="what-6">What<a class="fa fa-anchor" href="#what-6"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -711,9 +711,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Dogfooding improves product design?" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Dogfooding improves product design?</p></template>
                   <question>
                     <p>‘dogfooding’ can help us improve product designs.</p>
                     <ul radio-group="f7c90" class="radio-list">
@@ -732,11 +732,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="developer-testing">
     <span slot="header" class="card-title"><div><h3 id="developer-testing"><span>Developer Testing</span><a class="fa fa-anchor" href="#developer-testing"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-7"><template slot="_header"><h4 id="what-7">What<a class="fa fa-anchor" href="#what-7"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -755,7 +755,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Why<a class='fa fa-anchor' href='#why'></a>" expanded>
+    <panel type="seamless" expanded id="why"><template slot="_header"><h4 id="why">Why<a class="fa fa-anchor" href="#why"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -787,9 +787,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: implications of developers testing their own code" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> implications of developers testing their own code</p></template>
                   <question has-input="true">
                     <p>Discuss pros and cons of developers testing their own code.</p>
                     <div slot="answer" class="algolia-no-index">
@@ -812,7 +812,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                 </panel>
               </div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Cost of bug fixing over time" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Cost of bug fixing over time</p></template>
                   <question>
                     <p>The cost of fixing a bug goes down as we reach the product release.</p>
                     <ul radio-group="37242" class="radio-list">
@@ -826,7 +826,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                 </panel>
               </div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Why early testing?" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Why early testing?</p></template>
                   <question has-input="true">
                     <p>Explain why early testing by developers is important.</p>
                   </question>
@@ -838,11 +838,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="exploratory-vs-scripted-testing">
     <span slot="header" class="card-title"><div><h3 id="exploratory-vs-scripted-testing"><span>Exploratory vs Scripted Testing</span><a class="fa fa-anchor" href="#exploratory-vs-scripted-testing"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-8"><template slot="_header"><h4 id="what-8">What<a class="fa fa-anchor" href="#what-8"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -878,7 +878,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <box>
             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
           </box>
-          <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <md>:glyphicon-eye-open:</md>" class="algolia-no-index">
+          <modal id="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="_header">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
             <div>
               <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader
                 in software testing).</p>
@@ -887,9 +887,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about exploratory and scripted testing" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about exploratory and scripted testing</p></template>
                   <question>
                     <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
                     <ul radio-group="db31a" class="radio-list">
@@ -904,7 +904,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                 </panel>
               </div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which testing technique is better?" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which testing technique is better?</p></template>
                   <question>
                     <p>Which testing technique is better?</p>
                     <ul radio-group="9fd35" class="radio-list">
@@ -921,7 +921,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                 </panel>
               </div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Explain the concept of exploratory testing using Minesweeper as an example." class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Explain the concept of exploratory testing using Minesweeper as an example.</p></template>
                   <question has-input="true">
                     <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
                     <div slot="answer" class="algolia-no-index">
@@ -935,7 +935,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### When<a class='fa fa-anchor' href='#when'></a>" expanded>
+    <panel type="seamless" expanded id="when"><template slot="_header"><h4 id="when">When<a class="fa fa-anchor" href="#when"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -961,7 +961,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
               <trigger trigger="click" for="modal:ExploratoryWhen-bach-et-explained">[source: bach-et-explained]</trigger>
             </p>
           </blockquote>
-          <modal id="modal:ExploratoryWhen-bach-et-explained" title="bach-et-explained <md>:glyphicon-eye-open:</md>" class="algolia-no-index">
+          <modal id="modal:ExploratoryWhen-bach-et-explained" class="algolia-no-index"><template slot="_header">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
             <div>
               <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader
                 in software testing).</p>
@@ -970,9 +970,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which is better?" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which is better?</p></template>
                   <question>
                     <p>Scripted testing is better than exploratory testing.</p>
                     <ul radio-group="7d3ff" class="radio-list">
@@ -992,11 +992,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="acceptance-testing">
     <span slot="header" class="card-title"><div><h3 id="acceptance-testing"><span>Acceptance Testing</span><a class="fa fa-anchor" href="#acceptance-testing"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-9"><template slot="_header"><h4 id="what-9">What<a class="fa fa-anchor" href="#what-9"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1021,7 +1021,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Acceptance vs System Testing<a class='fa fa-anchor' href='#acceptance-vs-system-testing'></a>" expanded>
+    <panel type="seamless" expanded id="acceptance-vs-system-testing"><template slot="_header"><h4 id="acceptance-vs-system-testing">Acceptance vs System Testing<a class="fa fa-anchor" href="#acceptance-vs-system-testing"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1103,9 +1103,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about system testing and acceptance testing." class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about system testing and acceptance testing.</p></template>
                   <question>
                     <p>Choose the correct statements about system testing and acceptance testing.</p>
                     <ul class="task-list">
@@ -1131,11 +1131,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="regression-testing">
     <span slot="header" class="card-title"><div><h3 id="regression-testing"><span>Regression Testing</span><a class="fa fa-anchor" href="#regression-testing"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-10"><template slot="_header"><h4 id="what-10">What<a class="fa fa-anchor" href="#what-10"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1155,9 +1155,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Regression Testing defintion T/F?" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Regression Testing defintion T/F?</p></template>
                   <question>
                     <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
                     <ul radio-group="63d56" class="radio-list">
@@ -1173,7 +1173,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                 </panel>
               </div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Explain regression testing" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain regression testing</p></template>
                   <question has-input>
                     <p>Explain why and when you would do regression testing in a software project.</p>
                   </question>
@@ -1186,11 +1186,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </panel>
   </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="test-automation">
     <span slot="header" class="card-title"><div><h2 id="test-automation"><span>Test Automation</span><a class="fa fa-anchor" href="#test-automation"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-11"><template slot="_header"><h4 id="what-11">What<a class="fa fa-anchor" href="#what-11"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1205,17 +1205,17 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <p></p>
         <div>
           <tabs>
-            <tab header="<md>:far-file-alt:</md>">
+            <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
               <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run tests repeatedly
                 and increases precision of testing (because manual testing is susceptible to human errors).</p>
             </tab>
-            <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+            <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe></tab>
           </tabs>
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
+            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <p><strong>Side readings:</strong></p>
               <ul>
                 <li>[Quora post] <a href="http://www.quora.com/What-are-good-ways-to-avoid-bugs-while-programming/answer/Mattias-Petter-Johansson">What is the best way to avoid bugs</a></li>
@@ -1226,7 +1226,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Automated Testing of CLI Apps<a class='fa fa-anchor' href='#automated-testing-of-cli-apps'></a>" expanded>
+    <panel type="seamless" expanded id="automated-testing-of-cli-apps"><template slot="_header"><h4 id="automated-testing-of-cli-apps">Automated Testing of CLI Apps<a class="fa fa-anchor" href="#automated-testing-of-cli-apps"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1249,7 +1249,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <ol>
             <li>
               <p>Store the test input in the text file <code>input.txt</code>.</p>
-              <panel header="%%<md>:fas-cube:</md> Example `input.txt`%%" type="seamless" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <code>input.txt</code></span></p></template>
                 <pre><code class="hljs">add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
@@ -1257,7 +1257,7 @@ add Valid Name 12345 e/valid@email.butPhonePrefixMissing
             </li>
             <li>
               <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-              <panel header="%%<md>:fas-cube:</md> Example `expected.txt`%%" type="seamless" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <code>expected.txt</code></span></p></template>
                 <pre><code class="hljs">Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
@@ -1279,7 +1279,7 @@ Invalid command format: add
                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                 </li>
               </ul>
-              <panel header minimized class="algolia-no-index">
+              <panel minimized class="algolia-no-index"><template slot="_header"></template>
                 <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                 </span>
                 </span>
@@ -1320,7 +1320,7 @@ Invalid command format: add
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Test Automation Using Test Drivers<a class='fa fa-anchor' href='#test-automation-using-test-drivers'></a>" expanded>
+    <panel type="seamless" expanded id="test-automation-using-test-drivers"><template slot="_header"><h4 id="test-automation-using-test-drivers">Test Automation Using Test Drivers<a class="fa fa-anchor" href="#test-automation-using-test-drivers"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1334,7 +1334,7 @@ Invalid command format: add
         </span>
         <p></p>
         <div>
-          <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
+          <p><strong>A test driver is the code that ‘drives’ the <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>PayrollTest</code> ‘drives’ the <code>Payroll</code> class by sending it test inputs and verifies if the output is as expected.</p>
             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
@@ -1367,7 +1367,7 @@ Invalid command format: add
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Test Automation Tools<a class='fa fa-anchor' href='#test-automation-tools'></a>" expanded>
+    <panel type="seamless" expanded id="test-automation-tools"><template slot="_header"><h4 id="test-automation-tools">Test Automation Tools<a class="fa fa-anchor" href="#test-automation-tools"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1407,7 +1407,7 @@ Invalid command format: add
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Automated Testing of GUIs<a class='fa fa-anchor' href='#automated-testing-of-guis'></a>" expanded>
+    <panel type="seamless" expanded id="automated-testing-of-guis"><template slot="_header"><h4 id="automated-testing-of-guis">Automated Testing of GUIs<a class="fa fa-anchor" href="#automated-testing-of-guis"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1446,7 +1446,7 @@ Invalid command format: add
               </li>
               <li>
                 <p><a href="http://seleniumhq.org/"><strong>Selenium</strong></a> can be used to automate testing of Web application UIs<br></p>
-                <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> demo video of automated testing of a Web application" class="non-printable algolia-no-index">
+                <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> demo video of automated testing of a Web application</p></template>
                   <p>This video shows automated testing of the <a href="http://github.com/teammates/teammates">TEAMMATES</a> Web app using Selenium</p>
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ihst69Zq1xM" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 </panel>
@@ -1456,9 +1456,9 @@ Invalid command format: add
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: API testing vs GUI testing" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> API testing vs GUI testing</p></template>
                   <question>
                     <p>GUI testing is usually easier than API testing because it doesn’t require any extra coding.</p>
                     <ul radio-group="dc574" class="radio-list">
@@ -1477,11 +1477,11 @@ Invalid command format: add
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="test-coverage">
     <span slot="header" class="card-title"><div><h2 id="test-coverage"><span>Test Coverage</span><a class="fa fa-anchor" href="#test-coverage"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-12"><template slot="_header"><h4 id="what-12">What<a class="fa fa-anchor" href="#what-12"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -1525,9 +1525,9 @@ Invalid command format: add
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: highest intensity coverage" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> highest intensity coverage</p></template>
                   <question>
                     <p>Which of these gives us the highest intensity of testing?</p>
                     <ul radio-group="3db75" class="radio-list">
@@ -1550,7 +1550,7 @@ Invalid command format: add
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+    <panel type="seamless" expanded id="how-2"><template slot="_header"><h4 id="how-2">How<a class="fa fa-anchor" href="#how-2"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -1576,11 +1576,11 @@ Invalid command format: add
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="dependency-injection">
     <span slot="header" class="card-title"><div><h2 id="dependency-injection"><span>Dependency Injection</span><a class="fa fa-anchor" href="#dependency-injection"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-13"><template slot="_header"><h4 id="what-13">What<a class="fa fa-anchor" href="#what-13"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -1597,14 +1597,13 @@ Invalid command format: add
         <div>
           <p><strong><em>Dependency injection</em> is the process of 'injecting' objects to replace current dependencies with a different object.</strong> This is often used to inject
             <trigger trigger="click" for="modal:explainDi-stub">stubs</trigger> to isolate the
-            <tooltip content="Software Under Test">SUT</tooltip> from its
-            <tooltip content="objects it depends on">dependencies</tooltip> so that it can be tested in isolation.</p>
-          <modal large title id="modal:explainDi-stub" class="algolia-no-index">
+            <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip> from its
+            <tooltip><template slot="_content">objects it depends on</template>dependencies</tooltip> so that it can be tested in isolation.</p>
+          <modal large id="modal:explainDi-stub" class="algolia-no-index"><template slot="_header"></template>
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/website/book/testing/testingTypes/unitTesting/what"
-                    class="algolia-no-index"></panel>
+                  <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Unit Testing → What →</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -1614,17 +1613,17 @@ Invalid command format: add
               </p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="stubs"><span>Stubs</span><a class="fa fa-anchor" href="#stubs"></a></h4>
+                  <h4 id="stubs-2"><span>Stubs</span><a class="fa fa-anchor" href="#stubs-2"></a></h4>
                 </div>
                 <div id="main">
                   <div>
                     <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
-                      <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+                      <tooltip><template slot="_content">code the unit depends on</template>dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from
                         the <code>Storage</code> class.</p>
                     </box>
-                    <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+                    <p><strong><em>Stubs</em> can isolate the <popover><template slot="content">Software Under Test (in this case, the <em>unit</em> being tested)</template>SUT</popover> from its dependencies</strong>.</p>
                     <box type="definition">
                       <div>
                         <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set
@@ -1701,16 +1700,16 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                         <ul>
                           <li><a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>Mocks Aren't Stubs</strong></a> by Martin Fowler -- An in-depth article about how Stubs differ from other types of test helpers.</li>
                         </ul>
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Purpose of stubs" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Purpose of stubs</p></template>
                             <question>
                               <p>Stubs help us to test a component in isolation from its dependencies.</p>
                               <ul radio-group="a0303" class="radio-list">
@@ -1738,7 +1737,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+    <panel type="seamless" expanded id="how-3"><template slot="_header"><h4 id="how-3">How<a class="fa fa-anchor" href="#how-3"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -1755,12 +1754,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <div>
           <p><strong>Polymorphism can be used to implement dependency injection</strong>, as can be seen in the example given in
             <trigger trigger="click" for="modal:useDi-stub">[Quality Assurance → Testing → Unit Testing → Stubs]</trigger> where a stub is injected to replace a dependency.</p>
-          <modal large title id="modal:useDi-stub" class="algolia-no-index">
+          <modal large id="modal:useDi-stub" class="algolia-no-index"><template slot="_header"></template>
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/website/book/testing/testingTypes/unitTesting/what"
-                    class="algolia-no-index"></panel>
+                  <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Unit Testing → What →</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -1770,17 +1768,17 @@ String name = logic.getName(<span class="hljs-number">23</span>);
               </p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="stubs"><span>Stubs</span><a class="fa fa-anchor" href="#stubs"></a></h4>
+                  <h4 id="stubs-3"><span>Stubs</span><a class="fa fa-anchor" href="#stubs-3"></a></h4>
                 </div>
                 <div id="main">
                   <div>
                     <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
-                      <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+                      <tooltip><template slot="_content">code the unit depends on</template>dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from
                         the <code>Storage</code> class.</p>
                     </box>
-                    <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+                    <p><strong><em>Stubs</em> can isolate the <popover><template slot="content">Software Under Test (in this case, the <em>unit</em> being tested)</template>SUT</popover> from its dependencies</strong>.</p>
                     <box type="definition">
                       <div>
                         <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set
@@ -1857,16 +1855,16 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                         <ul>
                           <li><a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>Mocks Aren't Stubs</strong></a> by Martin Fowler -- An in-depth article about how Stubs differ from other types of test helpers.</li>
                         </ul>
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Purpose of stubs" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Purpose of stubs</p></template>
                             <question>
                               <p>Stubs help us to test a component in isolation from its dependencies.</p>
                               <ul radio-group="a0303" class="radio-list">
@@ -1953,9 +1951,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about dependency injection" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about dependency injection</p></template>
                   <question>
                     <p>Choose correct statement about dependency injection</p>
                     <ul class="task-list">
@@ -1978,11 +1976,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="tdd">
     <span slot="header" class="card-title"><div><h2 id="tdd"><span>TDD</span><a class="fa fa-anchor" href="#tdd"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-14"><template slot="_header"><h4 id="what-14">What<a class="fa fa-anchor" href="#what-14"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -2002,9 +2000,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: When do we write tests in TDD?" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> When do we write tests in TDD?</p></template>
                   <question>
                     <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
                     <ul radio-group="d75ae" class="radio-list">
@@ -2048,39 +2046,68 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
             <a class="nav-link py-1" href="#unit-testing">Unit Testing&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-2">What&#x200E;</a>
               <a class="nav-link py-1" href="#stubs">Stubs&#x200E;</a>
             </nav>
             <a class="nav-link py-1" href="#integration-testing">Integration Testing&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-3">What&#x200E;</a>
               <a class="nav-link py-1" href="#how">How&#x200E;</a>
             </nav>
             <a class="nav-link py-1" href="#system-testing">System Testing&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-4">What&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#alpha-and-beta-testing">Alpha and Beta Testing&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-5">What&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#dogfooding">Dogfooding&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-6">What&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#developer-testing">Developer Testing&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-7">What&#x200E;</a>
               <a class="nav-link py-1" href="#why">Why&#x200E;</a>
             </nav>
             <a class="nav-link py-1" href="#exploratory-vs-scripted-testing">Exploratory vs Scripted Testing&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-8">What&#x200E;</a>
               <a class="nav-link py-1" href="#when">When&#x200E;</a>
             </nav>
             <a class="nav-link py-1" href="#acceptance-testing">Acceptance Testing&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-9">What&#x200E;</a>
               <a class="nav-link py-1" href="#acceptance-vs-system-testing">Acceptance vs System Testing&#x200E;</a>
             </nav>
             <a class="nav-link py-1" href="#regression-testing">Regression Testing&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-10">What&#x200E;</a>
+            </nav>
           </nav>
           <a class="nav-link py-1" href="#test-automation">Test Automation&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-11">What&#x200E;</a>
             <a class="nav-link py-1" href="#automated-testing-of-cli-apps">Automated Testing of CLI Apps&#x200E;</a>
             <a class="nav-link py-1" href="#test-automation-using-test-drivers">Test Automation Using Test Drivers&#x200E;</a>
             <a class="nav-link py-1" href="#test-automation-tools">Test Automation Tools&#x200E;</a>
             <a class="nav-link py-1" href="#automated-testing-of-guis">Automated Testing of GUIs&#x200E;</a>
           </nav>
           <a class="nav-link py-1" href="#test-coverage">Test Coverage&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-12">What&#x200E;</a>
+            <a class="nav-link py-1" href="#how-2">How&#x200E;</a>
+          </nav>
           <a class="nav-link py-1" href="#dependency-injection">Dependency Injection&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-13">What&#x200E;</a>
+            <a class="nav-link py-1" href="#how-3">How&#x200E;</a>
+          </nav>
           <a class="nav-link py-1" href="#tdd">TDD&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-14">What&#x200E;</a>
+          </nav>
         </nav>
 
       </nav>
@@ -2089,7 +2116,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sun, 09 Feb 2020 04:40:42 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Sun, 09 Feb 2020 05:59:10 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -2118,6 +2145,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

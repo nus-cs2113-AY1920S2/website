@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Principles: Review</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
 <body>
   <div id="app">
+
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -52,12 +52,12 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Pick the odd one out." class="algolia-no-index">
-                            <panel header="%%Prerequisites%%" expandable expanded>
-                              <panel src="/website/book/principles/separationOfConcernsPrinciple/unit-inElsewhere-asFlat._include_.html" header="Principles: Separation of Concerns Principle" class="algolia-no-index"></panel>
-                              <panel src="/website/book/principles/solidPrinciples/unit-inElsewhere-asFlat._include_.html" header="Principles: SOLID Principles" class="algolia-no-index"></panel>
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Pick the odd one out.</p></template>
+                            <panel expandable expanded><template slot="_header"><p><span class="dimmed">Prerequisites</span></p></template>
+                              <panel src="/website/book/principles/separationOfConcernsPrinciple/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>Principles: Separation of Concerns Principle</p></template></panel>
+                              <panel src="/website/book/principles/solidPrinciples/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>Principles: SOLID Principles</p></template></panel>
                             </panel>
                             <p></p>
                             <question>
@@ -87,7 +87,9 @@
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
@@ -115,6 +117,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>
