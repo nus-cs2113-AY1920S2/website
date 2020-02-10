@@ -264,18 +264,20 @@ Given below are some guidance on the recommended progress at this point of the p
 </div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_prioritize_user_stories">{{ icon_team }} Prioritize the user stories</span>
+<span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for v1.0</span>
 <span id="desc_prioritize_user_stories">
 
-  <img class="indented-level2" src="{{baseUrl}}/admin/images/userstories.png" width="400px">
+**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as v1.0. We try to make it small because you will have only two weeks to implement v1.0 and coding as a team is a lot harder than writing code alone.
+* If the product _can_ be of some use without a given user story, that user story should be left out of v1.0, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
+* Don't worry about v2.0. You can design v2.0 after v1.0 done.
+* Don't worry about v1.0 being 'too small'. You can always add more features to v1.0 if you finish it ahead of schedule.
 
-* Suggested workflow:
-  * Take one user story at a time and get team member opinions about it.
-  * Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:
-    * `v1.0` : The user story is important enough to be included in the first version. Keep in mind that you will have only two weeks to deliver v1.0. Aim for a minimal yet usable product.
-    * `v2.0` : User stories to be added in v2.0. This version too will have only 2 weeks to deliver.
-    * `v3+` : User stories that will not be delivered by v2.0 and possibly useful for a future version of the product.
-  * %%If you are using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.%%
+Suggested workflow:
+* **First stage** [10 minutes]:
+  * Divide the user stories among team members.
+  * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed for v1.0_.
+* **Second stage** [10 minutes]:
+  * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
 </span>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_repo">{{ icon_team }} Set up the project repo</span>
@@ -308,8 +310,7 @@ Given below are some guidance on the recommended progress at this point of the p
 <span id="heading_conceptualize_v1">{{ icon_team }} Conceptualize {{ first_version }}</span>
 <span id="desc_conceptualize_v1">
 
-* Based on your user story categorization in the previous week, given module requirements/constraints for the project, select which user stories you are likely to include in {{ first_version }}.
-* Conceptualize the product in terms of how it will look like at {{ first_version }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.
+* Based on your user story selected previously, conceptualize the product in terms of how it will look like at {{ first_version }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.
 
 <modal large title="Textbook {{ icon_embedding }}" id="modal:v10-featureLists">
   <include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>

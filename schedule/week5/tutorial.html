@@ -97,27 +97,32 @@
           <p></p>
           <h1 id="week-5-feb-10-tutorial">Week 5 <small><small><span class="dimmed">[Feb 10]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-5-feb-10-tutorial"></a></h1>
           <div>
-            <h4 id="1-prioritize-tp-user-stories"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Prioritize tP user stories<a class="fa fa-anchor" href="#1-prioritize-tp-user-stories"></a></h4>
+            <h4 id="1-choose-tp-user-stories-for-v1-0"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Choose tP user stories for v1.0<a class="fa fa-anchor" href="#1-choose-tp-user-stories-for-v1-0"></a></h4>
             <ul>
               <li>Show your list of tP user stories to the tutor <span class="dimmed">(for progress tracking)</span>.</li>
-              <li>Prioritize tP user stories as explained below.</li>
+              <li>Choose user stories for v1.0 as explained below.</li>
             </ul>
             <div class="indented-level2">
-              <panel expanded><template slot="_header"><p><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP → week 5 → Prioritize tP user stories</strong></span></p></template>
+              <panel expanded><template slot="_header"><p><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP → week 5 → Choose user stories for v1.0</strong></span></p></template>
                 <div>
-                  <img class="indented-level2" src="/website/admin/images/userstories.png" width="400px">
+                  <p><strong>The goal of this activity is to come up with the <em>smallest possible product that is still usable</em></strong> so that it can be implemented as v1.0. We try to make it small because you will have only two weeks to implement
+                    v1.0 and coding as a team is a lot harder than writing code alone.</p>
                   <ul>
-                    <li>Suggested workflow:
+                    <li>If the product <em>can</em> be of some use without a given user story, that user story should be left out of v1.0, even if the omission makes the product hard to use, as long as the product is not <em>impossible</em> to use <span class="dimmed">e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item</span>.</li>
+                    <li>Don't worry about v2.0. You can design v2.0 after v1.0 done.</li>
+                    <li>Don't worry about v1.0 being 'too small'. You can always add more features to v1.0 if you finish it ahead of schedule.</li>
+                  </ul>
+                  <p>Suggested workflow:</p>
+                  <ul>
+                    <li><strong>First stage</strong> [10 minutes]:
                       <ul>
-                        <li>Take one user story at a time and get team member opinions about it.</li>
-                        <li>Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:
-                          <ul>
-                            <li><code>v1.0</code> : The user story is important enough to be included in the first version. Keep in mind that you will have only two weeks to deliver v1.0. Aim for a minimal yet usable product.</li>
-                            <li><code>v2.0</code> : User stories to be added in v2.0. This version too will have only 2 weeks to deliver.</li>
-                            <li><code>v3+</code> : User stories that will not be delivered by v2.0 and possibly useful for a future version of the product.</li>
-                          </ul>
-                        </li>
-                        <li><span class="dimmed">If you are using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.</span></li>
+                        <li>Divide the user stories among team members.</li>
+                        <li>Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are <em>definitely not needed for v1.0</em>.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Second stage</strong> [10 minutes]:
+                      <ul>
+                        <li>All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.</li>
                       </ul>
                     </li>
                   </ul>
@@ -125,7 +130,7 @@
               </panel>
             </div>
             <p></p>
-            <h4 id="2-optional-create-a-feature-list-for-v1-0"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> [Optional] Create a feature list for v1.0<a class="fa fa-anchor" href="#2-optional-create-a-feature-list-for-v1-0"></a></h4>
+            <h4 id="2-time-permitting-create-a-feature-list-for-v1-0"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span class="badge badge-secondary">time permitting</span> Create a <em>feature list</em> for v1.0<a class="fa fa-anchor" href="#2-time-permitting-create-a-feature-list-for-v1-0"></a></h4>
             <ul>
               <li>If there is time left, do the following tP task that is scheduled for the following week.</li>
             </ul>
@@ -133,8 +138,7 @@
               <panel expanded><template slot="_header"><p><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP → week 6 → Conceptualize v1.0</strong></span></p></template>
                 <div>
                   <ul>
-                    <li>Based on your user story categorization in the previous week, given module requirements/constraints for the project, select which user stories you are likely to include in v1.0.</li>
-                    <li>Conceptualize the product in terms of how it will look like at v1.0. Suggestion: this can be in the form of a
+                    <li>Based on your user story selected previously, conceptualize the product in terms of how it will look like at v1.0. Suggestion: this can be in the form of a
                       <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.</li>
                   </ul>
                   <modal large id="modal:v10-featureLists" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
@@ -190,8 +194,8 @@
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#week-5-feb-10-tutorial">Week 5 [Feb 10] - Tutorial&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-prioritize-tp-user-stories">1 Prioritize tP user stories&#x200E;</a>
-              <a class="nav-link py-1" href="#2-optional-create-a-feature-list-for-v1-0">2 [Optional] Create a feature list for v1.0&#x200E;</a>
+              <a class="nav-link py-1" href="#1-choose-tp-user-stories-for-v1-0">1 Choose tP user stories for v1.0&#x200E;</a>
+              <a class="nav-link py-1" href="#2-time-permitting-create-a-feature-list-for-v1-0">2 time permitting Create a feature list for v1.0&#x200E;</a>
             </nav>
 
           </nav>
@@ -200,7 +204,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Mon, 10 Feb 2020 02:51:35 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Mon, 10 Feb 2020 10:11:05 GMT</small></div>
     </footer>
   </div>
 </body>
