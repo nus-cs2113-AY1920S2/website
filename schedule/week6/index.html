@@ -34,8 +34,8 @@
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
-          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
+          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
           <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
@@ -96,7 +96,372 @@
           </nav>
           <p></p>
           <h1 id="week-6-feb-17-summary">Week 6 <small><small><span class="dimmed">[Feb 17]</span> - Summary</small></small><a class="fa fa-anchor" href="#week-6-feb-17-summary"></a></h1>
-          <div></div>
+          <div>
+            <panel type="info" class="algolia-no-index"><template slot="_header"><p><strong>eLearning instructions</strong></p></template>
+              <p>As this week is done in eLearning mode, please follow the instructions below in the given sequence.</p>
+              <h4 id="git-and-github-topics"><span class="text-info">Git and GitHub Topics</span><a class="fa fa-anchor" href="#git-and-github-topics"></a></h4>
+              <p>This week, we build on our knowledge of git branching and GitHub PRs to learn how to use them when the code is updated in parallel multiple branches. Do the following activity <span class="dimmed">(in-lieu of the usual in-lecture activity)</span>                to learn the relevant <mark>techniques which you will need for the iP this week</mark>. <mark>The activity can earn you lecture participation points too.</mark> <span class="text-danger">The deadline is <strong>next Tuesday midnight</strong>.</span></p>
+              <panel type="success" class="algolia-no-index"><template slot="_header"><p>Activity - please do it if you are not a Git expert</p></template>
+                <div>
+                  <box seamless type="success" add-class="lead" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fab fa-github"></span></template>
+                    <p><strong>This activity teaches you how to merge parallel git branches</strong>,</p>
+                    <ol>
+                      <li>first, in your local repo (using git commands),</li>
+                      <li>and then, in a remote repo (using GitHub PRs).</li>
+                    </ol>
+                  </box>
+                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                    <p>To keep things simple, we use a simple repo that uses two files <code>food.txt</code> and <code>stationary.txt</code> to keep track of items in the shop. There are 2 shop employees (John and Amy) and two vendors (Ravi and Musa) who
+                      have updated the files, but each person using their own branch. Your job is to merge the four branches so that the files reflect the final tally of goods in the shop.</p>
+                    <p>First, let us set up the repo and checkout the branches.
+                    </p>
+                  </box>
+                  <ul>
+                    <li>
+                      <p><span class="badge badge-dark">Step 1.a</span> <strong>Fork the <a href="https://github.com/nus-cs2113-AY1920S2/shop-inventory">https://github.com/nus-cs2113-AY1920S2/shop-inventory</a></strong> to your Github account.</p>
+                    </li>
+                    <li>
+                      <p><span class="badge badge-dark">Step 1.b</span> <strong>Clone it to your computer.</strong> <mark>No need to set it up in your IDE because it is not a Java project.</mark></p>
+                    </li>
+                    <li>
+                      <p><span class="badge badge-dark">Step 1.c</span> <strong>Note how the remote repo has 4 branches</strong> in addition to the <code>master</code> branch. If you can't see the branches, make sure you have ticked the <code>Show Remote Branches</code>                        box <span class="dimmed">(shown in the top center of the screenshot below)</span>.<br>
+                        <img src="/website/schedule/week6/images/after-cloning.png"><br> Now you are in the <code>master</code> branch. Open the <code>food.txt</code> file to check its contents.</p>
+                    </li>
+                    <li>
+                      <p><span class="badge badge-dark">Step 2</span> <strong>Checkout the <code>employee-john</code> branch</strong> by double-clicking it.</p>
+                    </li>
+                  </ul>
+                  <div class="indented-level2">
+                    <panel type="light" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-play-circle"></span> See an animation of this step</p></template>
+                      <p></p>
+                      <pic src="/website/schedule/week6/images/checkout-branch.gif"></pic>
+                    </panel>
+                    <p>Now, you should be in the <code>employee-john</code> branch. This also means now you have a local branch named <code>employee-john</code> which has the exact content of the remote branch <code>origin/employee-john</code> and it is
+                      <tooltip><template slot="_content">i.e., git knows that this branch is meant to be a copy of the corresponding remote branch</template>'tracking' the corresponding remote branch</tooltip>. This is how the revision graph should look like now:
+                      <br>
+                      <pic src="/website/schedule/week6/images/after-checking-out-branch.png" width="682"></pic>
+                    </p>
+                  </div>
+                  <ul>
+                    <li><span class="badge badge-dark">Step 3</span> <strong>Checkout the other three branches</strong> one at a time to get local copies of them too.<br>
+                      <strong>After that, go back to the <code>master</code> branch.</strong> The revision graph should look this this now:<br>
+                      <img src="/website/schedule/week6/images/checkout-master-again.png"></li>
+                  </ul>
+                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                    <p>Next, let us merge the branch created by John.
+                    </p>
+                  </box>
+                  <ul>
+                    <li><span class="badge badge-dark">Step 4</span> <strong>Merge the <code>employee-john</code> branch to the <code>master</code> branch</strong>: Right-click on the <code>employee-john</code> branch label and choose <code>merge</code>.
+                      Remember to request a merge commit even if a fast-forward merge is possible.</li>
+                  </ul>
+                  <div class="indented-level2">
+                    <panel type="light" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-play-circle"></span> See an animation of this step</p></template>
+                      <p>
+                        <pic src="/website/schedule/week6/images/merging-branch-employee-john.gif"></pic>
+                      </p>
+                    </panel>
+                    <p></p>
+                    The revision graph should look like this now:<br>
+                    <img src="/website/schedule/week6/images/after-merging-branch-employee-john.png"></div>
+                  <ul>
+                    <li><span class="badge badge-dark">Step 5.a</span> <strong>Undo the merge</strong>: To learn how to undo a merge, let's undo the merge we did just now.
+                      <ul>
+                        <li>First, ensure that you are still in the branch that received the merge (in this case, that's the <code>master</code> branch).</li>
+                        <li>Next, right-click on the commit in that branch that is just below the merge commit.</li>
+                        <li>Choose <code>Reset current branch to this commit</code> and choose the <code>Hard</code> option in the next dialog.</li>
+                        <li>Proceed with the reset and note how the revision graph is in the state it was before the merge.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <panel type="light" add-class="d-block pl-5" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-play-circle"></span> See an animation of this step</p></template>
+                    <p>
+                      <pic src="/website/schedule/week6/images/undo-merge.gif"></pic>
+                    </p>
+                  </panel>
+                  <p></p>
+                  <ul>
+                    <li><span class="badge badge-dark">Step 5.b</span> That was just to practice undoing of a merge. Let's merge the <code>employee-john</code> again by re-doing the <span class="badge badge-secondary">Step 4</span> again. The revision tree
+                      should look like this again:<br>
+                      <img src="/website/schedule/week6/images/after-merging-branch-employee-john.png"></li>
+                  </ul>
+                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                    <p>Now that you know how to merge a branch, and undo a merge, let's try to merge Amy's branch. We are going to encounter a dreaded merge conflict this time around.
+                    </p>
+                  </box>
+                  <ul>
+                    <li><span class="badge badge-dark">Step 6.a</span> <strong>Merge the <code>employee-amy</code> branch to the <code>master</code> branch</strong>, similar to the previous step. Note how git reports a <code>merge conflict</code> halfway
+                      into the merge, with a dialog like this:<br>
+                      <img src="/website/schedule/week6/images/merge-conflict-dialog.png"><br> Close the dialog.</li>
+                  </ul>
+                  <span id="6b">
+<ul>
+<li><span class="badge badge-dark">Step 6.b</span> <strong>Resolve the conflict</strong>: The conflict happened because both branches modified the same location of the same file and git could not decide which changes to keep. The straight-forward
+                  way to resolve this is to open the file yourself and manually edit the content to fit the desired state. Given below are the steps:</li>
+                  </ul>
+                  <div class="indented-level2">
+                    <ol>
+                      <li>
+                        <p>When you open the conflicted file <code>food.txt</code>, the content will be like this:</p>
+                        <pre><code class="hljs">banana
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+carrot
+cheese
+=======
+beans
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; employee-amy
+dates
+egg
+fish
+grapes
+
+</code></pre>
+                      </li>
+                      <li>
+                        <p>Note how git has marked the conflicting changes done by the two branches using markers <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></p>
+                      </li>
+                      <li>
+                        <p>We can modify that part in any way we like. For example, we can edit the file to make the content look like this.</p>
+                        <pre><code class="hljs">banana
+cheese
+beans
+dates
+egg
+fish
+grapes
+
+</code></pre>
+                      </li>
+                      <li>
+                        <p>When we are happy with the content of the conflicted file(s), we can simply stage the changes we did and complete the merge by committing the changes <span class="dimmed">(similar to how you do a normal commit)</span>.</p>
+                      </li>
+                    </ol>
+                    <div class="indented-level2">
+                      <panel type="light" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-play-circle"></span> See an animation of this step</p></template>
+                        <p>
+                          <pic src="/website/schedule/week6/images/commit-after-deconflicting.gif"></pic>
+                        </p>
+                      </panel>
+                      <p></p>
+                    </div>
+                  </div>
+                  </span>
+                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                    <p>Good. Now we can handle branch merging in our local repo even if there are merge conflicts. Next, let us find out how to do the same in a remote repo, using GitHub PRs.</p>
+                    <p>But first, let's learn how to create PRs using branches, within the same remote repo.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Creating PRs between branches in the same repo is a way for different team members to propose changes to the code and get the changed reviewed by others.
+                    </p>
+                  </box>
+                  <ul>
+                    <li>
+                      <p><span class="badge badge-dark">Step 7</span> <strong>Push the <code>master</code> branch to the fork</strong>, to upload the new merge commits to the fork.<br>
+                        <img src="/website/schedule/week6/images/push-master.png"></p>
+                    </li>
+                    <li>
+                      <p><span class="badge badge-dark">Step 8</span> <strong>Create a PR within your own fork, from the <code>vendor-ravi</code> branch to the <code>master</code> branch</strong>:</p>
+                      <ol>
+                        <li>Go to your fork on Github and click on the <button type="button" class="btn btn-light btn-sm border">New pull request</button> button.<br><br>
+                          <img src="/website/schedule/week6/images/new-pull-request.png"></li>
+                        <li>By default, GitHub tries to create a PR from your fork to the upstream repo. Change the base repo to your own fork instead.<br>
+                          <pic src="/website/schedule/week6/images/choose-fork-as-base.png"></pic>
+                        </li>
+                        <li>Set the <code>compare</code> field to the <code>vendor-ravi</code> branch.<br>
+                          <img src="/website/schedule/week6/images/choose-vendor-ravi.png"></li>
+                        <li>Complete the PR creation by filling in appropriate info as directed by GitHub.<br>
+                          <pic src="/website/schedule/week6/images/create-pr-for-vendor-ravi.png" class="border"></pic>
+                        </li>
+                        <li>Observe how you have one PR in your own fork now.<br>
+                          <pic src="/website/schedule/week6/images/after-creating-pr-for-vendor-ravi.png"></pic>
+                        </li>
+                      </ol>
+                    </li>
+                    <li>
+                      <p><span class="badge badge-dark">Step 9</span> <strong>Create another PR for the <code>vendor-musa</code> branch</strong>. As you did in the previous step, create another PR to the <code>master</code> branch from the <code>vendor-musa</code>                        branch.</p>
+                    </li>
+                    <li>
+                      <p><span class="badge badge-dark">Step 10</span> <strong>Update the PR of <code>vendor-musa</code> with reviews and new commits</strong>, to simulate PRs going through a review process.</p>
+                      <ol>
+                        <li>Add a review to the PR. Here is an example<br>
+                          <pic src="/website/schedule/week6/images/review-pr.png"></pic>
+                        </li>
+                        <li>In your local repo, switch to the <code>vendor-musa</code> branch, add a line at the end of the <code>stationary.txt</code> and commit it. This is to simulate a developer updating a PR based on review comments.<br>
+                          <pic src="/website/schedule/week6/images/add-commit-to-vendor-musa.png"></pic>
+                        </li>
+                        <li>Push the <code>vendor-musa</code> to your fork <span class="dimmed">to upload the new commit to the fork.</span></li>
+                        <li>Go to the corresponding PR and observe how the PR has updated itself to reflect the new commit you pushed.</li>
+                      </ol>
+                    </li>
+                  </ul>
+                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                    <p>The next step is to learn how to merge PRs, thereby merging the corresponding branch.
+                    </p>
+                  </box>
+                  <span id="11">
+<ul>
+<li><span class="badge badge-dark">Step 11</span> <strong>Merge the PR</strong>. Use the GitHub UI to merge the PR you updated in the previous step <span class="dimmed">(i.e., the one for the <code>vendor-musa</code> branch)</span>.
+                  <ol>
+                    <li>Click on the <button type="button" class="btn btn-success btn-sm ">Merge pull requset</button> button (at the bottom of the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small>conversation</small></span>                      tab)<br>
+                      <pic src="/website/schedule/week6/images/click-merge-button.png"></pic>
+                    </li>
+                    <li>Click <button type="button" class="btn btn-success btn-sm ">Confirm merge</button> in the next step.<br>
+                      <pic src="/website/schedule/week6/images/confirm-merge.png"></pic>
+                    </li>
+                    <li>You should see something like this after the merge is complete:<br>
+                      <pic src="/website/schedule/week6/images/pr-merged.png"></pic><br> Do not click the <button type="button" class="btn btn-light btn-sm border">Delete branch</button> button as our scripts will look for the branch in your fork.
+                    </li>
+                  </ol>
+                  </li>
+                  </ul>
+                  </span>
+
+
+
+                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                    <p>So far so good. Next, let's learn how to merge PRs when there are merge conflicts.
+                    </p>
+                  </box>
+                  <ul>
+                    <li>
+                      <p><span class="badge badge-dark">Step 12</span> <strong>Observe the other PR is now showing conflicts</strong>: If you go to the <code>vendor-ravi</code> PR, it will show something like this at the bottom, indicating that the code
+                        in that branch has a conflict with the <code>master</code> branch (caused by the other PR we merged just now).<br>
+                        <img src="/website/schedule/week6/images/pr-shows-conflict.png"></p>
+                    </li>
+                    <li>
+                      <p><span class="badge badge-dark">Step 13</span> <strong>Resolve the conflict</strong>. Note that GitHub gives a <button type="button" class="btn btn-light btn-sm border">Resolve conflicts</button> button that provides a way to resolve
+                        conflicts on the Web UI itself. However, that method is more suited for simple conflicts. In this activity, let's use the method that works for even more complicated conflicts.</p>
+                      <ol>
+                        <li>As the merging the PRs on GitHub updates the <code>master</code> branch on the fork only, pull the <code>master</code> branch from your fork to your repo to get the latest <code>master</code> branch onto your Computer.</li>
+                        <li>Next, merge the local <code>master</code> branch to the <code>vendor-ravi</code> branch to <em>sync</em> the <code>vendor-ravi</code> branch with the latest <code>master</code>. This will result in a conflict due to both vendors
+                          editing the same location of the <code>stationary.txt</code>.</li>
+                        <li>Resolve the conflict,
+                          <trigger trigger="click" for="modal:w6activity-6.b">as you did in <span class="badge badge-secondary">Step 6.b</span></trigger>.</li>
+                        <li>Push the de-conflicted <code>vendor-ravi</code> branch to the fork.</li>
+                        <li>Go to the PR again and note the warning about the conflict does not appear any more.</li>
+                      </ol>
+                    </li>
+                  </ul>
+                  <modal large id="modal:w6activity-6.b" class="algolia-no-index"><template slot="_header">Step 6.b (for reference)</template>
+                    <div>
+                      <ul>
+                        <li><span class="badge badge-dark">Step 6.b</span> <strong>Resolve the conflict</strong>: The conflict happened because both branches modified the same location of the same file and git could not decide which changes to keep. The straight-forward
+                          way to resolve this is to open the file yourself and manually edit the content to fit the desired state. Given below are the steps:</li>
+                      </ul>
+                      <div class="indented-level2">
+                        <ol>
+                          <li>
+                            <p>When you open the conflicted file <code>food.txt</code>, the content will be like this:</p>
+                            <pre><code class="hljs">banana
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+carrot
+cheese
+=======
+beans
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; employee-amy
+dates
+egg
+fish
+grapes
+
+</code></pre>
+                          </li>
+                          <li>
+                            <p>Note how git has marked the conflicting changes done by the two branches using markers <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></p>
+                          </li>
+                          <li>
+                            <p>We can modify that part in any way we like. For example, we can edit the file to make the content look like this.</p>
+                            <pre><code class="hljs">banana
+cheese
+beans
+dates
+egg
+fish
+grapes
+
+</code></pre>
+                          </li>
+                          <li>
+                            <p>When we are happy with the content of the conflicted file(s), we can simply stage the changes we did and complete the merge by committing the changes <span class="dimmed">(similar to how you do a normal commit)</span>.</p>
+                          </li>
+                        </ol>
+                        <div class="indented-level2">
+                          <panel type="light" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-play-circle"></span> See an animation of this step</p></template>
+                            <p>
+                              <pic src="/website/schedule/week6/images/commit-after-deconflicting.gif"></pic>
+                            </p>
+                          </panel>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                  </modal>
+                  <ul>
+                    <li><span class="badge badge-dark">Step 14</span> <strong>Merge the <code>vendor-ravi</code> PR</strong> as you merged the previous PR in <span class="badge badge-secondary">Step 11</span>.</li>
+                  </ul>
+                  <panel add-class="d-block ml-5" minimized class="algolia-no-index"><template slot="_header"><p>Step 11 (for reference)</p></template>
+                    <div>
+                      <ul>
+                        <li><span class="badge badge-dark">Step 11</span> <strong>Merge the PR</strong>. Use the GitHub UI to merge the PR you updated in the previous step <span class="dimmed">(i.e., the one for the <code>vendor-musa</code> branch)</span>.
+                          <ol>
+                            <li>Click on the <button type="button" class="btn btn-success btn-sm ">Merge pull requset</button> button (at the bottom of the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small>conversation</small></span>                              tab)<br>
+                              <pic src="/website/schedule/week6/images/click-merge-button.png"></pic>
+                            </li>
+                            <li>Click <button type="button" class="btn btn-success btn-sm ">Confirm merge</button> in the next step.<br>
+                              <pic src="/website/schedule/week6/images/confirm-merge.png"></pic>
+                            </li>
+                            <li>You should see something like this after the merge is complete:<br>
+                              <pic src="/website/schedule/week6/images/pr-merged.png"></pic><br> Do not click the <button type="button" class="btn btn-light btn-sm border">Delete branch</button> button as our scripts will look for the branch in your fork.</li>
+                          </ol>
+                        </li>
+                      </ul>
+                    </div>
+                  </panel>
+                  <p></p>
+                  <ul>
+                    <li><span class="badge badge-dark">Step 15</span> <strong>Sync your local repo with the latest <code>master</code></strong> by pulling the <code>master</code> branch from your fork. After that, your revision graph should look like this:<br>
+                      <img src="/website/schedule/week6/images/after-pulling-updated-master.png"></li>
+                  </ul>
+                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                    <p>Nice! Now you know how to merge work done in parallel branches.
+                    </p>
+                  </box>
+                  <p></p>
+                </div>
+              </panel>
+              <p></p>
+              <h4 id="java-topics-w6-1-w6-6"><span class="text-info">Java Topics [<a href="/website/schedule/week6/topics.html#W6-1">W6.1 - W6.6</a>]</span><a class="fa fa-anchor" href="#java-topics-w6-1-w6-6"></a></h4>
+              <ul>
+                <li>Read the Java topics scheduled for this week.</li>
+                <li>Do the corresponding exercises on Repl.</li>
+              </ul>
+              <h4 id="requirements-w6-7-w6-9"><span class="text-info">Requirements [<a href="/website/schedule/week6/topics.html#W6-7">W6.7 - W6.9</a>]</span><a class="fa fa-anchor" href="#requirements-w6-7-w6-9"></a></h4>
+              <ul>
+                <li>Read the following textbook chapters in full (some bits of it were covered in previous weeks).
+                  <ul>
+                    <li><a href="/website/schedule/week6/se-book-adapted/chapters/requirements.html">Requirements</a></li>
+                    <li><a href="/website/schedule/week6/se-book-adapted/chapters/requirements.html">Gathering Requirements</a></li>
+                    <li><a href="/website/schedule/week6/se-book-adapted/chapters/gspecifyingRequirements.html">Specifying Requirements</a></li>
+                  </ul>
+                </li>
+                <li>Submit the three post-lecture quizzes (to be released on LumiNUS), one for each chapter.</li>
+              </ul>
+              <h4 id="ides-w6-10"><span class="text-info">IDEs [<a href="/website/schedule/week6/topics.html#W6-10">W6.10</a>]</span><a class="fa fa-anchor" href="#ides-w6-10"></a></h4>
+              <ul>
+                <li>
+                  <p>Read the relevant topics scheduled for this week.</p>
+                </li>
+                <li>
+                  <p>Although the following video appears in an optional section, we recommend you to <mark>watch it before the next tutorial</mark> as you will be asked to demo debugging in an IDE during the tutorial. If you use a different IDE, learn how
+                    to debug in it from other resources.</p>
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                </li>
+              </ul>
+              <h4 id="code-quality-w6-12"><span class="text-info">Code Quality [<a href="/website/schedule/week6/topics.html#W6-12">W6.12</a>]</span><a class="fa fa-anchor" href="#code-quality-w6-12"></a></h4>
+              <ul>
+                <li>Read the relevant topics scheduled for this week.</li>
+              </ul>
+            </panel>
+            <p></p>
+          </div>
           <span id="summary">
 <div class="container">
   <div class="row">
@@ -143,12 +508,12 @@
               </p>
             </li>
             <li>
-              <p>[<a href="/website/schedule/week6/topics.html#W6-8">W6.8</a>] <strong>Gathering Requirements</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+              <p>[<a href="/website/schedule/week6/topics.html#W6-8">W6.8</a>] <strong>Requirements: Gathering</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
                   aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </p>
             </li>
             <li>
-              <p>[<a href="/website/schedule/week6/topics.html#W6-9">W6.9</a>] <strong>Specifying Requirements [continued from last week]</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              <p>[<a href="/website/schedule/week6/topics.html#W6-9">W6.9</a>] <strong>Requirements: Specifying [continued from last week]</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </p>
             </li>
           </ul>
@@ -269,7 +634,7 @@
 <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-7d">W6.7d</a>] <span>Requirements → Requirements →
 </span></span> <span>Quality of Requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
               <ul>
-                <li>[<a href="/website/schedule/week6/topics.html#W6-8">W6.8</a>] <strong>Gathering Requirements</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                <li>[<a href="/website/schedule/week6/topics.html#W6-8">W6.8</a>] <strong>Requirements: Gathering</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
                     aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </li>
               </ul>
@@ -298,7 +663,7 @@
 <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8g">W6.8g</a>] <span>Requirements → Gathering Requirements →
 </span></span> <span>Prototyping</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
               <ul>
-                <li>[<a href="/website/schedule/week6/topics.html#W6-9">W6.9</a>] <strong>Specifying Requirements [continued from last week]</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <li>[<a href="/website/schedule/week6/topics.html#W6-9">W6.9</a>] <strong>Requirements: Specifying [continued from last week]</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </li>
               </ul>
               <div class="indented-level2">
@@ -425,7 +790,8 @@
               <ol>
                 <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Conceptualize v1.0</span>
                 </li>
-                <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Draft the UG</span>
+                <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Draft the UG</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> midnight before the tutorial</span>
+                  </span>
                 </li>
                 <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Refine the product design</span>
                 </li>
@@ -450,7 +816,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 08:12:38 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 15:27:26 GMT</small></div>
   </footer>
   </div>
 </body>
