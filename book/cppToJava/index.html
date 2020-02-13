@@ -16,11 +16,12 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
 
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
 
     <div id="flex-body">
@@ -6301,7 +6302,73 @@ second line
   </div>
   </div>
   </div>
+  <nav id="page-nav" class="navbar navbar-light bg-transparent">
+    <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
+      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+        <a class="nav-link py-1" href="#c-to-java">C++ to Java&#x200E;</a>
+        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+          <a class="nav-link py-1" href="#the-java-world">The Java World&#x200E;</a>
+          <a class="nav-link py-1" href="#getting-started">Getting Started&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#key-exercise-run-helloworld"> [Key Exercise] Run HelloWorld&#x200E;</a>
+          </nav>
+          <a class="nav-link py-1" href="#data-types">Data Types&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#key-exercise-compare-names"> [Key Exercise] Compare names&#x200E;</a>
+          </nav>
+          <a class="nav-link py-1" href="#control-flow">Control Flow&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#key-exercise-grade-helper"> [Key Exercise] Grade Helper&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-getgradecap-method"> [Key Exercise] getGradeCap Method&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-getmultiplegradecaps-method"> [Key Exercise] getMultipleGradeCaps Method&#x200E;</a>
+          </nav>
+          <a class="nav-link py-1" href="#java-objects">Java Objects&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#key-exercise-create-rectangle-objects"> [Key Exercise] create Rectangle objects&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-use-rectangle-objects"> [Key Exercise] use Rectangle objects&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-pass-objects-to-move-method"> [Key Exercise] pass objects to move method&#x200E;</a>
+          </nav>
+          <a class="nav-link py-1" href="#java-classes">Java Classes&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#key-exercise-define-a-circle-class"> [Key Exercise] define a Circle class&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-add-getters-setters-to-the-circle-class"> [Key Exercise] add getters/setters to the Circle class&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-add-getmaxradius-to-the-circle-class"> [Key Exercise] add getMaxRadius to the Circle class&#x200E;</a>
+          </nav>
+          <a class="nav-link py-1" href="#some-useful-classes">Some Useful Classes&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#key-exercise-printprice-method"> [Key Exercise] printPrice method&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-printtotalscore-method"> [Key Exercise] printTotalScore method&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-filteremails-method"> [Key Exercise] filterEmails method&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-find-total-expenditure"> [Key Exercise] find total expenditure&#x200E;</a>
+          </nav>
+          <a class="nav-link py-1" href="#inheritance">Inheritance&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#key-exercise-inherit-the-task-class"> [Key Exercise] inherit the Task class&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-override-the-tostring-method"> [Key Exercise] override the toString method&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-print-shape-area"> [Key Exercise] print shape area&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-print-area-with-abstract-shape"> [Key Exercise] print area with abstract Shape&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-print-printable-items"> [Key Exercise] print Printable items&#x200E;</a>
+          </nav>
+          <a class="nav-link py-1" href="#exceptions">Exceptions&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#key-exercise-parse-rectangle-descriptor"> [Key Exercise] parse rectangle descriptor&#x200E;</a>
+          </nav>
+          <a class="nav-link py-1" href="#generics">Generics&#x200E;</a>
+          <a class="nav-link py-1" href="#collections">Collections&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#key-exercise-numbers-list"> [Key Exercise] Numbers list&#x200E;</a>
+            <a class="nav-link py-1" href="#key-exercise-weekly-roster"> [Key Exercise] weekly roster&#x200E;</a>
+          </nav>
+          <a class="nav-link py-1" href="#miscellaneous-topics">Miscellaneous Topics&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#key-exercise-show-priority-color"> [Key Exercise] show priority color&#x200E;</a>
+          </nav>
+        </nav>
+
+      </nav>
+    </div>
+  </nav>
   </div>
 
   </div>

@@ -16,11 +16,12 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
 
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
 
     <div id="flex-body">
@@ -2013,7 +2014,32 @@ compact(input);
   </div>
   </div>
   </div>
+  <nav id="page-nav" class="navbar navbar-light bg-transparent">
+    <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
+      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+        <a class="nav-link py-1" href="#code-quality">Code Quality&#x200E;</a>
+        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+          <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
+          <a class="nav-link py-1" href="#guideline-maximise-readability">Guideline: Maximise Readability&#x200E;</a>
+          <a class="nav-link py-1" href="#basic">Basic&#x200E;</a>
+          <a class="nav-link py-1" href="#intermediate">Intermediate&#x200E;</a>
+          <a class="nav-link py-1" href="#advanced">Advanced&#x200E;</a>
+          <a class="nav-link py-1" href="#guideline-follow-a-standard">Guideline: Follow a Standard&#x200E;</a>
+          <a class="nav-link py-1" href="#guideline-name-well">Guideline: Name Well&#x200E;</a>
+          <a class="nav-link py-1" href="#basic-2">Basic&#x200E;</a>
+          <a class="nav-link py-1" href="#intermediate-3">Intermediate&#x200E;</a>
+          <a class="nav-link py-1" href="#guideline-avoid-unsafe-shortcuts">Guideline: Avoid Unsafe Shortcuts&#x200E;</a>
+          <a class="nav-link py-1" href="#basic-3">Basic&#x200E;</a>
+          <a class="nav-link py-1" href="#intermediate-4">Intermediate&#x200E;</a>
+          <a class="nav-link py-1" href="#guideline-comment-minimally-but-sufficiently">Guideline: Comment Minimally, but Sufficiently&#x200E;</a>
+          <a class="nav-link py-1" href="#basic-4">Basic&#x200E;</a>
+          <a class="nav-link py-1" href="#intermediate-5">Intermediate&#x200E;</a>
+        </nav>
+
+      </nav>
+    </div>
+  </nav>
   </div>
 
   </div>

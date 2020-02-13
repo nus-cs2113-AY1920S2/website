@@ -16,11 +16,12 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
 
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
 
     <div id="flex-body">
@@ -1344,7 +1345,106 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
           </div>
         </div>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#project-duke">Project Duke&#x200E;</a>
+            <a class="nav-link py-1" href="#project-duke-2">Project Duke&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#levels">
+            Levels&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#level-0-greet">Level 0. Greet&#x200E;</a>
+                <a class="nav-link py-1" href="#level-1-greet-echo-exit">Level 1. Greet, Echo, Exit&#x200E;</a>
+                <a class="nav-link py-1" href="#level-2-add-list">Level 2. Add, List&#x200E;</a>
+                <a class="nav-link py-1" href="#level-3-mark-as-done">Level 3. Mark as Done&#x200E;</a>
+                <a class="nav-link py-1" href="#level-4-todos-events-deadlines">Level 4. ToDos, Events, Deadlines&#x200E;</a>
+                <a class="nav-link py-1" href="#level-5-handle-errors">Level 5. Handle Errors&#x200E;</a>
+                <a class="nav-link py-1" href="#level-6-delete">Level 6. Delete&#x200E;</a>
+                <a class="nav-link py-1" href="#level-7-save">Level 7. Save&#x200E;</a>
+                <a class="nav-link py-1" href="#level-8-dates-and-times">Level 8. Dates and Times&#x200E;</a>
+                <a class="nav-link py-1" href="#level-9-find">Level 9. Find&#x200E;</a>
+                <a class="nav-link py-1" href="#level-10-gui">Level 10. GUI&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#extensions-category-a">
+              Extensions: Category A&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#a-classes-2">A-Classes&#x200E;</a>
+                <a class="nav-link py-1" href="#a-inheritance-2">A-Inheritance&#x200E;</a>
+                <a class="nav-link py-1" href="#a-exceptions-2">A-Exceptions&#x200E;</a>
+                <a class="nav-link py-1" href="#a-textuitesting">A-TextUiTesting&#x200E;</a>
+                <a class="nav-link py-1" href="#a-collections-2">A-Collections&#x200E;</a>
+                <a class="nav-link py-1" href="#a-moreoop">A-MoreOOP&#x200E;</a>
+                <a class="nav-link py-1" href="#a-junit">A-JUnit&#x200E;</a>
+                <a class="nav-link py-1" href="#a-packages">A-Packages&#x200E;</a>
+                <a class="nav-link py-1" href="#a-javadoc">A-JavaDoc&#x200E;</a>
+                <a class="nav-link py-1" href="#a-codingstandard">A-CodingStandard&#x200E;</a>
+                <a class="nav-link py-1" href="#a-checkstyle">A-CheckStyle&#x200E;</a>
+                <a class="nav-link py-1" href="#a-codequality">A-CodeQuality&#x200E;</a>
+                <a class="nav-link py-1" href="#a-assertions">A-Assertions&#x200E;</a>
+                <a class="nav-link py-1" href="#a-jar">A-Jar&#x200E;</a>
+                <a class="nav-link py-1" href="#a-gradle-4">A-Gradle&#x200E;</a>
+                <a class="nav-link py-1" href="#a-travis">A-Travis&#x200E;</a>
+                <a class="nav-link py-1" href="#a-enums">A-Enums&#x200E;</a>
+                <a class="nav-link py-1" href="#a-varargs">A-Varargs&#x200E;</a>
+                <a class="nav-link py-1" href="#a-lambdas">A-Lambdas&#x200E;</a>
+                <a class="nav-link py-1" href="#a-streams">A-Streams&#x200E;</a>
+                <a class="nav-link py-1" href="#a-libraries">A-Libraries&#x200E;</a>
+                <a class="nav-link py-1" href="#a-javafx-2">A-JavaFx&#x200E;</a>
+                <a class="nav-link py-1" href="#a-userguide">A-UserGuide&#x200E;</a>
+                <a class="nav-link py-1" href="#a-devguide">A-DevGuide&#x200E;</a>
+                <a class="nav-link py-1" href="#a-release">A-Release&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#extensions-category-b">
+              Extensions: Category B&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#b-tentativescheduling">B-TentativeScheduling&#x200E;</a>
+                <a class="nav-link py-1" href="#b-snooze">B-Snooze&#x200E;</a>
+                <a class="nav-link py-1" href="#b-recurringtasks">B-RecurringTasks&#x200E;</a>
+                <a class="nav-link py-1" href="#b-doaftertasks">B-DoAfterTasks&#x200E;</a>
+                <a class="nav-link py-1" href="#b-dowithinperiodtasks">B-DoWithinPeriodTasks&#x200E;</a>
+                <a class="nav-link py-1" href="#b-fixeddurationtasks">B-FixedDurationTasks&#x200E;</a>
+                <a class="nav-link py-1" href="#b-reminders">B-Reminders&#x200E;</a>
+                <a class="nav-link py-1" href="#b-findfreetimes">B-FindFreeTimes&#x200E;</a>
+                <a class="nav-link py-1" href="#b-viewschedules">B-ViewSchedules&#x200E;</a>
+                <a class="nav-link py-1" href="#b-detectanomalies">B-DetectAnomalies&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#extensions-category-c">
+              Extensions: Category C&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#c-detectduplicates">C-DetectDuplicates&#x200E;</a>
+                <a class="nav-link py-1" href="#c-flexibledatasource">C-FlexibleDataSource&#x200E;</a>
+                <a class="nav-link py-1" href="#c-sort">C-Sort&#x200E;</a>
+                <a class="nav-link py-1" href="#c-naturaldates">C-NaturalDates&#x200E;</a>
+                <a class="nav-link py-1" href="#c-bettersearch">C-BetterSearch&#x200E;</a>
+                <a class="nav-link py-1" href="#c-update">C-Update&#x200E;</a>
+                <a class="nav-link py-1" href="#c-tagging">C-Tagging&#x200E;</a>
+                <a class="nav-link py-1" href="#c-priority">C-Priority&#x200E;</a>
+                <a class="nav-link py-1" href="#c-archive">C-Archive&#x200E;</a>
+                <a class="nav-link py-1" href="#c-massops">C-MassOps&#x200E;</a>
+                <a class="nav-link py-1" href="#c-statistics">C-Statistics&#x200E;</a>
+                <a class="nav-link py-1" href="#c-undo">C-Undo&#x200E;</a>
+                <a class="nav-link py-1" href="#c-help">C-Help&#x200E;</a>
+                <a class="nav-link py-1" href="#c-friendliersyntax">C-FriendlierSyntax&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#extensions-category-d">
+              Extensions: Category D&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#d-contacts">D-Contacts&#x200E;</a>
+                <a class="nav-link py-1" href="#d-notes">D-Notes&#x200E;</a>
+                <a class="nav-link py-1" href="#d-expenses">D-Expenses&#x200E;</a>
+                <a class="nav-link py-1" href="#d-loans">D-Loans&#x200E;</a>
+                <a class="nav-link py-1" href="#d-places">D-Places&#x200E;</a>
+                <a class="nav-link py-1" href="#d-trivia">D-Trivia&#x200E;</a>
+                <a class="nav-link py-1" href="#d-clients">D-Clients&#x200E;</a>
+                <a class="nav-link py-1" href="#d-merchandise">D-Merchandise&#x200E;</a>
+              </nav>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
     </div>
 
   </div>
