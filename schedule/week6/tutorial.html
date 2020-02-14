@@ -99,11 +99,46 @@
           <div>
             <h4 id="1-demo-ip-using-the-jar-file"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Demo iP using the jar file<a class="fa fa-anchor" href="#1-demo-ip-using-the-jar-file"></a></h4>
             <ul>
-              <li>More info coming soon</li>
+              <li>Copy your iP jar file to an empty folder.</li>
+              <li>Do a quick demo of it to the tutor.</li>
             </ul>
             <h4 id="2-demo-debugging-in-an-ide"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Demo debugging in an IDE<a class="fa fa-anchor" href="#2-demo-debugging-in-an-ide"></a></h4>
+            <box light type="success" add-class="ml-4"><template slot="_icon"><span aria-hidden="true" class="fas fa-lightbulb"></span></template>
+              <p><strong>Suggested pre-tutorial preparations</strong>:</p>
+              <ul>
+                <li>Clone the <a href="https://github.com/nus-cs2113-AY1920S2/personbook">https://github.com/nus-cs2113-AY1920S2/personbook</a> repo to your Computer (no need to fork first).</li>
+                <li>Set it up in your IDE.</li>
+                <li>Use the IDE debugging to step through the code to understand how the code works.</li>
+              </ul>
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>FYI, here's a relevant video used in the textbook</p></template>
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+              </panel>
+            </box>
+            <div class="indented">
+              <p>During the tutorial, <strong>demo your ability to do debugging using an IDE</strong> by performing the following tasks:</p>
+              <ol>
+                <li>Set a breakpoint in the following method of the <code>Main</code> class.
+                  <pre><code class="hljs java"><span class="hljs-comment">/** Reads the user command and executes it, until the user issues the exit command.  */</span>
+<span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">runCommandLoopUntilExitCommand</span><span class="hljs-params">()</span> </span>{
+    Command command;
+    <span class="hljs-keyword">do</span> {
+        String userCommandText = ui.getUserCommand();
+        command = <span class="hljs-keyword">new</span> Parser().parseCommand(userCommandText);
+        CommandResult result = executeCommand(command);
+        personBook.setLastShownList(result.getRelevantPersons());
+        ui.showResultToUser(result);
+
+    } <span class="hljs-keyword">while</span> (!ExitCommand.isExit(command));
+}
+</code></pre>
+                </li>
+                <li>Use the debugger to step through the code while explaining how the code works.</li>
+                <li>Show how to set a conditional breakpoint so that execution pauses when the user types in the command <code>list</code>.</li>
+              </ol>
+            </div>
+            <h4 id="3-show-your-tp-ug-draft"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Show your tP UG draft<a class="fa fa-anchor" href="#3-show-your-tp-ug-draft"></a></h4>
             <ul>
-              <li>More info coming soon</li>
+              <li>Show to the tutor your UG draft that you uploaded to LumiNUS.</li>
             </ul>
           </div>
         </div>
@@ -116,6 +151,7 @@
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-demo-ip-using-the-jar-file">1 Demo iP using the jar file&#x200E;</a>
               <a class="nav-link py-1" href="#2-demo-debugging-in-an-ide">2 Demo debugging in an IDE&#x200E;</a>
+              <a class="nav-link py-1" href="#3-show-your-tp-ug-draft">3 Show your tP UG draft&#x200E;</a>
             </nav>
 
           </nav>
@@ -124,7 +160,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Fri, 14 Feb 2020 03:49:40 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Fri, 14 Feb 2020 07:39:51 GMT</small></div>
     </footer>
   </div>
 </body>
