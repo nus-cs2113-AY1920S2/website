@@ -217,6 +217,9 @@ T | 1 | join sports club
                           <li>remember to use relative paths rather than absolute paths such as <code>C:\data</code>. If not, your app can cause unpredictable results when used in another computer.</li>
                           <li>remember to <a href="https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html">specify file paths in an OS-independent way</a>. If not, your app might not work when used on a different OS.</li>
                         </ul>
+                        <p>
+                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Your code must handle the case where the file doesn't exist at the start. Reason: when someone else takes your Duke and runs it for
+                          the first time, the required file might not exist in their computer. Similarly, if you expect the data file to be in as specific folder (e.g., <code>./data/</code>), you must also handle the 'folder does not exist yet' case.</p>
                       </div>
                     </panel>
                   </div>
@@ -402,7 +405,7 @@ T | 1 | join sports club
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Mon, 17 Feb 2020 15:05:02 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Mon, 17 Feb 2020 16:03:48 GMT</small></div>
     </footer>
   </div>
 </body>
