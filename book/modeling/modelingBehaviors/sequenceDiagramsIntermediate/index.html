@@ -70,12 +70,29 @@
                     <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Optional</p>
                     </template>
                       </panel>
-                      <panel type="seamless" src="/website/book/uml/sequenceDiagrams/staticMethods/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Calls to Static Methods</p></template>
-                        <template slot="_alt">
-                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/StaticMethods</p>
-                    </template>
-                      </panel>
                     </p>
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Calls to Static Methods</p></template>
+                      <template slot="_alt">
+                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/StaticMethods</p>
+                  </template>
+                      <div>
+                        <div>
+                          <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
+                          <box>
+                            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object
+                              <code>p</code>.</p>
+                            <p>
+                              <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
+                            </p>
+                            <p></p>
+                            <p>Here is the <code>Person</code> class, for reference:<br>
+                              <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
+                            </p>
+                          </box>
+                        </div>
+                        <div></div>
+                      </div>
+                    </panel>
                   </div>
                   <div>
                     <div>
