@@ -98,10 +98,60 @@
           <p></p>
           <h1 id="week-7-mar-2-tutorial">Week 7 <small><small><span class="dimmed">[Mar 2]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-7-mar-2-tutorial"></a></h1>
           <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small>
+                  </span><br></p>
+                <div class="indented">
+                  <p>By the end of this tutorial, we want to confirm that you are able to apply Git and GitHub techniques you learned so far to <strong>follow a systematic workflow when updating the code</strong>.</p>
+                </div>
+              </div>
+            </div>
+            <p></p>
             <h4 id="1-set-up-tp-org-repo"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Set up tP org/repo<a class="fa fa-anchor" href="#1-set-up-tp-org-repo"></a></h4>
-            <p>TBD</p>
-            <h4 id="1-practice-forking-workflow"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Practice forking workflow<a class="fa fa-anchor" href="#1-practice-forking-workflow"></a></h4>
-            <p>TBD</p>
+            <ul>
+              <li>Set up the team org, team fork, individual forks as described below.</li>
+            </ul>
+            <div class="indented-level2">
+              <panel type src="/website/admin/appendixE-gitHub._include_.html#organization-setup" class="embedding algolia-no-index" minimized fragment="organization-setup"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Organization setup</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+            </div>
+            <p></p>
+            <div class="indented-level2">
+              <panel type src="/website/admin/appendixE-gitHub._include_.html#repo-setup" class="embedding algolia-no-index" minimized fragment="repo-setup"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Repo setup</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+            </div>
+            <p></p>
+            <h4 id="2-practice-the-forking-workflow"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Practice the forking workflow<a class="fa fa-anchor" href="#2-practice-the-forking-workflow"></a></h4>
+            <ul>
+              <li>Use the recommended workflow to do some simple updates to the code base while working in parallel (e.g., each person can add their details to the <code>docs/AboutUs.md</code> page). Here are the steps:</li>
+            </ul>
+            <div class="indented-level2">
+              <panel type src="/website/admin/appendixE-gitHub._include_.html#workflow-before-v11" class="embedding algolia-no-index" minimized fragment="workflow-before-v11"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Workflow</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+            </div>
+            <p></p>
+            <div class="indented">
+              <ul>
+                <li><span class="badge badge-dark">Step 1</span> Decide which update each person will do.</li>
+                <li><span class="badge badge-dark">Step 2</span> Each person,
+                  <ul>
+                    <li><span class="badge badge-dark">Step 2.a</span> creates a branch (e.g., <code>johnDoe-AboutUs</code>) in their local repo.</li>
+                    <li><span class="badge badge-dark">Step 2.b</span> does the change in the branch.</li>
+                    <li><span class="badge badge-dark">Step 2.c</span> pushes the branch to their own fork.</li>
+                    <li><span class="badge badge-dark">Step 2.d</span> create a PR from their branch in the fork to the <code>master</code> branch of the team repo.</li>
+                  </ul>
+                </li>
+                <li><span class="badge badge-dark">Step 3</span> Work as a team to merge one PR at a time.<br> If a PR cannot be merged due to conflicts, resolve conflicts as you go (PR conflict resolution was covered in the week 6 lecture activity).</li>
+                <li><span class="badge badge-dark">Step 4</span> Everyone syncs their local repo and the fork with the team repo.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pr-1 border-top-0 rounded-bottom" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-up"></span></strong> Follow up notes for the item(s) above:</small>
+                  </span><br></p>
+                <div class="indented">
+                  <p>The workflow you followed above is very safe but has a high-overhead. You may simplify your workflow (at your own risk) after following the above workflow for a while.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -112,7 +162,7 @@
             <a class="nav-link py-1" href="#week-7-mar-2-tutorial">Week 7 [Mar 2] - Tutorial&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-set-up-tp-org-repo">1 Set up tP org/repo&#x200E;</a>
-              <a class="nav-link py-1" href="#1-practice-forking-workflow">1 Practice forking workflow&#x200E;</a>
+              <a class="nav-link py-1" href="#2-practice-the-forking-workflow">2 Practice the forking workflow&#x200E;</a>
             </nav>
 
           </nav>
@@ -121,7 +171,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Wed, 26 Feb 2020 07:08:59 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Wed, 26 Feb 2020 12:13:02 GMT</small></div>
     </footer>
   </div>
 </body>
