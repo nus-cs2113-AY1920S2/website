@@ -28,8 +28,8 @@
     <header>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
-        <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
+        <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,8 +47,8 @@
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-        <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
+        <div class="nav-link temp-dropdown-placeholder">**Links**</div>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2113-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -120,27 +120,28 @@
               <panel type src="/website/admin/appendixE-gitHub._include_.html#repo-setup" class="embedding algolia-no-index" minimized fragment="repo-setup"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Repo setup</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
             </div>
             <p></p>
-            <h4 id="2-practice-the-forking-workflow"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Practice the forking workflow<a class="fa fa-anchor" href="#2-practice-the-forking-workflow"></a></h4>
+            <h4 id="2-update-the-code-using-the-forking-workflow"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Update the code using the forking workflow<a class="fa fa-anchor" href="#2-update-the-code-using-the-forking-workflow"></a></h4>
             <ul>
-              <li>Use the recommended workflow to do some simple updates to the code base while working in parallel (e.g., each person can add their details to the <code>docs/AboutUs.md</code> page). Here are the steps:</li>
+              <li>Use the recommended workflow to do some simple updates to the code base while working in parallel (e.g., each person can add their details to the <code>docs/AboutUs.md</code> page).</li>
             </ul>
             <div class="indented-level2">
               <panel type src="/website/admin/appendixE-gitHub._include_.html#workflow-before-v11" class="embedding algolia-no-index" minimized fragment="workflow-before-v11"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Workflow</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
             </div>
             <p></p>
             <div class="indented">
+              <p>Here are the steps:</p>
               <ul>
                 <li><span class="badge badge-dark">Step 1</span> Decide which update each person will do.</li>
                 <li><span class="badge badge-dark">Step 2</span> Each person,
                   <ul>
-                    <li><span class="badge badge-dark">Step 2.a</span> creates a branch (e.g., <code>johnDoe-AboutUs</code>) in their local repo.</li>
-                    <li><span class="badge badge-dark">Step 2.b</span> does the change in the branch.</li>
-                    <li><span class="badge badge-dark">Step 2.c</span> pushes the branch to their own fork.</li>
+                    <li><span class="badge badge-dark">Step 2.a</span> create a branch (e.g., <code>johnDoe-AboutUs</code>) in their local repo.</li>
+                    <li><span class="badge badge-dark">Step 2.b</span> do the change in the branch.</li>
+                    <li><span class="badge badge-dark">Step 2.c</span> push the branch to their own fork.</li>
                     <li><span class="badge badge-dark">Step 2.d</span> create a PR from their branch in the fork to the <code>master</code> branch of the team repo.</li>
                   </ul>
                 </li>
                 <li><span class="badge badge-dark">Step 3</span> Work as a team to merge one PR at a time.<br> If a PR cannot be merged due to conflicts, resolve conflicts as you go (PR conflict resolution was covered in the week 6 lecture activity).</li>
-                <li><span class="badge badge-dark">Step 4</span> Everyone syncs their local repo and the fork with the team repo.</li>
+                <li><span class="badge badge-dark">Step 4</span> Everyone sync their local repo and the fork with the team repo.</li>
               </ul>
             </div>
             <div>
@@ -162,7 +163,7 @@
             <a class="nav-link py-1" href="#week-7-mar-2-tutorial">Week 7 [Mar 2] - Tutorial&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-set-up-tp-org-repo">1 Set up tP org/repo&#x200E;</a>
-              <a class="nav-link py-1" href="#2-practice-the-forking-workflow">2 Practice the forking workflow&#x200E;</a>
+              <a class="nav-link py-1" href="#2-update-the-code-using-the-forking-workflow">2 Update the code using the forking workflow&#x200E;</a>
             </nav>
 
           </nav>
@@ -171,7 +172,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Thu, 27 Feb 2020 04:09:49 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Thu, 27 Feb 2020 12:15:43 GMT</small></div>
     </footer>
   </div>
 </body>
