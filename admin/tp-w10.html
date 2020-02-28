@@ -246,8 +246,10 @@
                           <li>Alternatives considered.</li>
                         </ul>
                       </li>
-                      <li><strong>Diagramming tools</strong>: You may use any other tool (e.g., PowerPoint). If you do, choose a tool that allows incremental updates to diagrams <span class="dimmed">(reason: because diagrams need to be updated multiple times as the product evolves)</span>.
-                        For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.</li>
+                      <li><strong>Diagramming tools</strong>: You may use any tool (e.g., PowerPoint) to draw UML diagrams. If you do, choose a tool that allows incremental updates to diagrams <span class="dimmed">(reason: because diagrams need to be updated multiple times as the product evolves)</span>.
+                        For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.<br>
+                        <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you want to use PowerPoint to draw UML diagrams, you can use the 'UML Reference Sheet' pptx file in LumiNUS as a template
+                        (it has all the basic shapes you need). After drawing the diagram in a slide using PowerPoint shapes, select the entire diagram, right-click, and choose <code>Save as picture</code>.</li>
                     </ul>
                   </li>
                 </ul>
@@ -259,22 +261,22 @@
                     <span id="dgTips">
 <div>
 <ul>
-<li><strong>Aim to showcase your documentation skills.</strong> The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v2.1 (hypothetically).<br>
-For an example, see <a href="https://se-edu.github.io/addressbook-level3/DeveloperGuide.html#proposed-undo-redo-feature">the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide</a>.</li>
+<li><strong>Aim to showcase your documentation skills.</strong> The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v2.1 (hypothetically).<br>
+For an example, see <a href="https://se-edu.github.io/addressbook-level3/DeveloperGuide.html#proposed-undo-redo-feature">the description of the undo/redo feature implementation in the AddressBook-Level3 (AB3) developer guide</a>.</li>
 <li><strong>Use multiple UML diagram types.</strong> Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.</li>
-<li><strong>Keep diagrams simple.</strong> The aim is to make diagrams <mark><em>comprehensible</em>, not necessarily <em>comprehensive</em></mark>. Ways to simplify diagrams:
+<li><strong>Keep diagrams simple.</strong> The aim is to make diagrams <mark><em>comprehensible</em>, not necessarily <em>comprehensive</em></mark>.<br>
+Ways to simplify diagrams:
 <ul>
 <li><strong>Omit less important details</strong>. Examples:
 <ul>
 <li>a class diagram can omit minor utility classes, private/unimportant members; some less-important associations can be shown as attributes instead.</li>
 <li>a sequence diagram can omit less important interactions, self-calls.</li></ul></li>
 <li><strong>Omit repetitive details</strong> e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <trigger trigger="click" for="modal:ipWeek10-logicClassDiagram">AB3 Logic class diagram</trigger> shows concrete <code>*Command</code> classes).</li>
-<li><strong>Limit the scope of a diagram.</strong> Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not related to it. In particular, avoid showing lower-level details of multiple components in the same diagram unless strictly necessary e.g., note how the <trigger trigger="click" for="modal:ipWeek10-deleteSd">this sequence diagram</trigger> shows only the detailed interactions within the Logic component i.e., does not show detailed interactions within the model component.</li>
+<li><strong>Limit the scope of a diagram.</strong> Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not relevant to that purpose.</li>
 <li><strong>Break diagrams into smaller fragments</strong> when possible.
 <ul>
 <li>If a component has a lot of classes, consider further dividing into sub-components (e.g., a Parser sub-component inside the Logic component). After that, sub-components can be shown as black-boxes in the main diagram and their details can be shown as separate diagrams.</li>
-<li>You can use <code>ref</code> frames to break sequence diagrams to multiple diagrams.</li></ul></li>
-<li>For some more examples, see <trigger trigger="click" for="modal:ipWeek10-umlExamples">here</trigger>.</li></ul></li>
+<li>You can use <code>ref</code> frames to break sequence diagrams to multiple diagrams.</li></ul></li></ul></li>
 <li><strong>Integrate diagrams into the description.</strong> Place the diagram close to where it is being described.</li>
 <li><strong>Use code snippets sparingly.</strong> The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only.</li>
 <li><strong>Resize diagrams</strong> so that the text size in the diagram matches the the text size of the main text of the diagram. See <trigger trigger="click" for="modal:ipWeek10-diagramSizeNegative">example</trigger>.</li></ul>
@@ -330,7 +332,7 @@ It will look more 'polished' if the two text sizes match.
                       <sub>Figure: RepoSense Report Features</sub></pic>
                     <p><strong>Viewing the current status of code authorship data:</strong></p>
                     <ul>
-                      <li>**The reports generated by the tool for the individual and team projects will be made available in the module website at some point in the semester. The feature that is most relevant to you is the <em>Code Panel</em> (shown on the
+                      <li>The reports generated by the tool for the individual and team projects will be made available in the module website at some point in the semester. The feature that is most relevant to you is the <em>Code Panel</em> (shown on the
                         right side of the screenshot above). It shows the code attributed to a given author.</li>
                       <li>Click on your name to load the code attributed to you (based on Git blame/log data) onto the code panel on the right.</li>
                       <li>If the code shown roughly matches the code you wrote, all is fine and there is nothing for you to do.</li>
@@ -365,7 +367,7 @@ It will look more 'polished' if the two text sizes match.
                       <li>Use the two methods described in the RepoSense User Guide section <a href="https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#configuring-a-repo-to-provide-additional-data-to-reposense">Configuring a Repo to Provide Additional Data to RepoSense</a>                        to provide additional data to the authorship analysis to make it more accurate.</li>
                       <li>If you add a <code>config.json</code> file to your repo (as specified by one of the two methods),
                         <ul>
-                          <li><strong>Please use the exact partial name from <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&amp;single=true">here</a></strong>                            as the display name.<br> e.g., <code>&quot;displayName&quot;: &quot;ABDUL ... JAVID&quot;,</code></li>
+                          <li><strong>Please use the exact partial name from <a href="https://github.com/nus-cs2113-AY1920S2/tp-dashboard/blob/master/configs/author-config.csv">here</a></strong> as the display name.<br> e.g., <code>&quot;displayName&quot;: &quot;CS2113-T11-4 ABDUL ... JAVID&quot;,</code></li>
                           <li>If your commits have multiple author names, specify all of them<br> e.g., <code>&quot;authorNames&quot;: [&quot;theMyth&quot;, &quot;theLegend&quot;, &quot;The Gary&quot;]</code></li>
                           <li>Update the line <code>config.json</code> in the <code>.gitignore</code> file of your repo as <code>/config.json</code> so that it ignores the <code>config.json</code> produced by the app but not the <code>_reposense/config.json</code>.</li>
                         </ul>
@@ -532,7 +534,7 @@ method 2 ...
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Fri, 28 Feb 2020 10:26:38 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Fri, 28 Feb 2020 14:57:18 GMT</small></div>
   </footer>
   </div>
 </body>
