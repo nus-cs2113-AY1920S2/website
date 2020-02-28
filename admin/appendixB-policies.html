@@ -289,9 +289,111 @@
               <div class="indented">
                 <div>
                   <p>As most of the work is graded individually, it is OK to do less or more than equal share in your project team.</p>
-                  <p>
-                    <panel type src="/website/admin/tp-expectations._include_.html#individualExpectations" class="embedding algolia-no-index" minimized fragment="individualExpectations"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: from each student  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-                  </p>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: from each student <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <h3 id="individual-expectations">
+                        <div class="text-white bg-info p-1"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual Expectations</div><a class="fa fa-anchor" href="#individual-expectations"></a></h3>
+                      <h4 id="individual-expectations-on-implementation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Implementation</span><a class="fa fa-anchor" href="#individual-expectations-on-implementation"></a></h4>
+                      <ul>
+                        <li>
+                          <p><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Contribute to the functional code of the product.</strong></span></p>
+                          <ul>
+                            <li>User-visible features are preferred, but it is not a strict requirement.:</li>
+                            <li><strong>The enhancement(s) should fit with the rest of the software</strong> (and the target user profile) and should have the consent of the team members. <span class="dimmed">You will lose marks if you go 'rogue' and add things that don't fit with the product.</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p><strong>Tip: Contribute to all aspects of the project</strong> e.g. write backend code, frontend code, test code, user documentation, and developer documentation. <span class="dimmed">Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.</span></p>
+                        </li>
+                        <li>
+                          <p><strong>Tip: Do <em>all</em> the work related to your enhancement yourself.</strong> <span class="dimmed">Reason:If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.</span></p>
+                        </li>
+                      </ul>
+                      <h4 id="individual-expectations-on-documentation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Documentation</span><a class="fa fa-anchor" href="#individual-expectations-on-documentation"></a></h4>
+                      <ul>
+                        <li><strong>Objective:</strong> showcase your ability to write both <em>user-facing documentation</em> and <em>developer-facing documentation</em>.</li>
+                        <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Update the User Guide (UG) and the Developer Guide (DG) parts</strong></span> that are related to the enhancements you added. The minimum requirement
+                          is given below. <span class="dimmed">(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)</span>
+                          <ul>
+                            <li>UG: at least 1 page</li>
+                            <li>DG: at least 1 page</li>
+                          </ul>
+                        </li>
+                        <li><strong>Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements</strong>, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.</li>
+                        <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Use at least some of the UML diagrams in your DG updates</strong></span> i.e., diagrams you added yourself or those you modified significantly.</li>
+                      </ul>
+                      <h4 id="individual-expectations-on-testing"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Testing</span><a class="fa fa-anchor" href="#individual-expectations-on-testing"></a></h4>
+                      <div id="testing-expectations">
+                        <ul>
+                          <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
+                        </ul>
+                        <div class="indented">
+                          <box>
+                            <p><strong>🤔 How much testings is enough?</strong> We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you
+                              can decide to what extent you want to automate tests, depending on the benefits and the effort required.<br> There is no requirement for a minimum coverage level. Note that in a production environment you are often required
+                              to have at least 90% of the code covered by tests. In this project, it can be less. <mark>The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.</mark></p>
+                          </box>
+                        </div>
+                      </div>
+                      <h4 id="individual-expectations-on-teamwork"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Teamwork</span><a class="fa fa-anchor" href="#individual-expectations-on-teamwork"></a></h4>
+                      <ul>
+                        <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Do a fair share of the <em>team-tasks</em></strong>.</span></li>
+                      </ul>
+                      <div id="team-tasks" class="indented-level2">
+                        <box>
+                          <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+                          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p></template>
+                            <span id="example-team-tasks">
+<p>Here is a non-exhaustive list of team-tasks:</p>
+<ol>
+<li>Necessary general code enhancements</li>
+<li>Setting up tools e.g., GitHub, Gradle</li>
+<li>Maintaining the issue tracker</li>
+<li>Release management</li>
+<li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
+                            <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                            </ol>
+                            </span>
+                          </panel>
+                          <p></p>
+                        </box>
+                      </div>
+                      <ul>
+                        <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Assume a fair share of project roles and responsibilities</strong>.</span></li>
+                      </ul>
+                      <div class="indented-level2">
+                        <box>
+                          <span id="roles">
+<p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
+                          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Recommended roles and responsibilities</p></template>
+                            <p>This is a non-exhaustive list; you may define additional roles.</p>
+                            <ul>
+                              <li><em>Team lead</em>: Responsible for overall project coordination.</li>
+                              <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
+                              <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
+                              <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
+                              <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
+                              <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
+                              <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
+                              <li><em>[Tool ABC] expert</em>: <span class="dimmed">e.g. Intellij expert, Git expert, etc.</span> Helps other team member with matters related to the specific tool.</li>
+                              <li><em>In charge of[Area XYZ]</em> of the code: <span class="dimmed">e.g. In charge of the code that deals with storage, etc.</span> If you are in charge of an area, you are expected to know that area well, and review changes
+                                done to that code.
+                              </li>
+                            </ul>
+                          </panel>
+                          <p></p>
+
+                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Ensure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role,
+                            but
+                            <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>. <span class="dimmed">Reason: when <em>everyone is responsible for everything</em>, no one is.</span></p>
+                          </span>
+                        </box>
+                      </div>
+                      <ul>
+                        <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Review each others work</strong>.</span> <span class="dimmed">Reason: reviewing skills is a learning outcome, and it is mutually beneficial.</span></li>
+                      </ul>
+                    </div>
+                  </panel>
                 </div>
               </div>
             </div>
@@ -634,7 +736,7 @@ method 2 ...
                         <h4 id="ppp-format"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span><a class="fa fa-anchor" href="#ppp-format"></a></h4>
                         <ul>
                           <li>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/goodcoder123.adoc</code></li>
-                          <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
+                          <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://se-edu.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
                         </ul>
                         <h4 id="ppp-page-limit"><span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span><a class="fa fa-anchor" href="#ppp-page-limit"></a></h4>
                         <div class="indented-level2">
@@ -755,7 +857,7 @@ method 2 ...
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Thu, 27 Feb 2020 12:15:43 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Fri, 28 Feb 2020 10:26:38 GMT</small></div>
     </footer>
   </div>
 </body>

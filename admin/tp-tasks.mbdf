@@ -96,10 +96,11 @@ week7: [
 week8: [
   {id: 'ensure_you_know_tp_expectations'},
   {id: 'start_implementing_v1'},
-  {id: 'use_github_to_manage_milestones'}
+  {id: 'use_github_to_manage_milestones'},
+  {id: 'add_junit_tests'}
 ],
 week9: [
-  {id: 'add_junit_tests'},
+  {id: 'make_code_more_defensive'},
   {id: 'deliver_v1', deadline: 'midnight before the tutorial'},
   {id: 'do_an_informal_demo', deadline: 'during the tutorial', deadline_type: "info"}
 ],
@@ -483,7 +484,12 @@ Update the following pages in your project repo:
 <span id="heading_start_implementing_v1">{{ icon_individual }} Start implementing v1.0</span>
 <span id="desc_start_implementing_v1">
 
-* Start implementing v1.0, by adding code in small steps, while working in parallel. As you are expected to follow breadth-first iterative approach, almost ==all code additions to the `master` branch should take the product from a working version to a slightly better working version==.
+* Start implementing v1.0, by adding code in small steps, while working in parallel.
+
+* As you are expected to follow breadth-first iterative approach, almost ==all code additions to the `master` branch should take the product from a working version to a slightly better working version==.
+  * {{ bad }} Let's add all data classes first %%reason: this is the depth-first approach%% 
+  * {{ bad }} Let's finish the part of the code that saves and loads data first %%reason: this is the depth-first approach%%
+  * {{ good }} Let's add code to support simple todo tasks first (i.e., read, delete, save, load)
 
 <div class="indented-level2">
 
@@ -604,10 +610,7 @@ Update the following pages in your project repo:
 <span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of v1.0</span>
 <span id="desc_do_an_informal_demo">
 
-<div id="demo">
-
 * **Do an informal demo** of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the jar file.
-</div>
 </span>
 {#====================================================================================================================#}
 <span id="heading_start_on_the_full_version">{{ icon_individual }} Start on the full version of the new features</span>
@@ -620,13 +623,18 @@ Update the following pages in your project repo:
 * {{ icon_tip }} We recommend that **each PR also updates the relevant parts of documents and tests**. That way, your documentation/testing work will not pile up towards the end.
 </span>
 {#====================================================================================================================#}
+<span id="heading_make_code_more_defensive">{{ icon_individual }} Make the code more defensive</span>
+<span id="desc_make_code_more_defensive">
+
+* **Improve the defensiveness of the code**: We recommend you add assertions, exceptions, and logging to your code.<br>
+  {{ icon_important_big_red }} Remember to enable assertions in your IDEA run configurations and gradle file.
+</span>
+{#====================================================================================================================#}
 <span id="heading_start_v2">{{ icon_individual }} Start implementing v2.0</span>
 <span id="desc_start_v2">
 
 * **Revise your v2.0 plan** if necessary, based on your experience from v1.0. At this stage, don't allocate any features to v2.1. Let's keep that as a buffer, in case we cannot finish v2.0 in time.
 * **Start evolving v1.0 towards v2.0**, moving the product forward in small steps from one working version to another, while working in parallel.
-* **Improve the defensiveness of the code**: We recommend you add assertions, exceptions, and logging to your code.<br>
-  {{ icon_important_big_red }} Remember to enable assertions in your IDEA run configurations and gradle file.
 </span>
 {#====================================================================================================================#}
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update DG with design details</span>

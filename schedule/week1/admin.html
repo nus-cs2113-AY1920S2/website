@@ -124,23 +124,155 @@
                     </span> instructions of the following tools.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/programmingLanguages._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Programming Language</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Programming Language</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <table class="two-column-content">
+                        <tr>
+                          <td width="160px">
+                            <img src="/website/admin/images/JamesGosling.png" width="150px"></td>
+                          <td>
+                            <p><mark><strong>The main language</strong> used in this module is Java</mark>. You should use Java for all programming activities, the project, and exam answers.</p>
+                            <p>The exam expects you to know Java to the extent that you should be familiar with it by virtue of using it in the module exercises/projects.</p>
+                          </td>
+                        </tr>
+                      </table>
+                      <box>
+                        <p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation:</strong>
+                          </span>
+                        </p>
+                        <p>We require you to use <strong>Java 11</strong> (the Oracle version or the OpenJDK version) for all module work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java.
+                          <mark>Any incompatibilities will be considered as bugs</mark>.
+                        </p>
+                      </box>
+                      <h4 id="java-coding-standard">Java coding standard<a class="fa fa-anchor" href="#java-coding-standard"></a></h4>
+                      <p>This module follows the <mark><a href="/website/coding-standards/java/basic.html">this Java coding standard</a></mark>.</p>
+                      <p><mark><strong>You are required to follow basic guidelines</strong></mark> (those marked as ⭐️) in the module projects. Intermediate and advanced guidelines are optional.</p>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#github" class="embedding algolia-no-index" minimized fragment="github"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - GitHub</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - GitHub</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <h4 id="tool-used-github-for-code-hosting">
+                        <div class="text-white bg-dark p-1">Tool Used: GitHub (for Code Hosting)</div><a class="fa fa-anchor" href="#tool-used-github-for-code-hosting"></a></h4>
+                      <p>You are <mark><em>required to</em> use GitHub</mark> as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.).</p>
+                      <box>
+                        <p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation</strong>:</span>
+                        </p>
+                        <p>Create a GitHub account (if you don't have one yet), as explained in the panel below.</p>
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Appendix E - GitHub: Creating an Account</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                          <div>
+                            <p>Create a personal GitHub account if you don't have one yet.</p>
+                            <ol>
+                              <li>
+                                <p>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</p>
+                              </li>
+                              <li>
+                                <p>Strongly recommended: Complete your GitHub profile. In particular,</p>
+                                <ul>
+                                  <li>Specify your full name.</li>
+                                  <li>Upload a profile photo that matches
+                                    <trigger trigger="click" for="modal:creatingGitHubAccount-photoCriteria">our requirements</trigger>.</li>
+                                </ul>
+                                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Why am I being encouraged to complete my GitHub profile?</span></p></template>
+                                  <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate
+                                    GitHub account just for the module.</p>
+                                </panel>
+                              </li>
+                              <li>
+                                <p><mark>You are discouraged from changing your GitHub username during the semester/exam/grading period</mark> as it can cause our auto-grading scripts to miss your GitHub activities. If you do change your GitHub username
+                                  during that period, please let us know immediately.</p>
+                              </li>
+                            </ol>
+                            <modal large id="modal:creatingGitHubAccount-photoCriteria" class="algolia-no-index"><template slot="_header">Our requirements for the profile photo</template>
+                              <div>
+                                <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples
+                                  can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
+                                  <img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
+                                <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy,
+                                  you may use <a href="https://en.wikipedia.org/wiki/File:Portrait_placeholder.png">a placeholder image</a> in place of the photo in module-related documents that are publicly visible.</p>
+                              </div>
+                            </modal>
+                          </div>
+                        </panel>
+                      </box>
+                      <p><strong>More info</strong>: See <a href="/website/admin/appendixE-gitHub.html">Appendix E - Using GitHub</a>.</p>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#rcs" class="embedding algolia-no-index" minimized fragment="rcs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - RCS</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - RCS</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <h4 id="tool-used-git-for-revision-control">
+                        <div class="text-white bg-dark p-1">Tool Used: Git (for Revision Control)</div><a class="fa fa-anchor" href="#tool-used-git-for-revision-control"></a></h4>
+                      <p>You are <mark><em>required to</em> use Git</mark>. Other revision control software are not allowed. The recommended GUI client for Git is <a href="https://www.sourcetreeapp.com/">SourceTree</a>, but you may use any other, or none.</p>
+                      <box>
+                        <p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation:</strong>
+                          </span>
+                        </p>
+                        <p><strong>Install Git and a Git GUI client</strong> on your computer.<br>
+                          <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> SourceTree comes with bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot.</p>
+                        <div id="git-username">
+                          <p><strong>Set Git <code>user.name</code></strong>: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to <mark>set your Git <code>user.name</code> in all computers you use</mark>                            to a sensible string that uniquely identifies you. For example, <mark>you can set it to your GitHub username or your full name</mark>. If this user name is not set properly or if you use multiple user names for Git, our tools
+                            might miss some of your work and as a result you might not get credit for some of your work.</p>
+                          <p>After installing Git in a computer, you can set the Git username as follows:</p>
+                          <ol>
+                            <li>Open a command window that can run Git commands (e.g., Git bash window)</li>
+                            <li>Run the command <code>git config --global user.name YOUR_GITHUB_USERNAME</code> (omit the <code>--global</code> flag to limit the setting to the current repo only)<br> e.g., <code>git config --global user.name JohnDoe</code></li>
+                          </ol>
+                          <p>More info about setting Git username is <a href="https://help.github.com/articles/setting-your-username-in-git/">here</a>.</p>
+                        </div>
+                      </box>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#ide" class="embedding algolia-no-index" minimized fragment="ide"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - IDE</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - IDE</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <h4 id="tool-used-intellij-ide">
+                        <div class="text-white bg-dark p-1">Tool Used: Intellij IDE</div><a class="fa fa-anchor" href="#tool-used-intellij-ide"></a></h4>
+                      <p>You are recommended to use <a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> for module-related programming work. While the use of Intellij is not compulsory, note that module materials are optimized for Intellij. Use other
+                        IDEs at your own risk.</p>
+                      <box>
+                        <p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation:</strong>
+                          </span>
+                        </p>
+                        <ul>
+                          <li>Install the IDE in your computer. You may use the Intellij community edition (free) or the ultimate edition (free for students).</li>
+                          <li>If you have an older version of the IDE, we recommend updating to the latest version (i.e., 2019 edition).
+                          </li>
+                        </ul>
+                      </box>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#repl" class="embedding algolia-no-index" minimized fragment="repl"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - <a href="http://repl.it">repl.it</a></strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - <a href="http://repl.it">repl.it</a></strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <h4 id="tool-used-repl-it-for-coding-exercises">
+                        <div class="text-white bg-dark p-1">Tool Used: <a href="http://Repl.it">Repl.it</a> (for Coding Exercises)</div><a class="fa fa-anchor" href="#tool-used-repl-it-for-coding-exercises"></a></h4>
+                      <ul>
+                        <li>We'll be using <code>Repl.it</code> for coding exercises (compulsory).</li>
+                      </ul>
+                      <box>
+                        <p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation:</strong>
+                          </span>
+                        </p>
+                        <ul>
+                          <li>
+                            <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Create an account on <a href="https://repl.it">https://repl.it</a>.</li>
+                          <li><mark>Make sure you set your <em>first name</em> in your <code>repl.it</code> user profile to be exactly the same as your GitHub username</mark> (so that our grading scripts can trace your <code>repl.it</code> submissions). The
+                            <em>last name</em> field is not used by the scripts (i.e., you can set it to any value).</li>
+                          <li>Join the <code>repl.it</code> classroom <code>cs2113-2020 Jan-Apr</code> using this link <a href="https://repl.it/classroom/invite/jmu7TQ6">https://repl.it/classroom/invite/jmu7TQ6</a>.
+                          </li>
+                        </ul>
+                      </box>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
               </div>
@@ -162,23 +294,625 @@
                   <li>Read the following admin info about the module.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type="danger" src="/website/admin/moduleExpectations._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module expectations and the <mark>star rating system</mark></strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type="danger" class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module expectations and the <mark>star rating system</mark></strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <h3 id="workload">Workload<a class="fa fa-anchor" href="#workload"></a></h3>
+                      <p>As 60% of this module is based on CA, it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its <tooltip><template slot="_content">e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program</template>peer modules</tooltip></strong>.</p>
+                      <ul>
+                        <li>Note that the <strong>module contains more things than a typical students can do</strong>, in order to provide enough things for even the strongest students to learn as much as they wish to.</li>
+                        <li>This means it is <mark><strong>perfectly OK if you don't have time to learn everything the module offers</strong></mark>. Control your workload based on time you spend for the module in a week e.g., 1-1.5 days per week.</li>
+                        <li>We have provided a star rating system to guide you when prioritizing which things to do.</li>
+                      </ul>
+                      <div id="starRatingSystem">
+                        <h4 id="star-rating-system">Star Rating System<a class="fa fa-anchor" href="#star-rating-system"></a></h4>
+                        <div class="indented">
+                          <p class="lead"><span>We use a <em>star rating system</em> indicate the importance of module components. <strong>Start with things that are rated one-star and progress to things with more stars.</strong> Things rated four stars are optional.</span></p>
+                          <p><strong>Star ratings for topics</strong> (and textbook sections):</p>
+                          <ul>
+                            <li><strong>One-star topics</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> are essential to keep up with the module. We recommend you to
+                              <mark>learn these topics if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).</li>
+                            <li><strong>Two-stars topics</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                              can get you up to a <strong>B+</strong>.</li>
+                            <li><strong>Three-stars topics</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span
+                                class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                </span> can get you up to an <strong>A</strong>.</li>
+                            <li><strong>Four-stars topics</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span> can push you beyond the limits of the module, and help you get into a level above those who merely limit themselves
+                              to the topics of the module. They <mark>are not examinable</mark>.</li>
+                          </ul>
+                          <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
+                          <ul>
+                            <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark>                              without affecting your ability to follow the module.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type="danger" src="/website/admin/usingThisWebsite._include_.html#essential" class="embedding algolia-no-index" minimized fragment="essential"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using this website [essential info]</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type="danger" class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using this website [essential info]</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <p>
+                        <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> The <span><a href="/website/schedule/index.html">Schedule page</a></span> is your main source of information for CS2113/T. You will
+                        need to refer to it weekly. For an overview of the full schedule, refer to the <a href="/website/schedule/timeline.html">Full Timeline</a> page.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> More details for the upcoming weeks will be added as the weeks progress. In general, <mark>information given for more than 1 week into the future should be treated as <em>tentative</em></mark>.</p>
+                      <div>
+                        <h3 id="browser-compatibility">Browser Compatibility<a class="fa fa-anchor" href="#browser-compatibility"></a></h3>
+                        <p>Most of this will work on most mainstream Browsers, but <mark>embedded slides are best viewed using Chrome</mark>.</p>
+                      </div>
+                      <div>
+                        <h3 id="information-layers">Information Layers<a class="fa fa-anchor" href="#information-layers"></a></h3>
+                        <p>This book tries to <em>layer</em> information so that readers can decide to omit less important layers if they wish to.</p>
+                        <p><strong>More important information are in bold</strong> or <mark>highlighted</mark> while <span class="dimmed">less important information are dimmed</span> or in collapsed panels such as the below.</p>
+                        <box>
+                          <panel minimized class="algolia-no-index"><template slot="_header"><p>Some less important info in a minimized panel</p></template>
+                            <p>Less important info</p>
+                            <p></p>
+                          </panel>
+                          <p></p>
+                          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Some less important info in a boarder-less panel</span></p></template>
+                            <p>Less important info</p>
+                            <p></p>
+                          </panel>
+                          <p></p>
+                          <panel class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Some less important info in a panel</span></p></template>
+                            <p>Less important info</p>
+                            <p></p>
+                          </panel>
+                          <p></p>
+                        </box>
+                        <p><strong>Tabs indicate alternative formats of the same content</strong> (e.g. video vs text). You can choose the one you like and ignore the other tabs.</p>
+                        <box>
+                          <tabs>
+                            <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
+                              <p>Some textual description of X</p>
+                            </tab>
+                            <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
+                              <p>Video describing X</p>
+                            </tab>
+                          </tabs>
+                        </box>
+                        <p><strong>Dotted underlines indicate <trigger for="pop:tooltip-example">tool tips</trigger></strong> (activated by hovering over it) and <strong>dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger></strong>                          (activated by clicking) containing additional information.</p>
+                        <popover id="pop:tooltip-example" placement="top"><template slot="header">Tooltip Example</template>
+                          <div slot="content" class="algolia-no-index">
+                            Additional information
+                          </div>
+                        </popover>
+                        <modal id="modal:modal-example" class="algolia-no-index"><template slot="_header">Modal Example</template> Additional information
+                        </modal>
+                      </div>
+                      <p>This website <mark>uses a star rating system</mark> to indicate the priority level of contents.</p>
+                      <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Module Expectations → Star Rating System</p></template>
+                        <div>
+                          <h4 id="star-rating-system-2">Star Rating System<a class="fa fa-anchor" href="#star-rating-system-2"></a></h4>
+                          <div class="indented">
+                            <p class="lead"><span>We use a <em>star rating system</em> indicate the importance of module components. <strong>Start with things that are rated one-star and progress to things with more stars.</strong> Things rated four stars are optional.</span></p>
+                            <p><strong>Star ratings for topics</strong> (and textbook sections):</p>
+                            <ul>
+                              <li><strong>One-star topics</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> are essential to keep up with the module. We recommend you to
+                                <mark>learn these topics if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).</li>
+                              <li><strong>Two-stars topics</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                                can get you up to a <strong>B+</strong>.</li>
+                              <li><strong>Three-stars topics</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                </span> can get you up to an <strong>A</strong>.</li>
+                              <li><strong>Four-stars topics</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                                  aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span> can push you beyond the limits of the module, and help you get into a level above those who merely limit themselves
+                                to the topics of the module. They <mark>are not examinable</mark>.</li>
+                            </ul>
+                            <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
+                            <ul>
+                              <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark>                                without affecting your ability to follow the module.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </panel>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type="info" src="/website/admin/usingThisWebsite._include_.html#more" class="embedding algolia-no-index" minimized fragment="more"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using this website [more info]</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type="info" class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using this website [more info]</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <div name="Conventions Used">
+                        <h3 id="conventions-used">Conventions Used<a class="fa fa-anchor" href="#conventions-used"></a></h3>
+                        <h4 id="shorthand-headings">Shorthand Headings<a class="fa fa-anchor" href="#shorthand-headings"></a></h4>
+                        <p>Meaning of some shortened headings:</p>
+                        <ul>
+                          <li>
+                            <p><big><strong>What</strong></big> : the <strong>meaning</strong> of the concept in concern</p>
+                            <p>
+                              <panel src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
+                            </p>
+                          </li>
+                          <li>
+                            <p><big><strong>Why</strong></big> : the <strong>motivation</strong> behind the concept in concern</p>
+                            <p>
+                              <panel src="/website/book/documentation/guidelines/goTopDown/why/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
+                            </p>
+                          </li>
+                          <li>
+                            <p><big><strong>How</strong></big> : the <strong>usage</strong> of the concept in concern</p>
+                            <p>
+                              <panel src="/website/book/refactoring/how/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
+                            </p>
+                          </li>
+                          <li>
+                            <p><big><strong>When</strong></big> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
+                            <p>
+                              <panel src="/website/book/refactoring/when/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
+                            </p>
+                          </li>
+                        </ul>
+                        <h4 id="boxed-text-styles">Boxed-Text Styles<a class="fa fa-anchor" href="#boxed-text-styles"></a></h4>
+                        <div class="indented">
+                          <box type="info">
+                            additional info
+                          </box>
+                          <box type="warning">
+                            warning
+                          </box>
+                          <box type="success">
+                            positive message
+                          </box>
+                          <box type="important">
+                            important message
+                          </box>
+                          <box type="wrong">
+                            an error to avoid
+                          </box>
+                          <box type="tip">
+                            tip
+                          </box>
+                          <box type="definition">
+                            definition
+                          </box>
+                        </div>
+                        <h4 id="meaning-of-icons">Meaning of Icons<a class="fa fa-anchor" href="#meaning-of-icons"></a></h4>
+                        <div class="indented">
+                          <p><span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
+                            </span> : tangential info, can be ignored if not interested<br>
+                            <span><span aria-hidden="true" class="glyphicon glyphicon-new-window"></span></span> : direct link to the LO. <kbd>Ctrl</kbd>+<code>Click</code> to open the LO in new window/tab.<br>
+                            <span><span aria-hidden="true" class="fas fa-trophy"></span></span> : learning outcomes<br>
+                            <span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : prerequisite learning outcome<br>
+                            <span><span aria-hidden="true" class="fas fa-cube"></span></span> : examples<br>
+                            <span><span aria-hidden="true" class="fas fa-paperclip"></span></span> : resources<br>
+                            <span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> : exercises<br>
+                            <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> : printable version<br>
+                            <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> : preview/more info<br>
+                            <span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> : video<br>
+                            <smal><span class="badge badge-secondary">&gt;_</span></smal> : a command to be run in a terminal<br>
+                            <span><span aria-hidden="true" class="far fa-file-alt"></span></span> : textual description<br>
+                            <span><span aria-hidden="true" class="far fa-images"></span></span> : slides<br>
+                            <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> : output produced by running code<br>
+                            <span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> question without answer<br>
+                            <span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> question with answer<br></p>
+                        </div>
+                      </div>
+                      <div class="indented">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span> : tasks to do<br>
+                          <span><span aria-hidden="true" class="glyphicon glyphicon-blackboard"></span></span> : lecture<br>
+                          <span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> : tutorial<br>
+                          <span><span aria-hidden="true" class="fas fa-briefcase"></span></span> : evidence you can use to prove you have achieved a learning outcome<br> ⏰ : deadline<br></p>
+                      </div>
+                      <h3 id="searching-for-keywords">Searching for keywords<a class="fa fa-anchor" href="#searching-for-keywords"></a></h3>
+                      <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://github.com/nus-cs2113-AY1920S2/forum/issues">in the forum</a>                        so that we can add the missing keyword to our search index.</p>
+                      <div>
+                        <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files"></a></h3>
+                        <ol>
+                          <li>
+                            <p>Use Chrome to load the page you want to save as pdf.</p>
+                          </li>
+                          <li>
+                            <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
+                          </li>
+                          <li>
+                            <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
+                              <img src="/website/book/about/images/chromeSaveAsPdf.png"></p>
+                          </li>
+                        </ol>
+                      </div>
+                      <h3 id="printing-textbook-content">Printing Textbook Content<a class="fa fa-anchor" href="#printing-textbook-content"></a></h3>
+                      <p>Printer-friendly version <span class="dimmed">(indicated by <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> icon)</span> have been provided for each chapter and the whole book. You can use them for
+                        saving as pdf files or printing.</p>
+                      <h3 id="making-this-website-better">Making this Website Better<a class="fa fa-anchor" href="#making-this-website-better"></a></h3>
+                      <p>This website was generated using the <a href="https://markbind.org/">MarkBind</a> software developed at NUS. <strong>We welcome bug reports, suggestions, and contributions</strong>, to be submitted <a href="https://github.com/nus-cs2113-AY1920S2/website/issues">at the website issue tracker</a>.</p>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type="warning" src="/website/admin/weeklySchedule._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Weekly schedule</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type="warning" class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Weekly schedule</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <p><span><span aria-hidden="true" class="fas fa-calendar-alt"></span></span> <strong>[Wednesday (previous week)]</strong><br></p>
+                      <ul>
+                        <li>Attend the lecture to,
+                          <ul>
+                            <li>see a recap of the preceding week's topics</li>
+                            <li>get an introduction to the current week's topics</li>
+                            <li>submit the in-lecture quiz/activities (if any)</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="indented-level2">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Lectures <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                          <div>
+                            <img src="/website/admin/images/Lecture photo.png" width="100%">
+                            <p><strong>Timing/venue</strong>:</p>
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>Module</th>
+                                    <th>Venue</th>
+                                    <th>Time</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>CS2113/T</td>
+                                    <td>LT15</td>
+                                    <td><strong>1200</strong>-1400</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <p>Lectures start on time sharp and end around 15 minutes before official end time.</p>
+                            <p><strong>Attendance</strong>: Attendance for the <mark>first lecture is compulsory</mark>.</p>
+                            <p><strong>Handouts</strong>: There are no handouts. All learning materials are organized around topics, are given in Web format, can be found in the <a href="/website/se-book-adapted/index.html">Textbook</a> section (organized
+                              by topics), and are also embedded in the <span><a href="/website/schedule/index.html">Schedule page</a></span> (organized by order of coverage).</p>
+                            <p><strong>Slides</strong>: Our lecture slides are not suited for printing or to be used as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded to LumiNUS <em>after</em> the
+                              lecture.</p>
+                          </div>
+                        </panel>
+                      </div>
+                      <p></p>
+                      <p><span><span aria-hidden="true" class="fas fa-calendar-alt"></span></span> <strong>[Wednesday (previous week) - Tutorial day]</strong><br></p>
+                      <ul>
+                        <li>Use the relevant learning resources to learn the topics.</li>
+                        <li>Self-test your knowledge using exercises given in the learning resources.</li>
+                        <li><mark>Submit the post-lecture quiz/exercises</mark> (if any)</li>
+                        <li><mark>Do project tasks</mark> <span class="dimmed">(e.g., attend weekly project meeting, finish weekly deliverables)</span></li>
+                        <li>If you don't have time to learn all topics assigned to the week, use the star rating system to decide which ones to do first.</li>
+                      </ul>
+                      <p></p>
+                      <p><span><span aria-hidden="true" class="fas fa-calendar-alt"></span></span> <strong>[Tutorial Day (Monday - Tuesday)]</strong><br></p>
+                      <ul>
+                        <li>Attend the tutorial to,
+                          <ul>
+                            <li>demonstrate evidence of your learning weekly topics to the tutor</li>
+                            <li>learn from peer demos of showing evidence of their own learning</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="indented-level2">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tutorials <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                          <div>
+                            <panel type="seamless" expanded id="tutorial-timetable">
+                              <span slot="header" class="card-title"><div><h3 id="tutorial-timetable">Tutorial Timetable<a class="fa fa-anchor" href="#tutorial-timetable"></a></h3></div></span>
+                              <div id="tutorialTimetable">
+                                <box>
+                                  <p>
+                                    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Our tutorial IDs are different from LumiNUS. Format: <code>CS2113T-W09</code> means a tutorial of <code>CS2113T</code>                                    module, held on <code>Wednesday</code> at <code>0900</code>, and so on.</p>
+                                </box>
+                                <div class="table-responsive">
+                                  <table class="markbind-table table table-bordered table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th>Module</th>
+                                        <th>Venue</th>
+                                        <th>Time</th>
+                                        <th><s><span class="dimmed">Tutorial ID<br>in LumiNUS</span></s><br><mark>(don't use this!)</mark></th>
+                                        <th><strong>Our Tutorial ID</strong><br><mark>(use this!)</mark></th>
+                                        <th>Tutors<br>(<a href="https://docs.google.com/document/d/e/2PACX-1vTUo2X9eVTHmSGf4-sYU8m6M7_xGZfA7XrrxQv0lCl0Gd-Ad9GS5rNVG1AlNG-37hZ_m41QeGA3zoov/pub?embedded=true">contact details</a>)</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><span><span class="badge badge-warning">CS2113T</span></span>
+                                        </td>
+                                        <td>COM1-B103
+                                          <trigger for="pop:footnote1"><sup class="footnote-ref"><a aria-describedby="footnote-label" href="#footnote1" id="footnoteref1">[1]</a></sup></trigger>
+                                        </td>
+                                        <td><strong>M</strong>on <strong>16</strong>:00</td>
+                                        <td><s><span class="dimmed">LC03</span></s></td>
+                                        <td><strong><code>CS2113T-M16</code></strong></td>
+                                        <td>Damith</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="badge badge-warning">CS2113T</span></td>
+                                        <td><s>COM1-B103</s></td>
+                                        <td><s><strong>M</strong>on  <strong>17</strong>:00</s></td>
+                                        <td><s><span class="dimmed">LC04</span></s></td>
+                                        <td><s><strong><code>CS2113T-M17</code></strong></s></td>
+                                        <td><s>TBD</s></td>
+                                      </tr>
+                                      <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="badge badge-warning">CS2113T</span></td>
+                                        <td>COM1-B103</td>
+                                        <td><strong>T</strong>ue <strong>12</strong>:00</td>
+                                        <td><s><span class="dimmed">LC01</span></s></td>
+                                        <td><strong><code>CS2113T-T12</code></strong></td>
+                                        <td>Ryan, Wei Xiang</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="badge badge-warning">CS2113T</span></td>
+                                        <td>COM1-B103</td>
+                                        <td><strong>T</strong>ue <strong>13</strong>:00</td>
+                                        <td><s><span class="dimmed">LC02</span></s></td>
+                                        <td><strong><code>CS2113T-T13</code></strong></td>
+                                        <td>Tejas, Wei Xiang</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="badge badge-info"> CS2113 </span></td>
+                                        <td>COM1-B103</td>
+                                        <td><strong>T</strong>ue <strong>14</strong>:00</td>
+                                        <td><s><span class="dimmed">T01</span></s></td>
+                                        <td><strong><code>CS2113-T14</code></strong></td>
+                                        <td>Glen, Rachel</td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="badge badge-info"> CS2113 </span></td>
+                                        <td>COM1-B103</td>
+                                        <td><strong>T</strong>ue <strong>15</strong>:00</td>
+                                        <td><s><span class="dimmed">T02</span></s></td>
+                                        <td><strong><code>CS2113-T15</code></strong></td>
+                                        <td>Jerry, Manaswini</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </panel>
+                            <panel type="seamless" expanded id="tutorial-structure"><template slot="_header"><h3 id="tutorial-structure">Tutorial Structure<a class="fa fa-anchor" href="#tutorial-structure"></a></h3></template>
+                              <div id="tutorialStructure">
+                                <p><strong>What happens during the tutorial</strong>:</p>
+                                <ul>
+                                  <li>
+                                    <p>A tutorial group is handled by two tutors. Each tutor will work with two teams.</p>
+                                  </li>
+                                  <li>
+                                    <p>The tutor will <em>facilitate</em> tutorial activities, observe your progress, and give feedback. If you are facing difficulties with a weekly activity, the tutor can direct you to get help from another student in the
+                                      tutorial.</p>
+                                  </li>
+                                  <li>
+                                    <p>Please <mark>bring your laptop to tutorials.</mark> You'll need it for tutorial tasks.</p>
+                                  </li>
+                                </ul>
+                                <div class="indented-level2">
+                                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix C(FAQ): What if I don't carry around a laptop? <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                                    <div>
+                                      <h3 id="what-if-i-don-t-carry-around-a-laptop-optional">What if I don’t carry around a laptop? <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small>
+                                        <a class="fa fa-anchor" href="#what-if-i-don-t-carry-around-a-laptop-optional"></a>
+                                      </h3>
+                                      <div class="indented">
+                                        <div>
+                                          <p>If you do not have a laptop or prefer not to bring the laptop, it is up to you to show your work to the tutor in some way (e.g. by connecting to your home PC remotely), <em>without</em> requiring extra time/effort
+                                            from the tutor or team members.</p>
+                                          <p><span class="dimmed">Reason: As you enjoy the benefits of not bring the laptop; you (not others) should bear the cost too.</span></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </panel>
+                                </div>
+                                <br>
+                                <p><strong>The role of our tutors</strong> is different from tutors in other modules.</p>
+                                <ul>
+                                  <li><strong>No direct tech help</strong>: Tutors are prohibited from giving direct technical help, other than to give you some general direction to finding a solution. <span class="dimmed">Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.</span></li>
+                                </ul>
+                                <div class="indented-level2">
+                                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D: How to get Help in CS2113/T <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                                    <div>
+                                      <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g.
+                                        what is the difference between <em>refactoring</em> and <em>rewriting</em>?</span>
+                                      </p>
+                                      <span class="float-right">
+<p><img src="/website/admin/images/the good reasons to get home early.png" width="300"><br></p></span>
+                                      <p><strong>Keep in mind that instructors don't have ready solutions to all technical problems</strong>. Unlike tutorial questions for which instructors have model solutions, given the complexity of industry tools we
+                                        use (Gradle, Travis, Git, ...) and the rapid pace they are updated, instructors don't have ready solutions to most technical problems you face in this module. The only realistic way to solve those problems at a
+                                        large scale is crowd-sourcing i.e., someone else who faced a similar problem might know how to fix it.</p>
+                                      <p><span class="text-danger"><big><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> <strong>What not to do:</strong></big>
+                                        </span>
+                                      </p>
+                                      <ul>
+                                        <li><span class="text-danger"><strong>Send a help request to an instructor</strong>:</span> When faced with a technical problem or a doubt about a concept, don't fire off an email lecturer/tutor immediately, unless
+                                          it is something only the lecturer/tutor is supposed to know.<br></li>
+                                        <li><span class="text-danger"><strong>Request to meet the instructor to solve the problem</strong>:</span> That can only work if the person is supposed to know how to solve all technical problems, which is not the case.</li>
+                                      </ul>
+                                      <p><span class="text-success"><big><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> <strong>What to do:</strong></big>
+                                        </span>
+                                      </p>
+                                      <ul>
+                                        <li>
+                                          <p><strong>Double-check the given instructions</strong>: Often, technical problems arise due to deviations in how you perform a step or a difference in your environment.<br></p>
+                                        </li>
+                                        <li>
+                                          <p><strong>Get your team to meet for a weekly work-together session</strong>. When you do module tasks together, it is easy to compare with each other and figure out what deviation is causing the problem. That is,
+                                            crowd-source your team first.</p>
+                                        </li>
+                                        <li>
+                                          <p><strong>Search</strong>: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like <a href="http://stackoverflow.com/">stackoverflow</a>.
+                                            Don't give an opportunity for someone to ask you to <a href="http://www.jibble.org/stfw/">STFW</a>.<br> Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the
+                                            problem. Even if not, a web search on the error message is a good starting point.  <br>
+                                            <img src="/website/admin/images/how to google it.png" width="460" height="268"></p>
+                                        </li>
+                                        <li>
+                                          <p><strong>Ask in the <a href="https://github.com/nus-cs2113-AY1920S2/forum/issues">module forum</a></strong>:</p>
+                                          <ul>
+                                            <li>
+                                              <p><strong>Give full details of the problem</strong> Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher.
+                                                If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.</p>
+                                              <ul>
+                                                <li>Include full error message, screenshots, code snippets, stack traces, etc.<br></li>
+                                                <li>If the problem is code-related, push the current state of the code to a branch in your fork and give the link to the branch. That gives a chance for someone to reproduce the state of your project in their
+                                                  computer.</li>
+                                              </ul>
+                                            </li>
+                                            <li>
+                                              <p><strong>Avoid addressing the question to one person</strong> (e.g., the prof), unless really necessary. Doing so will discourage others from answering that question.</p>
+                                            </li>
+                                            <li>
+                                              <p><strong>Isolate the problem.</strong> &quot;My code doesn't work&quot; isn't going to help even if you post the whole code. Others don't have time to go through all of your code. Isolate the part that doesn't
+                                                work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about
+                                                <trigger trigger="click" for="modal:appendixHelp-rubberDuckDebugging">Rubber Duck Debugging</trigger>?).</p>
+                                              <box>
+                                                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related
+                                                  to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.
+                                                </p>
+                                              </box>
+                                            </li>
+                                            <li>
+                                              <p><strong>Generalize the problem.</strong> &quot;How to write tasks to a text file using Java&quot; is too specific to what you are working on. You are more likely to find help if you post a thread called (or
+                                                search for) &quot;How to write to a file using Java&quot;.</p>
+                                            </li>
+                                            <li>
+                                              <p><strong>Remember to thank those you try to help, and close the issue</strong> after the issue has been resolved.</p>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                      <modal large id="modal:appendixHelp-rubberDuckDebugging" class="algolia-no-index"><template slot="_header">Rubber Duck Debugging</template>
+                                        <p><img src="/website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
+                                        <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book <em>The Pragmatic Programmer</em> in which a
+                                          programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
+                                        <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]<br></p>
+                                      </modal>
+                                      <ul>
+                                        <li><strong>Ask the world</strong> using programming forums such as stackoverflow.
+                                          <ul>
+                                            <li>
+                                              <p>PLEASE search for existing answers before you post your question in those public forums; You don't want to appear as a 'clueless' or 'too lazy to do your research' person in a public forum.</p>
+                                              <box>
+                                                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Know what these stand for: <strong>RTFM</strong>, <strong>STFW</strong>, <strong>GIYF</strong></p>
+                                              </box>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                      <span id="questions-for-tutros">
+<ul>
+<li><strong>Raise your question during a tutorial</strong>. Some questions can be discussed with the tutor and tutorial-mates.
+What kind of questions are suitable to discuss with the tutor? Consider these two questions you might want to ask a tutor:
+<ul>
+<li><font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
+                                      </span>
+                                      </font> <em>This is how I understood/applied coupling. Is that correct?</em> - Such questions are welcome. <span class="dimmed"><strong>Reason</strong>:This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.</span></li>
+                                      <li>
+                                        <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
+                                          </span>
+                                        </font> <em>What is coupling?</em> - Such questions are discouraged. <span class="dimmed"><strong>Reason</strong>: This question implies you haven’t done what you could to learn the topic in concern.</span></li>
+                                      </ul>
+                                      </li>
+                                      </ul>
+                                      </span>
+                                      <ul>
+                                        <li><strong>Ask the lecturer</strong>: Failing all above, you can talk to the lecturer before/after the lecture, or email the lecturer.</li>
+                                      </ul>
+                                      <box type="warning">
+                                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Some technical problems can take a long time to resolve.</strong> Therefore, plan ahead and schedule
+                                          your work much earlier than the deadline.</p>
+                                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Some problems might not get resolved at all</strong>; while waiting for a solution, explore alternatives
+                                          and workarounds.
+                                        </p>
+                                      </box>
+                                      <box>
+                                        <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
+                                        <ul>
+                                          <li>[lifehacker article]  <a href="http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671">Google Tips and Tricks Every Student Should Know</a></li>
+                                          <li>[Article] <a href="http://catb.org/esr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a> by Eric Steven Raymond
+                                          </li>
+                                        </ul>
+                                      </box>
+                                    </div>
+                                  </panel>
+                                </div>
+                                <br>
+                                <ul>
+                                  <li><strong>No ‘teaching’</strong>: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you as self-learning is a vital part of the module. For example, <mark>the tutor will not do a mini-lecture at the start of the tutorial</mark>.
+                                    Of course tutors can help you clarify doubts under the right circumstances.</li>
+                                </ul>
+                                <div class="indented-level2">
+                                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D (extract): Questions suitable for tutor <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                                    <div>
+                                      <ul>
+                                        <li><strong>Raise your question during a tutorial</strong>. Some questions can be discussed with the tutor and tutorial-mates. What kind of questions are suitable to discuss with the tutor? Consider these two questions
+                                          you might want to ask a tutor:
+                                          <ul>
+                                            <li>
+                                              <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
+                                                </span>
+                                              </font> <em>This is how I understood/applied coupling. Is that correct?</em> - Such questions are welcome. <span class="dimmed"><strong>Reason</strong>:This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.</span></li>
+                                            <li>
+                                              <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
+                                                </span>
+                                              </font> <em>What is coupling?</em> - Such questions are discouraged. <span class="dimmed"><strong>Reason</strong>: This question implies you haven’t done what you could to learn the topic in concern.</span></li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </panel>
+                                </div>
+                                <br>
+                                <ul>
+                                  <li><strong>No leading from the front</strong>: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But
+                                    tutors will give you feedback on how you are doing (or have done) project tasks so that you can improve further.</li>
+                                </ul>
+                                <p><strong>Timing/venue:</strong></p>
+                                <ul>
+                                  <li>Please refer to the <span><a href="/website/schedule/index.html">Schedule page</a></span> for further details on each tutorial.</li>
+                                  <li>You are expected to arrive on time. <mark>Punctuality is considered for participation marks.</mark></li>
+                                  <li>You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before
+                                    the class is dismissed.</li>
+                                  <li><mark>Vacate the table 5 minutes before the hour</mark> so that the next group can start on time.</li>
+                                  <li>In the past, many students have requested to increase the tutorial duration because a mere hour is barely enough to get through all the tutorial tasks. Increasing the tutorial time is not possible due to lack of venues
+                                    and tutors. Instead, let's try to make the best of the one hour available by coming well prepared and starting on time. Note that <mark>the better prepared you are, the higher the chance of completing e all activities allocated to a tutorial</mark>                                    within time.</li>
+                                </ul>
+                                <p><strong>Grading:</strong></p>
+                                <ul>
+                                  <li>Your conduct in tutorials will be evaluated by team members and the tutor which can affect your participation marks.</li>
+                                </ul>
+                              </div>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type="success" src="/website/admin/moduleOverview._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module overview</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type="success" class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module overview</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <p><big><p class="lead text-secondary">An iterative introduction to Software Engineering...</p></big></p>
+                      <img src="/website/images/growingPlant.png" width="700">
+                      <p class="lead"><span>CS2113/T is an introductory Software Engineering module covering <strong>a balance of basic SE theory and practical skills</strong> needed to work in a project that has a software component. The module follows an <tooltip><template slot="_content">going through SE topics several times while increasing depth, as opposed to going through topics sequentially</template><strong>iterative approach</strong></tooltip> to covering topics. The module also introduces you to the Java programming language, the OOP paradigm, and some basic UML models.</span></p>
+                      <ul>
+                        <li>
+                          <p><strong>The theory side</strong> of this module is supported by a customized online textbook <a href="/website/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module
+                            website.
+                          </p>
+                        </li>
+                        <li>
+                          <p><strong>On the practice side</strong>, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called <a href="/website/se-book-adapted/projectDuke/index.html">Duke</a>.
+                            Then, you will move to a team project in which you will build another small
+                            <tooltip><template slot="_content">Comman Line Interface</template>CLI</tooltip> app while working as a team.</p>
+                        </li>
+                      </ul>
+                      <p>
+                        <panel src="/website/admin/appendixC-faq._include_.html#admin-faq-tVsNonT" class="embedding algolia-no-index" minimized fragment="admin-faq-tVsNonT"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>FAQ: What are the differences between CS2113 and CS2113T?</strong></p></template></panel>
+                      </p>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
               </div>
@@ -255,9 +989,23 @@
                 <p>This module is supported by a customized online textbook <a href="/website/se-book-adapted/index.html"><strong><em>Software Engineering for Self-Directed Learners</em></strong> (CS2113 edition)</a>, integrated into this module website.
                   While it is in a dynamic Web page format, there is a way to save the main text as pdf files. Printer-friendly versions have been provided too. In addition, <mark>a PDF version of the full textbook will be provided</mark> at the start
                   of the semester, via LumiNUS.</p>
-                <p>
-                  <panel type src="/website/book/about/usage._include_.html#saving" class="embedding algolia-no-index" minimized fragment="saving"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Using this Website → Saving as PDF files  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-                </p>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Using this Website → Saving as PDF files <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <div>
+                    <h3 id="saving-as-pdf-files-2">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files-2"></a></h3>
+                    <ol>
+                      <li>
+                        <p>Use Chrome to load the page you want to save as pdf.</p>
+                      </li>
+                      <li>
+                        <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
+                      </li>
+                      <li>
+                        <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
+                          <img src="/website/book/about/images/chromeSaveAsPdf.png"></p>
+                      </li>
+                    </ol>
+                  </div>
+                </panel>
               </div>
             </panel>
             <p></p>
@@ -270,19 +1018,736 @@
                 <p>
                   <pic src="/website/admin/images/grade-breakdown.png"></pic>
                 </p>
-                <p>
-                  <panel type src="/website/admin/participation._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Participation Marks  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-                </p>
-                <p>
-                  <panel type src="/website/admin/exams._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Exams  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-                </p>
-                <p>
-                  <panel type src="/website/admin/ip-grading._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Individual Project (iP) Grading  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-                </p>
-                <p>
-                  <panel type src="/website/admin/tp-grading._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Team Project (tP) Grading  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-                </p>
-              </div>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Participation Marks <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <div>
+                    <p><strong>To receive full 5 marks allocated for participation, meet the criteria <span class="badge badge-pill badge-info p-2"><big><big>A</big></big></span>, <span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span>, and <span class="badge badge-pill badge-info p-2"><big><big>C</big></big></span>.</strong></p>
+                    <p><strong><span class="badge badge-pill badge-info p-2"><big><big>A</big></big></span> Earned at least half of weekly participation points in at least 10 weeks.</strong></p>
+                    <ul>
+                      <li>Programming exercise (if any):
+                        <ul>
+                          <li>Submitted correct solutions at least 75% of the exercises: 3 points</li>
+                          <li>Submitted correct solutions to 50-74% of the exercises: 2 points</li>
+                          <li>Submitted correct solutions to 25-49% of the exercises: 1 point</li>
+                        </ul>
+                      </li>
+                      <li>Post-lecture quiz (if any):
+                        <ul>
+                          <li>Answered at least 75% of the questions correctly: 3 points</li>
+                          <li>Answered 50-74% questions correctly: 2 points</li>
+                          <li>Answered less than 50% questions correctly but answered more than 50% of the questions: 1 point</li>
+                        </ul>
+                      </li>
+                      <li>Compulsory administrative tasks <span class="dimmed">e.g., submitting peer evaluations</span>: 2 for each task</li>
+                    </ul>
+                    <div class="indented">
+                      <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Lecture in week <code>N</code>:</p>
+                      <ul>
+                        <li>In-lecture quiz and other activities are counted for week <code>N</code> lecture participation.</li>
+                        <li>Post-lecture quiz (if any) is counted for Week <code>N+1</code></li>
+                      </ul>
+                    </div>
+                    <p><strong><span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span> Received good peer evaluations</strong></p>
+                    <div class="indented">
+                      <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Conduct) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                        <div>
+                          <p>
+                            <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' conduct in the project and during tutorials,</strong></p>
+                          <ul>
+                            <li>Evaluated based on the following criteria, on a scale <code>Poor</code>/<code>Below Average</code>/<code>Average</code>/<code>Good</code>/<code>Excellent</code>:</li>
+                          </ul>
+                          <div class="indented-level2">
+                            <box background-color="white" border-color="grey" border-left-color="#28a745">
+                              <h4 id="peer-evaluation-criteria-professional-conduct">Peer Evaluation Criteria: Professional Conduct<a class="fa fa-anchor" href="#peer-evaluation-criteria-professional-conduct"></a></h4>
+                              <ul>
+                                <li><strong>Professional Communication</strong> :
+                                  <ul>
+                                    <li>Communicates sufficiently and professionally. e.g. Does not use offensive language or excessive slang in project communications.</li>
+                                    <li>Responds to communication from team members in a timely manner (e.g. within 24 hours).</li>
+                                  </ul>
+                                </li>
+                                <li><strong>Punctuality</strong>: Does not cause others to waste time or slow down project progress by frequent tardiness.</li>
+                                <li><strong>Dependability</strong>: Promises what can be done, and delivers what was promised.</li>
+                                <li><strong>Effort</strong>: Puts in sufficient effort to, and tries their best to keep up with the module/project pace. Seeks help from others when necessary.</li>
+                                <li><strong>Quality</strong>: Does not deliver work products that seem to be below the student's competence level i.e. tries their best to make the work product as high quality as possible within her competency level.</li>
+                                <li><strong>Meticulousness</strong>:
+                                  <ul>
+                                    <li>Rarely overlooks submission requirements.</li>
+                                    <li>Rarely misses compulsory module activities such as pre-module survey.</li>
+                                  </ul>
+                                </li>
+                                <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc. Honors all collectively agreed-upon commitments e.g., weekly project meetings.
+                                </li>
+                              </ul>
+                            </box>
+                          </div>
+                        </div>
+                      </panel>
+                      <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Competency) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                        <div>
+                          <p>
+                            <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The competency of the team member demonstrated in the project and during the tutorials,</strong></p>
+                          <ul>
+                            <li>Considered only for bonus marks, A+ grades, and tutor recruitment</li>
+                            <li>Evaluated based on the following criteria, on a scale <code>Poor</code>/<code>Below Average</code>/<code>Average</code>/<code>Good</code>/<code>Excellent</code>:</li>
+                          </ul>
+                          <div class="indented-level2">
+                            <box background-color="white" border-color="grey" border-left-color="#28a745">
+                              <h4 id="peer-evaluation-criteria-competency">Peer Evaluation Criteria: Competency<a class="fa fa-anchor" href="#peer-evaluation-criteria-competency"></a></h4>
+                              <ul>
+                                <li><strong>Technical Competency</strong>: Able to gain competency in all the required tools and techniques.</li>
+                                <li><strong>Mentoring skills</strong>: Helps others when possible. Able to mentor others well.</li>
+                                <li><strong>Communication skills</strong>: Able to communicate (written and spoken) well. Takes initiative in discussions.
+                                </li>
+                              </ul>
+                            </box>
+                          </div>
+                          <p>
+                            <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any ANONYMOUS feedback you want to give the classmates you reviewed above?</strong></p>
+                          <p></p>
+                          <p>
+                            <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any CONFIDENTIAL comments about any team members?</strong></p>
+                          <p></p>
+                        </div>
+                      </panel>
+                      <ul>
+                        <li>-1 for each <em>professional conduct</em> criterion in which you score below average (based on the average of ratings received).</li>
+                        <li>No penalty for scoring low on <em>competency criteria</em>.</li>
+                      </ul>
+                    </div>
+                    <p><strong><span class="badge badge-pill badge-info p-2"><big><big>C</big></big></span> Tutorial attendance/participation not too low</strong></p>
+                    <div class="indented">
+                      <p>Low attendance/participation can affect participation marks directly (i.e., attended fewer than 7) or indirectly (i.e., it might result in low peer evaluation ratings).</p>
+                    </div>
+                    <panel type="info" expanded no-close no-switch><template slot="_header"><p><strong>+ Bonus Marks</strong></p></template>
+                      <p>In addition, you can receive bonus marks in the following ways. Bonus marks can be used to top up your participation marks <mark>but only if your marks from the above falls below 5</mark>.</p>
+                      <ul>
+                        <li>[For lecture participation] Received at least half of the points for lecture activities in at least 10 lectures: 1 mark
+                          <ul>
+                            <li>In-lecture quizzes (using <a href="http://pollev.com">pollev.com</a>): scoring is similar to the post-lecture quizzes</li>
+                            <li>Other in-lecture activities: scoring is case-by-case basis</li>
+                          </ul>
+                        </li>
+                        <li>[For perfect peer ratings] Received good ratings for all 10 peer evaluations criteria: 1 mark</li>
+                        <li>[For helping classmates] Was very helpful to classmates <span class="dimmed">e.g., multiple helpful posts in forum</span>: 1 mark</li>
+                      </ul>
+                    </panel>
+                    <p></p>
+                    <p><span class="badge badge-pill badge-secondary p-2"><big><big>Examples:</big></big></span></p>
+                    <ul>
+                      <li>Alicia earned 1/2, 3/5, <ins>2/5</ins>, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 4/5, 5/5 in the first 12 weeks. As she received at least half of the points in 11 of the weeks, she gets 5 participation marks. Bonus marks are not applicable
+                        as she has full marks already.</li>
+                      <li>Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he participated in 10 lectures, and hence get a bonus mark to make it 5/5.</li>
+                      <li>Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.</li>
+                    </ul>
+                    <panel type="info" expanded no-close no-switch id="where-to-find-your-participation-marks-progress"><template slot="_header"><h5 id="where-to-find-your-participation-marks-progress">Where to find your participation marks progress<a class="fa fa-anchor" href="#where-to-find-your-participation-marks-progress"></a></h5></template>
+                      <p><strong>Your participation progress can be tracked in <a href="/website/admin/participation-dashboard.html">this page</a></strong> from week 3 onward. The page will be updated about once a week.
+                      </p>
+                    </panel>
+                  </div>
+                </panel>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Exams <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <div>
+                    <p>There is no midterm.</p>
+                    <p>The final exam has two parts:</p>
+                    <ul>
+                      <li>Part 1: MCQ questions (1 hour, 20 marks)</li>
+                      <li>Part 2: Essay questions (1 hour, 20 marks)</li>
+                    </ul>
+                    <p>Both papers will be given to you at the start but you need to <strong>answer Part 1 first</strong> (i.e. MCQ paper). It will be <strong>collected 1 hour after the exam start time</strong> (even if arrived late for the exam). You are
+                      free to start part 2 early if you finish Part 1 early.</p>
+                    <box type="important">
+                      <p>Given the fast pace required by the paper, the large class size, and the need to collect part 1 answer scripts in the middle of the exam, to be fair to all students, <strong>invigilators will not answer queries about the questions in the exam paper</strong>                        (but <em>will</em> answer queries related to exam administration).</p>
+                      <ul>
+                        <li>If you have a doubt/query about a question ,or would like to make an assumption about a question, or would like to report a potential error in the exam paper, write down your doubt/query/assumption in the space provided for it
+                          at the end of the exam paper.</li>
+                        <li>Those doubts/queries/assumptions (if justified) will be taken into account when grading.
+                        </li>
+                      </ul>
+                    </box>
+
+                    <h2 id="final-exam-part-1-mcq">Final Exam: Part 1 (MCQ)<a class="fa fa-anchor" href="#final-exam-part-1-mcq"></a></h2>
+                    <p>Each MCQ question gives you a statement to evaluate.</p>
+                    <box>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example statement</p>
+                      <blockquote>
+                        <p>Testing is a Q&amp;A activity</p>
+                      </blockquote>
+                    </box>
+                    <p>Unless stated otherwise, the meaning of answer options are<br>
+                      <strong>A</strong>: Agree. If the question has multiple statements, <ins>agree with all of them</ins>.<br>
+                      <strong>B</strong>: Disagree. If the question has multiple statements, <ins>disagree with at least one of them</ins><br>
+                      <strong>C</strong>, <strong>D</strong>, <strong>E</strong>: Not used</p>
+                    <p>Number of questions: 80</p>
+                    <p><strong>Questions in Part 1 are confidential.</strong> You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the exam paper are to be returned at the end of the exam.</p>
+                    <div class="full-mode">
+                      <p>You will be given OCR forms <span class="dimmed">(i.e., bubble sheets)</span> to indicate your answers for Part 1. As each OCR form can accommodate only 50 answers, you will be given 2 OCR forms. <strong>Indicate your student number in both OCR forms</strong>.</p>
+                    </div>
+                    <p>To save space, we use the following notation in MCQ question.
+                      <strong>[<ins>x</ins> | y | <ins>z</ins>] means ‘x and z, but not y’</strong></p>
+                    <box>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> SE is [boring | <ins>useful</ins> | <ins>fun</ins>] means <em>SE is not boring</em> AND <em>SE is useful</em> AND <em>SE is fun</em>.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following statement:</p>
+                      <ul>
+                        <li>IDEs can help with [<ins>writing</ins> | debugging | <ins>testing</ins>] code.</li>
+                      </ul>
+                      <p>The correct response for it is <code>Disagree</code> because IDEs can help with all three of the given options, not just writing and testing.</p>
+                    </box>
+                    <p>Some questions will use <mark>highlighting</mark> to draw your attention to a specific part of the question. That is because those parts are highly relevant to the answer and we don’t want you to miss the relevance of that part.</p>
+                    <box>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the statement below:</p>
+                      <blockquote>
+                        <p>Technique ABC <mark>can</mark> be used to generate more test cases.</p>
+                      </blockquote>
+                      <p>The word <mark>can</mark> is highlighted because the decision you need to make is whether the ABC <em>can or cannot</em> be used to generate more test cases; the decision is not whether ABC can be used to generate <em>more or better</em>                        test cases.</p>
+                    </box>
+                    <p>Markers such as the one given below appears at left margin of the paper to <strong>indicate where the question corresponds to a new column in the OCR form</strong>. E.g. questions 11, 21, 31, etc. (a column has 10 questions). Such
+                      markers can help you to detect if you missed a question in the previous 10 questions. You can safely ignore those markers if you are not interested in making use of that additional hint.</p>
+                    <p><img src="/website/admin/images/columnMarker.png"><br></p>
+                    <p>Some questions have tags e.g., the question below has a tag <strong><code>JAVA</code></strong>. These <strong>tags provide additional context about the question</strong>. In the example below, the tag indicates that the code given
+                      in the question is Java code.</p>
+                    <p><img src="/website/admin/images/contextTag.png"><br></p>
+                    <p><strong>The exam paper is open-book</strong>: you may bring any printed or written materials to the exam in hard copy format. However, given the fast pace required by Part 1, you will not have time left to refer notes during that part
+                      of the exam.</p>
+                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Mark the OCR form as you go</strong>, rather than planning to transfer your answers to the OCR form near the end.
+                      <span class="dimmed">Reason: Given there are 100 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.</span>
+                    </p>
+                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Write the answer in the exam paper as well</strong> when marking it in the OCR form. <span class="dimmed">Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.</span></p>
+                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> We have tried to <strong>avoid deliberately misleading/tricky questions</strong>. If a question seems to take a very long
+                      time to figure out, you are probably over-thinking it.</p>
+                    <box type="success">
+                      <p>You will be given a practice exam paper to familiarize yourself with this slightly unusual exam format.
+                      </p>
+                    </box>
+                    <h2 id="final-exam-part-2-essay">Final Exam: Part 2 (Essay)<a class="fa fa-anchor" href="#final-exam-part-2-essay"></a></h2>
+                    <p>Yes, <strong>you may use pencils</strong> when answering part 2.</p>
+                  </div>
+                </panel>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Individual Project (iP) Grading <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <div>
+                    <div id="title"></div>
+                    <div id="body">
+                      <p><strong>Implementation [<code>10</code> marks]</strong>: To get full marks, you should achieve,</p>
+                      <ul>
+                        <li>Achieve <strong>more than 90% of all deliverables</strong> by the end.</li>
+                        <li>Requirements marked as <span class="badge badge-pill badge-secondary">optional</span> or <span class="badge badge-pill badge-secondary">if-applicable</span> are not counted when calculating the percentage of deliverables.</li>
+                        <li>When a requirement specifies a <code>minimal</code> version of it, simply reaching that minimal version of the requirement is enough for it to be counted for grading -- however, we recommend you to go beyond the minimal; the farther
+                          you go, the more practice you will get.</li>
+                      </ul>
+                      <p><strong>Project Management [<code>5</code> marks]</strong>: To get full marks, you should achieve,</p>
+                      <ul>
+                        <li>Submit <em>some</em> deliverables in at least 4 out of the 6 iP weeks (i.e., week 2- week 7)</li>
+                        <li>Follow other requirements specified (e.g., how to use Git/Github for each increment, do peer reviews) in at least 4 weeks</li>
+                      </ul>
+                      <p><strong>Documentation [<code>5</code> marks]</strong>: To get full marks, you should achieve,</p>
+                      <ul>
+                        <li>The product web site and the user guide is reasonable</li>
+                      </ul>
+                      <box type="tip" light>
+                        <p>You can monitor your iP progress (as detected by our scripts) in the <a href="/website/admin/ip-progress-dashboard.html">iP Progress Dashboard</a> page.
+                        </p>
+                      </box>
+                    </div>
+                  </div>
+                </panel>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Team Project (tP) Grading <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <div>
+                    <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. CS2113T projects will be assessed separately from CS2113 projects. Given below is the marking scheme.</p>
+                    <p><strong>Total</strong>: 35 marks (<span><span aria-hidden="true" class="fas fa-user"></span></span> 25 individual marks + <span><span aria-hidden="true" class="fas fa-users"></span></span> 10 team marks)</p>
+                    <box type="important">
+                      <p>We have reduced total marks of tP from 45 to 35 this semester, as a clear indication that the amount of time you are expected to spend on the tP this semester is much lower compared to previous semesters.
+                      </p>
+                    </box>
+                    <p>See the sections below for details of how we assess each aspect.</p>
+
+                    <div id="criteria-productDesign">
+                      <h4 id="1-project-grading-product-design-5-marks">
+                        <div class="bg-warning p-1">1. Project Grading: Product Design <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span>/<span><span aria-hidden="true" class="fas fa-user"></span></span> 5 marks]</span>
+                        </div><a class="fa fa-anchor" href="#1-project-grading-product-design-5-marks"></a></h4>
+                      <p><strong>Evaluates:</strong> how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user</p>
+                      <p><strong>Evaluated by:</strong></p>
+                      <ul>
+                        <li>tutors (based on product demo and user guide)</li>
+                        <li>peers from other teams (based on peer testing and user guide)</li>
+                      </ul>
+                      <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Product Design</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                        <div>
+                          <p>
+                            <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Quality of the product design,</strong><br> Evaluate based on the User Guide and the actual product behavior.</p>
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Criterion</th>
+                                  <th>Unable to judge</th>
+                                  <th>Low</th>
+                                  <th>Medium</th>
+                                  <th>High</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><code>target user</code></td>
+                                  <td>not specified</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>clearly specified and narrowed down appropriately</td>
+                                </tr>
+                                <tr>
+                                  <td><code>value proposition</code></td>
+                                  <td>not specified</td>
+                                  <td>The value to target user is low. App is not worth using</td>
+                                  <td>Some small group of target users might find the app worth using</td>
+                                  <td>Most of the target users are likely to find the app worth using</td>
+                                </tr>
+                                <tr>
+                                  <td><code>optimized for target user</code></td>
+                                  <td></td>
+                                  <td>Not enough focus for CLI users</td>
+                                  <td>Mostly CLI-based, but cumbersome to use most of the time</td>
+                                  <td>feels like a fast typist can be more productive with the app, compared to an equivalent GUI app without a CLI</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </panel>
+                      <p>In addition, feature flaws reported in the PE will be considered when grading this aspect.</p>
+                      <box>
+                        <div>
+                          <p>These are considered <em>feature flaws</em>:<br>
+                            <span aria-hidden="true" class="fas fa-bug"></span> The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
+                            <span aria-hidden="true" class="fas fa-bug"></span> Hard-to-test features<br>
+                            <span aria-hidden="true" class="fas fa-bug"></span> Features that don't fit well with the product<br>
+                            <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
+                        </div>
+                      </box>
+                      <box type="tip">
+                        <p>Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, <mark>the bar you need to reach to get full 5 marks will be quite low</mark>. For example, the <code>Medium</code> level in
+                          the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of <em>excessive</em> 'feature flaw' bugs will affect the score.
+                        </p>
+                      </box>
+                    </div>
+
+                    <h4 id="2-project-grading-implementation-10-marks">
+                      <div class="bg-warning p-1">2. Project Grading: Implementation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> 10 marks]</span>
+                      </div><a class="fa fa-anchor" href="#2-project-grading-implementation-10-marks"></a></h4>
+                    <p><strong><big>2A. Code quality</big></strong></p>
+                    <p><strong>Evaluates:</strong> the quality of the parts of the code you claim as written by you</p>
+                    <p><strong>Evaluation method:</strong> manual inspection by tutors + automated-analysis by a script</p>
+                    <p><strong>Criteria:</strong></p>
+                    <span id="projectGrading-codeQuality-criteria">
+<ul>
+<li>
+<p>At least some evidence of these (see <a href="/website/se-book-adapted/chapters/errorHandling.html">here</a> for more info)</p>
+<ul>
+<li>logging</li>
+<li>exceptions</li>
+<li>assertions</li></ul></li>
+<li>
+<p>No <a href="/website/coding-standards/java/basic.html">coding standard</a> violations <span class="dimmed">e.g. all boolean variables/methods sounds like booleans</span>.</p>
+                    </li>
+                    <li>
+                      <p><a href="/website/se-book-adapted/chapters/codeQuality.html#slap-hard">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP.</p>
+                    </li>
+                    <li>
+                      <p>No noticeable code duplications <span class="dimmed">i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
+                    </li>
+                    <li>
+                      <p>Evidence of applying <a href="/website/book/codeQuality">code quality guidelines covered in the module</a>.</p>
+                    </li>
+                    </ul>
+                    </span>
+                    <p><strong><big>2B. Effort</big></strong></p>
+                    <p><strong>Evaluates:</strong> how much value you contributed to the product</p>
+                    <p><strong>Method:</strong></p>
+                    <ul>
+                      <li>This is evaluated by peers who tested your product, and tutors.</li>
+                    </ul>
+                    <div class="indented-level2">
+                      <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Question used for Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                        <div>
+                          <p>
+                            <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong></p>
+                          <ul>
+                            <li><mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark></li>
+                            <li>The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.</li>
+                          </ul>
+                          <ul radio-group="e7d80" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Unable to judge</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Significantly less than a typical iP</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Slightly less than a typical iP</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  At least as much as a typical iP</label></li>
+                          </ul>
+                        </div>
+                      </panel>
+                    </div>
+                    <p></p>
+                    <ul>
+                      <li>The score could be further moderated by this question answered by team members.</li>
+                    </ul>
+                    <div class="indented-level2">
+                      <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                        <div>
+                          <p>
+                            <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong></p>
+                          <div>
+                            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
+                              <ul radio-group="c5570" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                              </ul>
+                            </panel>
+                          </div>
+                        </div>
+                      </panel>
+                    </div>
+                    <p></p>
+
+                    <h4 id="3-project-grading-qa-10-marks">
+                      <div class="bg-warning p-1">3. Project Grading: QA <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> 10 marks]</span>
+                      </div><a class="fa fa-anchor" href="#3-project-grading-qa-10-marks"></a></h4>
+                    <p><big><strong>3A. Developer Testing:</strong></big></p>
+                    <p><strong>Evaluates:</strong> How well you tested your own feature</p>
+                    <p><strong>Based on:</strong></p>
+                    <ol>
+                      <li>functionality bugs in your work found by others during the <a href="/website/admin/tp-deliverables.html#deliverable-practical-exam">Practical Exam (PE)</a></li>
+                      <li>your test code <span class="dimmed">(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)</span></li>
+                    </ol>
+                    <modal large id="modal:projectGradingQA-testingExpectations" class="algolia-no-index"><template slot="_header">Our expectations for automated testing in the project</template>
+                      <div>
+                        <ul>
+                          <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
+                        </ul>
+                        <div class="indented">
+                          <box>
+                            <p><strong>🤔 How much testings is enough?</strong> We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you
+                              can decide to what extent you want to automate tests, depending on the benefits and the effort required.<br> There is no requirement for a minimum coverage level. Note that in a production environment you are often required
+                              to have at least 90% of the code covered by tests. In this project, it can be less. <mark>The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.</mark></p>
+                          </box>
+                        </div>
+                      </div>
+                    </modal>
+                    <box>
+                      <div>
+                        <p>These are considered <em>functionality bugs</em>:<br>
+                          <span aria-hidden="true" class="fas fa-bug"></span> Behavior differs from the User Guide<br>
+                          <span aria-hidden="true" class="fas fa-bug"></span> A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span><br>
+                          <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
+                      </div>
+                    </box>
+                    <p><big><strong>3B. System/Acceptance Testing:</strong></big></p>
+                    <p><strong>Evaluates:</strong> How well you can system-test/acceptance-test a product</p>
+                    <p><strong>Based on:</strong> bugs you found in the PE. In addition to functionality bugs, you get credit for reporting documentation bugs and feature flaws.</p>
+                    <box>
+                      <div>
+                        <h5 id="grading-bugs-found-in-the-pe">Grading bugs found in the PE<a class="fa fa-anchor" href="#grading-bugs-found-in-the-pe"></a></h5>
+                        <ul>
+                          <li><mark>Of 3A and 3B above, the one you do better will be given a 70% weight and the other a 30% weight</mark> so that your total score is driven by your strengths rather than weaknesses.</li>
+                          <li>Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.</li>
+                          <li>The penalty/credit for a bug varies based on,
+                            <ul>
+                              <li>The severity of the bug: <code>severity.High</code> &gt; <code>severity.Medium</code> &gt; <code>severity.Low</code> &gt; <code>severity.VeryLow</code></li>
+                              <li>The type of the bug: <code>type.FunctionalityBug</code> &gt; <code>type.DocumentationBug</code> &gt; <code>type.FeatureFlaw</code></li>
+                            </ul>
+                          </li>
+                          <li>The penalty for a bug is divided equally among assignees.</li>
+                          <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
+                          <li>
+                            <tooltip><template slot="_content">i.e., the same bug reported by many testers</template><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
+                          <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance
+                            testing.
+                          </li>
+                          <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
+                            <ul>
+                              <li><code>n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
+                              <li><code>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
+                            </ul>
+                          </li>
+                          <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
+                          <li>Excessive incorrect downgrading/rejecting/
+                            <tooltip><template slot="_content">marking as duplicates</template>duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+                        </ul>
+                      </div>
+                    </box>
+
+                    <div id="criteria-documentation">
+                      <h4 id="4-project-grading-documentation-5-marks">
+                        <div class="bg-warning p-1">4. Project Grading: Documentation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> 5 marks]</span>
+                        </div><a class="fa fa-anchor" href="#4-project-grading-documentation-5-marks"></a></h4>
+                      <p><strong>Evaluates:</strong> your contribution to project documents</p>
+                      <p><strong>Method:</strong> Evaluated in two steps.</p>
+                      <ul>
+                        <li>Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.</li>
+                      </ul>
+                      <div class="indented-level2">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for User Guide</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                          <div>
+                            <p>
+                              <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,</strong><br> Evaluate based on fit-for-purpose, from the perspective of a target user. For reference,
+                              the AB3 UG is <a href="https://se-education.org/addressbook-level3/UserGuide.html">here</a>.<br></p>
+                            <ul radio-group="f83ee" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Significantly lower</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Slightly lower</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Similar</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Higher</label></li>
+                            </ul>
+                          </div>
+                        </panel>
+                      </div>
+                      <p></p>
+                      <div class="indented-level2">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Developer Guide</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                          <div>
+                            <p>
+                              <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AB3, the overall quality of the DG you evaluated is,</strong><br> Evaluate based on fit-for-purpose from the perspective of a new team member trying to understand the product's
+                              internal design by reading the DG. For reference, the AB3 DG is <a href="https://se-education.org/addressbook-level3/DeveloperGuide.html">here</a>.<br></p>
+                            <ul radio-group="fd4bd" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Significantly lower</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Slightly lower</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Similar</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Higher</label></li>
+                            </ul>
+                          </div>
+                        </panel>
+                      </div>
+                      <p></p>
+                      <ul>
+                        <li>Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.</li>
+                      </ul>
+                      <div class="indented-level2">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the UG</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                          <div>
+                            <p>
+                              <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the User Guide is,</strong></p>
+                            <span id="equalShareScale">
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
+<ul radio-group="070b7" class="radio-list">
+<li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label>
+                            </li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> ...</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                            </ul>
+                        </panel>
+                        </span>
+                        </div>
+                </panel>
+                </div>
+                <p></p>
+                <div class="indented-level2">
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the DG</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <p>
+                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the Developer Guide is,</strong></p>
+                      <div>
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
+                          <ul radio-group="c5570" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                          </ul>
+                        </panel>
+                      </div>
+                    </div>
+                  </panel>
+                </div>
+                <p></p>
+                <ul>
+                  <li>In addition, UG and DG bugs you received in the PE will be considered for grading this component.</li>
+                </ul>
+                <div class="indented-level2">
+                  <box>
+                    <div>
+                      <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                      <div>
+                        <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                        <ul>
+                          <li>Not enough visuals e.g., screenshots/diagrams</li>
+                          <li>The visuals are not well integrated to the explanation</li>
+                          <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                          </li>
+                        </ul>
+                        </span>
+                        <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                        <ul>
+                          <li>Not enough or too many examples e.g., sample inputs/outputs
+                          </li>
+                        </ul>
+                        </span>
+                        <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                        <ul>
+                          <li>The explanation is too brief or unnecessarily long.</li>
+                          <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                          </li>
+                        </ul>
+                        </span>
+                        <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+                        <ul>
+                          <li>looks messy</li>
+                          <li>not well-formatted
+                          </li>
+                        </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </box>
+                  <box>
+                    <div>
+                      <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Those given as possible UG bugs ...</p></template>
+                        <div>
+                          <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                          <div>
+                            <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                            <ul>
+                              <li>Not enough visuals e.g., screenshots/diagrams</li>
+                              <li>The visuals are not well integrated to the explanation</li>
+                              <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                              </li>
+                            </ul>
+                            </span>
+                            <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                            <ul>
+                              <li>Not enough or too many examples e.g., sample inputs/outputs
+                              </li>
+                            </ul>
+                            </span>
+                            <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                            <ul>
+                              <li>The explanation is too brief or unnecessarily long.</li>
+                              <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                              </li>
+                            </ul>
+                            </span>
+                            <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+                            <ul>
+                              <li>looks messy</li>
+                              <li>not well-formatted
+                              </li>
+                            </ul>
+                            </span>
+                          </div>
+                        </div>
+                      </panel>
+                      <span id="umlDiagramBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
+                      <ul>
+                        <li>notation incorrect or not compliant with the notation covered in the module.</li>
+                        <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
+                        <li>The diagram used is not suitable for the purpose it is used.</li>
+                        <li>The diagram is too complicated.
+                        </li>
+                      </ul>
+                      </span>
+                      <span id="codeSnippetBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Code snippets:</p>
+                      <ul>
+                        <li>Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
+                        </li>
+                      </ul>
+                      </span>
+                      <span id="userStoryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in User Stories. Examples:</p>
+                      <ul>
+                        <li>Incorrect format</li>
+                        <li>All three parts are not present</li>
+                        <li>Benefit does not match the function</li>
+                        <li>Important user stories missing
+                        </li>
+                      </ul>
+                      </span>
+                      <span id="nfrBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in NFRs. Examples:</p>
+                      <ul>
+                        <li>Not really a <em>Non-Functional</em> Requirement</li>
+                        <li>Not well-defined (i.e., hard to decide when it has been met)</li>
+                        <li>Not reasonably achievable</li>
+                        <li>Highly relevant NFRs missing
+                        </li>
+                      </ul>
+                      </span>
+                      <span id="glossaryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Glossary. Examples:</p>
+                      <ul>
+                        <li>Unnecessary terms included</li>
+                        <li>Important terms missing
+                        </li>
+                      </ul>
+                      </span>
+                    </div>
+                  </box>
+                </div>
+                </div>
+
+                <h4 id="5-project-grading-project-management-5-marks">
+                  <div class="bg-warning p-1">5. Project Grading: Project Management <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span>/<span><span aria-hidden="true" class="fas fa-user"></span></span> = 5 marks]</span>
+                  </div><a class="fa fa-anchor" href="#5-project-grading-project-management-5-marks"></a></h4>
+                <div id="project-management-grading">
+                  <p><big><strong>5A. Process:</strong></big></p>
+                  <p><strong>Evaluates:</strong> How well you did in project management related aspects of the project, as an individual and as a team</p>
+                  <p><strong>Based on:</strong> tutor/bot observations of project milestones and GitHub data</p>
+                  <p><strong>Grading criteria:</strong></p>
+                  <ul>
+                    <li>No
+                      <tooltip><template slot="_content">e.g., the product is not working at all by the milestone deadline</template>major mishaps</tooltip> at v1.0 and v2.0.</li>
+                    <li>Good attempt to use of at least <em>some</em> Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)</li>
+                    <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
+                  </ul>
+                  <p><big><strong>5B. Team-tasks:</strong></big></p>
+                  <p><strong>Evaluates:</strong> How much you contributed to team-tasks</p>
+                  <div class="indented-level1">
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: Examples of team-tasks <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                      <div>
+                        <p>Here is a non-exhaustive list of team-tasks:</p>
+                        <ol>
+                          <li>Necessary general code enhancements</li>
+                          <li>Setting up tools e.g., GitHub, Gradle</li>
+                          <li>Maintaining the issue tracker</li>
+                          <li>Release management</li>
+                          <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
+                          <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                        </ol>
+                      </div>
+                    </panel>
+                  </div>
+                  <p></p>
+                  <p><strong>Based on:</strong> peer evaluations, tutor observations</p>
+                  <p><strong>Grading criteria:</strong> To earn full marks,</p>
+                  <ul>
+                    <li>you have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.</li>
+                    <li>you have merged code in at least three of weeks 9, 10, 11, 12</li>
+                  </ul>
+                </div>
+                </div>
+            </panel>
+            </div>
             </panel>
             <p></p>
             <panel type minimized class="algolia-no-index">
@@ -319,12 +1784,67 @@
                 </div>
                 <p><strong><span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span> Received good peer evaluations</strong></p>
                 <div class="indented">
-                  <p>
-                    <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-conduct" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-conduct"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Conduct)  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-                  </p>
-                  <p>
-                    <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-competency" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-competency"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Competency)  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-                  </p>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Conduct) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <p>
+                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' conduct in the project and during tutorials,</strong></p>
+                      <ul>
+                        <li>Evaluated based on the following criteria, on a scale <code>Poor</code>/<code>Below Average</code>/<code>Average</code>/<code>Good</code>/<code>Excellent</code>:</li>
+                      </ul>
+                      <div class="indented-level2">
+                        <box background-color="white" border-color="grey" border-left-color="#28a745">
+                          <h4 id="peer-evaluation-criteria-professional-conduct-2">Peer Evaluation Criteria: Professional Conduct<a class="fa fa-anchor" href="#peer-evaluation-criteria-professional-conduct-2"></a></h4>
+                          <ul>
+                            <li><strong>Professional Communication</strong> :
+                              <ul>
+                                <li>Communicates sufficiently and professionally. e.g. Does not use offensive language or excessive slang in project communications.</li>
+                                <li>Responds to communication from team members in a timely manner (e.g. within 24 hours).</li>
+                              </ul>
+                            </li>
+                            <li><strong>Punctuality</strong>: Does not cause others to waste time or slow down project progress by frequent tardiness.</li>
+                            <li><strong>Dependability</strong>: Promises what can be done, and delivers what was promised.</li>
+                            <li><strong>Effort</strong>: Puts in sufficient effort to, and tries their best to keep up with the module/project pace. Seeks help from others when necessary.</li>
+                            <li><strong>Quality</strong>: Does not deliver work products that seem to be below the student's competence level i.e. tries their best to make the work product as high quality as possible within her competency level.</li>
+                            <li><strong>Meticulousness</strong>:
+                              <ul>
+                                <li>Rarely overlooks submission requirements.</li>
+                                <li>Rarely misses compulsory module activities such as pre-module survey.</li>
+                              </ul>
+                            </li>
+                            <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc. Honors all collectively agreed-upon commitments e.g., weekly project meetings.
+                            </li>
+                          </ul>
+                        </box>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Competency) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <p>
+                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The competency of the team member demonstrated in the project and during the tutorials,</strong></p>
+                      <ul>
+                        <li>Considered only for bonus marks, A+ grades, and tutor recruitment</li>
+                        <li>Evaluated based on the following criteria, on a scale <code>Poor</code>/<code>Below Average</code>/<code>Average</code>/<code>Good</code>/<code>Excellent</code>:</li>
+                      </ul>
+                      <div class="indented-level2">
+                        <box background-color="white" border-color="grey" border-left-color="#28a745">
+                          <h4 id="peer-evaluation-criteria-competency-2">Peer Evaluation Criteria: Competency<a class="fa fa-anchor" href="#peer-evaluation-criteria-competency-2"></a></h4>
+                          <ul>
+                            <li><strong>Technical Competency</strong>: Able to gain competency in all the required tools and techniques.</li>
+                            <li><strong>Mentoring skills</strong>: Helps others when possible. Able to mentor others well.</li>
+                            <li><strong>Communication skills</strong>: Able to communicate (written and spoken) well. Takes initiative in discussions.
+                            </li>
+                          </ul>
+                        </box>
+                      </div>
+                      <p>
+                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any ANONYMOUS feedback you want to give the classmates you reviewed above?</strong></p>
+                      <p></p>
+                      <p>
+                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any CONFIDENTIAL comments about any team members?</strong></p>
+                      <p></p>
+                    </div>
+                  </panel>
                   <ul>
                     <li>-1 for each <em>professional conduct</em> criterion in which you score below average (based on the average of ratings received).</li>
                     <li>No penalty for scoring low on <em>competency criteria</em>.</li>
@@ -355,7 +1875,7 @@
                   <li>Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he participated in 10 lectures, and hence get a bonus mark to make it 5/5.</li>
                   <li>Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.</li>
                 </ul>
-                <panel type="info" expanded no-close no-switch id="where-to-find-your-participation-marks-progress"><template slot="_header"><h5 id="where-to-find-your-participation-marks-progress">Where to find your participation marks progress<a class="fa fa-anchor" href="#where-to-find-your-participation-marks-progress"></a></h5></template>
+                <panel type="info" expanded no-close no-switch id="where-to-find-your-participation-marks-progress-2"><template slot="_header"><h5 id="where-to-find-your-participation-marks-progress-2">Where to find your participation marks progress<a class="fa fa-anchor" href="#where-to-find-your-participation-marks-progress-2"></a></h5></template>
                   <p><strong>Your participation progress can be tracked in <a href="/website/admin/participation-dashboard.html">this page</a></strong> from week 3 onward. The page will be updated about once a week.
                   </p>
                 </panel>
@@ -430,6 +1950,19 @@
             <p></p>
           </div>
         </div>
+        <hr class="footnotes-sep">
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="footnote1" class="footnote-item">
+              <p>COM1-B103 is also known as the <em>Active Learning Lab</em></p>
+            </li>
+          </ol>
+          <popover id="pop:footnote1">
+            <div slot="content">
+              <p>COM1-B103 is also known as the <em>Active Learning Lab</em></p>
+            </div>
+          </popover>
+        </section>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
@@ -454,7 +1987,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Thu, 27 Feb 2020 12:15:43 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Fri, 28 Feb 2020 10:26:38 GMT</small></div>
     </footer>
   </div>
 </body>

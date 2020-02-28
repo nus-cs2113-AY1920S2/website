@@ -221,9 +221,48 @@
                 <li>tutors (based on product demo and user guide)</li>
                 <li>peers from other teams (based on peer testing and user guide)</li>
               </ul>
-              <p>
-                <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-featureFit-instructions" class="embedding algolia-no-index" minimized fragment="projectGrading-featureFit-instructions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Product Design</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-              </p>
+              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Product Design</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                <div>
+                  <p>
+                    <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Quality of the product design,</strong><br> Evaluate based on the User Guide and the actual product behavior.</p>
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Criterion</th>
+                          <th>Unable to judge</th>
+                          <th>Low</th>
+                          <th>Medium</th>
+                          <th>High</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>target user</code></td>
+                          <td>not specified</td>
+                          <td></td>
+                          <td></td>
+                          <td>clearly specified and narrowed down appropriately</td>
+                        </tr>
+                        <tr>
+                          <td><code>value proposition</code></td>
+                          <td>not specified</td>
+                          <td>The value to target user is low. App is not worth using</td>
+                          <td>Some small group of target users might find the app worth using</td>
+                          <td>Most of the target users are likely to find the app worth using</td>
+                        </tr>
+                        <tr>
+                          <td><code>optimized for target user</code></td>
+                          <td></td>
+                          <td>Not enough focus for CLI users</td>
+                          <td>Mostly CLI-based, but cumbersome to use most of the time</td>
+                          <td>feels like a fast typist can be more productive with the app, compared to an equivalent GUI app without a CLI</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </panel>
               <p>In addition, feature flaws reported in the PE will be considered when grading this aspect.</p>
               <box>
                 <div>
@@ -277,14 +316,46 @@
               <li>This is evaluated by peers who tested your product, and tutors.</li>
             </ul>
             <div class="indented-level2">
-              <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-effort-instructions" class="embedding algolia-no-index" minimized fragment="projectGrading-effort-instructions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Question used for Implementation Effort</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Question used for Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                <div>
+                  <p>
+                    <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong></p>
+                  <ul>
+                    <li><mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark></li>
+                    <li>The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.</li>
+                  </ul>
+                  <ul radio-group="e7d80" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Unable to judge</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Significantly less than a typical iP</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Slightly less than a typical iP</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  At least as much as a typical iP</label></li>
+                  </ul>
+                </div>
+              </panel>
             </div>
             <p></p>
             <ul>
               <li>The score could be further moderated by this question answered by team members.</li>
             </ul>
             <div class="indented-level2">
-              <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-implementation" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-implementation"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating Implementation Effort</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                <div>
+                  <p>
+                    <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong></p>
+                  <div>
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
+                      <ul radio-group="c5570" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                      </ul>
+                    </panel>
+                  </div>
+                </div>
+              </panel>
             </div>
             <p></p>
 
@@ -363,22 +434,81 @@
                 <li>Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.</li>
               </ul>
               <div class="indented-level2">
-                <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-userGuide-instructions" class="embedding algolia-no-index" minimized fragment="projectGrading-userGuide-instructions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for User Guide</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for User Guide</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <div>
+                    <p>
+                      <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,</strong><br> Evaluate based on fit-for-purpose, from the perspective of a target user. For reference, the
+                      AB3 UG is <a href="https://se-education.org/addressbook-level3/UserGuide.html">here</a>.<br></p>
+                    <ul radio-group="f83ee" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Significantly lower</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Slightly lower</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Similar</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Higher</label></li>
+                    </ul>
+                  </div>
+                </panel>
               </div>
               <p></p>
               <div class="indented-level2">
-                <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-devGuide-instructions" class="embedding algolia-no-index" minimized fragment="projectGrading-devGuide-instructions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Developer Guide</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Developer Guide</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <div>
+                    <p>
+                      <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AB3, the overall quality of the DG you evaluated is,</strong><br> Evaluate based on fit-for-purpose from the perspective of a new team member trying to understand the product's internal
+                      design by reading the DG. For reference, the AB3 DG is <a href="https://se-education.org/addressbook-level3/DeveloperGuide.html">here</a>.<br></p>
+                    <ul radio-group="fd4bd" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Significantly lower</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Slightly lower</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Similar</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Higher</label></li>
+                    </ul>
+                  </div>
+                </panel>
               </div>
               <p></p>
               <ul>
                 <li>Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.</li>
               </ul>
               <div class="indented-level2">
-                <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-ug" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-ug"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the UG</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the UG</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <div>
+                    <p>
+                      <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the User Guide is,</strong></p>
+                    <span id="equalShareScale">
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
+<ul radio-group="070b7" class="radio-list">
+<li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label>
+                    </li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> ...</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                    </ul>
+                </panel>
+                </span>
+                </div>
+                </panel>
               </div>
               <p></p>
               <div class="indented-level2">
-                <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-dg" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-dg"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the DG</mark>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the DG</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <div>
+                    <p>
+                      <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the Developer Guide is,</strong></p>
+                    <div>
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
+                        <ul radio-group="c5570" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                        </ul>
+                      </panel>
+                    </div>
+                  </div>
+                </panel>
               </div>
               <p></p>
               <ul>
@@ -543,7 +673,19 @@
               <p><big><strong>5B. Team-tasks:</strong></big></p>
               <p><strong>Evaluates:</strong> How much you contributed to team-tasks</p>
               <div class="indented-level1">
-                <panel type src="/website/admin/tp-expectations._include_.html#example-team-tasks" class="embedding algolia-no-index" minimized fragment="example-team-tasks"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: Examples of team-tasks  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: Examples of team-tasks <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <div>
+                    <p>Here is a non-exhaustive list of team-tasks:</p>
+                    <ol>
+                      <li>Necessary general code enhancements</li>
+                      <li>Setting up tools e.g., GitHub, Gradle</li>
+                      <li>Maintaining the issue tracker</li>
+                      <li>Release management</li>
+                      <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
+                      <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                    </ol>
+                  </div>
+                </panel>
               </div>
               <p></p>
               <p><strong>Based on:</strong> peer evaluations, tutor observations</p>
@@ -593,7 +735,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Thu, 27 Feb 2020 12:15:43 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Fri, 28 Feb 2020 10:26:38 GMT</small></div>
     </footer>
   </div>
 </body>

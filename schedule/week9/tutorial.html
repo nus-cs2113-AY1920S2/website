@@ -100,22 +100,109 @@
           <div>
             <h4 id="1-demo-v1-0"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Demo v1.0<a class="fa fa-anchor" href="#1-demo-v1-0"></a></h4>
             <div class="indented-level2">
-              <p>
-                <panel type src="/website/admin/tp-tasks._include_.html#desc_do_an_informal_demo" class="embedding algolia-no-index" minimized fragment="desc_do_an_informal_demo"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP v1.0: Demo  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-              </p>
+              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP v1.0: Demo <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                <div>
+                  <ul>
+                    <li><strong>Do an informal demo</strong> of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the jar file.</li>
+                  </ul>
+                </div>
+              </panel>
             </div>
-            <h4 id="2-do-a-postmortem-of-v1-0"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Do a Postmortem of v1.0<a class="fa fa-anchor" href="#2-do-a-postmortem-of-v1-0"></a></h4>
+            <h4 id="2-demo-an-assertion-failure"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Demo an assertion failure<a class="fa fa-anchor" href="#2-demo-an-assertion-failure"></a></h4>
             <ul>
-              <li>Share with the tutor your opinion on <strong>how v1.0 went</strong>, and your <strong>plans to improve the process</strong> (not the product) in v2.0, individually and as a team.</li>
+              <li>Temporarily edit the tP code to cause an assertion failure. Demo the assertion failure by running the app.</li>
             </ul>
-            <h4 id="3-demo-test-coverage"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Demo test coverage<a class="fa fa-anchor" href="#3-demo-test-coverage"></a></h4>
-            <ul>
-              <li>TBD</li>
-            </ul>
-            <h4 id="4-exercise-interpret-sd"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Exercise: interpret SD<a class="fa fa-anchor" href="#4-exercise-interpret-sd"></a></h4>
-            <ul>
-              <li>TBD</li>
-            </ul>
+            <h4 id="3-exercise-interpret-an-intermediate-level-cd"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Exercise: interpret an intermediate level CD<a class="fa fa-anchor" href="#3-exercise-interpret-an-intermediate-level-cd"></a></h4>
+            <div class="indented-level2">
+              <div>
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain notations in the class diagram</p></template>
+                  <question>
+                    <p>Explain the meaning of various class diagram notations in the following class diagram:</p>
+                    <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="750"></question>
+                </panel>
+              </div>
+              <p></p>
+            </div>
+            <h4 id="4-exercise-draw-an-intermediate-level-cd"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Exercise: draw an intermediate level CD<a class="fa fa-anchor" href="#4-exercise-draw-an-intermediate-level-cd"></a></h4>
+            <div class="indented-level2">
+              <div>
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Class Diagram for the code (<code>StokItem</code>, <code>Inventory</code>, <code>Review</code> etc.)</p></template>
+                  <question>
+                    <p>Consider the code below:</p>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
+         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
+    <span class="hljs-keyword">private</span> Review review;
+    <span class="hljs-keyword">private</span> String name;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(
+        String name, Rating rating)</span></span>{
+
+        <span class="hljs-keyword">this</span>.name = name;
+        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+                      </div>
+                      <div class="col-sm-6">
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
+    GOOD, OK, POOR
+}
+</code></pre>
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{
+        <span class="hljs-keyword">this</span>.rating = rating;
+    }
+}
+</code></pre>
+                        <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{
+    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> items.size();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{
+        <span class="hljs-comment">// ...</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{
+        items.add(s);
+    }
+}
+</code></pre>
+                      </div>
+                    </div>
+                    <p>(a) Draw a class diagram to represent the code. Show all attributes, methods, associations, navigabilities, visibilities, known multiplicities, and association roles. Show associations as lines.<br> (b) Draw an object diagram to represent
+                      the situation where the inventory has one item with a name <code>spanner</code> and a review of <code>POOR</code> rating.</p>
+                  </question>
+                </panel>
+              </div>
+              <p></p>
+            </div>
           </div>
         </div>
       </div>
@@ -126,9 +213,9 @@
             <a class="nav-link py-1" href="#week-9-mar-16-tutorial">Week 9 [Mar 16] - Tutorial&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-demo-v1-0">1 Demo v1.0&#x200E;</a>
-              <a class="nav-link py-1" href="#2-do-a-postmortem-of-v1-0">2 Do a Postmortem of v1.0&#x200E;</a>
-              <a class="nav-link py-1" href="#3-demo-test-coverage">3 Demo test coverage&#x200E;</a>
-              <a class="nav-link py-1" href="#4-exercise-interpret-sd">4 Exercise: interpret SD&#x200E;</a>
+              <a class="nav-link py-1" href="#2-demo-an-assertion-failure">2 Demo an assertion failure&#x200E;</a>
+              <a class="nav-link py-1" href="#3-exercise-interpret-an-intermediate-level-cd">3 Exercise: interpret an intermediate level CD&#x200E;</a>
+              <a class="nav-link py-1" href="#4-exercise-draw-an-intermediate-level-cd">4 Exercise: draw an intermediate level CD&#x200E;</a>
             </nav>
 
           </nav>
@@ -137,7 +224,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Thu, 27 Feb 2020 12:15:43 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Fri, 28 Feb 2020 10:26:38 GMT</small></div>
     </footer>
   </div>
 </body>

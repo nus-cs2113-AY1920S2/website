@@ -229,15 +229,38 @@
 <h3 id="direction"><div class="text-white bg-dark p-1">Direction</div><a class="fa fa-anchor" href="#direction"></a></h3>
 <p>You may develop any product provided it is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, <mark>Command Line Interface (CLI) is the primary mode of input.</mark></p>
 <div class="indented-level1">
-<panel type src="/website/admin/tp-constraints._include_.html#Constraint-Typing-Preferred" class="embedding algolia-no-index" minimized fragment="Constraint-Typing-Preferred"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
-            tP Contstraints → Constraint-Typing-Preferred <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-Typing-Preferred <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
             </p>
             </template>
+            <div>
+              <h4 id="constraint-typing-preferred"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-Typing-Preferred</span><a class="fa fa-anchor" href="#constraint-typing-preferred"></a></h4>
+              <div class="indented-level2">
+                <p>The product should be targeting users who can type fast and prefer typing over other means of input.<br>
+                  <span class="dimmed"><strong>Reason</strong>: to increase comparability of products, and to make feature evaluation easier for peer evaluators.</span></p>
+              </div>
+            </div>
             </panel>
           </div>
           <p></p>
           <div class="indented-level1">
-            <panel type src="/website/admin/tp-constraints._include_.html#Recommendation-CLI-First" class="embedding algolia-no-index" minimized fragment="Recommendation-CLI-First"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Recommendation-CLI-First  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+            <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Recommendation-CLI-First <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+              <div>
+                <h4 id="recommendation-cli-first"><span class="badge badge-info text-monospace"><span aria-hidden="true" class="far fa-thumbs-up"></span> Recommendation-CLI-First</span><a class="fa fa-anchor" href="#recommendation-cli-first"></a></h4>
+                <div class="indented-level2">
+                  <p>Following from the <em>Constraint-Typing-Preferred</em>, if the app is optimized for the target user (graded under the <em>product design</em> criterion), <mark>a user who can type fast should be able to accomplish most tasks faster via CLI, compared to a hypothetical GUI-only version of the app.</mark>                    <span class="dimmed">For example, adding a new entity via the CLI should be faster than entering the same data through a GUI form.</span><br> Therefore, the input to the app needs to be primarily CLI. If you do implement a GUI, that
+                    GUI should primarily be used to give visual feedback to the user. While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI
+                    inputs, if applicable.<br> Also keep in mind:</p>
+                  <ul>
+                    <li>Regular typing is usually faster than using key combinations.</li>
+                    <li>
+                      <tooltip><template slot="_content">typing the full command and hitting ENTER will complete the task</template>One-shot commands</tooltip> are faster over
+                      <tooltip><template slot="_content">prompting the user to input one parameter at a time</template>multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert
+                      users.
+                      <br></li>
+                  </ul>
+                </div>
+              </div>
+            </panel>
           </div>
           <p></p>
           <p></p>
@@ -259,7 +282,15 @@
 
           <p><mark>You are strongly discouraged from developing a GUI application</mark> as it can increase the workload unnecessarily.</p>
           <div class="indented-level1">
-            <panel type src="/website/admin/tp-constraints._include_.html#Recommendation-No-GUI" class="embedding algolia-no-index" minimized fragment="Recommendation-No-GUI"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Recommendation-No-GUI  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+            <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Recommendation-No-GUI <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+              <div>
+                <h4 id="recommendation-no-gui"><span class="badge badge-info text-monospace"><span aria-hidden="true" class="far fa-thumbs-up"></span> Recommendation-No-GUI</span><a class="fa fa-anchor" href="#recommendation-no-gui"></a></h4>
+                <div class="indented-level2">
+                  <p>Creating a good Java GUI takes a lot of extra effort, which can easily push the tP effort beyond the expected range. In addition, good GUI design is not a learning outcome of this module. Therefore, you are strongly discouraged from
+                    creating a GUI application. Choose the GUI path only if you are willing to take the extra workload on top of the module's normal load.</p>
+                </div>
+              </div>
+            </panel>
           </div>
           <p></p>
           <h3 id="target-user-and-amp-value-proposition">
@@ -305,12 +336,24 @@
 <p><strong>The expected level of <em>functionality</em> from a team is roughly <mark>what you can achieve if each member contribute about the same amount of functional code as required by a <tooltip><template slot="_content">i.e., if all requirements were met at the <em>minimal</em> level specified</template>typical iP</tooltip></mark></strong>.</p>
 <box type="important">
 <p>Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. <mark>Adding more functionality than the expected level will not increase your marks</mark>. You are better off spending that effort in improving other aspects of the project. In fact, here is the grading criterion for the individual project effort:</p>
-<p><panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-effort-instructions" class="embedding algolia-no-index" minimized fragment="projectGrading-effort-instructions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
-          tP Deliverables → PE → <mark>Evaluating the  Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Evaluating the  Implementation Effort</mark>          <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
           </p>
           </template>
+          <div>
+            <p>
+              <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong></p>
+            <ul>
+              <li><mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark></li>
+              <li>The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.</li>
+            </ul>
+            <ul radio-group="e7d80" class="radio-list">
+              <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Unable to judge</label></li>
+              <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Significantly less than a typical iP</label></li>
+              <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Slightly less than a typical iP</label></li>
+              <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  At least as much as a typical iP</label></li>
+            </ul>
+          </div>
           </panel>
-          </p>
           </box>
           </span>
           <span id="teamExpectations">
@@ -469,7 +512,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Thu, 27 Feb 2020 12:15:43 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Fri, 28 Feb 2020 10:26:38 GMT</small></div>
   </footer>
   </div>
 </body>

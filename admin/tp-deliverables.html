@@ -232,10 +232,20 @@
 <li><strong>Should be <tooltip><template slot="_content"> i.e., it can be used by end-users</template><em>releasable</em></tooltip></strong>. While some features may be scheduled for later versions, the features in v2.1 should be good enough to make it usable by at least some of the target users.</li>
 <li>Also note the following constraint:</li></ul>
 <div class="indented-level2">
-<panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" class="embedding algolia-no-index" minimized fragment="Constraint-File-Size"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
-            tP Contstraints → Constraint-File-Size <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-File-Size <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
             </p>
             </template>
+            <div>
+              <h4 id="constraint-file-size"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-File-Size</span><a class="fa fa-anchor" href="#constraint-file-size"></a></h4>
+              <div class="indented-level2">
+                <p>The file sizes of the deliverables should not exceed the limits given below. <br>
+                  <span class="dimmed"><strong>Reason:</strong> It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue</span>:</p>
+                <ul>
+                  <li><span class="text-danger">JAR file: 100Mb</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)</li>
+                  <li><span class="text-danger">PDF files: 15Mb/file</span> (Not following the recommended method of converting to PDF can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).</li>
+                </ul>
+              </div>
+            </div>
             </panel>
           </div>
           <p></p>
@@ -260,14 +270,26 @@
         </blockquote>
         </box>
         <ul>
-          <li><strong>Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/UserGuide.html">AddressBook-Level3 (AB3) UG</a> structure</strong>.</li>
+          <li><strong>Follow the <a href="https://se-edu.github.io/addressbook-level3/UserGuide.html">AddressBook-Level3 (AB3) UG</a> structure</strong>.</li>
           <li><strong>Should cover all v2.1 features</strong>.<br>
             <strong>Ensure those descriptions match the product precisely</strong>, as it will be used by peer testers (<mark>inaccuracies will be considered bugs</mark>).</li>
           <li><strong>Optionally, can also cover future features</strong>. Mark those as <code>Coming in v3.0</code>.</li>
           <li>Also note the following constraint:</li>
         </ul>
         <div class="indented-level2">
-          <panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" class="embedding algolia-no-index" minimized fragment="Constraint-File-Size"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-File-Size  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-File-Size <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+            <div>
+              <h4 id="constraint-file-size-2"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-File-Size</span><a class="fa fa-anchor" href="#constraint-file-size-2"></a></h4>
+              <div class="indented-level2">
+                <p>The file sizes of the deliverables should not exceed the limits given below. <br>
+                  <span class="dimmed"><strong>Reason:</strong> It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue</span>:</p>
+                <ul>
+                  <li><span class="text-danger">JAR file: 100Mb</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)</li>
+                  <li><span class="text-danger">PDF files: 15Mb/file</span> (Not following the recommended method of converting to PDF can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).</li>
+                </ul>
+              </div>
+            </div>
+          </panel>
         </div>
         <p></p>
       </div>
@@ -280,7 +302,7 @@
 <li>
 <p><strong>Should match the v2.1 implementation</strong>. Optionally, can include proposed implementations of future features.</p></li>
 <li>
-<p><strong>Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/DeveloperGuide.html">AddressBook-Level3 (AB3) DG</a> structure</strong>. Sections to include in your DG:</p>
+<p><strong>Follow the <a href="https://se-edu.github.io/addressbook-level3/DeveloperGuide.html">AddressBook-Level3 (AB3) DG</a> structure</strong>. Sections to include in your DG:</p>
 <ul>
 <li>Design: similar to AB3 DG except,
 <ul>
@@ -306,7 +328,7 @@
       <span id="dgTips">
 <ul>
 <li><strong>Aim to showcase your documentation skills.</strong> The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v2.1 (hypothetically).<br>
-For an example, see <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/DeveloperGuide.html#proposed-undo-redo-feature">the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide</a>.</li>
+For an example, see <a href="https://se-edu.github.io/addressbook-level3/DeveloperGuide.html#proposed-undo-redo-feature">the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide</a>.</li>
 <li><strong>Use multiple UML diagram types.</strong> Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.</li>
 <li><strong>Keep diagrams simple.</strong> The aim is to make diagrams <mark><em>comprehensible</em>, not necessarily <em>comprehensive</em></mark>. Ways to simplify diagrams:
 <ul>
@@ -342,11 +364,11 @@ For an example, see <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-l
 It will look more 'polished' if the two text sizes match.
 </p></modal>
 <modal large id="modal:ipWeek10-logicClassDiagram" class="algolia-no-index"><template slot="_header">AB3 - Class Diagram of the Logic Component</template>
-  <img src="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/images/LogicClassDiagram.png" width="900"></modal>
+  <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="900"></modal>
 <modal large id="modal:ipWeek10-deleteSd" class="algolia-no-index"><template slot="_header">AB3 - Sequence Diagram for the <code>delete</code> command</template>
-  <img src="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"></modal>
+  <img src="https://se-edu.github.io/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"></modal>
 <modal large id="modal:ipWeek10-archiSd" class="algolia-no-index"><template slot="_header">AB3 - Architecture-Level Sequence Diagram</template>
-  <img src="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/images/ArchitectureSequenceDiagram.png"></modal></span></div>
+  <img src="https://se-edu.github.io/addressbook-level3/images/ArchitectureSequenceDiagram.png"></modal></span></div>
     </span>
     <h3 id="deliverable-product-website">
       <div class="text-white bg-info p-1">Deliverable: Product Website</div><a class="fa fa-anchor" href="#deliverable-product-website"></a></h3>
@@ -497,7 +519,7 @@ It will look more 'polished' if the two text sizes match.
   <h4 id="ppp-format"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span><a class="fa fa-anchor" href="#ppp-format"></a></h4>
   <ul>
     <li>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/goodcoder123.adoc</code></li>
-    <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
+    <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://se-edu.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
   </ul>
   <h4 id="ppp-page-limit"><span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span><a class="fa fa-anchor" href="#ppp-page-limit"></a></h4>
   <div class="indented-level2">
@@ -637,12 +659,37 @@ sitting periods, and alerts the user if ...
 <li>As such, we have put in measures to identify and <mark>penalize insincere/random evaluations</mark>.</li>
 <li>Also see:</li></ul>
 <div class="indented-level2">
-<p><panel type src="/website/admin/tp-grading-bugs._include_.html#bugCalculationNotes" class="embedding algolia-no-index" minimized fragment="bugCalculationNotes"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
-        tP Grading → Notes on how marks are calculated for PE <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → Notes on how marks are calculated for PE <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
         </p>
         </template>
+        <div>
+          <h5 id="grading-bugs-found-in-the-pe">Grading bugs found in the PE<a class="fa fa-anchor" href="#grading-bugs-found-in-the-pe"></a></h5>
+          <ul>
+            <li><mark>Of 3A and 3B above, the one you do better will be given a 70% weight and the other a 30% weight</mark> so that your total score is driven by your strengths rather than weaknesses.</li>
+            <li>Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.</li>
+            <li>The penalty/credit for a bug varies based on,
+              <ul>
+                <li>The severity of the bug: <code>severity.High</code> &gt; <code>severity.Medium</code> &gt; <code>severity.Low</code> &gt; <code>severity.VeryLow</code></li>
+                <li>The type of the bug: <code>type.FunctionalityBug</code> &gt; <code>type.DocumentationBug</code> &gt; <code>type.FeatureFlaw</code></li>
+              </ul>
+            </li>
+            <li>The penalty for a bug is divided equally among assignees.</li>
+            <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
+            <li>
+              <tooltip><template slot="_content">i.e., the same bug reported by many testers</template><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
+            <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
+            <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
+              <ul>
+                <li><code>n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
+                <li><code>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
+              </ul>
+            </li>
+            <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
+            <li>Excessive incorrect downgrading/rejecting/
+              <tooltip><template slot="_content">marking as duplicates</template>duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+          </ul>
+        </div>
         </panel>
-        </p>
       </div>
       </span>
       <h4 id="pe-preparation"><span class="badge badge-success">PE</span> <span class="text-success">Preparation</span><a class="fa fa-anchor" href="#pe-preparation"></a></h4>
@@ -781,23 +828,166 @@ sitting periods, and alerts the user if ...
               <li>PE Dry Run (at <strong>v2.0</strong>): You may report functionality bugs, UG bugs, and feature flaws.</li>
             </ul>
             <div class="indented-level2">
-              <p>
-                <panel type src="/website/admin/tp-grading-bugs._include_.html#functionalityBugs" class="embedding algolia-no-index" minimized fragment="functionalityBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-              </p>
-              <p>
-                <panel type src="/website/admin/tp-grading-bugs._include_.html#featureFlaws" class="embedding algolia-no-index" minimized fragment="featureFlaws"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-              </p>
-              <p>
-                <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" class="embedding algolia-no-index" minimized fragment="ugBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-              </p>
+              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                <div>
+                  <p>These are considered <em>functionality bugs</em>:<br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> Behavior differs from the User Guide<br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span><br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
+                </div>
+              </panel>
+              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                <div>
+                  <p>These are considered <em>feature flaws</em>:<br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> Hard-to-test features<br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> Features that don't fit well with the product<br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
+                </div>
+              </panel>
+              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                <div>
+                  <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                  <div>
+                    <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                    <ul>
+                      <li>Not enough visuals e.g., screenshots/diagrams</li>
+                      <li>The visuals are not well integrated to the explanation</li>
+                      <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                      </li>
+                    </ul>
+                    </span>
+                    <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                    <ul>
+                      <li>Not enough or too many examples e.g., sample inputs/outputs
+                      </li>
+                    </ul>
+                    </span>
+                    <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                    <ul>
+                      <li>The explanation is too brief or unnecessarily long.</li>
+                      <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                      </li>
+                    </ul>
+                    </span>
+                    <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+                    <ul>
+                      <li>looks messy</li>
+                      <li>not well-formatted
+                      </li>
+                    </ul>
+                    </span>
+                  </div>
+                </div>
+              </panel>
             </div>
             <ul>
               <li>PE (at <strong>v2.1</strong>): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).</li>
             </ul>
             <div class="indented-level2">
-              <p>
-                <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" class="embedding algolia-no-index" minimized fragment="dgBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-              </p>
+              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                <div>
+                  <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Those given as possible UG bugs ...</p></template>
+                    <div>
+                      <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                      <div>
+                        <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                        <ul>
+                          <li>Not enough visuals e.g., screenshots/diagrams</li>
+                          <li>The visuals are not well integrated to the explanation</li>
+                          <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                          </li>
+                        </ul>
+                        </span>
+                        <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                        <ul>
+                          <li>Not enough or too many examples e.g., sample inputs/outputs
+                          </li>
+                        </ul>
+                        </span>
+                        <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                        <ul>
+                          <li>The explanation is too brief or unnecessarily long.</li>
+                          <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                          </li>
+                        </ul>
+                        </span>
+                        <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+                        <ul>
+                          <li>looks messy</li>
+                          <li>not well-formatted
+                          </li>
+                        </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </panel>
+                  <span id="umlDiagramBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
+                  <ul>
+                    <li>notation incorrect or not compliant with the notation covered in the module.</li>
+                    <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
+                    <li>The diagram used is not suitable for the purpose it is used.</li>
+                    <li>The diagram is too complicated.
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="codeSnippetBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Code snippets:</p>
+                  <ul>
+                    <li>Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="userStoryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in User Stories. Examples:</p>
+                  <ul>
+                    <li>Incorrect format</li>
+                    <li>All three parts are not present</li>
+                    <li>Benefit does not match the function</li>
+                    <li>Important user stories missing
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="nfrBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in NFRs. Examples:</p>
+                  <ul>
+                    <li>Not really a <em>Non-Functional</em> Requirement</li>
+                    <li>Not well-defined (i.e., hard to decide when it has been met)</li>
+                    <li>Not reasonably achievable</li>
+                    <li>Highly relevant NFRs missing
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="glossaryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Glossary. Examples:</p>
+                  <ul>
+                    <li>Unnecessary terms included</li>
+                    <li>Important terms missing
+                    </li>
+                  </ul>
+                  </span>
+                </div>
+              </panel>
             </div>
             <ul>
               <li><strong>About posting <em>suggestions</em>:</strong>
@@ -893,12 +1083,144 @@ sitting periods, and alerts the user if ...
         <li><strong>For each bug reported, cite evidence and justify.</strong> For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.</li>
       </ul>
       <div class="indented-level2">
-        <p>
-          <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" class="embedding algolia-no-index" minimized fragment="ugBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-        </p>
-        <p>
-          <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" class="embedding algolia-no-index" minimized fragment="dgBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-        </p>
+        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+          <div>
+            <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+            <div>
+              <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+              <ul>
+                <li>Not enough visuals e.g., screenshots/diagrams</li>
+                <li>The visuals are not well integrated to the explanation</li>
+                <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                </li>
+              </ul>
+              </span>
+              <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+              <ul>
+                <li>Not enough or too many examples e.g., sample inputs/outputs
+                </li>
+              </ul>
+              </span>
+              <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+              <ul>
+                <li>The explanation is too brief or unnecessarily long.</li>
+                <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                </li>
+              </ul>
+              </span>
+              <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+              <ul>
+                <li>looks messy</li>
+                <li>not well-formatted
+                </li>
+              </ul>
+              </span>
+            </div>
+          </div>
+        </panel>
+        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+          <div>
+            <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
+            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Those given as possible UG bugs ...</p></template>
+              <div>
+                <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                <div>
+                  <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                  <ul>
+                    <li>Not enough visuals e.g., screenshots/diagrams</li>
+                    <li>The visuals are not well integrated to the explanation</li>
+                    <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                  <ul>
+                    <li>Not enough or too many examples e.g., sample inputs/outputs
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                  <ul>
+                    <li>The explanation is too brief or unnecessarily long.</li>
+                    <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+                  <ul>
+                    <li>looks messy</li>
+                    <li>not well-formatted
+                    </li>
+                  </ul>
+                  </span>
+                </div>
+              </div>
+            </panel>
+            <span id="umlDiagramBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
+            <ul>
+              <li>notation incorrect or not compliant with the notation covered in the module.</li>
+              <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
+              <li>The diagram used is not suitable for the purpose it is used.</li>
+              <li>The diagram is too complicated.
+              </li>
+            </ul>
+            </span>
+            <span id="codeSnippetBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Code snippets:</p>
+            <ul>
+              <li>Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
+              </li>
+            </ul>
+            </span>
+            <span id="userStoryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in User Stories. Examples:</p>
+            <ul>
+              <li>Incorrect format</li>
+              <li>All three parts are not present</li>
+              <li>Benefit does not match the function</li>
+              <li>Important user stories missing
+              </li>
+            </ul>
+            </span>
+            <span id="nfrBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in NFRs. Examples:</p>
+            <ul>
+              <li>Not really a <em>Non-Functional</em> Requirement</li>
+              <li>Not well-defined (i.e., hard to decide when it has been met)</li>
+              <li>Not reasonably achievable</li>
+              <li>Highly relevant NFRs missing
+              </li>
+            </ul>
+            </span>
+            <span id="glossaryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Glossary. Examples:</p>
+            <ul>
+              <li>Unnecessary terms included</li>
+              <li>Important terms missing
+              </li>
+            </ul>
+            </span>
+          </div>
+        </panel>
       </div>
       <h5 id="pe-phase-1-part-iii-overall-evaluation-15-minutes"><span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span><a class="fa fa-anchor" href="#pe-phase-1-part-iii-overall-evaluation-15-minutes"></a></h5>
       <ul>
@@ -1342,23 +1664,166 @@ Duplicate of #67
         <li>PE Dry Run (at <strong>v2.0</strong>): You may report functionality bugs, UG bugs, and feature flaws.</li>
       </ul>
       <div class="indented-level2">
-        <p>
-          <panel type src="/website/admin/tp-grading-bugs._include_.html#functionalityBugs" class="embedding algolia-no-index" minimized fragment="functionalityBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-        </p>
-        <p>
-          <panel type src="/website/admin/tp-grading-bugs._include_.html#featureFlaws" class="embedding algolia-no-index" minimized fragment="featureFlaws"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-        </p>
-        <p>
-          <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" class="embedding algolia-no-index" minimized fragment="ugBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-        </p>
+        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+          <div>
+            <p>These are considered <em>functionality bugs</em>:<br>
+              <span aria-hidden="true" class="fas fa-bug"></span> Behavior differs from the User Guide<br>
+              <span aria-hidden="true" class="fas fa-bug"></span> A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span><br>
+              <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
+          </div>
+        </panel>
+        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+          <div>
+            <p>These are considered <em>feature flaws</em>:<br>
+              <span aria-hidden="true" class="fas fa-bug"></span> The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
+              <span aria-hidden="true" class="fas fa-bug"></span> Hard-to-test features<br>
+              <span aria-hidden="true" class="fas fa-bug"></span> Features that don't fit well with the product<br>
+              <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
+          </div>
+        </panel>
+        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+          <div>
+            <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+            <div>
+              <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+              <ul>
+                <li>Not enough visuals e.g., screenshots/diagrams</li>
+                <li>The visuals are not well integrated to the explanation</li>
+                <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                </li>
+              </ul>
+              </span>
+              <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+              <ul>
+                <li>Not enough or too many examples e.g., sample inputs/outputs
+                </li>
+              </ul>
+              </span>
+              <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+              <ul>
+                <li>The explanation is too brief or unnecessarily long.</li>
+                <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                </li>
+              </ul>
+              </span>
+              <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+              <ul>
+                <li>looks messy</li>
+                <li>not well-formatted
+                </li>
+              </ul>
+              </span>
+            </div>
+          </div>
+        </panel>
       </div>
       <ul>
         <li>PE (at <strong>v2.1</strong>): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).</li>
       </ul>
       <div class="indented-level2">
-        <p>
-          <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" class="embedding algolia-no-index" minimized fragment="dgBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-        </p>
+        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+          <div>
+            <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
+            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Those given as possible UG bugs ...</p></template>
+              <div>
+                <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                <div>
+                  <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                  <ul>
+                    <li>Not enough visuals e.g., screenshots/diagrams</li>
+                    <li>The visuals are not well integrated to the explanation</li>
+                    <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                  <ul>
+                    <li>Not enough or too many examples e.g., sample inputs/outputs
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                  <ul>
+                    <li>The explanation is too brief or unnecessarily long.</li>
+                    <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+                  <ul>
+                    <li>looks messy</li>
+                    <li>not well-formatted
+                    </li>
+                  </ul>
+                  </span>
+                </div>
+              </div>
+            </panel>
+            <span id="umlDiagramBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
+            <ul>
+              <li>notation incorrect or not compliant with the notation covered in the module.</li>
+              <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
+              <li>The diagram used is not suitable for the purpose it is used.</li>
+              <li>The diagram is too complicated.
+              </li>
+            </ul>
+            </span>
+            <span id="codeSnippetBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Code snippets:</p>
+            <ul>
+              <li>Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
+              </li>
+            </ul>
+            </span>
+            <span id="userStoryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in User Stories. Examples:</p>
+            <ul>
+              <li>Incorrect format</li>
+              <li>All three parts are not present</li>
+              <li>Benefit does not match the function</li>
+              <li>Important user stories missing
+              </li>
+            </ul>
+            </span>
+            <span id="nfrBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in NFRs. Examples:</p>
+            <ul>
+              <li>Not really a <em>Non-Functional</em> Requirement</li>
+              <li>Not well-defined (i.e., hard to decide when it has been met)</li>
+              <li>Not reasonably achievable</li>
+              <li>Highly relevant NFRs missing
+              </li>
+            </ul>
+            </span>
+            <span id="glossaryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Glossary. Examples:</p>
+            <ul>
+              <li>Unnecessary terms included</li>
+              <li>Important terms missing
+              </li>
+            </ul>
+            </span>
+          </div>
+        </panel>
       </div>
       <ul>
         <li><strong>About posting <em>suggestions</em>:</strong>
@@ -1521,7 +1986,7 @@ Duplicate of #67
         <h4 id="ppp-format-2"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span><a class="fa fa-anchor" href="#ppp-format-2"></a></h4>
         <ul>
           <li>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/goodcoder123.adoc</code></li>
-          <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://nus-cs2113-ay1920s2.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
+          <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://se-edu.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
         </ul>
         <h4 id="ppp-page-limit-2"><span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span><a class="fa fa-anchor" href="#ppp-page-limit-2"></a></h4>
         <div class="indented-level2">
@@ -1596,12 +2061,37 @@ Duplicate of #67
 <li>As such, we have put in measures to identify and <mark>penalize insincere/random evaluations</mark>.</li>
 <li>Also see:</li></ul>
 <div class="indented-level2">
-<p><panel type src="/website/admin/tp-grading-bugs._include_.html#bugCalculationNotes" class="embedding algolia-no-index" minimized fragment="bugCalculationNotes"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
-  tP Grading → Notes on how marks are calculated for PE <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → Notes on how marks are calculated for PE <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
   </p>
   </template>
+  <div>
+    <h5 id="grading-bugs-found-in-the-pe-2">Grading bugs found in the PE<a class="fa fa-anchor" href="#grading-bugs-found-in-the-pe-2"></a></h5>
+    <ul>
+      <li><mark>Of 3A and 3B above, the one you do better will be given a 70% weight and the other a 30% weight</mark> so that your total score is driven by your strengths rather than weaknesses.</li>
+      <li>Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.</li>
+      <li>The penalty/credit for a bug varies based on,
+        <ul>
+          <li>The severity of the bug: <code>severity.High</code> &gt; <code>severity.Medium</code> &gt; <code>severity.Low</code> &gt; <code>severity.VeryLow</code></li>
+          <li>The type of the bug: <code>type.FunctionalityBug</code> &gt; <code>type.DocumentationBug</code> &gt; <code>type.FeatureFlaw</code></li>
+        </ul>
+      </li>
+      <li>The penalty for a bug is divided equally among assignees.</li>
+      <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
+      <li>
+        <tooltip><template slot="_content">i.e., the same bug reported by many testers</template><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
+      <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
+      <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
+        <ul>
+          <li><code>n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
+          <li><code>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
+        </ul>
+      </li>
+      <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
+      <li>Excessive incorrect downgrading/rejecting/
+        <tooltip><template slot="_content">marking as duplicates</template>duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+    </ul>
+  </div>
   </panel>
-  </p>
   </div>
   </span>
   <h4 id="pe-preparation-2"><span class="badge badge-success">PE</span> <span class="text-success">Preparation</span><a class="fa fa-anchor" href="#pe-preparation-2"></a></h4>
@@ -1740,23 +2230,166 @@ Duplicate of #67
           <li>PE Dry Run (at <strong>v2.0</strong>): You may report functionality bugs, UG bugs, and feature flaws.</li>
         </ul>
         <div class="indented-level2">
-          <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#functionalityBugs" class="embedding algolia-no-index" minimized fragment="functionalityBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-          </p>
-          <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#featureFlaws" class="embedding algolia-no-index" minimized fragment="featureFlaws"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-          </p>
-          <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" class="embedding algolia-no-index" minimized fragment="ugBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-          </p>
+          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+            <div>
+              <p>These are considered <em>functionality bugs</em>:<br>
+                <span aria-hidden="true" class="fas fa-bug"></span> Behavior differs from the User Guide<br>
+                <span aria-hidden="true" class="fas fa-bug"></span> A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span><br>
+                <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
+            </div>
+          </panel>
+          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+            <div>
+              <p>These are considered <em>feature flaws</em>:<br>
+                <span aria-hidden="true" class="fas fa-bug"></span> The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
+                <span aria-hidden="true" class="fas fa-bug"></span> Hard-to-test features<br>
+                <span aria-hidden="true" class="fas fa-bug"></span> Features that don't fit well with the product<br>
+                <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
+            </div>
+          </panel>
+          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+            <div>
+              <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+              <div>
+                <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                <ul>
+                  <li>Not enough visuals e.g., screenshots/diagrams</li>
+                  <li>The visuals are not well integrated to the explanation</li>
+                  <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                  </li>
+                </ul>
+                </span>
+                <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                <ul>
+                  <li>Not enough or too many examples e.g., sample inputs/outputs
+                  </li>
+                </ul>
+                </span>
+                <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                <ul>
+                  <li>The explanation is too brief or unnecessarily long.</li>
+                  <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                  </li>
+                </ul>
+                </span>
+                <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+                <ul>
+                  <li>looks messy</li>
+                  <li>not well-formatted
+                  </li>
+                </ul>
+                </span>
+              </div>
+            </div>
+          </panel>
         </div>
         <ul>
           <li>PE (at <strong>v2.1</strong>): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).</li>
         </ul>
         <div class="indented-level2">
-          <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" class="embedding algolia-no-index" minimized fragment="dgBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-          </p>
+          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+            <div>
+              <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Those given as possible UG bugs ...</p></template>
+                <div>
+                  <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                  <div>
+                    <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                    <ul>
+                      <li>Not enough visuals e.g., screenshots/diagrams</li>
+                      <li>The visuals are not well integrated to the explanation</li>
+                      <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                      </li>
+                    </ul>
+                    </span>
+                    <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                    <ul>
+                      <li>Not enough or too many examples e.g., sample inputs/outputs
+                      </li>
+                    </ul>
+                    </span>
+                    <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                    <ul>
+                      <li>The explanation is too brief or unnecessarily long.</li>
+                      <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                      </li>
+                    </ul>
+                    </span>
+                    <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+                    <ul>
+                      <li>looks messy</li>
+                      <li>not well-formatted
+                      </li>
+                    </ul>
+                    </span>
+                  </div>
+                </div>
+              </panel>
+              <span id="umlDiagramBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
+              <ul>
+                <li>notation incorrect or not compliant with the notation covered in the module.</li>
+                <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
+                <li>The diagram used is not suitable for the purpose it is used.</li>
+                <li>The diagram is too complicated.
+                </li>
+              </ul>
+              </span>
+              <span id="codeSnippetBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Code snippets:</p>
+              <ul>
+                <li>Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
+                </li>
+              </ul>
+              </span>
+              <span id="userStoryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in User Stories. Examples:</p>
+              <ul>
+                <li>Incorrect format</li>
+                <li>All three parts are not present</li>
+                <li>Benefit does not match the function</li>
+                <li>Important user stories missing
+                </li>
+              </ul>
+              </span>
+              <span id="nfrBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in NFRs. Examples:</p>
+              <ul>
+                <li>Not really a <em>Non-Functional</em> Requirement</li>
+                <li>Not well-defined (i.e., hard to decide when it has been met)</li>
+                <li>Not reasonably achievable</li>
+                <li>Highly relevant NFRs missing
+                </li>
+              </ul>
+              </span>
+              <span id="glossaryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Glossary. Examples:</p>
+              <ul>
+                <li>Unnecessary terms included</li>
+                <li>Important terms missing
+                </li>
+              </ul>
+              </span>
+            </div>
+          </panel>
         </div>
         <ul>
           <li><strong>About posting <em>suggestions</em>:</strong>
@@ -1852,12 +2485,144 @@ Duplicate of #67
     <li><strong>For each bug reported, cite evidence and justify.</strong> For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.</li>
   </ul>
   <div class="indented-level2">
-    <p>
-      <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" class="embedding algolia-no-index" minimized fragment="ugBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-    </p>
-    <p>
-      <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" class="embedding algolia-no-index" minimized fragment="dgBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
-    </p>
+    <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+      <div>
+        <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+        <div>
+          <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+          <ul>
+            <li>Not enough visuals e.g., screenshots/diagrams</li>
+            <li>The visuals are not well integrated to the explanation</li>
+            <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+            </li>
+          </ul>
+          </span>
+          <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+          <ul>
+            <li>Not enough or too many examples e.g., sample inputs/outputs
+            </li>
+          </ul>
+          </span>
+          <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+          <ul>
+            <li>The explanation is too brief or unnecessarily long.</li>
+            <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+            </li>
+          </ul>
+          </span>
+          <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+          <ul>
+            <li>looks messy</li>
+            <li>not well-formatted
+            </li>
+          </ul>
+          </span>
+        </div>
+      </div>
+    </panel>
+    <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+      <div>
+        <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
+        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Those given as possible UG bugs ...</p></template>
+          <div>
+            <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+            <div>
+              <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+              <ul>
+                <li>Not enough visuals e.g., screenshots/diagrams</li>
+                <li>The visuals are not well integrated to the explanation</li>
+                <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                </li>
+              </ul>
+              </span>
+              <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+              <ul>
+                <li>Not enough or too many examples e.g., sample inputs/outputs
+                </li>
+              </ul>
+              </span>
+              <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+              <ul>
+                <li>The explanation is too brief or unnecessarily long.</li>
+                <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                </li>
+              </ul>
+              </span>
+              <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+              <ul>
+                <li>looks messy</li>
+                <li>not well-formatted
+                </li>
+              </ul>
+              </span>
+            </div>
+          </div>
+        </panel>
+        <span id="umlDiagramBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
+        <ul>
+          <li>notation incorrect or not compliant with the notation covered in the module.</li>
+          <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
+          <li>The diagram used is not suitable for the purpose it is used.</li>
+          <li>The diagram is too complicated.
+          </li>
+        </ul>
+        </span>
+        <span id="codeSnippetBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Code snippets:</p>
+        <ul>
+          <li>Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
+          </li>
+        </ul>
+        </span>
+        <span id="userStoryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in User Stories. Examples:</p>
+        <ul>
+          <li>Incorrect format</li>
+          <li>All three parts are not present</li>
+          <li>Benefit does not match the function</li>
+          <li>Important user stories missing
+          </li>
+        </ul>
+        </span>
+        <span id="nfrBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in NFRs. Examples:</p>
+        <ul>
+          <li>Not really a <em>Non-Functional</em> Requirement</li>
+          <li>Not well-defined (i.e., hard to decide when it has been met)</li>
+          <li>Not reasonably achievable</li>
+          <li>Highly relevant NFRs missing
+          </li>
+        </ul>
+        </span>
+        <span id="glossaryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Glossary. Examples:</p>
+        <ul>
+          <li>Unnecessary terms included</li>
+          <li>Important terms missing
+          </li>
+        </ul>
+        </span>
+      </div>
+    </panel>
   </div>
   <h5 id="pe-phase-1-part-iii-overall-evaluation-15-minutes-2"><span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span><a class="fa fa-anchor" href="#pe-phase-1-part-iii-overall-evaluation-15-minutes-2"></a></h5>
   <ul>
@@ -2242,7 +3007,7 @@ Duplicate of #67
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Thu, 27 Feb 2020 12:15:43 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Fri, 28 Feb 2020 10:26:38 GMT</small></div>
   </footer>
   </div>
 </body>

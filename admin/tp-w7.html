@@ -222,11 +222,71 @@
                   <li>Set up the team org and the team repo as explained below:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/appendixE-gitHub._include_.html#organization-setup" class="embedding algolia-no-index" minimized fragment="organization-setup"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Organization setup</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Organization setup</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <h3 id="organization-setup">
+                        <div class="text-white bg-dark p-1">Organization Setup</div><a class="fa fa-anchor" href="#organization-setup"></a></h3>
+                      <box light type="important">
+                        <p>Please follow the organization/repo name format precisely because we use scripts to download your code or else our scripts will not be able to detect your work.</p>
+                      </box>
+                      <p>After receiving your team ID, one team member should do the following steps:</p>
+                      <ul>
+                        <li>Create a GitHub organization with the following details:
+                          <ul>
+                            <li><strong>Organization name</strong> <mark>(all UPPER CASE) : <code>AY1920S2-TEAM_ID</code></mark>. e.g.  <code>AY1920S2-CS2113T-W12-1</code>, <code>AY1920S2-CS2113-F09-3</code></li>
+                            <li>Plan:  Open Source ($0/month)</li>
+                            <li>This organization belongs to: My personal account</li>
+                          </ul>
+                        </li>
+                        <li>Add members to the organization:
+                          <ul>
+                            <li>Create a team called <code>developers</code> to your organization.</li>
+                            <li>Add your team members to the developers team.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/appendixE-gitHub._include_.html#repo-setup" class="embedding algolia-no-index" minimized fragment="repo-setup"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Repo setup</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Repo setup</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <div>
+                      <h3 id="repo-setup">
+                        <div class="text-white bg-dark p-1">Repo Setup</div><a class="fa fa-anchor" href="#repo-setup"></a></h3>
+                      <box light type="important">
+                        <p>The tP project template given to you is a variation of the Duke repo you used for the iP, but <mark>with some important differences</mark>. Please follow instructions carefully, rather than follow what you remember from the iP.</p>
+                      </box>
+                      <p>Only one team member:</p>
+                      <ol>
+                        <li><strong>Fork</strong> the tP project template <a href="https://github.com/nus-cs2113-AY1920S2/tP">nus-cs2113-AY1920S2/tP</a> repo to your team org.<br> This repo (let's call it the <em>team repo</em>) is to be used as the repo
+                          for your project.
+                        </li>
+                        <li><mark><strong>Enable the issue tracker</strong></mark> of the team repo <span class="dimmed">Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.</span></li>
+                        <li><strong>Enable GitHub actions</strong>: Go to the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><span aria-hidden="true" class="fas fa-play-circle"></span> Actions</small>
+                          </span> tab and enable workflows by clicking the <button type="button" class="btn btn-success btn-sm ">I understand my workflows ...</button> button. That will enable the GitHub Actions that come with the project template.</li>
+                        <li><strong>Enable GitHub Pages</strong>: Go to the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="14" height="16" viewbox="0 0 14 16" class="octicon octicon-gear" aria-hidden="true"><path fill-rule="evenodd" d="M14 8.77v-1.6l-1.94-.64-.45-1.09.88-1.84-1.13-1.13-1.81.91-1.09-.45-.69-1.92h-1.6l-.63 1.94-1.11.45-1.84-.88-1.13 1.13.91 1.81-.45 1.09L0 7.23v1.59l1.94.64.45 1.09-.88 1.84 1.13 1.13 1.81-.91 1.09.45.69 1.92h1.59l.63-1.94 1.11-.45 1.84.88 1.13-1.13-.92-1.81.47-1.09L14 8.75v.02zM7 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg> Settings</small></span>                          tab and enable <code>GitHub Pages</code> for the <code>master branch /docs folder</code> (similar to how you did it in the iP). After a few minutes, confirm your tP website is available in the corresponding <code>github.io</code>                          URL.</li>
+                        <li><strong>Give access to team members</strong>: Ensure your team members have the desired level of access to your team repo.</li>
+                        <li><strong>Create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2113-AY1920S2/tP">nus-cs2113-AY1920S2/tP</a>]
+                          <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[CS2113T-T09-2] Contact List Pro</code>. <span class="dimmed">As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span>                          In the PR description
+                          <tooltip><template slot="_content">use @githubUserName</template>@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
+                      </ol>
+                      <p>All team members:</p>
+                      <ol>
+                        <li><strong>Watch</strong> the <code>tP</code> repo (created above) i.e., go to the repo and click on the <button type="button" class="btn btn-light btn-sm border"><svg version="1.1" width="16" height="16" viewbox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg> Watch <svg version="1.1" width="12" height="16" viewbox="0 0 12 16" class="octicon octicon-triangle-down" aria-hidden="true"><path fill-rule="evenodd" d="M0 5l6 6 6-6H0z"/></svg></button>                          button to subscribe to activities of the repo</li>
+                        <li><strong>Fork</strong> the <code>tP</code> repo to your personal GitHub account.</li>
+                        <li><strong>Clone</strong> the fork to your computer.</li>
+                        <li><strong>Set up</strong> the developer environment in your computer.<br> Recommended: Set it up as an Intellij project (follow the instructions in the <a href="https://github.com/nus-cs2113-AY1920S2/tP">README</a> carefully as the
+                          <mark>steps are different from the iP</mark>).</li>
+                      </ol>
+                      <p>Note that some of our bot scripts depend on the following folder paths. Please do not alter those paths in your project.</p>
+                      <ul>
+                        <li><code>/src/main/java</code></li>
+                        <li><code>/src/test/java</code></li>
+                        <li><code>/docs</code></li>
+                      </ul>
+                    </div>
+                  </panel>
                 </div>
                 <p></p>
               </div>
@@ -273,7 +333,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Thu, 27 Feb 2020 12:15:43 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Fri, 28 Feb 2020 10:26:38 GMT</small></div>
     </footer>
   </div>
 </body>

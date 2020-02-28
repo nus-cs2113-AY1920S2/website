@@ -98,10 +98,94 @@
           <p></p>
           <h1 id="week-8-mar-9-tutorial">Week 8 <small><small><span class="dimmed">[Mar 9]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-8-mar-9-tutorial"></a></h1>
           <div>
-            <h4 id="1-exercise-interpret-cd-od"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Exercise: interpret CD/OD<a class="fa fa-anchor" href="#1-exercise-interpret-cd-od"></a></h4>
+            <h4 id="1-demo-junit-tests"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Demo JUnit tests<a class="fa fa-anchor" href="#1-demo-junit-tests"></a></h4>
             <ul>
-              <li>TBD</li>
+              <li>Demo running of JUnit test of your tP</li>
             </ul>
+            <h4 id="2-exercise-interpret-a-class-diagram"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Exercise: interpret a class diagram<a class="fa fa-anchor" href="#2-exercise-interpret-a-class-diagram"></a></h4>
+            <ul>
+              <li>Do the following exercise as directed by the tutor.</li>
+            </ul>
+            <div class="indented-level2">
+              <div>
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Class Diagram</p></template>
+                  <question>
+                    <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
+                    <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                    <p></p>
+                  </question>
+                </panel>
+              </div>
+              <p></p>
+            </div>
+            <h4 id="3-exercise-draw-an-object-diagram"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Exercise: draw an object diagram<a class="fa fa-anchor" href="#3-exercise-draw-an-object-diagram"></a></h4>
+            <ul>
+              <li>Split into sub-teams of 2-3 persons and draw the following exercise on the white board.</li>
+            </ul>
+            <div class="indented-level2">
+              <div>
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw an Object Diagrams for the Class Diagram (Person-Guardian)</p></template>
+                  <question>
+                    <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
+                    <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                    <p></p>
+                    <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
+                    <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagram 1 → [diagram 2] and so on.</p>
+                    <ol>
+                      <li>
+                        <p>There are no persons.</p>
+                      </li>
+                      <li>
+                        <p><code>Alfred</code> is the Guardian of <code>Bruce</code>.</p>
+                      </li>
+                      <li>
+                        <p><code>Bruce</code>'s contact number is the same as <code>Alfred</code>'s.</p>
+                      </li>
+                      <li>
+                        <p><code>Alfred</code> is also the guardian of another person. That person lists <code>Alfred</code>s home address as his home address as well as office address.</p>
+                      </li>
+                      <li>
+                        <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
+                      </li>
+                    </ol>
+                    <div slot="hint" class="algolia-no-index">
+                      <p>After step 2, the diagram should be like this:</p>
+                      <img src="/website/book/uml/classDiagrams/combine/basic/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
+                  </question>
+                </panel>
+              </div>
+              <p></p>
+            </div>
+            <h4 id="4-exercise-draw-a-class-diagram"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Exercise: draw a class diagram<a class="fa fa-anchor" href="#4-exercise-draw-a-class-diagram"></a></h4>
+            <div class="indented-level2">
+              <div>
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Class Diagram for Box etc.</p></template>
+                  <question>
+                    <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+    <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];
+    <span class="hljs-keyword">private</span> Item spareItem;
+    <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span>
+    <span class="hljs-keyword">private</span> Box outerBox;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">open</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;
+}
+</code></pre>
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
+    Box box; <span class="hljs-comment">// the box for which this is the lid</span>
+}
+</code></pre>
+                  </question>
+                </panel>
+              </div>
+              <p></p>
+            </div>
           </div>
         </div>
       </div>
@@ -111,7 +195,10 @@
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#week-8-mar-9-tutorial">Week 8 [Mar 9] - Tutorial&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-exercise-interpret-cd-od">1 Exercise: interpret CD/OD&#x200E;</a>
+              <a class="nav-link py-1" href="#1-demo-junit-tests">1 Demo JUnit tests&#x200E;</a>
+              <a class="nav-link py-1" href="#2-exercise-interpret-a-class-diagram">2 Exercise: interpret a class diagram&#x200E;</a>
+              <a class="nav-link py-1" href="#3-exercise-draw-an-object-diagram">3 Exercise: draw an object diagram&#x200E;</a>
+              <a class="nav-link py-1" href="#4-exercise-draw-a-class-diagram">4 Exercise: draw a class diagram&#x200E;</a>
             </nav>
 
           </nav>
@@ -120,7 +207,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Thu, 27 Feb 2020 12:15:43 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Fri, 28 Feb 2020 10:26:38 GMT</small></div>
     </footer>
   </div>
 </body>
