@@ -1,5 +1,5 @@
 {% macro get_links(username) -%}
-{{ username }}: [[JAR](https://github.com/{{ username }}/duke/releases)][[User Guide](https://{{ username }}.github.io/duke)][[Code](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#search={{ username }}&sort=groupTitle&sortWithin=title&since=2020-01-13&timeframe=commit&mergegroup=false&groupSelect=groupByRepos&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2Fduke%5Bmaster%5D)]
+[[JAR](https://github.com/{{ username }}/duke/releases)][[User Guide](https://{{ username }}.github.io/duke)][[Code](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#search={{ username }}&sort=groupTitle&sortWithin=title&since=2020-01-13&timeframe=commit&mergegroup=false&groupSelect=groupByRepos&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2Fduke%5Bmaster%5D)]
 {%- endmacro  %}
 
 {% macro show_allocation_table() %}
