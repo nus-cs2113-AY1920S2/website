@@ -45,7 +45,14 @@ Before you start the next activity, ensure that you know <tooltip content="cover
 
 <div class="indented">
 
-Here are the steps:
+First, forking workflow requires you to pull from the team repo and push to your own fork. To be able to do the former, you need to **add the team repo as a _remote_ of your clone**.
+* In SourceTree, choose `Repository` → `Repository Settings...`
+* In the `Repository Settings` dialog,
+  * click the `Add` button
+  * add a new remote with the _Remote name_ `upstream` (can be anything, but `upstream` is a common choice) and _URL / Path_ pointing to the team repo<br>
+    e.g., `https://github.com/{{ semester }}-{{ module }}-M14-2/tp.git` (==note the `.git` at the end==)
+
+Here are the steps to update the code using the forking workflow:
 * {{ step(1) }} Decide which update each person will do.
 * {{ step(2) }} Each person,
   *  {{ step('2.a') }} create a branch (e.g., `johnDoe-AboutUs`) in their local repo.
@@ -54,7 +61,7 @@ Here are the steps:
   *  {{ step('2.d') }} create a PR from their branch in the fork to the `master` branch of the team repo.
 * {{ step(3) }} Work as a team to merge one PR at a time.<br>
   If a PR cannot be merged due to conflicts, resolve conflicts as you go (PR conflict resolution was covered in the week 6 lecture activity).
-* {{ step(4) }} Everyone sync their local repo and the fork with the team repo.
+* {{ step(4) }} Everyone sync their local repo and the fork with the team repo
 </div>
  
 <include src="followup-box.md" boilerplate>
