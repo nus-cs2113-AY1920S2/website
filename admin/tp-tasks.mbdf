@@ -583,7 +583,17 @@ Update the following pages in your project repo:
 <span id="heading_add_junit_tests">{{ icon_individual }} Add some JUnit Tests</span>
 <span id="desc_add_junit_tests">
 
-* We recommend that each person adds some JUnit tests to test their functional code.
+* We recommend that each person adds some JUnit tests to test their tP code.
+
+* Some examples from [AddressBook-Level2](https://github.com/se-edu/addressbook-level2):
+  * <tooltip content="Software Under Test">SUT</tooltip>[`seedu.addressbook.common.Utils.java`](https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/common/Utils.java)<br>
+    Tests: [`seedu.addressbook.common.UtilsTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/common/UtilsTest.java)<br>
+    {{ icon_info }} Note how **the test class is in the same package as the SUT** (although in a different folder). Advantage: the test class has access to all non-private members of the SUT, including _package private_ members.
+  * SUT: [`seedu.addressbook.parser.Parser.java`](https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/parser/Parser.java)<br>
+    Tests: [`seedu.addressbook.parser.ParserTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/parser/ParserTest.java)<br>
+    {{ icon_info }} Note how some of the test methods follow a different naming convention e.g., `parse_emptyInput_returnsIncorrect()`. Cross-check the coding standard to confirm if this naming convention is allowed.
+  * SUT: [`seedu.addressbook.data.AddressBook.java`](https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/data/AddressBook.java)<br>
+    Tests: [`seedu.addressbook.data.AddressBookTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/data/AddressBookTest.java)
 </span>
 {#====================================================================================================================#}
 <span id="heading_deliver_an_intermediate_version_of_your_enhancement">{{ icon_team }} Deliver an intermediate version of the new features</span>

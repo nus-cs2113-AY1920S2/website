@@ -982,7 +982,22 @@ method 2 ...
               <h4 id="4-add-some-junit-tests"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Add some JUnit Tests</span><a class="fa fa-anchor" href="#4-add-some-junit-tests"></a></h4>
               <div>
                 <ul>
-                  <li>We recommend that each person adds some JUnit tests to test their functional code.</li>
+                  <li>
+                    <p>We recommend that each person adds some JUnit tests to test their tP code.</p>
+                  </li>
+                  <li>
+                    <p>Some examples from <a href="https://github.com/se-edu/addressbook-level2">AddressBook-Level2</a>:</p>
+                    <ul>
+                      <li>
+                        <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip><a href="https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/common/Utils.java"><code>seedu.addressbook.common.Utils.java</code></a><br>                        Tests: <a href="https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/common/UtilsTest.java"><code>seedu.addressbook.common.UtilsTest.java</code></a><br>
+                        <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Note how <strong>the test class is in the same package as the SUT</strong> (although in a different folder). Advantage: the test class has access to all non-private
+                        members of the SUT, including <em>package private</em> members.</li>
+                      <li>SUT: <a href="https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/parser/Parser.java"><code>seedu.addressbook.parser.Parser.java</code></a><br> Tests: <a href="https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/parser/ParserTest.java"><code>seedu.addressbook.parser.ParserTest.java</code></a><br>
+                        <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Note how some of the test methods follow a different naming convention e.g., <code>parse_emptyInput_returnsIncorrect()</code>. Cross-check the coding standard
+                        to confirm if this naming convention is allowed.</li>
+                      <li>SUT: <a href="https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/data/AddressBook.java"><code>seedu.addressbook.data.AddressBook.java</code></a><br> Tests: <a href="https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/data/AddressBookTest.java"><code>seedu.addressbook.data.AddressBookTest.java</code></a></li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
               <p></p>
@@ -1019,7 +1034,7 @@ method 2 ...
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Tue, 03 Mar 2020 16:11:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Wed, 04 Mar 2020 05:11:59 GMT</small></div>
     </footer>
   </div>
 </body>
