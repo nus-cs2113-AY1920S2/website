@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Revision Control</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -67,20 +67,19 @@
                             even help you to efficiently figure out exactly when a problem was introduced.</p>
                           <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by
                             yourself, or with a hundred other people.</p>
-                          <p>-- [adapted from
-                            <trigger trigger="click" for="modal:rcsWhat-bryanMercurialGuide">bryan-mercurial-guide</trigger>
-                          </p>
+                          <p>-- [adapted from <span trigger="click" for="modal:rcsWhat-bryanMercurialGuide" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:rcsWhat-bryanMercurialGuide'].show()"
+                              class="trigger">bryan-mercurial-guide</span></p>
                         </blockquote>
                       </tab>
                       <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                       </tab>
                     </tabs>
-                    <modal large id="modal:rcsWhat-bryanMercurialGuide" class="algolia-no-index"><template slot="_header">Reference » Mercurial: The Definitive Guide</template>
+                    <b-modal id="modal:rcsWhat-bryanMercurialGuide" ok-only size="lg" modal-class="mb-zoom" ref="modal:rcsWhat-bryanMercurialGuide"><template slot="modal-title">Reference » Mercurial: The Definitive Guide</template>
                       <div>
                         <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
                       </div>
-                    </modal>
+                    </b-modal>
                     <box type="definition">
                       <div>
                         <p><strong>RCS</strong>: <strong>Revision Control Software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p>
@@ -246,19 +245,15 @@
             <p></p>
             <p></p>
             <div>
-              <p><strong><trigger for="pop:rcs">RCS</trigger> tools store the history of the working directory as a series of commits.</strong> This means we should commit after each change that we want the RCS to 'remember' for us.</p>
+              <p><strong><span for="pop:rcs" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:rcs'].show()" class="trigger">RCS</span> tools store the history of the working directory as a series of commits.</strong>                This means we should commit after each change that we want the RCS to 'remember' for us.</p>
               <p><strong>To see what changed between two points of the history, you can ask the RCS tool to  <mark><em>diff</em></mark> the two commits in concern.</strong></p>
               <p><strong>To restore the state of the working directory at a point in the past, you can <mark><em>checkout</em></mark> the commit in concern.</strong> i.e., we can traverse the history of the working directory simply by checking out the commits
                 we are interested in.</p>
               <div>
-                <popover id="pop:rcs" placement="top">
-                  <div slot="content" class="algolia-no-index">
-                    <div>
-                      <p><strong>RCS</strong>: <strong>Revision Control Software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p>
-                    </div>
-                  </div>
-                </popover>
-              </div>
+                <span id="pop:rcs" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">
+  <div data-mb-html-for="content">
+    <div>
+<p><strong>RCS</strong>:  <strong>Revision Control Software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p></div></div></span></div>
             </div>
             <div></div>
           </div>

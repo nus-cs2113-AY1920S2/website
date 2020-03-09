@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: tP: Forming Teams</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -262,9 +262,7 @@
                         <tr>
                           <td><span><span class="badge badge-warning">CS2113T</span></span>
                           </td>
-                          <td>COM1-B103
-                            <trigger for="pop:footnote1"><sup class="footnote-ref"><a aria-describedby="footnote-label" href="#footnote1" id="footnoteref1">[1]</a></sup></trigger>
-                          </td>
+                          <td>COM1-B103<span for="pop:footnote1" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:footnote1'].show()" class="trigger"><sup class="footnote-ref"><a aria-describedby="footnote-label" href="#footnote1" id="footnoteref1">[1]</a></sup></span></td>
                           <td><strong>M</strong>on <strong>16</strong>:00</td>
                           <td><s><span class="dimmed">LC03</span></s></td>
                           <td><strong><code>CS2113T-M16</code></strong></td>
@@ -379,7 +377,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

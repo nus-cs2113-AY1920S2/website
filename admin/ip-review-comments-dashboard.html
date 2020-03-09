@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -1580,74 +1580,17 @@ break;
         <panel type="info" expanded id="yang-chenglong-a11riseforme-3-comments"><template slot="_header"><h3 id="yang-chenglong-a11riseforme-3-comments">YANG CHENGLONG <code>@A11riseforme</code> (3 comments)<a class="fa fa-anchor" href="#yang-chenglong-a11riseforme-3-comments"></a></h3></template>
           <panel popup-url="https://github.com/nus-cs2113-AY1920S2/duke/pull/55#discussion_r374479802" expanded><template slot="_header"><p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p></template>
             <p>Indentation is violating the java coding standard. There should be no indentation for case clauses. follow the style below:</p>
-            <pre><code class="hljs java">
-<span class="hljs-keyword">switch</span> (condition) {
-
-<span class="hljs-keyword">case</span> ABC:
-
-    statements;
-
-    <span class="hljs-comment">// Fallthrough</span>
-
-<span class="hljs-keyword">case</span> DEF:
-
-    statements;
-
-    <span class="hljs-keyword">break</span>;
-
-<span class="hljs-keyword">case</span> XYZ:
-
-    statements;
-
-    <span class="hljs-keyword">break</span>;
-
-<span class="hljs-keyword">default</span>:
-
-    statements;
-
-    <span class="hljs-keyword">break</span>;
-
-}
-
-</code></pre>
+            <pre><code class="hljs java"><span>&#x200B;</span><span><span class="hljs-keyword">switch</span> (condition) {</span><span>&#x200B;</span><span><span class="hljs-keyword">case</span> ABC:</span><span>&#x200B;</span><span>    statements;</span><span>&#x200B;</span><span>    <span class="hljs-comment">// Fallthrough</span></span><span>&#x200B;</span><span><span class="hljs-keyword">case</span> DEF:</span><span>&#x200B;</span><span>    statements;</span><span>&#x200B;</span><span>    <span class="hljs-keyword">break</span>;</span><span>&#x200B;</span><span><span class="hljs-keyword">case</span> XYZ:</span><span>&#x200B;</span><span>    statements;</span><span>&#x200B;</span><span>    <span class="hljs-keyword">break</span>;</span><span>&#x200B;</span><span><span class="hljs-keyword">default</span>:</span><span>&#x200B;</span><span>    statements;</span><span>&#x200B;</span><span>    <span class="hljs-keyword">break</span>;</span><span>&#x200B;</span><span>}</span><span>&#x200B;</span></code></pre>
           </panel>
           <panel popup-url="https://github.com/nus-cs2113-AY1920S2/duke/pull/55#discussion_r374482829" expanded><template slot="_header"><p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p></template>
             <p>The string literal can be isolated as a vairable like <code>lineDivider</code></p>
-            <pre><code class="hljs java">
-<span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String LINE_DIVIDER= <span class="hljs-string">"\t____________________________________________________________\n"</span>;
-
-</code></pre>
+            <pre><code class="hljs java"><span>&#x200B;</span><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String LINE_DIVIDER= <span class="hljs-string">"\t____________________________________________________________\n"</span>;</span><span>&#x200B;</span></code></pre>
             <p>can call this viriable in the later codes.
             </p>
           </panel>
           <panel popup-url="https://github.com/nus-cs2113-AY1920S2/duke/pull/55#discussion_r374485443" expanded><template slot="_header"><p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p></template>
             <p>This can be combined into one single switch case structure. extract the first word of the user input.</p>
-            <pre><code class="hljs java">
-<span class="hljs-keyword">switch</span> (command) {
-
-<span class="hljs-keyword">case</span> <span class="hljs-string">"list"</span>:
-
-      <span class="hljs-comment">// list logic</span>
-
-<span class="hljs-keyword">case</span> <span class="hljs-string">"done"</span>:
-
-      <span class="hljs-comment">// done logic</span>
-
-<span class="hljs-keyword">case</span> <span class="hljs-string">"todo"</span>:
-
-      <span class="hljs-comment">// todo logic</span>
-
-<span class="hljs-keyword">case</span> <span class="hljs-string">"deadline"</span>:
-
-.
-
-.
-
-.
-
-}
-
-</code></pre>
+            <pre><code class="hljs java"><span>&#x200B;</span><span><span class="hljs-keyword">switch</span> (command) {</span><span>&#x200B;</span><span><span class="hljs-keyword">case</span> <span class="hljs-string">"list"</span>:</span><span>&#x200B;</span><span>      <span class="hljs-comment">// list logic</span></span><span>&#x200B;</span><span><span class="hljs-keyword">case</span> <span class="hljs-string">"done"</span>:</span><span>&#x200B;</span><span>      <span class="hljs-comment">// done logic</span></span><span>&#x200B;</span><span><span class="hljs-keyword">case</span> <span class="hljs-string">"todo"</span>:</span><span>&#x200B;</span><span>      <span class="hljs-comment">// todo logic</span></span><span>&#x200B;</span><span><span class="hljs-keyword">case</span> <span class="hljs-string">"deadline"</span>:</span><span>&#x200B;</span><span>.</span><span>&#x200B;</span><span>.</span><span>&#x200B;</span><span>.</span><span>&#x200B;</span><span>}</span><span>&#x200B;</span></code></pre>
           </panel>
         </panel>
         <panel type="info" expanded id="alaukik-nath-pant-alaukiknpant-3-comments"><template slot="_header"><h3 id="alaukik-nath-pant-alaukiknpant-3-comments">ALAUKIK NATH PANT <code>@alaukiknpant</code> (3 comments)<a class="fa fa-anchor" href="#alaukik-nath-pant-alaukiknpant-3-comments"></a></h3></template>

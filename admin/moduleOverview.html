@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: CS2113/T Software Engineering & Object-Oriented Programming</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -205,15 +205,17 @@
           <div id="main">
             <p><big><p class="lead text-secondary">An iterative introduction to Software Engineering...</p></big></p>
             <img src="/website/images/growingPlant.png" width="700">
-            <p class="lead"><span>CS2113/T is an introductory Software Engineering module covering <strong>a balance of basic SE theory and practical skills</strong> needed to work in a project that has a software component. The module follows an <tooltip><template slot="_content">going through SE topics several times while increasing depth, as opposed to going through topics sequentially</template><strong>iterative approach</strong></tooltip> to covering topics. The module also introduces you to the Java programming language, the OOP paradigm, and some basic UML models.</span></p>
+            <p class="lead"><span>CS2113/T is an introductory Software Engineering module covering <strong>a balance of basic SE theory and practical skills</strong> needed to work in a project that has a software component. The module follows an <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">going through SE topics several times while increasing depth, as opposed to going through topics sequentially</span><strong>iterative approach</strong></span>
+              to covering topics. The module also introduces you to the Java programming language, the OOP paradigm, and some basic UML models.</span>
+            </p>
             <ul>
               <li>
                 <p><strong>The theory side</strong> of this module is supported by a customized online textbook <a href="/website/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
               </li>
               <li>
                 <p><strong>On the practice side</strong>, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called <a href="/website/se-book-adapted/projectDuke/index.html">Duke</a>.
-                  Then, you will move to a team project in which you will build another small
-                  <tooltip><template slot="_content">Comman Line Interface</template>CLI</tooltip> app while working as a team.</p>
+                  Then, you will move to a team project in which you will build another small <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Comman Line Interface</span>CLI</span>
+                  app while working as a team.</p>
               </li>
             </ul>
             <p>
@@ -240,7 +242,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

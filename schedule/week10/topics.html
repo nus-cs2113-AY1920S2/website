@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 10 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -257,39 +257,14 @@
                               <p>Consider the code below:</p>
                               <div class="row">
                                 <div class="col-sm-7">
-                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
-    Tag tag;
-    String name;
-
-    Person(String personName, String tagName){
-        name = personName;
-        tag = <span class="hljs-keyword">new</span> Tag(tagName);
-    }
-}
-</code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{</span><span>    Tag tag;</span><span>    String name;</span><span>&#x200B;</span><span>    Person(String personName, String tagName){</span><span>        name = personName;</span><span>        tag = <span class="hljs-keyword">new</span> Tag(tagName);</span><span>    }</span><span>}</span></code></pre>
                                 </div>
                                 <div class="col-sm-5">
-                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
-    Tag(String value){
-        <span class="hljs-comment">//...</span>
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{</span><span>    Tag(String value){</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span></code></pre>
                                 </div>
                               </div>
                               <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                              <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
-<span class="hljs-keyword">while</span> (hasRoom){
-    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
-    personList.addPerson(p);
-}
-</code></pre>
+                              <pre><code class="hljs java"><span>PersonList personList = <span class="hljs-keyword">new</span> PersonList();</span><span><span class="hljs-keyword">while</span> (hasRoom){</span><span>    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);</span><span>    personList.addPerson(p);</span><span>}</span></code></pre>
                             </question>
                           </panel>
                         </div>
@@ -432,29 +407,9 @@
                         <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Sequence Diagram for printing a quote</p></template>
                           <question>
                             <p>Draw a sequence diagram to represent this code snippet.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isFirstPage) {
-    <span class="hljs-keyword">new</span> Quote().print();
-}
-</code></pre>
+                            <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isFirstPage) {</span><span>    <span class="hljs-keyword">new</span> Quote().print();</span><span>}</span></code></pre>
                             <p>The <code>Quote</code> class:</p>
-                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{
-
-    String q;
-
-    Quote(){
-        q = generate();
-    }
-
-    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">// ...</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
-        System.out.println(q);
-    }
-
-}
-</code></pre>
+                            <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{</span><span>&#x200B;</span><span>    String q;</span><span>&#x200B;</span><span>    Quote(){</span><span>        q = generate();</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">// ...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{</span><span>        System.out.println(q);</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                             <div slot="hint" class="algolia-no-index">
                               <ul>
                                 <li>Show <code>new Quote().print();</code> as two method calls.</li>
@@ -806,21 +761,7 @@
             <p></p>
             <div>
               <p>Here is the typical implementation of how the Singleton pattern is applied to a class:</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logic theOne = <span class="hljs-keyword">null</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Logic</span><span class="hljs-params">()</span> </span>{
-        ...
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Logic <span class="hljs-title">getInstance</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">if</span> (theOne == <span class="hljs-keyword">null</span>) {
-            theOne = <span class="hljs-keyword">new</span> Logic();
-        }
-        <span class="hljs-keyword">return</span> theOne;
-    }
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logic theOne = <span class="hljs-keyword">null</span>;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Logic</span><span class="hljs-params">()</span> </span>{</span><span>        ...</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Logic <span class="hljs-title">getInstance</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">if</span> (theOne == <span class="hljs-keyword">null</span>) {</span><span>            theOne = <span class="hljs-keyword">new</span> Logic();</span><span>        }</span><span>        <span class="hljs-keyword">return</span> theOne;</span><span>    }</span><span>}</span></code></pre>
               <p>Notes:</p>
               <ul>
                 <li>The constructor is <code>private</code>, which prevents instantiation from outside the class.</li>
@@ -829,11 +770,9 @@
                   return the single instance of the class.</li>
               </ul>
               <p>If <code>Logic</code> was not a Singleton class, an object is created like this:</p>
-              <pre><code class="hljs java">Logic m = <span class="hljs-keyword">new</span> Logic();
-</code></pre>
+              <pre><code class="hljs java"><span>Logic m = <span class="hljs-keyword">new</span> Logic();</span></code></pre>
               <p>But now, the <code>Logic</code> object needs to be accessed like this:</p>
-              <pre><code class="hljs java">Logic m = Logic.getInstance();
-</code></pre>
+              <pre><code class="hljs java"><span>Logic m = Logic.getInstance();</span></code></pre>
             </div>
             <div></div>
           </div>
@@ -923,10 +862,8 @@
               <p><strong>Problem</strong></p>
               <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed">e.g.  the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
               <p><strong>Solution</strong></p>
-              <p>Include a
-                <tooltip><template slot="_content">a French word that means 'front of a building'</template>Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade
-                class.
-              </p>
+              <p>Include a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a French word that means 'front of a building'</span>Façade</span> class that sits
+                between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
                 <img src="/website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
@@ -1140,7 +1077,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

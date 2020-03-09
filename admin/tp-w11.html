@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: tP: v2.0 [week 11]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -294,10 +294,10 @@
                     <div>
                       <div>
                         <h4 id="pe-d-overview"><span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span><a class="fa fa-anchor" href="#pe-d-overview"></a></h4>
-                        <p><strong>What</strong>: The v2.0 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam (PE) Dry Run</em> as this round of testing will be similar to the graded
-                          <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v2.1</trigger>.</p>
+                        <p><strong>What</strong>: The v2.0 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam (PE) Dry Run</em> as this round of testing will be similar to the graded <span trigger="click"
+                            for="modal:projectDeliverablesPeDryRun-pe" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectDeliverablesPeDryRun-pe'].show()" class="trigger">Practical Exam that will be done at v2.1</span>.</p>
                         <p><strong>When, where</strong>: uses a 40 minute slot at the start of week 11 lecture</p>
-                        <modal large id="modal:projectDeliverablesPeDryRun-pe" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Practical Exam</template>
+                        <b-modal id="modal:projectDeliverablesPeDryRun-pe" ok-only size="lg" modal-class="mb-zoom" ref="modal:projectDeliverablesPeDryRun-pe"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Practical Exam</template>
                           <div>
                             <div>
                               <h4 id="pe-overview"><span class="badge badge-success">PE</span> <span class="text-success">Overview</span><a class="fa fa-anchor" href="#pe-overview"></a></h4>
@@ -331,8 +331,8 @@
                                   </li>
                                   <li>The penalty for a bug is divided equally among assignees.</li>
                                   <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
-                                  <li>
-                                    <tooltip><template slot="_content">i.e., the same bug reported by many testers</template><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
+                                  <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span>
+                                    earn less credit for the tester and slightly more penalty for the developer.</li>
                                   <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance
                                     testing.
                                   </li>
@@ -343,8 +343,8 @@
                                     </ul>
                                   </li>
                                   <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
-                                  <li>Excessive incorrect downgrading/rejecting/
-                                    <tooltip><template slot="_content">marking as duplicates</template>duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+                                  <li>Excessive incorrect downgrading/rejecting/<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">marking as duplicates</span>duplicate-flagging</span>,
+                                    if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
                                 </ul>
                               </div>
                   </panel>
@@ -426,8 +426,8 @@
                             </ul>
                           </li>
                           <li>
-                            <p><strong><span class="text-danger">Download the product to be tested</span></strong>
-                              <tooltip><template slot="_content">notifications are likely to go out on the morning of the PE/PE-D session</template>after you have been notified</tooltip> of which team you have been allocated to test.</p>
+                            <p><strong><span class="text-danger">Download the product to be tested</span></strong> <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">notifications are likely to go out on the morning of the PE/PE-D session</span>after
+                              you have been notified</span> of which team you have been allocated to test.</p>
                           </li>
                           <li>
                             <p><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</p>
@@ -1019,20 +1019,9 @@
                     <li><strong>Do not edit the subject or the description.</strong> Your response (if any) should be added as a comment.</li>
                     <li>Add a comment using the following exact template.</li>
                   </ul>
-                  <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
-{replace this with your response}
-<p><span class="hljs-section">## Duplicate status (if any):</span></p>
-<p></p></code></pre>
-                  <p></p>
+                  <pre><code class="hljs markdown"><span><span class="hljs-section"># Team's Response</span></span><span>{replace this with your response}</span><span>&#x200B;</span><span><span class="hljs-section">## Duplicate status (if any):</span></span><span>&#x200B;</span></code></pre>
                   <p>Here is an example:</p>
-                  <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
-<p>Yes this is a bug. But it is a duplicate.
-<span class="hljs-bullet">* </span>Changed the bug type because this is just a bug in the UG.
-<span class="hljs-bullet">* </span>Lowered the severity because users can still use the feature.</p>
-<p><span class="hljs-section">## Duplicate status (if any):</span>
-Duplicate of #67
-</p></code></pre>
-                  <p></p>
+                  <pre><code class="hljs markdown"><span><span class="hljs-section"># Team's Response</span></span><span>&#x200B;</span><span>Yes this is a bug. But it is a duplicate.</span><span><span class="hljs-bullet">* </span>Changed the bug type because this is just a bug in the UG.</span><span><span class="hljs-bullet">* </span>Lowered the severity because users can still use the feature.</span><span>&#x200B;</span><span><span class="hljs-section">## Duplicate status (if any):</span></span><span>Duplicate of #67</span></code></pre>
                   <ul>
                     <li>Do not close the bug report after you are done processing it.</li>
                     <li>Use the exact <code>Duplicate of #123</code> format to indicate duplicates.</li>
@@ -1170,12 +1159,7 @@ Duplicate of #67
                             </ul>
                           </div>
 
-                          <pre><code class="hljs">Team chose ['response.IssueUnclear']
-
-- [x] I disagree
-
-**Reason for disagreement:** I think one can easily reproduce the problem by following the steps I gave.
-</code></pre>
+                          <pre><code class="hljs"><span>Team chose ['response.IssueUnclear']</span><span>&#x200B;</span><span>- [x] I disagree</span><span>&#x200B;</span><span>**Reason for disagreement:** I think one can easily reproduce the problem by following the steps I gave.</span></code></pre>
                         </div>
                       </tab>
                     </tabs>
@@ -1187,7 +1171,7 @@ Duplicate of #67
                   </ul>
                   </div>
                   </div>
-                  </modal>
+                  </b-modal>
                   <p>
                     <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Grading</strong>: Taking part in the PE dry run is strongly encouraged as it <mark>can affect your grade in the following ways</mark>.</p>
                   <ul>
@@ -1198,8 +1182,8 @@ Duplicate of #67
                   </ul>
                   <p><strong>Why</strong>:</p>
                   <ul>
-                    <li><strong>To train you</strong> to do manual testing, bug reporting, bug
-                      <tooltip><template slot="_content">assigning of priority order</template>triaging,</tooltip> bug fixing, communicating with users/testers/developers, evaluating products etc.</li>
+                    <li><strong>To train you</strong> to do manual testing, bug reporting, bug <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">assigning of priority order</span>triaging,</span>
+                      bug fixing, communicating with users/testers/developers, evaluating products etc.</li>
                     <li><strong>To help you improve your product</strong> before the final submission.</li>
                   </ul>
                   <h4 id="pe-d-preparation"><span class="badge badge-primary">PE-D</span> <span class="text-primary">Preparation</span><a class="fa fa-anchor" href="#pe-d-preparation"></a></h4>
@@ -1273,8 +1257,8 @@ Duplicate of #67
                         </ul>
                       </li>
                       <li>
-                        <p><strong><span class="text-danger">Download the product to be tested</span></strong>
-                          <tooltip><template slot="_content">notifications are likely to go out on the morning of the PE/PE-D session</template>after you have been notified</tooltip> of which team you have been allocated to test.</p>
+                        <p><strong><span class="text-danger">Download the product to be tested</span></strong> <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">notifications are likely to go out on the morning of the PE/PE-D session</span>after
+                          you have been notified</span> of which team you have been allocated to test.</p>
                       </li>
                       <li>
                         <p><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</p>
@@ -1575,7 +1559,7 @@ Duplicate of #67
                       </div>
                     </box>
                   </div>
-                  <modal large id="modal:v1.3-ppp" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project →</template>
+                  <b-modal id="modal:v1.3-ppp" ok-only size="lg" modal-class="mb-zoom" ref="modal:v1.3-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project →</template>
                     <div>
                       <div>
                         <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
@@ -1594,7 +1578,7 @@ Duplicate of #67
                               <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
                               <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
                               <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
-                              <li><strong>Contributions to <trigger trigger="click" for="modal:deliverablesPPP-teamTasks">team-based tasks </trigger>:</strong></li>
+                              <li><strong>Contributions to <span trigger="click" for="modal:deliverablesPPP-teamTasks" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:deliverablesPPP-teamTasks'].show()" class="trigger">team-based tasks </span>:</strong></li>
                               <li><strong>Review/mentoring contributions:</strong> Links to PRs reviewed, instances of helping team members in other ways</li>
                               <li><strong>Contributions beyond the project team:</strong>
                                 <ul>
@@ -1605,7 +1589,7 @@ Duplicate of #67
                             </ul>
                           </li>
                         </ul>
-                        <modal large id="modal:deliverablesPPP-teamTasks" class="algolia-no-index"><template slot="_header">Team-Based Tasks</template>
+                        <b-modal id="modal:deliverablesPPP-teamTasks" ok-only size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
                           <div>
                             <box>
                               <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
@@ -1625,7 +1609,7 @@ Duplicate of #67
                               <p></p>
                             </box>
                           </div>
-                        </modal>
+                        </b-modal>
                         <div class="indented-level2">
                           <box border-left-color="darkcyan">
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention things
@@ -1688,7 +1672,7 @@ Duplicate of #67
                         </ul>
                       </div>
                     </div>
-                  </modal>
+                  </b-modal>
                   <span id="after-ped">
 <h4 id="pe-d-after-the-session"><span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span><a class="fa fa-anchor" href="#pe-d-after-the-session"></a></h4>
                   <ul>
@@ -1744,7 +1728,7 @@ Duplicate of #67
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

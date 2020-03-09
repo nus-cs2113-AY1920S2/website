@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 5 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -140,10 +140,10 @@
               <panel expanded><template slot="_header"><p><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP → week 6 → Conceptualize v1.0</strong></span></p></template>
                 <div>
                   <ul>
-                    <li>Based on your user story selected previously, conceptualize the product in terms of how it will look like at v1.0. Suggestion: this can be in the form of a
-                      <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.</li>
+                    <li>Based on your user story selected previously, conceptualize the product in terms of how it will look like at v1.0. Suggestion: this can be in the form of a <span trigger="click" for="modal:v10-featureLists" v-b-popover.click.top.html="popoverGenerator"
+                        v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-featureLists'].show()" class="trigger">feature list</span>.</li>
                   </ul>
-                  <modal large id="modal:v10-featureLists" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                  <b-modal id="modal:v10-featureLists" ok-only size="lg" modal-class="mb-zoom" ref="modal:v10-featureLists"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                     <div>
                       <div></div>
                       <p></p>
@@ -182,7 +182,7 @@
                         </div>
                       </div>
                     </div>
-                  </modal>
+                  </b-modal>
                 </div>
               </panel>
             </div>
@@ -198,6 +198,7 @@
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-choose-tp-user-stories-for-v1-0">1 Choose tP user stories for v1.0&#x200E;</a>
               <a class="nav-link py-1" href="#2-time-permitting-create-a-feature-list-for-v1-0">2 time permitting Create a feature list for v1.0&#x200E;</a>
+              <a class="nav-link py-1" href="#what">What&#x200E;</a>
             </nav>
 
           </nav>
@@ -206,7 +207,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

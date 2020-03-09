@@ -9,15 +9,14 @@
 </p>
 <div id="title-and-body">
   <div>
-    <h4 id="how"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\how\text.md">How</span></span>
-    </h4>
+    <h4 id="how"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\how\text.md">How</span></span><a class="fa fa-anchor" href="#how"></a></h4>
   </div>
   <div id="main">
     <div>
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\how\text.md">
-        <p>Given below are some more commonly used refactorings. A more comprehensive list is available at
-          <trigger trigger="click" for="modal:refactoring-catalog-how"> refactoring-catalog </trigger>.</p>
-        <modal id="modal:refactoring-catalog-how"><template slot="_header"><strong>Refactoring Catalog</strong></template>
+        <p>Given below are some more commonly used refactorings. A more comprehensive list is available at <span trigger="click" for="modal:refactoring-catalog-how" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+            v-on:click="$refs['modal:refactoring-catalog-how'].show()" class="trigger"> refactoring-catalog </span>.</p>
+        <b-modal id="modal:refactoring-catalog-how" ok-only size modal-class="mb-zoom" ref="modal:refactoring-catalog-how"><template slot="modal-title"><strong>Refactoring Catalog</strong></template>
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\references.md">
               <ul>
@@ -27,7 +26,7 @@
               </ul>
             </div>
           </div>
-        </modal>
+        </b-modal>
         <ol>
           <li><a href="https://refactoring.com/catalog/consolidateConditionalExpression.html">Consolidate Conditional Expression</a></li>
           <li><a href="https://refactoring.com/catalog/decomposeConditional.html">Decompose Conditional</a></li>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 4 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -131,8 +131,7 @@
                 </span><a class="fa fa-anchor" href="#1-create-a-pr-to-the-upstream-repo-by-friday-before-the-tutorial"></a></h4>
               <div>
                 <ul>
-                  <li>Create a
-                    <trigger trigger="click" for="modal:ipTasks-createPr">pull request (PR)</trigger> from the <code>master</code> branch of your fork to the upstream repo. Here are the steps:
+                  <li>Create a <span trigger="click" for="modal:ipTasks-createPr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipTasks-createPr'].show()" class="trigger">pull request (PR)</span>                    from the <code>master</code> branch of your fork to the upstream repo. Here are the steps:
                     <ul>
                       <li>Go to your Duke fork on GitHub</li>
                       <li>Click on the <button type="button" class="btn btn-light btn-sm border"><strong>New pull request</strong></button> button in that page.</li>
@@ -150,14 +149,14 @@
                     </p>
                   </box>
                 </div>
-                <modal large id="modal:ipTasks-createPr" class="algolia-no-index"><template slot="_header">Pull Request (PR)</template>
+                <b-modal id="modal:ipTasks-createPr" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipTasks-createPr"><template slot="modal-title">Pull Request (PR)</template>
                   <p><em>Pull Requests</em> is a mechanism for offering code to a repository e.g., a bug fix or a new feature. PRs allow developers to review, discuss, and refine proposed code changes before incorporating (i.e., <em>merging</em>) the new
                     code to the repository.</p>
                   <p>Resources:</p>
                   <ul>
                     <li><a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">GitHub Help page on PRs</a></li>
                   </ul>
-                </modal>
+                </b-modal>
               </div>
               <p></p>
               <h4 id="2-add-increments-level-4-a-textuitesting-a-codequality"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Add Increments: <code>Level-4</code>, <code>A-TextUiTesting</code>, <code>A-CodeQuality</code><a class="fa fa-anchor" href="#2-add-increments-level-4-a-textuitesting-a-codequality"></a></h4>
@@ -184,47 +183,10 @@
                           <li><strong>Events</strong>: tasks that start at a specific time and ends at a specific time <span class="dimmed">e.g., <em>team project meeting on 2/10/2019 2-4pm</em></span></li>
                         </ol>
                         <p>Example:</p>
-                        <pre><code class="hljs">todo borrow book
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [T][✗] borrow book
-     Now you have 5 tasks in the list.
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[T][✓] read book
-     2.[D][✗] return book (by: June 6th)
-     3.[E][✗] project meeting (at: Aug 6th 2-4pm)
-     4.[T][✓] join sports club
-     5.[T][✗] borrow book
-    ____________________________________________________________
-
-deadline return book /by Sunday
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [D][✗] return book (by: Sunday)
-     Now you have 6 tasks in the list.
-    ____________________________________________________________
-
-event project meeting /at Mon 2-4pm
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [E][✗] project meeting (at: Mon 2-4pm)
-     Now you have 7 tasks in the list.
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>todo borrow book</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [T][✗] borrow book</span><span>     Now you have 5 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✗] return book (by: June 6th)</span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     4.[T][✓] join sports club</span><span>     5.[T][✗] borrow book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>deadline return book /by Sunday</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] return book (by: Sunday)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>event project meeting /at Mon 2-4pm</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [E][✗] project meeting (at: Mon 2-4pm)</span><span>     Now you have 7 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
                         <p>At this point, dates/times can be treated as strings; there is no need to convert them to actual dates/times.</p>
                         <p>Example:</p>
-                        <pre><code class="hljs">
-deadline do homework /by no idea :-p
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [D][✗] do homework (by: no idea :-p)
-     Now you have 6 tasks in the list.
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>&#x200B;</span><span>deadline do homework /by no idea :-p</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] do homework (by: no idea :-p)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
@@ -238,24 +200,8 @@ deadline do homework /by no idea :-p
                                 <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
                                 <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
                                 <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
-
-    <span class="hljs-keyword">protected</span> String by;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Deadline</span><span class="hljs-params">(String description, String by)</span> </span>{
-        <span class="hljs-keyword">super</span>(description);
-        <span class="hljs-keyword">this</span>.by = by;
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"[D]"</span> + <span class="hljs-keyword">super</span>.toString() + <span class="hljs-string">" (by: "</span> + by + <span class="hljs-string">")"</span>;
-    }
-}
-</code></pre>
-                                  <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
-task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);
-</code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-keyword">protected</span> String by;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Deadline</span><span class="hljs-params">(String description, String by)</span> </span>{</span><span>        <span class="hljs-keyword">super</span>(description);</span><span>        <span class="hljs-keyword">this</span>.by = by;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"[D]"</span> + <span class="hljs-keyword">super</span>.toString() + <span class="hljs-string">" (by: "</span> + by + <span class="hljs-string">")"</span>;</span><span>    }</span><span>}</span></code></pre>
+                                  <pre><code class="hljs java"><span>Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];</span><span>task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);</span></code></pre>
                                 </panel>
                               </div>
                             </panel>
@@ -396,8 +342,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                             <p>If you <strong>used a third party library</strong>:</p>
                             <ul>
                               <li>iP/tP: Mention in the <code>README</code> file (under the <em>Acknowledgements</em> section)</li>
-                              <li>tP: Mention in the
-                                <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented</li>
+                              <li>tP: Mention in the <span trigger="click" for="modal:reusePolicy-ppp" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-ppp'].show()" class="trigger">Project Portfolio Page</span>                                if the library has a significant relevance to the features you implemented</li>
                             </ul>
                             <p>If you <strong>reused code snippets found on the Internet</strong> <span class="dimmed">e.g. from StackOverflow answers</span> or<br>
                               <strong>referred code in another software</strong> or<br>
@@ -405,88 +350,40 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                             <ul>
                               <li>If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
                                 <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:
-                                <pre><code class="hljs java"><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span>
-{Your implmentation of the reused solution here ...}
-</code></pre>
+                                <pre><code class="hljs java"><span><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span></span><span>{Your implmentation of the reused solution here ...}</span></code></pre>
                               </li>
-                              <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using
-                                <trigger trigger="click" for="modal:reusePolicy-authorTags"><code>@@author</code> tags</trigger>)<br> Format:
-                                <pre><code class="hljs java"><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span>
-<span class="hljs-comment">//{Info about the source...}</span>
-
-{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}
-
-<span class="hljs-comment">//@@author</span>
-</span></code></pre>
-                                <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):
-                                <pre><code class="hljs java">persons = getList()
-<span class="hljs-comment">//@@author johndoe-reused</span>
-<span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span>
-Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{
-        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : <span class="hljs-number">0</span>;
-    }
-});
-<span class="hljs-comment">//@@author</span>
-<span class="hljs-keyword">return</span> persons;
-</code></pre>
+                              <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using <span trigger="click"
+                                  for="modal:reusePolicy-authorTags" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-authorTags'].show()" class="trigger"><code>@@author</code> tags</span>)<br>                                Format:
+                                <pre><code class="hljs java"><span><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span></span><span><span class="hljs-comment">//{Info about the source...}</span></span><span>&#x200B;</span><span>{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}</span></span><span><span class="hljs-function"></span></span><span><span class="hljs-function"><span class="hljs-comment">//@@author</span></span></span></code></pre><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):
+                                <pre><code class="hljs java"><span>persons = getList()</span><span><span class="hljs-comment">//@@author johndoe-reused</span></span><span><span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span></span><span>Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : <span class="hljs-number">0</span>;</span><span>    }</span><span>});</span><span><span class="hljs-comment">//@@author</span></span><span><span class="hljs-keyword">return</span> persons;</span></code></pre>
                               </li>
                             </ul>
                           </box>
-                          <modal large id="modal:reusePolicy-authorTags" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project mid-v1.3 (extract) →</template>
+                          <b-modal id="modal:reusePolicy-authorTags" ok-only size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-authorTags"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project mid-v1.3 (extract) →</template>
                             <div>
                               <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship"></a></h4>
                               <ul>
                                 <li>
                                   <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code>//@@author</code>                                    tag or the end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
-                                  <pre><code class="hljs">//@@author johndoe
-method 1 ...
-method 2 ...
-//@@author sarahkhoo
-method 3 ...
-//@@author johndoe
-method 4 ...
-</code></pre>
+                                  <pre><code class="hljs"><span>//@@author johndoe</span><span>method 1 ...</span><span>method 2 ...</span><span>//@@author sarahkhoo</span><span>method 3 ...</span><span>//@@author johndoe</span><span>method 4 ...</span></code></pre>
                                 </li>
                                 <li>
                                   <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below
                                     yours can add the GitHub username to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
-                                  <pre><code class="hljs">method 0 ...
-//@@author johndoe
-method 1 ...
-method 2 ...
-//@@author
-method 3 ...
-method 4 ...
-</code></pre>
+                                  <pre><code class="hljs"><span>method 0 ...</span><span>//@@author johndoe</span><span>method 1 ...</span><span>method 2 ...</span><span>//@@author</span><span>method 3 ...</span><span>method 4 ...</span></code></pre>
                                 </li>
                                 <li>
                                   <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br> Here is an example code from an xml/fxml file.</p>
-                                  <pre><code class="hljs">&lt;!-- @@author sereneWong --&gt;
-&lt;textbox&gt;
-  &lt;label&gt;...&lt;/label&gt;
-  &lt;input&gt;...&lt;/input&gt;
-&lt;/textbox&gt;
-...
-</code></pre>
+                                  <pre><code class="hljs"><span>&lt;!-- @@author sereneWong --&gt;</span><span>&lt;textbox&gt;</span><span>  &lt;label&gt;...&lt;/label&gt;</span><span>  &lt;input&gt;...&lt;/input&gt;</span><span>&lt;/textbox&gt;</span><span>...</span></code></pre>
                                 </li>
                                 <li>
                                   <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong>.<br> 👎
                                     <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                   </p>
-                                  <pre><code class="hljs">/**
-  * Returns true if ...
-  * @@author johndoe
-  */
-</code></pre>
+                                  <pre><code class="hljs"><span>/**</span><span>  * Returns true if ...</span><span>  * @@author johndoe</span><span>  */</span></code></pre>
                                   <p>👍<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                   </p>
-                                  <pre><code class="hljs">//@@author johndoe
-/**
-  * Returns true if ...
-  */
-</code></pre>
+                                  <pre><code class="hljs"><span>//@@author johndoe</span><span>/**</span><span>  * Returns true if ...</span><span>  */</span></code></pre>
                                 </li>
                               </ul>
                               <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate"></a></h4>
@@ -518,19 +415,13 @@ method 4 ...
                                     <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
                                     </li>
                                   </ul>
-                                  <pre><code class="hljs">//@@author johndoe-unused
-method 1 ...
-method 2 ...
-</code></pre>
+                                  <pre><code class="hljs"><span>//@@author johndoe-unused</span><span>method 1 ...</span><span>method 2 ...</span></code></pre>
                                   <p>Please put a comment in the code to explain why it was not used.</p>
                                 </li>
                                 <li>
                                   <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>) e.g.
                                   </p>
-                                  <pre><code class="hljs">//@@author johndoe-reused
-method 1 ...
-method 2 ...
-</code></pre>
+                                  <pre><code class="hljs"><span>//@@author johndoe-reused</span><span>method 1 ...</span><span>method 2 ...</span></code></pre>
                                 </li>
                                 <li>
                                   <p><strong>You can use empty <code>@@author</code> tags to mark code as not yours when RepoSense attribute the to you incorrectly.</strong></p>
@@ -546,8 +437,8 @@ method 2 ...
                                 </li>
                               </ul>
                             </div>
-                          </modal>
-                          <modal large id="modal:reusePolicy-ppp" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Project Portfolio Page</template>
+                          </b-modal>
+                          <b-modal id="modal:reusePolicy-ppp" ok-only size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Project Portfolio Page</template>
                             <div>
                               <div>
                                 <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
@@ -566,7 +457,7 @@ method 2 ...
                                       <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
                                       <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
                                       <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
-                                      <li><strong>Contributions to <trigger trigger="click" for="modal:deliverablesPPP-teamTasks">team-based tasks </trigger>:</strong></li>
+                                      <li><strong>Contributions to <span trigger="click" for="modal:deliverablesPPP-teamTasks" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:deliverablesPPP-teamTasks'].show()" class="trigger">team-based tasks </span>:</strong></li>
                                       <li><strong>Review/mentoring contributions:</strong> Links to PRs reviewed, instances of helping team members in other ways</li>
                                       <li><strong>Contributions beyond the project team:</strong>
                                         <ul>
@@ -577,7 +468,7 @@ method 2 ...
                                     </ul>
                                   </li>
                                 </ul>
-                                <modal large id="modal:deliverablesPPP-teamTasks" class="algolia-no-index"><template slot="_header">Team-Based Tasks</template>
+                                <b-modal id="modal:deliverablesPPP-teamTasks" ok-only size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
                                   <div>
                                     <box>
                                       <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
@@ -597,7 +488,7 @@ method 2 ...
                                       <p></p>
                                     </box>
                                   </div>
-                                </modal>
+                                </b-modal>
                                 <div class="indented-level2">
                                   <box border-left-color="darkcyan">
                                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention
@@ -660,7 +551,7 @@ method 2 ...
                                 </ul>
                               </div>
                             </div>
-                          </modal>
+                          </b-modal>
                         </div>
                       </div>
                     </div>
@@ -684,8 +575,8 @@ method 2 ...
                     <p><strong>Based on:</strong> tutor/bot observations of project milestones and GitHub data</p>
                     <p><strong>Grading criteria:</strong></p>
                     <ul>
-                      <li>No
-                        <tooltip><template slot="_content">e.g., the product is not working at all by the milestone deadline</template>major mishaps</tooltip> at v1.0 and v2.0.</li>
+                      <li>No <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., the product is not working at all by the milestone deadline</span>major mishaps</span>
+                        at v1.0 and v2.0.</li>
                       <li>Good attempt to use of at least <em>some</em> Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)</li>
                       <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
                     </ul>
@@ -786,11 +677,11 @@ method 2 ...
                             to mouse/GUI inputs, if applicable.<br> Also keep in mind:</p>
                           <ul>
                             <li>Regular typing is usually faster than using key combinations.</li>
-                            <li>
-                              <tooltip><template slot="_content">typing the full command and hitting ENTER will complete the task</template>One-shot commands</tooltip> are faster over
-                              <tooltip><template slot="_content">prompting the user to input one parameter at a time</template>multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for
-                              regular/expert users.
-                              <br></li>
+                            <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">typing the full command and hitting ENTER will complete the task</span>One-shot
+                              commands</span>
+                              are faster over <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">prompting the user to input one parameter at a time</span>multi-step
+                              commands
+                              </span>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert users.<br></li>
                           </ul>
                         </div>
                       </div>
@@ -867,27 +758,30 @@ method 2 ...
                   </ul>
                   <span id="functionalityExpectations">
 <h3 id="functionality-expectations"><div class="text-white bg-danger p-1">Functionality Expectations</div><a class="fa fa-anchor" href="#functionality-expectations"></a></h3>
-<p><strong>The expected level of <em>functionality</em> from a team is roughly <mark>what you can achieve if each member contribute about the same amount of functional code as required by a <tooltip><template slot="_content">i.e., if all requirements were met at the <em>minimal</em> level specified</template>typical iP</tooltip></mark></strong>.</p>
-<box type="important">
-<p>Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. <mark>Adding more functionality than the expected level will not increase your marks</mark>. You are better off spending that effort in improving other aspects of the project. In fact, here is the grading criterion for the individual project effort:</p>
-<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Evaluating the  Implementation Effort</mark>                  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
-                  </p>
-                  </template>
-                  <div>
-                    <p>
-                      <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong></p>
-                    <ul>
-                      <li><mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark></li>
-                      <li>The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.</li>
-                    </ul>
-                    <ul radio-group="e7d80" class="radio-list">
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Unable to judge</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Significantly less than a typical iP</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Slightly less than a typical iP</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  At least as much as a typical iP</label></li>
-                    </ul>
-                  </div>
-                  </panel>
+<p><strong>The expected level of <em>functionality</em> from a team is roughly <mark>what you can achieve if each member contribute about the same amount of functional code as required by a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., if all requirements were met at the <em>minimal</em> level specified</span>typical
+                  iP
+                  </span>
+                  </mark>
+                  </strong>.</p>
+                  <box type="important">
+                    <p>Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. <mark>Adding more functionality than the expected level will not increase your marks</mark>.
+                      You are better off spending that effort in improving other aspects of the project. In fact, here is the grading criterion for the individual project effort:</p>
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Evaluating the  Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                      <div>
+                        <p>
+                          <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong></p>
+                        <ul>
+                          <li><mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark></li>
+                          <li>The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.</li>
+                        </ul>
+                        <ul radio-group="e7d80" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Unable to judge</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Significantly less than a typical iP</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Slightly less than a typical iP</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  At least as much as a typical iP</label></li>
+                        </ul>
+                      </div>
+                    </panel>
                   </box>
                   </span>
                   <span id="teamExpectations">
@@ -1048,8 +942,7 @@ method 2 ...
                 <div id="Constraint-No-DBMS">
                   <h4 id="constraint-no-dbms"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-No-DBMS</span><a class="fa fa-anchor" href="#constraint-no-dbms"></a></h4>
                   <div class="indented-level2">
-                    <p>Do not use a
-                      <tooltip><template slot="_content">Database Management System e.g., MySQL</template>DBMS</tooltip> to store data.<br>
+                    <p>Do not use a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Database Management System e.g., MySQL</span>DBMS</span> to store data.<br>
                       <span class="dimmed"><strong>Reason:</strong> Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we
 need to optimize it for CS2113/T
 module learning outcomes; covering DBMS-related topics will have to be left to database modules or level 3 project modules.</span></p>
@@ -1155,11 +1048,9 @@ module learning outcomes; covering DBMS-related topics will have to be left to d
                       inputs, if applicable.<br> Also keep in mind:</p>
                     <ul>
                       <li>Regular typing is usually faster than using key combinations.</li>
-                      <li>
-                        <tooltip><template slot="_content">typing the full command and hitting ENTER will complete the task</template>One-shot commands</tooltip> are faster over
-                        <tooltip><template slot="_content">prompting the user to input one parameter at a time</template>multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert
-                        users.
-                        <br></li>
+                      <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">typing the full command and hitting ENTER will complete the task</span>One-shot commands</span>
+                        are faster over <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">prompting the user to input one parameter at a time</span>multi-step
+                        commands</span>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert users.<br></li>
                     </ul>
                   </div>
                 </div>
@@ -1290,7 +1181,7 @@ module learning outcomes; covering DBMS-related topics will have to be left to d
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

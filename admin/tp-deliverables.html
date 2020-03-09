@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: tP: Deliverables</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -229,74 +229,74 @@
 <div>
 <ul>
 <li><strong>Should be an executable jar file</strong>.</li>
-<li><strong>Should be <tooltip><template slot="_content"> i.e., it can be used by end-users</template><em>releasable</em></tooltip></strong>. While some features may be scheduled for later versions, the features in v2.1 should be good enough to make it usable by at least some of the target users.</li>
-<li>Also note the following constraint:</li></ul>
-<div class="indented-level2">
-<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-File-Size <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
-            </p>
-            </template>
-            <div>
-              <h4 id="constraint-file-size"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-File-Size</span><a class="fa fa-anchor" href="#constraint-file-size"></a></h4>
-              <div class="indented-level2">
-                <p>The file sizes of the deliverables should not exceed the limits given below. <br>
-                  <span class="dimmed"><strong>Reason:</strong> It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue</span>:</p>
-                <ul>
-                  <li><span class="text-danger">JAR file: 100Mb</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)</li>
-                  <li><span class="text-danger">PDF files: 15Mb/file</span> (Not following the recommended method of converting to PDF can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).</li>
-                </ul>
-              </div>
+<li><strong>Should be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"> i.e., it can be used by end-users</span><em>releasable</em></span>
+            </strong>. While some features may be scheduled for later versions, the features in v2.1 should be good enough to make it usable by at least some of the target users.</li>
+            <li>Also note the following constraint:</li>
+            </ul>
+            <div class="indented-level2">
+              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-File-Size <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                <div>
+                  <h4 id="constraint-file-size"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-File-Size</span><a class="fa fa-anchor" href="#constraint-file-size"></a></h4>
+                  <div class="indented-level2">
+                    <p>The file sizes of the deliverables should not exceed the limits given below. <br>
+                      <span class="dimmed"><strong>Reason:</strong> It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue</span>:</p>
+                    <ul>
+                      <li><span class="text-danger">JAR file: 100Mb</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)</li>
+                      <li><span class="text-danger">PDF files: 15Mb/file</span> (Not following the recommended method of converting to PDF can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).</li>
+                    </ul>
+                  </div>
+                </div>
+              </panel>
             </div>
+            <p></p>
+          </div>
+          </span>
+          <h3 id="deliverable-source-code">
+            <div class="text-white bg-info p-1">Deliverable: Source code</div><a class="fa fa-anchor" href="#deliverable-source-code"></a></h3>
+          <span id="tp-deliverables-sourcecode">
+<div>
+<ul>
+<li><strong>Should match v2.1 deliverables</strong> i.e., executable, docs, website, etc.</li>
+<li><strong>To be delivered as a Git repo.</strong> Ensure your GitHub team repo is updated to match the executable.</li></ul></div></span>
+          <h3 id="deliverable-user-guide-ug">
+            <div class="text-white bg-info p-1">Deliverable: User Guide (UG)</div><a class="fa fa-anchor" href="#deliverable-user-guide-ug"></a></h3>
+          <span id="tp-deliverables-ug">
+<div>
+<box>
+<p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <strong>In UG/DG, using hierarchical section numbering and figure numbering is optional</strong> (reason: it's not easy to do in MarkDown), but make sure it does not
+          inconvenience the reader (e.g., use section/figure title and/or hyperlinks to point to the section/figure being referred to). Examples:</p>
+          <blockquote>
+            <p>In the section <a href><em>Implementation</em></a> given above ...</p>
+          </blockquote>
+          </box>
+          <ul>
+            <li><strong>Follow the <a href="https://se-edu.github.io/addressbook-level3/UserGuide.html">AddressBook-Level3 (AB3) UG</a> structure</strong>.</li>
+            <li><strong>Should cover all v2.1 features</strong>.<br>
+              <strong>Ensure those descriptions match the product precisely</strong>, as it will be used by peer testers (<mark>inaccuracies will be considered bugs</mark>).</li>
+            <li><strong>Optionally, can also cover future features</strong>. Mark those as <code>Coming in v3.0</code>.</li>
+            <li>Also note the following constraint:</li>
+          </ul>
+          <div class="indented-level2">
+            <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-File-Size <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+              <div>
+                <h4 id="constraint-file-size-2"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-File-Size</span><a class="fa fa-anchor" href="#constraint-file-size-2"></a></h4>
+                <div class="indented-level2">
+                  <p>The file sizes of the deliverables should not exceed the limits given below. <br>
+                    <span class="dimmed"><strong>Reason:</strong> It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue</span>:</p>
+                  <ul>
+                    <li><span class="text-danger">JAR file: 100Mb</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)</li>
+                    <li><span class="text-danger">PDF files: 15Mb/file</span> (Not following the recommended method of converting to PDF can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).</li>
+                  </ul>
+                </div>
+              </div>
             </panel>
           </div>
           <p></p>
         </div>
         </span>
-        <h3 id="deliverable-source-code">
-          <div class="text-white bg-info p-1">Deliverable: Source code</div><a class="fa fa-anchor" href="#deliverable-source-code"></a></h3>
-        <span id="tp-deliverables-sourcecode">
-<div>
-<ul>
-<li><strong>Should match v2.1 deliverables</strong> i.e., executable, docs, website, etc.</li>
-<li><strong>To be delivered as a Git repo.</strong> Ensure your GitHub team repo is updated to match the executable.</li></ul></div></span>
-        <h3 id="deliverable-user-guide-ug">
-          <div class="text-white bg-info p-1">Deliverable: User Guide (UG)</div><a class="fa fa-anchor" href="#deliverable-user-guide-ug"></a></h3>
-        <span id="tp-deliverables-ug">
-<div>
-<box>
-<p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <strong>In UG/DG, using hierarchical section numbering and figure numbering is optional</strong> (reason: it's not easy to do in MarkDown), but make sure it does not inconvenience
-        the reader (e.g., use section/figure title and/or hyperlinks to point to the section/figure being referred to). Examples:</p>
-        <blockquote>
-          <p>In the section <a href><em>Implementation</em></a> given above ...</p>
-        </blockquote>
-        </box>
-        <ul>
-          <li><strong>Follow the <a href="https://se-edu.github.io/addressbook-level3/UserGuide.html">AddressBook-Level3 (AB3) UG</a> structure</strong>.</li>
-          <li><strong>Should cover all v2.1 features</strong>.<br>
-            <strong>Ensure those descriptions match the product precisely</strong>, as it will be used by peer testers (<mark>inaccuracies will be considered bugs</mark>).</li>
-          <li><strong>Optionally, can also cover future features</strong>. Mark those as <code>Coming in v3.0</code>.</li>
-          <li>Also note the following constraint:</li>
-        </ul>
-        <div class="indented-level2">
-          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-File-Size <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
-            <div>
-              <h4 id="constraint-file-size-2"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-File-Size</span><a class="fa fa-anchor" href="#constraint-file-size-2"></a></h4>
-              <div class="indented-level2">
-                <p>The file sizes of the deliverables should not exceed the limits given below. <br>
-                  <span class="dimmed"><strong>Reason:</strong> It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue</span>:</p>
-                <ul>
-                  <li><span class="text-danger">JAR file: 100Mb</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)</li>
-                  <li><span class="text-danger">PDF files: 15Mb/file</span> (Not following the recommended method of converting to PDF can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).</li>
-                </ul>
-              </div>
-            </div>
-          </panel>
-        </div>
-        <p></p>
-      </div>
-      </span>
-      <h3 id="deliverable-developer-guide-dg">
-        <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div><a class="fa fa-anchor" href="#deliverable-developer-guide-dg"></a></h3>
-      <span id="tp-deliverables-dg">
+        <h3 id="deliverable-developer-guide-dg">
+          <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div><a class="fa fa-anchor" href="#deliverable-developer-guide-dg"></a></h3>
+        <span id="tp-deliverables-dg">
 <div>
 <ul>
 <li>
@@ -316,16 +316,16 @@
 <li>Appendix E: Instructions for Manual Testing (more details below)</li></ul></li>
 <li>
 <p><font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big>
-      </font> <strong>Include an appendix named <em>Instructions for Manual Testing</em></strong>, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.</p>
-      <ul>
-        <li><strong>Cover all user-testable features</strong>.</li>
-        <li><strong>No need to give a long list of test cases</strong> including all possible variations. It is upto the tester to come up with those variations.</li>
-        <li><strong>Inaccurate instructions will be considered bugs</strong>.</li>
-      </ul>
-      </li>
-      </ul>
-      <h5 id="dg-tips">DG Tips<a class="fa fa-anchor" href="#dg-tips"></a></h5>
-      <span id="dgTips">
+        </font> <strong>Include an appendix named <em>Instructions for Manual Testing</em></strong>, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.</p>
+        <ul>
+          <li><strong>Cover all user-testable features</strong>.</li>
+          <li><strong>No need to give a long list of test cases</strong> including all possible variations. It is upto the tester to come up with those variations.</li>
+          <li><strong>Inaccurate instructions will be considered bugs</strong>.</li>
+        </ul>
+        </li>
+        </ul>
+        <h5 id="dg-tips">DG Tips<a class="fa fa-anchor" href="#dg-tips"></a></h5>
+        <span id="dgTips">
 <ul>
 <li><strong>Aim to showcase your documentation skills.</strong> The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v2.1 (hypothetically).<br>
 For an example, see <a href="https://se-edu.github.io/addressbook-level3/DeveloperGuide.html#proposed-undo-redo-feature">the description of the undo/redo feature implementation in the AddressBook-Level3 (AB3) developer guide</a>.</li>
@@ -337,150 +337,158 @@ Ways to simplify diagrams:
 <ul>
 <li>a class diagram can omit minor utility classes, private/unimportant members; some less-important associations can be shown as attributes instead.</li>
 <li>a sequence diagram can omit less important interactions, self-calls.</li></ul></li>
-<li><strong>Omit repetitive details</strong> e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <trigger trigger="click" for="modal:ipWeek10-logicClassDiagram">AB3 Logic class diagram</trigger> shows concrete <code>*Command</code> classes).</li>
-<li><strong>Limit the scope of a diagram.</strong> Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not relevant to that purpose.</li>
-<li><strong>Break diagrams into smaller fragments</strong> when possible.
-<ul>
-<li>If a component has a lot of classes, consider further dividing into sub-components (e.g., a Parser sub-component inside the Logic component). After that, sub-components can be shown as black-boxes in the main diagram and their details can be shown as separate diagrams.</li>
-<li>You can use <code>ref</code> frames to break sequence diagrams to multiple diagrams.</li></ul></li></ul></li>
-<li><strong>Integrate diagrams into the description.</strong> Place the diagram close to where it is being described.</li>
-<li><strong>Use code snippets sparingly.</strong> The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only.</li>
-<li><strong>Resize diagrams</strong> so that the text size in the diagram matches the the text size of the main text of the diagram. See <trigger trigger="click" for="modal:ipWeek10-diagramSizeNegative">example</trigger>.</li></ul>
-<modal large id="modal:ipWeek10-umlExamples" class="algolia-no-index"><template slot="_header">UML Diagrams: Negative Examples </template>
-<p>These class diagrams seem to have lot of member details, which can get outdated pretty quickly:<br>
-<img src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750"><br>
-<img src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750"></p>
-  <hr>
-  This class diagram seems to have too many classes:
-  <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/ModelClassDiagram.png" width="750">
-  <hr>
-  These sequence diagrams are bordering on 'too complicated':
-  <img src="https://cs2103-ay1819s1-w13-1.github.io/main/images/TagCommandSequenceDiagram.png" width="750">
-  <p></p>
-  <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750"></modal>
-<modal large id="modal:ipWeek10-diagramSizeNegative" class="algolia-no-index"><template slot="_header">Diagram resizing: a negative example</template>
-<p>In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br>
-<img src="/website/admin/images/diagramSizeNegativeExample.png" width="200"><br>
-It will look more 'polished' if the two text sizes match.
-</p></modal>
-<modal large id="modal:ipWeek10-logicClassDiagram" class="algolia-no-index"><template slot="_header">AB3 - Class Diagram of the Logic Component</template>
-  <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="900"></modal>
-<modal large id="modal:ipWeek10-deleteSd" class="algolia-no-index"><template slot="_header">AB3 - Sequence Diagram for the <code>delete</code> command</template>
-  <img src="https://se-edu.github.io/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"></modal>
-<modal large id="modal:ipWeek10-archiSd" class="algolia-no-index"><template slot="_header">AB3 - Architecture-Level Sequence Diagram</template>
-  <img src="https://se-edu.github.io/addressbook-level3/images/ArchitectureSequenceDiagram.png"></modal></span></div>
-    </span>
-    <h3 id="deliverable-product-website">
-      <div class="text-white bg-info p-1">Deliverable: Product Website</div><a class="fa fa-anchor" href="#deliverable-product-website"></a></h3>
-    <span id="tp-deliverables-website">
+<li><strong>Omit repetitive details</strong> e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <span trigger="click" for="modal:ipWeek10-logicClassDiagram" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipWeek10-logicClassDiagram'].show()" class="trigger">AB3 Logic class diagram</span>        shows concrete <code>*Command</code> classes).</li>
+        <li><strong>Limit the scope of a diagram.</strong> Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not relevant to that purpose.</li>
+        <li><strong>Break diagrams into smaller fragments</strong> when possible.
+          <ul>
+            <li>If a component has a lot of classes, consider further dividing into sub-components (e.g., a Parser sub-component inside the Logic component). After that, sub-components can be shown as black-boxes in the main diagram and their details can
+              be shown as separate diagrams.</li>
+            <li>You can use <code>ref</code> frames to break sequence diagrams to multiple diagrams.</li>
+          </ul>
+        </li>
+        </ul>
+        </li>
+        <li><strong>Integrate diagrams into the description.</strong> Place the diagram close to where it is being described.</li>
+        <li><strong>Use code snippets sparingly.</strong> The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly
+          relevant parts only.</li>
+        <li><strong>Resize diagrams</strong> so that the text size in the diagram matches the the text size of the main text of the diagram. See <span trigger="click" for="modal:ipWeek10-diagramSizeNegative" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+            v-on:click="$refs['modal:ipWeek10-diagramSizeNegative'].show()" class="trigger">example</span>.</li>
+        </ul>
+        <b-modal id="modal:ipWeek10-umlExamples" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-umlExamples"><template slot="modal-title">UML Diagrams: Negative Examples </template>
+          <p>These class diagrams seem to have lot of member details, which can get outdated pretty quickly:<br>
+            <img src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750"><br>
+            <img src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750"></p>
+          <hr> This class diagram seems to have too many classes:
+          <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/ModelClassDiagram.png" width="750">
+          <hr> These sequence diagrams are bordering on 'too complicated':
+          <img src="https://cs2103-ay1819s1-w13-1.github.io/main/images/TagCommandSequenceDiagram.png" width="750">
+          <p></p>
+          <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750"></b-modal>
+        <b-modal id="modal:ipWeek10-diagramSizeNegative" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-diagramSizeNegative"><template slot="modal-title">Diagram resizing: a negative example</template>
+          <p>In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br>
+            <img src="/website/admin/images/diagramSizeNegativeExample.png" width="200"><br> It will look more 'polished' if the two text sizes match.
+          </p>
+        </b-modal>
+        <b-modal id="modal:ipWeek10-logicClassDiagram" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-logicClassDiagram"><template slot="modal-title">AB3 - Class Diagram of the Logic Component</template>
+          <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="900"></b-modal>
+        <b-modal id="modal:ipWeek10-deleteSd" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-deleteSd"><template slot="modal-title">AB3 - Sequence Diagram for the <code>delete</code> command</template>
+          <img src="https://se-edu.github.io/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"></b-modal>
+        <b-modal id="modal:ipWeek10-archiSd" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-archiSd"><template slot="modal-title">AB3 - Architecture-Level Sequence Diagram</template>
+          <img src="https://se-edu.github.io/addressbook-level3/images/ArchitectureSequenceDiagram.png"></b-modal>
+        </span>
+      </div>
+      </span>
+      <h3 id="deliverable-product-website">
+        <div class="text-white bg-info p-1">Deliverable: Product Website</div><a class="fa fa-anchor" href="#deliverable-product-website"></a></h3>
+      <span id="tp-deliverables-website">
 <div>
 <ul>
 <li><strong>Use the GitHub Pages feature to publish your tP</strong> repo as a website.</li></ul>
 <h4 id="website-optional-readme"><span class="badge badge-info">Website</span> <span class="text-info">[optional] README</span><a class="fa fa-anchor" href="#website-optional-readme"></a></h4>
-    <p><mark><strong>This deliverable is optional.</strong></mark></p>
-    <ul>
-      <li><mark>Ensure the <code>Ui.png</code> matches the current product</mark></li>
-    </ul>
-    <div class="indented-level3" id="tips-for-product-screenshot">
-      <box>
-        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Some common sense tips for a good product screenshot</strong></p>
-        <p><code>Ui.png</code> represents your product in its full glory.</p>
-        <ul>
-          <li>Before taking the screenshot, populate the product with data that makes the product look good. For example,</li>
-          <li>If the product is supposed to show photos, use real photos instead of dummy placeholders.</li>
-          <li>If the product doesn't have nice line wrapping for long inputs/outputs, don't use such inputs/outputs for the screenshot.</li>
-          <li>It should show a state in which the product is well-populated <span class="dimmed">i.e., don't leave data panels largely blank</span></li>
-          <li>Choose a state that showcase the main features of the product <span class="dimmed">i.e., the login screen is not usually a good choice</span></li>
-          <li>Take a clean screenshot with a decent resolution. Some screenshot tools can capture a specified window only. If your tool cannot do that, make sure you crop away the extraneous parts captured by the screenshot.</li>
-          <li>Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is in use for real.</li>
-        </ul>
-        <panel type="seamless" expanded><template slot="_header"><p>Examples</p></template>
-          <tabs>
+      <p><mark><strong>This deliverable is optional.</strong></mark></p>
+      <ul>
+        <li><mark>Ensure the <code>Ui.png</code> matches the current product</mark></li>
+      </ul>
+      <div class="indented-level3" id="tips-for-product-screenshot">
+        <box>
+          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Some common sense tips for a good product screenshot</strong></p>
+          <p><code>Ui.png</code> represents your product in its full glory.</p>
+          <ul>
+            <li>Before taking the screenshot, populate the product with data that makes the product look good. For example,</li>
+            <li>If the product is supposed to show photos, use real photos instead of dummy placeholders.</li>
+            <li>If the product doesn't have nice line wrapping for long inputs/outputs, don't use such inputs/outputs for the screenshot.</li>
+            <li>It should show a state in which the product is well-populated <span class="dimmed">i.e., don't leave data panels largely blank</span></li>
+            <li>Choose a state that showcase the main features of the product <span class="dimmed">i.e., the login screen is not usually a good choice</span></li>
+            <li>Take a clean screenshot with a decent resolution. Some screenshot tools can capture a specified window only. If your tool cannot do that, make sure you crop away the extraneous parts captured by the screenshot.</li>
+            <li>Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is in use for real.</li>
+          </ul>
+          <panel type="seamless" expanded><template slot="_header"><p>Examples</p></template>
+            <tabs>
 
-            <tab><template slot="_header">👎 Not Good</template>
-              <p>Reason: Distracting annotations.</p>
-              <img src="/website/admin/images/Ui-notGood1.png" width="600"></tab>
+              <tab><template slot="_header">👎 Not Good</template>
+                <p>Reason: Distracting annotations.</p>
+                <img src="/website/admin/images/Ui-notGood1.png" width="600"></tab>
 
-            <tab class="algolia-no-index"><template slot="_header">👎 Not Good</template>
-              <p>Reason: Not enough data.</p>
-              <img src="/website/admin/images/Ui-notGood2.png" width="600"></tab>
+              <tab class="algolia-no-index"><template slot="_header">👎 Not Good</template>
+                <p>Reason: Not enough data.</p>
+                <img src="/website/admin/images/Ui-notGood2.png" width="600"></tab>
 
-            <tab class="algolia-no-index"><template slot="_header">👎 Not Good</template>
-              <p>Reason: screenshot not cropped cleanly (contains extra background details)</p>
-              <img src="/website/admin/images/Ui-notGood3.png" width="600"></tab>
-            <tab class="algolia-no-index"><template slot="_header">👍 Good</template>
-              <img src="/website/admin/images/Ui-good1.png" width="600"></tab>
+              <tab class="algolia-no-index"><template slot="_header">👎 Not Good</template>
+                <p>Reason: screenshot not cropped cleanly (contains extra background details)</p>
+                <img src="/website/admin/images/Ui-notGood3.png" width="600"></tab>
+              <tab class="algolia-no-index"><template slot="_header">👍 Good</template>
+                <img src="/website/admin/images/Ui-good1.png" width="600"></tab>
 
-            <tab class="algolia-no-index"><template slot="_header">👍 Good</template>
-              <img src="/website/admin/images/Ui-good2.png" width="600"></tab>
-          </tabs>
-        </panel>
-      </box>
+              <tab class="algolia-no-index"><template slot="_header">👍 Good</template>
+                <img src="/website/admin/images/Ui-good2.png" width="600"></tab>
+            </tabs>
+          </panel>
+        </box>
+      </div>
+      <h4 id="website-optional-aboutus-page"><span class="badge badge-info">Website</span> <span class="text-info">[optional] AboutUs Page</span><a class="fa fa-anchor" href="#website-optional-aboutus-page"></a></h4>
+      <p><mark><strong>This deliverable is optional.</strong></mark></p>
+      <ul>
+        <li><strong>Use a suitable profile photo.</strong></li>
+      </ul>
+      <div id="profile-photo" class="indented-level2">
+        <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in the 'Teaching
+          team' page. Given below are some examples of good and bad profile photos.<br>
+          <img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
+        <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may use <a href="https://en.wikipedia.org/wiki/File:Portrait_placeholder.png">a placeholder image</a>          in place of the photo in module-related documents that are publicly visible.</p>
+      </div>
+      <ul>
+        <li><strong>Include a link to each person's PPP page.</strong></li>
+        <li><strong>Team member names match full names used by LumiNUS.</strong></li>
+      </ul>
+      <h4 id="website-ug-web-page"><span class="badge badge-info">Website</span> <span class="text-info">UG (Web Page)</span><a class="fa fa-anchor" href="#website-ug-web-page"></a></h4>
+      <ul>
+        <li>Should match the submitted PDF file.</li>
+      </ul>
+      <h4 id="website-dg-web-page"><span class="badge badge-info">Website</span> <span class="text-info">DG (Web Page)</span><a class="fa fa-anchor" href="#website-dg-web-page"></a></h4>
+      <ul>
+        <li>Should match the submitted PDF file.</li>
+      </ul>
     </div>
-    <h4 id="website-optional-aboutus-page"><span class="badge badge-info">Website</span> <span class="text-info">[optional] AboutUs Page</span><a class="fa fa-anchor" href="#website-optional-aboutus-page"></a></h4>
-    <p><mark><strong>This deliverable is optional.</strong></mark></p>
-    <ul>
-      <li><strong>Use a suitable profile photo.</strong></li>
-    </ul>
-    <div id="profile-photo" class="indented-level2">
-      <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in the 'Teaching
-        team' page. Given below are some examples of good and bad profile photos.<br>
-        <img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
-      <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may use <a href="https://en.wikipedia.org/wiki/File:Portrait_placeholder.png">a placeholder image</a>        in place of the photo in module-related documents that are publicly visible.</p>
-    </div>
-    <ul>
-      <li><strong>Include a link to each person's PPP page.</strong></li>
-      <li><strong>Team member names match full names used by LumiNUS.</strong></li>
-    </ul>
-    <h4 id="website-ug-web-page"><span class="badge badge-info">Website</span> <span class="text-info">UG (Web Page)</span><a class="fa fa-anchor" href="#website-ug-web-page"></a></h4>
-    <ul>
-      <li>Should match the submitted PDF file.</li>
-    </ul>
-    <h4 id="website-dg-web-page"><span class="badge badge-info">Website</span> <span class="text-info">DG (Web Page)</span><a class="fa fa-anchor" href="#website-dg-web-page"></a></h4>
-    <ul>
-      <li>Should match the submitted PDF file.</li>
-    </ul>
-  </div>
-  </span>
-  <h3 id="deliverable-project-portfolio-page-ppp">
-    <div class="text-white bg-info p-1">Deliverable: Project Portfolio Page (PPP)</div><a class="fa fa-anchor" href="#deliverable-project-portfolio-page-ppp"></a></h3>
-  <span id="tp-deliverables-ppp">
+    </span>
+    <h3 id="deliverable-project-portfolio-page-ppp">
+      <div class="text-white bg-info p-1">Deliverable: Project Portfolio Page (PPP)</div><a class="fa fa-anchor" href="#deliverable-project-portfolio-page-ppp"></a></h3>
+    <span id="tp-deliverables-ppp">
 <div>
 <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
 <h4 id="ppp-objectives"><span class="badge badge-info">PPP</span> <span class="text-info">Objectives</span><a class="fa fa-anchor" href="#ppp-objectives"></a></h4>
-  <ul>
-    <li>For you to use <span class="dimmed">(e.g. in your resume)</span> as a well-documented data point of your SE experience</li>
-    <li>For evaluators to use as a data point to evaluate your project contributions</li>
-  </ul>
-  <h4 id="ppp-sections-to-include"><span class="badge badge-info">PPP</span> <span class="text-info">Sections to include</span><a class="fa fa-anchor" href="#ppp-sections-to-include"></a></h4>
-  <ul>
-    <li><strong>Overview</strong>: A short overview of your product to provide some context to the reader. The opening 1-2 sentences may be reused by all team members. If your product overview extends beyond 1-2 sentences, the remainder should be written
-      by yourself.
-    </li>
-    <li><strong>Summary of Contributions</strong> --Suggested items to include:
-      <ul>
-        <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard">tP Code Dashboard</a>. The link is available in the <a href="/website/admin/projectList.html">Project List Page</a> --
-          linked to the <span aria-hidden="true" class="fas fa-code"></span> icon under your photo.</li>
-        <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
-        <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
-        <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
-        <li><strong>Contributions to <trigger trigger="click" for="modal:deliverablesPPP-teamTasks">team-based tasks </trigger>:</strong></li>
-        <li><strong>Review/mentoring contributions:</strong> Links to PRs reviewed, instances of helping team members in other ways</li>
-        <li><strong>Contributions beyond the project team:</strong>
-          <ul>
-            <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
-            <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  <modal large id="modal:deliverablesPPP-teamTasks" class="algolia-no-index"><template slot="_header">Team-Based Tasks</template>
-    <div>
-      <box>
-        <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p></template>
-          <span id="example-team-tasks">
+    <ul>
+      <li>For you to use <span class="dimmed">(e.g. in your resume)</span> as a well-documented data point of your SE experience</li>
+      <li>For evaluators to use as a data point to evaluate your project contributions</li>
+    </ul>
+    <h4 id="ppp-sections-to-include"><span class="badge badge-info">PPP</span> <span class="text-info">Sections to include</span><a class="fa fa-anchor" href="#ppp-sections-to-include"></a></h4>
+    <ul>
+      <li><strong>Overview</strong>: A short overview of your product to provide some context to the reader. The opening 1-2 sentences may be reused by all team members. If your product overview extends beyond 1-2 sentences, the remainder should be written
+        by yourself.
+      </li>
+      <li><strong>Summary of Contributions</strong> --Suggested items to include:
+        <ul>
+          <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard">tP Code Dashboard</a>. The link is available in the <a href="/website/admin/projectList.html">Project List Page</a> --
+            linked to the <span aria-hidden="true" class="fas fa-code"></span> icon under your photo.</li>
+          <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
+          <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
+          <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
+          <li><strong>Contributions to <span trigger="click" for="modal:deliverablesPPP-teamTasks" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:deliverablesPPP-teamTasks'].show()" class="trigger">team-based tasks </span>:</strong></li>
+          <li><strong>Review/mentoring contributions:</strong> Links to PRs reviewed, instances of helping team members in other ways</li>
+          <li><strong>Contributions beyond the project team:</strong>
+            <ul>
+              <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
+              <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <b-modal id="modal:deliverablesPPP-teamTasks" ok-only size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
+      <div>
+        <box>
+          <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p></template>
+            <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
 <li>Necessary general code enhancements</li>
@@ -488,73 +496,73 @@ It will look more 'polished' if the two text sizes match.
 <li>Maintaining the issue tracker</li>
 <li>Release management</li>
 <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
-          <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
-          </ol>
-          </span>
-        </panel>
-        <p></p>
+            <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+            </ol>
+            </span>
+          </panel>
+          <p></p>
+        </box>
+      </div>
+    </b-modal>
+    <div class="indented-level2">
+      <box border-left-color="darkcyan">
+        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention things that will earn you
+          a fair score <span class="dimmed">e.g., explain how deep the enhancement is, why it is <em>complete</em>, how hard it was to implement etc.</span>.
+        </p>
       </box>
     </div>
-  </modal>
-  <div class="indented-level2">
-    <box border-left-color="darkcyan">
-      <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention things that will earn you
-        a fair score <span class="dimmed">e.g., explain how deep the enhancement is, why it is <em>complete</em>, how hard it was to implement etc.</span>.
-      </p>
-    </box>
-  </div>
-  <ul>
-    <li>
-      <p><strong>[Optional] Contributions to the User Guide (Extracts)</strong>: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
-        <span class="dimmed">The purpose of allowing you to include <em>proposed</em> features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.</span></p>
-    </li>
-    <li>
-      <p><strong>[Optional] Contributions to the Developer Guide (Extracts)</strong>: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You
-        can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.</p>
-    </li>
-    <li>
-      <p>[Optional] If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded).</p>
-    </li>
-  </ul>
-  <h4 id="ppp-format"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span><a class="fa fa-anchor" href="#ppp-format"></a></h4>
-  <ul>
-    <li>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/goodcoder123.adoc</code></li>
-    <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://se-edu.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
-  </ul>
-  <h4 id="ppp-page-limit"><span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span><a class="fa fa-anchor" href="#ppp-page-limit"></a></h4>
-  <div class="indented-level2">
-    <div class="table-responsive">
-      <table class="markbind-table table table-bordered table-striped">
-        <thead>
-          <tr>
-            <th>Content</th>
-            <th>Recommended</th>
-            <th>Hard Limit</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Overview + Summary of contributions</td>
-            <td>0.5-1</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>[Optional] Contributions to the User Guide</td>
-            <td>1-3</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>[Optional] Contributions to the Developer Guide</td>
-            <td>3-6</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+    <ul>
+      <li>
+        <p><strong>[Optional] Contributions to the User Guide (Extracts)</strong>: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
+          <span class="dimmed">The purpose of allowing you to include <em>proposed</em> features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.</span></p>
+      </li>
+      <li>
+        <p><strong>[Optional] Contributions to the Developer Guide (Extracts)</strong>: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You
+          can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.</p>
+      </li>
+      <li>
+        <p>[Optional] If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded).</p>
+      </li>
+    </ul>
+    <h4 id="ppp-format"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span><a class="fa fa-anchor" href="#ppp-format"></a></h4>
+    <ul>
+      <li>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/goodcoder123.adoc</code></li>
+      <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://se-edu.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
+    </ul>
+    <h4 id="ppp-page-limit"><span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span><a class="fa fa-anchor" href="#ppp-page-limit"></a></h4>
+    <div class="indented-level2">
+      <div class="table-responsive">
+        <table class="markbind-table table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Content</th>
+              <th>Recommended</th>
+              <th>Hard Limit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Overview + Summary of contributions</td>
+              <td>0.5-1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>[Optional] Contributions to the User Guide</td>
+              <td>1-3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>[Optional] Contributions to the Developer Guide</td>
+              <td>3-6</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
-  <ul>
-    <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
-  </ul>
+    <ul>
+      <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
+    </ul>
   </div>
   </span>
   <h3 id="deliverable-demo">
@@ -584,15 +592,7 @@ It will look more 'polished' if the two text sizes match.
   <div class="indented-level2">
     <box>
       <p>Here is an example:</p>
-      <pre><code class="hljs">Hi, welcome to the demo of our product FooBar. It is a product to ensure the user takes
-frequent standing-breaks while working.
-It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods
-of sitting.
-The user first sets the parameters such as frequency and targets, and then enters a
-command to record the start of the sitting time, ... The app shows the length of the
-sitting periods, and alerts the user if ...
-...
-</code></pre>
+      <pre><code class="hljs"><span>Hi, welcome to the demo of our product FooBar. It is a product to ensure the user takes</span><span>frequent standing-breaks while working.</span><span>It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods</span><span>of sitting.</span><span>The user first sets the parameters such as frequency and targets, and then enters a</span><span>command to record the start of the sitting time, ... The app shows the length of the</span><span>sitting periods, and alerts the user if ...</span><span>...</span></code></pre>
     </box>
   </div>
   <ul>
@@ -607,8 +607,7 @@ sitting periods, and alerts the user if ...
     <li><strong>Demo the product using the same executable</strong> you submitted, on your own laptop, using the TV.</li>
     <li><strong>It can be a <em>sitting down</em> demo.</strong> You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.</li>
     <li><strong>It will be an uninterrupted demo.</strong> The audience members will not interrupt you during the demo. That means you should finish within the given time.</li>
-    <li><strong>Use a sufficient amount of <tooltip><template slot="_content"><code>Mr aaa</code> is not a realistic person name</template><em>realistic</em></tooltip> demo data.</strong> <span class="dimmed">e.g at least 20 data items</span>. Trying to demo
-      a product using just 1-2 sample data creates a bad impression.</li>
+    <li><strong>Use a sufficient amount of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code>Mr aaa</code> is not a realistic person name</span><em>realistic</em></span> demo data.</strong>      <span class="dimmed">e.g at least 20 data items</span>. Trying to demo a product using just 1-2 sample data creates a bad impression.</li>
     <li><strong>Dress code</strong>: The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
   </ul>
   <h4 id="demo-tips"><span class="badge badge-info">Demo</span> <span class="text-info">Tips</span><a class="fa fa-anchor" href="#demo-tips"></a></h4>
@@ -639,10 +638,10 @@ sitting periods, and alerts the user if ...
   <span id="tp-deliverables-practicalexam-dry-run">
 <div>
 <h4 id="pe-d-overview"><span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span><a class="fa fa-anchor" href="#pe-d-overview"></a></h4>
-  <p><strong>What</strong>: The v2.0 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam (PE) Dry Run</em> as this round of testing will be similar to the graded
-    <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v2.1</trigger>.</p>
+  <p><strong>What</strong>: The v2.0 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam (PE) Dry Run</em> as this round of testing will be similar to the graded <span trigger="click" for="modal:projectDeliverablesPeDryRun-pe"
+      v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectDeliverablesPeDryRun-pe'].show()" class="trigger">Practical Exam that will be done at v2.1</span>.</p>
   <p><strong>When, where</strong>: uses a 40 minute slot at the start of week 11 lecture</p>
-  <modal large id="modal:projectDeliverablesPeDryRun-pe" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Practical Exam</template>
+  <b-modal id="modal:projectDeliverablesPeDryRun-pe" ok-only size="lg" modal-class="mb-zoom" ref="modal:projectDeliverablesPeDryRun-pe"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Practical Exam</template>
     <div>
       <div>
         <h4 id="pe-overview"><span class="badge badge-success">PE</span> <span class="text-success">Overview</span><a class="fa fa-anchor" href="#pe-overview"></a></h4>
@@ -675,8 +674,8 @@ sitting periods, and alerts the user if ...
             </li>
             <li>The penalty for a bug is divided equally among assignees.</li>
             <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
-            <li>
-              <tooltip><template slot="_content">i.e., the same bug reported by many testers</template><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
+            <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span> earn less credit
+              for the tester and slightly more penalty for the developer.</li>
             <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
             <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
               <ul>
@@ -685,8 +684,8 @@ sitting periods, and alerts the user if ...
               </ul>
             </li>
             <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
-            <li>Excessive incorrect downgrading/rejecting/
-              <tooltip><template slot="_content">marking as duplicates</template>duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+            <li>Excessive incorrect downgrading/rejecting/<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">marking as duplicates</span>duplicate-flagging</span>,
+              if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
           </ul>
         </div>
         </panel>
@@ -768,8 +767,8 @@ sitting periods, and alerts the user if ...
                 </ul>
               </li>
               <li>
-                <p><strong><span class="text-danger">Download the product to be tested</span></strong>
-                  <tooltip><template slot="_content">notifications are likely to go out on the morning of the PE/PE-D session</template>after you have been notified</tooltip> of which team you have been allocated to test.</p>
+                <p><strong><span class="text-danger">Download the product to be tested</span></strong> <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">notifications are likely to go out on the morning of the PE/PE-D session</span>after
+                  you have been notified</span> of which team you have been allocated to test.</p>
               </li>
               <li>
                 <p><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</p>
@@ -1358,20 +1357,9 @@ sitting periods, and alerts the user if ...
         <li><strong>Do not edit the subject or the description.</strong> Your response (if any) should be added as a comment.</li>
         <li>Add a comment using the following exact template.</li>
       </ul>
-      <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
-{replace this with your response}
-<p><span class="hljs-section">## Duplicate status (if any):</span></p>
-<p></p></code></pre>
-      <p></p>
+      <pre><code class="hljs markdown"><span><span class="hljs-section"># Team's Response</span></span><span>{replace this with your response}</span><span>&#x200B;</span><span><span class="hljs-section">## Duplicate status (if any):</span></span><span>&#x200B;</span></code></pre>
       <p>Here is an example:</p>
-      <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
-<p>Yes this is a bug. But it is a duplicate.
-<span class="hljs-bullet">* </span>Changed the bug type because this is just a bug in the UG.
-<span class="hljs-bullet">* </span>Lowered the severity because users can still use the feature.</p>
-<p><span class="hljs-section">## Duplicate status (if any):</span>
-Duplicate of #67
-</p></code></pre>
-      <p></p>
+      <pre><code class="hljs markdown"><span><span class="hljs-section"># Team's Response</span></span><span>&#x200B;</span><span>Yes this is a bug. But it is a duplicate.</span><span><span class="hljs-bullet">* </span>Changed the bug type because this is just a bug in the UG.</span><span><span class="hljs-bullet">* </span>Lowered the severity because users can still use the feature.</span><span>&#x200B;</span><span><span class="hljs-section">## Duplicate status (if any):</span></span><span>Duplicate of #67</span></code></pre>
       <ul>
         <li>Do not close the bug report after you are done processing it.</li>
         <li>Use the exact <code>Duplicate of #123</code> format to indicate duplicates.</li>
@@ -1512,12 +1500,7 @@ Duplicate of #67
                 </ul>
               </div>
 
-              <pre><code class="hljs">Team chose ['response.IssueUnclear']
-
-- [x] I disagree
-
-**Reason for disagreement:** I think one can easily reproduce the problem by following the steps I gave.
-</code></pre>
+              <pre><code class="hljs"><span>Team chose ['response.IssueUnclear']</span><span>&#x200B;</span><span>- [x] I disagree</span><span>&#x200B;</span><span>**Reason for disagreement:** I think one can easily reproduce the problem by following the steps I gave.</span></code></pre>
             </div>
           </tab>
         </tabs>
@@ -1529,7 +1512,7 @@ Duplicate of #67
       </ul>
     </div>
     </div>
-  </modal>
+  </b-modal>
   <p>
     <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Grading</strong>: Taking part in the PE dry run is strongly encouraged as it <mark>can affect your grade in the following ways</mark>.</p>
   <ul>
@@ -1540,8 +1523,8 @@ Duplicate of #67
   </ul>
   <p><strong>Why</strong>:</p>
   <ul>
-    <li><strong>To train you</strong> to do manual testing, bug reporting, bug
-      <tooltip><template slot="_content">assigning of priority order</template>triaging,</tooltip> bug fixing, communicating with users/testers/developers, evaluating products etc.</li>
+    <li><strong>To train you</strong> to do manual testing, bug reporting, bug <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">assigning of priority order</span>triaging,</span>
+      bug fixing, communicating with users/testers/developers, evaluating products etc.</li>
     <li><strong>To help you improve your product</strong> before the final submission.</li>
   </ul>
   <h4 id="pe-d-preparation"><span class="badge badge-primary">PE-D</span> <span class="text-primary">Preparation</span><a class="fa fa-anchor" href="#pe-d-preparation"></a></h4>
@@ -1615,8 +1598,8 @@ Duplicate of #67
         </ul>
       </li>
       <li>
-        <p><strong><span class="text-danger">Download the product to be tested</span></strong>
-          <tooltip><template slot="_content">notifications are likely to go out on the morning of the PE/PE-D session</template>after you have been notified</tooltip> of which team you have been allocated to test.</p>
+        <p><strong><span class="text-danger">Download the product to be tested</span></strong> <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">notifications are likely to go out on the morning of the PE/PE-D session</span>after
+          you have been notified</span> of which team you have been allocated to test.</p>
       </li>
       <li>
         <p><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</p>
@@ -1912,7 +1895,7 @@ Duplicate of #67
       </div>
     </box>
   </div>
-  <modal large id="modal:v1.3-ppp" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project →</template>
+  <b-modal id="modal:v1.3-ppp" ok-only size="lg" modal-class="mb-zoom" ref="modal:v1.3-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project →</template>
     <div>
       <div>
         <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
@@ -1931,7 +1914,7 @@ Duplicate of #67
               <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
               <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
               <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
-              <li><strong>Contributions to <trigger trigger="click" for="modal:deliverablesPPP-teamTasks">team-based tasks </trigger>:</strong></li>
+              <li><strong>Contributions to <span trigger="click" for="modal:deliverablesPPP-teamTasks" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:deliverablesPPP-teamTasks'].show()" class="trigger">team-based tasks </span>:</strong></li>
               <li><strong>Review/mentoring contributions:</strong> Links to PRs reviewed, instances of helping team members in other ways</li>
               <li><strong>Contributions beyond the project team:</strong>
                 <ul>
@@ -1942,7 +1925,7 @@ Duplicate of #67
             </ul>
           </li>
         </ul>
-        <modal large id="modal:deliverablesPPP-teamTasks" class="algolia-no-index"><template slot="_header">Team-Based Tasks</template>
+        <b-modal id="modal:deliverablesPPP-teamTasks" ok-only size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
           <div>
             <box>
               <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
@@ -1962,7 +1945,7 @@ Duplicate of #67
               <p></p>
             </box>
           </div>
-        </modal>
+        </b-modal>
         <div class="indented-level2">
           <box border-left-color="darkcyan">
             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention things that will earn
@@ -2024,7 +2007,7 @@ Duplicate of #67
         </ul>
       </div>
     </div>
-  </modal>
+  </b-modal>
   <span id="after-ped">
 <h4 id="pe-d-after-the-session"><span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span><a class="fa fa-anchor" href="#pe-d-after-the-session"></a></h4>
   <ul>
@@ -2077,8 +2060,8 @@ Duplicate of #67
       </li>
       <li>The penalty for a bug is divided equally among assignees.</li>
       <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
-      <li>
-        <tooltip><template slot="_content">i.e., the same bug reported by many testers</template><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
+      <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span> earn less credit for the
+        tester and slightly more penalty for the developer.</li>
       <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
       <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
         <ul>
@@ -2087,8 +2070,8 @@ Duplicate of #67
         </ul>
       </li>
       <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
-      <li>Excessive incorrect downgrading/rejecting/
-        <tooltip><template slot="_content">marking as duplicates</template>duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+      <li>Excessive incorrect downgrading/rejecting/<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">marking as duplicates</span>duplicate-flagging</span>, if deemed
+        an unethical attempt to <em>game the system</em>, will be penalized.</li>
     </ul>
   </div>
   </panel>
@@ -2170,8 +2153,8 @@ Duplicate of #67
             </ul>
           </li>
           <li>
-            <p><strong><span class="text-danger">Download the product to be tested</span></strong>
-              <tooltip><template slot="_content">notifications are likely to go out on the morning of the PE/PE-D session</template>after you have been notified</tooltip> of which team you have been allocated to test.</p>
+            <p><strong><span class="text-danger">Download the product to be tested</span></strong> <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">notifications are likely to go out on the morning of the PE/PE-D session</span>after
+              you have been notified</span> of which team you have been allocated to test.</p>
           </li>
           <li>
             <p><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</p>
@@ -2760,20 +2743,9 @@ Duplicate of #67
     <li><strong>Do not edit the subject or the description.</strong> Your response (if any) should be added as a comment.</li>
     <li>Add a comment using the following exact template.</li>
   </ul>
-  <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
-{replace this with your response}
-<p><span class="hljs-section">## Duplicate status (if any):</span></p>
-<p></p></code></pre>
-  <p></p>
+  <pre><code class="hljs markdown"><span><span class="hljs-section"># Team's Response</span></span><span>{replace this with your response}</span><span>&#x200B;</span><span><span class="hljs-section">## Duplicate status (if any):</span></span><span>&#x200B;</span></code></pre>
   <p>Here is an example:</p>
-  <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
-<p>Yes this is a bug. But it is a duplicate.
-<span class="hljs-bullet">* </span>Changed the bug type because this is just a bug in the UG.
-<span class="hljs-bullet">* </span>Lowered the severity because users can still use the feature.</p>
-<p><span class="hljs-section">## Duplicate status (if any):</span>
-Duplicate of #67
-</p></code></pre>
-  <p></p>
+  <pre><code class="hljs markdown"><span><span class="hljs-section"># Team's Response</span></span><span>&#x200B;</span><span>Yes this is a bug. But it is a duplicate.</span><span><span class="hljs-bullet">* </span>Changed the bug type because this is just a bug in the UG.</span><span><span class="hljs-bullet">* </span>Lowered the severity because users can still use the feature.</span><span>&#x200B;</span><span><span class="hljs-section">## Duplicate status (if any):</span></span><span>Duplicate of #67</span></code></pre>
   <ul>
     <li>Do not close the bug report after you are done processing it.</li>
     <li>Use the exact <code>Duplicate of #123</code> format to indicate duplicates.</li>
@@ -2913,12 +2885,7 @@ Duplicate of #67
             </ul>
           </div>
 
-          <pre><code class="hljs">Team chose ['response.IssueUnclear']
-
-- [x] I disagree
-
-**Reason for disagreement:** I think one can easily reproduce the problem by following the steps I gave.
-</code></pre>
+          <pre><code class="hljs"><span>Team chose ['response.IssueUnclear']</span><span>&#x200B;</span><span>- [x] I disagree</span><span>&#x200B;</span><span>**Reason for disagreement:** I think one can easily reproduce the problem by following the steps I gave.</span></code></pre>
         </div>
       </tab>
     </tabs>
@@ -2950,11 +2917,11 @@ Duplicate of #67
           <a class="nav-link py-1" href="#deliverable-executable">
         Deliverable: Executable&#x200E;</a>
           <a class="nav-link py-1" href="#deliverable-source-code">
-    Deliverable: Source code&#x200E;</a>
+      Deliverable: Source code&#x200E;</a>
           <a class="nav-link py-1" href="#deliverable-user-guide-ug">
-    Deliverable: User Guide (UG)&#x200E;</a>
+      Deliverable: User Guide (UG)&#x200E;</a>
           <a class="nav-link py-1" href="#deliverable-developer-guide-dg">
-  Deliverable: Developer Guide (DG)&#x200E;</a>
+    Deliverable: Developer Guide (DG)&#x200E;</a>
           <a class="nav-link py-1" href="#deliverable-product-website">
   Deliverable: Product Website&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
@@ -2985,8 +2952,18 @@ Duplicate of #67
   Deliverable: Practical Exam Dry Run (PE-D)&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
             <a class="nav-link py-1" href="#pe-d-overview">PE-D Overview&#x200E;</a>
+            <a class="nav-link py-1" href="#pe-overview">PE Overview&#x200E;</a>
+            <a class="nav-link py-1" href="#pe-preparation">PE Preparation&#x200E;</a>
+            <a class="nav-link py-1" href="#pe-phase-1-bug-reporting">PE Phase 1: Bug Reporting&#x200E;</a>
+            <a class="nav-link py-1" href="#pe-phase-2-developer-response">PE Phase 2: Developer Response&#x200E;</a>
+            <a class="nav-link py-1" href="#pe-phase-3-tester-response">PE Phase 3: Tester Response&#x200E;</a>
+            <a class="nav-link py-1" href="#pe-phase-4-tutor-moderation">PE Phase 4: Tutor Moderation&#x200E;</a>
             <a class="nav-link py-1" href="#pe-d-preparation">PE-D Preparation&#x200E;</a>
             <a class="nav-link py-1" href="#pe-d-during-the-session">PE-D During the session&#x200E;</a>
+            <a class="nav-link py-1" href="#ppp-objectives-2">PPP Objectives&#x200E;</a>
+            <a class="nav-link py-1" href="#ppp-sections-to-include-2">PPP Sections to include&#x200E;</a>
+            <a class="nav-link py-1" href="#ppp-format-2">PPP Format&#x200E;</a>
+            <a class="nav-link py-1" href="#ppp-page-limit-2">PPP Page Limit&#x200E;</a>
             <a class="nav-link py-1" href="#pe-d-after-the-session">PE-D After the session&#x200E;</a>
           </nav>
           <a class="nav-link py-1" href="#deliverable-practical-exam-pe">
@@ -3007,7 +2984,7 @@ Duplicate of #67
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

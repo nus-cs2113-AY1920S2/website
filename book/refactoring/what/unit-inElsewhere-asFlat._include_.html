@@ -9,8 +9,7 @@
 </p>
 <div id="title-and-body">
   <div>
-    <h4 id="what"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\text.md">What</span></span>
-    </h4>
+    <h4 id="what"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\text.md">What</span></span><a class="fa fa-anchor" href="#what"></a></h4>
   </div>
   <div id="main">
     <div>
@@ -27,9 +26,9 @@
             <li>improve performance (sometimes, simpler code runs faster than complex code because simpler code is easier for the compiler to optimize).</li>
           </ul>
         </box>
-        <p>Given below are two common refactorings (
-          <trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
-        <modal id="modal:refactoring-catalog-what"><template slot="_header"><strong>Refactoring Catalogs</strong></template>
+        <p>Given below are two common refactorings (<span trigger="click" for="modal:refactoring-catalog-what" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:refactoring-catalog-what'].show()"
+            class="trigger">more</span>).</p>
+        <b-modal id="modal:refactoring-catalog-what" ok-only size modal-class="mb-zoom" ref="modal:refactoring-catalog-what"><template slot="modal-title"><strong>Refactoring Catalogs</strong></template>
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\references.md">
               <ul>
@@ -39,7 +38,7 @@
               </ul>
             </div>
           </div>
-        </modal>
+        </b-modal>
         <box>
           <p>Refactoring Name: <strong>Consolidate Duplicate Conditional Fragments</strong></p>
           <p>Situation: The same fragment of code is in all branches of a conditional expression.</p>
@@ -51,25 +50,11 @@
                 <table>
                   <tr>
                     <td valign="top">
-                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
-    total = price * <span class="hljs-number">0.95</span>;
-    send();
-} <span class="hljs-keyword">else</span> {
-    total = price * <span class="hljs-number">0.98</span>;
-    send();
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isSpecialDeal()) {</span><span>    total = price * <span class="hljs-number">0.95</span>;</span><span>    send();</span><span>} <span class="hljs-keyword">else</span> {</span><span>    total = price * <span class="hljs-number">0.98</span>;</span><span>    send();</span><span>}</span></code></pre>
                     </td>
                     <td valign="center">&nbsp;→&nbsp;</td>
                     <td valign="top">
-                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
-    total = price * <span class="hljs-number">0.95</span>;
-} <span class="hljs-keyword">else</span> {
-    total = price * <span class="hljs-number">0.98</span>;
-}
-send();
-
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isSpecialDeal()){</span><span>    total = price * <span class="hljs-number">0.95</span>;</span><span>} <span class="hljs-keyword">else</span> {</span><span>    total = price * <span class="hljs-number">0.98</span>;</span><span>}</span><span>send();</span><span>&#x200B;</span></code></pre>
                     </td>
                   </tr>
                 </table>
@@ -82,23 +67,11 @@ send();
                 <table>
                   <tr>
                     <td valign="top">
-                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
-    total = price * <span class="hljs-number">0.95</span>
-    send()
-<span class="hljs-keyword">else</span>:
-    total = price * <span class="hljs-number">0.98</span>
-    send()
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-keyword">if</span> is_special_deal:</span><span>    total = price * <span class="hljs-number">0.95</span></span><span>    send()</span><span><span class="hljs-keyword">else</span>:</span><span>    total = price * <span class="hljs-number">0.98</span></span><span>    send()</span></code></pre>
                     </td>
                     <td valign="center">&nbsp;→&nbsp;</td>
                     <td valign="top">
-                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
-    total = price * <span class="hljs-number">0.95</span>
-<span class="hljs-keyword">else</span>:
-    total = price * <span class="hljs-number">0.98</span>
-    
-send()
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-keyword">if</span> is_special_deal:</span><span>    total = price * <span class="hljs-number">0.95</span></span><span><span class="hljs-keyword">else</span>:</span><span>    total = price * <span class="hljs-number">0.98</span></span><span>    </span><span>send()</span></code></pre>
                     </td>
                   </tr>
                 </table>
@@ -114,49 +87,20 @@ send()
           <div class="alt-java">
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\example-extract-java.md">
-                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
-    printBanner();
-
-    <span class="hljs-comment">//print details</span>
-    System.out.println(<span class="hljs-string">"name:	"</span> + name);
-    System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
-}
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{</span><span>    printBanner();</span><span>&#x200B;</span><span>    <span class="hljs-comment">//print details</span></span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);</span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());</span><span>}</span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
-    printBanner();
-    printDetails(getOutstanding());
-}
-
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printDetails</span> <span class="hljs-params">(<span class="hljs-keyword">double</span> outstanding)</span> </span>{
-    System.out.println(<span class="hljs-string">"name:	"</span> + name);
-    System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);
-}
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{</span><span>    printBanner();</span><span>    printDetails(getOutstanding());</span><span>}</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printDetails</span> <span class="hljs-params">(<span class="hljs-keyword">double</span> outstanding)</span> </span>{</span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);</span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);</span><span>}</span></code></pre>
               </div>
             </div>
           </div>
           <div class="alt-python">
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\example-extract-python.md">
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
-    print_banner()
-
-    //<span class="hljs-keyword">print</span> details
-    print(<span class="hljs-string">"name:	"</span> + name)
-    print(<span class="hljs-string">"amount	"</span> + get_outstanding())
-</code></pre>
+                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span></span><span>    print_banner()</span><span>&#x200B;</span><span>    //<span class="hljs-keyword">print</span> details</span><span>    print(<span class="hljs-string">"name:	"</span> + name)</span><span>    print(<span class="hljs-string">"amount	"</span> + get_outstanding())</span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
-    print_banner()
-    print_details(get_outstanding())
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_details</span><span class="hljs-params">(amount)</span>:</span>
-    print(<span class="hljs-string">"name:	"</span> + name)
-    print(<span class="hljs-string">"amount	"</span> + amount)
-</code></pre>
+                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span></span><span>    print_banner()</span><span>    print_details(get_outstanding())</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_details</span><span class="hljs-params">(amount)</span>:</span></span><span>    print(<span class="hljs-string">"name:	"</span> + name)</span><span>    print(<span class="hljs-string">"amount	"</span> + amount)</span></code></pre>
               </div>
             </div>
           </div>
@@ -172,10 +116,10 @@ send()
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\text.md">
         <div>
           <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\exercises.md">
-            <panel expandable><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\q-tick-refactoring.md">
-                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Results of Refactoring</p></template>
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Results of Refactoring</p></template>
                     <question>
                       <p>Choose the correct statements</p>
                       <ul class="task-list">
@@ -184,7 +128,7 @@ send()
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Refactoring can result in better performance</li>
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Refactoring can change the number of methods/classes</li>
                       </ul>
-                      <div slot="answer">
+                      <div slot="answer" class="algolia-no-index">
                         <p>a, b, c, d</p>
                         <p>Explanation:</p>
                         <ul>
@@ -198,14 +142,14 @@ send()
               </div>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\q-essay-refactoringAndRegressionTesting.md">
-                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Do you agree with the following statement? Refactoring and regression testing</p></template>
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Do you agree with the following statement? Refactoring and regression testing</p></template>
                     <question has-input="true">
                       <p>Do you agree with the following statement? Justify your answer.</p>
                       <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
-                      <div slot="hint">
+                      <div slot="hint" class="algolia-no-index">
                         <p>There are two flaws in the given statement.</p>
                       </div>
-                      <div slot="answer">
+                      <div slot="answer" class="algolia-no-index">
                         <p>DISAGREE.</p>
                         <ol>
                           <li>Even a minor change can have major repercussions on the system. We MUST do regression testing after each change, no matter how minor it is.</li>
@@ -218,7 +162,7 @@ send()
               </div>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\refactoring\what\q-essay-explain.md">
-                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Refactoring</p></template>
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Refactoring</p></template>
                     <question has-input>
                       <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
                     </question>

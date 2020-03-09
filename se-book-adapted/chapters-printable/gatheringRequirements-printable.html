@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter [Printable] : Gathering Requirements</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -91,14 +91,14 @@
                 </span><a class="fa fa-anchor" href="#interviews"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can produce useful information that project requirements.</strong></p>
-                  <popover id="pop:interviews-domainExpert" placement="top"><template slot="header"></template>
-                    <div slot="content" class="algolia-no-index">
-                      <div>
-                        <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed">e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
-                      </div>
+                  <p><strong>Interviewing stakeholders and <span for="pop:interviews-domainExpert" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:interviews-domainExpert'].show()" class="trigger">domain experts</span> can produce useful information that project requirements.</strong></p>
+                  <span id="pop:interviews-domainExpert" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"></span>
+                  <div data-mb-html-for="content">
+                    <div>
+                      <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed">e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
                     </div>
-                  </popover>
+                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

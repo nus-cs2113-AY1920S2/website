@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 7 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -157,54 +157,11 @@
                         </ul>
                         <div class="indented-level2">
                           <p>For example, the code of the main class could look like this:</p>
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Duke</span> </span>{
-
-    <span class="hljs-keyword">private</span> Storage storage;
-    <span class="hljs-keyword">private</span> TaskList tasks;
-    <span class="hljs-keyword">private</span> Ui ui;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Duke</span><span class="hljs-params">(String filePath)</span> </span>{
-        ui = <span class="hljs-keyword">new</span> Ui();
-        storage = <span class="hljs-keyword">new</span> Storage(filePath);
-        <span class="hljs-keyword">try</span> {
-            tasks = <span class="hljs-keyword">new</span> TaskList(storage.load());
-        } <span class="hljs-keyword">catch</span> (DukeException e) {
-            ui.showLoadingError();
-            tasks = <span class="hljs-keyword">new</span> TaskList();
-        }
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-keyword">new</span> Duke(<span class="hljs-string">"data/tasks.txt"</span>).run();
-    }
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Duke</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-keyword">private</span> Storage storage;</span><span>    <span class="hljs-keyword">private</span> TaskList tasks;</span><span>    <span class="hljs-keyword">private</span> Ui ui;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Duke</span><span class="hljs-params">(String filePath)</span> </span>{</span><span>        ui = <span class="hljs-keyword">new</span> Ui();</span><span>        storage = <span class="hljs-keyword">new</span> Storage(filePath);</span><span>        <span class="hljs-keyword">try</span> {</span><span>            tasks = <span class="hljs-keyword">new</span> TaskList(storage.load());</span><span>        } <span class="hljs-keyword">catch</span> (DukeException e) {</span><span>            ui.showLoadingError();</span><span>            tasks = <span class="hljs-keyword">new</span> TaskList();</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        <span class="hljs-keyword">new</span> Duke(<span class="hljs-string">"data/tasks.txt"</span>).run();</span><span>    }</span><span>}</span></code></pre>
                         </div>
                         <ul>
                           <li><strong>Stretch Goal</strong>: Consider extracting more classes. e.g., <code>*Command</code> classes (i.e., <code>AddCommand</code>, <code>DeleteCommand</code>, <code>ExitCommand</code> etc.) that inherits from an abstract <code>Command</code>                            class, so that you can write the main logic of the App as follows:
-                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
-    ui.showWelcome();
-    <span class="hljs-keyword">boolean</span> isExit = <span class="hljs-keyword">false</span>;
-    <span class="hljs-keyword">while</span> (!isExit) {
-        <span class="hljs-keyword">try</span> {
-            String fullCommand = ui.readCommand();
-            ui.showLine(); <span class="hljs-comment">// show the divider line ("_______")</span>
-            Command c = Parser.parse(fullCommand);
-            c.execute(tasks, ui, storage);
-            isExit = c.isExit();
-        } <span class="hljs-keyword">catch</span> (DukeException e) {
-            ui.showError(e.getMessage());
-        } <span class="hljs-keyword">finally</span> {
-            ui.showLine();
-        }
-    }
-}
-</code></pre>
-                            <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can get some inspiration from how the code of the <a href="https://github.com/se-edu/addressbook-level2">addressbook-level2</a>                            is organized.</li>
+                            <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{</span><span>    ui.showWelcome();</span><span>    <span class="hljs-keyword">boolean</span> isExit = <span class="hljs-keyword">false</span>;</span><span>    <span class="hljs-keyword">while</span> (!isExit) {</span><span>        <span class="hljs-keyword">try</span> {</span><span>            String fullCommand = ui.readCommand();</span><span>            ui.showLine(); <span class="hljs-comment">// show the divider line ("_______")</span></span><span>            Command c = Parser.parse(fullCommand);</span><span>            c.execute(tasks, ui, storage);</span><span>            isExit = c.isExit();</span><span>        } <span class="hljs-keyword">catch</span> (DukeException e) {</span><span>            ui.showError(e.getMessage());</span><span>        } <span class="hljs-keyword">finally</span> {</span><span>            ui.showLine();</span><span>        }</span><span>    }</span><span>}</span></code></pre><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can get some inspiration from how the code of the <a href="https://github.com/se-edu/addressbook-level2">addressbook-level2</a>                            is organized.</li>
                         </ul>
                       </div>
                     </panel>
@@ -255,34 +212,7 @@
                         </ul>
                         <panel minimized class="algolia-no-index"><template slot="_header"><p>Using dates/times in Java</p></template>
                           <p>A code snippet using the <code>LocalDate</code> class:</p>
-                          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.time.LocalDate;
-<span class="hljs-keyword">import</span> java.time.format.DateTimeFormatter;
-<span class="hljs-keyword">import</span> java.time.temporal.ChronoUnit;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-comment">//create dates from strings</span>
-        LocalDate d1 = LocalDate.parse(<span class="hljs-string">"2019-12-01"</span>);
-        LocalDate d2 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);
-        LocalDate d3 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);
-        
-        <span class="hljs-comment">//compare dates</span>
-        System.out.println(d1.isBefore(d2)); <span class="hljs-comment">// -&gt; true</span>
-        System.out.println(d1.isAfter(d2)); <span class="hljs-comment">// -&gt; false</span>
-        System.out.println(d2.equals(d3)); <span class="hljs-comment">// -&gt; true</span>
-        
-        <span class="hljs-comment">//work with dates</span>
-        System.out.println(d1.getDayOfWeek()); <span class="hljs-comment">// -&gt; SUNDAY</span>
-        System.out.println(d1.getMonth()); <span class="hljs-comment">// -&gt; DECEMBER</span>
-        System.out.println(d1.plus(<span class="hljs-number">1</span>, ChronoUnit.YEARS));  <span class="hljs-comment">// -&gt; 2020-12-01</span>
-        
-        <span class="hljs-comment">// get today's date and print it in a specific format</span>
-        LocalDate d4 = LocalDate.now();
-        System.out.println(d4); <span class="hljs-comment">// -&gt; 2019-10-15</span>
-        System.out.println(d4.format(DateTimeFormatter.ofPattern(<span class="hljs-string">"MMM d yyyy"</span>))); <span class="hljs-comment">// -&gt; Oct 15 2019</span>
-    }
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.time.LocalDate;</span><span><span class="hljs-keyword">import</span> java.time.format.DateTimeFormatter;</span><span><span class="hljs-keyword">import</span> java.time.temporal.ChronoUnit;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        <span class="hljs-comment">//create dates from strings</span></span><span>        LocalDate d1 = LocalDate.parse(<span class="hljs-string">"2019-12-01"</span>);</span><span>        LocalDate d2 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);</span><span>        LocalDate d3 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);</span><span>        </span><span>        <span class="hljs-comment">//compare dates</span></span><span>        System.out.println(d1.isBefore(d2)); <span class="hljs-comment">// -&gt; true</span></span><span>        System.out.println(d1.isAfter(d2)); <span class="hljs-comment">// -&gt; false</span></span><span>        System.out.println(d2.equals(d3)); <span class="hljs-comment">// -&gt; true</span></span><span>        </span><span>        <span class="hljs-comment">//work with dates</span></span><span>        System.out.println(d1.getDayOfWeek()); <span class="hljs-comment">// -&gt; SUNDAY</span></span><span>        System.out.println(d1.getMonth()); <span class="hljs-comment">// -&gt; DECEMBER</span></span><span>        System.out.println(d1.plus(<span class="hljs-number">1</span>, ChronoUnit.YEARS));  <span class="hljs-comment">// -&gt; 2020-12-01</span></span><span>        </span><span>        <span class="hljs-comment">// get today's date and print it in a specific format</span></span><span>        LocalDate d4 = LocalDate.now();</span><span>        System.out.println(d4); <span class="hljs-comment">// -&gt; 2019-10-15</span></span><span>        System.out.println(d4.format(DateTimeFormatter.ofPattern(<span class="hljs-string">"MMM d yyyy"</span>))); <span class="hljs-comment">// -&gt; Oct 15 2019</span></span><span>    }</span><span>}</span></code></pre>
                           <ul>
                             <li><a href="https://www.baeldung.com/java-8-date-time-intro">A tutorial from https://www.baeldung.com/</a></li>
                           </ul>
@@ -309,13 +239,7 @@
                           <br>
                           <br></p>
                         <p>Example:</p>
-                        <pre><code class="hljs">find book
-    ____________________________________________________________
-     Here are the matching tasks in your list:
-     1.[T][✓] read book
-     2.[D][✓] return book (by: June 6th)
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>find book</span><span>    ____________________________________________________________</span><span>     Here are the matching tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✓] return book (by: June 6th)</span><span>    ____________________________________________________________</span></code></pre>
                       </div>
                     </panel>
                   </div>
@@ -481,8 +405,8 @@
                         <li><strong>Enable GitHub Pages</strong>: Go to the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="14" height="16" viewbox="0 0 14 16" class="octicon octicon-gear" aria-hidden="true"><path fill-rule="evenodd" d="M14 8.77v-1.6l-1.94-.64-.45-1.09.88-1.84-1.13-1.13-1.81.91-1.09-.45-.69-1.92h-1.6l-.63 1.94-1.11.45-1.84-.88-1.13 1.13.91 1.81-.45 1.09L0 7.23v1.59l1.94.64.45 1.09-.88 1.84 1.13 1.13 1.81-.91 1.09.45.69 1.92h1.59l.63-1.94 1.11-.45 1.84.88 1.13-1.13-.92-1.81.47-1.09L14 8.75v.02zM7 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg> Settings</small></span>                          tab and enable <code>GitHub Pages</code> for the <code>master branch /docs folder</code> (similar to how you did it in the iP).<br> Remember to choose a theme too by clicking the <button type="button" class="btn btn-light btn-sm border"><strong>Choose a theme</strong></button>                          button (that will create a commit in your repo that is needed in a later step.<br> After a few minutes, confirm your tP website is available in the corresponding <code>github.io</code> URL.</li>
                         <li><strong>Give access to team members</strong>: Ensure your team members have the desired level of access to your team repo.</li>
                         <li><strong>Create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2113-AY1920S2/tP">nus-cs2113-AY1920S2/tP</a>]
-                          <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[CS2113T-T09-2] Contact List Pro</code>. <span class="dimmed">As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span>                          In the PR description
-                          <tooltip><template slot="_content">use @githubUserName</template>@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
+                          <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[CS2113T-T09-2] Contact List Pro</code>. <span class="dimmed">As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span>                          In the PR description <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">use @githubUserName</span>@mention</span> the other team members
+                          so that they get notified when the tutor adds comments to the PR.</li>
                       </ol>
                       <p>All team members:</p>
                       <ol>
@@ -554,7 +478,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

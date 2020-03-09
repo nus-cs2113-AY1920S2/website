@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 10 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -102,10 +102,10 @@
             <div>
               <div class="indented-level2">
                 <box dismissible>
-                  <p><span class="dimmed"><strong><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Some background:</strong> As you know, our
-                    <tooltip><template slot="_content">i.e., Practical Exam</template>PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure
-                    the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called
-                    <tooltip><template slot="_content">CAT stands for Crowd-sourced Anonymous Testing</template>CATcher</tooltip> that we would like to use for the PE this semester.</span>
+                  <p><span class="dimmed"><strong><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Some background:</strong> As you know, our <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter"
+                      class="trigger"><span data-mb-html-for="_content">i.e., Practical Exam</span>PE</span> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it
+                    was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">CAT stands for Crowd-sourced Anonymous Testing</span>CATcher</span>
+                    that we would like to use for the PE this semester.</span>
                   </p>
                 </box>
                 <p>In this tutorial, we would like to smoke-test the CATcher app <strong>to ensure it can run in your computer</strong>.</p>
@@ -156,29 +156,9 @@
                 <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Sequence Diagram for printing a quote</p></template>
                   <question>
                     <p>Draw a sequence diagram to represent this code snippet.</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isFirstPage) {
-    <span class="hljs-keyword">new</span> Quote().print();
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isFirstPage) {</span><span>    <span class="hljs-keyword">new</span> Quote().print();</span><span>}</span></code></pre>
                     <p>The <code>Quote</code> class:</p>
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{
-
-    String q;
-
-    Quote(){
-        q = generate();
-    }
-
-    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">// ...</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
-        System.out.println(q);
-    }
-
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{</span><span>&#x200B;</span><span>    String q;</span><span>&#x200B;</span><span>    Quote(){</span><span>        q = generate();</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">// ...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{</span><span>        System.out.println(q);</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                     <div slot="hint" class="algolia-no-index">
                       <ul>
                         <li>Show <code>new Quote().print();</code> as two method calls.</li>
@@ -211,7 +191,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Test Case Design: Combining Test Inputs: Heuristic: No more than one invalid input in a test case</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -51,9 +51,8 @@
                 </div>
                 <div id="main">
                   <div>
-                    <p>Consider the
-                      <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
-                    <modal large id="modal:heuristic-valid-test-case" class="algolia-no-index"><template slot="_header"><strong>Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case</strong></template>
+                    <p>Consider the <span for="modal:heuristic-valid-test-case" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:heuristic-valid-test-case'].show()" class="trigger">test cases designed in [Heuristic: each valid input at least once in a positive test case]</span>.</p>
+                    <b-modal id="modal:heuristic-valid-test-case" ok-only size="lg" modal-class="mb-zoom" ref="modal:heuristic-valid-test-case"><template slot="modal-title"><strong>Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case</strong></template>
                       <div>
                         <div class="table-responsive">
                           <table class="markbind-table table table-bordered table-striped">
@@ -101,7 +100,7 @@
                         </div>
                         <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
                       </div>
-                    </modal>
+                    </b-modal>
                     <p>After running these test cases can you be sure that the error message “invalid price” is shown for negative prices?</p>
                     <ul>
                       <li>Answer: No.</li>

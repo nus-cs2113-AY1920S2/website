@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - tP Progress Dashboard</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -24,7 +24,7 @@
 
 <body>
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -109,130 +109,128 @@
                 <table class="markbind-table table table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th>
-                        <tooltip><template slot="_content">Team ID</template>Team</tooltip>
+                      <th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Team ID</span>Team</span>
                       </th>
-                      <th>
-                        <tooltip><template slot="_content">i.e., tP tasks to be done by the whole team</template>Tasks</tooltip>
+                      <th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., tP tasks to be done by the whole team</span>Tasks</span>
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>CS2113T-M16-1 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113T-M16-1"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113T-M16-1 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113T-M16-1" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113T-M16-1'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113T-M16-2 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113T-M16-2"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113T-M16-2 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113T-M16-2" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113T-M16-2'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113T-T12-1 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113T-T12-1"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113T-T12-1 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113T-T12-1" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113T-T12-1'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113T-T12-2 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113T-T12-2"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113T-T12-2 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113T-T12-2" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113T-T12-2'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113T-T12-3 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113T-T12-3"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113T-T12-3 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113T-T12-3" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113T-T12-3'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113T-T12-4 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113T-T12-4"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113T-T12-4 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113T-T12-4" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113T-T12-4'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113T-T13-1 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113T-T13-1"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113T-T13-1 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113T-T13-1" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113T-T13-1'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113T-T13-2 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113T-T13-2"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113T-T13-2 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113T-T13-2" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113T-T13-2'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113T-T13-3 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113T-T13-3"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113T-T13-3 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113T-T13-3" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113T-T13-3'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113-T14-1 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113-T14-1"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113-T14-1 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113-T14-1" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113-T14-1'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113-T14-2 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113-T14-2"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113-T14-2 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113-T14-2" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113-T14-2'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113-T14-3 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113-T14-3"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113-T14-3 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113-T14-3" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113-T14-3'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113-T14-4 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113-T14-4"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113-T14-4 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113-T14-4" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113-T14-4'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113-T15-1 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113-T15-1"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113-T15-1 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113-T15-1" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113-T15-1'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113-T15-2 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113-T15-2"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113-T15-2 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113-T15-2" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113-T15-2'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113-T15-3 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113-T15-3"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113-T15-3 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113-T15-3" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113-T15-3'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
                     </tr>
                     <tr>
-                      <td>CS2113-T15-4 <span class="dimmed"><trigger trigger="click" for="modal:tpPD-CS2113-T15-4"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>CS2113-T15-4 <span class="dimmed"><span trigger="click" for="modal:tpPD-CS2113-T15-4" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-CS2113-T15-4'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Issues Enabled</span><span class="badge badge-success mr-1">Docs Published</span><span class="badge badge-success mr-1">PR Created</span></td>
@@ -240,7 +238,7 @@
                   </tbody>
                 </table>
               </div>
-              <modal large id="modal:tpPD-CS2113T-M16-1" class="algolia-no-index"><template slot="_header">CS2113T-M16-1: tP Progress Details</template>
+              <b-modal id="modal:tpPD-CS2113T-M16-1" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113T-M16-1"><template slot="modal-title">CS2113T-M16-1: tP Progress Details</template>
                 <h4 id="tp-team-tasks">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks"></a></h4>
                 <div class="indented">
                   <ul>
@@ -250,8 +248,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113T-M16-2" class="algolia-no-index"><template slot="_header">CS2113T-M16-2: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113T-M16-2" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113T-M16-2"><template slot="modal-title">CS2113T-M16-2: tP Progress Details</template>
                 <h4 id="tp-team-tasks-2">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-2"></a></h4>
                 <div class="indented">
                   <ul>
@@ -261,8 +259,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113T-T12-1" class="algolia-no-index"><template slot="_header">CS2113T-T12-1: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113T-T12-1" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113T-T12-1"><template slot="modal-title">CS2113T-T12-1: tP Progress Details</template>
                 <h4 id="tp-team-tasks-3">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-3"></a></h4>
                 <div class="indented">
                   <ul>
@@ -272,8 +270,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113T-T12-2" class="algolia-no-index"><template slot="_header">CS2113T-T12-2: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113T-T12-2" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113T-T12-2"><template slot="modal-title">CS2113T-T12-2: tP Progress Details</template>
                 <h4 id="tp-team-tasks-4">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-4"></a></h4>
                 <div class="indented">
                   <ul>
@@ -283,8 +281,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113T-T12-3" class="algolia-no-index"><template slot="_header">CS2113T-T12-3: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113T-T12-3" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113T-T12-3"><template slot="modal-title">CS2113T-T12-3: tP Progress Details</template>
                 <h4 id="tp-team-tasks-5">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-5"></a></h4>
                 <div class="indented">
                   <ul>
@@ -294,8 +292,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113T-T12-4" class="algolia-no-index"><template slot="_header">CS2113T-T12-4: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113T-T12-4" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113T-T12-4"><template slot="modal-title">CS2113T-T12-4: tP Progress Details</template>
                 <h4 id="tp-team-tasks-6">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-6"></a></h4>
                 <div class="indented">
                   <ul>
@@ -305,8 +303,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113T-T13-1" class="algolia-no-index"><template slot="_header">CS2113T-T13-1: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113T-T13-1" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113T-T13-1"><template slot="modal-title">CS2113T-T13-1: tP Progress Details</template>
                 <h4 id="tp-team-tasks-7">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-7"></a></h4>
                 <div class="indented">
                   <ul>
@@ -316,8 +314,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113T-T13-2" class="algolia-no-index"><template slot="_header">CS2113T-T13-2: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113T-T13-2" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113T-T13-2"><template slot="modal-title">CS2113T-T13-2: tP Progress Details</template>
                 <h4 id="tp-team-tasks-8">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-8"></a></h4>
                 <div class="indented">
                   <ul>
@@ -327,8 +325,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113T-T13-3" class="algolia-no-index"><template slot="_header">CS2113T-T13-3: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113T-T13-3" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113T-T13-3"><template slot="modal-title">CS2113T-T13-3: tP Progress Details</template>
                 <h4 id="tp-team-tasks-9">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-9"></a></h4>
                 <div class="indented">
                   <ul>
@@ -338,8 +336,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113-T14-1" class="algolia-no-index"><template slot="_header">CS2113-T14-1: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113-T14-1" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113-T14-1"><template slot="modal-title">CS2113-T14-1: tP Progress Details</template>
                 <h4 id="tp-team-tasks-10">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-10"></a></h4>
                 <div class="indented">
                   <ul>
@@ -349,8 +347,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113-T14-2" class="algolia-no-index"><template slot="_header">CS2113-T14-2: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113-T14-2" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113-T14-2"><template slot="modal-title">CS2113-T14-2: tP Progress Details</template>
                 <h4 id="tp-team-tasks-11">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-11"></a></h4>
                 <div class="indented">
                   <ul>
@@ -360,8 +358,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113-T14-3" class="algolia-no-index"><template slot="_header">CS2113-T14-3: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113-T14-3" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113-T14-3"><template slot="modal-title">CS2113-T14-3: tP Progress Details</template>
                 <h4 id="tp-team-tasks-12">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-12"></a></h4>
                 <div class="indented">
                   <ul>
@@ -371,8 +369,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113-T14-4" class="algolia-no-index"><template slot="_header">CS2113-T14-4: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113-T14-4" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113-T14-4"><template slot="modal-title">CS2113-T14-4: tP Progress Details</template>
                 <h4 id="tp-team-tasks-13">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-13"></a></h4>
                 <div class="indented">
                   <ul>
@@ -382,8 +380,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113-T15-1" class="algolia-no-index"><template slot="_header">CS2113-T15-1: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113-T15-1" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113-T15-1"><template slot="modal-title">CS2113-T15-1: tP Progress Details</template>
                 <h4 id="tp-team-tasks-14">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-14"></a></h4>
                 <div class="indented">
                   <ul>
@@ -393,8 +391,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113-T15-2" class="algolia-no-index"><template slot="_header">CS2113-T15-2: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113-T15-2" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113-T15-2"><template slot="modal-title">CS2113-T15-2: tP Progress Details</template>
                 <h4 id="tp-team-tasks-15">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-15"></a></h4>
                 <div class="indented">
                   <ul>
@@ -404,8 +402,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113-T15-3" class="algolia-no-index"><template slot="_header">CS2113-T15-3: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113-T15-3" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113-T15-3"><template slot="modal-title">CS2113-T15-3: tP Progress Details</template>
                 <h4 id="tp-team-tasks-16">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-16"></a></h4>
                 <div class="indented">
                   <ul>
@@ -415,8 +413,8 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-CS2113-T15-4" class="algolia-no-index"><template slot="_header">CS2113-T15-4: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-CS2113-T15-4" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-CS2113-T15-4"><template slot="modal-title">CS2113-T15-4: tP Progress Details</template>
                 <h4 id="tp-team-tasks-17">tP Team Tasks<a class="fa fa-anchor" href="#tp-team-tasks-17"></a></h4>
                 <div class="indented">
                   <ul>
@@ -426,612 +424,609 @@
                     <li><span class="badge badge-success mr-1">PR Created</span>: [Due in week 7] Created a PR from team fork to upstream repo? Yes</li>
                   </ul>
                 </div>
-              </modal>
+              </b-modal>
             </tab>
             <tab class="algolia-no-index"><template slot="_header"><strong><strong><span aria-hidden="true" class="fas fa-user"></span> Individual Progress</strong></strong></template>
               <div class="table-responsive">
                 <table class="markbind-table table table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th>
-                        <tooltip><template slot="_content">Student number (partial)</template>Student</tooltip>
+                      <th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Student number (partial)</span>Student</span>
                       </th>
-                      <th>
-                        <tooltip><template slot="_content">i.e., weeks in which some code was committed to the repo</template>Weekly progress</tooltip>
+                      <th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., weeks in which some code was committed to the repo</span>Weekly progress</span>
                       </th>
-                      <th>
-                        <tooltip><template slot="_content">i.e., other tP-related individual tasks</template>Individual tasks</tooltip>
+                      <th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., other tP-related individual tasks</span>Individual tasks</span>
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>A0148048_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0148048"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0148048_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0148048" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0148048'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0154601_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0154601"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0154601_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0154601" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0154601'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0156202_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0156202"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0156202_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0156202" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0156202'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0166966_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0166966"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0166966_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0166966" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0166966'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
                     </tr>
                     <tr>
-                      <td>A0167031_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0167031"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0167031_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0167031" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0167031'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0167107_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0167107"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0167107_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0167107" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0167107'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0169610_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0169610"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0169610_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0169610" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0169610'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-danger mr-1"><s>7</s></span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0172032_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0172032"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0172032_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0172032" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0172032'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0177907_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0177907"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0177907_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0177907" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0177907'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0180295_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0180295"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0180295_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0180295" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0180295'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0182341_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0182341"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0182341_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0182341" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0182341'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
                     </tr>
                     <tr>
-                      <td>A0182520_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0182520"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0182520_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0182520" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0182520'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0182581_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0182581"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0182581_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0182581" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0182581'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
                     </tr>
                     <tr>
-                      <td>A0182619_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0182619"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0182619_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0182619" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0182619'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0182637_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0182637"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0182637_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0182637" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0182637'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0182648_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0182648"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0182648_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0182648" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0182648'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0182761_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0182761"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0182761_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0182761" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0182761'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0182776_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0182776"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0182776_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0182776" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0182776'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0183020_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0183020"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0183020_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0183020" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0183020'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
                         </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
-                    </tr>
-                    <tr>
-                      <td>A0183086_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0183086"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0183318_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0183318"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0183366_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0183366"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0183398_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0183398"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
                     </tr>
                     <tr>
-                      <td>A0183909_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0183909"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0183086_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0183086" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0183086'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
                         </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0183924_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0183924"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0183972_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0183972"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0183979_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0183979"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0183318_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0183318" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0183318'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
                         </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0184030_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0184030"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0184281_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0184281"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0184296_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0184296"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0183366_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0183366" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0183366'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0183398_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0183398" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0183398'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
                     </tr>
                     <tr>
-                      <td>A0184534_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0184534"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0183909_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0183909" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0183909'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0185030_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185030"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0183924_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0183924" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0183924'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0183972_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0183972" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0183972'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0185080_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185080"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0183979_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0183979" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0183979'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
                         </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0185406_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185406"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0185430_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185430"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0185434_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185434"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0184030_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0184030" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0184030'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
+                    </tr>
+                    <tr>
+                      <td>A0184281_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0184281" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0184281'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0185627_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185627"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0184296_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0184296" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0184296'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
+                    </tr>
+                    <tr>
+                      <td>A0184534_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0184534" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0184534'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0185662_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185662"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0185030_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185030" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185030'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0185683_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185683"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0185080_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185080" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185080'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0185406_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185406" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185406'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0185430_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185430" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185430'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
+                    </tr>
+                    <tr>
+                      <td>A0185434_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185434" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185434'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0185627_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185627" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185627'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0185707_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185707"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0185662_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185662" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185662'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0185775_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185775"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0185683_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185683" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185683'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0185894_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185894"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0185707_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185707" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185707'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0185955_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0185955"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0185775_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185775" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185775'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0187253_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0187253"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0185894_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185894" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185894'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
                         </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0187915_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0187915"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0188591_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0188591"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0188625_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0188625"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0185955_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0185955" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0185955'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0188758_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0188758"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0187253_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0187253" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0187253'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0188871_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0188871"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0187915_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0187915" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0187915'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0188991_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0188991"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0188591_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0188591" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0188591'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
                         </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0189629_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0189629"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0189944_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0189944"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0188625_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0188625" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0188625'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
                         </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0190016_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0190016"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0190306_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0190306"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0191091_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0191091"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0192255_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0192255"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0192257_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0192257"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0207464_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0207464"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0212641_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0212641"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0212651_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0212651"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0212716_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0212716"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
-                        </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0212737_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0212737"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0212755_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0212755"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0188758_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0188758" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0188758'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
                         </span>
-                      </td>
-                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
-                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
-                    </tr>
-                    <tr>
-                      <td>A0212780_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0212780"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0212805_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0212805"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0188871_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0188871" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0188871'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0188991_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0188991" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0188991'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0189629_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0189629" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0189629'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0189944_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0189944" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0189944'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0190016_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0190016" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0190016'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0190306_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0190306" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0190306'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0191091_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0191091" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0191091'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0192255_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0192255" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0192255'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0192257_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0192257" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0192257'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0207464_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0207464" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0207464'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0212641_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0212641" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0212641'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
+                    </tr>
+                    <tr>
+                      <td>A0212651_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0212651" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0212651'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0212716_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0212716" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0212716'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0212737_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0212737" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0212737'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0212755_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0212755" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0212755'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0212780_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0212780" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0212780'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
+                        </span>
+                      </td>
+                      <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
+                      <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
+                    </tr>
+                    <tr>
+                      <td>A0212805_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0212805" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0212805'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-danger mr-1"><s>7</s></span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0212895_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0212895"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0212895_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0212895" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0212895'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-danger mr-1"><s>7</s></span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0213638_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0213638"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0213638_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0213638" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0213638'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0213708_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0213708"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0213708_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0213708" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0213708'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0213855_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0213855"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0213855_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0213855" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0213855'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0213909_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0213909"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0213909_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0213909" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0213909'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0214405_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0214405"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0214405_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0214405" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0214405'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-success mr-1">Used JUnit</span></td>
                     </tr>
                     <tr>
-                      <td>A0214435_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0214435"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0214435_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0214435" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0214435'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0214700_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0214700"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0214700_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0214700" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0214700'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-secondary mr-1"><s>8</s></span></td>
                       <td><span class="badge badge-success mr-1">Forked</span><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span></td>
                     </tr>
                     <tr>
-                      <td>A0214952_ <span class="dimmed"><trigger trigger="click" for="modal:tpPD-A0214952"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                        </trigger>
+                      <td>A0214952_ <span class="dimmed"><span trigger="click" for="modal:tpPD-A0214952" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:tpPD-A0214952'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                        </span>
                         </span>
                       </td>
                       <td><span class="badge badge-success mr-1">7</span><span class="badge badge-success mr-1">8</span></td>
@@ -1040,12 +1035,12 @@
                   </tbody>
                 </table>
               </div>
-              <modal large id="modal:tpPD-A0148048" class="algolia-no-index"><template slot="_header">A0148048_: tP Progress Details</template>
+              <b-modal id="modal:tpPD-A0148048" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0148048"><template slot="modal-title">A0148048_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>3</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>7</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>15</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks"></a></h4>
@@ -1055,8 +1050,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0154601" class="algolia-no-index"><template slot="_header">A0154601_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0154601" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0154601"><template slot="modal-title">A0154601_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-2">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-2"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1071,8 +1066,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0156202" class="algolia-no-index"><template slot="_header">A0156202_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0156202" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0156202"><template slot="modal-title">A0156202_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-3">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-3"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1087,13 +1082,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0166966" class="algolia-no-index"><template slot="_header">A0166966_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0166966" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0166966"><template slot="modal-title">A0166966_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-4">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-4"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>12</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>26</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>30</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-4">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-4"></a></h4>
@@ -1103,8 +1098,8 @@
                     <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0167031" class="algolia-no-index"><template slot="_header">A0167031_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0167031" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0167031"><template slot="modal-title">A0167031_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-5">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-5"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1119,13 +1114,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0167107" class="algolia-no-index"><template slot="_header">A0167107_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0167107" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0167107"><template slot="modal-title">A0167107_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-6">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-6"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>9</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-secondary mr-1"><s>8</s></span></strong> [Mar 04 2020 - Mar 10 2020]: Did not contribute any commits to the <code>master</code> branch of the team repo <span aria-hidden="true" class="far fa-frown"></span></li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>9</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-6">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-6"></a></h4>
@@ -1135,8 +1130,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0169610" class="algolia-no-index"><template slot="_header">A0169610_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0169610" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0169610"><template slot="modal-title">A0169610_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-7">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-7"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1151,8 +1146,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0172032" class="algolia-no-index"><template slot="_header">A0172032_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0172032" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0172032"><template slot="modal-title">A0172032_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-8">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-8"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1167,8 +1162,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0177907" class="algolia-no-index"><template slot="_header">A0177907_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0177907" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0177907"><template slot="modal-title">A0177907_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-9">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-9"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1183,8 +1178,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0180295" class="algolia-no-index"><template slot="_header">A0180295_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0180295" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0180295"><template slot="modal-title">A0180295_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-10">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-10"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1199,13 +1194,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0182341" class="algolia-no-index"><template slot="_header">A0182341_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0182341" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0182341"><template slot="modal-title">A0182341_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-11">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-11"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>4</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>5</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>7</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-11">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-11"></a></h4>
@@ -1215,8 +1210,8 @@
                     <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0182520" class="algolia-no-index"><template slot="_header">A0182520_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0182520" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0182520"><template slot="modal-title">A0182520_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-12">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-12"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1231,13 +1226,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0182581" class="algolia-no-index"><template slot="_header">A0182581_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0182581" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0182581"><template slot="modal-title">A0182581_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-13">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-13"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>2</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>17</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>19</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-13">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-13"></a></h4>
@@ -1247,8 +1242,8 @@
                     <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0182619" class="algolia-no-index"><template slot="_header">A0182619_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0182619" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0182619"><template slot="modal-title">A0182619_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-14">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-14"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1263,8 +1258,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0182637" class="algolia-no-index"><template slot="_header">A0182637_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0182637" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0182637"><template slot="modal-title">A0182637_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-15">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-15"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1279,8 +1274,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0182648" class="algolia-no-index"><template slot="_header">A0182648_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0182648" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0182648"><template slot="modal-title">A0182648_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-16">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-16"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1295,8 +1290,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0182761" class="algolia-no-index"><template slot="_header">A0182761_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0182761" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0182761"><template slot="modal-title">A0182761_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-17">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-17"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1311,8 +1306,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0182776" class="algolia-no-index"><template slot="_header">A0182776_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0182776" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0182776"><template slot="modal-title">A0182776_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-18">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-18"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1327,8 +1322,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0183020" class="algolia-no-index"><template slot="_header">A0183020_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0183020" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0183020"><template slot="modal-title">A0183020_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-19">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-19"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1343,8 +1338,8 @@
                     <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0183086" class="algolia-no-index"><template slot="_header">A0183086_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0183086" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0183086"><template slot="modal-title">A0183086_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-20">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-20"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1359,8 +1354,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0183318" class="algolia-no-index"><template slot="_header">A0183318_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0183318" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0183318"><template slot="modal-title">A0183318_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-21">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-21"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1375,8 +1370,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0183366" class="algolia-no-index"><template slot="_header">A0183366_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0183366" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0183366"><template slot="modal-title">A0183366_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-22">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-22"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1391,8 +1386,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0183398" class="algolia-no-index"><template slot="_header">A0183398_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0183398" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0183398"><template slot="modal-title">A0183398_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-23">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-23"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1407,13 +1402,13 @@
                     <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0183909" class="algolia-no-index"><template slot="_header">A0183909_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0183909" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0183909"><template slot="modal-title">A0183909_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-24">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-24"></a></h4>
                 <div class="indented">
                   <ul>
-                    <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>2</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-secondary mr-1"><s>8</s></span></strong> [Mar 04 2020 - Mar 10 2020]: Did not contribute any commits to the <code>master</code> branch of the team repo <span aria-hidden="true" class="far fa-frown"></span></li>
+                    <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>4</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>2</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-24">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-24"></a></h4>
@@ -1423,8 +1418,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0183924" class="algolia-no-index"><template slot="_header">A0183924_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0183924" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0183924"><template slot="modal-title">A0183924_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-25">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-25"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1439,13 +1434,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0183972" class="algolia-no-index"><template slot="_header">A0183972_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0183972" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0183972"><template slot="modal-title">A0183972_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-26">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-26"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>3</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>11</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>17</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-26">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-26"></a></h4>
@@ -1455,8 +1450,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0183979" class="algolia-no-index"><template slot="_header">A0183979_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0183979" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0183979"><template slot="modal-title">A0183979_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-27">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-27"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1471,24 +1466,24 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0184030" class="algolia-no-index"><template slot="_header">A0184030_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0184030" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0184030"><template slot="modal-title">A0184030_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-28">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-28"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>8</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>12</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>20</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-28">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-28"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><span class="badge badge-success mr-1">Forked</span>: [Due in week 7] Forked team repo to own GitHub account? Yes</li>
-                    <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
+                    <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0184281" class="algolia-no-index"><template slot="_header">A0184281_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0184281" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0184281"><template slot="modal-title">A0184281_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-29">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-29"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1503,8 +1498,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0184296" class="algolia-no-index"><template slot="_header">A0184296_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0184296" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0184296"><template slot="modal-title">A0184296_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-30">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-30"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1519,8 +1514,8 @@
                     <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0184534" class="algolia-no-index"><template slot="_header">A0184534_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0184534" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0184534"><template slot="modal-title">A0184534_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-31">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-31"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1535,13 +1530,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185030" class="algolia-no-index"><template slot="_header">A0185030_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185030" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185030"><template slot="modal-title">A0185030_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-32">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-32"></a></h4>
                 <div class="indented">
                   <ul>
-                    <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>7</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>1</code> commit</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>10</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>17</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-32">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-32"></a></h4>
@@ -1551,8 +1546,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185080" class="algolia-no-index"><template slot="_header">A0185080_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185080" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185080"><template slot="modal-title">A0185080_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-33">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-33"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1567,8 +1562,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185406" class="algolia-no-index"><template slot="_header">A0185406_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185406" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185406"><template slot="modal-title">A0185406_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-34">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-34"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1583,24 +1578,24 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185430" class="algolia-no-index"><template slot="_header">A0185430_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185430" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185430"><template slot="modal-title">A0185430_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-35">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-35"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>4</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>9</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>22</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-35">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-35"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><span class="badge badge-success mr-1">Forked</span>: [Due in week 7] Forked team repo to own GitHub account? Yes</li>
-                    <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
+                    <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185434" class="algolia-no-index"><template slot="_header">A0185434_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185434" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185434"><template slot="modal-title">A0185434_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-36">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-36"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1615,8 +1610,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185627" class="algolia-no-index"><template slot="_header">A0185627_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185627" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185627"><template slot="modal-title">A0185627_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-37">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-37"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1631,8 +1626,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185662" class="algolia-no-index"><template slot="_header">A0185662_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185662" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185662"><template slot="modal-title">A0185662_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-38">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-38"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1647,13 +1642,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185683" class="algolia-no-index"><template slot="_header">A0185683_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185683" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185683"><template slot="modal-title">A0185683_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-39">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-39"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>5</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>11</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>18</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-39">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-39"></a></h4>
@@ -1663,8 +1658,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185707" class="algolia-no-index"><template slot="_header">A0185707_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185707" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185707"><template slot="modal-title">A0185707_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-40">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-40"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1679,8 +1674,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185775" class="algolia-no-index"><template slot="_header">A0185775_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185775" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185775"><template slot="modal-title">A0185775_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-41">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-41"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1695,8 +1690,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185894" class="algolia-no-index"><template slot="_header">A0185894_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185894" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185894"><template slot="modal-title">A0185894_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-42">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-42"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1711,13 +1706,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0185955" class="algolia-no-index"><template slot="_header">A0185955_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0185955" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0185955"><template slot="modal-title">A0185955_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-43">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-43"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>12</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>13</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>18</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-43">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-43"></a></h4>
@@ -1727,8 +1722,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0187253" class="algolia-no-index"><template slot="_header">A0187253_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0187253" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0187253"><template slot="modal-title">A0187253_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-44">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-44"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1743,8 +1738,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0187915" class="algolia-no-index"><template slot="_header">A0187915_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0187915" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0187915"><template slot="modal-title">A0187915_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-45">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-45"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1759,13 +1754,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0188591" class="algolia-no-index"><template slot="_header">A0188591_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0188591" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0188591"><template slot="modal-title">A0188591_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-46">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-46"></a></h4>
                 <div class="indented">
                   <ul>
-                    <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>2</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>1</code> commit</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>4</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>6</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-46">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-46"></a></h4>
@@ -1775,8 +1770,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0188625" class="algolia-no-index"><template slot="_header">A0188625_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0188625" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0188625"><template slot="modal-title">A0188625_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-47">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-47"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1791,8 +1786,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0188758" class="algolia-no-index"><template slot="_header">A0188758_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0188758" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0188758"><template slot="modal-title">A0188758_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-48">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-48"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1807,8 +1802,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0188871" class="algolia-no-index"><template slot="_header">A0188871_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0188871" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0188871"><template slot="modal-title">A0188871_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-49">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-49"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1823,8 +1818,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0188991" class="algolia-no-index"><template slot="_header">A0188991_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0188991" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0188991"><template slot="modal-title">A0188991_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-50">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-50"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1839,13 +1834,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0189629" class="algolia-no-index"><template slot="_header">A0189629_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0189629" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0189629"><template slot="modal-title">A0189629_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-51">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-51"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>3</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>26</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>30</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-51">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-51"></a></h4>
@@ -1855,8 +1850,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0189944" class="algolia-no-index"><template slot="_header">A0189944_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0189944" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0189944"><template slot="modal-title">A0189944_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-52">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-52"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1871,8 +1866,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0190016" class="algolia-no-index"><template slot="_header">A0190016_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0190016" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0190016"><template slot="modal-title">A0190016_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-53">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-53"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1887,8 +1882,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0190306" class="algolia-no-index"><template slot="_header">A0190306_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0190306" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0190306"><template slot="modal-title">A0190306_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-54">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-54"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1903,8 +1898,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0191091" class="algolia-no-index"><template slot="_header">A0191091_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0191091" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0191091"><template slot="modal-title">A0191091_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-55">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-55"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1919,8 +1914,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0192255" class="algolia-no-index"><template slot="_header">A0192255_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0192255" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0192255"><template slot="modal-title">A0192255_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-56">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-56"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1935,8 +1930,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0192257" class="algolia-no-index"><template slot="_header">A0192257_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0192257" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0192257"><template slot="modal-title">A0192257_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-57">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-57"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1951,8 +1946,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0207464" class="algolia-no-index"><template slot="_header">A0207464_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0207464" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0207464"><template slot="modal-title">A0207464_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-58">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-58"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1967,24 +1962,24 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0212641" class="algolia-no-index"><template slot="_header">A0212641_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0212641" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0212641"><template slot="modal-title">A0212641_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-59">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-59"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>2</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-secondary mr-1"><s>8</s></span></strong> [Mar 04 2020 - Mar 10 2020]: Did not contribute any commits to the <code>master</code> branch of the team repo <span aria-hidden="true" class="far fa-frown"></span></li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>9</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-59">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-59"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><span class="badge badge-success mr-1">Forked</span>: [Due in week 7] Forked team repo to own GitHub account? Yes</li>
-                    <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
+                    <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0212651" class="algolia-no-index"><template slot="_header">A0212651_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0212651" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0212651"><template slot="modal-title">A0212651_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-60">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-60"></a></h4>
                 <div class="indented">
                   <ul>
@@ -1999,8 +1994,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0212716" class="algolia-no-index"><template slot="_header">A0212716_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0212716" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0212716"><template slot="modal-title">A0212716_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-61">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-61"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2015,8 +2010,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0212737" class="algolia-no-index"><template slot="_header">A0212737_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0212737" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0212737"><template slot="modal-title">A0212737_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-62">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-62"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2031,8 +2026,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0212755" class="algolia-no-index"><template slot="_header">A0212755_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0212755" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0212755"><template slot="modal-title">A0212755_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-63">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-63"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2047,8 +2042,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0212780" class="algolia-no-index"><template slot="_header">A0212780_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0212780" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0212780"><template slot="modal-title">A0212780_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-64">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-64"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2063,8 +2058,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0212805" class="algolia-no-index"><template slot="_header">A0212805_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0212805" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0212805"><template slot="modal-title">A0212805_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-65">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-65"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2079,8 +2074,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0212895" class="algolia-no-index"><template slot="_header">A0212895_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0212895" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0212895"><template slot="modal-title">A0212895_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-66">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-66"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2095,8 +2090,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0213638" class="algolia-no-index"><template slot="_header">A0213638_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0213638" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0213638"><template slot="modal-title">A0213638_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-67">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-67"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2111,8 +2106,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0213708" class="algolia-no-index"><template slot="_header">A0213708_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0213708" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0213708"><template slot="modal-title">A0213708_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-68">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-68"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2127,8 +2122,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0213855" class="algolia-no-index"><template slot="_header">A0213855_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0213855" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0213855"><template slot="modal-title">A0213855_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-69">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-69"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2143,8 +2138,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0213909" class="algolia-no-index"><template slot="_header">A0213909_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0213909" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0213909"><template slot="modal-title">A0213909_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-70">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-70"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2159,8 +2154,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0214405" class="algolia-no-index"><template slot="_header">A0214405_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0214405" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0214405"><template slot="modal-title">A0214405_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-71">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-71"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2175,8 +2170,8 @@
                     <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0214435" class="algolia-no-index"><template slot="_header">A0214435_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0214435" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0214435"><template slot="modal-title">A0214435_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-72">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-72"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2191,8 +2186,8 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0214700" class="algolia-no-index"><template slot="_header">A0214700_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0214700" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0214700"><template slot="modal-title">A0214700_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-73">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-73"></a></h4>
                 <div class="indented">
                   <ul>
@@ -2207,13 +2202,13 @@
                     <li><span class="badge badge-secondary mr-1"><s>Used JUnit</s></span>: [Due in week 8] Contributed to JUnit code? No <span aria-hidden="true" class="far fa-frown"></span></li>
                   </ul>
                 </div>
-              </modal>
-              <modal large id="modal:tpPD-A0214952" class="algolia-no-index"><template slot="_header">A0214952_: tP Progress Details</template>
+              </b-modal>
+              <b-modal id="modal:tpPD-A0214952" ok-only size="lg" modal-class="mb-zoom" ref="modal:tpPD-A0214952"><template slot="modal-title">A0214952_: tP Progress Details</template>
                 <h4 id="tp-weekly-progress-74">tP Weekly Progress<a class="fa fa-anchor" href="#tp-weekly-progress-74"></a></h4>
                 <div class="indented">
                   <ul>
                     <li><strong>Week <span class="badge badge-success mr-1">7</span></strong> [Feb 26 2020 - Mar 03 2020]: Contributed <strong><code>3</code> commits</strong> to the <code>master</code> branch of the team repo</li>
-                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>6</code> commits</strong> to the <code>master</code> branch of the team repo</li>
+                    <li><strong>Week <span class="badge badge-success mr-1">8</span></strong> [Mar 04 2020 - Mar 10 2020]: Contributed <strong><code>7</code> commits</strong> to the <code>master</code> branch of the team repo</li>
                   </ul>
                 </div>
                 <h4 id="tp-admin-tasks-74">tP Admin Tasks<a class="fa fa-anchor" href="#tp-admin-tasks-74"></a></h4>
@@ -2223,7 +2218,7 @@
                     <li><span class="badge badge-success mr-1">Used JUnit</span>: [Due in week 8] Contributed to JUnit code? Yes</li>
                   </ul>
                 </div>
-              </modal>
+              </b-modal>
             </tab>
           </tabs>
         </div>
@@ -2231,7 +2226,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Specifying Requirements: Supplementary Requirements</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -51,9 +51,9 @@
                   <p></p>
                   <p></p>
                   <div>
-                    <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most
-                      <trigger trigger="click" for="modal:supplementary-nfr">Non Functional Requirements</trigger> will be listed.</p>
-                    <modal large id="modal:supplementary-nfr" class="algolia-no-index"><template slot="_header"><span class="dimmed">Textbook »</span></template>
+                    <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most <span trigger="click" for="modal:supplementary-nfr" v-b-popover.click.top.html="popoverGenerator"
+                        v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:supplementary-nfr'].show()" class="trigger">Non Functional Requirements</span> will be listed.</p>
+                    <b-modal id="modal:supplementary-nfr" ok-only size="lg" modal-class="mb-zoom" ref="modal:supplementary-nfr"><template slot="modal-title"><span class="dimmed">Textbook »</span></template>
                       <div>
                         <div></div>
                         <p></p>
@@ -75,9 +75,8 @@
                               <box>
                                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
                                 <ul>
-                                  <li>Data requirements e.g. size,
-                                    <tooltip><template slot="_content">how often do data change</template>volatility</tooltip>,
-                                    <tooltip><template slot="_content">saving data permanenetly</template>persistency</tooltip> etc.,</li>
+                                  <li>Data requirements e.g. size, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how often do data change</span>volatility</span>,
+                                    <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">saving data permanenetly</span>persistency</span> etc.,</li>
                                   <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                                   <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response
                                     time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
@@ -133,7 +132,7 @@
                           </div>
                         </div>
                       </div>
-                    </modal>
+                    </b-modal>
                   </div>
                   <div></div>
                 </div>

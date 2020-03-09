@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Error Handling: Logging</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -57,7 +57,7 @@
                       their associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again.</p>
                     <div v-closeable alt="blackbox photo">
                       <box>
-                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <tooltip><template slot="_content">flight data recorder</template>black box</tooltip> of an airplane</strong>;
+                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">flight data recorder</span>black box</span> of an airplane</strong>;
                           they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
                         <div class="non-printable">
                           <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG" width="250"><br>
@@ -106,30 +106,19 @@
                 <p></p>
                 <p></p>
                 <div>
-                  <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging
-                    <tooltip><template slot="_content">how much information to record</template>intensity</tooltip>.</p>
+                  <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging <span data-mb-component-type="tooltip"
+                      v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how much information to record</span>intensity</span>.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sample Java code uses Java’s default logging mechanism.</p>
                     <p>First, import the relevant Java package:</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.logging.*;
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.logging.*;</span></code></pre>
                     <p>Next, create a <code>Logger</code>:</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);
-</code></pre>
-                    <p>Now, you can use the <code>Logger</code> object to log information. Note the use of
-                      <popover><template slot="content"><code>INFO</code>, <code>WARNING</code> etc.</template>logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified
-                      as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not be written to the log file at all.</p>
-                    <pre><code class="hljs java"><span class="hljs-comment">// log a message at INFO level</span>
-logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);
-<span class="hljs-comment">//...</span>
-processInput();
-<span class="hljs-keyword">if</span>(error){
-    <span class="hljs-comment">//log a message at WARNING level</span>
-    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);
-}
-<span class="hljs-comment">//...</span>
-logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);</span></code></pre>
+                    <p>Now, you can use the <code>Logger</code> object to log information. Note the use of <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content"><code>INFO</code>, <code>WARNING</code> etc.</span>logging
+                      level
+                      </span> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not be written
+                      to the log file at all.</p>
+                    <pre><code class="hljs java"><span><span class="hljs-comment">// log a message at INFO level</span></span><span>logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);</span><span><span class="hljs-comment">//...</span></span><span>processInput();</span><span><span class="hljs-keyword">if</span>(error){</span><span>    <span class="hljs-comment">//log a message at WARNING level</span></span><span>    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);</span><span>}</span><span><span class="hljs-comment">//...</span></span><span>logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);</span></code></pre>
                   </box>
                 </div>
                 <div>

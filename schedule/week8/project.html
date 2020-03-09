@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 8 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -544,7 +544,7 @@
                     <div>
                       <h3 id="functionality-expectations">
                         <div class="text-white bg-danger p-1">Functionality Expectations</div><a class="fa fa-anchor" href="#functionality-expectations"></a></h3>
-                      <p><strong>The expected level of <em>functionality</em> from a team is roughly <mark>what you can achieve if each member contribute about the same amount of functional code as required by a <tooltip><template slot="_content">i.e., if all requirements were met at the <em>minimal</em> level specified</template>typical iP</tooltip></mark></strong>.</p>
+                      <p><strong>The expected level of <em>functionality</em> from a team is roughly <mark>what you can achieve if each member contribute about the same amount of functional code as required by a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., if all requirements were met at the <em>minimal</em> level specified</span>typical iP</span></mark></strong>.</p>
                       <box type="important">
                         <p>Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. <mark>Adding more functionality than the expected level will not increase your marks</mark>.
                           You are better off spending that effort in improving other aspects of the project. In fact, here is the grading criterion for the individual project effort:</p>
@@ -704,7 +704,7 @@
               <div>
                 <div class="indented-level2">
                   <box>
-                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>You may <tooltip><template slot="_content">i.e., copy-paste, not clone/fork</template>re-purpose/adopt</tooltip> code</strong>                      from any of the below to be used in your tP, provided you give credit to the source (and do not claim such code as yours).</p>
+                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>You may <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., copy-paste, not clone/fork</span>re-purpose/adopt</span> code</strong>                      from any of the below to be used in your tP, provided you give credit to the source (and do not claim such code as yours).</p>
                     <ul>
                       <li>The iP code of any of your team members, or of any other person in the module.</li>
                       <li>Code from <a href="https://se-education.org/addressbook-level2/">AddressBook-Level2</a> or any code used in module activities e.g., personbook</li>
@@ -751,9 +751,9 @@
                         <div class="text-white bg-dark p-1">Workflow</div><a class="fa fa-anchor" href="#workflow"></a></h3>
                       <div id="workflow-before-v11">
                         <p>
-                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy <span class="dimmed">(in Admin: Appendix B)</span></trigger></strong>,
+                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Read <span trigger="click" for="modal:appE-reusePolicy" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:appE-reusePolicy'].show()" class="trigger">our reuse policy <span class="dimmed">(in Admin: Appendix B)</span></span></strong>,
                           in particular, <mark>how to give credit when you reuse code from the Internet or classmates</mark>:</p>
-                        <modal large id="modal:appE-gitUsername" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E → Setting Git Username to Match GitHub Username</template>
+                        <b-modal id="modal:appE-gitUsername" ok-only size="lg" modal-class="mb-zoom" ref="modal:appE-gitUsername"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E → Setting Git Username to Match GitHub Username</template>
                           <div>
                             <p><strong>Set Git <code>user.name</code></strong>: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to <mark>set your Git <code>user.name</code> in all computers you use</mark>                              to a sensible string that uniquely identifies you. For example, <mark>you can set it to your GitHub username or your full name</mark>. If this user name is not set properly or if you use multiple user names for Git, our tools
                               might miss some of your work and as a result you might not get credit for some of your work.</p>
@@ -764,8 +764,8 @@
                             </ol>
                             <p>More info about setting Git username is <a href="https://help.github.com/articles/setting-your-username-in-git/">here</a>.</p>
                           </div>
-                        </modal>
-                        <modal large id="modal:appE-reusePolicy" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix B: Policies → Policy on Reuse</template>
+                        </b-modal>
+                        <b-modal id="modal:appE-reusePolicy" ok-only size="lg" modal-class="mb-zoom" ref="modal:appE-reusePolicy"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix B: Policies → Policy on Reuse</template>
                           <div>
                             <h3 id="policy-on-reuse">Policy on reuse <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
                               <a class="fa fa-anchor" href="#policy-on-reuse"></a>
@@ -799,8 +799,8 @@
                                   <p>If you <strong>used a third party library</strong>:</p>
                                   <ul>
                                     <li>iP/tP: Mention in the <code>README</code> file (under the <em>Acknowledgements</em> section)</li>
-                                    <li>tP: Mention in the
-                                      <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented</li>
+                                    <li>tP: Mention in the <span trigger="click" for="modal:reusePolicy-ppp" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-ppp'].show()"
+                                        class="trigger">Project Portfolio Page</span> if the library has a significant relevance to the features you implemented</li>
                                   </ul>
                                   <p>If you <strong>reused code snippets found on the Internet</strong> <span class="dimmed">e.g. from StackOverflow answers</span> or<br>
                                     <strong>referred code in another software</strong> or<br>
@@ -808,89 +808,41 @@
                                   <ul>
                                     <li>If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
                                       <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:
-                                      <pre><code class="hljs java"><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span>
-{Your implmentation of the reused solution here ...}
-</code></pre>
+                                      <pre><code class="hljs java"><span><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span></span><span>{Your implmentation of the reused solution here ...}</span></code></pre>
                                     </li>
-                                    <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using
-                                      <trigger trigger="click" for="modal:reusePolicy-authorTags"><code>@@author</code> tags</trigger>)<br> Format:
-                                      <pre><code class="hljs java"><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span>
-<span class="hljs-comment">//{Info about the source...}</span>
-
-{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}
-
-<span class="hljs-comment">//@@author</span>
-</span></code></pre>
-                                      <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):
-                                      <pre><code class="hljs java">persons = getList()
-<span class="hljs-comment">//@@author johndoe-reused</span>
-<span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span>
-Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{
-        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : <span class="hljs-number">0</span>;
-    }
-});
-<span class="hljs-comment">//@@author</span>
-<span class="hljs-keyword">return</span> persons;
-</code></pre>
+                                    <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using <span trigger="click"
+                                        for="modal:reusePolicy-authorTags" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-authorTags'].show()" class="trigger"><code>@@author</code> tags</span>)<br>                                      Format:
+                                      <pre><code class="hljs java"><span><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span></span><span><span class="hljs-comment">//{Info about the source...}</span></span><span>&#x200B;</span><span>{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}</span></span><span><span class="hljs-function"></span></span><span><span class="hljs-function"><span class="hljs-comment">//@@author</span></span></span></code></pre><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):
+                                      <pre><code class="hljs java"><span>persons = getList()</span><span><span class="hljs-comment">//@@author johndoe-reused</span></span><span><span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span></span><span>Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : <span class="hljs-number">0</span>;</span><span>    }</span><span>});</span><span><span class="hljs-comment">//@@author</span></span><span><span class="hljs-keyword">return</span> persons;</span></code></pre>
                                     </li>
                                   </ul>
                                 </box>
-                                <modal large id="modal:reusePolicy-authorTags" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project mid-v1.3 (extract) →</template>
+                                <b-modal id="modal:reusePolicy-authorTags" ok-only size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-authorTags"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project mid-v1.3 (extract) →</template>
                                   <div>
                                     <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship"></a></h4>
                                     <ul>
                                       <li>
                                         <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next
                                           <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
-                                        <pre><code class="hljs">//@@author johndoe
-method 1 ...
-method 2 ...
-//@@author sarahkhoo
-method 3 ...
-//@@author johndoe
-method 4 ...
-</code></pre>
+                                        <pre><code class="hljs"><span>//@@author johndoe</span><span>method 1 ...</span><span>method 2 ...</span><span>//@@author sarahkhoo</span><span>method 3 ...</span><span>//@@author johndoe</span><span>method 4 ...</span></code></pre>
                                       </li>
                                       <li>
                                         <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of
                                           code below yours can add the GitHub username to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
-                                        <pre><code class="hljs">method 0 ...
-//@@author johndoe
-method 1 ...
-method 2 ...
-//@@author
-method 3 ...
-method 4 ...
-</code></pre>
+                                        <pre><code class="hljs"><span>method 0 ...</span><span>//@@author johndoe</span><span>method 1 ...</span><span>method 2 ...</span><span>//@@author</span><span>method 3 ...</span><span>method 4 ...</span></code></pre>
                                       </li>
                                       <li>
                                         <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br> Here is an example code from an xml/fxml file.</p>
-                                        <pre><code class="hljs">&lt;!-- @@author sereneWong --&gt;
-&lt;textbox&gt;
-  &lt;label&gt;...&lt;/label&gt;
-  &lt;input&gt;...&lt;/input&gt;
-&lt;/textbox&gt;
-...
-</code></pre>
+                                        <pre><code class="hljs"><span>&lt;!-- @@author sereneWong --&gt;</span><span>&lt;textbox&gt;</span><span>  &lt;label&gt;...&lt;/label&gt;</span><span>  &lt;input&gt;...&lt;/input&gt;</span><span>&lt;/textbox&gt;</span><span>...</span></code></pre>
                                       </li>
                                       <li>
                                         <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong>.<br> 👎
                                           <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                         </p>
-                                        <pre><code class="hljs">/**
-  * Returns true if ...
-  * @@author johndoe
-  */
-</code></pre>
+                                        <pre><code class="hljs"><span>/**</span><span>  * Returns true if ...</span><span>  * @@author johndoe</span><span>  */</span></code></pre>
                                         <p>👍<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                         </p>
-                                        <pre><code class="hljs">//@@author johndoe
-/**
-  * Returns true if ...
-  */
-</code></pre>
+                                        <pre><code class="hljs"><span>//@@author johndoe</span><span>/**</span><span>  * Returns true if ...</span><span>  */</span></code></pre>
                                       </li>
                                     </ul>
                                     <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate"></a></h4>
@@ -921,19 +873,13 @@ method 4 ...
                                           <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
                                           </li>
                                         </ul>
-                                        <pre><code class="hljs">//@@author johndoe-unused
-method 1 ...
-method 2 ...
-</code></pre>
+                                        <pre><code class="hljs"><span>//@@author johndoe-unused</span><span>method 1 ...</span><span>method 2 ...</span></code></pre>
                                         <p>Please put a comment in the code to explain why it was not used.</p>
                                       </li>
                                       <li>
                                         <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>) e.g.
                                         </p>
-                                        <pre><code class="hljs">//@@author johndoe-reused
-method 1 ...
-method 2 ...
-</code></pre>
+                                        <pre><code class="hljs"><span>//@@author johndoe-reused</span><span>method 1 ...</span><span>method 2 ...</span></code></pre>
                                       </li>
                                       <li>
                                         <p><strong>You can use empty <code>@@author</code> tags to mark code as not yours when RepoSense attribute the to you incorrectly.</strong></p>
@@ -949,8 +895,8 @@ method 2 ...
                                       </li>
                                     </ul>
                                   </div>
-                                </modal>
-                                <modal large id="modal:reusePolicy-ppp" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Project Portfolio Page</template>
+                                </b-modal>
+                                <b-modal id="modal:reusePolicy-ppp" ok-only size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Project Portfolio Page</template>
                                   <div>
                                     <div>
                                       <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
@@ -969,7 +915,7 @@ method 2 ...
                                             <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
                                             <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
                                             <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
-                                            <li><strong>Contributions to <trigger trigger="click" for="modal:deliverablesPPP-teamTasks">team-based tasks </trigger>:</strong></li>
+                                            <li><strong>Contributions to <span trigger="click" for="modal:deliverablesPPP-teamTasks" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:deliverablesPPP-teamTasks'].show()" class="trigger">team-based tasks </span>:</strong></li>
                                             <li><strong>Review/mentoring contributions:</strong> Links to PRs reviewed, instances of helping team members in other ways</li>
                                             <li><strong>Contributions beyond the project team:</strong>
                                               <ul>
@@ -980,7 +926,7 @@ method 2 ...
                                           </ul>
                                         </li>
                                       </ul>
-                                      <modal large id="modal:deliverablesPPP-teamTasks" class="algolia-no-index"><template slot="_header">Team-Based Tasks</template>
+                                      <b-modal id="modal:deliverablesPPP-teamTasks" ok-only size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
                                         <div>
                                           <box>
                                             <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
@@ -1000,7 +946,7 @@ method 2 ...
                                             <p></p>
                                           </box>
                                         </div>
-                                      </modal>
+                                      </b-modal>
                                       <div class="indented-level2">
                                         <box border-left-color="darkcyan">
                                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you
@@ -1063,12 +1009,12 @@ method 2 ...
                                       </ul>
                                     </div>
                                   </div>
-                                </modal>
+                                </b-modal>
                               </div>
                             </div>
                           </div>
-                        </modal>
-                        <p><strong>We recommend the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger> for your project.</strong> In particular,</p>
+                        </b-modal>
+                        <p><strong>We recommend the <span trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:appErecommendedWorkflow-forkingworkflow'].show()" class="trigger">forking workflow</span> for your project.</strong>                          In particular,</p>
                         <ul>
                           <li><strong>Create issues to represent project tasks</strong> so that they can be tracked using the issue tracker features.</li>
                           <li><strong>Create a PR when you implement a project task</strong> that updates the code.<br>
@@ -1078,7 +1024,7 @@ method 2 ...
                           <li>After merging a PR, close the corresponding issue.<br>
                             <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span> PRO TIP</span> You can use GitHub's <a href="https://help.github.com/en/articles/closing-issues-using-keywords"><code>Fixes #123</code> trick</a>                            to get the issue to close automatically when the PR is merged.</li>
                         </ul>
-                        <modal large id="modal:appErecommendedWorkflow-forkingworkflow" class="algolia-no-index"><template slot="_header">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                        <b-modal id="modal:appErecommendedWorkflow-forkingworkflow" ok-only size="lg" modal-class="mb-zoom" ref="modal:appErecommendedWorkflow-forkingworkflow"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                           <div>
                             <div></div>
                             <p></p>
@@ -1119,7 +1065,7 @@ method 2 ...
                               </div>
                             </div>
                           </div>
-                        </modal>
+                        </b-modal>
                       </div>
                       <div id="workflow-after-v11">
                         <p><strong>You can reduce process rigor</strong> to suit your team's pace. For example, you can <strong>switch to a lighter workflow</strong>: While <em>forking workflow</em> is the safest, it is also rather heavy. You can switch
@@ -1128,7 +1074,7 @@ method 2 ...
                         <p><strong>You can also increase the rigor/safety of your workflow</strong>. For example, you can use GitHub's <a href="https://help.github.com/articles/about-protected-branches/"><em>Protected Branches</em></a> feature to protect
                           your
                           <code>master</code> branch against rogue PRs.</p>
-                        <modal id="modal:appEworkflow-testingExpectations" class="algolia-no-index"><template slot="_header">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project Grading → Expectation on testing</template>
+                        <b-modal id="modal:appEworkflow-testingExpectations" ok-only size modal-class="mb-zoom" ref="modal:appEworkflow-testingExpectations"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project Grading → Expectation on testing</template>
                           <div>
                             <ul>
                               <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
@@ -1141,7 +1087,7 @@ method 2 ...
                               </box>
                             </div>
                           </div>
-                        </modal>
+                        </b-modal>
                       </div>
                     </div>
                   </panel>
@@ -1301,8 +1247,7 @@ method 2 ...
                   <li>
                     <p>Some examples from <a href="https://github.com/se-edu/addressbook-level2">AddressBook-Level2</a>:</p>
                     <ul>
-                      <li>
-                        <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip><a href="https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/common/Utils.java"><code>seedu.addressbook.common.Utils.java</code></a><br>                        Tests: <a href="https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/common/UtilsTest.java"><code>seedu.addressbook.common.UtilsTest.java</code></a><br>
+                      <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span><a href="https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/common/Utils.java"><code>seedu.addressbook.common.Utils.java</code></a><br>                        Tests: <a href="https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/common/UtilsTest.java"><code>seedu.addressbook.common.UtilsTest.java</code></a><br>
                         <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Note how <strong>the test class is in the same package as the SUT</strong> (although in a different folder). Advantage: the test class has access to all non-private
                         members of the SUT, including <em>package private</em> members.</li>
                       <li>SUT: <a href="https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/parser/Parser.java"><code>seedu.addressbook.parser.Parser.java</code></a><br> Tests: <a href="https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/parser/ParserTest.java"><code>seedu.addressbook.parser.ParserTest.java</code></a><br>
@@ -1347,7 +1292,7 @@ method 2 ...
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

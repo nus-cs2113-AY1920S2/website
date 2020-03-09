@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 6 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -156,23 +156,7 @@
                           <br>
                           <br></p>
                         <p>Example:</p>
-                        <pre><code class="hljs">list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[T][✓] read book
-     2.[D][✓] return book (by: June 6th)
-     3.[E][✗] project meeting (at: Aug 6th 2-4pm)
-     4.[T][✓] join sports club
-     5.[T][✗] borrow book
-    ____________________________________________________________
-
-delete 3
-    ____________________________________________________________
-     Noted. I've removed this task: 
-       [E][✗] project meeting (at: Aug 6th 2-4pm)
-     Now you have 4 tasks in the list.
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✓] return book (by: June 6th)</span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     4.[T][✓] join sports club</span><span>     5.[T][✗] borrow book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>delete 3</span><span>    ____________________________________________________________</span><span>     Noted. I've removed this task: </span><span>       [E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     Now you have 4 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
@@ -208,11 +192,7 @@ delete 3
                         <h3 id="level-7-save">Level 7. Save<a class="fa fa-anchor" href="#level-7-save"></a></h3>
                         <p>Save the tasks in the hard disk automatically whenever the task list changes. Load the data from the hard disk when Duke starts up. You may hard-code the file name and location <span class="dimmed">e.g., <code>[project_root]/data/duke.txt</code></span></p>
                         <p>The format of the file is up to you. Example:</p>
-                        <pre><code class="hljs">T | 1 | read book
-D | 0 | return book | June 6th
-E | 0 | project meeting | Aug 6th 2-4pm
-T | 1 | join sports club
-</code></pre>
+                        <pre><code class="hljs"><span>T | 1 | read book</span><span>D | 0 | return book | June 6th</span><span>E | 0 | project meeting | Aug 6th 2-4pm</span><span>T | 1 | join sports club</span></code></pre>
                         <p><strong><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you use file paths in your code,</strong></p>
                         <ul>
                           <li>remember to use relative paths rather than absolute paths such as <code>C:\data</code>. If not, your app can cause unpredictable results when used in another computer.</li>
@@ -297,10 +277,10 @@ T | 1 | join sports club
               <h4 id="1-conceptualize-v1-0"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Conceptualize v1.0</span><a class="fa fa-anchor" href="#1-conceptualize-v1-0"></a></h4>
               <div>
                 <ul>
-                  <li>Based on your user story selected previously, conceptualize the product in terms of how it will look like at v1.0. Suggestion: this can be in the form of a
-                    <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.</li>
+                  <li>Based on your user story selected previously, conceptualize the product in terms of how it will look like at v1.0. Suggestion: this can be in the form of a <span trigger="click" for="modal:v10-featureLists" v-b-popover.click.top.html="popoverGenerator"
+                      v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-featureLists'].show()" class="trigger">feature list</span>.</li>
                 </ul>
-                <modal large id="modal:v10-featureLists" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <b-modal id="modal:v10-featureLists" ok-only size="lg" modal-class="mb-zoom" ref="modal:v10-featureLists"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -339,7 +319,7 @@ T | 1 | join sports club
                       </div>
                     </div>
                   </div>
-                </modal>
+                </b-modal>
               </div>
               <p></p>
               <h4 id="2-draft-the-ug-midnight-before-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Draft the UG</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>                midnight before the tutorial</span>
@@ -699,6 +679,7 @@ T | 1 | join sports club
               <a class="nav-link py-1" href="#tp-product-concept">tP: Product Concept&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#1-conceptualize-v1-0">1  Conceptualize v1.0&#x200E;</a>
+                <a class="nav-link py-1" href="#what">What&#x200E;</a>
                 <a class="nav-link py-1" href="#2-draft-the-ug-midnight-before-the-tutorial">2  Draft the UG           midnight before the tutorial
           &#x200E;</a>
                 <a class="nav-link py-1" href="#3-refine-the-product-design">3  Refine the product design&#x200E;</a>
@@ -711,7 +692,7 @@ T | 1 | join sports club
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

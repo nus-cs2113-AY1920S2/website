@@ -9,8 +9,7 @@
 </p>
 <div id="title-and-body">
   <div>
-    <h4 id="association-classes"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\oop\associations\associationClasses\text.md">Association Classes</span></span>
-    </h4>
+    <h4 id="association-classes"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\oop\associations\associationClasses\text.md">Association Classes</span></span><a class="fa fa-anchor" href="#association-classes"></a></h4>
   </div>
   <div id="main">
     <div>
@@ -22,30 +21,18 @@
             information.</p>
         </box>
         <p>
-          <panel type="seamless" src="/website/book/uml/classDiagrams/associationClasses/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Association Classes → What</p></template>
+          <panel type="seamless" src="/website/book/uml/classDiagrams/associationClasses/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Association Classes → What</p></template>
             <template
               slot="_alt">
               <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/AssociationClasses</p>
               </template>
           </panel>
         </p>
-        <h5 id="implementing-association-classes">Implementing association classes</h5>
+        <h5 id="implementing-association-classes">Implementing association classes<a class="fa fa-anchor" href="#implementing-association-classes"></a></h5>
         <p>There is no special way to implement an association class. It can be implemented as a normal class that has variables to represent the endpoint of the association it represents.</p>
         <box>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Transaction</code> class is an association class that represent a transaction between a <code>Person</code> who is the seller and another <code>Person</code>            who is the buyer.</p>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Transaction</span></span>{
-    
-    <span class="hljs-comment">//all fields are compulsory</span>
-    Person seller;
-    Person buyer;
-    Date date;
-    String receiptNumber;
-    
-    Transaction (Person seller, Person buyer, Date date, String receiptNumber){
-        <span class="hljs-comment">//set fields</span>
-    }
-}
-</code></pre>
+          <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Transaction</span></span>{</span><span>    </span><span>    <span class="hljs-comment">//all fields are compulsory</span></span><span>    Person seller;</span><span>    Person buyer;</span><span>    Date date;</span><span>    String receiptNumber;</span><span>    </span><span>    Transaction (Person seller, Person buyer, Date date, String receiptNumber){</span><span>        <span class="hljs-comment">//set fields</span></span><span>    }</span><span>}</span></code></pre>
         </box>
       </div>
     </div>
@@ -53,10 +40,10 @@
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\oop\associations\associationClasses\text.md">
         <div>
           <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\oop\associations\associationClasses\exercises.md">
-            <panel expandable><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
                 <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\oop\associations\associationClasses\q-tick-associationClasses.md">
-                  <panel><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which are suitable as an Association Class?</p></template>
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which are suitable as an Association Class?</p></template>
                     <question>
                       <p>Which one of these is the suitable as an Association Class?</p>
                       <img src="/website/book/oop/associations/associationClasses/images/exerciseDiagram.png" width="500">
@@ -67,7 +54,7 @@
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
                       </ul>
-                      <div slot="answer">
+                      <div slot="answer" class="algolia-no-index">
                         <p>(a)(b)<s>(c)</s>(d)</p>
                         <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would be
                           suitable as an association class.</p>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter [Printable] : Requirements</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -77,9 +77,9 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
                     <ul>
-                      <li>Data requirements e.g. size,
-                        <tooltip><template slot="_content">how often do data change</template>volatility</tooltip>,
-                        <tooltip><template slot="_content">saving data permanenetly</template>persistency</tooltip> etc.,</li>
+                      <li>Data requirements e.g. size, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how often do data change</span>volatility</span>,
+                        <span
+                          data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">saving data permanenetly</span>persistency</span> etc.,</li>
                       <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                       <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
                         Scalability, Security, Stability, Testability, and more ...</li>
@@ -130,7 +130,7 @@
                       <li><code>Level 0</code>, <code>Level 1</code>, <code>Level 2</code>, ...</li>
                     </ul>
                   </box>
-                  <p><strong>Some requirements can be discarded if they are considered ‘out of <em><tooltip><template slot="_content">the extent to which the software features should go</template>scope</tooltip></em>’.</strong></p>
+                  <p><strong>Some requirements can be discarded if they are considered ‘out of <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the extent to which the software features should go</span>scope</span></em>’.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The requirement given below is for a Calendar application. Stakeholder of the software (e.g. product designers) might decide the following requirement is not in the
                       scope of the software.</p>
@@ -148,8 +148,7 @@
                 </span><a class="fa fa-anchor" href="#quality-of-requirements"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p>Here are some characteristics of well-defined requirements
-                    <trigger for="pop:zielczynski"><sup>[📖 zielczynski]</sup></trigger>:</p>
+                  <p>Here are some characteristics of well-defined requirements <span for="pop:zielczynski" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:zielczynski'].show()" class="trigger"><sup>[📖 zielczynski]</sup></span>:</p>
                   <ul>
                     <li>Unambiguous</li>
                     <li>Testable (verifiable)</li>
@@ -158,8 +157,7 @@
                     <li>Understandable</li>
                     <li>Feasible (realistic, possible)</li>
                     <li>Independent</li>
-                    <li>
-                      <tooltip><template slot="_content">Not divisible any further</template>Atomic</tooltip>
+                    <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Not divisible any further</span>Atomic</span>
                     </li>
                     <li>Necessary</li>
                     <li>Implementation-free (i.e. abstract)</li>
@@ -170,14 +168,10 @@
                     <li>Non-redundant</li>
                     <li>Complete</li>
                   </ul>
-                  <popover id="pop:zielczynski">
-                    <div slot="content" class="algolia-no-index">
-                      <div>
-                        <p>Peter Zielczynski, <em><strong>Requirements Management Using IBM Rational RequisitePro</strong></em>, IBM Press, 2008</p>
-                      </div>
-                    </div>
-                  </popover>
-                </div>
+                  <span id="pop:zielczynski" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">
+  <div data-mb-html-for="content">
+    <div>
+<p>Peter Zielczynski, <em><strong>Requirements Management Using IBM Rational RequisitePro</strong></em>, IBM Press, 2008</p></div></div></span></div>
               </div>
             </div>
           </div>
@@ -186,7 +180,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

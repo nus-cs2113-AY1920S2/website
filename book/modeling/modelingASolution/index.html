@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Modeling: Modeling a Solution</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -82,9 +82,9 @@
                 <p></p>
                 <p></p>
                 <div>
-                  <p>As mentioned in [
-                    <trigger trigger="click" for="modal:basicModelling-modelingIntro">Design → Modeling → Modeling a Solutions → Introduction</trigger>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
-                  <modal large id="modal:basicModelling-modelingIntro" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                  <p>As mentioned in [<span trigger="click" for="modal:basicModelling-modelingIntro" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:basicModelling-modelingIntro'].show()"
+                      class="trigger">Design → Modeling → Modeling a Solutions → Introduction</span>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
+                  <b-modal id="modal:basicModelling-modelingIntro" ok-only size="lg" modal-class="mb-zoom" ref="modal:basicModelling-modelingIntro"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                     <div>
                       <div></div>
                       <p></p>
@@ -114,7 +114,7 @@
                         </div>
                       </div>
                     </div>
-                  </modal>
+                  </b-modal>
                   <img src="/website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                   <p></p>
                   <p>Let us start by modelling a sample interaction between the person playing the game and the <code>TextUi</code> object.</p>
@@ -145,8 +145,8 @@
                   </box>
                   <p></p>
                   <box>
-                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that
-                      <tooltip><template slot="_content">using sequence diagramsn</template>a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
+                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">using sequence diagramsn</span>a
+                      similar technique</span> can be used when discovering/defining the architecture-level APIs.</p>
                     <div v-closeable alt="Tic-Tac-Toe Video" class="non-printable">
                       <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Defining the architecture-level APIs for a small Tic-Tac-Toe game:</p>
                       <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Un80XoRT1ME" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -172,9 +172,9 @@
               <p></p>
               <p></p>
               <div>
-                <p>Continuing with the example in [
-                  <trigger trigger="click" for="modal:conceptualingIntermediate-basic">Design → Modeling → Modeling a Solution → Basic</trigger>], next let us model how the TextUi interacts with the Logic to support the mark or clear operations until the game is won or lost.</p>
-                <modal large id="modal:conceptualingIntermediate-basic" class="algolia-no-index"><template slot="_header"></template>
+                <p>Continuing with the example in [<span trigger="click" for="modal:conceptualingIntermediate-basic" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:conceptualingIntermediate-basic'].show()"
+                    class="trigger">Design → Modeling → Modeling a Solution → Basic</span>], next let us model how the TextUi interacts with the Logic to support the mark or clear operations until the game is won or lost.</p>
+                <b-modal id="modal:conceptualingIntermediate-basic" ok-only size="lg" modal-class="mb-zoom" ref="modal:conceptualingIntermediate-basic"><template slot="modal-title"></template>
                   <div>
                     <div>
                       <p>
@@ -193,9 +193,9 @@
                       </div>
                       <div id="main">
                         <div>
-                          <p>As mentioned in [
-                            <trigger trigger="click" for="modal:basicModelling-modelingIntro">Design → Modeling → Modeling a Solutions → Introduction</trigger>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
-                          <modal large id="modal:basicModelling-modelingIntro" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                          <p>As mentioned in [<span trigger="click" for="modal:basicModelling-modelingIntro" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:basicModelling-modelingIntro'].show()"
+                              class="trigger">Design → Modeling → Modeling a Solutions → Introduction</span>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
+                          <b-modal id="modal:basicModelling-modelingIntro" ok-only size="lg" modal-class="mb-zoom" ref="modal:basicModelling-modelingIntro"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                             <div>
                               <div></div>
                               <p></p>
@@ -225,7 +225,7 @@
                                 </div>
                               </div>
                             </div>
-                          </modal>
+                          </b-modal>
                           <img src="/website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                           <p></p>
                           <p>Let us start by modelling a sample interaction between the person playing the game and the <code>TextUi</code> object.</p>
@@ -258,8 +258,8 @@
                           </box>
                           <p></p>
                           <box>
-                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that
-                              <tooltip><template slot="_content">using sequence diagramsn</template>a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
+                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">using sequence diagramsn</span>a
+                              similar technique</span> can be used when discovering/defining the architecture-level APIs.</p>
                             <div v-closeable alt="Tic-Tac-Toe Video" class="non-printable">
                               <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Defining the architecture-level APIs for a small Tic-Tac-Toe game:</p>
                               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Un80XoRT1ME" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -270,7 +270,7 @@
                       </div>
                     </div>
                   </div>
-                </modal>
+                </b-modal>
                 <box>
                   <img src="/website/book/modeling/modelingASolution/intermediate/images/playerTextLogicRef.png" height="250">
                   <p></p>

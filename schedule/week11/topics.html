@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 11 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -456,16 +456,16 @@
                 <p></p>
                 <p></p>
                 <div>
-                  <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
-                    <trigger trigger="click" for="modal:archiStyles-buildingArchitectures">building architectures follow various architecture styles</trigger>.</p>
+                  <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like <span trigger="click" for="modal:archiStyles-buildingArchitectures" v-b-popover.click.top.html="popoverGenerator"
+                      v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:archiStyles-buildingArchitectures'].show()" class="trigger">building architectures follow various architecture styles</span>.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style,
                       ...</p>
                   </box>
-                  <modal large id="modal:archiStyles-buildingArchitectures" class="algolia-no-index"><template slot="_header">Building Architecture Styles</template>
+                  <b-modal id="modal:archiStyles-buildingArchitectures" ok-only size="lg" modal-class="mb-zoom" ref="modal:archiStyles-buildingArchitectures"><template slot="modal-title">Building Architecture Styles</template>
                     <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg" width="600"><br>
                       <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
-                  </modal>
+                  </b-modal>
                 </div>
                 <div></div>
               </div>
@@ -589,10 +589,9 @@
               <p></p>
               <p></p>
               <div>
-                <p><strong>Except for trivial <tooltip><template slot="_content">Software Under Test</template>SUTs</tooltip>, <tooltip><template slot="_content">testing all possible cases</template>exhaustive testing</tooltip> is not practical</strong>                  because such testing often requires a massive/infinite number of test cases.</p>
+                <p><strong>Except for trivial <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUTs</span>, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">testing all possible cases</span>exhaustive testing</span> is not practical</strong>                  because such testing often requires a massive/infinite number of test cases.</p>
                 <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the test cases for adding a string object to a
-                    <tooltip><template slot="_content">Java: <code>ArrayList</code>,<br>Python: <code>list</code></template>collection</tooltip>:</p>
+                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the test cases for adding a string object to a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Java: <code>ArrayList</code>,<br>Python: <code>list</code></span>collection</span>:</p>
                   <ul>
                     <li>Add an item to an empty collection.</li>
                     <li>Add an item when there is one item in the collection.</li>
@@ -619,7 +618,7 @@
                       <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                     </li>
                   </ul>
-                  <p><strong>For testing to be <tooltip><template slot="_content">Efficient and Effective</template>E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong>                    There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                  <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong>                    There are test case design techniques that can help us improve E&amp;E of testing.</p>
                 </div>
               </div>
               <div>
@@ -630,17 +629,9 @@
                         <question has-input="true">
                           <p>Given below is the sample output from a text-based program <code>TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test this
                             software. Two sample test cases are given below.</p>
-                          <pre><code class="hljs">C:\&gt; java TriangleDetector
-Enter side 1: 34
-Enter side 2: 34
-Enter side 3: 32
-Can this be a triangle?:  Yes
-Enter side 1:
-</code></pre>
+                          <pre><code class="hljs"><span>C:\&gt; java TriangleDetector</span><span>Enter side 1: 34</span><span>Enter side 2: 34</span><span>Enter side 3: 32</span><span>Can this be a triangle?:  Yes</span><span>Enter side 1:</span></code></pre>
                           <p>Sample test cases,</p>
-                          <pre><code class="hljs">34,34,34: Yes
-0, any valid, any valid: No
-</code></pre>
+                          <pre><code class="hljs"><span>34,34,34: Yes</span><span>0, any valid, any valid: No</span></code></pre>
                           <div slot="answer" class="algolia-no-index">
                             <p>In addition to obvious test cases such as</p>
                             <ul>
@@ -739,9 +730,10 @@ Enter side 1:
                     <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
                   </li>
                 </ol>
-                <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
-                  <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>                  because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those
-                  operations where more faults are found.</p>
+                <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’ <span trigger="click" for="modal:exploratoryWhat-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                    v-on:click="$refs['modal:exploratoryWhat-bach-et-explained'].show()" class="trigger">[source: bach-et-explained]</span> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other
+                  words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone,
+                  based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                   <blockquote>
@@ -752,12 +744,12 @@ Enter side 1:
                 <box>
                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                 </box>
-                <modal id="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="_header">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                <b-modal id="modal:exploratoryWhat-bach-et-explained" ok-only size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                   <div>
                     <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought
                       leader in software testing).</p>
                   </div>
-                </modal>
+                </b-modal>
               </div>
               <div>
                 <div>
@@ -845,15 +837,14 @@ Enter side 1:
                 <blockquote>
                   <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations
                     benefit from a mix of scripted and exploratory approaches. --
-                    <trigger trigger="click" for="modal:ExploratoryWhen-bach-et-explained">[source: bach-et-explained]</trigger>
-                  </p>
+                    <span trigger="click" for="modal:ExploratoryWhen-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ExploratoryWhen-bach-et-explained'].show()" class="trigger">[source: bach-et-explained]</span></p>
                 </blockquote>
-                <modal id="modal:ExploratoryWhen-bach-et-explained" class="algolia-no-index"><template slot="_header">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                <b-modal id="modal:ExploratoryWhen-bach-et-explained" ok-only size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                   <div>
                     <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought
                       leader in software testing).</p>
                   </div>
-                </modal>
+                </b-modal>
               </div>
               <div>
                 <div>
@@ -1001,10 +992,10 @@ Enter side 1:
                 <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases
                   do not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and
                   boundary values. The combinations of these could result in one use case producing many test cases.</p>
-                <p>To increase
-                  <trigger trigger="click" for="modal:usebaseBased-EandE">E&amp;E of testing</trigger>, high-priority use cases are given more attention. For example, a
-                  <trigger trigger="click" for="modal:usecaseBased-scripted">scripted approach</trigger> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-                <modal large id="modal:usebaseBased-EandE" class="algolia-no-index"><template slot="_header">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
+                <p>To increase <span trigger="click" for="modal:usebaseBased-EandE" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usebaseBased-EandE'].show()" class="trigger">E&amp;E of testing</span>,
+                  high-priority use cases are given more attention. For example, a <span trigger="click" for="modal:usecaseBased-scripted" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usecaseBased-scripted'].show()"
+                    class="trigger">scripted approach</span> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
+                <b-modal id="modal:usebaseBased-EandE" ok-only size="lg" modal-class="mb-zoom" ref="modal:usebaseBased-EandE"><template slot="modal-title">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
                   <div>
                     <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>                      In particular:</p>
                     <ul>
@@ -1015,10 +1006,10 @@ Enter side 1:
                         <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                       </li>
                     </ul>
-                    <p><strong>For testing to be <tooltip><template slot="_content">Efficient and Effective</template>E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong>                      There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                    <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong>                      There are test case design techniques that can help us improve E&amp;E of testing.</p>
                   </div>
-                </modal>
-                <modal large id="modal:usecaseBased-scripted" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                </b-modal>
+                <b-modal id="modal:usecaseBased-scripted" ok-only size="lg" modal-class="mb-zoom" ref="modal:usecaseBased-scripted"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -1041,10 +1032,10 @@ Enter side 1:
                               <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
                             </li>
                           </ol>
-                          <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
-                            <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called
-                            <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One
-                            tends to conduct more tests for those operations where more faults are found.</p>
+                          <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’ <span trigger="click" for="modal:exploratoryWhat-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                              v-on:click="$refs['modal:exploratoryWhat-bach-et-explained'].show()" class="trigger">[source: bach-et-explained]</span> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases.
+                            In other words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified
+                            as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
                           <box>
                             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                             <blockquote>
@@ -1055,12 +1046,12 @@ Enter side 1:
                           <box>
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                           </box>
-                          <modal id="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="_header">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                          <b-modal id="modal:exploratoryWhat-bach-et-explained" ok-only size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                             <div>
                               <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry
                                 thought leader in software testing).</p>
                             </div>
-                          </modal>
+                          </b-modal>
                         </div>
                         <div>
                           <div>
@@ -1113,7 +1104,7 @@ Enter side 1:
                       </div>
                     </div>
                   </div>
-                </modal>
+                </b-modal>
               </div>
               <div></div>
             </div>
@@ -1209,21 +1200,21 @@ Enter side 1:
             <div>
               <p><strong>Equivalence partitions (EPs) are usually derived from the specifications of the SUT.</strong></p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> These could be EPs for the
-                  <trigger for="pop:epBasic-isValidMonth">isValidMonth</trigger> example:</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> These could be EPs for the <span for="pop:epBasic-isValidMonth" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:epBasic-isValidMonth'].show()"
+                    class="trigger">isValidMonth</span> example:</p>
                 <ul>
                   <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
                   <li>[1 … 12] : the range that produces <code>true</code></li>
                   <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
                 </ul>
               </box>
-              <popover id="pop:epBasic-isValidMonth" placement="top"><template slot="header"><code>isValidMonth</code></template>
-                <div slot="content" class="algolia-no-index">
-                  <div>
-                    <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
-                  </div>
+              <span id="pop:epBasic-isValidMonth" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><code>isValidMonth</code></span>
+              <div data-mb-html-for="content">
+                <div>
+                  <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
                 </div>
-              </popover>
+              </div>
+              </span>
               <p>When the SUT has multiple inputs, you should identify EPs for each input.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code>duplicate(String s, int n): String</code> which returns a <code>String</code> that contains <code>s</code> repeated <code>n</code> times.</p>
@@ -1460,60 +1451,13 @@ Enter side 1:
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
               <div class="alt-java">
                 <div>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
-    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-    
-}
-</code></pre>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{
-    
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//a unit test for Foo#read() method</span>
-    }
-    
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span>
-    }  
-    
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span>
-    }
-}
-</code></pre>
+                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{</span><span>    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>    </span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>    </span><span>}</span></code></pre>
+                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{</span><span>    </span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//a unit test for Foo#read() method</span></span><span>    }</span><span>    </span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span></span><span>    }  </span><span>    </span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span></span><span>    }</span><span>}</span></code></pre>
                 </div>
               </div>
               <div class="alt-python">
                 <div>
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span>
-      <span class="hljs-comment"># ...</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span>
-      <span class="hljs-comment"># ...</span>
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span>
-      <span class="hljs-comment"># a unit test for read() method</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span>
-      <span class="hljs-comment"># a unit tests for write(string) method</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span>
-      <span class="hljs-comment"># another unit tests for write(string) method</span>
-</code></pre>
+                  <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> unittest</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span></span><span>      <span class="hljs-comment"># ...</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span></span><span>      <span class="hljs-comment"># ...</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span></span><span>      <span class="hljs-comment"># a unit test for read() method</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span></span><span>      <span class="hljs-comment"># a unit tests for write(string) method</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span></span><span>      <span class="hljs-comment"># another unit tests for write(string) method</span></span></code></pre>
                 </div>
               </div>
             </box>
@@ -1562,13 +1506,13 @@ Enter side 1:
           <p></p>
           <p></p>
           <div>
-            <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
-              <tooltip><template slot="_content">code the unit depends on</template>dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+            <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">code the unit depends on</span>dependencies</span>
+              cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the
                 <code>Storage</code> class.</p>
             </box>
-            <p><strong><em>Stubs</em> can isolate the <popover><template slot="content">Software Under Test (in this case, the <em>unit</em> being tested)</template>SUT</popover> from its dependencies</strong>.</p>
+            <p><strong><em>Stubs</em> can isolate the <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Software Under Test (in this case, the <em>unit</em> being tested)</span>SUT</span> from its dependencies</strong>.</p>
             <box type="definition">
               <div>
                 <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined
@@ -1577,68 +1521,20 @@ Enter side 1:
             </box>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    Storage s;
-
-    Logic(Storage s) {
-        <span class="hljs-keyword">this</span>.s = s;
-    }
-
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);
-    }
-}
-</code></pre>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
-}
-</code></pre>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> readValueFromDatabase(index);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-comment">// retrieve name from the database</span>
-    }
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{</span><span>    Storage s;</span><span>&#x200B;</span><span>    Logic(Storage s) {</span><span>        <span class="hljs-keyword">this</span>.s = s;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);</span><span>    }</span><span>}</span></code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{</span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;</span><span>}</span></code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-comment">// retrieve name from the database</span></span><span>    }</span><span>}</span></code></pre>
               <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-              <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-String name = logic.getName(<span class="hljs-number">23</span>);
-</code></pre>
+              <pre><code class="hljs java"><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());</span><span>String name = logic.getName(<span class="hljs-number">23</span>);</span></code></pre>
               <p>You can test it like this:</p>
-              <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{</span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());</span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));</span><span>}</span></code></pre>
               <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code>                <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
               <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
-            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
-        } <span class="hljs-keyword">else</span> {
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
-        }
-    }
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {</span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;</span><span>        } <span class="hljs-keyword">else</span> {</span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();</span><span>        }</span><span>    }</span><span>}</span></code></pre>
               <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response
                 <code>DatabaseStorage</code> is expected to return for the given test input.</p>
               <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-              <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
-    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{</span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());</span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));</span><span>}</span></code></pre>
             </box>
             <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
           </div>
@@ -1697,11 +1593,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <p></p>
           <p></p>
           <div>
-            <p><strong><em>Dependency injection</em> is the process of 'injecting' objects to replace current dependencies with a different object.</strong> This is often used to inject
-              <trigger trigger="click" for="modal:explainDi-stub">stubs</trigger> to isolate the
-              <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip> from its
-              <tooltip><template slot="_content">objects it depends on</template>dependencies</tooltip> so that it can be tested in isolation.</p>
-            <modal large id="modal:explainDi-stub" class="algolia-no-index"><template slot="_header"></template>
+            <p><strong><em>Dependency injection</em> is the process of 'injecting' objects to replace current dependencies with a different object.</strong> This is often used to inject <span trigger="click" for="modal:explainDi-stub" v-b-popover.click.top.html="popoverGenerator"
+                v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:explainDi-stub'].show()" class="trigger">stubs</span> to isolate the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter"
+                class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span> from its <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">objects it depends on</span>dependencies</span>
+              so that it can be tested in isolation.</p>
+            <b-modal id="modal:explainDi-stub" ok-only size="lg" modal-class="mb-zoom" ref="modal:explainDi-stub"><template slot="modal-title"></template>
               <div>
                 <div>
                   <p>
@@ -1719,13 +1615,13 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </div>
                   <div id="main">
                     <div>
-                      <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
-                        <tooltip><template slot="_content">code the unit depends on</template>dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+                      <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">code the unit depends on</span>dependencies</span>
+                        cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class
                           from the <code>Storage</code> class.</p>
                       </box>
-                      <p><strong><em>Stubs</em> can isolate the <popover><template slot="content">Software Under Test (in this case, the <em>unit</em> being tested)</template>SUT</popover> from its dependencies</strong>.</p>
+                      <p><strong><em>Stubs</em> can isolate the <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Software Under Test (in this case, the <em>unit</em> being tested)</span>SUT</span> from its dependencies</strong>.</p>
                       <box type="definition">
                         <div>
                           <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited
@@ -1734,69 +1630,21 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       </box>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    Storage s;
-
-    Logic(Storage s) {
-        <span class="hljs-keyword">this</span>.s = s;
-    }
-
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);
-    }
-}
-</code></pre>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
-}
-</code></pre>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> readValueFromDatabase(index);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-comment">// retrieve name from the database</span>
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{</span><span>    Storage s;</span><span>&#x200B;</span><span>    Logic(Storage s) {</span><span>        <span class="hljs-keyword">this</span>.s = s;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);</span><span>    }</span><span>}</span></code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{</span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;</span><span>}</span></code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-comment">// retrieve name from the database</span></span><span>    }</span><span>}</span></code></pre>
                         <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-                        <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-String name = logic.getName(<span class="hljs-number">23</span>);
-</code></pre>
+                        <pre><code class="hljs java"><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());</span><span>String name = logic.getName(<span class="hljs-number">23</span>);</span></code></pre>
                         <p>You can test it like this:</p>
-                        <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{</span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());</span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));</span><span>}</span></code></pre>
                         <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing
                           <code>Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
                         <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
-            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
-        } <span class="hljs-keyword">else</span> {
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
-        }
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {</span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;</span><span>        } <span class="hljs-keyword">else</span> {</span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();</span><span>        }</span><span>    }</span><span>}</span></code></pre>
                         <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct
                           response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
                         <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-                        <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
-    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{</span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());</span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));</span><span>}</span></code></pre>
                       </box>
                       <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
                     </div>
@@ -1830,7 +1678,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </div>
                 </div>
               </div>
-            </modal>
+            </b-modal>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code>Foo</code> object normally depends on a <code>Bar</code> object, but we can inject a <code>BarStub</code> object so that the <code>Foo</code> object no longer depends
                 on a <code>Bar</code> object. Now we can test the <code>Foo</code> object in isolation from the <code>Bar</code> object.</p>
@@ -1869,9 +1717,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <p></p>
           <p></p>
           <div>
-            <p><strong>Polymorphism can be used to implement dependency injection</strong>, as can be seen in the example given in
-              <trigger trigger="click" for="modal:useDi-stub">[Quality Assurance → Testing → Unit Testing → Stubs]</trigger> where a stub is injected to replace a dependency.</p>
-            <modal large id="modal:useDi-stub" class="algolia-no-index"><template slot="_header"></template>
+            <p><strong>Polymorphism can be used to implement dependency injection</strong>, as can be seen in the example given in <span trigger="click" for="modal:useDi-stub" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                v-on:click="$refs['modal:useDi-stub'].show()" class="trigger">[Quality Assurance → Testing → Unit Testing → Stubs]</span> where a stub is injected to replace a dependency.</p>
+            <b-modal id="modal:useDi-stub" ok-only size="lg" modal-class="mb-zoom" ref="modal:useDi-stub"><template slot="modal-title"></template>
               <div>
                 <div>
                   <p>
@@ -1889,13 +1737,13 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </div>
                   <div id="main">
                     <div>
-                      <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
-                        <tooltip><template slot="_content">code the unit depends on</template>dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+                      <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">code the unit depends on</span>dependencies</span>
+                        cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class
                           from the <code>Storage</code> class.</p>
                       </box>
-                      <p><strong><em>Stubs</em> can isolate the <popover><template slot="content">Software Under Test (in this case, the <em>unit</em> being tested)</template>SUT</popover> from its dependencies</strong>.</p>
+                      <p><strong><em>Stubs</em> can isolate the <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Software Under Test (in this case, the <em>unit</em> being tested)</span>SUT</span> from its dependencies</strong>.</p>
                       <box type="definition">
                         <div>
                           <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited
@@ -1904,69 +1752,21 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       </box>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    Storage s;
-
-    Logic(Storage s) {
-        <span class="hljs-keyword">this</span>.s = s;
-    }
-
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);
-    }
-}
-</code></pre>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
-}
-</code></pre>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> readValueFromDatabase(index);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-comment">// retrieve name from the database</span>
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{</span><span>    Storage s;</span><span>&#x200B;</span><span>    Logic(Storage s) {</span><span>        <span class="hljs-keyword">this</span>.s = s;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);</span><span>    }</span><span>}</span></code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{</span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;</span><span>}</span></code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-comment">// retrieve name from the database</span></span><span>    }</span><span>}</span></code></pre>
                         <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-                        <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-String name = logic.getName(<span class="hljs-number">23</span>);
-</code></pre>
+                        <pre><code class="hljs java"><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());</span><span>String name = logic.getName(<span class="hljs-number">23</span>);</span></code></pre>
                         <p>You can test it like this:</p>
-                        <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{</span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());</span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));</span><span>}</span></code></pre>
                         <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing
                           <code>Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
                         <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
-            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
-        } <span class="hljs-keyword">else</span> {
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
-        }
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {</span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;</span><span>        } <span class="hljs-keyword">else</span> {</span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();</span><span>        }</span><span>    }</span><span>}</span></code></pre>
                         <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct
                           response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
                         <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-                        <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
-    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{</span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());</span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));</span><span>}</span></code></pre>
                       </box>
                       <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
                     </div>
@@ -2000,70 +1800,14 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </div>
                 </div>
               </div>
-            </modal>
+            </b-modal>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is another example of using polymorphism to implement dependency injection:</p>
               <p>Suppose we want to unit test the <code>Payroll#totalSalary()</code> given below. The method depends on the <code>SalaryManager</code> object to calculate the return value. Note how the <code>setSalaryManager(SalaryManager)</code> can be
                 used to inject a <code>SalaryManager</code> object to replace the current <code>SalaryManager</code> object.</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
-    <span class="hljs-keyword">private</span> SalaryManager manager = <span class="hljs-keyword">new</span> SalaryManager();
-    <span class="hljs-keyword">private</span> String[] employees;
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setEmployees</span><span class="hljs-params">(String[] employees)</span> </span>{
-        <span class="hljs-keyword">this</span>.employees = employees;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSalaryManager</span><span class="hljs-params">(SalaryManager sm)</span> </span>{
-       <span class="hljs-keyword">this</span>. manager = sm;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">totalSalary</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">double</span> total = <span class="hljs-number">0</span>;
-        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; employees.length; i++){
-            total += manager.getSalaryForEmployee(employees[i]);
-        }
-        <span class="hljs-keyword">return</span> total;
-    }
-}
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManager</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span></span>{
-        <span class="hljs-comment">//code to access employee’s salary history</span>
-        <span class="hljs-comment">//code to calculate total salary paid and return it</span>
-    }
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{</span><span>    <span class="hljs-keyword">private</span> SalaryManager manager = <span class="hljs-keyword">new</span> SalaryManager();</span><span>    <span class="hljs-keyword">private</span> String[] employees;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setEmployees</span><span class="hljs-params">(String[] employees)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.employees = employees;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSalaryManager</span><span class="hljs-params">(SalaryManager sm)</span> </span>{</span><span>       <span class="hljs-keyword">this</span>. manager = sm;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">totalSalary</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">double</span> total = <span class="hljs-number">0</span>;</span><span>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; employees.length; i++){</span><span>            total += manager.getSalaryForEmployee(employees[i]);</span><span>        }</span><span>        <span class="hljs-keyword">return</span> total;</span><span>    }</span><span>}</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManager</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span></span>{</span><span>        <span class="hljs-comment">//code to access employee’s salary history</span></span><span>        <span class="hljs-comment">//code to calculate total salary paid and return it</span></span><span>    }</span><span>}</span></code></pre>
               <p>During testing, you can inject a <code>SalaryManagerStub</code> object to replace the <code>SalaryManager</code> object.</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTest</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-comment">//test setup</span>
-        Payroll p = <span class="hljs-keyword">new</span> Payroll();
-        p.setSalaryManager(<span class="hljs-keyword">new</span> SalaryManagerStub()); <span class="hljs-comment">//dependency injection</span>
-        <span class="hljs-comment">//test case 1</span>
-        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
-        assertEquals(<span class="hljs-number">2500.0</span>, p.totalSalary());
-        <span class="hljs-comment">//test case 2</span>
-        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
-        assertEquals(<span class="hljs-number">1000.0</span>, p.totalSalary());
-        <span class="hljs-comment">//more tests ...</span>
-    }
-}
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManagerStub</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SalaryManager</span> </span>{
-    <span class="hljs-comment">/** Returns hard coded values used for testing */</span>
-    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span> </span>{
-        <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E001"</span>)) {
-            <span class="hljs-keyword">return</span> <span class="hljs-number">1000.0</span>;
-        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E002"</span>)) {
-            <span class="hljs-keyword">return</span> <span class="hljs-number">1500.0</span>;
-        } <span class="hljs-keyword">else</span> {
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"unknown id"</span>);
-        }
-    }
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTest</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        <span class="hljs-comment">//test setup</span></span><span>        Payroll p = <span class="hljs-keyword">new</span> Payroll();</span><span>        p.setSalaryManager(<span class="hljs-keyword">new</span> SalaryManagerStub()); <span class="hljs-comment">//dependency injection</span></span><span>        <span class="hljs-comment">//test case 1</span></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});</span><span>        assertEquals(<span class="hljs-number">2500.0</span>, p.totalSalary());</span><span>        <span class="hljs-comment">//test case 2</span></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});</span><span>        assertEquals(<span class="hljs-number">1000.0</span>, p.totalSalary());</span><span>        <span class="hljs-comment">//more tests ...</span></span><span>    }</span><span>}</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManagerStub</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SalaryManager</span> </span>{</span><span>    <span class="hljs-comment">/** Returns hard coded values used for testing */</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span> </span>{</span><span>        <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E001"</span>)) {</span><span>            <span class="hljs-keyword">return</span> <span class="hljs-number">1000.0</span>;</span><span>        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E002"</span>)) {</span><span>            <span class="hljs-keyword">return</span> <span class="hljs-number">1500.0</span>;</span><span>        } <span class="hljs-keyword">else</span> {</span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"unknown id"</span>);</span><span>        }</span><span>    }</span><span>}</span></code></pre>
             </box>
           </div>
           <div>
@@ -2224,10 +1968,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose the SUT is a browser supposedly capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully if pushed
                 beyond its limits.</p>
-              <pre><code class="hljs">Test case: load a web page that is too big
-* Input: load a web page containing more than 5000 characters. 
-* Expected behavior: abort the loading of the page and show a meaningful error message. 
-</code></pre>
+              <pre><code class="hljs"><span>Test case: load a web page that is too big</span><span>* Input: load a web page containing more than 5000 characters. </span><span>* Expected behavior: abort the loading of the page and show a meaningful error message. </span></code></pre>
               <p>This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
             </box>
             <p><strong>System testing includes testing against non-functional requirements too.</strong> Here are some examples.</p>
@@ -2574,7 +2315,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

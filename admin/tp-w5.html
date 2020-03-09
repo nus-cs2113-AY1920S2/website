@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: tP: User Stories [week 5]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -221,20 +221,21 @@
               <div>
                 <img class="indented-level2" src="/website/admin/images/v00.png" width="250px">
                 <ul>
-                  <li>Get together with your team members and
-                    <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for
-                    <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> <strong> for the the product</strong>.
+                  <li>Get together with your team members and <span trigger="click" for="modal:v10-brainstorming" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-brainstorming'].show()"
+                      class="trigger">brainstorm</span> for <span trigger="click" for="modal:v10-userstories" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstories'].show()"
+                      class="trigger">user stories</span> <strong> for the the product</strong>.
                     <ul>
                       <li>At this stage, aim to have more user stories than you can deliver in the project. <span class="dimmed">Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</span></li>
-                      <li>Refer
-                        <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories → Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.</li>
-                      <li>You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in
-                        <trigger trigger="click" for="modal:v10-onlinetools">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br></li>
+                      <li>Refer <span trigger="click" for="modal:v10-userstoryusagetips" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstoryusagetips'].show()" class="trigger">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                        Specifying Requirements → UserStories → Usage → (section) Tips]</span> for tips on how to use user stories in this task.</li>
+                      <li>You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <span trigger="click"
+                          for="modal:v10-onlinetools" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-onlinetools'].show()" class="trigger">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                        Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</span>).<br></li>
                       <li>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. <span class="dimmed">Reason: an important aspect of brainstorming is not judging the ideas generated.</span></li>
                     </ul>
                   </li>
                 </ul>
-                <modal large id="modal:v10-brainstorming" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <b-modal id="modal:v10-brainstorming" ok-only size="lg" modal-class="mb-zoom" ref="modal:v10-brainstorming"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -281,8 +282,8 @@
                       </div>
                     </div>
                   </div>
-                </modal>
-                <modal large id="modal:v10-userstories" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                </b-modal>
+                <b-modal id="modal:v10-userstories" ok-only size="lg" modal-class="mb-zoom" ref="modal:v10-userstories"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -376,7 +377,7 @@
                               <div>
                                 <panel class="algolia-no-index"><template slot="_header"><p>Q: Extract user stories from customer statement</p></template>
                                   <question has-input="true">
-                                    <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <popover><template slot="content">The number of leave days not yet taken</template>leave balance</popover></em>.
+                                    <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">The number of leave days not yet taken</span>leave balance</span></em>.
                                       What are the user stories you can extract from that statement?</p>
                                     <div slot="hint" class="algolia-no-index">
                                       <p>Remember to follow the correct format when writing user stories.</p>
@@ -397,8 +398,8 @@
                       </div>
                     </div>
                   </div>
-                </modal>
-                <modal large id="modal:v10-onlinetools" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories → Usage → (panel)Tool Examples</template>
+                </b-modal>
+                <b-modal id="modal:v10-onlinetools" ok-only size="lg" modal-class="mb-zoom" ref="modal:v10-onlinetools"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories → Usage → (panel)Tool Examples</template>
                   <div>
                     <tabs>
                       <tab><template slot="_header">GitHub Project Boards</template>
@@ -428,8 +429,8 @@
                       </tab>
                     </tabs>
                   </div>
-                </modal>
-                <modal large id="modal:v10-userstoryusagetips" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories →  Usage → (section) Tips</template>
+                </b-modal>
+                <b-modal id="modal:v10-userstoryusagetips" ok-only size="lg" modal-class="mb-zoom" ref="modal:v10-userstoryusagetips"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories →  Usage → (section) Tips</template>
                   <div>
                     <p>Given their lightweight nature, <strong>user stories are quite handy for recording requirements during early stages of requirements gathering</strong>.</p>
                     <box>
@@ -446,7 +447,7 @@
                       </ul>
                     </box>
                   </div>
-                </modal>
+                </b-modal>
                 <div class="indented-level3">
                   <panel minimized class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> User Story examples (from a different product)</p></template>
                     <span class="text-monospace">
@@ -507,6 +508,8 @@
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-brainstorm-user-stories-before-the-tutorial">1  Brainstorm user stories           before the tutorial
           &#x200E;</a>
+              <a class="nav-link py-1" href="#brainstorming">Brainstorming&#x200E;</a>
+              <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
               <a class="nav-link py-1" href="#2-choose-user-stories-for-v1-0-during-the-tutorial">2  Choose user stories for v1.0           during the tutorial
           &#x200E;</a>
             </nav>
@@ -517,7 +520,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

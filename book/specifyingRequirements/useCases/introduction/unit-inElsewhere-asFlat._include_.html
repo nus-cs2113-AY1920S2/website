@@ -9,8 +9,7 @@
 </p>
 <div id="title-and-body">
   <div>
-    <h4 id="introduction"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\specifyingRequirements\useCases\introduction\text.md">Introduction</span></span>
-    </h4>
+    <h4 id="introduction"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\specifyingRequirements\useCases\introduction\text.md">Introduction</span></span><a class="fa fa-anchor" href="#introduction"></a></h4>
   </div>
   <div id="main">
     <div>
@@ -18,20 +17,20 @@
         <box type="definition">
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\definitions.md">
-              <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
-                <trigger for="pop:actor">actor</trigger>.[ 📖 :
-                <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\references.md"><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
-                  </span>
-                </popover>]</p>
-              <popover id="pop:actor" placement="top"><template slot="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
-                <div slot="content">
-                  <div>
-                    <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\definitions.md">
-                      <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
-                    </div>
+              <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an <span for="pop:actor" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter"
+                  v-on:mouseover="$refs['pop:actor'].show()" class="trigger">actor</span>.[ 📖 : <span effect="fade" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">uml-user-guide<span data-mb-html-for="content"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\references.md"><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+                </span>
+                </span>]</p>
+              <span id="pop:actor" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span>
+              </span>
+              <div data-mb-html-for="content">
+                <div>
+                  <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\definitions.md">
+                    <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                   </div>
                 </div>
-              </popover>
+              </div>
+              </span>
             </div>
           </div>
         </box>
@@ -70,7 +69,7 @@ Extensions:
       Use case ends.
 </pre>
           </panel>
-          <panel type="seamless"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 2: 'upload file' use case of an LMS</span></p></template>
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 2: 'upload file' use case of an LMS</span></p></template>
             <div class="text-monospace">
               <ul>
                 <li>System: A Learning Management System (LMS)</li>
@@ -89,9 +88,10 @@ Extensions:
         </box>
         <box background-color="white" border-color="white">
           <img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
-          <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.</p>
+          <p><strong><span for="modal:uml" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:uml'].show()" class="trigger">UML</span> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>,
+            providing a visual ‘table of contents’ of the use cases of a system.</p>
           <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-          <modal id="modal:uml"><template slot="_header"><strong>Unified Modeling Language (UML)</strong></template>
+          <b-modal id="modal:uml" ok-only size modal-class="mb-zoom" ref="modal:uml"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\common\definitions.md">
                 <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
@@ -99,7 +99,7 @@ Extensions:
                   UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
               </div>
             </div>
-          </modal>
+          </b-modal>
         </box>
         <p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p>
       </div>

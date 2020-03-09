@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: Peer Evaluations</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -216,8 +216,10 @@
                         </span>
                         When the first feedback session is opne on TEAMMATES, you will receive an eamil from TEAMMATES. There is nothing for you to do until then.</p>
                       <p>When you do receive that email, TEAMMATES will allow you to access it without using a Google login. However, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a
-                        <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. <span class="dimmed">Reason: CS2113/T is a big class. This profile helps us to remember you better, even after the module is over.</span></p>
-                      <modal id="modal:peerEvaluations-suitablePhoto" class="algolia-no-index"><template slot="_header"><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Website (extract)</span></template>
+                        <span
+                          trigger="click" for="modal:peerEvaluations-suitablePhoto" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:peerEvaluations-suitablePhoto'].show()" class="trigger">suitable profile photo</span>.
+                          <span class="dimmed">Reason: CS2113/T is a big class. This profile helps us to remember you better, even after the module is over.</span></p>
+                      <b-modal id="modal:peerEvaluations-suitablePhoto" ok-only size modal-class="mb-zoom" ref="modal:peerEvaluations-suitablePhoto"><template slot="modal-title"><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Website (extract)</span></template>
                         <div>
                           <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can
                             be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
@@ -226,7 +228,7 @@
                             use
                             <a href="https://en.wikipedia.org/wiki/File:Portrait_placeholder.png">a placeholder image</a> in place of the photo in module-related documents that are publicly visible.</p>
                         </div>
-                      </modal>
+                      </b-modal>
                     </box>
                   </div>
                 </panel>
@@ -393,7 +395,7 @@
                 <h3 id="session-final-peer-evaluation">Session: <code>Final Peer Evaluation</code><a class="fa fa-anchor" href="#session-final-peer-evaluation"></a></h3>
                 <ul>
                   <li>Held soon after the final project submission.</li>
-                  <li><mark>There will be bonus marks for <tooltip><template slot="_content">i.e., those who are close to the overall consensus</template>good</tooltip> peer evaluations</mark>.</li>
+                  <li><mark>There will be bonus marks for <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., those who are close to the overall consensus</span>good</span> peer evaluations</mark>.</li>
                   <li>This session includes all questions from the Midterm Peer Evaluation:</li>
                 </ul>
                 <div class="indented-level2">
@@ -585,7 +587,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

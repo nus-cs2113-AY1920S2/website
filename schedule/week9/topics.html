@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 9 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -316,69 +316,14 @@
                               <p>Consider the code below:</p>
                               <div class="row">
                                 <div class="col-sm-6">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;
-}
-</code></pre>
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
-         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;
-}
-</code></pre>
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
-    <span class="hljs-keyword">private</span> Review review;
-    <span class="hljs-keyword">private</span> String name;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(
-        String name, Rating rating)</span></span>{
-
-        <span class="hljs-keyword">this</span>.name = name;
-        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;</span><span>}</span></code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span></span><span><span class="hljs-class">         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;</span><span>}</span></code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{</span><span>    <span class="hljs-keyword">private</span> Review review;</span><span>    <span class="hljs-keyword">private</span> String name;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(</span></span></span><span><span class="hljs-function"><span class="hljs-params">        String name, Rating rating)</span></span>{</span><span>&#x200B;</span><span>        <span class="hljs-keyword">this</span>.name = name;</span><span>        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span></code></pre>
                                 </div>
                                 <div class="col-sm-6">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
-    GOOD, OK, POOR
-}
-</code></pre>
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{
-        <span class="hljs-keyword">this</span>.rating = rating;
-    }
-}
-</code></pre>
-                                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{
-    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-keyword">return</span> items.size();
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{
-        <span class="hljs-comment">// ...</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{
-        items.add(s);
-    }
-}
-</code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {</span><span>    GOOD, OK, POOR</span><span>}</span></code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.rating = rating;</span><span>    }</span><span>}</span></code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.List;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{</span><span>    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-keyword">return</span> items.size();</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{</span><span>        <span class="hljs-comment">// ...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{</span><span>        items.add(s);</span><span>    }</span><span>}</span></code></pre>
                                 </div>
                               </div>
                               <p>(a) Draw a class diagram to represent the code. Show all attributes, methods, associations, navigabilities, visibilities, known multiplicities, and association roles. Show associations as lines.<br> (b) Draw an object diagram
@@ -544,11 +489,10 @@
                     <div>
                       <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
                         <question has-input="true">
-                          <p>Discuss the relationship between coupling and
-                            <tooltip><template slot="_content">a measure of how easily a given component can be tested</template>testability</tooltip>.</p>
+                          <p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
                           <div slot="answer" class="algolia-no-index">
-                            <p>Coupling decreases testability because if the
-                              <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                            <p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span>
+                              is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                           </div>
                         </question>
                       </panel>
@@ -612,22 +556,7 @@
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If <code>Foo</code> class calls the method <code>Bar#read()</code>, <code>Foo</code> is coupled to <code>Bar</code> because a change to <code>Bar</code> can potentially
                     (but not always) require a change in the <code>Foo</code> class <span class="dimmed">e.g. if the signature of the <code>Bar#read()</code> is changed, <code>Foo</code> needs to change as well, but a change to the <code>Bar#write()</code> method may not require a change in the <code>Foo</code> class because <code>Foo</code> does not call <code>Bar#write()</code></span>.</p>
                   <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">code for the above example</span></p></template>
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
-    ...
-    <span class="hljs-keyword">new</span> Bar().read();
-    ...
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
-        ...
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span></span>{
-        ...
-    }
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{</span><span>    ...</span><span>    <span class="hljs-keyword">new</span> Bar().read();</span><span>    ...</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span></span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{</span><span>        ...</span><span>    }</span><span>    </span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span></span>{</span><span>        ...</span><span>    }</span><span>}</span></code></pre>
                   </panel>
                 </box>
                 <box>
@@ -804,46 +733,7 @@ What</span></p></template></panel>
                       <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which class is more cohesive?</p></template>
                         <question has-input="true">
                           <p>Compare the cohesion of the following two versions of the <code>EmailMessage</code> class. Which one is more cohesive and why?</p>
-                          <pre><code class="hljs java"><span class="hljs-comment">// version-1</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
-    <span class="hljs-keyword">private</span> String sendTo;
- 	  <span class="hljs-keyword">private</span> String subject;
-    <span class="hljs-keyword">private</span> String message;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{
-        <span class="hljs-keyword">this</span>.sendTo = sendTo;
-        <span class="hljs-keyword">this</span>.subject = subject;
-        <span class="hljs-keyword">this</span>.message = message;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">// sends message using sendTo, subject and message</span>
-    }
-}
-
-<span class="hljs-comment">// version-2</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
-    <span class="hljs-keyword">private</span> String sendTo;
-    <span class="hljs-keyword">private</span> String subject;
-    <span class="hljs-keyword">private</span> String message;
-    <span class="hljs-keyword">private</span> String username;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{
-        <span class="hljs-keyword">this</span>.sendTo = sendTo;
-        <span class="hljs-keyword">this</span>.subject = subject;
-        <span class="hljs-keyword">this</span>.message = message;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">// sends message using sendTo, subject and message</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">login</span><span class="hljs-params">(String username, String password)</span> </span>{
-        <span class="hljs-keyword">this</span>.username = username;
-        <span class="hljs-comment">// code to login</span>
-    }
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-comment">// version-1</span></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{</span><span>    <span class="hljs-keyword">private</span> String sendTo;</span><span> 	  <span class="hljs-keyword">private</span> String subject;</span><span>    <span class="hljs-keyword">private</span> String message;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;</span><span>        <span class="hljs-keyword">this</span>.subject = subject;</span><span>        <span class="hljs-keyword">this</span>.message = message;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span></span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-comment">// version-2</span></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{</span><span>    <span class="hljs-keyword">private</span> String sendTo;</span><span>    <span class="hljs-keyword">private</span> String subject;</span><span>    <span class="hljs-keyword">private</span> String message;</span><span>    <span class="hljs-keyword">private</span> String username;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;</span><span>        <span class="hljs-keyword">this</span>.subject = subject;</span><span>        <span class="hljs-keyword">this</span>.message = message;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">login</span><span class="hljs-params">(String username, String password)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.username = username;</span><span>        <span class="hljs-comment">// code to login</span></span><span>    }</span><span>}</span></code></pre>
                           <div slot="answer" class="algolia-no-index">
                             <p>Version 2 is less cohesive.</p>
                             <p>Explanation: Version 2 is handling functionality related to login, which is not directly related to the concept of ‘email message’ that the class is supposed to represent. On a related note, we can improve the cohesion of both
@@ -955,17 +845,17 @@ What</span></p></template></panel>
                     <li>A specific entity, such as the code related to the <code>Employee</code> entity</li>
                   </ul>
                 </box>
-                <p><strong>Applying <tooltip><template slot="_content">Separation of Concerns</template>SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
+                <p><strong>Applying <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Separation of Concerns</span>SoC</span> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how
                     the security is implemented.</p>
                 </box>
                 <p><strong>This principle can be applied at the class level, as well as on higher levels.</strong></p>
                 <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The
-                    <trigger trigger="click" for="modal:soc-nTier">n-tier architecture</trigger> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p>
+                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <span trigger="click" for="modal:soc-nTier" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:soc-nTier'].show()"
+                      class="trigger">n-tier architecture</span> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p>
                 </box>
-                <modal id="modal:soc-nTier" class="algolia-no-index"><template slot="_header">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <b-modal id="modal:soc-nTier" ok-only size modal-class="mb-zoom" ref="modal:soc-nTier"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -991,9 +881,9 @@ What</span></p></template></panel>
                       </div>
                     </div>
                   </div>
-                </modal>
-                <p><strong>This principle should lead to higher <trigger trigger="click" for="soc-cohesion">cohesion</trigger> and lower <trigger trigger="click" for="soc-coupling">coupling</trigger>.</strong></p>
-                <modal id="soc-coupling" class="algolia-no-index"><template slot="_header">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                </b-modal>
+                <p><strong>This principle should lead to higher <span trigger="click" for="soc-cohesion" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['soc-cohesion'].show()" class="trigger">cohesion</span> and lower <span trigger="click" for="soc-coupling" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['soc-coupling'].show()" class="trigger">coupling</span>.</strong></p>
+                <b-modal id="soc-coupling" ok-only size modal-class="mb-zoom" ref="soc-coupling"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -1051,11 +941,10 @@ What</span></p></template></panel>
                               <div>
                                 <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
                                   <question has-input="true">
-                                    <p>Discuss the relationship between coupling and
-                                      <tooltip><template slot="_content">a measure of how easily a given component can be tested</template>testability</tooltip>.</p>
+                                    <p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
                                     <div slot="answer" class="algolia-no-index">
-                                      <p>Coupling decreases testability because if the
-                                        <tooltip><template slot="_content">Software Under Test</template>SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                                      <p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span>
+                                        is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                                     </div>
                                   </question>
                                 </panel>
@@ -1084,8 +973,8 @@ What</span></p></template></panel>
                       </div>
                     </div>
                   </div>
-                </modal>
-                <modal id="soc-cohesion" class="algolia-no-index"><template slot="_header">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                </b-modal>
+                <b-modal id="soc-cohesion" ok-only size modal-class="mb-zoom" ref="soc-cohesion"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -1114,7 +1003,7 @@ What</span></p></template></panel>
                       </div>
                     </div>
                   </div>
-                </modal>
+                </b-modal>
               </div>
               <div>
                 <div>
@@ -1188,7 +1077,7 @@ What</span></p></template></panel>
                 their associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again.</p>
               <div v-closeable alt="blackbox photo">
                 <box>
-                  <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <tooltip><template slot="_content">flight data recorder</template>black box</tooltip> of an airplane</strong>;
+                  <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">flight data recorder</span>black box</span> of an airplane</strong>;
                     they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
                   <div class="non-printable">
                     <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG" width="250"><br>
@@ -1248,30 +1137,19 @@ What</span></p></template></panel>
             <p></p>
             <p></p>
             <div>
-              <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging
-                <tooltip><template slot="_content">how much information to record</template>intensity</tooltip>.</p>
+              <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging <span data-mb-component-type="tooltip"
+                  v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how much information to record</span>intensity</span>.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sample Java code uses Java’s default logging mechanism.</p>
                 <p>First, import the relevant Java package:</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.logging.*;
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.logging.*;</span></code></pre>
                 <p>Next, create a <code>Logger</code>:</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);
-</code></pre>
-                <p>Now, you can use the <code>Logger</code> object to log information. Note the use of
-                  <popover><template slot="content"><code>INFO</code>, <code>WARNING</code> etc.</template>logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as
-                  <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not be written to the log file at all.</p>
-                <pre><code class="hljs java"><span class="hljs-comment">// log a message at INFO level</span>
-logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);
-<span class="hljs-comment">//...</span>
-processInput();
-<span class="hljs-keyword">if</span>(error){
-    <span class="hljs-comment">//log a message at WARNING level</span>
-    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);
-}
-<span class="hljs-comment">//...</span>
-logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);</span></code></pre>
+                <p>Now, you can use the <code>Logger</code> object to log information. Note the use of <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content"><code>INFO</code>, <code>WARNING</code> etc.</span>logging
+                  level
+                  </span> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not be written to
+                  the log file at all.</p>
+                <pre><code class="hljs java"><span><span class="hljs-comment">// log a message at INFO level</span></span><span>logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);</span><span><span class="hljs-comment">//...</span></span><span>processInput();</span><span><span class="hljs-keyword">if</span>(error){</span><span>    <span class="hljs-comment">//log a message at WARNING level</span></span><span>    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);</span><span>}</span><span><span class="hljs-comment">//...</span></span><span>logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);</span></code></pre>
               </box>
             </div>
             <div>
@@ -1347,8 +1225,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the Java code below, suppose we set an assertion that <code>timeout</code> returned by <code>Config.getTimeout()</code> is greater than <code>0</code>. Now, if the <code>Config.getTimeout()</code>                returned <code>-1</code> in a specific execution of this line, the runtime can detect it as a <em>assertion failure</em> -- i.e. an assumption about the expected behavior of the code turned out to be wrong which could potentially be the
                 result of a bug -- and take some drastic action such as terminating the execution.</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); 
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); </span></code></pre>
             </box>
           </div>
           <div></div>
@@ -1388,10 +1265,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             <p>Use the <code>assert</code> keyword to define assertions.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This assertion will fail with the message <code>x should be 0</code> if <code>x</code> is not 0 at this point.</p>
-              <pre><code class="hljs java">x = getX();
-<span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;
-...
-</code></pre>
+              <pre><code class="hljs java"><span>x = getX();</span><span><span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;</span><span>...</span></code></pre>
             </box>
             <p><strong>Assertions can be disabled without modifying the code.</strong></p>
             <box>
@@ -1460,9 +1334,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             <p><strong>Do not use assertions to do <em>work</em></strong> because assertions can be disabled. If not, your program will stop working when assertions are not enabled.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below will not invoke the <code>writeFile()</code> method when assertions are disabled. <span class="dimmed">If that method is performing some work that is necessary for your program, your program will not work correctly when assertions are disabled.</span></p>
-              <pre><code class="hljs java">...
-<span class="hljs-function"><span class="hljs-keyword">assert</span> <span class="hljs-title">writeFile</span><span class="hljs-params">()</span> : "File writing is supposed to return <span class="hljs-keyword">true</span>"</span>;
-</code></pre>
+              <pre><code class="hljs java"><span>...</span><span><span class="hljs-function"><span class="hljs-keyword">assert</span> <span class="hljs-title">writeFile</span><span class="hljs-params">()</span> : "File writing is supposed to return <span class="hljs-keyword">true</span>"</span>;</span></code></pre>
             </box>
             <p><strong>Assertions are suitable for verifying assumptions about <em>Internal Invariants</em>, <em>Control-Flow Invariants</em>,
 <em>Preconditions</em>, <em>Postconditions</em>, and <em>Class Invariants</em>.</strong> Refer to [<a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html#usage">Programming with Assertions (second half)</a>] to learn more.</p>
@@ -1701,7 +1573,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 6 - Summary</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -138,7 +138,8 @@
                       <pic src="/website/schedule/week6/images/checkout-branch.gif"></pic>
                     </panel>
                     <p>Now, you should be in the <code>employee-john</code> branch. This also means now you have a local branch named <code>employee-john</code> which has the exact content of the remote branch <code>origin/employee-john</code> and it is
-                      <tooltip><template slot="_content">i.e., git knows that this branch is meant to be a copy of the corresponding remote branch</template>'tracking' the corresponding remote branch</tooltip>. This is how the revision graph should look like now:
+                      <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., git knows that this branch is meant to be a copy of the corresponding remote branch</span>'tracking'
+                      the corresponding remote branch</span>. This is how the revision graph should look like now:
                       <br>
                       <pic src="/website/schedule/week6/images/after-checking-out-branch.png" width="682"></pic>
                     </p>
@@ -204,34 +205,14 @@
                     <ol>
                       <li>
                         <p>When you open the conflicted file <code>food.txt</code>, the content will be like this:</p>
-                        <pre><code class="hljs">banana
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-carrot
-cheese
-=======
-beans
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; employee-amy
-dates
-egg
-fish
-grapes
-
-</code></pre>
+                        <pre><code class="hljs"><span>banana</span><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span><span>carrot</span><span>cheese</span><span>=======</span><span>beans</span><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; employee-amy</span><span>dates</span><span>egg</span><span>fish</span><span>grapes</span><span>&#x200B;</span></code></pre>
                       </li>
                       <li>
                         <p>Note how git has marked the conflicting changes done by the two branches using markers <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></p>
                       </li>
                       <li>
                         <p>We can modify that part in any way we like. For example, we can edit the file to make the content look like this.</p>
-                        <pre><code class="hljs">banana
-cheese
-beans
-dates
-egg
-fish
-grapes
-
-</code></pre>
+                        <pre><code class="hljs"><span>banana</span><span>cheese</span><span>beans</span><span>dates</span><span>egg</span><span>fish</span><span>grapes</span><span>&#x200B;</span></code></pre>
                       </li>
                       <li>
                         <p>When we are happy with the content of the conflicted file(s), we can simply stage the changes we did and complete the merge by committing the changes <span class="dimmed">(similar to how you do a normal commit)</span>.</p>
@@ -334,14 +315,13 @@ grapes
                         <li>As the merging the PRs on GitHub updates the <code>master</code> branch on the fork only, pull the <code>master</code> branch from your fork to your repo to get the latest <code>master</code> branch onto your Computer.</li>
                         <li>Next, merge the local <code>master</code> branch to the <code>vendor-ravi</code> branch to <em>sync</em> the <code>vendor-ravi</code> branch with the latest <code>master</code>. This will result in a conflict due to both vendors
                           editing the same location of the <code>stationary.txt</code>.</li>
-                        <li>Resolve the conflict,
-                          <trigger trigger="click" for="modal:w6activity-6.b">as you did in <span class="badge badge-secondary">Step 6.b</span></trigger>.</li>
+                        <li>Resolve the conflict, <span trigger="click" for="modal:w6activity-6.b" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:w6activity-6.b'].show()" class="trigger">as you did in <span class="badge badge-secondary">Step 6.b</span></span>.</li>
                         <li>Push the de-conflicted <code>vendor-ravi</code> branch to the fork.</li>
                         <li>Go to the PR again and note the warning about the conflict does not appear any more.</li>
                       </ol>
                     </li>
                   </ul>
-                  <modal large id="modal:w6activity-6.b" class="algolia-no-index"><template slot="_header">Step 6.b (for reference)</template>
+                  <b-modal id="modal:w6activity-6.b" ok-only size="lg" modal-class="mb-zoom" ref="modal:w6activity-6.b"><template slot="modal-title">Step 6.b (for reference)</template>
                     <div>
                       <ul>
                         <li><span class="badge badge-dark">Step 6.b</span> <strong>Resolve the conflict</strong>: The conflict happened because both branches modified the same location of the same file and git could not decide which changes to keep. The straight-forward
@@ -351,34 +331,14 @@ grapes
                         <ol>
                           <li>
                             <p>When you open the conflicted file <code>food.txt</code>, the content will be like this:</p>
-                            <pre><code class="hljs">banana
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-carrot
-cheese
-=======
-beans
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; employee-amy
-dates
-egg
-fish
-grapes
-
-</code></pre>
+                            <pre><code class="hljs"><span>banana</span><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span><span>carrot</span><span>cheese</span><span>=======</span><span>beans</span><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; employee-amy</span><span>dates</span><span>egg</span><span>fish</span><span>grapes</span><span>&#x200B;</span></code></pre>
                           </li>
                           <li>
                             <p>Note how git has marked the conflicting changes done by the two branches using markers <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></p>
                           </li>
                           <li>
                             <p>We can modify that part in any way we like. For example, we can edit the file to make the content look like this.</p>
-                            <pre><code class="hljs">banana
-cheese
-beans
-dates
-egg
-fish
-grapes
-
-</code></pre>
+                            <pre><code class="hljs"><span>banana</span><span>cheese</span><span>beans</span><span>dates</span><span>egg</span><span>fish</span><span>grapes</span><span>&#x200B;</span></code></pre>
                           </li>
                           <li>
                             <p>When we are happy with the content of the conflicted file(s), we can simply stage the changes we did and complete the merge by committing the changes <span class="dimmed">(similar to how you do a normal commit)</span>.</p>
@@ -394,7 +354,7 @@ grapes
                         </div>
                       </div>
                     </div>
-                  </modal>
+                  </b-modal>
                   <ul>
                     <li><span class="badge badge-dark">Step 14</span> <strong>Merge the <code>vendor-ravi</code> PR</strong> as you merged the previous PR in <span class="badge badge-secondary">Step 11</span>.</li>
                   </ul>
@@ -820,7 +780,7 @@ grapes
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

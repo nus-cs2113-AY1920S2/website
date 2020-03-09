@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter [Printable] : Software Design Patterns</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -145,21 +145,7 @@
               <div class="indented-less">
                 <div>
                   <p>Here is the typical implementation of how the Singleton pattern is applied to a class:</p>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logic theOne = <span class="hljs-keyword">null</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Logic</span><span class="hljs-params">()</span> </span>{
-        ...
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Logic <span class="hljs-title">getInstance</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">if</span> (theOne == <span class="hljs-keyword">null</span>) {
-            theOne = <span class="hljs-keyword">new</span> Logic();
-        }
-        <span class="hljs-keyword">return</span> theOne;
-    }
-}
-</code></pre>
+                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logic theOne = <span class="hljs-keyword">null</span>;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Logic</span><span class="hljs-params">()</span> </span>{</span><span>        ...</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Logic <span class="hljs-title">getInstance</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">if</span> (theOne == <span class="hljs-keyword">null</span>) {</span><span>            theOne = <span class="hljs-keyword">new</span> Logic();</span><span>        }</span><span>        <span class="hljs-keyword">return</span> theOne;</span><span>    }</span><span>}</span></code></pre>
                   <p>Notes:</p>
                   <ul>
                     <li>The constructor is <code>private</code>, which prevents instantiation from outside the class.</li>
@@ -168,11 +154,9 @@
                       return the single instance of the class.</li>
                   </ul>
                   <p>If <code>Logic</code> was not a Singleton class, an object is created like this:</p>
-                  <pre><code class="hljs java">Logic m = <span class="hljs-keyword">new</span> Logic();
-</code></pre>
+                  <pre><code class="hljs java"><span>Logic m = <span class="hljs-keyword">new</span> Logic();</span></code></pre>
                   <p>But now, the <code>Logic</code> object needs to be accessed like this:</p>
-                  <pre><code class="hljs java">Logic m = Logic.getInstance();
-</code></pre>
+                  <pre><code class="hljs java"><span>Logic m = Logic.getInstance();</span></code></pre>
                 </div>
               </div>
             </div>
@@ -227,10 +211,8 @@
                   <p><strong>Problem</strong></p>
                   <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed">e.g.  the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
                   <p><strong>Solution</strong></p>
-                  <p>Include a
-                    <tooltip><template slot="_content">a French word that means 'front of a building'</template>Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the
-                    Facade class.
-                  </p>
+                  <p>Include a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a French word that means 'front of a building'</span>Façade</span> class that sits
+                    between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
                     <img src="/website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
@@ -245,7 +227,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

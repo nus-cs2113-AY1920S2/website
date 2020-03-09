@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 1 - Admin Info</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -172,8 +172,8 @@
                                 <p>Strongly recommended: Complete your GitHub profile. In particular,</p>
                                 <ul>
                                   <li>Specify your full name.</li>
-                                  <li>Upload a profile photo that matches
-                                    <trigger trigger="click" for="modal:creatingGitHubAccount-photoCriteria">our requirements</trigger>.</li>
+                                  <li>Upload a profile photo that matches <span trigger="click" for="modal:creatingGitHubAccount-photoCriteria" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:creatingGitHubAccount-photoCriteria'].show()"
+                                      class="trigger">our requirements</span>.</li>
                                 </ul>
                                 <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Why am I being encouraged to complete my GitHub profile?</span></p></template>
                                   <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate
@@ -185,7 +185,7 @@
                                   during that period, please let us know immediately.</p>
                               </li>
                             </ol>
-                            <modal large id="modal:creatingGitHubAccount-photoCriteria" class="algolia-no-index"><template slot="_header">Our requirements for the profile photo</template>
+                            <b-modal id="modal:creatingGitHubAccount-photoCriteria" ok-only size="lg" modal-class="mb-zoom" ref="modal:creatingGitHubAccount-photoCriteria"><template slot="modal-title">Our requirements for the profile photo</template>
                               <div>
                                 <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples
                                   can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
@@ -193,7 +193,7 @@
                                 <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy,
                                   you may use <a href="https://en.wikipedia.org/wiki/File:Portrait_placeholder.png">a placeholder image</a> in place of the photo in module-related documents that are publicly visible.</p>
                               </div>
-                            </modal>
+                            </b-modal>
                           </div>
                         </panel>
                       </box>
@@ -297,7 +297,7 @@
                   <panel type="danger" class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module expectations and the <mark>star rating system</mark></strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
                     <div>
                       <h3 id="workload">Workload<a class="fa fa-anchor" href="#workload"></a></h3>
-                      <p>As 60% of this module is based on CA, it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its <tooltip><template slot="_content">e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program</template>peer modules</tooltip></strong>.</p>
+                      <p>As 60% of this module is based on CA, it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program</span>peer modules</span></strong>.</p>
                       <ul>
                         <li>Note that the <strong>module contains more things than a typical students can do</strong>, in order to provide enough things for even the strongest students to learn as much as they wish to.</li>
                         <li>This means it is <mark><strong>perfectly OK if you don't have time to learn everything the module offers</strong></mark>. Control your workload based on time you spend for the module in a week e.g., 1-1.5 days per week.</li>
@@ -374,14 +374,14 @@
                             </tab>
                           </tabs>
                         </box>
-                        <p><strong>Dotted underlines indicate <trigger for="pop:tooltip-example">tool tips</trigger></strong> (activated by hovering over it) and <strong>dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger></strong>                          (activated by clicking) containing additional information.</p>
-                        <popover id="pop:tooltip-example" placement="top"><template slot="header">Tooltip Example</template>
-                          <div slot="content" class="algolia-no-index">
-                            Additional information
-                          </div>
-                        </popover>
-                        <modal id="modal:modal-example" class="algolia-no-index"><template slot="_header">Modal Example</template> Additional information
-                        </modal>
+                        <p><strong>Dotted underlines indicate <span for="pop:tooltip-example" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:tooltip-example'].show()" class="trigger">tool tips</span></strong>                          (activated by hovering over it) and <strong>dashed underlines indicate <span for="modal:modal-example" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modal-example'].show()" class="trigger">modal windows</span></strong>                          (activated by clicking) containing additional information.</p>
+                        <span id="pop:tooltip-example" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header">Tooltip Example</span>
+                        <div data-mb-html-for="content">
+                          Additional information
+                        </div>
+                        </span>
+                        <b-modal id="modal:modal-example" ok-only size modal-class="mb-zoom" ref="modal:modal-example"><template slot="modal-title">Modal Example</template> Additional information
+                        </b-modal>
                       </div>
                       <p>This website <mark>uses a star rating system</mark> to indicate the priority level of contents.</p>
                       <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Module Expectations → Star Rating System</p></template>
@@ -613,9 +613,7 @@
                                       <tr>
                                         <td><span><span class="badge badge-warning">CS2113T</span></span>
                                         </td>
-                                        <td>COM1-B103
-                                          <trigger for="pop:footnote1"><sup class="footnote-ref"><a aria-describedby="footnote-label" href="#footnote1" id="footnoteref1">[1]</a></sup></trigger>
-                                        </td>
+                                        <td>COM1-B103<span for="pop:footnote1" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:footnote1'].show()" class="trigger"><sup class="footnote-ref"><a aria-describedby="footnote-label" href="#footnote1" id="footnoteref1">[1]</a></sup></span></td>
                                         <td><strong>M</strong>on <strong>16</strong>:00</td>
                                         <td><s><span class="dimmed">LC03</span></s></td>
                                         <td><strong><code>CS2113T-M16</code></strong></td>
@@ -763,8 +761,8 @@
                                             </li>
                                             <li>
                                               <p><strong>Isolate the problem.</strong> &quot;My code doesn't work&quot; isn't going to help even if you post the whole code. Others don't have time to go through all of your code. Isolate the part that doesn't
-                                                work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about
-                                                <trigger trigger="click" for="modal:appendixHelp-rubberDuckDebugging">Rubber Duck Debugging</trigger>?).</p>
+                                                work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about <span trigger="click" for="modal:appendixHelp-rubberDuckDebugging"
+                                                  v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:appendixHelp-rubberDuckDebugging'].show()" class="trigger">Rubber Duck Debugging</span>?).</p>
                                               <box>
                                                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related
                                                   to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.
@@ -781,12 +779,12 @@
                                           </ul>
                                         </li>
                                       </ul>
-                                      <modal large id="modal:appendixHelp-rubberDuckDebugging" class="algolia-no-index"><template slot="_header">Rubber Duck Debugging</template>
+                                      <b-modal id="modal:appendixHelp-rubberDuckDebugging" ok-only size="lg" modal-class="mb-zoom" ref="modal:appendixHelp-rubberDuckDebugging"><template slot="modal-title">Rubber Duck Debugging</template>
                                         <p><img src="/website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
                                         <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book <em>The Pragmatic Programmer</em> in which a
                                           programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
                                         <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]<br></p>
-                                      </modal>
+                                      </b-modal>
                                       <ul>
                                         <li><strong>Ask the world</strong> using programming forums such as stackoverflow.
                                           <ul>
@@ -895,7 +893,9 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
                     <div>
                       <p><big><p class="lead text-secondary">An iterative introduction to Software Engineering...</p></big></p>
                       <img src="/website/images/growingPlant.png" width="700">
-                      <p class="lead"><span>CS2113/T is an introductory Software Engineering module covering <strong>a balance of basic SE theory and practical skills</strong> needed to work in a project that has a software component. The module follows an <tooltip><template slot="_content">going through SE topics several times while increasing depth, as opposed to going through topics sequentially</template><strong>iterative approach</strong></tooltip> to covering topics. The module also introduces you to the Java programming language, the OOP paradigm, and some basic UML models.</span></p>
+                      <p class="lead"><span>CS2113/T is an introductory Software Engineering module covering <strong>a balance of basic SE theory and practical skills</strong> needed to work in a project that has a software component. The module follows an <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">going through SE topics several times while increasing depth, as opposed to going through topics sequentially</span><strong>iterative approach</strong></span>
+                        to covering topics. The module also introduces you to the Java programming language, the OOP paradigm, and some basic UML models.</span>
+                      </p>
                       <ul>
                         <li>
                           <p><strong>The theory side</strong> of this module is supported by a customized online textbook <a href="/website/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module
@@ -904,8 +904,8 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
                         </li>
                         <li>
                           <p><strong>On the practice side</strong>, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called <a href="/website/se-book-adapted/projectDuke/index.html">Duke</a>.
-                            Then, you will move to a team project in which you will build another small
-                            <tooltip><template slot="_content">Comman Line Interface</template>CLI</tooltip> app while working as a team.</p>
+                            Then, you will move to a team project in which you will build another small <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Comman Line Interface</span>CLI</span>
+                            app while working as a team.</p>
                         </li>
                       </ul>
                       <p>
@@ -1415,9 +1415,10 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
                     <p><strong>Based on:</strong></p>
                     <ol>
                       <li>functionality bugs in your work found by others during the <a href="/website/admin/tp-deliverables.html#deliverable-practical-exam">Practical Exam (PE)</a></li>
-                      <li>your test code <span class="dimmed">(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)</span></li>
+                      <li>your test code <span class="dimmed">(note <span trigger="click" for="modal:projectGradingQA-testingExpectations" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectGradingQA-testingExpectations'].show()" class="trigger">our expectations for automated testing</span>)</span>
+                      </li>
                     </ol>
-                    <modal large id="modal:projectGradingQA-testingExpectations" class="algolia-no-index"><template slot="_header">Our expectations for automated testing in the project</template>
+                    <b-modal id="modal:projectGradingQA-testingExpectations" ok-only size="lg" modal-class="mb-zoom" ref="modal:projectGradingQA-testingExpectations"><template slot="modal-title">Our expectations for automated testing in the project</template>
                       <div>
                         <ul>
                           <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
@@ -1430,7 +1431,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
                           </box>
                         </div>
                       </div>
-                    </modal>
+                    </b-modal>
                     <box>
                       <div>
                         <p>These are considered <em>functionality bugs</em>:<br>
@@ -1456,8 +1457,8 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
                           </li>
                           <li>The penalty for a bug is divided equally among assignees.</li>
                           <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
-                          <li>
-                            <tooltip><template slot="_content">i.e., the same bug reported by many testers</template><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
+                          <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span> earn
+                            less credit for the tester and slightly more penalty for the developer.</li>
                           <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance
                             testing.
                           </li>
@@ -1468,8 +1469,8 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
                             </ul>
                           </li>
                           <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
-                          <li>Excessive incorrect downgrading/rejecting/
-                            <tooltip><template slot="_content">marking as duplicates</template>duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+                          <li>Excessive incorrect downgrading/rejecting/<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">marking as duplicates</span>duplicate-flagging</span>,
+                            if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
                         </ul>
                       </div>
                     </box>
@@ -1715,8 +1716,8 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
                   <p><strong>Based on:</strong> tutor/bot observations of project milestones and GitHub data</p>
                   <p><strong>Grading criteria:</strong></p>
                   <ul>
-                    <li>No
-                      <tooltip><template slot="_content">e.g., the product is not working at all by the milestone deadline</template>major mishaps</tooltip> at v1.0 and v2.0.</li>
+                    <li>No <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., the product is not working at all by the milestone deadline</span>major mishaps</span>
+                      at v1.0 and v2.0.</li>
                     <li>Good attempt to use of at least <em>some</em> Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)</li>
                     <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
                   </ul>
@@ -1987,7 +1988,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

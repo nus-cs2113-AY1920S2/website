@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: iP: Week 3</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -222,8 +222,8 @@
               <div>
                 <div>
                   <ul>
-                    <li>Implement the following
-                      <tooltip><template slot="_content">in this context, an <em>increment</em> is a Duke <em>level</em> or a Duke <em>extension</em></template>increments</tooltip> <mark>in the given order</mark>.</li>
+                    <li>Implement the following <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">in this context, an <em>increment</em> is a Duke <em>level</em> or a Duke <em>extension</em></span>increments</span>
+                      <mark>in the given order</mark>.</li>
                   </ul>
                 </div>
                 <div>
@@ -253,27 +253,7 @@
                         <p>Implement a <em>skeletal</em> version of Duke that starts by greeting the user, simply echos commands entered by the user, and exits when the user types <code>bye</code>.
                           <br> Example:
                         </p>
-                        <pre><code class="hljs">    ____________________________________________________________
-     Hello! I'm Duke
-     What can I do for you?
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     list
-    ____________________________________________________________
-
-blah
-    ____________________________________________________________
-     blah
-    ____________________________________________________________
-
-bye
-    ____________________________________________________________
-     Bye. Hope to see you again soon!
-    ____________________________________________________________
-
-</code></pre>
+                        <pre><code class="hljs"><span>    ____________________________________________________________</span><span>     Hello! I'm Duke</span><span>     What can I do for you?</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     list</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>blah</span><span>    ____________________________________________________________</span><span>     blah</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>bye</span><span>    ____________________________________________________________</span><span>     Bye. Hope to see you again soon!</span><span>    ____________________________________________________________</span><span>&#x200B;</span></code></pre>
                         <ul>
                           <li>The indentation and horizontal lines are optional.</li>
                         </ul>
@@ -301,32 +281,7 @@ bye
                         <h3 id="level-2-add-list">Level 2. Add, List<a class="fa fa-anchor" href="#level-2-add-list"></a></h3>
                         <p>Add the ability to store whatever text entered by the user and display them back to the user when requested.</p>
                         <p>Example:</p>
-                        <pre><code class="hljs">    ____________________________________________________________
-     Hello! I'm Duke
-     What can I do for you?
-    ____________________________________________________________
-
-read book
-    ____________________________________________________________
-     added: read book
-    ____________________________________________________________
-
-return book
-    ____________________________________________________________
-     added: return book
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     1. read book
-     2. return book
-    ____________________________________________________________
-bye
-    ____________________________________________________________
-     Bye. Hope to see you again soon!
-    ____________________________________________________________
-
-</code></pre>
+                        <pre><code class="hljs"><span>    ____________________________________________________________</span><span>     Hello! I'm Duke</span><span>     What can I do for you?</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>read book</span><span>    ____________________________________________________________</span><span>     added: read book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>return book</span><span>    ____________________________________________________________</span><span>     added: return book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     1. read book</span><span>     2. return book</span><span>    ____________________________________________________________</span><span>bye</span><span>    ____________________________________________________________</span><span>     Bye. Hope to see you again soon!</span><span>    ____________________________________________________________</span><span>&#x200B;</span></code></pre>
                         <ul>
                           <li>There is no need to save the data to the hard disk.</li>
                           <li>Assume there will be no more than 100 tasks. If you wish, you may use a fixed size array (e.g., <code>String[100]</code>) to store the items.</li>
@@ -350,20 +305,7 @@ bye
                         </p>
                         <h3 id="level-3-mark-as-done">Level 3. Mark as Done<a class="fa fa-anchor" href="#level-3-mark-as-done"></a></h3>
                         <p>Add the ability to mark tasks as <em>done</em>.<br><br></p>
-                        <pre><code class="hljs">list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[✓] read book
-     2.[✗] return book
-     3.[✗] buy bread
-    ____________________________________________________________
-
-done 2
-    ____________________________________________________________
-     Nice! I've marked this task as done: 
-       [✓] return book
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[✓] read book</span><span>     2.[✗] return book</span><span>     3.[✗] buy bread</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>done 2</span><span>    ____________________________________________________________</span><span>     Nice! I've marked this task as done: </span><span>       [✓] return book</span><span>    ____________________________________________________________</span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
@@ -374,28 +316,12 @@ done 2
                                   <h3 id="a-classes"><span class="badge badge-pill badge-primary">A-Classes</span><a class="fa fa-anchor" href="#a-classes"></a></h3>
                                   <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
                                 </div>
-                                <p>While it is possible to represent a task list as a multi-dimensional array containing
-                                  <tooltip><template slot="_content"><code>String</code>, <code>int</code>, <code>boolean</code> etc.</template>primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
+                                <p>While it is possible to represent a task list as a multi-dimensional array containing <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code>String</code>, <code>int</code>, <code>boolean</code> etc.</span>primitive
+                                  values
+                                  </span>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
                                 <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
-    <span class="hljs-keyword">protected</span> String description;
-    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String description)</span> </span>{
-        <span class="hljs-keyword">this</span>.description = description;
-        <span class="hljs-keyword">this</span>.isDone = <span class="hljs-keyword">false</span>;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getStatusIcon</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> (isDone ? <span class="hljs-string">"\u2713"</span> : <span class="hljs-string">"\u2718"</span>); <span class="hljs-comment">//return tick or X symbols</span>
-    }
-
-    <span class="hljs-comment">//...</span>
-}
-</code></pre>
-                                  <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
-t.markAsDone()
-</code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{</span><span>    <span class="hljs-keyword">protected</span> String description;</span><span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String description)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.description = description;</span><span>        <span class="hljs-keyword">this</span>.isDone = <span class="hljs-keyword">false</span>;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getStatusIcon</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">return</span> (isDone ? <span class="hljs-string">"\u2713"</span> : <span class="hljs-string">"\u2718"</span>); <span class="hljs-comment">//return tick or X symbols</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-comment">//...</span></span><span>}</span></code></pre>
+                                  <pre><code class="hljs java"><span>Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);</span><span>t.markAsDone()</span></code></pre>
                                 </panel>
                               </div>
                             </panel>
@@ -455,7 +381,7 @@ t.markAsDone()
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Coding Best Practices: [Practice] Avoid Complicated Expressions</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
@@ -58,22 +58,13 @@
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);</span></code></pre>
                           <p>
                             <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs java">
-<span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
-<span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
-<span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
-
-<span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;
-
-<span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
-</code></pre>
+                          <pre><code class="hljs java"><span>&#x200B;</span><span><span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;</span><span><span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;</span><span><span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;</span><span>&#x200B;</span><span><span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;</span><span>&#x200B;</span><span><span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;</span></code></pre>
                         </box>
                       </div>
                     </div>
@@ -86,21 +77,13 @@
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)</span></code></pre>
                           <p>
                             <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
-is_same_size = previous_size != length
-is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
-
-is_urgent = type_code == URGENT
-
-<span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent
-</code></pre>
+                          <pre><code class="hljs python"><span>is_within_size_limit = length &lt; MAX_LENGTH</span><span>is_same_size = previous_size != length</span><span>is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size</span><span>&#x200B;</span><span>is_urgent = type_code == URGENT</span><span>&#x200B;</span><span><span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent</span></code></pre>
                         </box>
                       </div>
                     </div>

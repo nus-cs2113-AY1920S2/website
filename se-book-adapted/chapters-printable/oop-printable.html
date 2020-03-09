@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter [Printable] : Object-Oriented Programming</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -285,12 +285,12 @@
                   </span><a class="fa fa-anchor" href="#objects-as-abstractions"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p>The concept of <strong><em>Objects</em> in OOP is an <trigger trigger="click" for="modal:objectsAsAbstractions-abstraction">abstraction</trigger> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong>                    i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
-                  <modal large id="modal:objectsAsAbstractions-abstraction" class="algolia-no-index"><template slot="_header">Definition: Abstraction</template>
+                  <p>The concept of <strong><em>Objects</em> in OOP is an <span trigger="click" for="modal:objectsAsAbstractions-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:objectsAsAbstractions-abstraction'].show()" class="trigger">abstraction</span> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong>                    i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
+                  <b-modal id="modal:objectsAsAbstractions-abstraction" ok-only size="lg" modal-class="mb-zoom" ref="modal:objectsAsAbstractions-abstraction"><template slot="modal-title">Definition: Abstraction</template>
                     <div>
                       <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                     </div>
-                  </modal>
+                  </b-modal>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> We can deal with a <code>Person</code> object that represents the person Adam and query the object for Adam's age instead of dealing with details such as Adam’s date
                       of birth (DoB), in what format the DoB is stored, the algorithm used to calculate the age from the DoB, etc.</p>
@@ -337,8 +337,8 @@
                     <li><strong>provide it the inputs to produce the outcome we want.</strong></li>
                   </ol>
                   <p><strong>A <mark><em>class</em></mark> contains instructions for creating a specific kind of objects</strong>. It turns out sometimes multiple objects keep the same type of data and have the same behavior because they are of the <em>same kind</em>.
-                    Instructions for creating a 'kind' (or ‘class’) of objects can be done once and that same instructions can be used to
-                    <tooltip><template slot="_content">i.e. create instances of</template><em>instantiate</em></tooltip> objects of that kind. We call such instructions a <em>Class</em>.</p>
+                    Instructions for creating a 'kind' (or ‘class’) of objects can be done once and that same instructions can be used to <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e. create instances of</span><em>instantiate</em></span>
+                    objects of that kind. We call such instructions a <em>Class</em>.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Classes and objects in an example scenario</p>
                     <p>Consider the example of writing an OOP program to calculate the average age of Adam, Beth, Charlie, and Daisy.</p>
@@ -488,27 +488,10 @@
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Logic</code> class has a variable that can hold <code>0..1</code> <span class="dimmed">i.e., zero or one</span> <code>Minefield</code> objects.</p>
                     <div>
                       <div class="alt-java">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
-    Minefield minefield;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span></span>{
-    ...
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{</span><span>    Minefield minefield;</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span></span>{</span><span>    ...</span><span>}</span></code></pre>
                       </div>
                       <div class="alt-python">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span>
-    self.minefield = minefield
-    
-  <span class="hljs-comment"># ...</span>
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
-  <span class="hljs-comment"># ...</span>
-</code></pre>
+                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span></span><span>    self.minefield = minefield</span><span>    </span><span>  <span class="hljs-comment"># ...</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span></span><span>  <span class="hljs-comment"># ...</span></span></code></pre>
                       </div>
                     </div>
                   </box>
@@ -516,67 +499,30 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Logic</code> class will always have a <code>ConfigGenerator</code> object, provided the variable is not set to null at some point.</p>
                     <div class="alt-java">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
-    ...
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{</span><span>    ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();</span><span>    ...</span><span>}</span></code></pre>
                     </div>
                     <div class="alt-python">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.config_gen = ConfigGenerator()
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.config_gen = ConfigGenerator()</span></code></pre>
                     </div>
                   </box>
                   <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Foo</code> class has a variable to hold a <code>Bar</code> object and vice versa <span class="dimmed">i.e., each object can have an association with an object of the other type</span>.</p>
                     <div class="alt-java">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
-    Bar bar;
-    <span class="hljs-comment">//...</span>
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
-    Foo foo;
-    <span class="hljs-comment">//...</span>
-}
-
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{</span><span>    Bar bar;</span><span>    <span class="hljs-comment">//...</span></span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{</span><span>    Foo foo;</span><span>    <span class="hljs-comment">//...</span></span><span>}</span><span>&#x200B;</span></code></pre>
                     </div>
                     <div class="alt-python">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, bar)</span>:</span>
-    self.bar = bar;
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, foo)</span>:</span>
-    self.foo = foo;
-    
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, bar)</span>:</span></span><span>    self.bar = bar;</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, foo)</span>:</span></span><span>    self.foo = foo;</span><span>    </span></code></pre>
                     </div>
                   </box>
                   <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
                   <box>
                     <div class="alt-java">
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses an two-dimensional array to implement a 1-to-many association from the <code>Minefield</code> to <code>Cell</code>.</p>
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
-    Cell[][] cell;
-    ...
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{</span><span>    Cell[][] cell;</span><span>    ...</span><span>}</span></code></pre>
                     </div>
                     <div class="alt-python">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.cells = {<span class="hljs-number">1</span>:[], <span class="hljs-number">2</span>:[], <span class="hljs-number">3</span>:[]}
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.cells = {<span class="hljs-number">1</span>:[], <span class="hljs-number">2</span>:[], <span class="hljs-number">3</span>:[]}</span></code></pre>
                     </div>
                   </box>
                 </div>
@@ -598,36 +544,13 @@
                   </box>
                   <h5 id="implementing-dependencies">Implementing dependencies<a class="fa fa-anchor" href="#implementing-dependencies"></a></h5>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
-                      <tooltip><template slot="_content">temporary</template>transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter"
+                        class="trigger"><span data-mb-html-for="_content">temporary</span>transient</span> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
                     <div class="alt-java">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
-    
-    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculate</span><span class="hljs-params">(Bar bar)</span></span>{
-        <span class="hljs-keyword">return</span> bar.getValue();
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span></span>{
-    <span class="hljs-keyword">int</span> value;
-    
-    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getValue</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-keyword">return</span> value;
-    }
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{</span><span>    </span><span>    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculate</span><span class="hljs-params">(Bar bar)</span></span>{</span><span>        <span class="hljs-keyword">return</span> bar.getValue();</span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span></span>{</span><span>    <span class="hljs-keyword">int</span> value;</span><span>    </span><span>    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getValue</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-keyword">return</span> value;</span><span>    }</span><span>}</span></code></pre>
                     </div>
                     <div class="alt-python">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
-    
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate</span><span class="hljs-params">(self, bar)</span>:</span>
-        <span class="hljs-keyword">return</span> bar.value;
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span>:</span>
-    
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, value)</span>:</span>
-      self.value = value
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span></span><span>    </span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate</span><span class="hljs-params">(self, bar)</span>:</span></span><span>        <span class="hljs-keyword">return</span> bar.value;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span>:</span></span><span>    </span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, value)</span>:</span></span><span>      self.value = value</span></code></pre>
                     </div>
                   </box>
                 </div>
@@ -657,18 +580,10 @@
                   </p>
                   <box>
                     <div class="alt-java float-right ml-5">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span> </span>{
-    <span class="hljs-keyword">private</span> Subject subject;
-  ...
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span> </span>{</span><span>    <span class="hljs-keyword">private</span> Subject subject;</span><span>  ...</span><span>}</span></code></pre>
                     </div>
                     <div class="alt-python  float-right ml-5">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span>:</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.__subject = Subject()
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span>:</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.__subject = Subject()</span></code></pre>
                     </div>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this code, the <code>Email</code> has a composition type relationship with the <code>Subject</code> class, in the sense that the subject is part of the email.</p>
                   </box>
@@ -694,24 +609,10 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code>                      a object who is the leader of the team.</p>
                     <div class="alt-java">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{
-    Person leader;
-    ...
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setLeader</span><span class="hljs-params">(Person p)</span> </span>{
-        leader = p;
-    }
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{</span><span>    Person leader;</span><span>    ...</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setLeader</span><span class="hljs-params">(Person p)</span> </span>{</span><span>        leader = p;</span><span>    }</span><span>}</span></code></pre>
                     </div>
                     <div class="alt-python">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.__leader = <span class="hljs-literal">None</span>
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_leader</span><span class="hljs-params">(self, person)</span>:</span>
-    self.__leader = person
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.__leader = <span class="hljs-literal">None</span></span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_leader</span><span class="hljs-params">(self, person)</span>:</span></span><span>    self.__leader = person</span></code></pre>
                     </div>
                   </box>
                 </div>
@@ -807,12 +708,13 @@
                           <tr>
                             <td><code>read():String</code></td>
                             <td><code>read(int):String</code></td>
-                            <td>No. <span class="dimmed">Reason: the two methods have different signatures; This is a case of <trigger trigger="click" for="modal:overriding-overloading"> <em>overloading</em></trigger> (rather than overriding).</span></td>
+                            <td>No. <span class="dimmed">Reason: the two methods have different signatures; This is a case of <span trigger="click" for="modal:overriding-overloading" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:overriding-overloading'].show()" class="trigger"> <em>overloading</em></span>                              (rather than overriding).</span>
+                            </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                    <modal large id="modal:overriding-overloading" class="algolia-no-index"><template slot="_header"><strong>Overloading</strong></template>
+                    <b-modal id="modal:overriding-overloading" ok-only size="lg" modal-class="mb-zoom" ref="modal:overriding-overloading"><template slot="modal-title"><strong>Overloading</strong></template>
                       <div>
                         <div></div>
                         <p></p>
@@ -876,7 +778,7 @@
                           </div>
                         </div>
                       </div>
-                    </modal>
+                    </b-modal>
                   </box>
                 </div>
               </div>
@@ -945,9 +847,10 @@
                 </span><a class="fa fa-anchor" href="#interfaces"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p><strong>An <em>interface</em> is a behavior specification</strong> i.e. a collection of
-                    <tooltip><template slot="_content">Just the method signature without any implementation</template>method specifications</tooltip>. If a class
-                    <tooltip><template slot="_content">implements all methods specified in an interface</template>implements the interface</tooltip>, it means the class is able to support the behaviors specified by the said interface.</p>
+                  <p><strong>An <em>interface</em> is a behavior specification</strong> i.e. a collection of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Just the method signature without any implementation</span>method
+                    specifications
+                    </span>. If a class <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">implements all methods specified in an interface</span>implements the
+                    interface</span>, it means the class is able to support the behaviors specified by the said interface.</p>
                   <blockquote>
                     <p>There are a number of situations in software engineering when it is important for disparate groups of programmers to agree to a &quot;contract&quot; that spells out how their software interacts. Each group should be able to write their
                       code without any knowledge of how the other group's code is written. Generally speaking, interfaces are such contracts. <sub>--<a href="https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html">Oracle Docs on Java</a><sub></sub></sub>
@@ -1010,13 +913,9 @@
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an
                       object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
                     <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
-                    <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
-</code></pre>
+                    <pre><code class="hljs java"><span>Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span></span></code></pre>
                     <p>But the following code is not valid <span class="dimmed">because <code>staff</code> is declared as a <code>Staff</code> type and therefore its value may or may not be of  type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</span></p>
-                    <pre><code class="hljs java">Staff staff;
-...
-AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
-</code></pre>
+                    <pre><code class="hljs java"><span>Staff staff;</span><span>...</span><span>AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span></span></code></pre>
                   </box>
                 </div>
               </div>
@@ -1030,14 +929,15 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                 <div>
                   <box type="definition">
                     <div>
-                      <p><strong>Dynamic Binding</strong> (
-                        <tooltip><template slot="_content">There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document</template>aka late binding</tooltip>) : a mechanism where method calls in code are
-                        <tooltip><template slot="_content">deciding which method implementation to execure</template>resolved</tooltip> at
-                        <tooltip><template slot="_content">at the moment the method call is executed</template>runtime</tooltip>, rather than at compile time.</p>
+                      <p><strong>Dynamic Binding</strong> (<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document</span>aka
+                        late binding</span>) : a mechanism where method calls in code are <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">deciding which method implementation to execure</span>resolved</span>
+                        at <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">at the moment the method call is executed</span>runtime</span>, rather than at compile
+                        time.
+                      </p>
                     </div>
                   </box>
-                  <p><strong><trigger trigger="click" for="modal:dynamicAndStatic-overriding">Overridden methods</trigger> are resolved using dynamic binding, and therefore resolves to the implementation in the actual type of the object.</strong></p>
-                  <modal large id="modal:dynamicAndStatic-overriding" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                  <p><strong><span trigger="click" for="modal:dynamicAndStatic-overriding" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:dynamicAndStatic-overriding'].show()" class="trigger">Overridden methods</span> are resolved using dynamic binding, and therefore resolves to the implementation in the actual type of the object.</strong></p>
+                  <b-modal id="modal:dynamicAndStatic-overriding" ok-only size="lg" modal-class="mb-zoom" ref="modal:dynamicAndStatic-overriding"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                     <div>
                       <div>
                         <p>
@@ -1082,12 +982,13 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                     <tr>
                                       <td><code>read():String</code></td>
                                       <td><code>read(int):String</code></td>
-                                      <td>No. <span class="dimmed">Reason: the two methods have different signatures; This is a case of <trigger trigger="click" for="modal:overriding-overloading"> <em>overloading</em></trigger> (rather than overriding).</span></td>
+                                      <td>No. <span class="dimmed">Reason: the two methods have different signatures; This is a case of <span trigger="click" for="modal:overriding-overloading" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:overriding-overloading'].show()" class="trigger"> <em>overloading</em></span>                                        (rather than overriding).</span>
+                                      </td>
                                     </tr>
                                   </tbody>
                                 </table>
                               </div>
-                              <modal large id="modal:overriding-overloading" class="algolia-no-index"><template slot="_header"><strong>Overloading</strong></template>
+                              <b-modal id="modal:overriding-overloading" ok-only size="lg" modal-class="mb-zoom" ref="modal:overriding-overloading"><template slot="modal-title"><strong>Overloading</strong></template>
                                 <div>
                                   <div></div>
                                   <p></p>
@@ -1152,7 +1053,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                     </div>
                                   </div>
                                 </div>
-                              </modal>
+                              </b-modal>
                             </box>
                           </div>
                           <div>
@@ -1184,15 +1085,10 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                         </div>
                       </div>
                     </div>
-                  </modal>
+                  </b-modal>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below. The declared type of <code>s</code> is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code>                      class is invoked.</p>
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
-    <span class="hljs-keyword">for</span> (Staff s: staff) {
-        s.adjustSalary(byPercent);
-    }
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{</span><span>    <span class="hljs-keyword">for</span> (Staff s: staff) {</span><span>        s.adjustSalary(byPercent);</span><span>    }</span><span>}</span></code></pre>
                     <p>However, at runtime <code>s</code> can receive an object of any subclass of <code>Staff</code>. That means the <code>adjustSalary(int)</code> operation of the actual subclass object will be called. If the subclass does not override
                       that operation, the operation defined in the superclass (in this case, <code>Staff</code> class) will be called.</p>
                   </box>
@@ -1201,8 +1097,8 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       <p><strong>Static binding</strong> (aka early binding): When a method call is resolved at compile time.</p>
                     </div>
                   </box>
-                  <p><strong>In contrast, <trigger trigger="click" for="modal:dynamicAndStatic-overloading">overloaded</trigger> methods are resolved using static binding.</strong></p>
-                  <modal large id="modal:dynamicAndStatic-overloading" class="algolia-no-index"><template slot="_header">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                  <p><strong>In contrast, <span trigger="click" for="modal:dynamicAndStatic-overloading" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:dynamicAndStatic-overloading'].show()" class="trigger">overloaded</span> methods are resolved using static binding.</strong></p>
+                  <b-modal id="modal:dynamicAndStatic-overloading" ok-only size="lg" modal-class="mb-zoom" ref="modal:dynamicAndStatic-overloading"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                     <div>
                       <div></div>
                       <p></p>
@@ -1266,27 +1162,13 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                         </div>
                       </div>
                     </div>
-                  </modal>
+                  </b-modal>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how the constructor is overloaded in the class below. The method call <code>new Account()</code> is bound to the first constructor at compile time.</p>
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
-
-    Account () {
-        <span class="hljs-comment">// Signature: ()</span>
-        ...
-    }
-
-    Account (String name, String number, <span class="hljs-keyword">double</span> balance) {
-        <span class="hljs-comment">// Signature: (String, String, double)</span>
-        ...
-    }
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{</span><span>&#x200B;</span><span>    Account () {</span><span>        <span class="hljs-comment">// Signature: ()</span></span><span>        ...</span><span>    }</span><span>&#x200B;</span><span>    Account (String name, String number, <span class="hljs-keyword">double</span> balance) {</span><span>        <span class="hljs-comment">// Signature: (String, String, double)</span></span><span>        ...</span><span>    }</span><span>}</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Similarly, the <code>calcuateGrade</code> method is overloaded in the code below and a method call <code>calculateGrade(&quot;A1213232&quot;)</code> is bound to the
                       second implementation, at compile time.</p>
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(String matric)</span> </span>{ ... }
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }</span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(String matric)</span> </span>{ ... }</span></code></pre>
                   </box>
                 </div>
               </div>
@@ -1383,7 +1265,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

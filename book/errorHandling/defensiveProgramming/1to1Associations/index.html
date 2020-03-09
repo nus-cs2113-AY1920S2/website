@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Error Handling: Defensive Programming: Enforcing 1-to-1 Associations</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -56,29 +56,10 @@
                     <img src="/website/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
                     <p></p>
                     <p>Option 1:</p>
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
-    <span class="hljs-keyword">private</span> Mine mine;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MinedCell</span><span class="hljs-params">(Mine m)</span></span>{
-        <span class="hljs-keyword">if</span> (m == <span class="hljs-keyword">null</span>) {
-            showError();
-        }
-        mine = m;
-    }
-    …
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{</span><span>    <span class="hljs-keyword">private</span> Mine mine;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MinedCell</span><span class="hljs-params">(Mine m)</span></span>{</span><span>        <span class="hljs-keyword">if</span> (m == <span class="hljs-keyword">null</span>) {</span><span>            showError();</span><span>        }</span><span>        mine = m;</span><span>    }</span><span>    …</span><span>}</span></code></pre>
                     <p>Option 1 forces us to keep a <code>Mine</code> without a <code>MinedCell</code> (until the <code>MinedCell</code> is created).</p>
                     <p>Option 2:</p>
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
-    <span class="hljs-keyword">private</span> Mine mine;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MinedCell</span><span class="hljs-params">()</span></span>{
-        mine = <span class="hljs-keyword">new</span> Mine();
-    }
-    …
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{</span><span>    <span class="hljs-keyword">private</span> Mine mine;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MinedCell</span><span class="hljs-params">()</span></span>{</span><span>        mine = <span class="hljs-keyword">new</span> Mine();</span><span>    }</span><span>    …</span><span>}</span></code></pre>
                     <p>Option 2 is more defensive because the <code>Mine</code> is immediately linked to a <code>MinedCell</code>.</p>
                   </div>
                   <div></div>

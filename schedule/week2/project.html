@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 2 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -153,58 +153,7 @@
                                   </div>
                                   <p><strong>The project aims to build a product named <em>Duke</em>, a Personal Assistant Chatbot that helps a person to keep track of various things.</strong> <span class="dimmed">The name <em>Duke</em> was chosen as a placeholder name, in honor of <a href="https://www.oracle.com/java/duke.html">Duke, the Java Mascot</a>.</span>                                    <strong>You may give it any other name and personality you wish.</strong></p>
                                   <p>Here is a sample interaction with Duke:</p>
-                                  <pre><code class="hljs">    ____________________________________________________________
-      ____        _        
-     |  _ \ _   _| | _____ 
-     | | | | | | | |/ / _ \
-     | |_| | |_| |   &lt;  __/
-     |____/ \__,_|_|\_\___|
-
-     Hello! I'm Duke
-     What can I do for you?
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[T][✓] read book
-     2.[D][✗] return book (by: June 6th)
-     3.[E][✗] project meeting (at: Aug 6th 2-4pm)
-     4.[T][✓] join sports club
-    ____________________________________________________________
-
-todo borrow book
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [T][✗] borrow book
-     Now you have 5 tasks in the list.
-    ____________________________________________________________
-
-
-deadline return book /by Sunday
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [D][✗] return book (by: Sunday)
-     Now you have 6 tasks in the list.
-    ____________________________________________________________
-
-done 2
-    ____________________________________________________________
-     Nice! I've marked this task as done: 
-       [D][✓] return book (by: June 6th)
-    ____________________________________________________________
-
-blah
-    ____________________________________________________________
-     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(
-    ____________________________________________________________
-
-bye
-    ____________________________________________________________
-     Bye. Hope to see you again soon!
-    ____________________________________________________________
-
-</code></pre>
+                                  <pre><code class="hljs"><span>    ____________________________________________________________</span><span>      ____        _        </span><span>     |  _ \ _   _| | _____ </span><span>     | | | | | | | |/ / _ \</span><span>     | |_| | |_| |   &lt;  __/</span><span>     |____/ \__,_|_|\_\___|</span><span>&#x200B;</span><span>     Hello! I'm Duke</span><span>     What can I do for you?</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✗] return book (by: June 6th)</span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     4.[T][✓] join sports club</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>todo borrow book</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [T][✗] borrow book</span><span>     Now you have 5 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>&#x200B;</span><span>deadline return book /by Sunday</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] return book (by: Sunday)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>done 2</span><span>    ____________________________________________________________</span><span>     Nice! I've marked this task as done: </span><span>       [D][✓] return book (by: June 6th)</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>blah</span><span>    ____________________________________________________________</span><span>     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>bye</span><span>    ____________________________________________________________</span><span>     Bye. Hope to see you again soon!</span><span>    ____________________________________________________________</span><span>&#x200B;</span></code></pre>
                                   <div id="increments_summary">
                                     <p>The project consists of the following <em>increments</em>:</p>
                                     <ul>
@@ -353,8 +302,8 @@ bye
                                 <p>Strongly recommended: Complete your GitHub profile. In particular,</p>
                                 <ul>
                                   <li>Specify your full name.</li>
-                                  <li>Upload a profile photo that matches
-                                    <trigger trigger="click" for="modal:creatingGitHubAccount-photoCriteria">our requirements</trigger>.</li>
+                                  <li>Upload a profile photo that matches <span trigger="click" for="modal:creatingGitHubAccount-photoCriteria" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:creatingGitHubAccount-photoCriteria'].show()"
+                                      class="trigger">our requirements</span>.</li>
                                 </ul>
                                 <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Why am I being encouraged to complete my GitHub profile?</span></p></template>
                                   <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate
@@ -366,7 +315,7 @@ bye
                                   during that period, please let us know immediately.</p>
                               </li>
                             </ol>
-                            <modal large id="modal:creatingGitHubAccount-photoCriteria" class="algolia-no-index"><template slot="_header">Our requirements for the profile photo</template>
+                            <b-modal id="modal:creatingGitHubAccount-photoCriteria" ok-only size="lg" modal-class="mb-zoom" ref="modal:creatingGitHubAccount-photoCriteria"><template slot="modal-title">Our requirements for the profile photo</template>
                               <div>
                                 <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples
                                   can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
@@ -374,7 +323,7 @@ bye
                                 <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy,
                                   you may use <a href="https://en.wikipedia.org/wiki/File:Portrait_placeholder.png">a placeholder image</a> in place of the photo in module-related documents that are publicly visible.</p>
                               </div>
-                            </modal>
+                            </b-modal>
                           </div>
                         </panel>
                       </box>
@@ -441,13 +390,7 @@ bye
                         <p>Implement an initial <em>skeletal</em> version of the Duke that simply greets the user and exits.
                           <br> Example:
                         </p>
-                        <pre><code class="hljs">____________________________________________________________
- Hello! I'm Duke
- What can I do for you?
-____________________________________________________________
- Bye. Hope to see you again soon!
-____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>____________________________________________________________</span><span> Hello! I'm Duke</span><span> What can I do for you?</span><span>____________________________________________________________</span><span> Bye. Hope to see you again soon!</span><span>____________________________________________________________</span></code></pre>
                         <ul>
                           <li>The indentation and horizontal lines are optional.</li>
                         </ul>
@@ -482,7 +425,7 @@ ____________________________________________________________
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

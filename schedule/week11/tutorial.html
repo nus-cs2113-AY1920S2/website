@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 11 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -108,8 +108,8 @@
                 </p>
               </box>
             </div>
-            <h4 id="2-review-the-dg-of-a-peer-team"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Review the
-              <tooltip><template slot="_content">Developer Guide</template>DG</tooltip> of a Peer Team<a class="fa fa-anchor" href="#2-review-the-dg-of-a-peer-team"></a></h4>
+            <h4 id="2-review-the-dg-of-a-peer-team"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Review the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Developer Guide</span>DG</span>
+              of a Peer Team<a class="fa fa-anchor" href="#2-review-the-dg-of-a-peer-team"></a></h4>
             <ul>
               <li><strong>Divide into two sub-teams</strong>, ensuring that each team has at least one member who is good with UML.</li>
               <li><strong>Find the team your sub-team have been allocated to discuss</strong> in the panel below and click on the link to locate their team PR.</li>
@@ -140,7 +140,7 @@
               <box>
                 <ul>
                   <li>To be done collectively with sub-team members.</li>
-                  <li>Add <em>review comments</em> in the corresponding place of the code. But <mark>if the <tooltip><template slot="_content">i.e., the tab named <code>Files changed</code></template><em>diff view</em></tooltip> is too laggy, you can use a normal comment</mark>.</li>
+                  <li>Add <em>review comments</em> in the corresponding place of the code. But <mark>if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the tab named <code>Files changed</code></span><em>diff view</em></span> is too laggy, you can use a normal comment</mark>.</li>
                   <li>Choose the <code>Start a review</code> option rather than <code>Add single comment</code>.</li>
                   <li>Each person can do their own review, but coordinate with sub-team members to avoid duplicating the same point.</li>
                   <li>Phrase your comments as question/doubts (e.g., <code>Is this format correct? Should it be ... instead?</code>) rather than directives (e.g., <code>Change this to ...</code>).</li>
@@ -227,8 +227,8 @@
                                 <li>a sequence diagram can omit less important interactions, self-calls.</li>
                               </ul>
                             </li>
-                            <li><strong>Omit repetitive details</strong> e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the
-                              <trigger trigger="click" for="modal:ipWeek10-logicClassDiagram">AB3 Logic class diagram</trigger> shows concrete <code>*Command</code> classes).</li>
+                            <li><strong>Omit repetitive details</strong> e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <span trigger="click" for="modal:ipWeek10-logicClassDiagram" v-b-popover.click.top.html="popoverGenerator"
+                                v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipWeek10-logicClassDiagram'].show()" class="trigger">AB3 Logic class diagram</span> shows concrete <code>*Command</code> classes).</li>
                             <li><strong>Limit the scope of a diagram.</strong> Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not relevant to that purpose.</li>
                             <li><strong>Break diagrams into smaller fragments</strong> when possible.
                               <ul>
@@ -242,10 +242,10 @@
                         <li><strong>Integrate diagrams into the description.</strong> Place the diagram close to where it is being described.</li>
                         <li><strong>Use code snippets sparingly.</strong> The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only
                           the strictly relevant parts only.</li>
-                        <li><strong>Resize diagrams</strong> so that the text size in the diagram matches the the text size of the main text of the diagram. See
-                          <trigger trigger="click" for="modal:ipWeek10-diagramSizeNegative">example</trigger>.</li>
+                        <li><strong>Resize diagrams</strong> so that the text size in the diagram matches the the text size of the main text of the diagram. See <span trigger="click" for="modal:ipWeek10-diagramSizeNegative" v-b-popover.click.top.html="popoverGenerator"
+                            v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipWeek10-diagramSizeNegative'].show()" class="trigger">example</span>.</li>
                       </ul>
-                      <modal large id="modal:ipWeek10-umlExamples" class="algolia-no-index"><template slot="_header">UML Diagrams: Negative Examples </template>
+                      <b-modal id="modal:ipWeek10-umlExamples" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-umlExamples"><template slot="modal-title">UML Diagrams: Negative Examples </template>
                         <p>These class diagrams seem to have lot of member details, which can get outdated pretty quickly:<br>
                           <img src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750"><br>
                           <img src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750"></p>
@@ -254,18 +254,18 @@
                         <hr> These sequence diagrams are bordering on 'too complicated':
                         <img src="https://cs2103-ay1819s1-w13-1.github.io/main/images/TagCommandSequenceDiagram.png" width="750">
                         <p></p>
-                        <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750"></modal>
-                      <modal large id="modal:ipWeek10-diagramSizeNegative" class="algolia-no-index"><template slot="_header">Diagram resizing: a negative example</template>
+                        <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750"></b-modal>
+                      <b-modal id="modal:ipWeek10-diagramSizeNegative" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-diagramSizeNegative"><template slot="modal-title">Diagram resizing: a negative example</template>
                         <p>In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br>
                           <img src="/website/admin/images/diagramSizeNegativeExample.png" width="200"><br> It will look more 'polished' if the two text sizes match.
                         </p>
-                      </modal>
-                      <modal large id="modal:ipWeek10-logicClassDiagram" class="algolia-no-index"><template slot="_header">AB3 - Class Diagram of the Logic Component</template>
-                        <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="900"></modal>
-                      <modal large id="modal:ipWeek10-deleteSd" class="algolia-no-index"><template slot="_header">AB3 - Sequence Diagram for the <code>delete</code> command</template>
-                        <img src="https://se-edu.github.io/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"></modal>
-                      <modal large id="modal:ipWeek10-archiSd" class="algolia-no-index"><template slot="_header">AB3 - Architecture-Level Sequence Diagram</template>
-                        <img src="https://se-edu.github.io/addressbook-level3/images/ArchitectureSequenceDiagram.png"></modal>
+                      </b-modal>
+                      <b-modal id="modal:ipWeek10-logicClassDiagram" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-logicClassDiagram"><template slot="modal-title">AB3 - Class Diagram of the Logic Component</template>
+                        <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="900"></b-modal>
+                      <b-modal id="modal:ipWeek10-deleteSd" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-deleteSd"><template slot="modal-title">AB3 - Sequence Diagram for the <code>delete</code> command</template>
+                        <img src="https://se-edu.github.io/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"></b-modal>
+                      <b-modal id="modal:ipWeek10-archiSd" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-archiSd"><template slot="modal-title">AB3 - Architecture-Level Sequence Diagram</template>
+                        <img src="https://se-edu.github.io/addressbook-level3/images/ArchitectureSequenceDiagram.png"></b-modal>
                     </div>
                   </panel>
                 </div>
@@ -286,8 +286,8 @@
             <a class="nav-link py-1" href="#week-11-from-wed-mar-25-noon-tutorial">Week 11 [from Wed Mar 25 noon] - Tutorial&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-demo-v2-0">1 Demo v2.0&#x200E;</a>
-              <a class="nav-link py-1" href="#2-review-the-dg-of-a-peer-team">2 Review the
-        Developer GuideDG of a Peer Team&#x200E;</a>
+              <a class="nav-link py-1" href="#2-review-the-dg-of-a-peer-team">2 Review the Developer GuideDG
+        of a Peer Team&#x200E;</a>
             </nav>
 
           </nav>
@@ -296,7 +296,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

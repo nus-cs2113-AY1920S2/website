@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Architectural Styles: Introduction</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -51,17 +51,17 @@
                   <p></p>
                   <p></p>
                   <div>
-                    <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
-                      <trigger trigger="click" for="modal:archiStyles-buildingArchitectures">building architectures follow various architecture styles</trigger>.</p>
+                    <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like <span trigger="click" for="modal:archiStyles-buildingArchitectures" v-b-popover.click.top.html="popoverGenerator"
+                        v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:archiStyles-buildingArchitectures'].show()" class="trigger">building architectures follow various architecture styles</span>.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker
                         style, ...
                       </p>
                     </box>
-                    <modal large id="modal:archiStyles-buildingArchitectures" class="algolia-no-index"><template slot="_header">Building Architecture Styles</template>
+                    <b-modal id="modal:archiStyles-buildingArchitectures" ok-only size="lg" modal-class="mb-zoom" ref="modal:archiStyles-buildingArchitectures"><template slot="modal-title">Building Architecture Styles</template>
                       <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg" width="600"><br>
                         <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
-                    </modal>
+                    </b-modal>
                   </div>
                   <div></div>
                 </div>

@@ -1,7 +1,7 @@
 <div>
   <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\createPRs\text.md">
     <p>
-      <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/branch"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Branching</span></p></template></panel>
+      <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Branching</span></p></template></panel>
     </p>
   </div>
 </div>
@@ -13,29 +13,22 @@
 </p>
 <div id="title-and-body">
   <div>
-    <h4 id="create-prs"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\createPRs\text.md">Create PRs</span></span>
-    </h4>
+    <h4 id="create-prs"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\createPRs\text.md">Create PRs</span></span><a class="fa fa-anchor" href="#create-prs"></a></h4>
   </div>
   <div id="main">
     <div>
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\createPRs\text.md">
         <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
         <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
-        <pre><code class="hljs md">
-<span class="hljs-section"># Introduction</span>
-Creating Pull Requests (PRs) is needed when using RCS in a multi-person projects.
-This repo can be used to practice creating PRs.
-
-</code></pre>
+        <pre><code class="hljs md"><span>&#x200B;</span><span><span class="hljs-section"># Introduction</span></span><span>Creating Pull Requests (PRs) is needed when using RCS in a multi-person projects.</span><span>This repo can be used to practice creating PRs.</span><span>&#x200B;</span></code></pre>
         <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
         <tabs>
           <tab><template slot="_header">SourceTree</template>
             <img src="/website/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
             <p></p>
           </tab>
-          <tab><template slot="_header">CLI</template>
-            <pre><code class="hljs">git push origin add-intro
-</code></pre>
+          <tab class="algolia-no-index"><template slot="_header">CLI</template>
+            <pre><code class="hljs"><span>git push origin add-intro</span></code></pre>
           </tab>
         </tabs>
         <p><strong>4. Create a Pull Request from the <code>add-intro</code> branch in your fork to the <code>master</code> branch of the same fork</strong> (i.e. <code>your-user-name/samplerepo-pr-practice</code>, not <code>se-edu/samplerepo-pr-practice</code>),

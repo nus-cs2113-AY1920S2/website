@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - C++ to Java: Getting Started: Compiling a Program</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -50,14 +50,14 @@
                     <p>To compile the HelloWorld program, open a command console, navigate to the folder containing the file, and run the following command.</p>
                     <p>
                       <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>javac HelloWorld.java</code></p>
-                    <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the
-                      <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
-                    <popover id="pop:compiling-errors" placement="top"><template slot="header">Compile-time errors</template>
-                      <div slot="content" class="algolia-no-index">
-                        <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
-                        <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
-                      </div>
-                    </popover>
+                    <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the <span for="pop:compiling-errors"
+                        v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:compiling-errors'].show()" class="trigger">compile-time errors</span>.</p>
+                    <span id="pop:compiling-errors" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header">Compile-time errors</span>
+                    <div data-mb-html-for="content">
+                      <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
+                      <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
+                    </div>
+                    </span>
                     <p>Notes:</p>
                     <ul>
                       <li><code>javac</code> is the java compiler that you get when you install the JDK.</li>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - iP Progress Dashboard</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -24,7 +24,7 @@
 
 <body>
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -109,24 +109,20 @@
             <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>
-                    <tooltip><template slot="_content">Student number (partial)</template>Student</tooltip>
+                  <th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Student number (partial)</span>Student</span>
                   </th>
-                  <th>
-                    <tooltip><template slot="_content">i.e., weeks in which some code was committed to the repo</template>Weekly progress</tooltip>
+                  <th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., weeks in which some code was committed to the repo</span>Weekly progress</span>
                   </th>
-                  <th>
-                    <tooltip><template slot="_content">i.e., iP increments as indicated by the git tags in your fork</template>Increments</tooltip>
+                  <th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., iP increments as indicated by the git tags in your fork</span>Increments</span>
                   </th>
-                  <th>
-                    <tooltip><template slot="_content">i.e., other iP-related admin tasks</template>Admin tasks</tooltip>
+                  <th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., other iP-related admin tasks</span>Admin tasks</span>
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>A0148048_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0148048"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0148048_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0148048" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0148048'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -149,8 +145,8 @@
                       <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0154601_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0154601"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0154601_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0154601" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0154601'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -170,8 +166,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0156202_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0156202"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0156202_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0156202" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0156202'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -187,8 +183,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0166966_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0166966"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0166966_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0166966" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0166966'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -208,8 +204,8 @@
                       <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0167031_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0167031"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0167031_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0167031" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0167031'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -230,8 +226,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0167107_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0167107"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0167107_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0167107" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0167107'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -252,8 +248,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0169610_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0169610"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0169610_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0169610" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0169610'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -270,8 +266,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0172032_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0172032"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0172032_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0172032" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0172032'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -288,8 +284,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0177907_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0177907"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0177907_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0177907" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0177907'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -308,8 +304,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0180295_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0180295"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0180295_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0180295" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0180295'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -328,8 +324,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0182341_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0182341"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0182341_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0182341" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0182341'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -347,8 +343,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0182520_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0182520"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0182520_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0182520" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0182520'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -368,8 +364,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0182581_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0182581"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0182581_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0182581" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0182581'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -387,8 +383,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0182619_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0182619"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0182619_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0182619" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0182619'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -405,8 +401,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0182637_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0182637"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0182637_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0182637" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0182637'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -423,8 +419,8 @@
                     <span class="badge badge-danger mr-1"><s>Merging PRs</s></span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0182648_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0182648"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0182648_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0182648" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0182648'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -443,8 +439,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0182761_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0182761"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0182761_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0182761" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0182761'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -463,8 +459,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0182776_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0182776"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0182776_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0182776" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0182776'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -481,8 +477,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0183020_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0183020"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0183020_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0183020" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0183020'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -501,8 +497,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0183086_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0183086"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0183086_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0183086" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0183086'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -518,8 +514,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0183318_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0183318"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0183318_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0183318" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0183318'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -538,8 +534,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0183366_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0183366"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0183366_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0183366" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0183366'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -560,8 +556,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0183398_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0183398"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0183398_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0183398" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0183398'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -579,8 +575,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0183909_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0183909"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0183909_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0183909" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0183909'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -601,8 +597,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0183924_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0183924"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0183924_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0183924" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0183924'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -619,8 +615,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0183972_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0183972"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0183972_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0183972" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0183972'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -638,8 +634,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0183979_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0183979"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0183979_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0183979" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0183979'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -655,8 +651,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0184030_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0184030"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0184030_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0184030" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0184030'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -677,8 +673,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0184281_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0184281"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0184281_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0184281" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0184281'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-danger mr-1"><s>6</s></span>
@@ -696,8 +692,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0184296_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0184296"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0184296_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0184296" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0184296'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -715,8 +711,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0184534_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0184534"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0184534_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0184534" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0184534'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-danger mr-1"><s>4</s></span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -735,8 +731,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185030_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185030"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185030_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185030" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185030'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-danger mr-1"><s>5</s></span><span class="badge badge-success mr-1">6</span>
@@ -754,8 +750,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185080_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185080"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185080_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185080" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185080'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -772,8 +768,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185406_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185406"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185406_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185406" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185406'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -790,8 +786,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185430_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185430"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185430_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185430" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185430'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -808,8 +804,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185434_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185434"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185434_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185434" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185434'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -826,8 +822,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185627_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185627"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185627_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185627" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185627'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -843,8 +839,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185662_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185662"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185662_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185662" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185662'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-danger mr-1"><s>5</s></span><span class="badge badge-success mr-1">6</span>
@@ -860,8 +856,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185683_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185683"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185683_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185683" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185683'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -879,8 +875,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185707_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185707"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185707_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185707" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185707'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-danger mr-1"><s>5</s></span><span class="badge badge-success mr-1">6</span>
@@ -897,8 +893,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185775_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185775"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185775_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185775" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185775'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -916,8 +912,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185894_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185894"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185894_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185894" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185894'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -933,8 +929,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0185955_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0185955"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0185955_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0185955" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0185955'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -951,8 +947,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0187253_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0187253"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0187253_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0187253" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0187253'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -971,8 +967,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0187915_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0187915"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0187915_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0187915" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0187915'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-danger mr-1"><s>5</s></span><span class="badge badge-success mr-1">6</span>
@@ -991,8 +987,8 @@
                       <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0188591_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0188591"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0188591_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0188591" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0188591'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1014,8 +1010,8 @@
                       <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0188625_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0188625"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0188625_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0188625" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0188625'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1032,8 +1028,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0188758_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0188758"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0188758_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0188758" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0188758'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-danger mr-1"><s>3</s></span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1051,8 +1047,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0188871_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0188871"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0188871_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0188871" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0188871'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-danger mr-1"><s>3</s></span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1069,8 +1065,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0188991_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0188991"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0188991_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0188991" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0188991'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-danger mr-1"><s>3</s></span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1090,8 +1086,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0189629_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0189629"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0189629_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0189629" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0189629'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-danger mr-1"><s>3</s></span><span class="badge badge-success mr-1">4</span><span class="badge badge-danger mr-1"><s>5</s></span><span class="badge badge-success mr-1">6</span>
@@ -1108,8 +1104,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0189944_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0189944"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0189944_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0189944" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0189944'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1126,8 +1122,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0190016_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0190016"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0190016_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0190016" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0190016'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1144,8 +1140,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0190306_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0190306"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0190306_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0190306" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0190306'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-danger mr-1"><s>4</s></span><span class="badge badge-danger mr-1"><s>5</s></span><span class="badge badge-success mr-1">6</span>
@@ -1167,8 +1163,8 @@
                       <span class="badge badge-danger mr-1"><s>Publishing UG</s></span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0191091_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0191091"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0191091_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0191091" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0191091'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1187,8 +1183,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0192255_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0192255"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0192255_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0192255" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0192255'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1208,8 +1204,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0192257_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0192257"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0192257_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0192257" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0192257'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-danger mr-1"><s>5</s></span><span class="badge badge-success mr-1">6</span>
@@ -1227,8 +1223,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0207464_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0207464"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0207464_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0207464" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0207464'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1249,8 +1245,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0212641_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0212641"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0212641_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0212641" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0212641'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1267,8 +1263,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0212651_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0212651"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0212651_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0212651" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0212651'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1285,8 +1281,8 @@
                     <span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0212716_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0212716"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0212716_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0212716" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0212716'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1303,8 +1299,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0212737_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0212737"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0212737_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0212737" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0212737'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1321,8 +1317,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0212755_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0212755"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0212755_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0212755" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0212755'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1339,8 +1335,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0212780_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0212780"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0212780_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0212780" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0212780'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1356,8 +1352,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0212805_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0212805"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0212805_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0212805" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0212805'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-danger mr-1"><s>3</s></span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1374,8 +1370,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0212895_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0212895"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0212895_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0212895" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0212895'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1392,8 +1388,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0213708_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0213708"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0213708_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0213708" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0213708'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1413,8 +1409,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0213855_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0213855"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0213855_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0213855" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0213855'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-danger mr-1"><s>3</s></span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1432,8 +1428,8 @@
                     <span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0213909_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0213909"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0213909_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0213909" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0213909'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-danger mr-1"><s>3</s></span><span class="badge badge-success mr-1">4</span><span class="badge badge-danger mr-1"><s>5</s></span><span class="badge badge-success mr-1">6</span>
@@ -1448,8 +1444,8 @@
                     <span class="badge badge-danger mr-1"><s>Merging PRs</s></span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0214405_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0214405"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0214405_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0214405" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0214405'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1470,8 +1466,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0214435_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0214435"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0214435_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0214435" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0214435'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-danger mr-1"><s>2</s></span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1491,8 +1487,8 @@
                     <span class="badge badge-success mr-1">branch-A-JavaDoc</span><span class="badge badge-success mr-1">Merging PRs</span><span class="badge badge-success mr-1">Publishing UG</span><span class="badge badge-success mr-1">Final Jar</span></td>
                 </tr>
                 <tr>
-                  <td>A0214952_ <span class="dimmed"><trigger trigger="click" for="modal:ipPD-A0214952"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
-                    </trigger>
+                  <td>A0214952_ <span class="dimmed"><span trigger="click" for="modal:ipPD-A0214952" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipPD-A0214952'].show()" class="trigger"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span>
+                    </span>
                     </span>
                   </td>
                   <td><span class="badge badge-success mr-1">2</span><span class="badge badge-success mr-1">3</span><span class="badge badge-success mr-1">4</span><span class="badge badge-success mr-1">5</span><span class="badge badge-success mr-1">6</span>
@@ -1511,7 +1507,7 @@
               </tbody>
             </table>
           </div>
-          <modal large id="modal:ipPD-A0148048" class="algolia-no-index"><template slot="_header">A0148048_: iP Progress Details</template>
+          <b-modal id="modal:ipPD-A0148048" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0148048"><template slot="modal-title">A0148048_: iP Progress Details</template>
             <h4 id="ip-weekly-progress">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress"></a></h4>
             <div class="indented">
               <ul>
@@ -1568,8 +1564,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0154601" class="algolia-no-index"><template slot="_header">A0154601_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0154601" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0154601"><template slot="modal-title">A0154601_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-2">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-2"></a></h4>
             <div class="indented">
               <ul>
@@ -1625,8 +1621,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0156202" class="algolia-no-index"><template slot="_header">A0156202_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0156202" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0156202"><template slot="modal-title">A0156202_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-3">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-3"></a></h4>
             <div class="indented">
               <ul>
@@ -1682,8 +1678,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0166966" class="algolia-no-index"><template slot="_header">A0166966_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0166966" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0166966"><template slot="modal-title">A0166966_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-4">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-4"></a></h4>
             <div class="indented">
               <ul>
@@ -1735,8 +1731,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0167031" class="algolia-no-index"><template slot="_header">A0167031_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0167031" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0167031"><template slot="modal-title">A0167031_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-5">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-5"></a></h4>
             <div class="indented">
               <ul>
@@ -1794,8 +1790,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0167107" class="algolia-no-index"><template slot="_header">A0167107_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0167107" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0167107"><template slot="modal-title">A0167107_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-6">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-6"></a></h4>
             <div class="indented">
               <ul>
@@ -1852,8 +1848,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0169610" class="algolia-no-index"><template slot="_header">A0169610_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0169610" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0169610"><template slot="modal-title">A0169610_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-7">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-7"></a></h4>
             <div class="indented">
               <ul>
@@ -1907,8 +1903,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0172032" class="algolia-no-index"><template slot="_header">A0172032_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0172032" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0172032"><template slot="modal-title">A0172032_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-8">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-8"></a></h4>
             <div class="indented">
               <ul>
@@ -1961,8 +1957,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0177907" class="algolia-no-index"><template slot="_header">A0177907_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0177907" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0177907"><template slot="modal-title">A0177907_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-9">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-9"></a></h4>
             <div class="indented">
               <ul>
@@ -2017,8 +2013,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0180295" class="algolia-no-index"><template slot="_header">A0180295_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0180295" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0180295"><template slot="modal-title">A0180295_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-10">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-10"></a></h4>
             <div class="indented">
               <ul>
@@ -2074,8 +2070,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0182341" class="algolia-no-index"><template slot="_header">A0182341_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0182341" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0182341"><template slot="modal-title">A0182341_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-11">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-11"></a></h4>
             <div class="indented">
               <ul>
@@ -2130,8 +2126,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0182520" class="algolia-no-index"><template slot="_header">A0182520_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0182520" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0182520"><template slot="modal-title">A0182520_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-12">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-12"></a></h4>
             <div class="indented">
               <ul>
@@ -2182,8 +2178,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0182581" class="algolia-no-index"><template slot="_header">A0182581_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0182581" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0182581"><template slot="modal-title">A0182581_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-13">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-13"></a></h4>
             <div class="indented">
               <ul>
@@ -2236,8 +2232,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0182619" class="algolia-no-index"><template slot="_header">A0182619_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0182619" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0182619"><template slot="modal-title">A0182619_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-14">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-14"></a></h4>
             <div class="indented">
               <ul>
@@ -2290,8 +2286,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0182637" class="algolia-no-index"><template slot="_header">A0182637_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0182637" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0182637"><template slot="modal-title">A0182637_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-15">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-15"></a></h4>
             <div class="indented">
               <ul>
@@ -2342,8 +2338,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0182648" class="algolia-no-index"><template slot="_header">A0182648_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0182648" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0182648"><template slot="modal-title">A0182648_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-16">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-16"></a></h4>
             <div class="indented">
               <ul>
@@ -2398,8 +2394,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0182761" class="algolia-no-index"><template slot="_header">A0182761_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0182761" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0182761"><template slot="modal-title">A0182761_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-17">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-17"></a></h4>
             <div class="indented">
               <ul>
@@ -2453,8 +2449,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0182776" class="algolia-no-index"><template slot="_header">A0182776_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0182776" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0182776"><template slot="modal-title">A0182776_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-18">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-18"></a></h4>
             <div class="indented">
               <ul>
@@ -2504,8 +2500,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0183020" class="algolia-no-index"><template slot="_header">A0183020_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0183020" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0183020"><template slot="modal-title">A0183020_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-19">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-19"></a></h4>
             <div class="indented">
               <ul>
@@ -2561,8 +2557,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0183086" class="algolia-no-index"><template slot="_header">A0183086_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0183086" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0183086"><template slot="modal-title">A0183086_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-20">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-20"></a></h4>
             <div class="indented">
               <ul>
@@ -2611,8 +2607,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0183318" class="algolia-no-index"><template slot="_header">A0183318_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0183318" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0183318"><template slot="modal-title">A0183318_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-21">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-21"></a></h4>
             <div class="indented">
               <ul>
@@ -2666,8 +2662,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0183366" class="algolia-no-index"><template slot="_header">A0183366_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0183366" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0183366"><template slot="modal-title">A0183366_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-22">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-22"></a></h4>
             <div class="indented">
               <ul>
@@ -2725,8 +2721,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0183398" class="algolia-no-index"><template slot="_header">A0183398_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0183398" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0183398"><template slot="modal-title">A0183398_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-23">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-23"></a></h4>
             <div class="indented">
               <ul>
@@ -2777,8 +2773,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0183909" class="algolia-no-index"><template slot="_header">A0183909_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0183909" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0183909"><template slot="modal-title">A0183909_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-24">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-24"></a></h4>
             <div class="indented">
               <ul>
@@ -2835,8 +2831,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0183924" class="algolia-no-index"><template slot="_header">A0183924_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0183924" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0183924"><template slot="modal-title">A0183924_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-25">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-25"></a></h4>
             <div class="indented">
               <ul>
@@ -2888,8 +2884,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0183972" class="algolia-no-index"><template slot="_header">A0183972_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0183972" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0183972"><template slot="modal-title">A0183972_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-26">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-26"></a></h4>
             <div class="indented">
               <ul>
@@ -2940,8 +2936,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0183979" class="algolia-no-index"><template slot="_header">A0183979_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0183979" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0183979"><template slot="modal-title">A0183979_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-27">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-27"></a></h4>
             <div class="indented">
               <ul>
@@ -2994,8 +2990,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0184030" class="algolia-no-index"><template slot="_header">A0184030_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0184030" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0184030"><template slot="modal-title">A0184030_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-28">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-28"></a></h4>
             <div class="indented">
               <ul>
@@ -3053,8 +3049,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0184281" class="algolia-no-index"><template slot="_header">A0184281_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0184281" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0184281"><template slot="modal-title">A0184281_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-29">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-29"></a></h4>
             <div class="indented">
               <ul>
@@ -3107,8 +3103,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0184296" class="algolia-no-index"><template slot="_header">A0184296_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0184296" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0184296"><template slot="modal-title">A0184296_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-30">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-30"></a></h4>
             <div class="indented">
               <ul>
@@ -3164,8 +3160,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0184534" class="algolia-no-index"><template slot="_header">A0184534_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0184534" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0184534"><template slot="modal-title">A0184534_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-31">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-31"></a></h4>
             <div class="indented">
               <ul>
@@ -3219,8 +3215,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185030" class="algolia-no-index"><template slot="_header">A0185030_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185030" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185030"><template slot="modal-title">A0185030_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-32">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-32"></a></h4>
             <div class="indented">
               <ul>
@@ -3270,8 +3266,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185080" class="algolia-no-index"><template slot="_header">A0185080_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185080" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185080"><template slot="modal-title">A0185080_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-33">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-33"></a></h4>
             <div class="indented">
               <ul>
@@ -3321,8 +3317,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185406" class="algolia-no-index"><template slot="_header">A0185406_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185406" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185406"><template slot="modal-title">A0185406_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-34">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-34"></a></h4>
             <div class="indented">
               <ul>
@@ -3374,8 +3370,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185430" class="algolia-no-index"><template slot="_header">A0185430_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185430" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185430"><template slot="modal-title">A0185430_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-35">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-35"></a></h4>
             <div class="indented">
               <ul>
@@ -3429,8 +3425,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185434" class="algolia-no-index"><template slot="_header">A0185434_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185434" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185434"><template slot="modal-title">A0185434_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-36">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-36"></a></h4>
             <div class="indented">
               <ul>
@@ -3480,8 +3476,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185627" class="algolia-no-index"><template slot="_header">A0185627_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185627" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185627"><template slot="modal-title">A0185627_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-37">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-37"></a></h4>
             <div class="indented">
               <ul>
@@ -3534,8 +3530,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185662" class="algolia-no-index"><template slot="_header">A0185662_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185662" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185662"><template slot="modal-title">A0185662_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-38">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-38"></a></h4>
             <div class="indented">
               <ul>
@@ -3584,8 +3580,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185683" class="algolia-no-index"><template slot="_header">A0185683_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185683" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185683"><template slot="modal-title">A0185683_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-39">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-39"></a></h4>
             <div class="indented">
               <ul>
@@ -3636,8 +3632,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185707" class="algolia-no-index"><template slot="_header">A0185707_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185707" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185707"><template slot="modal-title">A0185707_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-40">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-40"></a></h4>
             <div class="indented">
               <ul>
@@ -3690,8 +3686,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185775" class="algolia-no-index"><template slot="_header">A0185775_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185775" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185775"><template slot="modal-title">A0185775_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-41">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-41"></a></h4>
             <div class="indented">
               <ul>
@@ -3743,8 +3739,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185894" class="algolia-no-index"><template slot="_header">A0185894_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185894" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185894"><template slot="modal-title">A0185894_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-42">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-42"></a></h4>
             <div class="indented">
               <ul>
@@ -3795,8 +3791,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0185955" class="algolia-no-index"><template slot="_header">A0185955_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0185955" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0185955"><template slot="modal-title">A0185955_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-43">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-43"></a></h4>
             <div class="indented">
               <ul>
@@ -3846,8 +3842,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0187253" class="algolia-no-index"><template slot="_header">A0187253_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0187253" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0187253"><template slot="modal-title">A0187253_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-44">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-44"></a></h4>
             <div class="indented">
               <ul>
@@ -3899,8 +3895,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0187915" class="algolia-no-index"><template slot="_header">A0187915_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0187915" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0187915"><template slot="modal-title">A0187915_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-45">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-45"></a></h4>
             <div class="indented">
               <ul>
@@ -3954,8 +3950,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0188591" class="algolia-no-index"><template slot="_header">A0188591_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0188591" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0188591"><template slot="modal-title">A0188591_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-46">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-46"></a></h4>
             <div class="indented">
               <ul>
@@ -4004,8 +4000,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0188625" class="algolia-no-index"><template slot="_header">A0188625_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0188625" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0188625"><template slot="modal-title">A0188625_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-47">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-47"></a></h4>
             <div class="indented">
               <ul>
@@ -4059,8 +4055,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0188758" class="algolia-no-index"><template slot="_header">A0188758_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0188758" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0188758"><template slot="modal-title">A0188758_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-48">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-48"></a></h4>
             <div class="indented">
               <ul>
@@ -4115,8 +4111,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0188871" class="algolia-no-index"><template slot="_header">A0188871_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0188871" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0188871"><template slot="modal-title">A0188871_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-49">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-49"></a></h4>
             <div class="indented">
               <ul>
@@ -4166,8 +4162,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0188991" class="algolia-no-index"><template slot="_header">A0188991_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0188991" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0188991"><template slot="modal-title">A0188991_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-50">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-50"></a></h4>
             <div class="indented">
               <ul>
@@ -4224,8 +4220,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0189629" class="algolia-no-index"><template slot="_header">A0189629_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0189629" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0189629"><template slot="modal-title">A0189629_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-51">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-51"></a></h4>
             <div class="indented">
               <ul>
@@ -4278,8 +4274,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0189944" class="algolia-no-index"><template slot="_header">A0189944_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0189944" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0189944"><template slot="modal-title">A0189944_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-52">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-52"></a></h4>
             <div class="indented">
               <ul>
@@ -4332,8 +4328,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0190016" class="algolia-no-index"><template slot="_header">A0190016_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0190016" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0190016"><template slot="modal-title">A0190016_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-53">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-53"></a></h4>
             <div class="indented">
               <ul>
@@ -4384,8 +4380,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0190306" class="algolia-no-index"><template slot="_header">A0190306_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0190306" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0190306"><template slot="modal-title">A0190306_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-54">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-54"></a></h4>
             <div class="indented">
               <ul>
@@ -4434,8 +4430,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0191091" class="algolia-no-index"><template slot="_header">A0191091_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0191091" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0191091"><template slot="modal-title">A0191091_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-55">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-55"></a></h4>
             <div class="indented">
               <ul>
@@ -4491,8 +4487,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0192255" class="algolia-no-index"><template slot="_header">A0192255_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0192255" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0192255"><template slot="modal-title">A0192255_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-56">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-56"></a></h4>
             <div class="indented">
               <ul>
@@ -4548,8 +4544,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0192257" class="algolia-no-index"><template slot="_header">A0192257_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0192257" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0192257"><template slot="modal-title">A0192257_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-57">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-57"></a></h4>
             <div class="indented">
               <ul>
@@ -4604,8 +4600,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0207464" class="algolia-no-index"><template slot="_header">A0207464_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0207464" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0207464"><template slot="modal-title">A0207464_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-58">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-58"></a></h4>
             <div class="indented">
               <ul>
@@ -4663,8 +4659,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0212641" class="algolia-no-index"><template slot="_header">A0212641_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0212641" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0212641"><template slot="modal-title">A0212641_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-59">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-59"></a></h4>
             <div class="indented">
               <ul>
@@ -4718,8 +4714,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0212651" class="algolia-no-index"><template slot="_header">A0212651_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0212651" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0212651"><template slot="modal-title">A0212651_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-60">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-60"></a></h4>
             <div class="indented">
               <ul>
@@ -4769,8 +4765,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0212716" class="algolia-no-index"><template slot="_header">A0212716_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0212716" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0212716"><template slot="modal-title">A0212716_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-61">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-61"></a></h4>
             <div class="indented">
               <ul>
@@ -4824,8 +4820,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0212737" class="algolia-no-index"><template slot="_header">A0212737_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0212737" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0212737"><template slot="modal-title">A0212737_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-62">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-62"></a></h4>
             <div class="indented">
               <ul>
@@ -4879,8 +4875,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0212755" class="algolia-no-index"><template slot="_header">A0212755_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0212755" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0212755"><template slot="modal-title">A0212755_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-63">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-63"></a></h4>
             <div class="indented">
               <ul>
@@ -4934,8 +4930,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0212780" class="algolia-no-index"><template slot="_header">A0212780_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0212780" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0212780"><template slot="modal-title">A0212780_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-64">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-64"></a></h4>
             <div class="indented">
               <ul>
@@ -4991,8 +4987,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0212805" class="algolia-no-index"><template slot="_header">A0212805_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0212805" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0212805"><template slot="modal-title">A0212805_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-65">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-65"></a></h4>
             <div class="indented">
               <ul>
@@ -5045,8 +5041,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0212895" class="algolia-no-index"><template slot="_header">A0212895_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0212895" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0212895"><template slot="modal-title">A0212895_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-66">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-66"></a></h4>
             <div class="indented">
               <ul>
@@ -5097,8 +5093,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0213708" class="algolia-no-index"><template slot="_header">A0213708_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0213708" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0213708"><template slot="modal-title">A0213708_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-67">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-67"></a></h4>
             <div class="indented">
               <ul>
@@ -5155,8 +5151,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0213855" class="algolia-no-index"><template slot="_header">A0213855_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0213855" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0213855"><template slot="modal-title">A0213855_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-68">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-68"></a></h4>
             <div class="indented">
               <ul>
@@ -5211,8 +5207,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0213909" class="algolia-no-index"><template slot="_header">A0213909_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0213909" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0213909"><template slot="modal-title">A0213909_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-69">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-69"></a></h4>
             <div class="indented">
               <ul>
@@ -5262,8 +5258,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0214405" class="algolia-no-index"><template slot="_header">A0214405_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0214405" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0214405"><template slot="modal-title">A0214405_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-70">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-70"></a></h4>
             <div class="indented">
               <ul>
@@ -5321,8 +5317,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0214435" class="algolia-no-index"><template slot="_header">A0214435_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0214435" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0214435"><template slot="modal-title">A0214435_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-71">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-71"></a></h4>
             <div class="indented">
               <ul>
@@ -5379,8 +5375,8 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
-          <modal large id="modal:ipPD-A0214952" class="algolia-no-index"><template slot="_header">A0214952_: iP Progress Details</template>
+          </b-modal>
+          <b-modal id="modal:ipPD-A0214952" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipPD-A0214952"><template slot="modal-title">A0214952_: iP Progress Details</template>
             <h4 id="ip-weekly-progress-72">iP Weekly Progress<a class="fa fa-anchor" href="#ip-weekly-progress-72"></a></h4>
             <div class="indented">
               <ul>
@@ -5433,13 +5429,13 @@
                 <li><span class="badge badge-success mr-1">Final Jar</span>: The JAR file was released via GitHub releases in the period 2020-02-22 00:00:01+08:00 to 2020-03-05 00:00:00+08:00</li>
               </ul>
             </div>
-          </modal>
+          </b-modal>
         </div>
       </div>
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

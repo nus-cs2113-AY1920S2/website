@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Principles: Law of Demeter</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -65,16 +65,13 @@
                       <li>The object <code>O</code> itself</li>
                       <li>Objects passed as parameters of <code>m</code></li>
                       <li>Objects created/instantiated in <code>m</code> (directly or indirectly)</li>
-                      <li>Objects from the
-                        <tooltip><template slot="_content">objects that are held by instance variables of</template>direct association of</tooltip> <code>O</code></li>
+                      <li>Objects from the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">objects that are held by instance variables of</span>direct association
+                        of</span>
+                        <code>O</code></li>
                     </ul>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The following code fragment violates LoD due to the reason: while <code>b</code> is a ‘friend’ of <code>foo</code> (because it receives it as a parameter), <code>g</code>                        is a ‘friend of a friend’ (which should be considered a ‘stranger’), and <code>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
-    Goo g = b.getGoo();
-    g.doSomething();
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{</span><span>    Goo g = b.getGoo();</span><span>    g.doSomething();</span><span>}</span></code></pre>
                     </box>
                     <p><strong>LoD aims to prevent objects navigating internal structures of other objects.</strong></p>
                     <box>
@@ -107,11 +104,7 @@
                           <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> LoD violation?</p></template>
                             <question>
                               <p>This violates Law of Demeter.</p>
-                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
-    Goo g =  <span class="hljs-keyword">new</span> Goo();
-    g.doSomething();
-}
-</code></pre>
+                              <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{</span><span>    Goo g =  <span class="hljs-keyword">new</span> Goo();</span><span>    g.doSomething();</span><span>}</span></code></pre>
                               <ul radio-group="3cf8e" class="radio-list">
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="3cf8e" type="radio"> True</label></li>
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="3cf8e" type="radio"> False</label></li>

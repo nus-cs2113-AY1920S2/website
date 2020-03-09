@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Forum Activities Dashboard</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -423,10 +423,7 @@
                   <p>Relevant code snippet (an example given below), or link to the relevant code on your GitHub repo</p>
                 </li>
               </ul>
-              <pre><code class="hljs java">
-String value = <span class="hljs-string">"Some code here"</span>
-
-</code></pre>
+              <pre><code class="hljs java"><span>&#x200B;</span><span>String value = <span class="hljs-string">"Some code here"</span></span><span>&#x200B;</span></code></pre>
               <p>When i am refactoring the code, there are some unknown errors displayed on Intellij.</p>
               <p><a href="https://user-images.githubusercontent.com/49268567/75332310-215d9380-58bf-11ea-8546-05aa011dbab3.png" target="_self"><img src="https://user-images.githubusercontent.com/49268567/75332310-215d9380-58bf-11ea-8546-05aa011dbab3.png" alt class="img-fluid"></a></p>
               <p>All newly created class suffer from this errors. I have searched and tried to change encoding. However, still cannot really see the errors.</p>
@@ -981,96 +978,7 @@ String value = <span class="hljs-string">"Some code here"</span>
               <p><a href="https://user-images.githubusercontent.com/54733974/73089389-16ef5900-3f11-11ea-8513-1a96d4ed8218.PNG" target="_self"><img src="https://user-images.githubusercontent.com/54733974/73089389-16ef5900-3f11-11ea-8513-1a96d4ed8218.PNG" alt class="img-fluid"></a></p>
             </panel>
             <panel popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/13#issuecomment-578399368" expanded><template slot="_header"><p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p></template>
-              <pre><code class="hljs java">
-<span class="hljs-keyword">import</span> java.util.Scanner;
-
-<span class="hljs-keyword">import</span> java.util.Arrays;
-
-
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-
-
-
-    <span class="hljs-comment">// You can add more methods here</span>
-
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterExpenses(String[] words){
-
-        String[] results = <span class="hljs-keyword">new</span> String[words.length];
-
-        <span class="hljs-keyword">int</span> currCount = <span class="hljs-number">0</span>;  <span class="hljs-comment">//keep track of the index of next free space in validItems</span>
-
-        <span class="hljs-keyword">for</span> (String word : words){
-
-            <span class="hljs-keyword">if</span> (word.substring(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>).equals(<span class="hljs-string">"$"</span>)){
-
-                results[currCount] = word;
-
-                currCount++;
-
-            }
-
-        }
-
-        <span class="hljs-comment">//print the 2nd line of output</span>
-
-        System.out.println(<span class="hljs-string">"Expenses in overseas currency:"</span> + Arrays.toString(Arrays.copyOf(results, currCount)));
-
-        <span class="hljs-keyword">return</span> Arrays.copyOf(results, currCount);
-
-    }
-
-
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTotal</span><span class="hljs-params">(String[] args)</span></span>{
-
-        <span class="hljs-keyword">double</span> total = <span class="hljs-number">0</span>;
-
-        <span class="hljs-comment">//add floats together</span>
-
-        <span class="hljs-keyword">for</span> (String arg: args){
-
-            <span class="hljs-comment">//get rid of the preceding $ char and convert value to double</span>
-
-            <span class="hljs-keyword">double</span> currItemValue = Double.parseDouble(arg.substring(<span class="hljs-number">1</span>, arg.length()));
-
-            total += <span class="hljs-number">1.7</span> * currItemValue;   <span class="hljs-comment">//convert exchange rate</span>
-
-        }
-
-        
-
-        <span class="hljs-comment">//convert final value to string, print $ + final value</span>
-
-        System.out.println(<span class="hljs-string">"Total in local currency: $"</span> + String.format(<span class="hljs-string">"%.2f"</span>, total));
-
-    }
-
-
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-
-        String line;
-
-        Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);
-
-
-
-        System.out.print(<span class="hljs-string">"Your expenses while overseas?"</span>);
-
-       <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span>
-
-       line = in.nextLine();
-
-       String[] separated = line.split(<span class="hljs-string">" "</span>);
-
-       printTotal(filterExpenses(separated));
-
-    }
-
-}
-
-</code></pre>
+              <pre><code class="hljs java"><span>&#x200B;</span><span><span class="hljs-keyword">import</span> java.util.Scanner;</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> java.util.Arrays;</span><span>&#x200B;</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{</span><span>&#x200B;</span><span>&#x200B;</span><span>&#x200B;</span><span>    <span class="hljs-comment">// You can add more methods here</span></span><span>&#x200B;</span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterExpenses(String[] words){</span><span>&#x200B;</span><span>        String[] results = <span class="hljs-keyword">new</span> String[words.length];</span><span>&#x200B;</span><span>        <span class="hljs-keyword">int</span> currCount = <span class="hljs-number">0</span>;  <span class="hljs-comment">//keep track of the index of next free space in validItems</span></span><span>&#x200B;</span><span>        <span class="hljs-keyword">for</span> (String word : words){</span><span>&#x200B;</span><span>            <span class="hljs-keyword">if</span> (word.substring(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>).equals(<span class="hljs-string">"$"</span>)){</span><span>&#x200B;</span><span>                results[currCount] = word;</span><span>&#x200B;</span><span>                currCount++;</span><span>&#x200B;</span><span>            }</span><span>&#x200B;</span><span>        }</span><span>&#x200B;</span><span>        <span class="hljs-comment">//print the 2nd line of output</span></span><span>&#x200B;</span><span>        System.out.println(<span class="hljs-string">"Expenses in overseas currency:"</span> + Arrays.toString(Arrays.copyOf(results, currCount)));</span><span>&#x200B;</span><span>        <span class="hljs-keyword">return</span> Arrays.copyOf(results, currCount);</span><span>&#x200B;</span><span>    }</span><span>&#x200B;</span><span>&#x200B;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTotal</span><span class="hljs-params">(String[] args)</span></span>{</span><span>&#x200B;</span><span>        <span class="hljs-keyword">double</span> total = <span class="hljs-number">0</span>;</span><span>&#x200B;</span><span>        <span class="hljs-comment">//add floats together</span></span><span>&#x200B;</span><span>        <span class="hljs-keyword">for</span> (String arg: args){</span><span>&#x200B;</span><span>            <span class="hljs-comment">//get rid of the preceding $ char and convert value to double</span></span><span>&#x200B;</span><span>            <span class="hljs-keyword">double</span> currItemValue = Double.parseDouble(arg.substring(<span class="hljs-number">1</span>, arg.length()));</span><span>&#x200B;</span><span>            total += <span class="hljs-number">1.7</span> * currItemValue;   <span class="hljs-comment">//convert exchange rate</span></span><span>&#x200B;</span><span>        }</span><span>&#x200B;</span><span>        </span><span>&#x200B;</span><span>        <span class="hljs-comment">//convert final value to string, print $ + final value</span></span><span>&#x200B;</span><span>        System.out.println(<span class="hljs-string">"Total in local currency: $"</span> + String.format(<span class="hljs-string">"%.2f"</span>, total));</span><span>&#x200B;</span><span>    }</span><span>&#x200B;</span><span>&#x200B;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>&#x200B;</span><span>        String line;</span><span>&#x200B;</span><span>        Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);</span><span>&#x200B;</span><span>&#x200B;</span><span>&#x200B;</span><span>        System.out.print(<span class="hljs-string">"Your expenses while overseas?"</span>);</span><span>&#x200B;</span><span>       <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span></span><span>&#x200B;</span><span>       line = in.nextLine();</span><span>&#x200B;</span><span>       String[] separated = line.split(<span class="hljs-string">" "</span>);</span><span>&#x200B;</span><span>       printTotal(filterExpenses(separated));</span><span>&#x200B;</span><span>    }</span><span>&#x200B;</span><span>}</span><span>&#x200B;</span></code></pre>
               <p>Apologies for the delay!
               </p>
             </panel>
@@ -1179,15 +1087,9 @@ String value = <span class="hljs-string">"Some code here"</span>
             </panel>
             <panel popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/6" expanded><template slot="_header"><p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> wrong method name in Week 2 Ex4: getMultipleGradeCaps method</strong></p></template>
               <p>The method we should create to prevent the wrong submission is :</p>
-              <pre><code class="hljs java">
-        <span class="hljs-keyword">double</span>[] caps = getMultipleGradeCaps(grades);
-
-</code></pre>
+              <pre><code class="hljs java"><span>&#x200B;</span><span>        <span class="hljs-keyword">double</span>[] caps = getMultipleGradeCaps(grades);</span><span>&#x200B;</span></code></pre>
               <p>insead of repl's skeleton code method:</p>
-              <pre><code class="hljs java">
-        <span class="hljs-keyword">double</span>[] caps = getGradeCaps(grades);
-
-</code></pre>
+              <pre><code class="hljs java"><span>&#x200B;</span><span>        <span class="hljs-keyword">double</span>[] caps = getGradeCaps(grades);</span><span>&#x200B;</span></code></pre>
             </panel>
             <panel popup-url="https://github.com/nus-cs2113-AY1920S2/forum/issues/16#issuecomment-578716950" expanded><template slot="_header"><p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p></template>
               <p>From what i understand, finalize method only cleans unreferenced objects when called, but my issue is that i want to have a static class member variable that has the total count of objects in runtime, and i want to decrement it whenever
@@ -1460,7 +1362,7 @@ String value = <span class="hljs-string">"Some code here"</span>
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

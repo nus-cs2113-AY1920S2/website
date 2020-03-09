@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: tP: Inception [week 4]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -285,11 +285,11 @@
                             to mouse/GUI inputs, if applicable.<br> Also keep in mind:</p>
                           <ul>
                             <li>Regular typing is usually faster than using key combinations.</li>
-                            <li>
-                              <tooltip><template slot="_content">typing the full command and hitting ENTER will complete the task</template>One-shot commands</tooltip> are faster over
-                              <tooltip><template slot="_content">prompting the user to input one parameter at a time</template>multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for
-                              regular/expert users.
-                              <br></li>
+                            <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">typing the full command and hitting ENTER will complete the task</span>One-shot
+                              commands</span>
+                              are faster over <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">prompting the user to input one parameter at a time</span>multi-step
+                              commands
+                              </span>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert users.<br></li>
                           </ul>
                         </div>
                       </div>
@@ -366,27 +366,30 @@
                   </ul>
                   <span id="functionalityExpectations">
 <h3 id="functionality-expectations"><div class="text-white bg-danger p-1">Functionality Expectations</div><a class="fa fa-anchor" href="#functionality-expectations"></a></h3>
-<p><strong>The expected level of <em>functionality</em> from a team is roughly <mark>what you can achieve if each member contribute about the same amount of functional code as required by a <tooltip><template slot="_content">i.e., if all requirements were met at the <em>minimal</em> level specified</template>typical iP</tooltip></mark></strong>.</p>
-<box type="important">
-<p>Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. <mark>Adding more functionality than the expected level will not increase your marks</mark>. You are better off spending that effort in improving other aspects of the project. In fact, here is the grading criterion for the individual project effort:</p>
-<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Evaluating the  Implementation Effort</mark>                  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
-                  </p>
-                  </template>
-                  <div>
-                    <p>
-                      <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong></p>
-                    <ul>
-                      <li><mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark></li>
-                      <li>The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.</li>
-                    </ul>
-                    <ul radio-group="e7d80" class="radio-list">
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Unable to judge</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Significantly less than a typical iP</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Slightly less than a typical iP</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  At least as much as a typical iP</label></li>
-                    </ul>
-                  </div>
-                  </panel>
+<p><strong>The expected level of <em>functionality</em> from a team is roughly <mark>what you can achieve if each member contribute about the same amount of functional code as required by a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., if all requirements were met at the <em>minimal</em> level specified</span>typical
+                  iP
+                  </span>
+                  </mark>
+                  </strong>.</p>
+                  <box type="important">
+                    <p>Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. <mark>Adding more functionality than the expected level will not increase your marks</mark>.
+                      You are better off spending that effort in improving other aspects of the project. In fact, here is the grading criterion for the individual project effort:</p>
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Evaluating the  Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                      <div>
+                        <p>
+                          <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong></p>
+                        <ul>
+                          <li><mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark></li>
+                          <li>The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.</li>
+                        </ul>
+                        <ul radio-group="e7d80" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Unable to judge</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Significantly less than a typical iP</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Slightly less than a typical iP</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  At least as much as a typical iP</label></li>
+                        </ul>
+                      </div>
+                    </panel>
                   </box>
                   </span>
                   <span id="teamExpectations">
@@ -547,8 +550,7 @@
                 <div id="Constraint-No-DBMS">
                   <h4 id="constraint-no-dbms"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-No-DBMS</span><a class="fa fa-anchor" href="#constraint-no-dbms"></a></h4>
                   <div class="indented-level2">
-                    <p>Do not use a
-                      <tooltip><template slot="_content">Database Management System e.g., MySQL</template>DBMS</tooltip> to store data.<br>
+                    <p>Do not use a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Database Management System e.g., MySQL</span>DBMS</span> to store data.<br>
                       <span class="dimmed"><strong>Reason:</strong> Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we
 need to optimize it for CS2113/T
 module learning outcomes; covering DBMS-related topics will have to be left to database modules or level 3 project modules.</span></p>
@@ -654,11 +656,9 @@ module learning outcomes; covering DBMS-related topics will have to be left to d
                       inputs, if applicable.<br> Also keep in mind:</p>
                     <ul>
                       <li>Regular typing is usually faster than using key combinations.</li>
-                      <li>
-                        <tooltip><template slot="_content">typing the full command and hitting ENTER will complete the task</template>One-shot commands</tooltip> are faster over
-                        <tooltip><template slot="_content">prompting the user to input one parameter at a time</template>multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert
-                        users.
-                        <br></li>
+                      <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">typing the full command and hitting ENTER will complete the task</span>One-shot commands</span>
+                        are faster over <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">prompting the user to input one parameter at a time</span>multi-step
+                        commands</span>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert users.<br></li>
                     </ul>
                   </div>
                 </div>
@@ -787,7 +787,7 @@ module learning outcomes; covering DBMS-related topics will have to be left to d
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

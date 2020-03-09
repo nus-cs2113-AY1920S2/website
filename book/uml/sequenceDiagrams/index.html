@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - UML: Sequence Diagrams</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -54,25 +54,7 @@
                     <p><strong>A UML sequence diagram <em>captures the interactions between multiple objects for a given scenario.</em></strong></p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below.</p>
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{
-
-    <span class="hljs-function">Unit <span class="hljs-title">producePrototype</span><span class="hljs-params">()</span> </span>{
-        Unit prototype = <span class="hljs-keyword">new</span> Unit();
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
-            prototype.stressTest();
-        }
-        <span class="hljs-keyword">return</span> prototype;
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Unit</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stressTest</span><span class="hljs-params">()</span> </span>{
-
-    }
-}
-
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function">Unit <span class="hljs-title">producePrototype</span><span class="hljs-params">()</span> </span>{</span><span>        Unit prototype = <span class="hljs-keyword">new</span> Unit();</span><span>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {</span><span>            prototype.stressTest();</span><span>        }</span><span>        <span class="hljs-keyword">return</span> prototype;</span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Unit</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stressTest</span><span class="hljs-params">()</span> </span>{</span><span>&#x200B;</span><span>    }</span><span>}</span><span>&#x200B;</span></code></pre>
                       <p>Here is the sequence diagram to model the interactions for the method call <code>producePrototype()</code> on a <code>Machine</code> object.</p>
                       <img src="/website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="450">
                       <p></p>
@@ -101,8 +83,8 @@
                   <img src="/website/book/uml/sequenceDiagrams/basic/images/notation.png" height="300">
                   <p></p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sequence diagram shows some interactions between a human user and the Text UI of a
-                      <tooltip><template slot="_content">Command Line Interface</template>CLI</tooltip> Minesweeper game.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sequence diagram shows some interactions between a human user and the Text UI of a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter"
+                        class="trigger"><span data-mb-html-for="_content">Command Line Interface</span>CLI</span> Minesweeper game.</p>
                     <img src="/website/book/uml/sequenceDiagrams/basic/images/playerText.png" height="300">
                     <p></p>
                     <p>The player runs the <code>newgame</code> action on the <code>TextUi</code> object which results in the <code>TextUi</code> showing the minefield to the player. Then, the player runs the <code>clear x y</code> command; in response,

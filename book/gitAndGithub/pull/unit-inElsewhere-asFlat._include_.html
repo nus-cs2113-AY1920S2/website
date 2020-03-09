@@ -1,7 +1,7 @@
 <div>
   <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\pull\text.md">
     <p>
-      <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/clone"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Clone</span></p></template></panel>
+      <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/clone" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Clone</span></p></template></panel>
     </p>
   </div>
 </div>
@@ -13,16 +13,15 @@
 </p>
 <div id="title-and-body">
   <div>
-    <h4 id="pull"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\pull\text.md">Pull</span></span>
-    </h4>
+    <h4 id="pull"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\pull\text.md">Pull</span></span><a class="fa fa-anchor" href="#pull"></a></h4>
   </div>
   <div id="main">
     <div>
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\pull\text.md">
-        <p>Clone the sample repo as explained in
-          <trigger for="modal:clone-repository" trigger="click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → Git &amp; GitHub → Clone]</trigger>.</p>
+        <p>Clone the sample repo as explained in <span for="modal:clone-repository" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:clone-repository'].show()" class="trigger">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+          Tools → Git &amp; GitHub → Clone]</span>.</p>
         <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
-        <modal id="modal:clone-repository"><template slot="_header"><strong>Clone Repository</strong></template>
+        <b-modal id="modal:clone-repository" ok-only size modal-class="mb-zoom" ref="modal:clone-repository"><template slot="modal-title"><strong>Clone Repository</strong></template>
           <div>
             <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\clone\embed.md">
               <panel type="seamless" expanded>
@@ -54,7 +53,7 @@
                           </div>
                         </div>
                       </tab>
-                      <tab><template slot="_header">CLI</template>
+                      <tab class="algolia-no-index"><template slot="_header">CLI</template>
                         <div>
                           <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\clone\cli.md">
                             <p>You can use the <code>clone</code> command to clone a repo.</p>
@@ -71,7 +70,7 @@
               </panel>
             </div>
           </div>
-        </modal>
+        </b-modal>
         <tabs>
           <tab><template slot="_header">SourceTree</template>
             <div>
@@ -90,12 +89,11 @@
               </div>
             </div>
           </tab>
-          <tab><template slot="_header">CLI</template>
+          <tab class="algolia-no-index"><template slot="_header">CLI</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\pull\cli_1.md">
                 <p>Use the <code>reset</code> command to delete commits at the tip of the revision history.</p>
-                <pre><code class="hljs">git reset --hard HEAD~2
-</code></pre>
+                <pre><code class="hljs"><span>git reset --hard HEAD~2</span></code></pre>
               </div>
             </div>
           </tab>
@@ -115,7 +113,7 @@
               </div>
             </div>
           </tab>
-          <tab><template slot="_header">CLI</template>
+          <tab class="algolia-no-index"><template slot="_header">CLI</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\pull\cli_2.md">
                 <p><code>git pull origin</code></p>

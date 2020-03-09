@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Code Quality: [Guideline] Avoid Unsafe Shortcuts</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -87,18 +87,13 @@
                           </span>
                         </font>
                       </p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
-<span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;</span><span><span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;</span></code></pre>
                       <p>
                         <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                           </span>
                         </font>
                       </p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
-<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;
-<span class="hljs-keyword">else</span> error(<span class="hljs-string">"incorrect input"</span>);
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;</span><span><span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;</span><span><span class="hljs-keyword">else</span> error(<span class="hljs-string">"incorrect input"</span>);</span></code></pre>
                     </box>
                   </div>
                   <div></div>
@@ -131,17 +126,10 @@
                       </font>
                     </p>
                     <div class="alt-java">
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
-    length = length * width;
-    <span class="hljs-keyword">return</span> length;
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{</span><span>    length = length * width;</span><span>    <span class="hljs-keyword">return</span> length;</span><span>}</span></code></pre>
                     </div>
                     <div class="alt-python">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute_rectangle_area</span><span class="hljs-params">(length, width)</span>:</span>
-    length = length * width
-    <span class="hljs-keyword">return</span> length
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute_rectangle_area</span><span class="hljs-params">(length, width)</span>:</span></span><span>    length = length * width</span><span>    <span class="hljs-keyword">return</span> length</span></code></pre>
                     </div>
                     <p>
                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
@@ -149,19 +137,10 @@
                       </font>
                     </p>
                     <div class="alt-java">
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
-    <span class="hljs-keyword">double</span> area;
-    area = length * width;
-    <span class="hljs-keyword">return</span> area;
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{</span><span>    <span class="hljs-keyword">double</span> area;</span><span>    area = length * width;</span><span>    <span class="hljs-keyword">return</span> area;</span><span>}</span></code></pre>
                     </div>
                     <div class="alt-python">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute_rectangle_area</span><span class="hljs-params">(length, width)</span>:</span>
-    area = length * width
-    <span class="hljs-keyword">return</span> area
-}
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute_rectangle_area</span><span class="hljs-params">(length, width)</span>:</span></span><span>    area = length * width</span><span>    <span class="hljs-keyword">return</span> area</span><span>}</span></code></pre>
                     </div>
                   </box>
                 </div>
@@ -267,12 +246,9 @@
       <div>
         <p><strong>Code duplication, especially when you copy-paste-modify code, often indicates a poor quality implementation.</strong> While it may not be possible to have zero duplication, always think twice before duplicating code; most often there is
           a better alternative.</p>
-        <p>This guideline is closely related to the
-          <trigger for="modal:duplication-dry" trigger="click">DRY Principle
-            <trigger>.</trigger>
-          </trigger>
+        <p>This guideline is closely related to the <span for="modal:duplication-dry" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:duplication-dry'].show()" class="trigger">DRY Principle<span v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['undefined'].show()" class="trigger">.</span></span>
         </p>
-        <modal id="modal:duplication-dry" class="algolia-no-index"><template slot="_header"><strong><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> DRY Principle</strong></template>
+        <b-modal id="modal:duplication-dry" ok-only size modal-class="mb-zoom" ref="modal:duplication-dry"><template slot="modal-title"><strong><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> DRY Principle</strong></template>
           <div>
             <div></div>
             <p></p>
@@ -300,7 +276,7 @@
               </div>
             </div>
           </div>
-        </modal>
+        </b-modal>
         <p></p>
       </div>
       <div></div>

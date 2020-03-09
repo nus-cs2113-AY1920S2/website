@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Modeling: Introduction</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -53,16 +53,16 @@
                   <div>
                     <p><strong>A <em>model</em> is a representation of something else.</strong></p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A
-                        <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <span trigger="click" for="modal:modellingIntro-classDiagram" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-classDiagram'].show()"
+                          class="trigger">class diagram</span> is a model that represents a software design.</p>
                     </box>
-                    <modal large id="modal:modellingIntro-classDiagram" class="algolia-no-index"><template slot="_header">Class diagrams</template>
+                    <b-modal id="modal:modellingIntro-classDiagram" ok-only size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-classDiagram"><template slot="modal-title">Class diagrams</template>
                       <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
                         <span><span aria-hidden="true" class="fas fa-cube"></span></span> An example class diagram:<br></p>
-                      <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
-                    <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
-                      <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
-                    <modal large id="modal:modellingIntro-abstraction" class="algolia-no-index"><template slot="_header"><span class="dimmed">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></span></template>
+                      <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></b-modal>
+                    <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are <span trigger="click" for="modal:modellingIntro-abstraction"
+                        v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-abstraction'].show()" class="trigger">abstractions</span>.</p>
+                    <b-modal id="modal:modellingIntro-abstraction" ok-only size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-abstraction"><template slot="modal-title"><span class="dimmed">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></span></template>
                       <div>
                         <div></div>
                         <p></p>
@@ -113,7 +113,7 @@
                           </div>
                         </div>
                       </div>
-                    </modal>
+                    </b-modal>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A class diagram captures the structure of the software design but not the behavior.</p>
                     </box>
@@ -146,13 +146,14 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of using models for analysis:</p>
                     <ol>
-                      <li>Models of the
-                        <tooltip><template slot="_content">i.e. the environment in which the software is expected to solve a problem</template>problem domain</tooltip> can be built to aid the understanding of the problem to be solved.</li>
-                      <li>When planning a software solution, models can be created to figure out how the solution is to be built. An
-                        <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> is such a model.</li>
+                      <li>Models of the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e. the environment in which the software is expected to solve a problem</span>problem
+                        domain
+                        </span> can be built to aid the understanding of the problem to be solved.</li>
+                      <li>When planning a software solution, models can be created to figure out how the solution is to be built. An <span trigger="click" for="modal:modelingIntro-archiDiagrams" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                          v-on:click="$refs['modal:modelingIntro-archiDiagrams'].show()" class="trigger">architecture diagram</span> is such a model.</li>
                     </ol>
                   </box>
-                  <modal large id="modal:modelingIntro-archiDiagrams" class="algolia-no-index"><template slot="_header">Architecture Diagrams</template>
+                  <b-modal id="modal:modelingIntro-archiDiagrams" ok-only size="lg" modal-class="mb-zoom" ref="modal:modelingIntro-archiDiagrams"><template slot="modal-title">Architecture Diagrams</template>
                     <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
                     <div>
                       <box>
@@ -179,7 +180,7 @@
                         </tabs>
                       </box>
                     </div>
-                  </modal>
+                  </b-modal>
                   <p>b) <strong>To communicate information among stakeholders.</strong> Models can be used as a visual aid in discussions and documentations.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of using models to communicate:</p>
@@ -268,15 +269,15 @@
               <p></p>
               <p></p>
               <div>
-                <p>The following diagram uses the class diagram notation to show the different types of
-                  <trigger trigger="click" for="modal:umlModels-uml">UML</trigger> diagrams.</p>
-                <modal large id="modal:umlModels-uml" class="algolia-no-index"><template slot="_header">UML (Unified Modeling Language)</template>
+                <p>The following diagram uses the class diagram notation to show the different types of <span trigger="click" for="modal:umlModels-uml" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:umlModels-uml'].show()"
+                    class="trigger">UML</span> diagrams.</p>
+                <b-modal id="modal:umlModels-uml" ok-only size="lg" modal-class="mb-zoom" ref="modal:umlModels-uml"><template slot="modal-title">UML (Unified Modeling Language)</template>
                   <div>
                     <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
                       Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
                       in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                   </div>
-                </modal>
+                </b-modal>
                 <box>
                   <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/UML_diagrams_overview.svg" width="800"><br>
                     <sub>source:<a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">https://en.wikipedia.org/</a></sub></p>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Test Case Design: Combining Test Inputs</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -256,8 +256,8 @@
                           </tbody>
                         </table>
                       </div>
-                      <p>These values can generate
-                        <tooltip><template slot="_content">(a,1)(a,2)(a,3)(b,1)(b,2),...</template>3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
+                      <p>These values can generate <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">(a,1)(a,2)(a,3)(b,1)(b,2),...</span>3x3=9 combinations</span>,
+                        and the test cases should cover all of them.</p>
                       <p>Next, let's consider p1 and p3.</p>
                       <div class="table-responsive">
                         <table class="markbind-table table table-bordered table-striped">
@@ -279,8 +279,8 @@
                           </tbody>
                         </table>
                       </div>
-                      <p>These values can generate
-                        <tooltip><template slot="_content">(a,T)(a,F)(b,T)(b,F),...</template>3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
+                      <p>These values can generate <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">(a,T)(a,F)(b,T)(b,F),...</span>3x2=6 combinations</span>, and
+                        the test cases should cover all of them.</p>
                       <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
                       <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
                     </panel>
@@ -609,9 +609,8 @@
             <p></p>
             <p></p>
             <div>
-              <p>Consider the
-                <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
-              <modal large id="modal:heuristic-valid-test-case" class="algolia-no-index"><template slot="_header"><strong>Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case</strong></template>
+              <p>Consider the <span for="modal:heuristic-valid-test-case" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:heuristic-valid-test-case'].show()" class="trigger">test cases designed in [Heuristic: each valid input at least once in a positive test case]</span>.</p>
+              <b-modal id="modal:heuristic-valid-test-case" ok-only size="lg" modal-class="mb-zoom" ref="modal:heuristic-valid-test-case"><template slot="modal-title"><strong>Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case</strong></template>
                 <div>
                   <div class="table-responsive">
                     <table class="markbind-table table table-bordered table-striped">
@@ -659,7 +658,7 @@
                   </div>
                   <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
                 </div>
-              </modal>
+              </b-modal>
               <p>After running these test cases can you be sure that the error message “invalid price” is shown for negative prices?</p>
               <ul>
                 <li>Answer: No.</li>

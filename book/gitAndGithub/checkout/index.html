@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Git and Github: Checkout</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -62,29 +62,12 @@
                       </tab>
                       <tab class="algolia-no-index"><template slot="_header">CLI</template>
                         <div>
-                          <pre><code class="hljs sh">git show &lt; part-of-commit-hash &gt;
-</code></pre>
+                          <pre><code class="hljs sh"><span>git show &lt; part-of-commit-hash &gt;</span></code></pre>
                           <p>Example:</p>
-                          <pre><code class="hljs">git show 251b4cf
-</code></pre>
+                          <pre><code class="hljs"><span>git show 251b4cf</span></code></pre>
                           <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                           </p>
-                          <pre><code class="hljs diff">commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3
-Author: … &lt; … &gt;
-Date:   Sat Jul 8 16:50:27 2017 +0800
-
-    fruits.txt: replace banana with berries
-
-diff --git a/fruits.txt b/fruits.txt
-index 15b57f7..17f4528 100644
-<span class="hljs-comment">--- a/fruits.txt</span>
-<span class="hljs-comment">+++ b/fruits.txt</span>
-<span class="hljs-meta">@@ -1,3 +1,3 @@</span>
- apples
-<span class="hljs-deletion">-bananas</span>
-<span class="hljs-addition">+berries</span>
- cherries
-</code></pre>
+                          <pre><code class="hljs diff"><span>commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3</span><span>Author: … &lt; … &gt;</span><span>Date:   Sat Jul 8 16:50:27 2017 +0800</span><span>&#x200B;</span><span>    fruits.txt: replace banana with berries</span><span>&#x200B;</span><span>diff --git a/fruits.txt b/fruits.txt</span><span>index 15b57f7..17f4528 100644</span><span><span class="hljs-comment">--- a/fruits.txt</span></span><span><span class="hljs-comment">+++ b/fruits.txt</span></span><span><span class="hljs-meta">@@ -1,3 +1,3 @@</span></span><span> apples</span><span><span class="hljs-deletion">-bananas</span></span><span><span class="hljs-addition">+berries</span></span><span> cherries</span></code></pre>
                         </div>
                       </tab>
                     </tabs>
@@ -117,9 +100,9 @@ index 15b57f7..17f4528 100644
                         </div>
                       </tab>
                     </tabs>
-                    <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to
-                      <trigger trigger="click" for="modal:checkout-stash">stash</trigger> them first to prevent them from being overwritten.</p>
-                    <modal large id="modal:checkout-stash" class="algolia-no-index"><template slot="_header"><span class="dimmed">Extract</span></template>
+                    <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <span trigger="click" for="modal:checkout-stash" v-b-popover.click.top.html="popoverGenerator"
+                        v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:checkout-stash'].show()" class="trigger">stash</span> them first to prevent them from being overwritten.</p>
+                    <b-modal id="modal:checkout-stash" ok-only size="lg" modal-class="mb-zoom" ref="modal:checkout-stash"><template slot="modal-title"><span class="dimmed">Extract</span></template>
                       <div>
                         <div></div>
                         <p></p>
@@ -148,7 +131,7 @@ index 15b57f7..17f4528 100644
                           </div>
                         </div>
                       </div>
-                    </modal>
+                    </b-modal>
                     <tabs>
                       <tab><template slot="_header">SourceTree</template>
                         <div>

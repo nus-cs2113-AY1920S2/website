@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: Grade Breakdown</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -606,9 +606,10 @@
                 <p><strong>Based on:</strong></p>
                 <ol>
                   <li>functionality bugs in your work found by others during the <a href="/website/admin/tp-deliverables.html#deliverable-practical-exam">Practical Exam (PE)</a></li>
-                  <li>your test code <span class="dimmed">(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)</span></li>
+                  <li>your test code <span class="dimmed">(note <span trigger="click" for="modal:projectGradingQA-testingExpectations" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectGradingQA-testingExpectations'].show()" class="trigger">our expectations for automated testing</span>)</span>
+                  </li>
                 </ol>
-                <modal large id="modal:projectGradingQA-testingExpectations" class="algolia-no-index"><template slot="_header">Our expectations for automated testing in the project</template>
+                <b-modal id="modal:projectGradingQA-testingExpectations" ok-only size="lg" modal-class="mb-zoom" ref="modal:projectGradingQA-testingExpectations"><template slot="modal-title">Our expectations for automated testing in the project</template>
                   <div>
                     <ul>
                       <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
@@ -621,7 +622,7 @@
                       </box>
                     </div>
                   </div>
-                </modal>
+                </b-modal>
                 <box>
                   <div>
                     <p>These are considered <em>functionality bugs</em>:<br>
@@ -647,8 +648,8 @@
                       </li>
                       <li>The penalty for a bug is divided equally among assignees.</li>
                       <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
-                      <li>
-                        <tooltip><template slot="_content">i.e., the same bug reported by many testers</template><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
+                      <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span> earn less
+                        credit for the tester and slightly more penalty for the developer.</li>
                       <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance
                         testing.</li>
                       <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
@@ -658,8 +659,8 @@
                         </ul>
                       </li>
                       <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
-                      <li>Excessive incorrect downgrading/rejecting/
-                        <tooltip><template slot="_content">marking as duplicates</template>duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+                      <li>Excessive incorrect downgrading/rejecting/<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">marking as duplicates</span>duplicate-flagging</span>,
+                        if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
                     </ul>
                   </div>
                 </box>
@@ -905,8 +906,8 @@
               <p><strong>Based on:</strong> tutor/bot observations of project milestones and GitHub data</p>
               <p><strong>Grading criteria:</strong></p>
               <ul>
-                <li>No
-                  <tooltip><template slot="_content">e.g., the product is not working at all by the milestone deadline</template>major mishaps</tooltip> at v1.0 and v2.0.</li>
+                <li>No <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., the product is not working at all by the milestone deadline</span>major mishaps</span>
+                  at v1.0 and v2.0.</li>
                 <li>Good attempt to use of at least <em>some</em> Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)</li>
                 <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
               </ul>
@@ -960,7 +961,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

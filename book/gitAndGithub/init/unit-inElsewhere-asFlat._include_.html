@@ -1,7 +1,7 @@
 <div>
   <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\init\text.md">
     <p>
-      <panel src="/website/book/revisionControl/repositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/repositories"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Repositories</span></p></template></panel>
+      <panel src="/website/book/revisionControl/repositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/repositories" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Repositories</span></p></template></panel>
     </p>
   </div>
 </div>
@@ -13,13 +13,12 @@
 </p>
 <div id="title-and-body">
   <div>
-    <h4 id="init"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\init\text.md">Init</span></span>
-    </h4>
+    <h4 id="init"><span><span data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\init\text.md">Init</span></span><a class="fa fa-anchor" href="#init"></a></h4>
   </div>
   <div id="main">
     <div>
       <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\init\text.md">
-        <panel class="non-printable"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Git Overview</span></p></template>
+        <panel class="non-printable algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Git Overview</span></p></template>
           <p>Soon you are going to take your first step in using Git. If you would like to see a quick overview of the full Git landscape before jumping in, watch the video below.</p>
           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
           <p></p>
@@ -40,7 +39,7 @@
               </div>
             </div>
           </tab>
-          <tab><template slot="_header">CLI</template>
+          <tab class="algolia-no-index"><template slot="_header">CLI</template>
             <div>
               <div data-included-from="C:\repos\nus-cs2113-AY1920S2\cs2113-website\book\gitAndGithub\init\cli.md">
                 <p>Open a Git Bash Terminal.</p>
@@ -49,24 +48,14 @@
                 <p></p>
                 <p>Navigate to the <code>things</code> directory.</p>
                 <p>Use the command <code>git init</code> which should initialize the repo.</p>
-                <pre><code class="hljs">$ git init
-Initialized empty Git repository in c:/repos/things/.git/
-</code></pre>
+                <pre><code class="hljs"><span>$ git init</span><span>Initialized empty Git repository in c:/repos/things/.git/</span></code></pre>
                 <p>You can use the command <code>ls -a</code> to view all files, which should show the <code>.git</code> directory that was created by the previous command.</p>
-                <pre><code class="hljs">$ ls -a
-.  ..  .git
-</code></pre>
+                <pre><code class="hljs"><span>$ ls -a</span><span>.  ..  .git</span></code></pre>
                 <p>You can also use the <code>git status</code> command to check the status of the newly-created repo. It should respond with something like the bellow</p>
-                <pre><code class="hljs">git status
-</code></pre>
+                <pre><code class="hljs"><span>git status</span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
-                <pre><code class="hljs"># On branch master
-#
-# Initial commit
-#
-nothing to commit (create/copy files and use &quot;git add&quot; to track)
-</code></pre>
+                <pre><code class="hljs"><span># On branch master</span><span>#</span><span># Initial commit</span><span>#</span><span>nothing to commit (create/copy files and use &quot;git add&quot; to track)</span></code></pre>
               </div>
             </div>
           </tab>

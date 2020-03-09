@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: tP: Plan v1.0 [week 7]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -271,8 +271,8 @@
                         <li><strong>Enable GitHub Pages</strong>: Go to the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="14" height="16" viewbox="0 0 14 16" class="octicon octicon-gear" aria-hidden="true"><path fill-rule="evenodd" d="M14 8.77v-1.6l-1.94-.64-.45-1.09.88-1.84-1.13-1.13-1.81.91-1.09-.45-.69-1.92h-1.6l-.63 1.94-1.11.45-1.84-.88-1.13 1.13.91 1.81-.45 1.09L0 7.23v1.59l1.94.64.45 1.09-.88 1.84 1.13 1.13 1.81-.91 1.09.45.69 1.92h1.59l.63-1.94 1.11-.45 1.84.88 1.13-1.13-.92-1.81.47-1.09L14 8.75v.02zM7 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg> Settings</small></span>                          tab and enable <code>GitHub Pages</code> for the <code>master branch /docs folder</code> (similar to how you did it in the iP).<br> Remember to choose a theme too by clicking the <button type="button" class="btn btn-light btn-sm border"><strong>Choose a theme</strong></button>                          button (that will create a commit in your repo that is needed in a later step.<br> After a few minutes, confirm your tP website is available in the corresponding <code>github.io</code> URL.</li>
                         <li><strong>Give access to team members</strong>: Ensure your team members have the desired level of access to your team repo.</li>
                         <li><strong>Create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2113-AY1920S2/tP">nus-cs2113-AY1920S2/tP</a>]
-                          <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[CS2113T-T09-2] Contact List Pro</code>. <span class="dimmed">As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span>                          In the PR description
-                          <tooltip><template slot="_content">use @githubUserName</template>@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
+                          <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[CS2113T-T09-2] Contact List Pro</code>. <span class="dimmed">As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span>                          In the PR description <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">use @githubUserName</span>@mention</span> the other team members
+                          so that they get notified when the tutor adds comments to the PR.</li>
                       </ol>
                       <p>All team members:</p>
                       <ol>
@@ -339,7 +339,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

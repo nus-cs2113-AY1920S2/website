@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 6 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -119,19 +119,7 @@
               <p>During the tutorial, <strong>demo your ability to do debugging using an IDE</strong> by performing the following tasks:</p>
               <ol>
                 <li>Set a breakpoint in the following method of the <code>Main</code> class.
-                  <pre><code class="hljs java"><span class="hljs-comment">/** Reads the user command and executes it, until the user issues the exit command.  */</span>
-<span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">runCommandLoopUntilExitCommand</span><span class="hljs-params">()</span> </span>{
-    Command command;
-    <span class="hljs-keyword">do</span> {
-        String userCommandText = ui.getUserCommand();
-        command = <span class="hljs-keyword">new</span> Parser().parseCommand(userCommandText);
-        CommandResult result = executeCommand(command);
-        personBook.setLastShownList(result.getRelevantPersons());
-        ui.showResultToUser(result);
-
-    } <span class="hljs-keyword">while</span> (!ExitCommand.isExit(command));
-}
-</code></pre>
+                  <pre><code class="hljs java"><span><span class="hljs-comment">/** Reads the user command and executes it, until the user issues the exit command.  */</span></span><span><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">runCommandLoopUntilExitCommand</span><span class="hljs-params">()</span> </span>{</span><span>    Command command;</span><span>    <span class="hljs-keyword">do</span> {</span><span>        String userCommandText = ui.getUserCommand();</span><span>        command = <span class="hljs-keyword">new</span> Parser().parseCommand(userCommandText);</span><span>        CommandResult result = executeCommand(command);</span><span>        personBook.setLastShownList(result.getRelevantPersons());</span><span>        ui.showResultToUser(result);</span><span>&#x200B;</span><span>    } <span class="hljs-keyword">while</span> (!ExitCommand.isExit(command));</span><span>}</span></code></pre>
                 </li>
                 <li>Show how to set a conditional breakpoint so that execution pauses when the user types in the command <code>list</code>.</li>
                 <li>Use the debugger to step through the code while explaining how the code works. Start from the <code>main</code> method.</li>
@@ -171,7 +159,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 17:03:13 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 3:29:14 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

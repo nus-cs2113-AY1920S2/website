@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Git and Github: Pull</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -51,10 +51,10 @@
                 </div>
                 <div id="main">
                   <div>
-                    <p>Clone the sample repo as explained in
-                      <trigger for="modal:clone-repository" trigger="click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → Git &amp; GitHub → Clone]</trigger>.</p>
+                    <p>Clone the sample repo as explained in <span for="modal:clone-repository" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:clone-repository'].show()"
+                        class="trigger">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → Git &amp; GitHub → Clone]</span>.</p>
                     <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
-                    <modal id="modal:clone-repository" class="algolia-no-index"><template slot="_header"><strong>Clone Repository</strong></template>
+                    <b-modal id="modal:clone-repository" ok-only size modal-class="mb-zoom" ref="modal:clone-repository"><template slot="modal-title"><strong>Clone Repository</strong></template>
                       <div>
                         <panel type="seamless" expanded>
                           <span slot="header" class="card-title"><div>
@@ -91,7 +91,7 @@
                           <div></div>
                         </panel>
                       </div>
-                    </modal>
+                    </b-modal>
                     <tabs>
                       <tab><template slot="_header">SourceTree</template>
                         <div>
@@ -111,8 +111,7 @@
                       <tab class="algolia-no-index"><template slot="_header">CLI</template>
                         <div>
                           <p>Use the <code>reset</code> command to delete commits at the tip of the revision history.</p>
-                          <pre><code class="hljs">git reset --hard HEAD~2
-</code></pre>
+                          <pre><code class="hljs"><span>git reset --hard HEAD~2</span></code></pre>
                         </div>
                       </tab>
                     </tabs>
