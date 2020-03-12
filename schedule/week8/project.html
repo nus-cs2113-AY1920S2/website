@@ -1021,7 +1021,10 @@
                             <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use GitHub's <a href="https://github.blog/2019-02-14-introducing-draft-pull-requests/"><em>draft PRs</em></a>                            feature to indicate that a PR is not yet ready for merging.<br>
                             <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span> PRO TIP</span> <code>LGTM</code> is common abbreviation you can use in the review comments to mean <code>Looks Good To Merge</code>.</li>
                           <li><strong>Get team members to review PRs.</strong> A workflow without PR reviews is a risky workflow.</li>
-                          <li>After merging a PR, close the corresponding issue.<br>
+                          <li><strong>Don't merge code that fails CI</strong>. Ensure the PRs you merge have CI <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
+                            </span> before you merge them. If your CI breaks, a <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
+                            </span> will show up in your team PR <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls">here</a> (the shame!).</li>
+                          <li><strong>After merging a PR, close the corresponding issue.</strong><br>
                             <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span> PRO TIP</span> You can use GitHub's <a href="https://help.github.com/en/articles/closing-issues-using-keywords"><code>Fixes #123</code> trick</a>                            to get the issue to close automatically when the PR is merged.</li>
                         </ul>
                         <b-modal id="modal:appErecommendedWorkflow-forkingworkflow" ok-only size="lg" modal-class="mb-zoom" ref="modal:appErecommendedWorkflow-forkingworkflow"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
@@ -1292,7 +1295,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Wed, Mar 11, 2020, 1:27:38 PM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Thu, Mar 12, 2020, 11:22:27 PM GMT+8</small></div>
     </footer>
   </div>
 </body>
