@@ -704,6 +704,20 @@
                         </b-modal>
                         <p><strong>We recommend the <span trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:appErecommendedWorkflow-forkingworkflow'].show()" class="trigger">forking workflow</span> for your project.</strong>                          In particular,</p>
                         <ul>
+                          <li><strong>Protect the <code>master</code> branch</strong>: You can use GitHub's <a href="https://help.github.com/articles/about-protected-branches/"><em>Protected Branches</em></a> feature to protect your <code>master</code> branch
+                            against rogue PRs. We suggest the following:
+                            <ul>
+                              <li>Go the the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="14" height="16" viewbox="0 0 14 16" class="octicon octicon-gear" aria-hidden="true"><path fill-rule="evenodd" d="M14 8.77v-1.6l-1.94-.64-.45-1.09.88-1.84-1.13-1.13-1.81.91-1.09-.45-.69-1.92h-1.6l-.63 1.94-1.11.45-1.84-.88-1.13 1.13.91 1.81-.45 1.09L0 7.23v1.59l1.94.64.45 1.09-.88 1.84 1.13 1.13 1.81-.91 1.09.45.69 1.92h1.59l.63-1.94 1.11-.45 1.84.88 1.13-1.13-.92-1.81.47-1.09L14 8.75v.02zM7 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg> settings</small></span>                                of your team repo.</li>
+                              <li>Click on the <code>Branches</code> option on the navigation menu on the left.</li>
+                              <li>Click the <button type="button" class="btn btn-light btn-sm border"><strong>Add rule</strong></button> button. In the <em>Branch protection rule</em> page,
+                                <ul>
+                                  <li>Specify the <em>Branch name pattern</em> to be <code>master</code></li>
+                                  <li>Tick the option <code>Require status checks to pass before merging</code> to ensure that code has to pass CI before then can be merged to the <code>master</code> branch</li>
+                                  <li>If you think all PRs should be reviewed before they are merged, also tick the <code>Require pull request reviews before merging</code> option.</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
                           <li><strong>Create issues to represent project tasks</strong> so that they can be tracked using the issue tracker features.</li>
                           <li><strong>Create a PR when you implement a project task</strong> that updates the code.<br>
                             <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use GitHub's <a href="https://github.blog/2019-02-14-introducing-draft-pull-requests/"><em>draft PRs</em></a>                            feature to indicate that a PR is not yet ready for merging.<br>
@@ -762,12 +776,9 @@
                         </b-modal>
                       </div>
                       <div id="workflow-after-v11">
-                        <p><strong>You can reduce process rigor</strong> to suit your team's pace. For example, you can <strong>switch to a lighter workflow</strong>: While <em>forking workflow</em> is the safest, it is also rather heavy. You can switch
-                          to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: <em>branching workflow</em>, <em>centralized workflow</em>. However, we still recommend that you
-                          use PR reviews, at least for PRs affecting others' features.</p>
-                        <p><strong>You can also increase the rigor/safety of your workflow</strong>. For example, you can use GitHub's <a href="https://help.github.com/articles/about-protected-branches/"><em>Protected Branches</em></a> feature to protect
-                          your
-                          <code>master</code> branch against rogue PRs.</p>
+                        <p><strong>You can reduce process rigor</strong> to suit your team's pace, after following the above workflow for a while. For example, you can <strong>switch to a lighter workflow</strong>: While <em>forking workflow</em> is the
+                          safest, it is also rather heavy. You can switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: <em>branching workflow</em>, <em>centralized workflow</em>.
+                          However, we still recommend that you use PR reviews, at least for PRs affecting others' features.</p>
                         <b-modal id="modal:appEworkflow-testingExpectations" ok-only size modal-class="mb-zoom" ref="modal:appEworkflow-testingExpectations"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project Grading → Expectation on testing</template>
                           <div>
                             <ul>
@@ -986,7 +997,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Thu, Mar 12, 2020, 11:55:24 PM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Fri, Mar 13, 2020, 3:54:42 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

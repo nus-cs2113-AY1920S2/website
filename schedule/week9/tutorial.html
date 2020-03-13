@@ -110,9 +110,20 @@
             </div>
             <h4 id="2-demo-an-assertion-failure"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Demo an assertion failure<a class="fa fa-anchor" href="#2-demo-an-assertion-failure"></a></h4>
             <ul>
-              <li>Temporarily edit the tP code to cause an assertion failure. Demo the assertion failure by running the app.</li>
+              <li>Temporarily edit the tP code to cause an assertion failure. Demo the assertion failure by running the app.<br> For example, you can add the following assertion at the start of the <code>main</code> method and then run <code>gradlew run</code>.
+                <div class="code-block">
+                  <div class="code-block-heading"><span>your main class</span></div>
+                  <div class="code-block-content">
+                    <pre><code class="no-line-numbers hljs java" highlight-lines="3" heading="your main class"><span>...</span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{</span><span class="highlighted">    <span class="hljs-keyword">assert</span> <span class="hljs-keyword">false</span> : <span class="hljs-string">"dummy assertion set to fail"</span>;</span><span>    ...</span><span>}</span></code></pre>
+                  </div>
+                </div>
+              </li>
             </ul>
             <h4 id="3-exercise-interpret-an-intermediate-level-cd"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Exercise: interpret an intermediate level CD<a class="fa fa-anchor" href="#3-exercise-interpret-an-intermediate-level-cd"></a></h4>
+            <ul>
+              <li><span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> 10 minutes</span>
+                </span> With the tutor's guidance, interpret the following class diagram, focusing on the new CD notations that you learned this week.</li>
+            </ul>
             <div class="indented-level2">
               <div>
                 <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain notations in the class diagram</p></template>
@@ -123,7 +134,26 @@
               </div>
               <p></p>
             </div>
+            <ul>
+              <li>Some questions you can try to answer:
+                <ul>
+                  <li>Can a <code>PR</code> object exist without any <code>Commit</code> objects attached to it?</li>
+                  <li>Can a <code>Commit</code> object exist without a corresponding <code>PR</code> object?</li>
+                  <li>A <code>Student</code> can belong to how many teams?<br> A <code>Team</code> can have how many <code>Student</code> objects?</li>
+                  <li>Why the line between <code>ModelManager</code> and <code>Model</code> is dashed?<br> Why the line between <code>Model</code> and <code>Urgency</code> is dashed?</li>
+                </ul>
+              </li>
+            </ul>
             <h4 id="4-exercise-draw-an-intermediate-level-cd"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Exercise: draw an intermediate level CD<a class="fa fa-anchor" href="#4-exercise-draw-an-intermediate-level-cd"></a></h4>
+            <div class="indented">
+              <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Question adapted from past exam paper.</p>
+            </div>
+            <ul>
+              <li><strong>Divide into two sub-teams</strong> as you did in the previous week.</li>
+              <li><span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> 10 minutes</span>
+                </span> <strong>Each sub-team do the part (a)</strong> of the following exercise, by drawing the answer on the whiteboard. Use the following layout:<br>
+                <img src="/website/schedule/week8/images/classLayout.png" width="600"></li>
+            </ul>
             <div class="indented-level2">
               <div>
                 <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Class Diagram for the code (<code>StokItem</code>, <code>Inventory</code>, <code>Review</code> etc.)</p></template>
@@ -148,6 +178,12 @@
               </div>
               <p></p>
             </div>
+            <ul>
+              <li><span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> 10 minutes</span>
+                </span> <strong>Compare answers with those from other sub-teams</strong>. With the tutor's guidance, self-evaluate the answers.</li>
+              <li><span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> 5+5=10 minutes</span>
+                </span> <strong>Do part (b)</strong> in the same manner.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -169,7 +205,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Thu, Mar 12, 2020, 11:55:24 PM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Fri, Mar 13, 2020, 3:54:42 PM GMT+8</small></div>
     </footer>
   </div>
 </body>
