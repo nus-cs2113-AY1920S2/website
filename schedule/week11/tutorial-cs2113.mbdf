@@ -1,8 +1,19 @@
-{% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, button, thumb, show_as_tab,show_as_rounded_tab, timing_badge with context %}
 
-#### {{ thumb(1) }} Demo {{ penultimate_version }}
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
 
-* One member is to do a quick demo of your `{{ penultimate_version }}` ==using the jar file==. Make sure the jar file is ==in an empty folder== before you start. Others can help to confirm the jar file works on other OS'es.
+* We'll continue to hold tutorials in fully-online mode this week too. As before, tutorial activities will be counted for weekly participation.
+
+</variable>
+</include>
+<p/>
+
+<!--
+#### ~~{{ thumb(1) }} Demo {{ penultimate_version }}~~
+
+* ~~One member is to do a quick demo of your `{{ penultimate_version }}` ==using the jar file==. Make sure the jar file is ==in an empty folder== before you start. Others can help to confirm the jar file works on other OS'es.~~<br>
+ <span class="text-info">This activity has been discarded, but the tip given below is still valid.</span>
 
 <div class="indented-level2">
 <box type="success" border-left-color="green" icon="">
@@ -10,12 +21,15 @@
 You may release a newer version to be used for the PE dry run, but make sure it is released <span class="text-danger">by Tuesday midnight</span>.
 </box>
 </div>
+-->
 
+#### {{ thumb(1) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
+<!--
+* ~~**Divide into two sub-teams**, ensuring that each team has at least one member who is good with UML.~~<br>
+  <span class="text-info">This activity is to be done individually.</span>
+-->
 
-#### {{ thumb(2) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
-
-* **Divide into two sub-teams**, ensuring that each team has at least one member who is good with UML.
-* **Find the team your sub-team have been allocated to discuss** in the panel below and click on the link to locate their team PR.
+* **Find the team you have been allocated to discuss** in the panel below and click on the link to locate their DG and the team PR.
 
 {% macro get_review_allocation_for_team(reviewing_team) -%}
 {%- set reviewed_team = "" -%}
@@ -52,21 +66,23 @@ Your Team ID  | Sub-team A Reviews <small>%%(backup)%%</small> | Sub-team B Revi
 
 * **Go to the PR** of the allocated team.
 * **Open the DG of that team in another Browser tab**.
-* **Confirm that the DG has significant updates**, to the diagrams in particular. If it doesn't, you can review the _backup_ team (given within brackets). %%If even the backup team is not suitable, ask the tutor for a suggestion or choose any random teams having tutorials in the same day.%%
+* **Confirm that the DG has significant updates**, to the diagrams in particular. If it doesn't, you can review the _backup-1_ team, and failing that, _backup-2_ team. If all three are unsuitable, you can pick any other team.
 * **Evaluate the `Design` and the `Implementation` sections w.r.t possible DG bugs** (given further down); add your observations as comments.<br>
 
 <div class="indented-level2">
 
 <box>
 
-* To be done collectively with sub-team members.
-* Add _review comments_ in the corresponding place of the code. But ==if the <tooltip content="i.e., the tab named `Files changed`">_diff view_</tooltip> is too laggy, you can use a normal comment==.
-* Choose the `Start a review` option rather than `Add single comment`.
-* Each person can do their own review, but coordinate with sub-team members to avoid duplicating the same point.
-* Phrase your comments as question/doubts (e.g., `Is this format correct? Should it be ... instead?`) rather than directives (e.g., `Change this to ...`).
-* Where possible, use screenshots from their DG in your comments, preferably with annotations. This is particularly useful when commenting on diagrams.
+* In the PR, add _review comments_ (i.e., in the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab) in the corresponding place of the code. But ==if that tab is too laggy, you can add a normal comment instead== (i.e., in the {{ show_as_rounded_tab(':octicon-comment-discussion: conversation') }} tab).
+* Choose the {{ button('Start a review', button_style="success") }} option rather than {{ button('Add single comment') }} option.
+* Phrase your comments as question/doubts (e.g., `Is this format correct? Should it be ... instead?`) rather than directives (e.g., `Change this to ...`).<br>
+  Where possible, use screenshots from their DG in your comments, preferably with annotations. This is particularly useful when commenting on diagrams. An example given below:<br>
+  <img src="images/ReviewCommentExample.png">
+* The understanding you gain from this exercise can indirectly determine how well you do in your own project. Note that your comments will be reviewed by a tutor later.
+<!--
 * Do not finalize the review at this stage. Just keep adding comments.
 * <span class="text-success">**The understanding you gain from this exercise can indirectly determine how well you do in your own project.**</span> ==If you have even the slightest doubt about your observations in this exercise, please discuss it with the tutor== to ensure you have the right understanding of the criteria used.
+-->
 </box>
 
 <box border-left-color="green">
@@ -84,6 +100,8 @@ Also see:
 
 </div>
 
+<!--
 * **Discuss your comments/observations/doubts with the tutor** and other team members to confirm the comments you entered are correct.
 * **Update your review comments if necessary**, based on the discussion you just had. After that, you can submit the review.<br>
+-->
 

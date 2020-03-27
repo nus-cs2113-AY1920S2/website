@@ -98,21 +98,24 @@
           <p></p>
           <h1 id="week-11-from-wed-mar-25-noon-tutorial">Week 11 <small><small><span class="dimmed">[from Wed Mar 25 noon]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-11-from-wed-mar-25-noon-tutorial"></a></h1>
           <div>
-            <h4 id="1-demo-v2-0"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Demo v2.0<a class="fa fa-anchor" href="#1-demo-v2-0"></a></h4>
-            <ul>
-              <li>One member is to do a quick demo of your <code>v2.0</code> <mark>using the jar file</mark>. Make sure the jar file is <mark>in an empty folder</mark> before you start. Others can help to confirm the jar file works on other OS'es.</li>
-            </ul>
-            <div class="indented-level2">
-              <box type="success" border-left-color="green"><template slot="_icon"></template>
-                <p>You may release a newer version to be used for the PE dry run, but make sure it is released <span class="text-danger">by Tuesday midnight</span>.
-                </p>
-              </box>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small>
+                  </span><br></p>
+                <div class="indented">
+                  <ul>
+                    <li>We'll continue to hold tutorials in fully-online mode this week too. As before, tutorial activities will be counted for weekly participation.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <h4 id="2-review-the-dg-of-a-peer-team"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Review the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Developer Guide</span>DG</span>
-              of a Peer Team<a class="fa fa-anchor" href="#2-review-the-dg-of-a-peer-team"></a></h4>
+            <p></p>
+
+            <h4 id="1-review-the-dg-of-a-peer-team"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Review the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Developer Guide</span>DG</span>
+              of a Peer Team<a class="fa fa-anchor" href="#1-review-the-dg-of-a-peer-team"></a></h4>
+
             <ul>
-              <li><strong>Divide into two sub-teams</strong>, ensuring that each team has at least one member who is good with UML.</li>
-              <li><strong>Find the team your sub-team have been allocated to discuss</strong> in the panel below and click on the link to locate their team PR.</li>
+              <li><strong>Find the team you have been allocated to discuss</strong> in the panel below and click on the link to locate their DG and the team PR.</li>
             </ul>
             <div class="indented-level2">
               <panel class="algolia-no-index"><template slot="_header"><p>Allocation for DG review</p></template>
@@ -133,24 +136,22 @@
             <ul>
               <li><strong>Go to the PR</strong> of the allocated team.</li>
               <li><strong>Open the DG of that team in another Browser tab</strong>.</li>
-              <li><strong>Confirm that the DG has significant updates</strong>, to the diagrams in particular. If it doesn't, you can review the <em>backup</em> team (given within brackets). <span class="dimmed">If even the backup team is not suitable, ask the tutor for a suggestion or choose any random teams having tutorials in the same day.</span></li>
+              <li><strong>Confirm that the DG has significant updates</strong>, to the diagrams in particular. If it doesn't, you can review the <em>backup-1</em> team, and failing that, <em>backup-2</em> team. If all three are unsuitable, you can pick any
+                other team.
+              </li>
               <li><strong>Evaluate the <code>Design</code> and the <code>Implementation</code> sections w.r.t possible DG bugs</strong> (given further down); add your observations as comments.<br></li>
             </ul>
             <div class="indented-level2">
               <box>
                 <ul>
-                  <li>To be done collectively with sub-team members.</li>
-                  <li>Add <em>review comments</em> in the corresponding place of the code. But <mark>if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the tab named <code>Files changed</code></span><em>diff view</em></span> is too laggy, you can use a normal comment</mark>.</li>
-                  <li>Choose the <code>Start a review</code> option rather than <code>Add single comment</code>.</li>
-                  <li>Each person can do their own review, but coordinate with sub-team members to avoid duplicating the same point.</li>
-                  <li>Phrase your comments as question/doubts (e.g., <code>Is this format correct? Should it be ... instead?</code>) rather than directives (e.g., <code>Change this to ...</code>).</li>
-                  <li>Where possible, use screenshots from their DG in your comments, preferably with annotations. This is particularly useful when commenting on diagrams.</li>
-                  <li>Do not finalize the review at this stage. Just keep adding comments.</li>
-                  <li><span class="text-success"><strong>The understanding you gain from this exercise can indirectly determine how well you do in your own project.</strong></span> <mark>If you have even the slightest doubt about your observations in this exercise, please discuss it with the tutor</mark>                    to ensure you have the right understanding of the criteria used.
-                  </li>
+                  <li>In the PR, add <em>review comments</em> (i.e., in the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="13" height="16" viewbox="0 0 13 16" class="octicon octicon-diff" aria-hidden="true"><path fill-rule="evenodd" d="M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z"/></svg> files changed</small></span>                    tab) in the corresponding place of the code. But <mark>if that tab is too laggy, you can add a normal comment instead</mark> (i.e., in the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="16" height="16" viewbox="0 0 16 16" class="octicon octicon-comment-discussion" aria-hidden="true"><path fill-rule="evenodd" d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"/></svg> conversation</small></span>                    tab).</li>
+                  <li>Choose the <button type="button" class="btn btn-success btn-sm ">Start a review</button> option rather than <button type="button" class="btn btn-light btn-sm border">Add single comment</button> option.</li>
+                  <li>Phrase your comments as question/doubts (e.g., <code>Is this format correct? Should it be ... instead?</code>) rather than directives (e.g., <code>Change this to ...</code>).<br> Where possible, use screenshots from their DG in your
+                    comments, preferably with annotations. This is particularly useful when commenting on diagrams. An example given below:<br>
+                    <img src="/website/schedule/week11/images/ReviewCommentExample.png"></li>
+                  <li>The understanding you gain from this exercise can indirectly determine how well you do in your own project. Note that your comments will be reviewed by a tutor later.</li>
                 </ul>
               </box>
-
               <box border-left-color="green">
                 <h5 id="dg-possible-bugs"><span class="text-success">DG - Possible Bugs</span><a class="fa fa-anchor" href="#dg-possible-bugs"></a></h5>
                 <p>
@@ -160,7 +161,7 @@
                     <div>
                       <p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
                       <ul>
-                        <li>notation incorrect or not compliant with the notation covered in the module.</li>
+                        <li>Notation incorrect or not compliant with the notation covered in the module.</li>
                         <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
                         <li>The diagram used is not suitable for the purpose it is used.</li>
                         <li>The diagram is too complicated.</li>
@@ -272,10 +273,6 @@
                 <p></p>
               </box>
             </div>
-            <ul>
-              <li><strong>Discuss your comments/observations/doubts with the tutor</strong> and other team members to confirm the comments you entered are correct.</li>
-              <li><strong>Update your review comments if necessary</strong>, based on the discussion you just had. After that, you can submit the review.<br></li>
-            </ul>
           </div>
         </div>
       </div>
@@ -285,8 +282,7 @@
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#week-11-from-wed-mar-25-noon-tutorial">Week 11 [from Wed Mar 25 noon] - Tutorial&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-demo-v2-0">1 Demo v2.0&#x200E;</a>
-              <a class="nav-link py-1" href="#2-review-the-dg-of-a-peer-team">2 Review the Developer GuideDG
+              <a class="nav-link py-1" href="#1-review-the-dg-of-a-peer-team">1 Review the Developer GuideDG
         of a Peer Team&#x200E;</a>
             </nav>
 
@@ -296,7 +292,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Thu, Mar 26, 2020, 11:57:05 PM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Fri, Mar 27, 2020, 5:05:32 PM GMT+8</small></div>
     </footer>
   </div>
 </body>
