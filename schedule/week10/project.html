@@ -68,7 +68,7 @@
           <hr>
           <span><strong> Team Project (tP):</strong></span>
           <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-
+          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
           <li><a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
           <li><a href="/website/admin/tp-progress-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
         </dropdown>
@@ -151,6 +151,8 @@
                   <li><strong>Update the Developer Guide</strong> file in the repo as follows:
                     <ul>
                       <li><mark>Each member should describe the implementation of at least one enhancement she has added</mark> (or planning to add). <br> Expected length: 1+ page per person</li>
+                      <li>Describing the design at a multiple-levels (e.g., first, describe at <em>architecture-level</em>, then describe at <em>component-level</em>) is optional. It is also acceptable to have one <em>Design &amp; Implementation</em> section
+                        in which you describe the entire thing at the class- and object-level.</li>
                       <li>The description can contain things such as,
                         <ul>
                           <li>How the feature is implemented (or is going to be implemented).</li>
@@ -161,7 +163,16 @@
                       <li><strong>Diagramming tools</strong>: You may use any tool (e.g., PowerPoint) to draw UML diagrams. If you do, choose a tool that allows incremental updates to diagrams <span class="dimmed">(reason: because diagrams need to be updated multiple times as the product evolves)</span>.
                         For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.<br>
                         <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you want to use PowerPoint to draw UML diagrams, you can use the 'UML Reference Sheet' pptx file in LumiNUS as a template
-                        (it has all the basic shapes you need). After drawing the diagram in a slide using PowerPoint shapes, select the entire diagram, right-click, and choose <code>Save as picture</code>.</li>
+                        (it has all the basic shapes you need). After drawing the diagram in a slide using PowerPoint shapes, select the entire diagram, right-click, and choose <code>Save as picture</code>.<br>
+                        <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Can IDE-generated UML diagrams be used in project submissions? Not a good idea. Given are three reasons each of which can be reported by evaluators as 'bugs'
+                        in your diagrams, costing you marks:
+                        <ul>
+                          <li>They often don't follow the standard UML notation (e.g., they add extra icons).</li>
+                          <li>They tend to include <em>every</em> little detail whereas we want to limit UML diagrams to important details only, to improve readability.</li>
+                          <li>Diagrams reverse-engineered by an IDE might not represent the actual design as some design concepts cannot be deterministically identified from the code. e.g., differentiating between multiplicities <code>0..1</code> vs <code>1</code>,
+                            composition vs aggregation</li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -420,7 +431,7 @@ Ways to simplify diagrams:
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Sat, Mar 28, 2020, 4:45:13 PM GMT+8</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Sat, Mar 28, 2020, 11:52:29 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

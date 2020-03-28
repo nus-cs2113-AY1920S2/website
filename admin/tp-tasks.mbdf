@@ -668,12 +668,17 @@ Update the following pages in your project repo:
 * **Update the Developer Guide** file in the repo as follows:
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
     Expected length: 1+ page per person
+  * Describing the design at a multiple-levels (e.g., first, describe at _architecture-level_, then describe at _component-level_) is optional. It is also acceptable to have one _Design & Implementation_ section in which you describe the entire thing at the class- and object-level.
   * The description can contain things such as,
     * How the feature is implemented (or is going to be implemented).
     * Why it is implemented that way.
     * Alternatives considered.
   * **Diagramming tools**: You may use any tool (e.g., PowerPoint) to draw UML diagrams. If you do, choose a tool that allows incremental updates to diagrams %%(reason: because diagrams need to be updated multiple times as the product evolves)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.<br>
-  {{ icon_tip }} If you want to use PowerPoint to draw UML diagrams, you can use the 'UML Reference Sheet' pptx file in LumiNUS as a template (it has all the basic shapes you need). After drawing the diagram in a slide using PowerPoint shapes, select the entire diagram, right-click, and choose `Save as picture`.
+  {{ icon_tip }} If you want to use PowerPoint to draw UML diagrams, you can use the 'UML Reference Sheet' pptx file in LumiNUS as a template (it has all the basic shapes you need). After drawing the diagram in a slide using PowerPoint shapes, select the entire diagram, right-click, and choose `Save as picture`.<br>
+  {{ icon_info }} Can IDE-generated UML diagrams be used in project submissions? Not a good idea. Given are three reasons each of which can be reported by evaluators as 'bugs' in your diagrams, costing you marks:
+    * They often don't follow the standard UML notation (e.g., they add extra icons).
+    * They tend to include _every_ little detail whereas we want to limit UML diagrams to important details only, to improve readability.
+    * Diagrams reverse-engineered by an IDE might not represent the actual design as some design concepts cannot be deterministically identified from the code. e.g., differentiating between multiplicities `0..1` vs `1`, composition vs aggregation
 
 <div class="indented-level2">
 
@@ -736,6 +741,10 @@ Update the following pages in your project repo:
 <span id="heading_deliver_v2">{{ icon_individual }} Deliver v2.0</span>
 <span id="desc_deliver_v2">
 * As before, do a release on GitHub and upload the v2.0 jar file. <span class="text-danger">Do this before the deadline as PE testers will start downloading jar files ahead of time.</span>
+* ==IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.==
+
+{{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Contstraints → Constraint-Java-Version", "2", indent="2") }}
+
 * Wrap up the milestone on GitHub.
 </span>
 {#====================================================================================================================#}
