@@ -104,7 +104,8 @@
                   </span><br></p>
                 <div class="indented">
                   <ul>
-                    <li>We'll continue to hold tutorials in fully-online mode this week too. As before, tutorial activities will be counted for weekly participation.</li>
+                    <li>This week's activity is <mark>to be done during the tutorial slot itself</mark>, during which the tutor will be monitoring the <a href="https://github.com/nus-cs2113-AY1920S2/forum/issues">forum</a> / <a href="https://gitter.im/nus-cs2113-AY1920S2/community"><span aria-hidden="true" class="fab fa-gitter"></span> Gitter chat</a>                      and the PRs being reviewed.</li>
+                    <li>Please <mark>read all instructions first</mark>, before you start the activity.</li>
                   </ul>
                 </div>
               </div>
@@ -115,7 +116,7 @@
               of a Peer Team<a class="fa fa-anchor" href="#1-review-the-dg-of-a-peer-team"></a></h4>
 
             <ul>
-              <li><strong>Find the team you have been allocated to discuss</strong> in the panel below and click on the link to locate their DG and the team PR.</li>
+              <li><strong>Find the team choices you have been allocated to review</strong>, as given in the panel below.</li>
             </ul>
             <div class="indented-level2">
               <panel class="algolia-no-index"><template slot="_header"><p>Allocation for DG review</p></template>
@@ -123,29 +124,611 @@
                   <table class="markbind-table table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Your Team ID</th>
-                        <th>Sub-team A Reviews <small><span class="dimmed">(backup)</span></small></th>
-                        <th>Sub-team B Reviews <small><span class="dimmed">(backup)</span></small></th>
+                        <th>Your GitHub</th>
+                        <th>First choice</th>
+                        <th>Second choice</th>
+                        <th>Third choice</th>
                       </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody>
+                      <tr>
+                        <td><code>A11riseforme</code></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>Anqi-nus</code></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>Bencotti</code></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>DDzuikeai</code></td>
+                        <td><code>CS2113T-T13-2</code> <a href="https://AY1920S2-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>DeetoMok</code></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>GanapathySanathBalaji</code></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>HAOYUN49</code></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>JLoh579</code></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>JTWang2000</code></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>Janicetyy</code></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-2</code> <a href="https://AY1920S2-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>JensonWee</code></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>JeremiasLiew</code></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>Jeremy733</code></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-2</code> <a href="https://AY1920S2-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>JosephLimWeiJie</code></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>JustinnT</code></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>Keith-JK</code></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>MeLoveCarbs</code></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>NizarMohd</code></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>NyanWunPaing</code></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-2</code> <a href="https://AY1920S2-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>RenzoTsai</code></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>Shannonwje</code></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>SibingWu</code></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>Yukilite</code></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>Zhilin-Huang</code></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>alaukiknpant</code></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>alexlim510</code></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>alwayshuizhen</code></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>ananda-lye</code></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>andy-aw-why</code></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>benchan911</code></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>bennychanya</code></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>brandoncjh</code></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>btricec</code></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>chengTzeNing</code></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>cheongisabella</code></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>dejunnn</code></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>e0309556</code></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>g-lilian</code></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>gmuthu17</code></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>harithadiv</code></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>hongquan448</code></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>iceclementi</code></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>itskesin</code></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-2</code> <a href="https://AY1920S2-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>jiajuinphoon</code></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>jichngan</code></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>jinfayap</code></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>joelczk</code></td>
+                        <td><code>CS2113-T14-1</code> <a href="https://AY1920S2-cs2113-t14-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>katelo731</code></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>kcubey</code></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>kokjoon97</code></td>
+                        <td><code>CS2113-T14-4</code> <a href="https://AY1920S2-cs2113-t14-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>lamyuewei</code></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>lowjiayee</code></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>lowxizhi</code></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-2</code> <a href="https://AY1920S2-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>lwxymere</code></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>matthewc97</code></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>melylopez99</code></td>
+                        <td><code>CS2113T-T13-2</code> <a href="https://AY1920S2-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>nguan1</code></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>nigellenl</code></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>quinnyyy</code></td>
+                        <td><code>CS2113T-T13-2</code> <a href="https://AY1920S2-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>rdimaio</code></td>
+                        <td><code>CS2113T-T12-2</code> <a href="https://AY1920S2-cs2113t-t12-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>rsanchez-macias</code></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>sitinadiah25</code></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-2</code> <a href="https://AY1920S2-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>siuhian</code></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>sliu107</code></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>synCKun</code></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>terrytay</code></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>thanhduc2000</code></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>trishaangelica</code></td>
+                        <td><code>CS2113T-M16-2</code> <a href="https://AY1920S2-cs2113t-m16-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-1</code> <a href="https://AY1920S2-cs2113-t15-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-1+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>wangqinNick</code></td>
+                        <td><code>CS2113-T14-2</code> <a href="https://AY1920S2-cs2113-t14-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-4</code> <a href="https://AY1920S2-cs2113-t15-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-4+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>yantingsanity</code></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-1</code> <a href="https://AY1920S2-cs2113t-t13-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>yolanmz</code></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-2</code> <a href="https://AY1920S2-cs2113-t15-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-2+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>yuchenlichuck</code></td>
+                        <td><code>CS2113T-T13-2</code> <a href="https://AY1920S2-cs2113t-t13-2.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-2+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T15-3</code> <a href="https://AY1920S2-cs2113-t15-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T15-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-M16-1</code> <a href="https://AY1920S2-cs2113t-m16-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-M16-1+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>yuxianglim</code></td>
+                        <td><code>CS2113T-T12-3</code> <a href="https://AY1920S2-cs2113t-t12-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113-T14-3</code> <a href="https://AY1920S2-cs2113-t14-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113-T14-3+" class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                      <tr>
+                        <td><code>zi-hui</code></td>
+                        <td><code>CS2113T-T12-1</code> <a href="https://AY1920S2-cs2113t-t12-1.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-1+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T13-3</code> <a href="https://AY1920S2-cs2113t-t13-3.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T13-3+"
+                            class="badge badge-primary">PR</a></td>
+                        <td><code>CS2113T-T12-4</code> <a href="https://AY1920S2-cs2113t-t12-4.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a> <a href="https://github.com/nus-cs2113-AY1920S2/tp/pulls?q=is%3Aopen+is%3Apr+CS2113T-T12-4+"
+                            class="badge badge-primary">PR</a></td>
+                      </tr>
+                    </tbody>
                   </table>
                 </div>
               </panel>
             </div>
             <ul>
-              <li><strong>Go to the PR</strong> of the allocated team.</li>
-              <li><strong>Open the DG of that team in another Browser tab</strong>.</li>
-              <li><strong>Confirm that the DG has significant updates</strong>, to the diagrams in particular. If it doesn't, you can review the <em>backup-1</em> team, and failing that, <em>backup-2</em> team. If all three are unsuitable, you can pick any
-                other team.
+              <li>
+                <p><strong>Decide which of the given team(s) to review</strong>:</p>
+                <ul>
+                  <li>Open the <span class="badge badge-primary">DG</span> link of the team allocated as 'First choice'.</li>
+                  <li>Confirm that the DG has significant updates, to the diagrams in particular. If it doesn't, you can try the DG of the 'Second choice' team, and failing that, 'Third choice' team.</li>
+                  <li>If neither <em>one</em> of the three has enough updates but collectively they have enough updates, you can also review all of them.</li>
+                  <li>Failing all above, you can pick any other team(s) to review.</li>
+                  <li>Try to give at least 4 comments in total.</li>
+                </ul>
               </li>
-              <li><strong>Evaluate the <code>Design</code> and the <code>Implementation</code> sections w.r.t possible DG bugs</strong> (given further down); add your observations as comments.<br></li>
+              <li>
+                <p><strong>Go to the <span class="badge badge-primary">PR</span></strong> of the team(s) you have chosen to review.</p>
+              </li>
+              <li>
+                <p><strong>Review the <code>Design</code> and the <code>Implementation</code> sections w.r.t possible DG bugs</strong> (given further down); add your observations as comments.<br></p>
+              </li>
             </ul>
             <div class="indented-level2">
               <box>
                 <ul>
-                  <li>In the PR, add <em>review comments</em> (i.e., in the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="13" height="16" viewbox="0 0 13 16" class="octicon octicon-diff" aria-hidden="true"><path fill-rule="evenodd" d="M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z"/></svg> files changed</small></span>                    tab) in the corresponding place of the code. But <mark>if that tab is too laggy, you can add a normal comment instead</mark> (i.e., in the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="16" height="16" viewbox="0 0 16 16" class="octicon octicon-comment-discussion" aria-hidden="true"><path fill-rule="evenodd" d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"/></svg> conversation</small></span>                    tab).</li>
-                  <li>Choose the <button type="button" class="btn btn-success btn-sm ">Start a review</button> option rather than <button type="button" class="btn btn-light btn-sm border">Add single comment</button> option.</li>
+                  <li>In the PR, add <em>review comments</em> (i.e., in the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="13" height="16" viewbox="0 0 13 16" class="octicon octicon-diff" aria-hidden="true"><path fill-rule="evenodd" d="M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z"/></svg> files changed</small></span>                    tab) in the corresponding place of the code.
+                    <ul>
+                      <li>In this case, choose the <button type="button" class="btn btn-success btn-sm ">Start a review</button> option rather than <button type="button" class="btn btn-light btn-sm border">Add single comment</button> option.</li>
+                    </ul>
+                  </li>
+                  <li>But <mark>if the 'files changed' tab is too laggy, you can add a normal comment instead</mark> in the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><svg version="1.1" width="16" height="16" viewbox="0 0 16 16" class="octicon octicon-comment-discussion" aria-hidden="true"><path fill-rule="evenodd" d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"/></svg> conversation</small></span>                    tab.<br>
+                    <ul>
+                      <li>In this case, enter each observation as a separate comment <span class="dimmed">(reason: our bot will count the number of comments you have given to determine if you qualify for participation points)</span></li>
+                    </ul>
+                  </li>
                   <li>Phrase your comments as question/doubts (e.g., <code>Is this format correct? Should it be ... instead?</code>) rather than directives (e.g., <code>Change this to ...</code>).<br> Where possible, use screenshots from their DG in your
                     comments, preferably with annotations. This is particularly useful when commenting on diagrams. An example given below:<br>
                     <img src="/website/schedule/week11/images/ReviewCommentExample.png"></li>
@@ -292,7 +875,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Sat, Mar 28, 2020, 12:47:45 AM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Sat, Mar 28, 2020, 4:45:13 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

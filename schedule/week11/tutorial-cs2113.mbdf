@@ -1,9 +1,11 @@
 {% from "common/macros.njk" import embed_topic, button, thumb, show_as_tab,show_as_rounded_tab, timing_badge with context %}
+{% from "data-" + (module | lower) + "/studentData.njk" import tp_dg_review_allocation with context %}
 
 <include src="commentary-box.md" boilerplate>
 <variable name="commentary_body">
 
-* We'll continue to hold tutorials in fully-online mode this week too. As before, tutorial activities will be counted for weekly participation.
+* This week's activity is ==to be done during the tutorial slot itself==, during which the tutor will be monitoring the [forum]({{ forum_link }}) / [:fab-gitter: Gitter chat](https://gitter.im/nus-cs2113-AY1920S2/community) and the PRs being reviewed.
+* Please ==read all instructions first==, before you start the activity.
 
 </variable>
 </include>
@@ -29,7 +31,7 @@ You may release a newer version to be used for the PE dry run, but make sure it 
   <span class="text-info">This activity is to be done individually.</span>
 -->
 
-* **Find the team you have been allocated to discuss** in the panel below and click on the link to locate their DG and the team PR.
+* **Find the team choices you have been allocated to review**, as given in the panel below.
 
 {% macro get_review_allocation_for_team(reviewing_team) -%}
 {%- set reviewed_team = "" -%}
@@ -39,42 +41,46 @@ You may release a newer version to be used for the PE dry run, but make sure it 
 {%- endmacro %}
 
 {% macro get_pr_link(team_id) -%}
-[PR](https://github.com/nus-{{ module | lower}}-{{ semester }}/addressbook-level3/pulls?q=is%3Aopen+is%3Apr+label%3Atutorial.{{ team_id.slice(0, -2) }}+label%3Ateam.{{ team_id.slice(-1) }})
+<a href="https://github.com/nus-{{ module | lower}}-{{ semester }}/tp/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge badge-primary">PR</a>
 {%- endmacro  %}
 
 {% macro get_dg_link(team_id) -%}
-[DG](https://{{ semester }}-{{ team_id | lower}}.github.io/main/DeveloperGuide.html)
+<a href="https://{{ semester }}-{{ team_id | lower}}.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a>
 {%- endmacro  %}
 
-{% macro get_links(team_id, backup_team_id) -%}
-{{ team_id }}: {{ get_pr_link(team_id) }} {{ get_dg_link(team_id) }} <small>%%({{ backup_team_id }}: {{ get_pr_link(backup_team_id) }} {{ get_dg_link(backup_team_id) }})%%</small>
+{% macro get_links(team_id) -%}
+`{{ team_id }}`  {{ get_dg_link(team_id) }} {{ get_pr_link(team_id) }}
 {%- endmacro  %}
 
 <div class="indented-level2">
 
 <panel header="Allocation for DG review" >
 
-Your Team ID  | Sub-team A Reviews <small>%%(backup)%%</small> | Sub-team B Reviews <small>%%(backup)%%</small>
---------------|------------------------------------------------|---------------------------------------
-{% for team in team_review_allocation  %}
-{%- set backup_team1 %}{{ get_review_allocation_for_team(team[1]) }}{% endset -%}
-{%- set backup_team2 %}{{ get_review_allocation_for_team(team[2]) }}{% endset -%}
-{{ team[0] }} | {{ get_links(team[1], backup_team1) }} | {{ get_links(team[2], backup_team2) }}
+Your GitHub  | First choice | Second choice | Third choice
+-------------|--------------|---------------|-------------
+{% for allocation in tp_dg_review_allocation  %}`{{ allocation[0] }}` | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }} | {{ get_links(allocation[3]) }}
 {% endfor %}
 </panel>
 </div>
 
-* **Go to the PR** of the allocated team.
-* **Open the DG of that team in another Browser tab**.
-* **Confirm that the DG has significant updates**, to the diagrams in particular. If it doesn't, you can review the _backup-1_ team, and failing that, _backup-2_ team. If all three are unsuitable, you can pick any other team.
-* **Evaluate the `Design` and the `Implementation` sections w.r.t possible DG bugs** (given further down); add your observations as comments.<br>
+* **Decide which of the given team(s) to review**:
+  * Open the <span class="badge badge-primary">DG</span> link of the team allocated as 'First choice'.
+  * Confirm that the DG has significant updates, to the diagrams in particular. If it doesn't, you can try the DG of the 'Second choice' team, and failing that, 'Third choice' team.
+  * If neither _one_ of the three has enough updates but collectively they have enough updates, you can also review all of them.
+  * Failing all above, you can pick any other team(s) to review.
+  * Try to give at least 4 comments in total.
+
+* **Go to the <span class="badge badge-primary">PR</span>** of the team(s) you have chosen to review.
+* **Review the `Design` and the `Implementation` sections w.r.t possible DG bugs** (given further down); add your observations as comments.<br>
 
 <div class="indented-level2">
 
 <box>
 
-* In the PR, add _review comments_ (i.e., in the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab) in the corresponding place of the code. But ==if that tab is too laggy, you can add a normal comment instead== (i.e., in the {{ show_as_rounded_tab(':octicon-comment-discussion: conversation') }} tab).
-* Choose the {{ button('Start a review', button_style="success") }} option rather than {{ button('Add single comment') }} option.
+* In the PR, add _review comments_ (i.e., in the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab) in the corresponding place of the code.
+  * In this case, choose the {{ button('Start a review', button_style="success") }} option rather than {{ button('Add single comment') }} option.
+* But ==if the 'files changed' tab is too laggy, you can add a normal comment instead== in the {{ show_as_rounded_tab(':octicon-comment-discussion: conversation') }} tab.<br>
+  * In this case, enter each observation as a separate comment %%(reason: our bot will count the number of comments you have given to determine if you qualify for participation points)%%
 * Phrase your comments as question/doubts (e.g., `Is this format correct? Should it be ... instead?`) rather than directives (e.g., `Change this to ...`).<br>
   Where possible, use screenshots from their DG in your comments, preferably with annotations. This is particularly useful when commenting on diagrams. An example given below:<br>
   <img src="images/ReviewCommentExample.png">
