@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Software Engineering for Self-Directed Learners [Printable Version for CS2113/T]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -61,7 +61,7 @@
                     </div>
                   </box>
                   <p>The following description of the <em>Joys of the Programming Craft</em> was taken from Chapter 1 of the famous book <span for="modal:mmm" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-                      v-on:click="$refs['modal:mmm'].show()" class="trigger"><em>The Mythical Man-Month</em>, by Frederick P. Brooks</span>.</p>
+                      v-on:click="$refs['modal:mmm'].show()" class="trigger-click"><em>The Mythical Man-Month</em>, by Frederick P. Brooks</span>.</p>
                   <blockquote>
                     <p><strong>Why is programming fun? What delights may its practitioner expect as his reward?</strong></p>
                     <p>First is the sheer joy of making things. As the child delights in his mud pie, so the adult enjoys building things, especially things of his own design. I think this delight must be an image of God's delight in making things, a delight
@@ -96,7 +96,7 @@
                       of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules with available resources.</p>
                     <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys and woes all its own. For many, the joys far outweigh the woes....</p>
                   </blockquote>
-                  <b-modal id="modal:mmm" ok-only size modal-class="mb-zoom" ref="modal:mmm"><template slot="modal-title"><strong>📖 The Mythical Man-Month: Essays on Software Engineering</strong></template>
+                  <b-modal id="modal:mmm" hide-footer size modal-class="mb-zoom" ref="modal:mmm"><template slot="modal-title"><strong>📖 The Mythical Man-Month: Essays on Software Engineering</strong></template>
                     <table>
                       <tr>
                         <td>
@@ -377,8 +377,8 @@
                   </span><a class="fa fa-anchor" href="#objects-as-abstractions"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p>The concept of <strong><em>Objects</em> in OOP is an <span trigger="click" for="modal:objectsAsAbstractions-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:objectsAsAbstractions-abstraction'].show()" class="trigger">abstraction</span> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong>                    i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
-                  <b-modal id="modal:objectsAsAbstractions-abstraction" ok-only size="lg" modal-class="mb-zoom" ref="modal:objectsAsAbstractions-abstraction"><template slot="modal-title">Definition: Abstraction</template>
+                  <p>The concept of <strong><em>Objects</em> in OOP is an <span trigger="click" for="modal:objectsAsAbstractions-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:objectsAsAbstractions-abstraction'].show()" class="trigger-click">abstraction</span> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong>                    i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
+                  <b-modal id="modal:objectsAsAbstractions-abstraction" hide-footer size="lg" modal-class="mb-zoom" ref="modal:objectsAsAbstractions-abstraction"><template slot="modal-title">Definition: Abstraction</template>
                     <div>
                       <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                     </div>
@@ -800,13 +800,13 @@
                           <tr>
                             <td><code>read():String</code></td>
                             <td><code>read(int):String</code></td>
-                            <td>No. <span class="dimmed">Reason: the two methods have different signatures; This is a case of <span trigger="click" for="modal:overriding-overloading" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:overriding-overloading'].show()" class="trigger"> <em>overloading</em></span>                              (rather than overriding).</span>
+                            <td>No. <span class="dimmed">Reason: the two methods have different signatures; This is a case of <span trigger="click" for="modal:overriding-overloading" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:overriding-overloading'].show()" class="trigger-click"> <em>overloading</em></span>                              (rather than overriding).</span>
                             </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                    <b-modal id="modal:overriding-overloading" ok-only size="lg" modal-class="mb-zoom" ref="modal:overriding-overloading"><template slot="modal-title"><strong>Overloading</strong></template>
+                    <b-modal id="modal:overriding-overloading" hide-footer size="lg" modal-class="mb-zoom" ref="modal:overriding-overloading"><template slot="modal-title"><strong>Overloading</strong></template>
                       <div>
                         <div></div>
                         <p></p>
@@ -1028,8 +1028,8 @@
                       </p>
                     </div>
                   </box>
-                  <p><strong><span trigger="click" for="modal:dynamicAndStatic-overriding" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:dynamicAndStatic-overriding'].show()" class="trigger">Overridden methods</span> are resolved using dynamic binding, and therefore resolves to the implementation in the actual type of the object.</strong></p>
-                  <b-modal id="modal:dynamicAndStatic-overriding" ok-only size="lg" modal-class="mb-zoom" ref="modal:dynamicAndStatic-overriding"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                  <p><strong><span trigger="click" for="modal:dynamicAndStatic-overriding" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:dynamicAndStatic-overriding'].show()" class="trigger-click">Overridden methods</span> are resolved using dynamic binding, and therefore resolves to the implementation in the actual type of the object.</strong></p>
+                  <b-modal id="modal:dynamicAndStatic-overriding" hide-footer size="lg" modal-class="mb-zoom" ref="modal:dynamicAndStatic-overriding"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                     <div>
                       <div>
                         <p>
@@ -1074,13 +1074,13 @@
                                     <tr>
                                       <td><code>read():String</code></td>
                                       <td><code>read(int):String</code></td>
-                                      <td>No. <span class="dimmed">Reason: the two methods have different signatures; This is a case of <span trigger="click" for="modal:overriding-overloading" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:overriding-overloading'].show()" class="trigger"> <em>overloading</em></span>                                        (rather than overriding).</span>
+                                      <td>No. <span class="dimmed">Reason: the two methods have different signatures; This is a case of <span trigger="click" for="modal:overriding-overloading" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:overriding-overloading'].show()" class="trigger-click"> <em>overloading</em></span>                                        (rather than overriding).</span>
                                       </td>
                                     </tr>
                                   </tbody>
                                 </table>
                               </div>
-                              <b-modal id="modal:overriding-overloading" ok-only size="lg" modal-class="mb-zoom" ref="modal:overriding-overloading"><template slot="modal-title"><strong>Overloading</strong></template>
+                              <b-modal id="modal:overriding-overloading" hide-footer size="lg" modal-class="mb-zoom" ref="modal:overriding-overloading"><template slot="modal-title"><strong>Overloading</strong></template>
                                 <div>
                                   <div></div>
                                   <p></p>
@@ -1189,8 +1189,8 @@
                       <p><strong>Static binding</strong> (aka early binding): When a method call is resolved at compile time.</p>
                     </div>
                   </box>
-                  <p><strong>In contrast, <span trigger="click" for="modal:dynamicAndStatic-overloading" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:dynamicAndStatic-overloading'].show()" class="trigger">overloaded</span> methods are resolved using static binding.</strong></p>
-                  <b-modal id="modal:dynamicAndStatic-overloading" ok-only size="lg" modal-class="mb-zoom" ref="modal:dynamicAndStatic-overloading"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                  <p><strong>In contrast, <span trigger="click" for="modal:dynamicAndStatic-overloading" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:dynamicAndStatic-overloading'].show()" class="trigger-click">overloaded</span> methods are resolved using static binding.</strong></p>
+                  <b-modal id="modal:dynamicAndStatic-overloading" hide-footer size="lg" modal-class="mb-zoom" ref="modal:dynamicAndStatic-overloading"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                     <div>
                       <div></div>
                       <p></p>
@@ -1882,10 +1882,10 @@
                     <p>[User stories] strongly shift the focus from writing about features to discussing them. In fact, these discussions are more important than whatever text is written. <sub>[Mike Cohn, MountainGoat Software <a href="https://www.mountaingoatsoftware.com/agile/user-stories">🔗</a>]</sub></p>
                   </blockquote>
                   <p><strong>User stories differ from <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">e.g. a description of the requirements written in prose</span>traditional requirements specifications</span> mainly in the level of detail.</strong>                    User stories should only provide enough details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face
-                    to work out a more detailed description of the requirements. <span class="dimmed">[<span for="modal:xp-user-stories" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:xp-user-stories'].show()" class="trigger">more...</span>]</span>
+                    to work out a more detailed description of the requirements. <span class="dimmed">[<span for="modal:xp-user-stories" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:xp-user-stories'].show()" class="trigger-click">more...</span>]</span>
                   </p>
-                  <p><strong>User stories can capture <span trigger="click" for="modal:userStoriesUsage-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:userStoriesUsage-nfr'].show()" class="trigger">non-functional requirements</span> too</strong>                    because even NFRs must benefit some stakeholder.</p>
-                  <b-modal id="modal:userStoriesUsage-nfr" ok-only size="lg" modal-class="mb-zoom" ref="modal:userStoriesUsage-nfr"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                  <p><strong>User stories can capture <span trigger="click" for="modal:userStoriesUsage-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:userStoriesUsage-nfr'].show()" class="trigger-click">non-functional requirements</span> too</strong>                    because even NFRs must benefit some stakeholder.</p>
+                  <b-modal id="modal:userStoriesUsage-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:userStoriesUsage-nfr"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                     <div>
                       <div></div>
                       <p></p>
@@ -2037,7 +2037,7 @@
                 </div>
                 </panel>
                 </span>
-                <b-modal id="modal:xp-user-stories" ok-only size modal-class="mb-zoom" ref="modal:xp-user-stories"><template slot="modal-title">🔖 User stories vs traditional requirement specifications, according to XP</template>
+                <b-modal id="modal:xp-user-stories" hide-footer size modal-class="mb-zoom" ref="modal:xp-user-stories"><template slot="modal-title">🔖 User stories vs traditional requirement specifications, according to XP</template>
                   <p><span>
 <span id="pop:xp" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header">eXtreme Programming (XP)</span>eXtreme Programming (XP)</span>
                     </span>
@@ -2141,10 +2141,10 @@ Extensions:
                 </box>
                 <box background-color="white" border-color="white">
                   <img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
-                  <p><strong><span for="modal:uml" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:uml'].show()" class="trigger">UML</span> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>,
+                  <p><strong><span for="modal:uml" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:uml'].show()" class="trigger-click">UML</span> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>,
                     providing a visual ‘table of contents’ of the use cases of a system.</p>
                   <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                  <b-modal id="modal:uml" ok-only size modal-class="mb-zoom" ref="modal:uml"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
+                  <b-modal id="modal:uml" hide-footer size modal-class="mb-zoom" ref="modal:uml"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
                     <div>
                       <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
                         Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
@@ -2202,8 +2202,8 @@ Extensions:
             <div class="indented-less">
               <div>
                 <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most <span trigger="click" for="modal:supplementary-nfr" v-b-popover.click.top.html="popoverGenerator"
-                    v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:supplementary-nfr'].show()" class="trigger">Non Functional Requirements</span> will be listed.</p>
-                <b-modal id="modal:supplementary-nfr" ok-only size="lg" modal-class="mb-zoom" ref="modal:supplementary-nfr"><template slot="modal-title"><span class="dimmed">Textbook »</span></template>
+                    v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:supplementary-nfr'].show()" class="trigger-click">Non Functional Requirements</span> will be listed.</p>
+                <b-modal id="modal:supplementary-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:supplementary-nfr"><template slot="modal-title"><span class="dimmed">Textbook »</span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -2508,15 +2508,15 @@ Extensions:
                 <p><strong>A <em>model</em> is a representation of something else.</strong></p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <span trigger="click" for="modal:modellingIntro-classDiagram" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-classDiagram'].show()"
-                      class="trigger">class diagram</span> is a model that represents a software design.</p>
+                      class="trigger-click">class diagram</span> is a model that represents a software design.</p>
                 </box>
-                <b-modal id="modal:modellingIntro-classDiagram" ok-only size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-classDiagram"><template slot="modal-title">Class diagrams</template>
+                <b-modal id="modal:modellingIntro-classDiagram" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-classDiagram"><template slot="modal-title">Class diagrams</template>
                   <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
                     <span><span aria-hidden="true" class="fas fa-cube"></span></span> An example class diagram:<br></p>
                   <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></b-modal>
                 <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are <span trigger="click" for="modal:modellingIntro-abstraction"
-                    v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-abstraction'].show()" class="trigger">abstractions</span>.</p>
-                <b-modal id="modal:modellingIntro-abstraction" ok-only size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-abstraction"><template slot="modal-title"><span class="dimmed">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></span></template>
+                    v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-abstraction'].show()" class="trigger-click">abstractions</span>.</p>
+                <b-modal id="modal:modellingIntro-abstraction" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-abstraction"><template slot="modal-title"><span class="dimmed">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -2595,10 +2595,10 @@ Extensions:
                       domain
                       </span> can be built to aid the understanding of the problem to be solved.</li>
                     <li>When planning a software solution, models can be created to figure out how the solution is to be built. An <span trigger="click" for="modal:modelingIntro-archiDiagrams" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-                        v-on:click="$refs['modal:modelingIntro-archiDiagrams'].show()" class="trigger">architecture diagram</span> is such a model.</li>
+                        v-on:click="$refs['modal:modelingIntro-archiDiagrams'].show()" class="trigger-click">architecture diagram</span> is such a model.</li>
                   </ol>
                 </box>
-                <b-modal id="modal:modelingIntro-archiDiagrams" ok-only size="lg" modal-class="mb-zoom" ref="modal:modelingIntro-archiDiagrams"><template slot="modal-title">Architecture Diagrams</template>
+                <b-modal id="modal:modelingIntro-archiDiagrams" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modelingIntro-archiDiagrams"><template slot="modal-title">Architecture Diagrams</template>
                   <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
                   <div>
                     <box>
@@ -2672,8 +2672,8 @@ Extensions:
             <div class="indented-less">
               <div>
                 <p>The following diagram uses the class diagram notation to show the different types of <span trigger="click" for="modal:umlModels-uml" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:umlModels-uml'].show()"
-                    class="trigger">UML</span> diagrams.</p>
-                <b-modal id="modal:umlModels-uml" ok-only size="lg" modal-class="mb-zoom" ref="modal:umlModels-uml"><template slot="modal-title">UML (Unified Modeling Language)</template>
+                    class="trigger-click">UML</span> diagrams.</p>
+                <b-modal id="modal:umlModels-uml" hide-footer size="lg" modal-class="mb-zoom" ref="modal:umlModels-uml"><template slot="modal-title">UML (Unified Modeling Language)</template>
                   <div>
                     <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
                       Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
@@ -3166,12 +3166,12 @@ Extensions:
             <div class="indented-less">
               <div>
                 <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like <span trigger="click" for="modal:archiStyles-buildingArchitectures" v-b-popover.click.top.html="popoverGenerator"
-                    v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:archiStyles-buildingArchitectures'].show()" class="trigger">building architectures follow various architecture styles</span>.</p>
+                    v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:archiStyles-buildingArchitectures'].show()" class="trigger-click">building architectures follow various architecture styles</span>.</p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style,
                     ...</p>
                 </box>
-                <b-modal id="modal:archiStyles-buildingArchitectures" ok-only size="lg" modal-class="mb-zoom" ref="modal:archiStyles-buildingArchitectures"><template slot="modal-title">Building Architecture Styles</template>
+                <b-modal id="modal:archiStyles-buildingArchitectures" hide-footer size="lg" modal-class="mb-zoom" ref="modal:archiStyles-buildingArchitectures"><template slot="modal-title">Building Architecture Styles</template>
                   <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg" width="600"><br>
                     <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
                 </b-modal>
@@ -3856,10 +3856,10 @@ Extensions:
                   <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
                   <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
                   <li>[<code>Java</code>, <code>Python</code>] Use <span trigger="click" for="modal:obviousCode-enums" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:obviousCode-enums'].show()"
-                      class="trigger">enumerations</span> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting',
+                      class="trigger-click">enumerations</span> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting',
                     'enabled', and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
                 </ul>
-                <b-modal id="modal:obviousCode-enums" ok-only size modal-class="mb-zoom" ref="modal:obviousCode-enums"><template slot="modal-title">More about enumerations</template>
+                <b-modal id="modal:obviousCode-enums" hide-footer size modal-class="mb-zoom" ref="modal:obviousCode-enums"><template slot="modal-title">More about enumerations</template>
                   <ul>
                     <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
                     <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
@@ -3961,7 +3961,7 @@ Extensions:
               </span><a class="fa fa-anchor" href="#slap-hard"></a></h4>
             <div class="indented-less">
               <div>
-                <p>Avoid varying the level of <span trigger="click" for="modal:slap-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:slap-abstraction'].show()" class="trigger">abstraction</span>                  within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
+                <p>Avoid varying the level of <span trigger="click" for="modal:slap-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:slap-abstraction'].show()" class="trigger-click">abstraction</span>                  within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
                 <box>
                   <p>Example:</p>
                   <p>
@@ -3975,7 +3975,7 @@ Extensions:
                     </font> (all statements are at the same level of abstraction)</p>
                   <pre><code class="hljs java"><span>readData();</span><span>processData();</span><span>displayResult();</span></code></pre>
                 </box>
-                <b-modal id="modal:slap-abstraction" ok-only size modal-class="mb-zoom" ref="modal:slap-abstraction"><template slot="modal-title"></template>
+                <b-modal id="modal:slap-abstraction" hide-footer size modal-class="mb-zoom" ref="modal:slap-abstraction"><template slot="modal-title"></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -4559,9 +4559,9 @@ Extensions:
                 <p><strong>Code duplication, especially when you copy-paste-modify code, often indicates a poor quality implementation.</strong> While it may not be possible to have zero duplication, always think twice before duplicating code; most often
                   there is a better alternative.</p>
                 <p>This guideline is closely related to the <span for="modal:duplication-dry" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:duplication-dry'].show()"
-                    class="trigger">DRY Principle<span v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['undefined'].show()" class="trigger">.</span></span>
+                    class="trigger-click">DRY Principle<span v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['undefined'].show()" class="trigger">.</span></span>
                 </p>
-                <b-modal id="modal:duplication-dry" ok-only size modal-class="mb-zoom" ref="modal:duplication-dry"><template slot="modal-title"><strong><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> DRY Principle</strong></template>
+                <b-modal id="modal:duplication-dry" hide-footer size modal-class="mb-zoom" ref="modal:duplication-dry"><template slot="modal-title"><strong><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> DRY Principle</strong></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -4770,8 +4770,8 @@ Extensions:
                   </ul>
                 </box>
                 <p>Given below are two common refactorings (<span trigger="click" for="modal:refactoring-catalog-what" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:refactoring-catalog-what'].show()"
-                    class="trigger">more</span>).</p>
-                <b-modal id="modal:refactoring-catalog-what" ok-only size modal-class="mb-zoom" ref="modal:refactoring-catalog-what"><template slot="modal-title"><strong>Refactoring Catalogs</strong></template>
+                    class="trigger-click">more</span>).</p>
+                <b-modal id="modal:refactoring-catalog-what" hide-footer size modal-class="mb-zoom" ref="modal:refactoring-catalog-what"><template slot="modal-title"><strong>Refactoring Catalogs</strong></template>
                   <div>
                     <ul>
                       <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’
@@ -4856,8 +4856,8 @@ Extensions:
             <div class="indented-less">
               <div>
                 <p>Given below are some more commonly used refactorings. A more comprehensive list is available at <span trigger="click" for="modal:refactoring-catalog-how" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-                    v-on:click="$refs['modal:refactoring-catalog-how'].show()" class="trigger"> refactoring-catalog </span>.</p>
-                <b-modal id="modal:refactoring-catalog-how" ok-only size modal-class="mb-zoom" ref="modal:refactoring-catalog-how"><template slot="modal-title"><strong>Refactoring Catalog</strong></template>
+                    v-on:click="$refs['modal:refactoring-catalog-how'].show()" class="trigger-click"> refactoring-catalog </span>.</p>
+                <b-modal id="modal:refactoring-catalog-how" hide-footer size modal-class="mb-zoom" ref="modal:refactoring-catalog-how"><template slot="modal-title"><strong>Refactoring Catalog</strong></template>
                   <div>
                     <ul>
                       <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’
@@ -5538,13 +5538,13 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                     </ul>
                   </li>
                   <li>
-                    <p><strong>In <span trigger="click" for="modal:codeReview-pairProgramming" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:codeReview-pairProgramming'].show()" class="trigger">pair programming</span></strong></p>
+                    <p><strong>In <span trigger="click" for="modal:codeReview-pairProgramming" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:codeReview-pairProgramming'].show()" class="trigger-click">pair programming</span></strong></p>
                     <ul>
                       <li>As pair programming involves two programmers working on the same code at the same time, there is an implicit review of the code by the other member of the pair.</li>
                     </ul>
                   </li>
                 </ul>
-                <b-modal id="modal:codeReview-pairProgramming" ok-only size="lg" modal-class="mb-zoom" ref="modal:codeReview-pairProgramming"><template slot="modal-title">Pair Programming</template>
+                <b-modal id="modal:codeReview-pairProgramming" hide-footer size="lg" modal-class="mb-zoom" ref="modal:codeReview-pairProgramming"><template slot="modal-title">Pair Programming</template>
                   <box type="definition">
                     <div>
                       <p><strong>Pair Programming</strong>:</p>
@@ -6039,8 +6039,8 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                   </li>
                 </ol>
                 <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’ <span trigger="click" for="modal:exploratoryWhat-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-                    v-on:click="$refs['modal:exploratoryWhat-bach-et-explained'].show()" class="trigger">[source: bach-et-explained]</span> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other
-                  words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone,
+                    v-on:click="$refs['modal:exploratoryWhat-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases.
+                  In other words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone,
                   based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
@@ -6052,7 +6052,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                 <box>
                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                 </box>
-                <b-modal id="modal:exploratoryWhat-bach-et-explained" ok-only size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                   <div>
                     <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought
                       leader in software testing).</p>
@@ -6078,9 +6078,9 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                 <blockquote>
                   <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations
                     benefit from a mix of scripted and exploratory approaches. --
-                    <span trigger="click" for="modal:ExploratoryWhen-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ExploratoryWhen-bach-et-explained'].show()" class="trigger">[source: bach-et-explained]</span></p>
+                    <span trigger="click" for="modal:ExploratoryWhen-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ExploratoryWhen-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span></p>
                 </blockquote>
-                <b-modal id="modal:ExploratoryWhen-bach-et-explained" ok-only size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                   <div>
                     <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought
                       leader in software testing).</p>
@@ -7228,10 +7228,10 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                 <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases
                   do not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and
                   boundary values. The combinations of these could result in one use case producing many test cases.</p>
-                <p>To increase <span trigger="click" for="modal:usebaseBased-EandE" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usebaseBased-EandE'].show()" class="trigger">E&amp;E of testing</span>,
+                <p>To increase <span trigger="click" for="modal:usebaseBased-EandE" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usebaseBased-EandE'].show()" class="trigger-click">E&amp;E of testing</span>,
                   high-priority use cases are given more attention. For example, a <span trigger="click" for="modal:usecaseBased-scripted" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usecaseBased-scripted'].show()"
-                    class="trigger">scripted approach</span> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-                <b-modal id="modal:usebaseBased-EandE" ok-only size="lg" modal-class="mb-zoom" ref="modal:usebaseBased-EandE"><template slot="modal-title">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
+                    class="trigger-click">scripted approach</span> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
+                <b-modal id="modal:usebaseBased-EandE" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usebaseBased-EandE"><template slot="modal-title">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
                   <div>
                     <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>                      In particular:</p>
                     <ul>
@@ -7245,7 +7245,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                     <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong>                      There are test case design techniques that can help us improve E&amp;E of testing.</p>
                   </div>
                 </b-modal>
-                <b-modal id="modal:usecaseBased-scripted" ok-only size="lg" modal-class="mb-zoom" ref="modal:usecaseBased-scripted"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <b-modal id="modal:usecaseBased-scripted" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usecaseBased-scripted"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -7269,9 +7269,9 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                             </li>
                           </ol>
                           <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’ <span trigger="click" for="modal:exploratoryWhat-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-                              v-on:click="$refs['modal:exploratoryWhat-bach-et-explained'].show()" class="trigger">[source: bach-et-explained]</span> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases.
-                            In other words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified
-                            as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
+                              v-on:click="$refs['modal:exploratoryWhat-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span> whereby the nature of the follow-up test case is decided based on the behavior of the previous test
+                            cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas
+                            identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
                           <box>
                             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                             <blockquote>
@@ -7282,7 +7282,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                           <box>
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                           </box>
-                          <b-modal id="modal:exploratoryWhat-bach-et-explained" ok-only size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                          <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                             <div>
                               <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry
                                 thought leader in software testing).</p>
@@ -7377,14 +7377,14 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                       <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself,
                         or with a hundred other people.</p>
                       <p>-- [adapted from <span trigger="click" for="modal:rcsWhat-bryanMercurialGuide" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:rcsWhat-bryanMercurialGuide'].show()"
-                          class="trigger">bryan-mercurial-guide</span></p>
+                          class="trigger-click">bryan-mercurial-guide</span></p>
                     </blockquote>
                   </tab>
                   <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </tab>
                 </tabs>
-                <b-modal id="modal:rcsWhat-bryanMercurialGuide" ok-only size="lg" modal-class="mb-zoom" ref="modal:rcsWhat-bryanMercurialGuide"><template slot="modal-title">Reference » Mercurial: The Definitive Guide</template>
+                <b-modal id="modal:rcsWhat-bryanMercurialGuide" hide-footer size="lg" modal-class="mb-zoom" ref="modal:rcsWhat-bryanMercurialGuide"><template slot="modal-title">Reference » Mercurial: The Definitive Guide</template>
                   <div>
                     <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
                   </div>
@@ -8120,9 +8120,9 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                 <p><strong>This principle can be applied at the class level, as well as on higher levels.</strong></p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <span trigger="click" for="modal:soc-nTier" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:soc-nTier'].show()"
-                      class="trigger">n-tier architecture</span> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p>
+                      class="trigger-click">n-tier architecture</span> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p>
                 </box>
-                <b-modal id="modal:soc-nTier" ok-only size modal-class="mb-zoom" ref="modal:soc-nTier"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <b-modal id="modal:soc-nTier" hide-footer size modal-class="mb-zoom" ref="modal:soc-nTier"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -8149,8 +8149,8 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                     </div>
                   </div>
                 </b-modal>
-                <p><strong>This principle should lead to higher <span trigger="click" for="soc-cohesion" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['soc-cohesion'].show()" class="trigger">cohesion</span> and lower <span trigger="click" for="soc-coupling" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['soc-coupling'].show()" class="trigger">coupling</span>.</strong></p>
-                <b-modal id="soc-coupling" ok-only size modal-class="mb-zoom" ref="soc-coupling"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <p><strong>This principle should lead to higher <span trigger="click" for="soc-cohesion" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['soc-cohesion'].show()" class="trigger-click">cohesion</span> and lower <span trigger="click" for="soc-coupling" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['soc-coupling'].show()" class="trigger-click">coupling</span>.</strong></p>
+                <b-modal id="soc-coupling" hide-footer size modal-class="mb-zoom" ref="soc-coupling"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -8241,7 +8241,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                     </div>
                   </div>
                 </b-modal>
-                <b-modal id="soc-cohesion" ok-only size modal-class="mb-zoom" ref="soc-cohesion"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <b-modal id="soc-cohesion" hide-footer size modal-class="mb-zoom" ref="soc-cohesion"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -9440,8 +9440,8 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                   </tab>
                 </tabs>
                 <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <span trigger="click" for="modal:checkout-stash" v-b-popover.click.top.html="popoverGenerator"
-                    v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:checkout-stash'].show()" class="trigger">stash</span> them first to prevent them from being overwritten.</p>
-                <b-modal id="modal:checkout-stash" ok-only size="lg" modal-class="mb-zoom" ref="modal:checkout-stash"><template slot="modal-title"><span class="dimmed">Extract</span></template>
+                    v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:checkout-stash'].show()" class="trigger-click">stash</span> them first to prevent them from being overwritten.</p>
+                <b-modal id="modal:checkout-stash" hide-footer size="lg" modal-class="mb-zoom" ref="modal:checkout-stash"><template slot="modal-title"><span class="dimmed">Extract</span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -9568,10 +9568,10 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
             <div class="indented-less">
               <div>
                 <p>Clone the sample repo as explained in <span for="modal:clone-repository" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:clone-repository'].show()"
-                    class="trigger">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                    class="trigger-click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
                   Tools → Git &amp; GitHub → Clone]</span>.</p>
                 <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
-                <b-modal id="modal:clone-repository" ok-only size modal-class="mb-zoom" ref="modal:clone-repository"><template slot="modal-title"><strong>Clone Repository</strong></template>
+                <b-modal id="modal:clone-repository" hide-footer size modal-class="mb-zoom" ref="modal:clone-repository"><template slot="modal-title"><strong>Clone Repository</strong></template>
                   <div>
                     <panel type="seamless" expanded>
                       <span slot="header" class="card-title"><div>
@@ -9983,8 +9983,8 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
             <div class="indented-less">
               <div>
                 <p><strong>1. Go to the GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [<span trigger="click" for="modal:managePrs-createPrs" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-                    v-on:click="$refs['modal:managePrs-createPrs'].show()" class="trigger">Tools → Git &amp; GitHub → Create PRs</span>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-                <b-modal id="modal:managePrs-createPrs" ok-only size="lg" modal-class="mb-zoom" ref="modal:managePrs-createPrs"><template slot="modal-title">Tools → Git &amp; GitHub → Create PRs</template>
+                    v-on:click="$refs['modal:managePrs-createPrs'].show()" class="trigger-click">Tools → Git &amp; GitHub → Create PRs</span>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
+                <b-modal id="modal:managePrs-createPrs" hide-footer size="lg" modal-class="mb-zoom" ref="modal:managePrs-createPrs"><template slot="modal-title">Tools → Git &amp; GitHub → Create PRs</template>
                   <div>
                     <div>
                       <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
@@ -10064,7 +10064,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                 <pre><code class="hljs"><span>git checkout master</span><span>git pull origin master</span></code></pre>
                 <p>Observe how the <code>add-intro</code> branch is now merged to the <code>master</code> branch in your local repo as well.</p>
                 <p><strong>5. De-conflict the <code>add-summary</code> PR</strong> <span trigger="click" for="modal:managePrs-createPrs" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:managePrs-createPrs'].show()"
-                    class="trigger">that you created earlier</span>. Note that GitHub page for the <code>add-summary</code> PR is now showing a conflict <span class="dimmed">(when you scroll to the bottom of that page, you should see a message <code>This branch has conflicts that must be resolved</code>)</span>.
+                    class="trigger-click">that you created earlier</span>. Note that GitHub page for the <code>add-summary</code> PR is now showing a conflict <span class="dimmed">(when you scroll to the bottom of that page, you should see a message <code>This branch has conflicts that must be resolved</code>)</span>.
                   You can resolve it locally and update the PR accordingly, as explained below.</p>
                 <p>5a. Switch to the <code>add-summary</code> branch. To make that branch up-to-date with the <code>master</code> branch, merge the <code>master</code> branch to it, which will surface the merge conflict. Resolve it and complete the merge.</p>
                 <p>5b. Push the updated <code>add-summary</code> branch to the fork. That will remove the 'merge conflicts' warning in the GitHub page of the PR.</p>
@@ -10139,7 +10139,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Wed, Apr 1, 2020, 12:32:11 AM GMT+8</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, Apr 1, 2020, 12:32:48 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

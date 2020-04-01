@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter [Printable] : Git and Github</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -311,8 +311,8 @@
                     </tab>
                   </tabs>
                   <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <span trigger="click" for="modal:checkout-stash" v-b-popover.click.top.html="popoverGenerator"
-                      v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:checkout-stash'].show()" class="trigger">stash</span> them first to prevent them from being overwritten.</p>
-                  <b-modal id="modal:checkout-stash" ok-only size="lg" modal-class="mb-zoom" ref="modal:checkout-stash"><template slot="modal-title"><span class="dimmed">Extract</span></template>
+                      v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:checkout-stash'].show()" class="trigger-click">stash</span> them first to prevent them from being overwritten.</p>
+                  <b-modal id="modal:checkout-stash" hide-footer size="lg" modal-class="mb-zoom" ref="modal:checkout-stash"><template slot="modal-title"><span class="dimmed">Extract</span></template>
                     <div>
                       <div></div>
                       <p></p>
@@ -439,10 +439,10 @@
               <div class="indented-less">
                 <div>
                   <p>Clone the sample repo as explained in <span for="modal:clone-repository" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:clone-repository'].show()"
-                      class="trigger">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                      class="trigger-click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
                     Tools → Git &amp; GitHub → Clone]</span>.</p>
                   <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
-                  <b-modal id="modal:clone-repository" ok-only size modal-class="mb-zoom" ref="modal:clone-repository"><template slot="modal-title"><strong>Clone Repository</strong></template>
+                  <b-modal id="modal:clone-repository" hide-footer size modal-class="mb-zoom" ref="modal:clone-repository"><template slot="modal-title"><strong>Clone Repository</strong></template>
                     <div>
                       <panel type="seamless" expanded>
                         <span slot="header" class="card-title"><div>
@@ -852,8 +852,8 @@
               <div class="indented-less">
                 <div>
                   <p><strong>1. Go to the GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [<span trigger="click" for="modal:managePrs-createPrs" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-                      v-on:click="$refs['modal:managePrs-createPrs'].show()" class="trigger">Tools → Git &amp; GitHub → Create PRs</span>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-                  <b-modal id="modal:managePrs-createPrs" ok-only size="lg" modal-class="mb-zoom" ref="modal:managePrs-createPrs"><template slot="modal-title">Tools → Git &amp; GitHub → Create PRs</template>
+                      v-on:click="$refs['modal:managePrs-createPrs'].show()" class="trigger-click">Tools → Git &amp; GitHub → Create PRs</span>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
+                  <b-modal id="modal:managePrs-createPrs" hide-footer size="lg" modal-class="mb-zoom" ref="modal:managePrs-createPrs"><template slot="modal-title">Tools → Git &amp; GitHub → Create PRs</template>
                     <div>
                       <div>
                         <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
@@ -933,7 +933,7 @@
                   <pre><code class="hljs"><span>git checkout master</span><span>git pull origin master</span></code></pre>
                   <p>Observe how the <code>add-intro</code> branch is now merged to the <code>master</code> branch in your local repo as well.</p>
                   <p><strong>5. De-conflict the <code>add-summary</code> PR</strong> <span trigger="click" for="modal:managePrs-createPrs" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:managePrs-createPrs'].show()"
-                      class="trigger">that you created earlier</span>. Note that GitHub page for the <code>add-summary</code> PR is now showing a conflict <span class="dimmed">(when you scroll to the bottom of that page, you should see a message <code>This branch has conflicts that must be resolved</code>)</span>.
+                      class="trigger-click">that you created earlier</span>. Note that GitHub page for the <code>add-summary</code> PR is now showing a conflict <span class="dimmed">(when you scroll to the bottom of that page, you should see a message <code>This branch has conflicts that must be resolved</code>)</span>.
                     You can resolve it locally and update the PR accordingly, as explained below.</p>
                   <p>5a. Switch to the <code>add-summary</code> branch. To make that branch up-to-date with the <code>master</code> branch, merge the <code>master</code> branch to it, which will surface the merge conflict. Resolve it and complete the merge.</p>
                   <p>5b. Push the updated <code>add-summary</code> branch to the fork. That will remove the 'merge conflicts' warning in the GitHub page of the PR.</p>
@@ -1006,7 +1006,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Wed, Apr 1, 2020, 12:32:11 AM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, Apr 1, 2020, 12:32:48 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

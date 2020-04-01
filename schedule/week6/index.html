@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 6 - Summary</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -104,14 +104,14 @@
               <p>This week, we build on our knowledge of git branching and GitHub PRs to learn how to use them when the code is updated in parallel multiple branches. Do the following activity <span class="dimmed">(in-lieu of the usual in-lecture activity)</span>                to learn the relevant <mark>techniques which you will need for the iP this week</mark>. <mark>The activity can earn you lecture participation points too.</mark> <span class="text-danger">The deadline is <strong>next Tuesday midnight</strong>.</span></p>
               <panel type="success" class="algolia-no-index"><template slot="_header"><p>Activity - please do it if you are not a Git expert</p></template>
                 <div>
-                  <box seamless type="success" add-class="lead" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fab fa-github"></span></template>
+                  <box seamless type="success" add-class="lead" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fab fa-github"></span></template>
                     <p><strong>This activity teaches you how to merge parallel git branches</strong>,</p>
                     <ol>
                       <li>first, in your local repo (using git commands),</li>
                       <li>and then, in a remote repo (using GitHub PRs).</li>
                     </ol>
                   </box>
-                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                  <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
                     <p>To keep things simple, we use a simple repo that uses two files <code>food.txt</code> and <code>stationary.txt</code> to keep track of items in the shop. There are 2 shop employees (John and Amy) and two vendors (Ravi and Musa) who
                       have updated the files, but each person using their own branch. Your job is to merge the four branches so that the files reflect the final tally of goods in the shop.</p>
                     <p>First, let us set up the repo and checkout the branches.
@@ -149,7 +149,7 @@
                       <strong>After that, go back to the <code>master</code> branch.</strong> The revision graph should look this this now:<br>
                       <img src="/website/schedule/week6/images/checkout-master-again.png"></li>
                   </ul>
-                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                  <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
                     <p>Next, let us merge the branch created by John.
                     </p>
                   </box>
@@ -187,7 +187,7 @@
                       should look like this again:<br>
                       <img src="/website/schedule/week6/images/after-merging-branch-employee-john.png"></li>
                   </ul>
-                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                  <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
                     <p>Now that you know how to merge a branch, and undo a merge, let's try to merge Amy's branch. We are going to encounter a dreaded merge conflict this time around.
                     </p>
                   </box>
@@ -228,7 +228,7 @@
                     </div>
                   </div>
                   </span>
-                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                  <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
                     <p>Good. Now we can handle branch merging in our local repo even if there are merge conflicts. Next, let us find out how to do the same in a remote repo, using GitHub PRs.</p>
                     <p>But first, let's learn how to create PRs using branches, within the same remote repo.</p>
                     <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Creating PRs between branches in the same repo is a way for different team members to propose changes to the code and get the changes reviewed by others.
@@ -274,7 +274,7 @@
                       </ol>
                     </li>
                   </ul>
-                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                  <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
                     <p>The next step is to learn how to merge PRs, thereby merging the corresponding branch.
                     </p>
                   </box>
@@ -298,7 +298,7 @@
 
 
 
-                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                  <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
                     <p>So far so good. Next, let's learn how to merge PRs when there are merge conflicts.
                     </p>
                   </box>
@@ -315,13 +315,13 @@
                         <li>As the merging the PRs on GitHub updates the <code>master</code> branch on the fork only, pull the <code>master</code> branch from your fork to your repo to get the latest <code>master</code> branch onto your Computer.</li>
                         <li>Next, merge the local <code>master</code> branch to the <code>vendor-ravi</code> branch to <em>sync</em> the <code>vendor-ravi</code> branch with the latest <code>master</code>. This will result in a conflict due to both vendors
                           editing the same location of the <code>stationary.txt</code>.</li>
-                        <li>Resolve the conflict, <span trigger="click" for="modal:w6activity-6.b" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:w6activity-6.b'].show()" class="trigger">as you did in <span class="badge badge-secondary">Step 6.b</span></span>.</li>
+                        <li>Resolve the conflict, <span trigger="click" for="modal:w6activity-6.b" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:w6activity-6.b'].show()" class="trigger-click">as you did in <span class="badge badge-secondary">Step 6.b</span></span>.</li>
                         <li>Push the de-conflicted <code>vendor-ravi</code> branch to the fork.</li>
                         <li>Go to the PR again and note the warning about the conflict does not appear any more.</li>
                       </ol>
                     </li>
                   </ul>
-                  <b-modal id="modal:w6activity-6.b" ok-only size="lg" modal-class="mb-zoom" ref="modal:w6activity-6.b"><template slot="modal-title">Step 6.b (for reference)</template>
+                  <b-modal id="modal:w6activity-6.b" hide-footer size="lg" modal-class="mb-zoom" ref="modal:w6activity-6.b"><template slot="modal-title">Step 6.b (for reference)</template>
                     <div>
                       <ul>
                         <li><span class="badge badge-dark">Step 6.b</span> <strong>Resolve the conflict</strong>: The conflict happened because both branches modified the same location of the same file and git could not decide which changes to keep. The straight-forward
@@ -381,7 +381,7 @@
                     <li><span class="badge badge-dark">Step 15</span> <strong>Sync your local repo with the latest <code>master</code></strong> by pulling the <code>master</code> branch from your fork. After that, your revision graph should look like this:<br>
                       <img src="/website/schedule/week6/images/after-pulling-updated-master.png"></li>
                   </ul>
-                  <box type="success" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
+                  <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
                     <p>Nice! Now you know how to merge work done in parallel branches.
                     </p>
                   </box>
@@ -780,7 +780,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Wed, Apr 1, 2020, 12:32:11 AM GMT+8</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, Apr 1, 2020, 12:32:48 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

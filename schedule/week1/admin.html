@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 1 - Admin Info</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -173,7 +173,7 @@
                                 <ul>
                                   <li>Specify your full name.</li>
                                   <li>Upload a profile photo that matches <span trigger="click" for="modal:creatingGitHubAccount-photoCriteria" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:creatingGitHubAccount-photoCriteria'].show()"
-                                      class="trigger">our requirements</span>.</li>
+                                      class="trigger-click">our requirements</span>.</li>
                                 </ul>
                                 <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Why am I being encouraged to complete my GitHub profile?</span></p></template>
                                   <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate
@@ -185,7 +185,7 @@
                                   during that period, please let us know immediately.</p>
                               </li>
                             </ol>
-                            <b-modal id="modal:creatingGitHubAccount-photoCriteria" ok-only size="lg" modal-class="mb-zoom" ref="modal:creatingGitHubAccount-photoCriteria"><template slot="modal-title">Our requirements for the profile photo</template>
+                            <b-modal id="modal:creatingGitHubAccount-photoCriteria" hide-footer size="lg" modal-class="mb-zoom" ref="modal:creatingGitHubAccount-photoCriteria"><template slot="modal-title">Our requirements for the profile photo</template>
                               <div>
                                 <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples
                                   can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
@@ -374,13 +374,13 @@
                             </tab>
                           </tabs>
                         </box>
-                        <p><strong>Dotted underlines indicate <span for="pop:tooltip-example" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:tooltip-example'].show()" class="trigger">tool tips</span></strong>                          (activated by hovering over it) and <strong>dashed underlines indicate <span for="modal:modal-example" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modal-example'].show()" class="trigger">modal windows</span></strong>                          (activated by clicking) containing additional information.</p>
+                        <p><strong>Dotted underlines indicate <span for="pop:tooltip-example" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:tooltip-example'].show()" class="trigger">tool tips</span></strong>                          (activated by hovering over it) and <strong>dashed underlines indicate <span for="modal:modal-example" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modal-example'].show()" class="trigger-click">modal windows</span></strong>                          (activated by clicking) containing additional information.</p>
                         <span id="pop:tooltip-example" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header">Tooltip Example</span>
                         <div data-mb-html-for="content">
                           Additional information
                         </div>
                         </span>
-                        <b-modal id="modal:modal-example" ok-only size modal-class="mb-zoom" ref="modal:modal-example"><template slot="modal-title">Modal Example</template> Additional information
+                        <b-modal id="modal:modal-example" hide-footer size modal-class="mb-zoom" ref="modal:modal-example"><template slot="modal-title">Modal Example</template> Additional information
                         </b-modal>
                       </div>
                       <p>This website <mark>uses a star rating system</mark> to indicate the priority level of contents.</p>
@@ -762,7 +762,7 @@
                                             <li>
                                               <p><strong>Isolate the problem.</strong> &quot;My code doesn't work&quot; isn't going to help even if you post the whole code. Others don't have time to go through all of your code. Isolate the part that doesn't
                                                 work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about <span trigger="click" for="modal:appendixHelp-rubberDuckDebugging"
-                                                  v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:appendixHelp-rubberDuckDebugging'].show()" class="trigger">Rubber Duck Debugging</span>?).</p>
+                                                  v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:appendixHelp-rubberDuckDebugging'].show()" class="trigger-click">Rubber Duck Debugging</span>?).</p>
                                               <box>
                                                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related
                                                   to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.
@@ -779,7 +779,7 @@
                                           </ul>
                                         </li>
                                       </ul>
-                                      <b-modal id="modal:appendixHelp-rubberDuckDebugging" ok-only size="lg" modal-class="mb-zoom" ref="modal:appendixHelp-rubberDuckDebugging"><template slot="modal-title">Rubber Duck Debugging</template>
+                                      <b-modal id="modal:appendixHelp-rubberDuckDebugging" hide-footer size="lg" modal-class="mb-zoom" ref="modal:appendixHelp-rubberDuckDebugging"><template slot="modal-title">Rubber Duck Debugging</template>
                                         <p><img src="/website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
                                         <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book <em>The Pragmatic Programmer</em> in which a
                                           programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
@@ -1416,10 +1416,10 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
                     <p><strong>Based on:</strong></p>
                     <ol>
                       <li>functionality bugs in your work found by others during the <a href="/website/admin/tp-deliverables.html#deliverable-practical-exam">Practical Exam (PE)</a></li>
-                      <li>your test code <span class="dimmed">(note <span trigger="click" for="modal:projectGradingQA-testingExpectations" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectGradingQA-testingExpectations'].show()" class="trigger">our expectations for automated testing</span>)</span>
+                      <li>your test code <span class="dimmed">(note <span trigger="click" for="modal:projectGradingQA-testingExpectations" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectGradingQA-testingExpectations'].show()" class="trigger-click">our expectations for automated testing</span>)</span>
                       </li>
                     </ol>
-                    <b-modal id="modal:projectGradingQA-testingExpectations" ok-only size="lg" modal-class="mb-zoom" ref="modal:projectGradingQA-testingExpectations"><template slot="modal-title">Our expectations for automated testing in the project</template>
+                    <b-modal id="modal:projectGradingQA-testingExpectations" hide-footer size="lg" modal-class="mb-zoom" ref="modal:projectGradingQA-testingExpectations"><template slot="modal-title">Our expectations for automated testing in the project</template>
                       <div>
                         <ul>
                           <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
@@ -1989,7 +1989,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Wed, Apr 1, 2020, 12:32:11 AM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, Apr 1, 2020, 12:32:48 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

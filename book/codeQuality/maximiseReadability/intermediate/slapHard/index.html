@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Coding Best Practices: [Practice] SLAP Hard</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
@@ -47,7 +47,7 @@
                 </div>
                 <div id="main">
                   <div>
-                    <p>Avoid varying the level of <span trigger="click" for="modal:slap-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:slap-abstraction'].show()" class="trigger">abstraction</span>                      within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
+                    <p>Avoid varying the level of <span trigger="click" for="modal:slap-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:slap-abstraction'].show()" class="trigger-click">abstraction</span>                      within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
                     <box>
                       <p>Example:</p>
                       <p>
@@ -61,7 +61,7 @@
                         </font> (all statements are at the same level of abstraction)</p>
                       <pre><code class="hljs java"><span>readData();</span><span>processData();</span><span>displayResult();</span></code></pre>
                     </box>
-                    <b-modal id="modal:slap-abstraction" ok-only size modal-class="mb-zoom" ref="modal:slap-abstraction"><template slot="modal-title"></template>
+                    <b-modal id="modal:slap-abstraction" hide-footer size modal-class="mb-zoom" ref="modal:slap-abstraction"><template slot="modal-title"></template>
                       <div>
                         <div></div>
                         <p></p>

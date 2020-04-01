@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 4 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -131,7 +131,7 @@
                 </span><a class="fa fa-anchor" href="#1-create-a-pr-to-the-upstream-repo-by-friday-before-the-tutorial"></a></h4>
               <div>
                 <ul>
-                  <li>Create a <span trigger="click" for="modal:ipTasks-createPr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipTasks-createPr'].show()" class="trigger">pull request (PR)</span>                    from the <code>master</code> branch of your fork to the upstream repo. Here are the steps:
+                  <li>Create a <span trigger="click" for="modal:ipTasks-createPr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipTasks-createPr'].show()" class="trigger-click">pull request (PR)</span>                    from the <code>master</code> branch of your fork to the upstream repo. Here are the steps:
                     <ul>
                       <li>Go to your Duke fork on GitHub</li>
                       <li>Click on the <button type="button" class="btn btn-light btn-sm border"><strong>New pull request</strong></button> button in that page.</li>
@@ -149,7 +149,7 @@
                     </p>
                   </box>
                 </div>
-                <b-modal id="modal:ipTasks-createPr" ok-only size="lg" modal-class="mb-zoom" ref="modal:ipTasks-createPr"><template slot="modal-title">Pull Request (PR)</template>
+                <b-modal id="modal:ipTasks-createPr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipTasks-createPr"><template slot="modal-title">Pull Request (PR)</template>
                   <p><em>Pull Requests</em> is a mechanism for offering code to a repository e.g., a bug fix or a new feature. PRs allow developers to review, discuss, and refine proposed code changes before incorporating (i.e., <em>merging</em>) the new
                     code to the repository.</p>
                   <p>Resources:</p>
@@ -342,7 +342,7 @@
                             <p>If you <strong>used a third party library</strong>:</p>
                             <ul>
                               <li>iP/tP: Mention in the <code>README</code> file (under the <em>Acknowledgements</em> section)</li>
-                              <li>tP: Mention in the <span trigger="click" for="modal:reusePolicy-ppp" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-ppp'].show()" class="trigger">Project Portfolio Page</span>                                if the library has a significant relevance to the features you implemented</li>
+                              <li>tP: Mention in the <span trigger="click" for="modal:reusePolicy-ppp" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-ppp'].show()" class="trigger-click">Project Portfolio Page</span>                                if the library has a significant relevance to the features you implemented</li>
                             </ul>
                             <p>If you <strong>reused code snippets found on the Internet</strong> <span class="dimmed">e.g. from StackOverflow answers</span> or<br>
                               <strong>referred code in another software</strong> or<br>
@@ -353,13 +353,13 @@
                                 <pre><code class="hljs java"><span><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span></span><span>{Your implmentation of the reused solution here ...}</span></code></pre>
                               </li>
                               <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using <span trigger="click"
-                                  for="modal:reusePolicy-authorTags" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-authorTags'].show()" class="trigger"><code>@@author</code> tags</span>)<br>                                Format:
+                                  for="modal:reusePolicy-authorTags" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-authorTags'].show()" class="trigger-click"><code>@@author</code> tags</span>)<br>                                Format:
                                 <pre><code class="hljs java"><span><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span></span><span><span class="hljs-comment">//{Info about the source...}</span></span><span>&#x200B;</span><span>{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}</span></span><span><span class="hljs-function"></span></span><span><span class="hljs-function"><span class="hljs-comment">//@@author</span></span></span></code></pre><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):
                                 <pre><code class="hljs java"><span>persons = getList()</span><span><span class="hljs-comment">//@@author johndoe-reused</span></span><span><span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span></span><span>Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : <span class="hljs-number">0</span>;</span><span>    }</span><span>});</span><span><span class="hljs-comment">//@@author</span></span><span><span class="hljs-keyword">return</span> persons;</span></code></pre>
                               </li>
                             </ul>
                           </box>
-                          <b-modal id="modal:reusePolicy-authorTags" ok-only size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-authorTags"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project mid-v1.3 (extract) →</template>
+                          <b-modal id="modal:reusePolicy-authorTags" hide-footer size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-authorTags"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project mid-v1.3 (extract) →</template>
                             <div>
                               <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship"></a></h4>
                               <ul>
@@ -438,7 +438,7 @@
                               </ul>
                             </div>
                           </b-modal>
-                          <b-modal id="modal:reusePolicy-ppp" ok-only size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Project Portfolio Page</template>
+                          <b-modal id="modal:reusePolicy-ppp" hide-footer size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Project Portfolio Page</template>
                             <div>
                               <div>
                                 <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
@@ -457,7 +457,7 @@
                                       <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
                                       <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
                                       <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
-                                      <li><strong>Contributions to <span trigger="click" for="modal:deliverablesPPP-teamTasks" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:deliverablesPPP-teamTasks'].show()" class="trigger">team-based tasks </span>:</strong></li>
+                                      <li><strong>Contributions to <span trigger="click" for="modal:deliverablesPPP-teamTasks" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:deliverablesPPP-teamTasks'].show()" class="trigger-click">team-based tasks </span>:</strong></li>
                                       <li><strong>Review/mentoring contributions:</strong> Links to PRs reviewed, instances of helping team members in other ways</li>
                                       <li><strong>Contributions beyond the project team:</strong>
                                         <ul>
@@ -468,7 +468,7 @@
                                     </ul>
                                   </li>
                                 </ul>
-                                <b-modal id="modal:deliverablesPPP-teamTasks" ok-only size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
+                                <b-modal id="modal:deliverablesPPP-teamTasks" hide-footer size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
                                   <div>
                                     <box>
                                       <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
@@ -1181,7 +1181,7 @@ module learning outcomes; covering DBMS-related topics will have to be left to d
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Wed, Apr 1, 2020, 12:32:11 AM GMT+8</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, Apr 1, 2020, 12:32:48 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

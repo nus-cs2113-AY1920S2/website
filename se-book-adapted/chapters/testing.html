@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter : Testing</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -770,9 +770,9 @@
             </li>
           </ol>
           <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’ <span trigger="click" for="modal:exploratoryWhat-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-              v-on:click="$refs['modal:exploratoryWhat-bach-et-explained'].show()" class="trigger">[source: bach-et-explained]</span> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words,
-            running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the
-            tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
+              v-on:click="$refs['modal:exploratoryWhat-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other
+            words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based
+            on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
             <blockquote>
@@ -783,7 +783,7 @@
           <box>
             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
           </box>
-          <b-modal id="modal:exploratoryWhat-bach-et-explained" ok-only size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+          <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
             <div>
               <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader
                 in software testing).</p>
@@ -863,9 +863,9 @@
           <blockquote>
             <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations
               benefit from a mix of scripted and exploratory approaches. --
-              <span trigger="click" for="modal:ExploratoryWhen-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ExploratoryWhen-bach-et-explained'].show()" class="trigger">[source: bach-et-explained]</span></p>
+              <span trigger="click" for="modal:ExploratoryWhen-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ExploratoryWhen-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span></p>
           </blockquote>
-          <b-modal id="modal:ExploratoryWhen-bach-et-explained" ok-only size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+          <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
             <div>
               <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader
                 in software testing).</p>
@@ -1448,9 +1448,10 @@
         <p></p>
         <div>
           <p><strong><em>Dependency injection</em> is the process of 'injecting' objects to replace current dependencies with a different object.</strong> This is often used to inject <span trigger="click" for="modal:explainDi-stub" v-b-popover.click.top.html="popoverGenerator"
-              v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:explainDi-stub'].show()" class="trigger">stubs</span> to isolate the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span>
-            from its <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">objects it depends on</span>dependencies</span> so that it can be tested in isolation.</p>
-          <b-modal id="modal:explainDi-stub" ok-only size="lg" modal-class="mb-zoom" ref="modal:explainDi-stub"><template slot="modal-title"></template>
+              v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:explainDi-stub'].show()" class="trigger-click">stubs</span> to isolate the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter"
+              class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span> from its <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">objects it depends on</span>dependencies</span>
+            so that it can be tested in isolation.</p>
+          <b-modal id="modal:explainDi-stub" hide-footer size="lg" modal-class="mb-zoom" ref="modal:explainDi-stub"><template slot="modal-title"></template>
             <div>
               <div>
                 <p>
@@ -1556,8 +1557,8 @@
         <p></p>
         <div>
           <p><strong>Polymorphism can be used to implement dependency injection</strong>, as can be seen in the example given in <span trigger="click" for="modal:useDi-stub" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-              v-on:click="$refs['modal:useDi-stub'].show()" class="trigger">[Quality Assurance → Testing → Unit Testing → Stubs]</span> where a stub is injected to replace a dependency.</p>
-          <b-modal id="modal:useDi-stub" ok-only size="lg" modal-class="mb-zoom" ref="modal:useDi-stub"><template slot="modal-title"></template>
+              v-on:click="$refs['modal:useDi-stub'].show()" class="trigger-click">[Quality Assurance → Testing → Unit Testing → Stubs]</span> where a stub is injected to replace a dependency.</p>
+          <b-modal id="modal:useDi-stub" hide-footer size="lg" modal-class="mb-zoom" ref="modal:useDi-stub"><template slot="modal-title"></template>
             <div>
               <div>
                 <p>
@@ -1817,7 +1818,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Wed, Apr 1, 2020, 12:32:11 AM GMT+8</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, Apr 1, 2020, 12:32:48 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

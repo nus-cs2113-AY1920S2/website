@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 6 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -1921,10 +1921,10 @@
             <p>[User stories] strongly shift the focus from writing about features to discussing them. In fact, these discussions are more important than whatever text is written. <sub>[Mike Cohn, MountainGoat Software <a href="https://www.mountaingoatsoftware.com/agile/user-stories">🔗</a>]</sub></p>
           </blockquote>
           <p><strong>User stories differ from <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">e.g. a description of the requirements written in prose</span>traditional requirements specifications</span> mainly in the level of detail.</strong>            User stories should only provide enough details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face
-            to work out a more detailed description of the requirements. <span class="dimmed">[<span for="modal:xp-user-stories" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:xp-user-stories'].show()" class="trigger">more...</span>]</span>
+            to work out a more detailed description of the requirements. <span class="dimmed">[<span for="modal:xp-user-stories" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:xp-user-stories'].show()" class="trigger-click">more...</span>]</span>
           </p>
-          <p><strong>User stories can capture <span trigger="click" for="modal:userStoriesUsage-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:userStoriesUsage-nfr'].show()" class="trigger">non-functional requirements</span> too</strong>            because even NFRs must benefit some stakeholder.</p>
-          <b-modal id="modal:userStoriesUsage-nfr" ok-only size="lg" modal-class="mb-zoom" ref="modal:userStoriesUsage-nfr"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+          <p><strong>User stories can capture <span trigger="click" for="modal:userStoriesUsage-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:userStoriesUsage-nfr'].show()" class="trigger-click">non-functional requirements</span> too</strong>            because even NFRs must benefit some stakeholder.</p>
+          <b-modal id="modal:userStoriesUsage-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:userStoriesUsage-nfr"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
             <div>
               <div></div>
               <p></p>
@@ -2077,7 +2077,7 @@
         </div>
   </panel>
   </span>
-  <b-modal id="modal:xp-user-stories" ok-only size modal-class="mb-zoom" ref="modal:xp-user-stories"><template slot="modal-title">🔖 User stories vs traditional requirement specifications, according to XP</template>
+  <b-modal id="modal:xp-user-stories" hide-footer size modal-class="mb-zoom" ref="modal:xp-user-stories"><template slot="modal-title">🔖 User stories vs traditional requirement specifications, according to XP</template>
     <p><span>
 <span id="pop:xp" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header">eXtreme Programming (XP)</span>eXtreme Programming (XP)</span>
       </span>
@@ -2255,10 +2255,10 @@ Extensions:
           </box>
           <box background-color="white" border-color="white">
             <img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
-            <p><strong><span for="modal:uml" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:uml'].show()" class="trigger">UML</span> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>,
+            <p><strong><span for="modal:uml" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:uml'].show()" class="trigger-click">UML</span> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>,
               providing a visual ‘table of contents’ of the use cases of a system.</p>
             <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-            <b-modal id="modal:uml" ok-only size modal-class="mb-zoom" ref="modal:uml"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
+            <b-modal id="modal:uml" hide-footer size modal-class="mb-zoom" ref="modal:uml"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
               <div>
                 <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
                   Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML).
@@ -2348,8 +2348,8 @@ Extensions:
         <p></p>
         <div>
           <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most <span trigger="click" for="modal:supplementary-nfr" v-b-popover.click.top.html="popoverGenerator"
-              v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:supplementary-nfr'].show()" class="trigger">Non Functional Requirements</span> will be listed.</p>
-          <b-modal id="modal:supplementary-nfr" ok-only size="lg" modal-class="mb-zoom" ref="modal:supplementary-nfr"><template slot="modal-title"><span class="dimmed">Textbook »</span></template>
+              v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:supplementary-nfr'].show()" class="trigger-click">Non Functional Requirements</span> will be listed.</p>
+          <b-modal id="modal:supplementary-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:supplementary-nfr"><template slot="modal-title"><span class="dimmed">Textbook »</span></template>
             <div>
               <div></div>
               <p></p>
@@ -2675,8 +2675,8 @@ Extensions:
             <p></p>
             <div>
               <p><strong>1. Go to the GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [<span trigger="click" for="modal:managePrs-createPrs" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-                  v-on:click="$refs['modal:managePrs-createPrs'].show()" class="trigger">Tools → Git &amp; GitHub → Create PRs</span>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-              <b-modal id="modal:managePrs-createPrs" ok-only size="lg" modal-class="mb-zoom" ref="modal:managePrs-createPrs"><template slot="modal-title">Tools → Git &amp; GitHub → Create PRs</template>
+                  v-on:click="$refs['modal:managePrs-createPrs'].show()" class="trigger-click">Tools → Git &amp; GitHub → Create PRs</span>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
+              <b-modal id="modal:managePrs-createPrs" hide-footer size="lg" modal-class="mb-zoom" ref="modal:managePrs-createPrs"><template slot="modal-title">Tools → Git &amp; GitHub → Create PRs</template>
                 <div>
                   <div>
                     <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
@@ -2756,7 +2756,7 @@ Extensions:
               <pre><code class="hljs"><span>git checkout master</span><span>git pull origin master</span></code></pre>
               <p>Observe how the <code>add-intro</code> branch is now merged to the <code>master</code> branch in your local repo as well.</p>
               <p><strong>5. De-conflict the <code>add-summary</code> PR</strong> <span trigger="click" for="modal:managePrs-createPrs" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:managePrs-createPrs'].show()"
-                  class="trigger">that you created earlier</span>. Note that GitHub page for the <code>add-summary</code> PR is now showing a conflict <span class="dimmed">(when you scroll to the bottom of that page, you should see a message <code>This branch has conflicts that must be resolved</code>)</span>.
+                  class="trigger-click">that you created earlier</span>. Note that GitHub page for the <code>add-summary</code> PR is now showing a conflict <span class="dimmed">(when you scroll to the bottom of that page, you should see a message <code>This branch has conflicts that must be resolved</code>)</span>.
                 You can resolve it locally and update the PR accordingly, as explained below.</p>
               <p>5a. Switch to the <code>add-summary</code> branch. To make that branch up-to-date with the <code>master</code> branch, merge the <code>master</code> branch to it, which will surface the merge conflict. Resolve it and complete the merge.</p>
               <p>5b. Push the updated <code>add-summary</code> branch to the fork. That will remove the 'merge conflicts' warning in the GitHub page of the PR.</p>
@@ -3046,9 +3046,9 @@ Extensions:
               <p><strong>Code duplication, especially when you copy-paste-modify code, often indicates a poor quality implementation.</strong> While it may not be possible to have zero duplication, always think twice before duplicating code; most often there
                 is a better alternative.</p>
               <p>This guideline is closely related to the <span for="modal:duplication-dry" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:duplication-dry'].show()"
-                  class="trigger">DRY Principle<span v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['undefined'].show()" class="trigger">.</span></span>
+                  class="trigger-click">DRY Principle<span v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['undefined'].show()" class="trigger">.</span></span>
               </p>
-              <b-modal id="modal:duplication-dry" ok-only size modal-class="mb-zoom" ref="modal:duplication-dry"><template slot="modal-title"><strong><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> DRY Principle</strong></template>
+              <b-modal id="modal:duplication-dry" hide-footer size modal-class="mb-zoom" ref="modal:duplication-dry"><template slot="modal-title"><strong><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> DRY Principle</strong></template>
                 <div>
                   <div></div>
                   <p></p>
@@ -3158,7 +3158,7 @@ Extensions:
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Wed, Apr 1, 2020, 12:32:11 AM GMT+8</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, Apr 1, 2020, 12:32:48 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

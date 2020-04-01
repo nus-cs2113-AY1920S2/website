@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: tP: User Stories [week 5]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -222,20 +222,20 @@
                 <img class="indented-level2" src="/website/admin/images/v00.png" width="250px">
                 <ul>
                   <li>Get together with your team members and <span trigger="click" for="modal:v10-brainstorming" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-brainstorming'].show()"
-                      class="trigger">brainstorm</span> for <span trigger="click" for="modal:v10-userstories" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstories'].show()"
-                      class="trigger">user stories</span> <strong> for the the product</strong>.
+                      class="trigger-click">brainstorm</span> for <span trigger="click" for="modal:v10-userstories" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstories'].show()"
+                      class="trigger-click">user stories</span> <strong> for the the product</strong>.
                     <ul>
                       <li>At this stage, aim to have more user stories than you can deliver in the project. <span class="dimmed">Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</span></li>
-                      <li>Refer <span trigger="click" for="modal:v10-userstoryusagetips" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstoryusagetips'].show()" class="trigger">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                      <li>Refer <span trigger="click" for="modal:v10-userstoryusagetips" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstoryusagetips'].show()" class="trigger-click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
                         Specifying Requirements → UserStories → Usage → (section) Tips]</span> for tips on how to use user stories in this task.</li>
                       <li>You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <span trigger="click"
-                          for="modal:v10-onlinetools" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-onlinetools'].show()" class="trigger">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                          for="modal:v10-onlinetools" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-onlinetools'].show()" class="trigger-click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
                         Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</span>).<br></li>
                       <li>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. <span class="dimmed">Reason: an important aspect of brainstorming is not judging the ideas generated.</span></li>
                     </ul>
                   </li>
                 </ul>
-                <b-modal id="modal:v10-brainstorming" ok-only size="lg" modal-class="mb-zoom" ref="modal:v10-brainstorming"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <b-modal id="modal:v10-brainstorming" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-brainstorming"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -283,7 +283,7 @@
                     </div>
                   </div>
                 </b-modal>
-                <b-modal id="modal:v10-userstories" ok-only size="lg" modal-class="mb-zoom" ref="modal:v10-userstories"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                <b-modal id="modal:v10-userstories" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-userstories"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -399,7 +399,7 @@
                     </div>
                   </div>
                 </b-modal>
-                <b-modal id="modal:v10-onlinetools" ok-only size="lg" modal-class="mb-zoom" ref="modal:v10-onlinetools"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories → Usage → (panel)Tool Examples</template>
+                <b-modal id="modal:v10-onlinetools" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-onlinetools"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories → Usage → (panel)Tool Examples</template>
                   <div>
                     <tabs>
                       <tab><template slot="_header">GitHub Project Boards</template>
@@ -430,7 +430,7 @@
                     </tabs>
                   </div>
                 </b-modal>
-                <b-modal id="modal:v10-userstoryusagetips" ok-only size="lg" modal-class="mb-zoom" ref="modal:v10-userstoryusagetips"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories →  Usage → (section) Tips</template>
+                <b-modal id="modal:v10-userstoryusagetips" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-userstoryusagetips"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories →  Usage → (section) Tips</template>
                   <div>
                     <p>Given their lightweight nature, <strong>user stories are quite handy for recording requirements during early stages of requirements gathering</strong>.</p>
                     <box>
@@ -520,7 +520,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Wed, Apr 1, 2020, 12:32:11 AM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, Apr 1, 2020, 12:32:48 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

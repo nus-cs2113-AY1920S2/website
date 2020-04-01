@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 11 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -220,9 +220,9 @@
                       <div>
                         <h4 id="pe-d-overview"><span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span><a class="fa fa-anchor" href="#pe-d-overview"></a></h4>
                         <p><strong>What</strong>: The v2.0 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam (PE) Dry Run</em> as this round of testing will be similar to the graded <span trigger="click"
-                            for="modal:projectDeliverablesPeDryRun-pe" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectDeliverablesPeDryRun-pe'].show()" class="trigger">Practical Exam that will be done at v2.1</span>.</p>
+                            for="modal:projectDeliverablesPeDryRun-pe" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectDeliverablesPeDryRun-pe'].show()" class="trigger-click">Practical Exam that will be done at v2.1</span>.</p>
                         <p><strong>When, where</strong>: uses a 40 minute slot at the start of week 11 lecture slot (to be done online).</p>
-                        <b-modal id="modal:projectDeliverablesPeDryRun-pe" ok-only size="lg" modal-class="mb-zoom" ref="modal:projectDeliverablesPeDryRun-pe"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Practical Exam</template>
+                        <b-modal id="modal:projectDeliverablesPeDryRun-pe" hide-footer size="lg" modal-class="mb-zoom" ref="modal:projectDeliverablesPeDryRun-pe"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Practical Exam</template>
                           <div>
                             <div>
                               <h4 id="pe-overview"><span class="badge badge-success">PE</span> <span class="text-success">Overview</span><a class="fa fa-anchor" href="#pe-overview"></a></h4>
@@ -419,7 +419,7 @@
                                 <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
                             </div>
                           </panel>
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
                             <div>
                               <p>These are considered <em>feature flaws</em>:<br>
                                 <span aria-hidden="true" class="fas fa-bug"></span> The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
@@ -910,7 +910,7 @@
                     </ul>
                     <tabs>
                       <tab><template slot="_header">Using CATcher</template>
-                        <box type="info"><template slot="_icon"><span aria-hidden="true" class="fas fa-hard-hat"></span></template>
+                        <box type="info"><template slot="icon"><span aria-hidden="true" class="fas fa-hard-hat"></span></template>
                           <ul>
                             <li>CATcher does not come with a UG, but the UI is fairly intuitive (there are tool tips too). Do post in the forum if you need any guidance with its usage.</li>
                             <li>Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together.
@@ -1238,7 +1238,7 @@
                               <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
                           </div>
                         </panel>
-                        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
                           <div>
                             <p>These are considered <em>feature flaws</em>:<br>
                               <span aria-hidden="true" class="fas fa-bug"></span> The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
@@ -1481,7 +1481,7 @@
                       </div>
                     </box>
                   </div>
-                  <b-modal id="modal:v1.3-ppp" ok-only size="lg" modal-class="mb-zoom" ref="modal:v1.3-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project →</template>
+                  <b-modal id="modal:v1.3-ppp" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v1.3-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project →</template>
                     <div>
                       <div>
                         <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
@@ -1500,7 +1500,7 @@
                               <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
                               <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
                               <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
-                              <li><strong>Contributions to <span trigger="click" for="modal:deliverablesPPP-teamTasks" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:deliverablesPPP-teamTasks'].show()" class="trigger">team-based tasks </span>:</strong></li>
+                              <li><strong>Contributions to <span trigger="click" for="modal:deliverablesPPP-teamTasks" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:deliverablesPPP-teamTasks'].show()" class="trigger-click">team-based tasks </span>:</strong></li>
                               <li><strong>Review/mentoring contributions:</strong> Links to PRs reviewed, instances of helping team members in other ways</li>
                               <li><strong>Contributions beyond the project team:</strong>
                                 <ul>
@@ -1511,7 +1511,7 @@
                             </ul>
                           </li>
                         </ul>
-                        <b-modal id="modal:deliverablesPPP-teamTasks" ok-only size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
+                        <b-modal id="modal:deliverablesPPP-teamTasks" hide-footer size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
                           <div>
                             <box>
                               <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
@@ -1645,7 +1645,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Wed, Apr 1, 2020, 12:32:11 AM GMT+8</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, Apr 1, 2020, 12:32:48 PM GMT+8</small></div>
   </footer>
   </div>
 </body>
