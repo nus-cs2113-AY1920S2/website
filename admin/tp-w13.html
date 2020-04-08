@@ -43,8 +43,8 @@
           <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [from Wed Mar 11 noon] </span></a></li>
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
-          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
+          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -212,7 +212,7 @@
                 <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Submit demo video</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Monday 13th Apr 23.59</span>
                   </span>
                 </li>
-                <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Prepare for the practical exam</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the lecture</span>
+                <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Prepare for the practical exam</span> <span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the lecture</span>
                   </span>
                 </li>
                 <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Attend the practical exam</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> during the lecture</span>
@@ -321,7 +321,7 @@
                   <box type="tip" light>
                     <p>To convert the UG/DG/PPP to pdf, go to the generated page in your project's <a href="http://github.io">github.io</a> site and use <a href="/website/admin/usingThisWebsite.html#saving-as-pdf-files">this technique</a> to save as a pdf
                       file.
-                    </p>
+                      <span class="text-danger">Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.</span></p>
                   </box>
                 </div>
                 <div class="indented-level2">
@@ -552,8 +552,7 @@ Ways to simplify diagrams:
                           <div>
                             <box type="tip" light>
                               <p>To convert the UG/DG/PPP to pdf, go to the generated page in your project's <a href="http://github.io">github.io</a> site and use <a href="/website/admin/usingThisWebsite.html#saving-as-pdf-files">this technique</a> to save
-                                as a pdf file.
-                              </p>
+                                as a pdf file. <span class="text-danger">Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.</span></p>
                             </box>
                           </div>
                         </div>
@@ -765,13 +764,13 @@ Ways to simplify diagrams:
                     <div>
                       <p><strong>Objectives:</strong></p>
                       <ul>
-                        <li>The primary objective of the PE is to <mark>increase the rigor of project grading</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for 45% of the final grade, it is not prudent
-                          to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being
-                          affected by evaluator-bias.</li>
+                        <li>The primary objective of the PE is to <mark>increase the rigor of project grading</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for a large percentage of the final grade,
+                          it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of
+                          your project being affected by evaluator-bias.</li>
                         <li>PE is also <mark>used to evaluate your manual testing skills, product evaluation skills, effort estimation skills</mark> etc.</li>
                         <li>Note that significant project components are <mark>not graded solely based on peer ratings</mark>. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs
                           are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.</li>
-                        <li>Note that the PE is <mark>not a means of <em>pitting you against each other</em></mark>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li>
+                        <li>PE is <mark>not a means of <em>pitting you against each other</em></mark>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li>
                       </ul>
                       <p><strong>Grading</strong>:</p>
                       <ul>
@@ -784,7 +783,7 @@ Ways to simplify diagrams:
                           <div>
                             <h5 id="grading-bugs-found-in-the-pe">Grading bugs found in the PE<a class="fa fa-anchor" href="#grading-bugs-found-in-the-pe"></a></h5>
                             <ul>
-                              <li><mark>Of 3A and 3B above, the one you do better will be given a 70% weight and the other a 30% weight</mark> so that your total score is driven by your strengths rather than weaknesses.</li>
+                              <li><mark>Of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>Developer Testing</em> component, based on the bugs found in your code</span>3A</span> and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>System/Acceptance Testing</em> component, based on the bugs found in others' code</span>3B</span> above, the one you do better will be given a 70% weight and the other a 30% weight</mark>                                so that your total score is driven by your strengths rather than weaknesses.</li>
                               <li>Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.</li>
                               <li>The penalty/credit for a bug varies based on,
                                 <ul>
@@ -805,9 +804,9 @@ Ways to simplify diagrams:
                                   <li><code>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
                                 </ul>
                               </li>
-                              <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
+                              <li>You don't need to find <em>all</em> bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
                               <li>Excessive incorrect downgrading/rejecting/<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">marking as duplicates</span>duplicate-flagging</span>,
-                                if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+                                if deemed an attempt to <em>game the system</em>, will be penalized.</li>
                             </ul>
                           </div>
                         </panel>
@@ -911,10 +910,10 @@ Ways to simplify diagrams:
                         <span id="pe-overview">
 <p><strong>Objectives:</strong></p>
 <ul>
-<li>The primary objective of the PE is to <mark>increase the rigor of project grading</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for 45% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.</li>
+<li>The primary objective of the PE is to <mark>increase the rigor of project grading</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.</li>
 <li>PE is also <mark>used to evaluate your manual testing skills, product evaluation skills, effort estimation skills</mark> etc.</li>
 <li>Note that significant project components are <mark>not graded solely based on peer ratings</mark>. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.</li>
-<li>Note that the PE is <mark>not a means of <em>pitting you against each other</em></mark>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li></ul>
+<li>PE is <mark>not a means of <em>pitting you against each other</em></mark>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li></ul>
 <p><strong>Grading</strong>:</p>
 <ul>
 <li>Your performance in the practical exam will affect your final grade and your peers', as explained in <a href="/website/admin/tp-grading.html"><em>Admin: Project Grading</em></a> section.</li>
@@ -927,7 +926,7 @@ Ways to simplify diagrams:
                         <div>
                           <h5 id="grading-bugs-found-in-the-pe-2">Grading bugs found in the PE<a class="fa fa-anchor" href="#grading-bugs-found-in-the-pe-2"></a></h5>
                           <ul>
-                            <li><mark>Of 3A and 3B above, the one you do better will be given a 70% weight and the other a 30% weight</mark> so that your total score is driven by your strengths rather than weaknesses.</li>
+                            <li><mark>Of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>Developer Testing</em> component, based on the bugs found in your code</span>3A</span> and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>System/Acceptance Testing</em> component, based on the bugs found in others' code</span>3B</span> above, the one you do better will be given a 70% weight and the other a 30% weight</mark>                              so that your total score is driven by your strengths rather than weaknesses.</li>
                             <li>Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.</li>
                             <li>The penalty/credit for a bug varies based on,
                               <ul>
@@ -948,9 +947,9 @@ Ways to simplify diagrams:
                                 <li><code>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
                               </ul>
                             </li>
-                            <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
+                            <li>You don't need to find <em>all</em> bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
                             <li>Excessive incorrect downgrading/rejecting/<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">marking as duplicates</span>duplicate-flagging</span>,
-                              if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+                              if deemed an attempt to <em>game the system</em>, will be penalized.</li>
                           </ul>
                         </div>
                   </panel>
@@ -1044,7 +1043,7 @@ Ways to simplify diagrams:
                   <p></p>
                   <h4 id="pe-phase-1-bug-reporting"><span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span><a class="fa fa-anchor" href="#pe-phase-1-bug-reporting"></a></h4>
                   <ul>
-                    <li><strong>When, where</strong>: Week 13 lecture</li>
+                    <li><strong>When, where</strong>: Week 13 lecture slot</li>
                   </ul>
                   <h5 id="pe-phase-1-part-i-product-testing-60-minutes"><span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span><a class="fa fa-anchor" href="#pe-phase-1-part-i-product-testing-60-minutes"></a></h5>
                   <ul>
@@ -1580,8 +1579,8 @@ Ways to simplify diagrams:
                   </div>
                   <h4 id="pe-phase-2-developer-response"><span class="badge badge-success">PE</span> <span class="text-success">Phase 2: Developer Response</span><a class="fa fa-anchor" href="#pe-phase-2-developer-response"></a></h4>
                   <p>This phase is for you to respond to the bug reports you received.</p>
-                  <p>Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following <strong>Tuesday midnight</strong>. However, you are recommended to finish this task ASAP, to minimize cutting
-                    into your exam preparation work.</p>
+                  <p>Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following <strong>Saturday midnight</strong> (i.e., within 3 days). However, you are recommended to finish this task
+                    ASAP, to minimize cutting into your exam preparation work.</p>
                   <p>Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.</p>
                   <box>
                     <p><strong>Instructions for Reviewing Bug Reports</strong></p>
@@ -1735,7 +1734,7 @@ Ways to simplify diagrams:
                     <li>As before, consider carefully before you object to a team's response. <mark><span class="text-danger">If many of your objections were overruled by the teaching team later</span></mark>, you will lose marks for not being able to evaluate
                       a bug report properly.</li>
                     <li>This phase is optional. If you do not respond to a dev response, we'll assume that you agree with it.</li>
-                    <li><strong>Deadline: Reading week Thursday 2359</strong></li>
+                    <li><strong>Deadline: Reading week Tuesday 2359</strong> (i.e., within 3 days)</li>
                     <li>Procedure:</li>
                   </ul>
                   <div class="indented-level2">
@@ -1815,7 +1814,7 @@ Ways to simplify diagrams:
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, 8 Apr 2020, 0:28:13 GMT+8</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, 8 Apr 2020, 12:50:12 GMT+8</small></div>
   </footer>
   </div>
 </body>
