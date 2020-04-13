@@ -33,12 +33,18 @@
 
 ###### <div class="text-white bg-secondary p-1">a) Launching the JAR file</div>
 
-* Put the jar file ==in an empty folder==.
+* Get the jar file to be tested:
+  * PE Dry Run (at **{{ penultimate_version }}**): Download the jar file from the team's releases page, if you haven't done this already.
+  * PE (at **{{ final_version }}**):
+    * Download the zip file from the given location, if you haven't done that already.
+    * Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix `_inner.zip`.
+    * Unzip the inner zip file. This will give you the jar file and other PDF files needed for the PE. ==Warning: do not run the jar file while it is still inside the zip file==.
+
+* Put the downloaded jar file ==in an empty folder==.
 * Open a command window. Run the `java -version` command to ensure you are using Java 11.
 * Launch the jar file ==using the `java -jar` command== (do not use double-clicking).
-* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch%%, you can test the _fallback_ team allocated to you. But in this case ==you must inform us immediately after the session== so that we can send your bug reports to the correct team.
-  * PE-D: Download the JAR file from their GitHub page
-  * PE: We'll let you know how to download the files near to the date.
+* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, contact the invigilator (via Gitter or Zoom chat) to receive a _fallback_ team to test.
+
 
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
 
