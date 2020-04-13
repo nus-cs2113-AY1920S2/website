@@ -877,59 +877,51 @@ Ways to simplify diagrams:
                         <li>
                           <p>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed">e.g. has the right Java version</span>.</p>
                         </li>
+                        <li>
+                          <p><strong>Download the <a href="https://github.com/CATcher-org/CATcher/releases">latest CATcher</a></strong> and ensure you can run it on your computer.</p>
+                        </li>
                       </ul>
-                      <tabs>
-                        <tab><template slot="_header">Using CATcher</template>
+                      <div class="indented-level2">
+                        <panel minimized class="algolia-no-index"><template slot="_header"><p>If not using CATcher</p></template>
+                          <box type="warning">
+                            <p>Issues created for PE-D and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are <strong><span class="text-danger">not allowed to use the GitHub interface for PE-D and PE activities, unless you have obtained  our permission first</span></strong>.
+                            </p>
+                          </box>
                           <ul>
-                            <li><strong>Download the <a href="https://github.com/CATcher-org/CATcher/releases">latest CATcher</a></strong> and ensure you can run it on your computer.
-                            </li>
-                          </ul>
-                        </tab>
-                        <tab class="algolia-no-index"><template slot="_header">Not using CATcher</template>
-
-                          <div class="indented-less">
-                            <box type="warning">
-                              <p>Issues created for PE-D and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are <strong><span class="text-danger">not allowed to use the GitHub interface for PE-D and PE activities, unless you have obtained  our permission first</span></strong>.
-                              </p>
-                            </box>
-                            <div>
+                            <li>Create a public repo in your GitHub account with the following name:
                               <ul>
-                                <li>Create a public repo in your GitHub account with the following name:
-                                  <ul>
-                                    <li>PE Dry Run: <code>ped</code></li>
-                                    <li>PE: <code>pe</code></li>
-                                  </ul>
-                                </li>
-                                <li>Enable its issue tracker and add the following labels to it (the label names should be precisely as given).</li>
+                                <li>PE Dry Run: <code>ped</code></li>
+                                <li>PE: <code>pe</code></li>
                               </ul>
-                              <div class="indented-level2">
-                                <div>
-                                  <box>
-                                    <p><strong>Bug Severity</strong> labels:</p>
-                                    <ul>
-                                      <li><code>severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
-                                      <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
-                                      <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
-                                      <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
-                                    </ul>
-                                  </box>
-                                </div>
-                                <div>
-                                  <box>
-                                    <p><strong>Type</strong> labels:</p>
-                                    <ul>
-                                      <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                                      <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is
-                                        not 'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
-                                      <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
-                                    </ul>
-                                  </box>
-                                </div>
-                              </div>
-                            </div>
+                            </li>
+                            <li>Enable its issue tracker and add the following labels to it (the label names should be precisely as given).</li>
+                          </ul>
+                          <div>
+                            <box>
+                              <p><strong>Bug Severity</strong> labels:</p>
+                              <ul>
+                                <li><code>severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
+                                <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                                <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                                <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                              </ul>
+                            </box>
                           </div>
-                        </tab>
-                      </tabs>
+                          <div>
+                            <box>
+                              <p><strong>Type</strong> labels:</p>
+                              <ul>
+                                <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
+                                <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'.
+                                  In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                                <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
+                              </ul>
+                            </box>
+                          </div>
+                          <p></p>
+                        </panel>
+                        <p></p>
+                      </div>
                       <ul>
                         <li>
                           <p><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</p>
@@ -938,16 +930,24 @@ Ways to simplify diagrams:
                           </ul>
                         </li>
                         <li>
-                          <p><strong><span class="text-danger">Download the product to be tested</span></strong> <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">notifications are likely to go out on the morning of the PE/PE-D session</span>after
-                            you have been notified</span>.</p>
+                          <p><strong><span class="text-danger">Download the product to be tested</span></strong>.</p>
+                        </li>
+                      </ul>
+                      <tabs active="1" add-class="ml-4">
+                        <tab><template slot="_header"><s>PE Dry Run (at <strong>v2.0</strong>)</s></template>
                           <ul>
-                            <li>PE Dry Run (at <strong>v2.0</strong>): Download the jar file from the team's releases page.</li>
-                            <li>PE (at <strong>v2.1</strong>): Download the zip file that bears your name (location will be announced via module announcements, 24 hours before the PE).</li>
+                            <li>After you have been notified which team to test (likely to be in the morning of PE-D day), download the jar file from the team's releases page.</li>
                           </ul>
-                        </li>
-                        <li>
-                          <p><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</p>
-                        </li>
+                        </tab>
+                        <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v2.1</strong>)</template>
+                          <ul>
+                            <li>After you have been notified of the download location, download the zip file that bears your name.</li>
+                          </ul>
+                        </tab>
+                      </tabs>
+                      <p></p>
+                      <ul>
+                        <li><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</li>
                       </ul>
                     </div>
                   </panel>
@@ -1027,59 +1027,51 @@ Ways to simplify diagrams:
                           <li>
                             <p>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed">e.g. has the right Java version</span>.</p>
                           </li>
+                          <li>
+                            <p><strong>Download the <a href="https://github.com/CATcher-org/CATcher/releases">latest CATcher</a></strong> and ensure you can run it on your computer.</p>
+                          </li>
                         </ul>
-                        <tabs>
-                          <tab><template slot="_header">Using CATcher</template>
+                        <div class="indented-level2">
+                          <panel minimized class="algolia-no-index"><template slot="_header"><p>If not using CATcher</p></template>
+                            <box type="warning">
+                              <p>Issues created for PE-D and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are <strong><span class="text-danger">not allowed to use the GitHub interface for PE-D and PE activities, unless you have obtained  our permission first</span></strong>.
+                              </p>
+                            </box>
                             <ul>
-                              <li><strong>Download the <a href="https://github.com/CATcher-org/CATcher/releases">latest CATcher</a></strong> and ensure you can run it on your computer.
-                              </li>
-                            </ul>
-                          </tab>
-                          <tab class="algolia-no-index"><template slot="_header">Not using CATcher</template>
-
-                            <div class="indented-less">
-                              <box type="warning">
-                                <p>Issues created for PE-D and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are <strong><span class="text-danger">not allowed to use the GitHub interface for PE-D and PE activities, unless you have obtained  our permission first</span></strong>.
-                                </p>
-                              </box>
-                              <div>
+                              <li>Create a public repo in your GitHub account with the following name:
                                 <ul>
-                                  <li>Create a public repo in your GitHub account with the following name:
-                                    <ul>
-                                      <li>PE Dry Run: <code>ped</code></li>
-                                      <li>PE: <code>pe</code></li>
-                                    </ul>
-                                  </li>
-                                  <li>Enable its issue tracker and add the following labels to it (the label names should be precisely as given).</li>
+                                  <li>PE Dry Run: <code>ped</code></li>
+                                  <li>PE: <code>pe</code></li>
                                 </ul>
-                                <div class="indented-level2">
-                                  <div>
-                                    <box>
-                                      <p><strong>Bug Severity</strong> labels:</p>
-                                      <ul>
-                                        <li><code>severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
-                                        <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
-                                        <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
-                                        <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
-                                      </ul>
-                                    </box>
-                                  </div>
-                                  <div>
-                                    <box>
-                                      <p><strong>Type</strong> labels:</p>
-                                      <ul>
-                                        <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                                        <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is
-                                          not 'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
-                                        <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
-                                      </ul>
-                                    </box>
-                                  </div>
-                                </div>
-                              </div>
+                              </li>
+                              <li>Enable its issue tracker and add the following labels to it (the label names should be precisely as given).</li>
+                            </ul>
+                            <div>
+                              <box>
+                                <p><strong>Bug Severity</strong> labels:</p>
+                                <ul>
+                                  <li><code>severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
+                                  <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                                  <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                                  <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                                </ul>
+                              </box>
                             </div>
-                          </tab>
-                        </tabs>
+                            <div>
+                              <box>
+                                <p><strong>Type</strong> labels:</p>
+                                <ul>
+                                  <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
+                                  <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not
+                                    'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                                  <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
+                                </ul>
+                              </box>
+                            </div>
+                            <p></p>
+                          </panel>
+                          <p></p>
+                        </div>
                         <ul>
                           <li>
                             <p><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</p>
@@ -1088,16 +1080,24 @@ Ways to simplify diagrams:
                             </ul>
                           </li>
                           <li>
-                            <p><strong><span class="text-danger">Download the product to be tested</span></strong> <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">notifications are likely to go out on the morning of the PE/PE-D session</span>after
-                              you have been notified</span>.</p>
+                            <p><strong><span class="text-danger">Download the product to be tested</span></strong>.</p>
+                          </li>
+                        </ul>
+                        <tabs active="1" add-class="ml-4">
+                          <tab><template slot="_header"><s>PE Dry Run (at <strong>v2.0</strong>)</s></template>
                             <ul>
-                              <li>PE Dry Run (at <strong>v2.0</strong>): Download the jar file from the team's releases page.</li>
-                              <li>PE (at <strong>v2.1</strong>): Download the zip file that bears your name (location will be announced via module announcements, 24 hours before the PE).</li>
+                              <li>After you have been notified which team to test (likely to be in the morning of PE-D day), download the jar file from the team's releases page.</li>
                             </ul>
-                          </li>
-                          <li>
-                            <p><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</p>
-                          </li>
+                          </tab>
+                          <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v2.1</strong>)</template>
+                            <ul>
+                              <li>After you have been notified of the download location, download the zip file that bears your name.</li>
+                            </ul>
+                          </tab>
+                        </tabs>
+                        <p></p>
+                        <ul>
+                          <li><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</li>
                         </ul>
                       </div>
                     </panel>
@@ -1110,6 +1110,26 @@ Ways to simplify diagrams:
                       <li>You are not allowed to communicate with others (except the invigilators).</li>
                       <li>You are not allowed to share your work with others.</li>
                       <li>Violators will be reported to the university for disciplinary action.</li>
+                    </ul>
+                  </box>
+                  <box type="info" light>
+                    <p><strong>Online channels used for the PE</strong>:</p>
+                    <ul>
+                      <li><strong><strong>Gitter</strong></strong>:
+                        <ul>
+                          <li>Prof will be online in <a href="https://gitter.im/nus-cs2113-AY1920S2/community">Gitter</a>.</li>
+                          <li><mark>Direct all your queries to prof as private messages to <code>@damithc</code>. <span class="text-danger">Do not use the public chat channel</span> .</mark> If you use the main channel, you might accidentally reveal which
+                            team you are testing.</li>
+                        </ul>
+                      </li>
+                      <li><strong><strong>Zoom</strong></strong>:
+                        <ul>
+                          <li>There will be a Zoom meeting (details will be announced later) to provide you with audio announcements.</li>
+                          <li>Join it and <strong>keep the speaker</strong> on during the PE session so that you can hear our announcements.</li>
+                          <li>You can use it to chat with the prof (but Gitter is preferred for chatting as it's harder to post screenshots in Zoom chats).</li>
+                          <li>You will not be able to share your screen, share your cam, or talk to us.</li>
+                        </ul>
+                      </li>
                     </ul>
                   </box>
                   <ul>
@@ -1127,125 +1147,75 @@ Ways to simplify diagrams:
                         <h6 id="a-launching-the-jar-file">
                           <div class="text-white bg-secondary p-1">a) Launching the JAR file</div><a class="fa fa-anchor" href="#a-launching-the-jar-file"></a></h6>
                         <ul>
-                          <li>
-                            <p>Get the jar file to be tested:</p>
+                          <li>Get the jar file to be tested:</li>
+                        </ul>
+                        <tabs active="1">
+                          <tab><template slot="_header"><s>PE Dry Run (at <strong>v2.0</strong>)</s></template>
                             <ul>
-                              <li>PE Dry Run (at <strong>v2.0</strong>): Download the jar file from the team's releases page, if you haven't done this already.</li>
-                              <li>PE (at <strong>v2.1</strong>):
-                                <ul>
-                                  <li>Download the zip file from the given location, if you haven't done that already.</li>
-                                  <li>Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix <code>_inner.zip</code>.</li>
-                                  <li>Unzip the inner zip file. This will give you the jar file and other PDF files needed for the PE. <mark>Warning: do not run the jar file while it is still inside the zip file</mark>.</li>
-                                </ul>
-                              </li>
+                              <li>Download the jar file from the team's releases page, if you haven't done this already.</li>
                             </ul>
-                          </li>
-                          <li>
-                            <p>Put the downloaded jar file <mark>in an empty folder</mark>.</p>
-                          </li>
-                          <li>
-                            <p>Open a command window. Run the <code>java -version</code> command to ensure you are using Java 11.</p>
-                          </li>
-                          <li>
-                            <p>Launch the jar file <mark>using the <code>java -jar</code> command</mark> (do not use double-clicking).</p>
-                          </li>
-                          <li>
-                            <p><strong>If the product doesn't work at all:</strong> If the product fails catastrophically <span class="dimmed">e.g., cannot even launch, or even the basic commands crash the app</span>, contact the invigilator (via Gitter
-                              or Zoom chat) to receive a <em>fallback</em> team to test.</p>
-                          </li>
+                          </tab>
+                          <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v2.1</strong>)</template>
+                            <ul>
+                              <li>Download the zip file from the given location, if you haven't done that already.</li>
+                              <li>Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix <code>_inner.zip</code>.</li>
+                              <li>Unzip the inner zip file. This will give you the jar file and other PDF files needed for the PE. <mark>Warning: do not run the jar file while it is still inside the zip file</mark>.</li>
+                            </ul>
+                          </tab>
+                        </tabs>
+                        <p></p>
+                        <ul>
+                          <li>Put the downloaded jar file <mark>in an empty folder</mark>.</li>
+                          <li>Open a command window. Run the <code>java -version</code> command to ensure you are using Java 11.</li>
+                          <li>Launch the jar file <mark>using the <code>java -jar</code> command</mark> (do not use double-clicking).</li>
+                          <li><strong>If the product doesn't work at all:</strong> If the product fails catastrophically <span class="dimmed">e.g., cannot even launch, or even the basic commands crash the app</span>, contact the invigilator (via Gitter or
+                            Zoom chat) to receive a <em>fallback</em> team to test.</li>
                         </ul>
                         <h6 id="b-what-to-test">
                           <div class="text-white bg-secondary p-1">b) What to test</div><a class="fa fa-anchor" href="#b-what-to-test"></a></h6>
-                        <ul>
-                          <li>PE Dry Run (at <strong>v2.0</strong>):
+                        <tabs active="1">
+                          <tab><template slot="_header"><s>PE Dry Run (at <strong>v2.0</strong>)</s></template>
                             <ul>
                               <li>Test the product <mark>based on the User Guide</mark> available from their GitHub website <code>https://{team-id}.github.io/tp/UserGuide.html</code>.</li>
                               <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark>
                                 <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
                             </ul>
-                          </li>
-                          <li>PE (at <strong>v2.1</strong>):
+                          </tab>
+                          <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v2.1</strong>)</template>
                             <ul>
                               <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if
                                 you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
                               <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system-testing bugs can earn you more credit.</li>
                             </ul>
-                          </li>
-                        </ul>
+                          </tab>
+                        </tabs>
+                        <p></p>
                         <h6 id="c-what-bugs-to-report">
                           <div class="text-white bg-secondary p-1">c) What bugs to report?</div><a class="fa fa-anchor" href="#c-what-bugs-to-report"></a></h6>
-                        <ul>
-                          <li>PE Dry Run (at <strong>v2.0</strong>): You may report functionality bugs, UG bugs, and feature flaws.</li>
-                        </ul>
-                        <div class="indented-level2">
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
-                            <div>
-                              <p>These are considered <em>functionality bugs</em>:<br>
-                                <span aria-hidden="true" class="fas fa-bug"></span> Behavior differs from the User Guide<br>
-                                <span aria-hidden="true" class="fas fa-bug"></span> A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span><br>
-                                <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
-                            </div>
-                          </panel>
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
-                            <div>
-                              <p>These are considered <em>feature flaws</em>:<br>
-                                <span aria-hidden="true" class="fas fa-bug"></span> The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
-                                <span aria-hidden="true" class="fas fa-bug"></span> Hard-to-test features<br>
-                                <span aria-hidden="true" class="fas fa-bug"></span> Features that don't fit well with the product<br>
-                                <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
-                            </div>
-                          </panel>
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
-                            <div>
-                              <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
-                              <div>
-                                <span id="visualsBugs">
-<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
-                                <ul>
-                                  <li>Not enough visuals e.g., screenshots/diagrams</li>
-                                  <li>The visuals are not well integrated to the explanation</li>
-                                  <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
-                                  </li>
-                                </ul>
-                                </span>
-                                <span id="examplesBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
-                                <ul>
-                                  <li>Not enough or too many examples e.g., sample inputs/outputs
-                                  </li>
-                                </ul>
-                                </span>
-                                <span id="explanationBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
-                                <ul>
-                                  <li>The explanation is too brief or unnecessarily long.</li>
-                                  <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
-                                  </li>
-                                </ul>
-                                </span>
-                                <span id="neatnessBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
-                                <ul>
-                                  <li>looks messy</li>
-                                  <li>not well-formatted
-                                  </li>
-                                </ul>
-                                </span>
-                              </div>
-                            </div>
-                          </panel>
-                        </div>
-                        <ul>
-                          <li>PE (at <strong>v2.1</strong>): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).</li>
-                        </ul>
-                        <div class="indented-level2">
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
-                            <div>
-                              <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
-                              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Those given as possible UG bugs ...</p></template>
+                        <tabs active="1">
+                          <tab><template slot="_header"><s>PE Dry Run (at <strong>v2.0</strong>)</s></template>
+                            <ul>
+                              <li>You may report functionality bugs, UG bugs, and feature flaws.</li>
+                            </ul>
+                            <div class="indented-level2">
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                                <div>
+                                  <p>These are considered <em>functionality bugs</em>:<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> Behavior differs from the User Guide<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span><br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
+                                </div>
+                              </panel>
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                                <div>
+                                  <p>These are considered <em>feature flaws</em>:<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> Hard-to-test features<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> Features that don't fit well with the product<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
+                                </div>
+                              </panel>
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
                                 <div>
                                   <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
                                   <div>
@@ -1277,77 +1247,107 @@ Ways to simplify diagrams:
                                     </span>
                                     <span id="neatnessBugs">
 
-<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness/Correctness:</p>
                                     <ul>
                                       <li>looks messy</li>
-                                      <li>not well-formatted
+                                      <li>not well-formatted</li>
+                                      <li>broken links, other inaccuracies, typos, etc.
                                       </li>
                                     </ul>
                                     </span>
                                   </div>
                                 </div>
                               </panel>
-                              <span id="umlDiagramBugs">
-<p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
-                              <ul>
-                                <li>Notation incorrect or not compliant with the notation covered in the module.</li>
-                                <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
-                                <li>The diagram used is not suitable for the purpose it is used.</li>
-                                <li>The diagram is too complicated.
-                                </li>
-                              </ul>
-                              </span>
-                              <span id="codeSnippetBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Code snippets:</p>
-                              <ul>
-                                <li>Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
-                                </li>
-                              </ul>
-                              </span>
-                              <span id="userStoryBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in User Stories. Examples:</p>
-                              <ul>
-                                <li>Incorrect format</li>
-                                <li>All three parts are not present</li>
-                                <li>Benefit does not match the function</li>
-                                <li>Important user stories missing
-                                </li>
-                              </ul>
-                              </span>
-                              <span id="nfrBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in NFRs. Examples:</p>
-                              <ul>
-                                <li>Not really a <em>Non-Functional</em> Requirement</li>
-                                <li>Not well-defined (i.e., hard to decide when it has been met)</li>
-                                <li>Not reasonably achievable</li>
-                                <li>Highly relevant NFRs missing
-                                </li>
-                              </ul>
-                              </span>
-                              <span id="glossaryBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Glossary. Examples:</p>
-                              <ul>
-                                <li>Unnecessary terms included</li>
-                                <li>Important terms missing
-                                </li>
-                              </ul>
-                              </span>
                             </div>
-                          </panel>
-                        </div>
-                        <ul>
-                          <li><strong>About posting <em>suggestions</em>:</strong>
+                            <p></p>
                             <ul>
-                              <li>PE Dry Run (at <strong>v2.0</strong>): You can also post suggestions on how to improve the product. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic
-                                when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
-                              <li>PE (at <strong>v2.1</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code>Type.FeatureFlaw</code>.</li>
+                              <li>You can also post suggestions on how to improve the product.<br>
+                                <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current
+                                behavior, simply suggest alternatives to consider.</li>
                             </ul>
-                          </li>
-                        </ul>
+                          </tab>
+                          <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v2.1</strong>)</template>
+                            <ul>
+                              <li>Report functionality bugs:</li>
+                            </ul>
+                            <div class="indented-level2">
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                                <div>
+                                  <p>These are considered <em>functionality bugs</em>:<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> Behavior differs from the User Guide<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span><br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
+                                </div>
+                              </panel>
+                            </div>
+                            <p></p>
+                            <ul>
+                              <li>Do not post suggestions but if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code>Type.FeatureFlaw</code>.</li>
+                            </ul>
+                            <div class="indented-level2">
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                                <div>
+                                  <p>These are considered <em>feature flaws</em>:<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> Hard-to-test features<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> Features that don't fit well with the product<br>
+                                    <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
+                                </div>
+                              </panel>
+                            </div>
+                            <p></p>
+                            <ul>
+                              <li>You may also report UG bugs.</li>
+                            </ul>
+                            <div class="indented-level2">
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                                <div>
+                                  <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                                  <div>
+                                    <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                                    <ul>
+                                      <li>Not enough visuals e.g., screenshots/diagrams</li>
+                                      <li>The visuals are not well integrated to the explanation</li>
+                                      <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                                      </li>
+                                    </ul>
+                                    </span>
+                                    <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                                    <ul>
+                                      <li>Not enough or too many examples e.g., sample inputs/outputs
+                                      </li>
+                                    </ul>
+                                    </span>
+                                    <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                                    <ul>
+                                      <li>The explanation is too brief or unnecessarily long.</li>
+                                      <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                                      </li>
+                                    </ul>
+                                    </span>
+                                    <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness/Correctness:</p>
+                                    <ul>
+                                      <li>looks messy</li>
+                                      <li>not well-formatted</li>
+                                      <li>broken links, other inaccuracies, typos, etc.
+                                      </li>
+                                    </ul>
+                                    </span>
+                                  </div>
+                                </div>
+                              </panel>
+                            </div>
+                            <p></p>
+                          </tab>
+                        </tabs>
+                        <p></p>
                         <h6 id="d-how-to-report-bugs">
                           <div class="text-white bg-secondary p-1">d) How to report bugs</div><a class="fa fa-anchor" href="#d-how-to-report-bugs"></a></h6>
                         <ul>
@@ -1429,7 +1429,7 @@ Ways to simplify diagrams:
                       </box>
                     </div>
                   </div>
-                  <h5 id="pe-phase-1-part-ii-evaluating-documents-20-minutes"><span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [20 minutes]</span><a class="fa fa-anchor" href="#pe-phase-1-part-ii-evaluating-documents-20-minutes"></a></h5>
+                  <h5 id="pe-phase-1-part-ii-evaluating-documents-30-minutes"><span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span><a class="fa fa-anchor" href="#pe-phase-1-part-ii-evaluating-documents-30-minutes"></a></h5>
                   <ul>
                     <li><strong>This slot is for reporting documentation bugs only</strong>. You may report bugs related to UG, DG, and PPPs.</li>
                     <li><strong>For each bug reported, cite evidence and justify.</strong> For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.</li>
@@ -1467,16 +1467,20 @@ Ways to simplify diagrams:
                           </span>
                           <span id="neatnessBugs">
 
-<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness/Correctness:</p>
                           <ul>
                             <li>looks messy</li>
-                            <li>not well-formatted
+                            <li>not well-formatted</li>
+                            <li>broken links, other inaccuracies, typos, etc.
                             </li>
                           </ul>
                           </span>
                         </div>
                       </div>
                     </panel>
+                  </div>
+                  <p></p>
+                  <div class="indented-level2">
                     <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
                       <div>
                         <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
@@ -1512,10 +1516,11 @@ Ways to simplify diagrams:
                               </span>
                               <span id="neatnessBugs">
 
-<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness/Correctness:</p>
                               <ul>
                                 <li>looks messy</li>
-                                <li>not well-formatted
+                                <li>not well-formatted</li>
+                                <li>broken links, other inaccuracies, typos, etc.
                                 </li>
                               </ul>
                               </span>
@@ -1574,6 +1579,8 @@ Ways to simplify diagrams:
                       </div>
                     </panel>
                   </div>
+                  <p></p>
+                  <p></p>
                   <h5 id="pe-phase-1-part-iii-overall-evaluation-15-minutes"><span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span><a class="fa fa-anchor" href="#pe-phase-1-part-iii-overall-evaluation-15-minutes"></a></h5>
                   <ul>
                     <li>To be submitted via TEAMMATES. You are recommended to complete this during the PE session itself, but <mark>you have until the end of the day to submit (or revise) your submissions</mark>.</li>
@@ -1648,16 +1655,13 @@ Ways to simplify diagrams:
                       <p></p>
                       <div id="projectGrading-effort-instructions">
                         <p>
-                          <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong></p>
-                        <ul>
-                          <li><mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark></li>
-                          <li>The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.</li>
-                        </ul>
-                        <ul radio-group="e7d80" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Unable to judge</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Significantly less than a typical iP</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  Slightly less than a typical iP</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="e7d80" type="radio">  At least as much as a typical iP</label></li>
+                          <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong><br>
+                          <mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark><br> The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.<br>                          Use the person's PPP and RepoSense page to evaluate the effort.</p>
+                        <ul radio-group="301d7" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="301d7" type="radio">  Unable to judge</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="301d7" type="radio">  Significantly less than a typical iP</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="301d7" type="radio">  Slightly less than a typical iP</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="301d7" type="radio">  At least as much as a typical iP</label></li>
                         </ul>
                       </div>
                       <p>
@@ -1727,7 +1731,7 @@ Ways to simplify diagrams:
                     <li><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know ASAP.</li>
                     <li><strong>If the bug is reported multiple times</strong>,
                       <ul>
-                        <li>Mark <span class="text-danger">all copies <mark>EXCEPT one</mark></span> as duplicates of the one left out (let's call that one the <em>original</em>) using the <code>duplicate</code> tag.</li>
+                        <li>Mark <span class="text-danger">all copies <mark>EXCEPT one</mark></span> as duplicates of the one left out (let's call that one the <em>original</em>) using the <span aria-hidden="true" class="fas fa-check-square"></span> <code>A Duplicate of</code>                          tick box..</li>
                         <li>If the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark> as the <em>original</em>. But you can downgrade the severity of the original or the duplicates.</li>
                         <li>For each group of duplicates, all duplicates should point to one <em>original</em> i.e., no multiple levels of duplicates, and no cyclical duplication relationships.</li>
                         <li>If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the <code>type.*</code> and <code>severity.*</code> from the <em>original</em>.</li>
@@ -1736,7 +1740,7 @@ Ways to simplify diagrams:
                   </ul>
                   <p></p>
                   <ul>
-                    <li><strong>Apply exactly one of these labels</strong> (if missing, we assign: <code>response.Accepted</code>)</li>
+                    <li><strong>Apply one of these labels</strong> (if missing, we assign: <code>response.Accepted</code>)</li>
                   </ul>
                   <div class="indented">
                     <box>
@@ -1751,7 +1755,7 @@ Ways to simplify diagrams:
                     </box>
                   </div>
                   <ul>
-                    <li><strong>Apply exactly one of these labels</strong> (if missing, we assign: <code>type.FunctionalityBug</code>)</li>
+                    <li><strong>Apply one of these labels</strong> (if missing, we assign: <code>type.FunctionalityBug</code>)</li>
                   </ul>
                   <div class="indented" id="type-labels">
                     <box>
@@ -1785,7 +1789,7 @@ Ways to simplify diagrams:
                       <ul>
                         <li>If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated
                           tests and defensive coding techniques.</li>
-                        <li>It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never review it), provided the bug should have been reasonably apparent to a reviewer.
+                        <li>It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never reviewed it), provided the bug should have been reasonably apparent to a reviewer.
                           For example, if someone put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.</li>
                       </ul>
                     </li>
@@ -1901,7 +1905,7 @@ Ways to simplify diagrams:
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Mon, 13 Apr 2020, 15:11:38 GMT+8</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Mon, 13 Apr 2020, 17:09:45 GMT+8</small></div>
   </footer>
   </div>
 </body>
