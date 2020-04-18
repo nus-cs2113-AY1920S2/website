@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 6 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
@@ -43,7 +44,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -80,6 +81,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -96,9 +98,9 @@
             </ul>
           </nav>
           <p></p>
-          <h1 id="week-6-from-wed-feb-12-noon-tutorial">Week 6 <small><small><span class="dimmed">[from Wed Feb 12 noon]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-6-from-wed-feb-12-noon-tutorial"></a></h1>
+          <h1 id="week-6-from-wed-feb-12-noon-tutorial">Week 6 <small><small><span class="dimmed">[from Wed Feb 12 noon]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-6-from-wed-feb-12-noon-tutorial" onclick="event.stopPropagation()"></a></h1>
           <div>
-            <h4 id="1-demo-debugging-in-an-ide"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Demo debugging in an IDE<a class="fa fa-anchor" href="#1-demo-debugging-in-an-ide"></a></h4>
+            <h4 id="1-demo-debugging-in-an-ide"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Demo debugging in an IDE<a class="fa fa-anchor" href="#1-demo-debugging-in-an-ide" onclick="event.stopPropagation()"></a></h4>
             <box light type="success" add-class="ml-4"><template slot="icon"><span aria-hidden="true" class="fas fa-lightbulb"></span></template>
               <p><strong>Suggested pre-tutorial preparations</strong>:</p>
               <ul>
@@ -111,7 +113,9 @@
                   </ul>
                 </li>
               </ul>
-              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>FYI, here's a relevant video used in the textbook</p></template>
+              <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                  <p>FYI, here's a relevant video used in the textbook</p>
+                </template>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
             </box>
@@ -119,7 +123,7 @@
               <p>During the tutorial, <strong>demo your ability to do debugging using an IDE</strong> by performing the following tasks:</p>
               <ol>
                 <li>Set a breakpoint in the following method of the <code>Main</code> class.
-                  <pre><code class="hljs java"><span><span class="hljs-comment">/** Reads the user command and executes it, until the user issues the exit command.  */</span></span><span><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">runCommandLoopUntilExitCommand</span><span class="hljs-params">()</span> </span>{</span><span>    Command command;</span><span>    <span class="hljs-keyword">do</span> {</span><span>        String userCommandText = ui.getUserCommand();</span><span>        command = <span class="hljs-keyword">new</span> Parser().parseCommand(userCommandText);</span><span>        CommandResult result = executeCommand(command);</span><span>        personBook.setLastShownList(result.getRelevantPersons());</span><span>        ui.showResultToUser(result);</span><span>&#x200B;</span><span>    } <span class="hljs-keyword">while</span> (!ExitCommand.isExit(command));</span><span>}</span></code></pre>
+                  <pre><code class="hljs java"><span><span class="hljs-comment">/** Reads the user command and executes it, until the user issues the exit command.  */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">runCommandLoopUntilExitCommand</span><span class="hljs-params">()</span> </span>{<br></span><span>    Command command;<br></span><span>    <span class="hljs-keyword">do</span> {<br></span><span>        String userCommandText = ui.getUserCommand();<br></span><span>        command = <span class="hljs-keyword">new</span> Parser().parseCommand(userCommandText);<br></span><span>        CommandResult result = executeCommand(command);<br></span><span>        personBook.setLastShownList(result.getRelevantPersons());<br></span><span>        ui.showResultToUser(result);<br></span><span><br></span><span>    } <span class="hljs-keyword">while</span> (!ExitCommand.isExit(command));<br></span><span>}<br></span></code></pre>
                 </li>
                 <li>Show how to set a conditional breakpoint so that execution pauses when the user types in the command <code>list</code>.</li>
                 <li>Use the debugger to step through the code while explaining how the code works. Start from the <code>main</code> method.</li>
@@ -130,18 +134,19 @@
                 </li>
               </ol>
             </div>
-            <h4 id="2-demo-ip-using-the-jar-file"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Demo iP using the jar file<a class="fa fa-anchor" href="#2-demo-ip-using-the-jar-file"></a></h4>
+            <h4 id="2-demo-ip-using-the-jar-file"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Demo iP using the jar file<a class="fa fa-anchor" href="#2-demo-ip-using-the-jar-file" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>Copy your iP jar file to an empty folder.</li>
               <li>Do a quick demo of it to the tutor.</li>
             </ul>
-            <h4 id="3-show-your-tp-ug-draft"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Show your tP UG draft<a class="fa fa-anchor" href="#3-show-your-tp-ug-draft"></a></h4>
+            <h4 id="3-show-your-tp-ug-draft"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Show your tP UG draft<a class="fa fa-anchor" href="#3-show-your-tp-ug-draft" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>Show to the tutor your UG draft that you uploaded to LumiNUS.</li>
             </ul>
           </div>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -159,7 +164,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, 15 Apr 2020, 23:57:00 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sat, 18 Apr 2020, 19:21:51 GMT+8</small></div>
     </footer>
   </div>
 </body>

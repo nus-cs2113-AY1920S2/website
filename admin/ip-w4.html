@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: iP: Week 4</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -84,18 +85,12 @@
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
           <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/website/admin/moduleOverview.html" class="site-nav__a">CS2113/T Software Engineering & Object-Oriented Programming</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/usingThisWebsite.html" class="site-nav__a"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/moduleExpectations.html" class="site-nav__a">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Module Structure 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+            <li class="mt-2"><a href="/website/admin/moduleOverview.html" class="site-nav__a">CS2113/T Software Engineering & Object-Oriented Programming</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/usingThisWebsite.html" class="site-nav__a"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/moduleExpectations.html" class="site-nav__a">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Module Structure
+                <i class="dropdown-btn-icon rotate-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
               <div class="dropdown-container dropdown-container-open">
                 <ul class="pl-3 site-nav-list">
                   <li class="mt-2"><small><a href="/website/admin/weeklySchedule.html" class="site-nav__a">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
@@ -104,18 +99,12 @@
                 </ul>
               </div>
             </li>
-            <li class="mt-2"><a href="/website/admin/instructors.html" class="site-nav__a">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/textbooks.html" class="site-nav__a">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/programmingLanguages.html" class="site-nav__a">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
+            <li class="mt-2"><a href="/website/admin/instructors.html" class="site-nav__a">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/textbooks.html" class="site-nav__a">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/programmingLanguages.html" class="site-nav__a">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
             <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Individual Project (iP)
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+                <i class="dropdown-btn-icon rotate-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
               <div class="dropdown-container dropdown-container-open">
                 <ul class="pl-3 site-nav-list">
                   <li class="mt-2"><small><a href="/website/admin/ip-overview.html" class="site-nav__a">iP (Individual Project): Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
@@ -131,8 +120,8 @@
               </div>
             </li>
             <li class="mt-2"><button class="dropdown-btn">Team Project (tP)
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
               <div class="dropdown-container">
                 <ul class="pl-3 site-nav-list">
                   <li class="mt-2"><small><a href="/website/admin/tp-expectations.html" class="site-nav__a">tP (team project): Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
@@ -155,24 +144,14 @@
                 </ul>
               </div>
             </li>
-            <li class="mt-2"><a href="/website/admin/peerEvaluations.html" class="site-nav__a">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/tools.html" class="site-nav__a">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/exams.html" class="site-nav__a">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/participation.html" class="site-nav__a">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/gradeBreakdown.html" class="site-nav__a">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Appendices 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+            <li class="mt-2"><a href="/website/admin/peerEvaluations.html" class="site-nav__a">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/tools.html" class="site-nav__a">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/exams.html" class="site-nav__a">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/participation.html" class="site-nav__a">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/gradeBreakdown.html" class="site-nav__a">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Appendices
+                <i class="dropdown-btn-icon rotate-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
               <div class="dropdown-container dropdown-container-open">
                 <ul class="pl-3 site-nav-list">
                   <li class="mt-2"><small><a href="/website/admin/appendixA-principles.html" class="site-nav__a">Apdx A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
@@ -187,46 +166,41 @@
           </ul>
         </div>
       </nav>
+
       <div id="content-wrapper">
         <div class="website-content">
-          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 3</span>
-            </b-btn>
-            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w5.html"><span>iP: Week 5 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-            </b-btn>
-            </span>
-          </p>
+          <p><span class="float-left algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 3</span></b-btn>
+            </span><span class="float-right algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-w5.html"><span>iP: Week 5 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+            </span></p>
           <br>
           <p>
-            <div>
-              <h1 id="ip-week-4">iP: Week 4 <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span><a class="fa fa-anchor" href="#ip-week-4"></a></h1>
-            </div>
+          <div>
+            <h1 id="ip-week-4">iP: Week 4 <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span><a class="fa fa-anchor" href="#ip-week-4" onclick="event.stopPropagation()"></a></h1>
+          </div>
           </p>
           <div id="main">
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
               <ol>
-                <li><span>Create a PR to the upstream repo</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Friday before the tutorial</span>
-                  </span>
-                </li>
+                <li><span>Create a PR to the upstream repo</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Friday before the tutorial</span></span></li>
                 <li>Add Increments: <code>Level-4</code>, <code>A-TextUiTesting</code>, <code>A-CodeQuality</code></li>
-                <li><span>Get ready to review PRs</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the tutorial</span>
-                  </span>
-                </li>
+                <li><span>Get ready to review PRs</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the tutorial</span></span></li>
               </ol>
             </div>
             <div id="body">
               <div></div>
-              <h4 id="1-create-a-pr-to-the-upstream-repo-by-friday-before-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Create a PR to the upstream repo</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>                by Friday before the tutorial</span>
-                </span><a class="fa fa-anchor" href="#1-create-a-pr-to-the-upstream-repo-by-friday-before-the-tutorial"></a></h4>
+              <h4 id="1-create-a-pr-to-the-upstream-repo-by-friday-before-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Create a PR to the upstream repo</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Friday before the tutorial</span></span><a class="fa fa-anchor" href="#1-create-a-pr-to-the-upstream-repo-by-friday-before-the-tutorial" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
-                  <li>Create a <span trigger="click" for="modal:ipTasks-createPr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipTasks-createPr'].show()" class="trigger-click">pull request (PR)</span>                    from the <code>master</code> branch of your fork to the upstream repo. Here are the steps:
+                  <li>Create a <span trigger="click" for="modal:ipTasks-createPr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipTasks-createPr'].show()" class="trigger-click">pull request (PR)</span> from the <code>master</code> branch of your fork to the upstream repo. Here are the steps:
                     <ul>
                       <li>Go to your Duke fork on GitHub</li>
                       <li>Click on the <button type="button" class="btn btn-light btn-sm border"><strong>New pull request</strong></button> button in that page.</li>
-                      <li>In the next page, click on the green <button type="button" class="btn btn-success btn-sm"><strong><svg version="1.1" width="12" height="16" viewbox="0 0 12 16" class="octicon octicon-git-pull-request" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg> Create pull request</strong></button>                        button.</li>
-                      <li>Set the PR name as <code>[{Your name}] iP</code> e.g., <code>[John Doe] iP</code> <span class="dimmed">If you are reluctant to give full name, you may give the first half of your name only</span>.<br> You may leave the description
-                        as empty.</li>
+                      <li>In the next page, click on the green <button type="button" class="btn btn-success btn-sm"><strong><svg version="1.1" width="12" height="16" viewbox="0 0 12 16" class="octicon octicon-git-pull-request" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z" /></svg> Create pull request</strong></button> button.</li>
+                      <li>Set the PR name as <code>[{Your name}] iP</code> e.g., <code>[John Doe] iP</code> <span class="dimmed">If you are reluctant to give full name, you may give the first half of your name only</span>.<br>
+                        You may leave the description as empty.</li>
                       <li>Click the <button type="button" class="btn btn-success btn-sm"><strong>Create pull request</strong></button> button to create the PR.</li>
                       <li>As an additional precaution, you can go to the <a href="https://github.com/nus-cs2113-AY1920S2/duke/pulls">upstream Duke repo</a> to double-check that your PR is in the list of PRs.</li>
                     </ul>
@@ -239,8 +213,7 @@
                   </box>
                 </div>
                 <b-modal id="modal:ipTasks-createPr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipTasks-createPr"><template slot="modal-title">Pull Request (PR)</template>
-                  <p><em>Pull Requests</em> is a mechanism for offering code to a repository e.g., a bug fix or a new feature. PRs allow developers to review, discuss, and refine proposed code changes before incorporating (i.e., <em>merging</em>) the new
-                    code to the repository.</p>
+                  <p><em>Pull Requests</em> is a mechanism for offering code to a repository e.g., a bug fix or a new feature. PRs allow developers to review, discuss, and refine proposed code changes before incorporating (i.e., <em>merging</em>) the new code to the repository.</p>
                   <p>Resources:</p>
                   <ul>
                     <li><a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">GitHub Help page on PRs</a></li>
@@ -248,21 +221,20 @@
                 </b-modal>
               </div>
               <p></p>
-              <h4 id="2-add-increments-level-4-a-textuitesting-a-codequality"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Add Increments: <code>Level-4</code>, <code>A-TextUiTesting</code>, <code>A-CodeQuality</code><a class="fa fa-anchor" href="#2-add-increments-level-4-a-textuitesting-a-codequality"></a></h4>
+              <h4 id="2-add-increments-level-4-a-textuitesting-a-codequality"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Add Increments: <code>Level-4</code>, <code>A-TextUiTesting</code>, <code>A-CodeQuality</code><a class="fa fa-anchor" href="#2-add-increments-level-4-a-textuitesting-a-codequality" onclick="event.stopPropagation()"></a></h4>
               <div></div>
               <div>
                 <div class="indented">
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-4</code>: ToDo, Event, Deadline</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code>Level-4</code>: ToDo, Event, Deadline</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
-                        <p><span><thumbnail text=":fas-business-time:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-business-time"></span></thumbnail>
-                          </span>
-                        </p>
-                        <h3 id="level-4-todos-events-deadlines">Level 4. ToDos, Events, Deadlines<a class="fa fa-anchor" href="#level-4-todos-events-deadlines"></a></h3>
+                        <p><span>
+                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-business-time"></span></thumbnail>
+                          </span></p>
+                        <h3 id="level-4-todos-events-deadlines">Level 4. ToDos, Events, Deadlines<a class="fa fa-anchor" href="#level-4-todos-events-deadlines" onclick="event.stopPropagation()"></a></h3>
                         <p>Add support for tracking three types of tasks:
                           <br>
                           <br></p>
@@ -272,25 +244,29 @@
                           <li><strong>Events</strong>: tasks that start at a specific time and ends at a specific time <span class="dimmed">e.g., <em>team project meeting on 2/10/2019 2-4pm</em></span></li>
                         </ol>
                         <p>Example:</p>
-                        <pre><code class="hljs"><span>todo borrow book</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [T][✗] borrow book</span><span>     Now you have 5 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✗] return book (by: June 6th)</span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     4.[T][✓] join sports club</span><span>     5.[T][✗] borrow book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>deadline return book /by Sunday</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] return book (by: Sunday)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>event project meeting /at Mon 2-4pm</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [E][✗] project meeting (at: Mon 2-4pm)</span><span>     Now you have 7 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
+                        <pre><code class="hljs"><span>todo borrow book<br></span><span>    ____________________________________________________________<br></span><span>     Got it. I've added this task: <br></span><span>       [T][✗] borrow book<br></span><span>     Now you have 5 tasks in the list.<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>list<br></span><span>    ____________________________________________________________<br></span><span>     Here are the tasks in your list:<br></span><span>     1.[T][✓] read book<br></span><span>     2.[D][✗] return book (by: June 6th)<br></span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)<br></span><span>     4.[T][✓] join sports club<br></span><span>     5.[T][✗] borrow book<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>deadline return book /by Sunday<br></span><span>    ____________________________________________________________<br></span><span>     Got it. I've added this task: <br></span><span>       [D][✗] return book (by: Sunday)<br></span><span>     Now you have 6 tasks in the list.<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>event project meeting /at Mon 2-4pm<br></span><span>    ____________________________________________________________<br></span><span>     Got it. I've added this task: <br></span><span>       [E][✗] project meeting (at: Mon 2-4pm)<br></span><span>     Now you have 7 tasks in the list.<br></span><span>    ____________________________________________________________<br></span></code></pre>
                         <p>At this point, dates/times can be treated as strings; there is no need to convert them to actual dates/times.</p>
                         <p>Example:</p>
-                        <pre><code class="hljs"><span>&#x200B;</span><span>deadline do homework /by no idea :-p</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] do homework (by: no idea :-p)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
+                        <pre><code class="hljs"><span><br></span><span>deadline do homework /by no idea :-p<br></span><span>    ____________________________________________________________<br></span><span>     Got it. I've added this task: <br></span><span>       [D][✗] do homework (by: no idea :-p)<br></span><span>     Now you have 6 tasks in the list.<br></span><span>    ____________________________________________________________<br></span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Inheritance</code></strong></p></template>
+                            <panel class="algolia-no-index"><template slot="_header">
+                                <p><strong>Extension: <code>A-Inheritance</code></strong></p>
+                              </template>
                               <div>
                                 <div>
                                   <div></div>
-                                  <h3 id="a-inheritance"><span class="badge badge-pill badge-primary">A-Inheritance</span><a class="fa fa-anchor" href="#a-inheritance"></a></h3>
+                                  <h3 id="a-inheritance"><span class="badge badge-pill badge-primary">A-Inheritance</span><a class="fa fa-anchor" href="#a-inheritance" onclick="event.stopPropagation()"></a></h3>
                                   <p>     <big>↳</big> <strong>Use Inheritance to support multiple task types</strong></p>
                                 </div>
                                 <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
                                 <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
-                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
-                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-keyword">protected</span> String by;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Deadline</span><span class="hljs-params">(String description, String by)</span> </span>{</span><span>        <span class="hljs-keyword">super</span>(description);</span><span>        <span class="hljs-keyword">this</span>.by = by;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"[D]"</span> + <span class="hljs-keyword">super</span>.toString() + <span class="hljs-string">" (by: "</span> + by + <span class="hljs-string">")"</span>;</span><span>    }</span><span>}</span></code></pre>
-                                  <pre><code class="hljs java"><span>Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];</span><span>task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);</span></code></pre>
+                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header">
+                                    <p>Partial solution</p>
+                                  </template>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">protected</span> String by;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Deadline</span><span class="hljs-params">(String description, String by)</span> </span>{<br></span><span>        <span class="hljs-keyword">super</span>(description);<br></span><span>        <span class="hljs-keyword">this</span>.by = by;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"[D]"</span> + <span class="hljs-keyword">super</span>.toString() + <span class="hljs-string">" (by: "</span> + by + <span class="hljs-string">")"</span>;<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java"><span>Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];<br></span><span>task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);<br></span></code></pre>
                                 </panel>
                               </div>
                             </panel>
@@ -306,13 +282,12 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-TextUiTesting</code>: Automated Text UI Testing</strong></span> <span class="badge badge-pill badge-secondary">optional</span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code>A-TextUiTesting</code>: Automated Text UI Testing</strong></span> <span class="badge badge-pill badge-secondary">optional</span></span></div>
                       <div></div>
                       <div>
                         <div>
                           <div></div>
-                          <h3 id="a-textuitesting"><span class="badge badge-pill badge-primary">A-TextUiTesting</span><a class="fa fa-anchor" href="#a-textuitesting"></a></h3>
+                          <h3 id="a-textuitesting"><span class="badge badge-pill badge-primary">A-TextUiTesting</span><a class="fa fa-anchor" href="#a-textuitesting" onclick="event.stopPropagation()"></a></h3>
                           <p>     <big>↳</big> <strong>Test using the I/O redirection technique</strong></p>
                         </div>
                         <p>Use the input/output redirection technique to semi-automate the testing of Duke.</p>
@@ -327,28 +302,25 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-CodeQuality</code>: Improve Code Quality</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code>A-CodeQuality</code>: Improve Code Quality</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <div>
                           <div></div>
-                          <h3 id="a-codequality"><span class="badge badge-pill badge-primary">A-CodeQuality</span><a class="fa fa-anchor" href="#a-codequality"></a></h3>
+                          <h3 id="a-codequality"><span class="badge badge-pill badge-primary">A-CodeQuality</span><a class="fa fa-anchor" href="#a-codequality" onclick="event.stopPropagation()"></a></h3>
                           <p>     <big>↳</big> <strong>Improve code quality</strong></p>
                         </div>
                         <p>Critically examines the code and refactor to improve the code quality where necessary.</p>
                         <p>
-                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> When adding this increment, follow closely the 'Code Quality' topics you have learned so far, rather than merely follow your own
-                          intuition about code quality.</p>
+                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> When adding this increment, follow closely the 'Code Quality' topics you have learned so far, rather than merely follow your own intuition about code quality.
+                        </p>
                       </div>
                     </panel>
                   </div>
                 </div>
               </div>
               <p></p>
-              <h4 id="3-get-ready-to-review-prs-before-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span>Get ready to review PRs</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the
-                tutorial</span>
-                </span><a class="fa fa-anchor" href="#3-get-ready-to-review-prs-before-the-tutorial"></a></h4>
+              <h4 id="3-get-ready-to-review-prs-before-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span>Get ready to review PRs</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the tutorial</span></span><a class="fa fa-anchor" href="#3-get-ready-to-review-prs-before-the-tutorial" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li><strong>Do the following to prepare for the PR review exercise</strong> you will be doing in the coming tutorial. for that exercise. In particular, <mark>read the given blog post</mark> about code review best practices.</li>
@@ -358,7 +330,9 @@
                     <li>Read up the following guidelines:</li>
                   </ul>
                   <div class="indented-level2">
-                    <panel type class="embedding" expanded><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using GitHub → Guidelines for Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <panel type class="embedding" expanded><template slot="_header">
+                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using GitHub → Guidelines for Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                      </template>
                       <div>
                         <box type="success">
                           <p>We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
@@ -366,12 +340,11 @@
                         </box>
                         <ul>
                           <li>If you are new to GitHub PRs, see <a href="https://help.github.com/en/articles/about-pull-request-reviews">GitHub help on how to review PRs</a>.</li>
-                          <li>Read the blog post <a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - by David Lloyd (a Red Hat developer). In particular,
-                            follow the tip about phrasing objections as questions.</li>
+                          <li>Read the blog post <a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - by David Lloyd (a Red Hat developer). In particular, follow the tip about phrasing objections as questions.</li>
                           <li>Rather than give one overall comment for the entire PR, add specific comments at relevant places of the code.</li>
                           <li>Feel free to ask for more info from the author, to help you understand the code/design. For example, you can ask why the author chose to write the code in a specific way.</li>
                           <li>Feel free to compliment the author when appropriate <span class="dimmed">e.g., <em>hey, I like how clean this bit of code is</em> 👍</span></li>
-                          <li>You can also suggest alternatives for the author to consider. Feel free to refer back to your own PR if you think a comparison would benefit the author. <mark>You are very welcome to offer to help the author with the project</mark>                            (in your PR review, or outside of it) if you think the author needs such help i.e., as an informal mentor. Such mentoring will help both the author and you to become stronger programmers.</li>
+                          <li>You can also suggest alternatives for the author to consider. Feel free to refer back to your own PR if you think a comparison would benefit the author. <mark>You are very welcome to offer to help the author with the project</mark> (in your PR review, or outside of it) if you think the author needs such help i.e., as an informal mentor. Such mentoring will help both the author and you to become stronger programmers.</li>
                           <li>You can use Markdown (specifically, <a href="https://guides.github.com/features/mastering-markdown/">GitHub-Flavored Markdown</a>) in your comments.</li>
                         </ul>
                         <p><strong>Guidelines for authors</strong>:</p>
@@ -393,19 +366,17 @@
                   </ul>
                 </div>
                 <ul>
-                  <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Use the iP Code Dashboard to view others' code</strong>: We'll let you know when you can start using the <a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard">iP Code Dashboard</a>                    <span class="dimmed">(also available via <code>Links → iP Code Dashboard</code> item in the top navigation menu of the module website)</span> to easily view iP code written by classmates. Click on the <span class="badge badge-light"><span><span class="dimmed"><strong>&lt;/&gt;</strong></span></span>
-                    </span> icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy.</li>
+                  <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Use the iP Code Dashboard to view others' code</strong>: We'll let you know when you can start using the <a href="https://nus-cs2113-ay1920s2.github.io/ip-dashboard">iP Code Dashboard</a> <span class="dimmed">(also available via <code>Links → iP Code Dashboard</code> item in the top navigation menu of the module website)</span> to easily view iP code written by classmates. Click on the <span class="badge badge-light"><span><span class="dimmed"><strong>&lt;/&gt;</strong></span></span></span> icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module Policies → Policy on Reuse</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module Policies → Policy on Reuse</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template>
                     <div>
-                      <h3 id="policy-on-reuse">Policy on reuse <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
-                        <a class="fa fa-anchor" href="#policy-on-reuse"></a>
-                      </h3>
+                      <h3 id="policy-on-reuse">Policy on reuse <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#policy-on-reuse" onclick="event.stopPropagation()"></a></h3>
                       <div class="indented">
                         <div>
-                          <p><strong>Reuse is encouraged. However, note that reuse has its own costs</strong> (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done
-                            by others. Rather, you will be given credit for <em>reusing</em> work done by others.</p>
+                          <p><strong>Reuse is encouraged. However, note that reuse has its own costs</strong> (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others. Rather, you will be given credit for <em>reusing</em> work done by others.</p>
                           <ul>
                             <li>You are allowed to reuse work from your classmates, subject to following conditions:
                               <ul>
@@ -416,22 +387,19 @@
                             <li>You are allowed to reuse work from external sources, subject to following conditions:
                               <ul>
                                 <li>The work comes from a source of 'good standing' (such as an established open source project). This means you cannot reuse code written by an outside 'friend'.</li>
-                                <li>You clearly give credit to the original author. Acknowledge use of third party resources clearly e.g. in the welcome message, splash screen (if any) or under the 'about' menu. If you are open about reuse, you are less likely
-                                  to get into trouble if you unintentionally reused something copyrighted.</li>
-                                <li>You do not violate the license under which the work has been released. Please  <strong>do not use 3rd-party images/audio</strong> in your software unless they have been specifically released to be used freely. Just because
-                                  you found it in the Internet does not mean it is free for reuse.</li>
-                                <li><mark>Always get permission from us before you reuse</mark> third-party libraries. Please post your 'request to use 3rd party library' in our <a href="https://github.com/nus-cs2113-AY1920S2/forum/issues">forum</a>. That
-                                  way, the whole class get to see what libraries are being used by others.</li>
+                                <li>You clearly give credit to the original author. Acknowledge use of third party resources clearly e.g. in the welcome message, splash screen (if any) or under the 'about' menu. If you are open about reuse, you are less likely to get into trouble if you unintentionally reused something copyrighted.</li>
+                                <li>You do not violate the license under which the work has been released. Please  <strong>do not use 3rd-party images/audio</strong> in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.</li>
+                                <li><mark>Always get permission from us before you reuse</mark> third-party libraries. Please post your 'request to use 3rd party library' in our <a href="https://github.com/nus-cs2113-AY1920S2/forum/issues">forum</a>. That way, the whole class get to see what libraries are being used by others.</li>
                               </ul>
                             </li>
                           </ul>
                           <box>
-                            <h4 id="giving-credit-for-reused-work">Giving credit for reused work<a class="fa fa-anchor" href="#giving-credit-for-reused-work"></a></h4>
+                            <h4 id="giving-credit-for-reused-work">Giving credit for reused work<a class="fa fa-anchor" href="#giving-credit-for-reused-work" onclick="event.stopPropagation()"></a></h4>
                             <p>Given below are how to give credit for things you reuse from elsewhere. These requirements are specific to this module <span class="dimmed">i.e., not applicable outside the module (outside the module you should follow the rules specified by your employer and the license of the reused work)</span></p>
                             <p>If you <strong>used a third party library</strong>:</p>
                             <ul>
                               <li>iP/tP: Mention in the <code>README</code> file (under the <em>Acknowledgements</em> section)</li>
-                              <li>tP: Mention in the <span trigger="click" for="modal:reusePolicy-ppp" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-ppp'].show()" class="trigger-click">Project Portfolio Page</span>                                if the library has a significant relevance to the features you implemented</li>
+                              <li>tP: Mention in the <span trigger="click" for="modal:reusePolicy-ppp" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-ppp'].show()" class="trigger-click">Project Portfolio Page</span> if the library has a significant relevance to the features you implemented</li>
                             </ul>
                             <p>If you <strong>reused code snippets found on the Internet</strong> <span class="dimmed">e.g. from StackOverflow answers</span> or<br>
                               <strong>referred code in another software</strong> or<br>
@@ -439,78 +407,77 @@
                             <ul>
                               <li>If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
                                 <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:
-                                <pre><code class="hljs java"><span><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span></span><span>{Your implmentation of the reused solution here ...}</span></code></pre>
+                                <pre><code class="hljs java"><span><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span><br></span><span>{Your implmentation of the reused solution here ...}<br></span></code></pre>
                               </li>
-                              <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using <span trigger="click"
-                                  for="modal:reusePolicy-authorTags" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-authorTags'].show()" class="trigger-click"><code>@@author</code> tags</span>)<br>                                Format:
-                                <pre><code class="hljs java"><span><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span></span><span><span class="hljs-comment">//{Info about the source...}</span></span><span>&#x200B;</span><span>{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}</span></span><span><span class="hljs-function"></span></span><span><span class="hljs-function"><span class="hljs-comment">//@@author</span></span></span></code></pre><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):
-                                <pre><code class="hljs java"><span>persons = getList()</span><span><span class="hljs-comment">//@@author johndoe-reused</span></span><span><span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span></span><span>Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : <span class="hljs-number">0</span>;</span><span>    }</span><span>});</span><span><span class="hljs-comment">//@@author</span></span><span><span class="hljs-keyword">return</span> persons;</span></code></pre>
+                              <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using <span trigger="click" for="modal:reusePolicy-authorTags" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-authorTags'].show()" class="trigger-click"><code>@@author</code> tags</span>)<br>
+                                Format:
+                                <pre><code class="hljs java"><span><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span><br></span><span><span class="hljs-comment">//{Info about the source...}</span><br></span><span><br></span><span>{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}</span><br></span><span><span class="hljs-function"></span><br></span><span><span class="hljs-function"><span class="hljs-comment">//@@author</span></span><br></span></code></pre><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):
+                                <pre><code class="hljs java"><span>persons = getList()<br></span><span><span class="hljs-comment">//@@author johndoe-reused</span><br></span><span><span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span><br></span><span>Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {<br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : <span class="hljs-number">0</span>;<br></span><span>    }<br></span><span>});<br></span><span><span class="hljs-comment">//@@author</span><br></span><span><span class="hljs-keyword">return</span> persons;<br></span></code></pre>
                               </li>
                             </ul>
                           </box>
                           <b-modal id="modal:reusePolicy-authorTags" hide-footer size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-authorTags"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project mid-v1.3 (extract) →</template>
-                            <div>
-                              <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship"></a></h4>
+                              <div>
+                              <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship" onclick="event.stopPropagation()"></a></h4>
                               <ul>
                                 <li>
-                                  <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code>//@@author</code>                                    tag or the end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
-                                  <pre><code class="hljs"><span>//@@author johndoe</span><span>method 1 ...</span><span>method 2 ...</span><span>//@@author sarahkhoo</span><span>method 3 ...</span><span>//@@author johndoe</span><span>method 4 ...</span></code></pre>
+                                  <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br>
+                                    The <code>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.
+                                    Here is a sample code file:</p>
+                                  <pre><code class="hljs"><span>//@@author johndoe<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span><span>//@@author sarahkhoo<br></span><span>method 3 ...<br></span><span>//@@author johndoe<br></span><span>method 4 ...<br></span></code></pre>
                                 </li>
                                 <li>
-                                  <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below
-                                    yours can add the GitHub username to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
-                                  <pre><code class="hljs"><span>method 0 ...</span><span>//@@author johndoe</span><span>method 1 ...</span><span>method 2 ...</span><span>//@@author</span><span>method 3 ...</span><span>method 4 ...</span></code></pre>
+                                  <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
+                                    Here is a sample code with an empty <code>author</code> tag:</p>
+                                  <pre><code class="hljs"><span>method 0 ...<br></span><span>//@@author johndoe<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span><span>//@@author<br></span><span>method 3 ...<br></span><span>method 4 ...<br></span></code></pre>
                                 </li>
                                 <li>
-                                  <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br> Here is an example code from an xml/fxml file.</p>
-                                  <pre><code class="hljs"><span>&lt;!-- @@author sereneWong --&gt;</span><span>&lt;textbox&gt;</span><span>  &lt;label&gt;...&lt;/label&gt;</span><span>  &lt;input&gt;...&lt;/input&gt;</span><span>&lt;/textbox&gt;</span><span>...</span></code></pre>
+                                  <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
+                                    Here is an example code from an xml/fxml file.</p>
+                                  <pre><code class="hljs"><span>&lt;!-- @@author sereneWong --&gt;<br></span><span>&lt;textbox&gt;<br></span><span>  &lt;label&gt;...&lt;/label&gt;<br></span><span>  &lt;input&gt;...&lt;/input&gt;<br></span><span>&lt;/textbox&gt;<br></span><span>...<br></span></code></pre>
                                 </li>
                                 <li>
-                                  <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong>.<br> 👎
-                                    <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
-                                  </p>
-                                  <pre><code class="hljs"><span>/**</span><span>  * Returns true if ...</span><span>  * @@author johndoe</span><span>  */</span></code></pre>
-                                  <p>👍<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
-                                  </p>
-                                  <pre><code class="hljs"><span>//@@author johndoe</span><span>/**</span><span>  * Returns true if ...</span><span>  */</span></code></pre>
+                                  <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong>.<br>
+                                    👎<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+                                  <pre><code class="hljs"><span>/**<br></span><span>  * Returns true if ...<br></span><span>  * @@author johndoe<br></span><span>  */<br></span></code></pre>
+                                  <p>👍<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+                                  <pre><code class="hljs"><span>//@@author johndoe<br></span><span>/**<br></span><span>  * Returns true if ...<br></span><span>  */<br></span></code></pre>
                                 </li>
                               </ul>
-                              <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate"></a></h4>
+                              <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate" onclick="event.stopPropagation()"></a></h4>
                               <ul>
                                 <li>
                                   <p><strong>Annotate both functional and test code</strong> There is no need to annotate documentation files.</p>
                                 </li>
                                 <li>
-                                  <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed">e.g., a class, a sequence of methods, a  method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong>                                    but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement.</p>
+                                  <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed">e.g., a class, a sequence of methods, a method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong> but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement.</p>
                                   <ul>
                                     <li>If an enhancement required you to do tiny changes in many places, there is no need to annotate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
                                     <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
-                                    <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused
-                                      from somewhere.
-                                    </li>
-                                    <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a>                                      feature that can help you determine who wrote a piece of code.</li>
+                                    <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from somewhere.</li>
+                                    <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li>
                                   </ul>
                                 </li>
                                 <li>
-                                  <p><strong>Do not try to boost the quantity of your contribution using unethical means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests.
-                                    Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication. Individual members are responsible for making sure code attributed to them are correct. If you notice
-                                    a team member claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
+                                  <p><strong>Do not try to boost the quantity of your contribution using unethical means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.
+                                    Individual members are responsible for making sure code attributed to them are correct.
+                                    If you notice a team member claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
                                 </li>
                                 <li>
                                   <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
                                   <ul>
                                     <li>Create a folder called <code>{project root}/unused</code></li>
                                     <li>Move unused files (or copies of files containing unused code) to that folder</li>
-                                    <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
-                                    </li>
+                                    <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>)
+                                      e.g.</li>
                                   </ul>
-                                  <pre><code class="hljs"><span>//@@author johndoe-unused</span><span>method 1 ...</span><span>method 2 ...</span></code></pre>
+                                  <pre><code class="hljs"><span>//@@author johndoe-unused<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span></code></pre>
                                   <p>Please put a comment in the code to explain why it was not used.</p>
                                 </li>
                                 <li>
-                                  <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>) e.g.
-                                  </p>
-                                  <pre><code class="hljs"><span>//@@author johndoe-reused</span><span>method 1 ...</span><span>method 2 ...</span></code></pre>
+                                  <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>)
+                                    e.g.</p>
+                                  <pre><code class="hljs"><span>//@@author johndoe-reused<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span></code></pre>
                                 </li>
                                 <li>
                                   <p><strong>You can use empty <code>@@author</code> tags to mark code as not yours when RepoSense attribute the to you incorrectly.</strong></p>
@@ -519,8 +486,7 @@
                                       <p><strong>Code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
                                     </li>
                                     <li>
-                                      <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These should not be claimed as yours but you can mention these additional contributions in the Project Portfolio page if you want to claim
-                                        credit for them.</p>
+                                      <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These should not be claimed as yours but you can mention these additional contributions in the Project Portfolio page if you want to claim credit for them.</p>
                                     </li>
                                   </ul>
                                 </li>
@@ -528,21 +494,20 @@
                             </div>
                           </b-modal>
                           <b-modal id="modal:reusePolicy-ppp" hide-footer size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Project Portfolio Page</template>
-                            <div>
+                              <div>
                               <div>
                                 <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
-                                <h4 id="ppp-objectives"><span class="badge badge-info">PPP</span> <span class="text-info">Objectives</span><a class="fa fa-anchor" href="#ppp-objectives"></a></h4>
+                                <h4 id="ppp-objectives"><span class="badge badge-info">PPP</span> <span class="text-info">Objectives</span><a class="fa fa-anchor" href="#ppp-objectives" onclick="event.stopPropagation()"></a></h4>
                                 <ul>
                                   <li>For you to use <span class="dimmed">(e.g. in your resume)</span> as a well-documented data point of your SE experience</li>
                                   <li>For evaluators to use as a data point to evaluate your project contributions</li>
                                 </ul>
-                                <h4 id="ppp-sections-to-include"><span class="badge badge-info">PPP</span> <span class="text-info">Sections to include</span><a class="fa fa-anchor" href="#ppp-sections-to-include"></a></h4>
+                                <h4 id="ppp-sections-to-include"><span class="badge badge-info">PPP</span> <span class="text-info">Sections to include</span><a class="fa fa-anchor" href="#ppp-sections-to-include" onclick="event.stopPropagation()"></a></h4>
                                 <ul>
-                                  <li><strong>Overview</strong>: A short overview of your product to provide some context to the reader. The opening 1-2 sentences may be reused by all team members. If your product overview extends beyond 1-2 sentences, the
-                                    remainder should be written by yourself.</li>
+                                  <li><strong>Overview</strong>: A short overview of your product to provide some context to the reader. The opening 1-2 sentences may be reused by all team members. If your product overview extends beyond 1-2 sentences, the remainder should be written by yourself.</li>
                                   <li><strong>Summary of Contributions</strong> --Suggested items to include:
                                     <ul>
-                                      <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard/#breakdown=true">tP Code Dashboard</a>. The link is available in the <a href="/website/admin/projectList.html">Project List Page</a>                                        -- linked to the <span aria-hidden="true" class="fas fa-code"></span> icon under your photo.</li>
+                                      <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard/#breakdown=true">tP Code Dashboard</a>. The link is available in the <a href="/website/admin/projectList.html">Project List Page</a> -- linked to the <span aria-hidden="true" class="fas fa-code"></span> icon under your photo.</li>
                                       <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
                                       <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
                                       <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
@@ -561,27 +526,27 @@
                                   <div>
                                     <box>
                                       <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-                                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p></template>
+                                      <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p>
+                                        </template>
                                         <span id="example-team-tasks">
-<p>Here is a non-exhaustive list of team-tasks:</p>
-<ol>
-<li>Necessary general code enhancements</li>
-<li>Setting up tools e.g., GitHub, Gradle</li>
-<li>Maintaining the issue tracker</li>
-<li>Release management</li>
-<li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
-                                        <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
-                                        </ol>
-                                        </span>
-                                      </panel>
+                                          <p>Here is a non-exhaustive list of team-tasks:</p>
+                                          <ol>
+                                            <li>Necessary general code enhancements</li>
+                                            <li>Setting up tools e.g., GitHub, Gradle</li>
+                                            <li>Maintaining the issue tracker</li>
+                                            <li>Release management</li>
+                                            <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
+                                            <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                                          </ol>
+                                        </span></panel>
                                       <p></p>
                                     </box>
                                   </div>
                                 </b-modal>
                                 <div class="indented-level2">
                                   <box border-left-color="darkcyan">
-                                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention
-                                      things that will earn you a fair score <span class="dimmed">e.g., explain how deep the enhancement is, why it is <em>complete</em>, how hard it was to implement etc.</span>.
+                                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention things that will earn you a fair score <span class="dimmed">e.g., explain how deep the enhancement is, why it is <em>complete</em>, how hard it was to implement etc.</span>.
                                     </p>
                                   </box>
                                 </div>
@@ -591,14 +556,13 @@
                                       <span class="dimmed">The purpose of allowing you to include <em>proposed</em> features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.</span></p>
                                   </li>
                                   <li>
-                                    <p><strong>[Optional] Contributions to the Developer Guide (Extracts)</strong>: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills
-                                      and UML modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.</p>
+                                    <p><strong>[Optional] Contributions to the Developer Guide (Extracts)</strong>: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.</p>
                                   </li>
                                   <li>
                                     <p>[Optional] If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded).</p>
                                   </li>
                                 </ul>
-                                <h4 id="ppp-format"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span><a class="fa fa-anchor" href="#ppp-format"></a></h4>
+                                <h4 id="ppp-format"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span><a class="fa fa-anchor" href="#ppp-format" onclick="event.stopPropagation()"></a></h4>
                                 <ul>
                                   <li>File name (i.e., in the repo): <code>docs/team/githbub_username_in_lower_case.md</code> e.g., <code>docs/team/goodcoder123.md</code></li>
                                   <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://se-edu.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
@@ -607,13 +571,14 @@
                                   <div>
                                     <box type="important" light>
                                       <ul>
-                                        <li><strong>To convert the UG/DG/PPP into PDF format</strong>, go to the generated page in your project's <a href="http://github.io">github.io</a> site and use <a href="/website/admin/usingThisWebsite.html#saving-as-pdf-files">this technique</a>                                          to save as a pdf file. <mark>Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.</mark> You may un-tick the <code>background graphics</code> option
-                                          as well if you wish.</li>
+                                        <li><strong>To convert the UG/DG/PPP into PDF format</strong>, go to the generated page in your project's <a href="http://github.io">github.io</a> site and use <a href="/website/admin/usingThisWebsite.html#saving-as-pdf-files">this technique</a> to save as a pdf file. <mark>Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.</mark> You may un-tick the <code>background graphics</code> option as well if you wish.</li>
                                       </ul>
                                       <div class="indented-level2">
-                                        <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Using This Webiste → Saving as PDF Files <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                                            <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Using This Webiste → Saving as PDF Files <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                                          </template>
                                           <div>
-                                            <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files"></a></h3>
+                                            <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files" onclick="event.stopPropagation()"></a></h3>
                                             <ol>
                                               <li>
                                                 <p>Use Chrome to load the page you want to save as pdf.</p>
@@ -631,14 +596,13 @@
                                       </div>
                                       <p></p>
                                       <ul>
-                                        <li><strong>Ensure hyperlinks in the pdf files work</strong>. Your UG/DG/PPP will be evaluated using PDF files during the PE. <mark>Broken/non-working hyperlinks in the PDF files will be reported as bugs</mark> and
-                                          will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
+                                        <li><strong>Ensure hyperlinks in the pdf files work</strong>. Your UG/DG/PPP will be evaluated using PDF files during the PE. <mark>Broken/non-working hyperlinks in the PDF files will be reported as bugs</mark> and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
                                         </li>
                                       </ul>
                                     </box>
                                   </div>
                                 </div>
-                                <h4 id="ppp-page-limit"><span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span><a class="fa fa-anchor" href="#ppp-page-limit"></a></h4>
+                                <h4 id="ppp-page-limit"><span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span><a class="fa fa-anchor" href="#ppp-page-limit" onclick="event.stopPropagation()"></a></h4>
                                 <div class="indented-level2">
                                   <div class="table-responsive">
                                     <table class="markbind-table table table-bordered table-striped">
@@ -670,8 +634,7 @@
                                   </div>
                                 </div>
                                 <ul>
-                                  <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a
-                                    lot of spacing around content.</li>
+                                  <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
                                 </ul>
                               </div>
                             </div>
@@ -687,27 +650,23 @@
             </div>
           </div>
           <br>
-          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 3</span>
-            </b-btn>
-            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w5.html"><span>iP: Week 5 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-            </b-btn>
-            </span>
-          </p>
+          <p><span class="float-left algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 3</span></b-btn>
+            </span><span class="float-right algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-w5.html"><span>iP: Week 5 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+            </span></p>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#ip-week-4">iP: Week 4 
-          &#x200E;</a>
+            <a class="nav-link py-1" href="#ip-week-4">iP: Week 4 &#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-create-a-pr-to-the-upstream-repo-by-friday-before-the-tutorial">1 Create a PR to the upstream repo  by Friday
-          before the tutorial
-          &#x200E;</a>
+              <a class="nav-link py-1" href="#1-create-a-pr-to-the-upstream-repo-by-friday-before-the-tutorial">1 Create a PR to the upstream repo by Friday before the tutorial&#x200E;</a>
               <a class="nav-link py-1" href="#2-add-increments-level-4-a-textuitesting-a-codequality">2 Add Increments: Level-4, A-TextUiTesting, A-CodeQuality&#x200E;</a>
-              <a class="nav-link py-1" href="#3-get-ready-to-review-prs-before-the-tutorial">3 Get ready to review PRs  before the tutorial
-          &#x200E;</a>
+              <a class="nav-link py-1" href="#3-get-ready-to-review-prs-before-the-tutorial">3 Get ready to review PRs before the tutorial&#x200E;</a>
             </nav>
 
           </nav>
@@ -716,7 +675,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, 15 Apr 2020, 23:57:00 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sat, 18 Apr 2020, 19:21:51 GMT+8</small></div>
     </footer>
   </div>
 </body>

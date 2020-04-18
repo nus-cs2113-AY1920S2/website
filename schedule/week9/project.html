@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 9 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
@@ -43,7 +44,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -80,6 +81,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -96,56 +98,50 @@
             </ul>
           </nav>
           <p></p>
-          <h1 id="week-9-from-wed-mar-11-noon-project">Week 9 <small><small><span class="dimmed">[from Wed Mar 11 noon]</span> - Project</small></small><a class="fa fa-anchor" href="#week-9-from-wed-mar-11-noon-project"></a></h1>
+          <h1 id="week-9-from-wed-mar-11-noon-project">Week 9 <small><small><span class="dimmed">[from Wed Mar 11 noon]</span> - Project</small></small><a class="fa fa-anchor" href="#week-9-from-wed-mar-11-noon-project" onclick="event.stopPropagation()"></a></h1>
           <div>
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3 pl-2" style="color: purple;">
-              <p><strong>tP:</strong> <span class="border rounded text-success border-success pr-1 pl-1"><span aria-hidden="true" class="fas fa-tag"></span> <strong>v1.0</strong></span>
-              </p>
+              <p><strong>tP:</strong> <span class="border rounded text-success border-success pr-1 pl-1"><span aria-hidden="true" class="fas fa-tag"></span> <strong>v1.0</strong></span></p>
               <div>
                 <ol>
-                  <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Make the code more defensive</span>
-                  </li>
-                  <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Deliver v1.0</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> midnight before the tutorial</span>
-                    </span>
-                  </li>
-                  <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Do an informal demo of v1.0</span> <span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> during the tutorial</span>
-                    </span>
-                  </li>
+                  <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Make the code more defensive</span></li>
+                  <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Deliver v1.0</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> midnight before the tutorial</span></span></li>
+                  <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Do an informal demo of v1.0</span> <span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> during the tutorial</span></span></li>
                 </ol>
               </div>
             </div>
-            <h2 id="tp-v1-0">tP: v1.0<a class="fa fa-anchor" href="#tp-v1-0"></a></h2>
+            <h2 id="tp-v1-0">tP: v1.0<a class="fa fa-anchor" href="#tp-v1-0" onclick="event.stopPropagation()"></a></h2>
             <div>
               <div></div>
-              <h4 id="1-make-the-code-more-defensive"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Make the code more defensive</span><a class="fa fa-anchor" href="#1-make-the-code-more-defensive"></a></h4>
+              <h4 id="1-make-the-code-more-defensive"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Make the code more defensive</span><a class="fa fa-anchor" href="#1-make-the-code-more-defensive" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li><strong>Improve the defensiveness of the code</strong>: We recommend you add assertions, exceptions, and logging to your code.<br>
                     <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Remember to enable assertions in your,
                     <ul>
                       <li><a href="https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea">IDEA run configurations</a> -- if your Intellij is set not to use Gradle when running the project)</li>
-                      <li><a href="https://stackoverflow.com/questions/48396274/how-to-enable-assertions-in-the-gradle-run-task">the <code>build.gradle</code> file</a> -- if you use Gradle to run the project, or if your Intellij is using Gradle to run the
-                        project</li>
+                      <li><a href="https://stackoverflow.com/questions/48396274/how-to-enable-assertions-in-the-gradle-run-task">the <code>build.gradle</code> file</a> -- if you use Gradle to run the project, or if your Intellij is using Gradle to run the project</li>
                     </ul>
                   </li>
                 </ul>
               </div>
               <p></p>
-              <h4 id="2-deliver-v1-0-midnight-before-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Deliver v1.0</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>                midnight before the tutorial</span>
-                </span><a class="fa fa-anchor" href="#2-deliver-v1-0-midnight-before-the-tutorial"></a></h4>
+              <h4 id="2-deliver-v1-0-midnight-before-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Deliver v1.0</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> midnight before the tutorial</span></span><a class="fa fa-anchor" href="#2-deliver-v1-0-midnight-before-the-tutorial" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li>When the v1.0 is ready, do a release on GitHub. Remember to upload the jar file as well.</li>
                   <li>Wrap up the milestone on GitHub.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Project schedule tracking</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Project schedule tracking</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template>
                     <div>
                       <h3 id="project-schedule-tracking">
-                        <div class="text-white bg-dark p-1">Project Schedule Tracking</div><a class="fa fa-anchor" href="#project-schedule-tracking"></a></h3>
-                      <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to
-                        reflect the current status of the project. You can also use GitHub's <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
-                      <h4 id="using-issues">Using Issues:<a class="fa fa-anchor" href="#using-issues"></a></h4>
+                        <div class="text-white bg-dark p-1">Project Schedule Tracking</div><a class="fa fa-anchor" href="#project-schedule-tracking" onclick="event.stopPropagation()"></a>
+                      </h3>
+                      <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current status of the project. You can also use GitHub's <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
+                      <h4 id="using-issues">Using Issues:<a class="fa fa-anchor" href="#using-issues" onclick="event.stopPropagation()"></a></h4>
                       <ul>
                         <li>
                           <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong>
@@ -159,24 +155,20 @@
                           <p><strong>Formalize the project plan</strong> by assigning relevant issues to the corresponding milestone.</p>
                         </li>
                         <li>
-                          <p><strong>Define project tasks as issues</strong>. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks. <mark>Create issues for each</mark>                            of those tasks so that they can be tracked.<span class="dimmed">e.g.</span></p>
+                          <p><strong>Define project tasks as issues</strong>. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks. <mark>Create issues for each</mark> of those tasks so that they can be tracked.<span class="dimmed">e.g.</span></p>
                           <ul>
                             <li>
                               <p>A typical task should be able to done by one person, in a few hours.</p>
                               <ul>
-                                <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad (reasons: not a one-person task, not small enough): <code>Write the Developer Guide</code></span>
-                                </li>
-                                <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good: <code>Update class diagram in the Developer Guide for v2.1</code></span>
-                                </li>
+                                <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad (reasons: not a one-person task, not small enough): <code>Write the Developer Guide</code></span></li>
+                                <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good: <code>Update class diagram in the Developer Guide for v2.1</code></span></li>
                               </ul>
                             </li>
                             <li>
                               <p>There is no need to break things into VERY small tasks. Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
                               <ul>
-                                <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad:<code>Implementing parser</code> (reason: too big).</span>
-                                </li>
-                                <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good:<code>Implementing parser support for adding of floating tasks</code></span>
-                                </li>
+                                <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad:<code>Implementing parser</code> (reason: too big).</span></li>
+                                <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good:<code>Implementing parser support for adding of floating tasks</code></span></li>
                               </ul>
                             </li>
                             <li>
@@ -185,8 +177,7 @@
                             <li>
                               <p>Write a descriptive title for the issue. <span class="dimmed">e.g. <code>Add support for the 'undo' command to the parser</code></span></p>
                               <ul>
-                                <li>Omit redundant details. In some cases, the issue title is enough to describe the task. In that case, no need to repeat it in the issue description. There is no need for well-crafted and detailed descriptions for tasks.
-                                  A minimal description is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.<br><br></li>
+                                <li>Omit redundant details. In some cases, the issue title is enough to describe the task. In that case, no need to repeat it in the issue description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.<br><br></li>
                               </ul>
                             </li>
                           </ul>
@@ -196,13 +187,12 @@
                         </li>
                       </ul>
                       <div id="using-milestones">
-                        <h4 id="using-milestones">Using Milestones:<a class="fa fa-anchor" href="#using-milestones"></a></h4>
+                        <h4 id="using-milestones">Using Milestones:<a class="fa fa-anchor" href="#using-milestones" onclick="event.stopPropagation()"></a></h4>
                         <p><mark>Given below are the conditions to satisfy for a milestone to be considered properly managed</mark>:</p>
                         <p><strong>Planning a Milestone</strong>:<br></p>
                         <ul>
                           <li>
-                            <p><strong>Issues assigned to the milestone, team members assigned to issues</strong>: Used <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which
-                              milestone by assigning issues to suitable milestones. Ensured issues are assigned to team members. <span class="dimmed">Note that you can change the milestone plan along the way as necessary.</span></p>
+                            <p><strong>Issues assigned to the milestone, team members assigned to issues</strong>: Used <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones. Ensured issues are assigned to team members. <span class="dimmed">Note that you can change the milestone plan along the way as necessary.</span></p>
                           </li>
                           <li>
                             <p><strong>Deadline set for the milestones</strong> (in the GitHub milestone). <span class="dimmed">Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</span></p>
@@ -211,7 +201,8 @@
                         <p><strong>Wrapping up a Milestone</strong>:<br></p>
                         <ul>
                           <li>
-                            <p><strong>A working product tagged</strong> with the correct tag (e.g. <code>v2.0</code>) and is pushed to the main repo<br> or a <strong>product <em>release</em> done on GitHub</strong>.</p>
+                            <p><strong>A working product tagged</strong> with the correct tag (e.g. <code>v2.0</code>) and is pushed to the main repo<br>
+                              or a <strong>product <em>release</em> done on GitHub</strong>.</p>
                           </li>
                           <li>
                             <p><strong>All tests passing</strong> on Travis for the version tagged/released.</p>
@@ -235,8 +226,7 @@
                 <p></p>
               </div>
               <p></p>
-              <h4 id="3-do-an-informal-demo-of-v1-0-during-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Do an informal demo of v1.0</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>                during the tutorial</span>
-                </span><a class="fa fa-anchor" href="#3-do-an-informal-demo-of-v1-0-during-the-tutorial"></a></h4>
+              <h4 id="3-do-an-informal-demo-of-v1-0-during-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Do an informal demo of v1.0</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> during the tutorial</span></span><a class="fa fa-anchor" href="#3-do-an-informal-demo-of-v1-0-during-the-tutorial" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li><strong>Do an informal demo</strong> of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the jar file.</li>
@@ -247,6 +237,7 @@
           </div>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -255,11 +246,9 @@
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#tp-v1-0">tP: v1.0&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-                <a class="nav-link py-1" href="#1-make-the-code-more-defensive">1  Make the code more defensive&#x200E;</a>
-                <a class="nav-link py-1" href="#2-deliver-v1-0-midnight-before-the-tutorial">2  Deliver v1.0           midnight before the tutorial
-          &#x200E;</a>
-                <a class="nav-link py-1" href="#3-do-an-informal-demo-of-v1-0-during-the-tutorial">3  Do an informal demo of v1.0           during the tutorial
-          &#x200E;</a>
+                <a class="nav-link py-1" href="#1-make-the-code-more-defensive">1 Make the code more defensive&#x200E;</a>
+                <a class="nav-link py-1" href="#2-deliver-v1-0-midnight-before-the-tutorial">2 Deliver v1.0 midnight before the tutorial&#x200E;</a>
+                <a class="nav-link py-1" href="#3-do-an-informal-demo-of-v1-0-during-the-tutorial">3 Do an informal demo of v1.0 during the tutorial&#x200E;</a>
               </nav>
             </nav>
 
@@ -269,7 +258,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, 15 Apr 2020, 23:57:00 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sat, 18 Apr 2020, 19:21:51 GMT+8</small></div>
     </footer>
   </div>
 </body>

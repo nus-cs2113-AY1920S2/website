@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Textbook Chapter [Printable] : Modeling</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="icon" href="/website/favicon.ico">
 </head>
@@ -29,49 +30,43 @@
         <div class="website-content">
           <div id="title">
             <div>
-              <h1 id="modeling"><span>Modeling</span><a class="fa fa-anchor" href="#modeling"></a></h1>
+              <h1 id="modeling"><span>Modeling</span><a class="fa fa-anchor" href="#modeling" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
           <div>
             <p><small><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></p>
           </div>
           <p>
-            <div>
-              <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
-            </div>
+          <div>
+            <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h2>
+          </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true"
-                  class="glyphicon glyphicon-star-empty"></span>
-                <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                </small>
-                </small>
-                </span><a class="fa fa-anchor" href="#what"></a></h4>
+              <h4 id="what">What <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>A <em>model</em> is a representation of something else.</strong></p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <span trigger="click" for="modal:modellingIntro-classDiagram" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-classDiagram'].show()"
-                        class="trigger-click">class diagram</span> is a model that represents a software design.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <span trigger="click" for="modal:modellingIntro-classDiagram" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-classDiagram'].show()" class="trigger-click">class diagram</span> is a model that represents a software design.</p>
                   </box>
                   <b-modal id="modal:modellingIntro-classDiagram" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-classDiagram"><template slot="modal-title">Class diagrams</template>
                     <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
                       <span><span aria-hidden="true" class="fas fa-cube"></span></span> An example class diagram:<br></p>
-                    <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></b-modal>
-                  <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are <span trigger="click" for="modal:modellingIntro-abstraction"
-                      v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-abstraction'].show()" class="trigger-click">abstractions</span>.</p>
+                    <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
+                  </b-modal>
+                  <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are <span trigger="click" for="modal:modellingIntro-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-abstraction'].show()" class="trigger-click">abstractions</span>.</p>
                   <b-modal id="modal:modellingIntro-abstraction" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-abstraction"><template slot="modal-title"><span class="dimmed">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></span></template>
                     <div>
                       <div></div>
                       <p></p>
                       <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Abstraction →
-</span></strong>
-                        </span>
-                      </p>
+                            </span></strong></span></p>
                       <div id="title-and-body">
                         <div>
-                          <h4 id="what-2"><span>What</span><a class="fa fa-anchor" href="#what-2"></a></h4>
+                          <h4 id="what-2"><span>What</span><a class="fa fa-anchor" href="#what-2" onclick="event.stopPropagation()"></a></h4>
                         </div>
                         <div id="main">
                           <div>
@@ -80,12 +75,10 @@
                                 <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                               </div>
                             </box>
-                            <p><strong>The guiding principle of abstraction is that only details that are relevant to the current perspective or the task at hand needs to be considered.</strong> As most programs are written to solve complex problems involving
-                              large amounts of intricate details, it is impossible to deal with all these details at the same time. That is where abstraction can help.</p>
+                            <p><strong>The guiding principle of abstraction is that only details that are relevant to the current perspective or the task at hand needs to be considered.</strong> As most programs are written to solve complex problems involving large amounts of intricate details, it is impossible to deal with all these details at the same time. That is where abstraction can help.</p>
                             <p><strong><mark><em>Data abstraction</em></mark>: abstracting away the lower level data items and thinking in terms of bigger entities</strong></p>
                             <box>
-                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>,
-                                and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
+                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
                             </box>
                             <p><strong><mark><em>Control abstraction</em></mark>: abstracting away details of the actual control flow to focus on tasks at a higher level</strong></p>
                             <box>
@@ -93,10 +86,8 @@
                             </box>
                             <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
                             <box>
-                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher
-                                level than a bit.</p>
-                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than
-                                an Assembly language instruction <code>MOV</code>.</p>
+                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
                             </box>
                             <p><strong>Abstraction is a general concept that is not limited to just data or control abstractions.</strong></p>
                             <box>
@@ -124,11 +115,9 @@
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="how">How <span class="badge badge-light"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
-                <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                </small>
-                </small>
-                </span><a class="fa fa-anchor" href="#how"></a></h4>
+              <h4 id="how">How <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#how" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>In software development, models are useful in several ways:</strong></p>
@@ -136,11 +125,8 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of using models for analysis:</p>
                     <ol>
-                      <li>Models of the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e. the environment in which the software is expected to solve a problem</span>problem
-                        domain
-                        </span> can be built to aid the understanding of the problem to be solved.</li>
-                      <li>When planning a software solution, models can be created to figure out how the solution is to be built. An <span trigger="click" for="modal:modelingIntro-archiDiagrams" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
-                          v-on:click="$refs['modal:modelingIntro-archiDiagrams'].show()" class="trigger-click">architecture diagram</span> is such a model.</li>
+                      <li>Models of the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e. the environment in which the software is expected to solve a problem</span>problem domain</span> can be built to aid the understanding of the problem to be solved.</li>
+                      <li>When planning a software solution, models can be created to figure out how the solution is to be built. An <span trigger="click" for="modal:modelingIntro-archiDiagrams" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modelingIntro-archiDiagrams'].show()" class="trigger-click">architecture diagram</span> is such a model.</li>
                     </ol>
                   </box>
                   <b-modal id="modal:modelingIntro-archiDiagrams" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modelingIntro-archiDiagrams"><template slot="modal-title">Architecture Diagrams</template>
@@ -191,14 +177,8 @@
                   <box>
 
                     <panel type="seamless" class="algolia-no-index">
-                      <span slot="header" class="card-title">Model Driven Development <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
-                      </span>
-                      </span>
-                      <p><strong><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploit models as blueprints.</strong> MDD uses models as primary engineering
-                        artifacts when developing software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even involve
-                        manual translation from model to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to generate code from
-                        models and maintain the link between models and the code. One advantage of MDD is that the same model can be used to create software for different platforms and different languages. MDD has a lot of promise, but it is still an
-                        emerging technology</p>
+                      <span slot="header" class="card-title">Model Driven Development <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span></span></span>
+                      <p><strong><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploit models as blueprints.</strong> MDD uses models as primary engineering artifacts when developing software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even involve manual translation from model to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to generate code from models and maintain the link between models and the code. One advantage of MDD is that the same model can be used to create software for different platforms and different languages. MDD has a lot of promise, but it is still an emerging technology</p>
                       <p>Further reading:</p>
                       <ul>
                         <li><a href="https://martinfowler.com/bliki/ModelDrivenSoftwareDevelopment.html">Martin Fowler's view on MDD</a> - TLDR: he is sceptical</li>
@@ -210,21 +190,15 @@
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="uml-models">UML Models <span class="badge badge-light"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true"
-                  class="glyphicon glyphicon-star"></span></font>
-                <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                </small>
-                </small>
-                </span><a class="fa fa-anchor" href="#uml-models"></a></h4>
+              <h4 id="uml-models">UML Models <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#uml-models" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p>The following diagram uses the class diagram notation to show the different types of <span trigger="click" for="modal:umlModels-uml" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:umlModels-uml'].show()"
-                      class="trigger-click">UML</span> diagrams.</p>
+                  <p>The following diagram uses the class diagram notation to show the different types of <span trigger="click" for="modal:umlModels-uml" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:umlModels-uml'].show()" class="trigger-click">UML</span> diagrams.</p>
                   <b-modal id="modal:umlModels-uml" hide-footer size="lg" modal-class="mb-zoom" ref="modal:umlModels-uml"><template slot="modal-title">UML (Unified Modeling Language)</template>
                     <div>
-                      <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
-                        Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
-                        in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
+                      <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                     </div>
                   </b-modal>
                   <box>
@@ -236,16 +210,15 @@
             </div>
           </div>
           <p>
-            <div>
-              <h2 id="modeling-structures"><span>Modeling Structures</span><a class="fa fa-anchor" href="#modeling-structures"></a></h2>
-            </div>
+          <div>
+            <h2 id="modeling-structures"><span>Modeling Structures</span><a class="fa fa-anchor" href="#modeling-structures" onclick="event.stopPropagation()"></a></h2>
+          </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="oo-structures">OO Structures <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true"
-                  class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
-                </small>
-                </span><a class="fa fa-anchor" href="#oo-structures"></a></h4>
+              <h4 id="oo-structures">OO Structures <span class="badge badge-light"><small><small>
+                      <font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#oo-structures" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>An OO solution is basically a network of objects interacting with each other. Therefore, <strong>it is useful to be able to model how the relevant objects are 'networked' together</strong> inside a software <span class="dimmed">i.e. how the objects are connected together</span>.</p>
@@ -262,10 +235,9 @@
                     <p></p>
                     <p></p>
                   </box>
-                  <p>However, object structures do not change at random; they change based on a set of rules, as was decided by the designer of that software. Those <strong>rules that object structures need to follow can be illustrated as a <em>class structure</em></strong>                    <span class="dimmed">i.e. a structure that exists among the relevant classes</span>.</p>
+                  <p>However, object structures do not change at random; they change based on a set of rules, as was decided by the designer of that software. Those <strong>rules that object structures need to follow can be illustrated as a <em>class structure</em></strong> <span class="dimmed">i.e. a structure that exists among the relevant classes</span>.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is a class structure (drawn using an ad-hoc notation) that matches the object structures given in the previous two examples. For example, note how this class structure
-                      does not allow any connection between <code>Genre</code> objects and <code>Author</code> objects, a rule followed by the two object structures above.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is a class structure (drawn using an ad-hoc notation) that matches the object structures given in the previous two examples. For example, note how this class structure does not allow any connection between <code>Genre</code> objects and <code>Author</code> objects, a rule followed by the two object structures above.</p>
                     <p><img src="/website/book/modeling/modelingStructures/ooStructures/images/classesAdHoc.png" width="500"></p>
                     <p></p>
                     <p></p>
@@ -286,49 +258,44 @@
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="class-diagrams-basics">Class Diagrams (Basics) <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                <span
-                  aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
-                  </small>
-                  </span><a class="fa fa-anchor" href="#class-diagrams-basics"></a></h4>
+              <h4 id="class-diagrams-basics">Class Diagrams (Basics) <span class="badge badge-light"><small><small>
+                      <font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#class-diagrams-basics" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p><span class="dimmed"><small><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Contents of the panels given below belong to a different chapter; they have been embedded here for convenience and are collapsed by
-                    default to avoid content duplication in the printed version.</small>
-                    </span>
-                  </p>
+                  <p><span class="dimmed"><small><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Contents of the panels given below belong to a different chapter; they have been embedded here for convenience and are collapsed by default to avoid content duplication in the printed version.</small></span></p>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/classDiagrams/introduction/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Introduction → What</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/ClassDiagrams</p>
-                  </template>
-                    </panel>
+                    <panel type="seamless" src="/website/book/uml/classDiagrams/introduction/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Introduction → What</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/ClassDiagrams</p>
+                      </template></panel>
                   </p>
                   <p><strong>Classes form the basis of class diagrams.</strong></p>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/classDiagrams/classes/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Classes → What</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Classes</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/uml/classDiagrams/classLevelMembers/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Class-Level Members → What</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Class-Level Members</p>
-                  </template>
-                    </panel>
+                    <panel type="seamless" src="/website/book/uml/classDiagrams/classes/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Classes → What</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Classes</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/uml/classDiagrams/classLevelMembers/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Class-Level Members → What</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Class-Level Members</p>
+                      </template></panel>
                   </p>
                   <p><strong><em>Associations</em> are the main connections among the classes in a class diagram.</strong></p>
                   <p>
-                    <panel type="seamless" src="/website/book/oop/associations/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Associations → What</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Associations</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/uml/classDiagrams/associations/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Associations → What</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Associations</p>
-                  </template>
-                    </panel>
+                    <panel type="seamless" src="/website/book/oop/associations/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Associations → What</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Associations</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/uml/classDiagrams/associations/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Associations → What</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Associations</p>
+                      </template></panel>
                   </p>
                   <p>The most basic class diagram is a bunch of classes with some solid lines among them to represent associations, such as this one.</p>
                   <box>
@@ -338,36 +305,36 @@
                   </box>
                   <p>In addition, <strong>associations can show additional decorations such as <em>association labels</em>, <em>association roles</em>, <em>multiplicity</em> and <em>navigability</em></strong> to add more information to a class diagram.</p>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/classDiagrams/associations/labels/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Associations → Labels</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Labels</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/uml/classDiagrams/associations/roles/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Associations → Roles</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Roles</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/oop/associations/multiplicity/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Associations → Multiplicity</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Multiplicity</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/uml/classDiagrams/associations/multiplicity/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Associations → Multiplicity</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Multiplicity</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/oop/associations/navigability/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Associations → Navigability</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Navigability</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/uml/classDiagrams/associations/navigability/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Associations → Navigability</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Navigability</p>
-                  </template>
-                    </panel>
+                    <panel type="seamless" src="/website/book/uml/classDiagrams/associations/labels/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Associations → Labels</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Labels</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/uml/classDiagrams/associations/roles/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Associations → Roles</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Roles</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/oop/associations/multiplicity/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Associations → Multiplicity</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Multiplicity</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/uml/classDiagrams/associations/multiplicity/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Associations → Multiplicity</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Multiplicity</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/oop/associations/navigability/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Associations → Navigability</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Navigability</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/uml/classDiagrams/associations/navigability/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Class Diagrams → Associations → Navigability</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Navigability</p>
+                      </template></panel>
                   </p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is the same class diagram shown earlier but with some additional information included:</p>
@@ -378,182 +345,242 @@
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="adding-more-info-to-uml-models">Adding More Info to UML Models <span class="badge badge-light"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
-                <span
-                  aria-hidden="true" class="glyphicon glyphicon-star"></span>
-                  </font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
-                  </small>
-                  </span><a class="fa fa-anchor" href="#adding-more-info-to-uml-models"></a></h4>
+              <h4 id="adding-more-info-to-uml-models">Adding More Info to UML Models <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#adding-more-info-to-uml-models" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML notes can be used to add more info to any UML model.</strong></p>
                   <p>
-                    <panel src="/website/book/uml/notes/notes/unit-inElsewhere-asFlat._include_.html#title-and-body" expanded fragment="title-and-body"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Notes</p></template></panel>
+                    <panel src="/website/book/uml/notes/notes/unit-inElsewhere-asFlat._include_.html#title-and-body" expanded fragment="title-and-body"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Notes</p>
+                      </template></panel>
                   </p>
                 </div>
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="class-diagrams-intermediate">Class Diagrams - Intermediate <span class="badge badge-light"><small><small><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
-                <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
-                </small>
-                </span><a class="fa fa-anchor" href="#class-diagrams-intermediate"></a></h4>
+              <h4 id="class-diagrams-intermediate">Class Diagrams - Intermediate <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#class-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>A class diagram can also show different types of relationships between classes: inheritance, compositions, aggregations, dependencies.</strong></p>
                   <div class="indented">
-                    <h5 id="modeling-inheritance">Modeling inheritance<a class="fa fa-anchor" href="#modeling-inheritance"></a></h5>
+                    <h5 id="modeling-inheritance">Modeling inheritance<a class="fa fa-anchor" href="#modeling-inheritance" onclick="event.stopPropagation()"></a></h5>
                     <p>
-                      <panel type="seamless" src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Inheritance</p></template></panel>
-                      <panel type="seamless" src="/website/book/uml/classDiagrams/classInheritance/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Inheritance → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Inheritance</p></template></panel>
+                      <panel type="seamless" src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → What</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Inheritance</p>
+                        </template></panel>
+                      <panel type="seamless" src="/website/book/uml/classDiagrams/classInheritance/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Inheritance → What</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Inheritance</p>
+                        </template></panel>
                     </p>
-                    <h5 id="modeling-composition">Modeling composition<a class="fa fa-anchor" href="#modeling-composition"></a></h5>
+                    <h5 id="modeling-composition">Modeling composition<a class="fa fa-anchor" href="#modeling-composition" onclick="event.stopPropagation()"></a></h5>
                     <p>
-                      <panel type="seamless" src="/website/book/oop/associations/composition/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Composition</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Composition</p></template></panel>
-                      <panel type="seamless" src="/website/book/uml/classDiagrams/composition/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Composition → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Composition</p></template></panel>
+                      <panel type="seamless" src="/website/book/oop/associations/composition/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Composition</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Composition</p>
+                        </template></panel>
+                      <panel type="seamless" src="/website/book/uml/classDiagrams/composition/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Composition → What</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Composition</p>
+                        </template></panel>
                     </p>
-                    <h5 id="modeling-aggregation">Modeling aggregation<a class="fa fa-anchor" href="#modeling-aggregation"></a></h5>
+                    <h5 id="modeling-aggregation">Modeling aggregation<a class="fa fa-anchor" href="#modeling-aggregation" onclick="event.stopPropagation()"></a></h5>
                     <p>
-                      <panel type="seamless" src="/website/book/oop/associations/aggregation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Aggregation</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Aggregation</p></template></panel>
-                      <panel type="seamless" src="/website/book/uml/classDiagrams/aggregation/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Aggregation → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Aggregation</p></template></panel>
+                      <panel type="seamless" src="/website/book/oop/associations/aggregation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Aggregation</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Aggregation</p>
+                        </template></panel>
+                      <panel type="seamless" src="/website/book/uml/classDiagrams/aggregation/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Aggregation → What</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Aggregation</p>
+                        </template></panel>
                     </p>
-                    <h5 id="modeling-dependencies">Modeling dependencies<a class="fa fa-anchor" href="#modeling-dependencies"></a></h5>
+                    <h5 id="modeling-dependencies">Modeling dependencies<a class="fa fa-anchor" href="#modeling-dependencies" onclick="event.stopPropagation()"></a></h5>
                     <p>
-                      <panel type="seamless" src="/website/book/oop/associations/dependencies/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Dependencies</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Dependencies</p></template></panel>
-                      <panel type="seamless" src="/website/book/uml/classDiagrams/dependencies/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Dependencies → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Dependencies</p></template></panel>
+                      <panel type="seamless" src="/website/book/oop/associations/dependencies/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Dependencies</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Dependencies</p>
+                        </template></panel>
+                      <panel type="seamless" src="/website/book/uml/classDiagrams/dependencies/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Dependencies → What</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Dependencies</p>
+                        </template></panel>
                     </p>
                   </div>
                   <p><strong>A class diagram can also show different types of class-like entities:</strong></p>
                   <div class="indented">
-                    <h5 id="modeling-enumerations">Modeling enumerations<a class="fa fa-anchor" href="#modeling-enumerations"></a></h5>
+                    <h5 id="modeling-enumerations">Modeling enumerations<a class="fa fa-anchor" href="#modeling-enumerations" onclick="event.stopPropagation()"></a></h5>
                     <p>
-                      <panel type="seamless" src="/website/book/oop/classes/enumerations/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Classes → Enumerations</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Enumerations</p></template></panel>
-                      <panel type="seamless" src="/website/book/uml/classDiagrams/enumerations/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Enumerations → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Enumerations</p></template></panel>
+                      <panel type="seamless" src="/website/book/oop/classes/enumerations/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Classes → Enumerations</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Enumerations</p>
+                        </template></panel>
+                      <panel type="seamless" src="/website/book/uml/classDiagrams/enumerations/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Enumerations → What</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Enumerations</p>
+                        </template></panel>
                     </p>
-                    <h5 id="modeling-abstract-classes">Modeling abstract classes<a class="fa fa-anchor" href="#modeling-abstract-classes"></a></h5>
+                    <h5 id="modeling-abstract-classes">Modeling abstract classes<a class="fa fa-anchor" href="#modeling-abstract-classes" onclick="event.stopPropagation()"></a></h5>
                     <p>
-                      <panel type="seamless" src="/website/book/oop/inheritance/abstractClasses/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → Abstract Classes</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/AbstractClasses</p></template></panel>
-                      <panel type="seamless" src="/website/book/uml/classDiagrams/abstractClasses/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Abstract Classes → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/AbstractClasses</p></template></panel>
+                      <panel type="seamless" src="/website/book/oop/inheritance/abstractClasses/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → Abstract Classes</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/AbstractClasses</p>
+                        </template></panel>
+                      <panel type="seamless" src="/website/book/uml/classDiagrams/abstractClasses/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Abstract Classes → What</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/AbstractClasses</p>
+                        </template></panel>
                     </p>
-                    <h5 id="modeling-interfaces">Modeling interfaces<a class="fa fa-anchor" href="#modeling-interfaces"></a></h5>
+                    <h5 id="modeling-interfaces">Modeling interfaces<a class="fa fa-anchor" href="#modeling-interfaces" onclick="event.stopPropagation()"></a></h5>
                     <p>
-                      <panel type="seamless" src="/website/book/oop/inheritance/interfaces/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → Interfaces</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Interfaces</p></template></panel>
-                      <panel type="seamless" src="/website/book/uml/classDiagrams/interfaces/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Interfaces → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Interfaces</p></template></panel>
+                      <panel type="seamless" src="/website/book/oop/inheritance/interfaces/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → Interfaces</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Interfaces</p>
+                        </template></panel>
+                      <panel type="seamless" src="/website/book/uml/classDiagrams/interfaces/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Interfaces → What</p>
+                        </template><template slot="_alt">
+                          <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Interfaces</p>
+                        </template></panel>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="object-diagrams">Object Diagrams <span class="badge badge-light"><small><small><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true"
-                  class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
-                </small>
-                </span><a class="fa fa-anchor" href="#object-diagrams"></a></h4>
+              <h4 id="object-diagrams">Object Diagrams <span class="badge badge-light"><small><small>
+                      <font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#object-diagrams" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/objectDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Object Diagrams → Introduction</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Object Diagrams</p></template></panel>
+                    <panel type="seamless" src="/website/book/uml/objectDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Object Diagrams → Introduction</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Object Diagrams</p>
+                      </template></panel>
                   </p>
                   <p><strong>Object diagrams can be used to complement class diagrams.</strong> For example, you can use object diagrams to model different object structures that can result from a design represented by a given class diagram.</p>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/objectDiagrams/objects/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Object Diagrams → Objects</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OD/Objects</p></template></panel>
-                    <panel type="seamless" src="/website/book/uml/objectDiagrams/associations/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Object Diagrams → Associations</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OD/Associations</p></template></panel>
+                    <panel type="seamless" src="/website/book/uml/objectDiagrams/objects/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Object Diagrams → Objects</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OD/Objects</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/uml/objectDiagrams/associations/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Object Diagrams → Associations</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OD/Associations</p>
+                      </template></panel>
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <p>
-            <div>
-              <h2 id="modeling-behaviors"><span>Modeling Behaviors</span><a class="fa fa-anchor" href="#modeling-behaviors"></a></h2>
-            </div>
+          <div>
+            <h2 id="modeling-behaviors"><span>Modeling Behaviors</span><a class="fa fa-anchor" href="#modeling-behaviors" onclick="event.stopPropagation()"></a></h2>
+          </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="sequence-diagrams-basic">Sequence Diagrams - Basic <span class="badge badge-light"><small><small><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
-                <span
-                  aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
-                  </small>
-                  </span><a class="fa fa-anchor" href="#sequence-diagrams-basic"></a></h4>
+              <h4 id="sequence-diagrams-basic">Sequence Diagrams - Basic <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#sequence-diagrams-basic" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Introduction</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SequenceDiagrams</p>
-                  </template>
-                    </panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Introduction</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SequenceDiagrams</p>
+                      </template></panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/basic/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Basic Notation</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Basic</p>
-                  </template>
-                    </panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/basic/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Basic Notation</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Basic</p>
+                      </template></panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/loops/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Loops</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Loops</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectCreation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Object Creation</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Creation</p>
-                  </template>
-                    </panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/loops/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Loops</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Loops</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectCreation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Object Creation</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Creation</p>
+                      </template></panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/minimalNotation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Minimal Notation</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Minimal</p>
-                  </template>
-                    </panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/minimalNotation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Minimal Notation</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Minimal</p>
+                      </template></panel>
                   </p>
                 </div>
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="sequence-diagrams-intermediate">Sequence Diagrams - Intermediate <span class="badge badge-light"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
-                <span
-                  aria-hidden="true" class="glyphicon glyphicon-star"></span>
-                  </font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
-                  </small>
-                  </span><a class="fa fa-anchor" href="#sequence-diagrams-intermediate"></a></h4>
+              <h4 id="sequence-diagrams-intermediate">Sequence Diagrams - Intermediate <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#sequence-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectDeletion/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Object Deletion</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Deletion</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/selfInvocation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Self-Invocation</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Self-Invocation</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/alternativePaths/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Alternative Paths</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Alternative</p>
-                  </template>
-                    </panel>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Optional Paths</p></template>
-                      <template slot="_alt">
-                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Optional</p>
-                  </template>
-                    </panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectDeletion/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Object Deletion</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Deletion</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/selfInvocation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Self-Invocation</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Self-Invocation</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/alternativePaths/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Alternative Paths</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Alternative</p>
+                      </template></panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Optional Paths</p>
+                      </template><template slot="_alt">
+                        <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Optional</p>
+                      </template></panel>
                   </p>
-                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Calls to Static Methods</p></template>
-                    <template slot="_alt">
-                <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/StaticMethods</p>
-                </template>
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Calls to Static Methods</p>
+                    </template><template slot="_alt">
+                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/StaticMethods</p>
+                    </template>
                     <div>
                       <div>
                         <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
                         <box>
-                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object
-                            <code>p</code>.</p>
+                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object <code>p</code>.</p>
                           <p>
                             <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
                           </p>
@@ -572,10 +599,11 @@
           </div>
         </div>
       </div>
+
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, 15 Apr 2020, 23:57:00 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sat, 18 Apr 2020, 19:21:51 GMT+8</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Week 4 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
@@ -43,7 +44,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -80,6 +81,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -96,9 +98,9 @@
             </ul>
           </nav>
           <p></p>
-          <h1 id="week-4-from-wed-jan-29-noon-tutorial">Week 4 <small><small><span class="dimmed">[from Wed Jan 29 noon]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-4-from-wed-jan-29-noon-tutorial"></a></h1>
+          <h1 id="week-4-from-wed-jan-29-noon-tutorial">Week 4 <small><small><span class="dimmed">[from Wed Jan 29 noon]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-4-from-wed-jan-29-noon-tutorial" onclick="event.stopPropagation()"></a></h1>
           <div>
-            <h4 id="1-discuss-tp-progress"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <strong>Discuss tP progress</strong><a class="fa fa-anchor" href="#1-discuss-tp-progress"></a></h4>
+            <h4 id="1-discuss-tp-progress"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <strong>Discuss tP progress</strong><a class="fa fa-anchor" href="#1-discuss-tp-progress" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>Show your collaborative project doc(s) to the tutor.</li>
               <li>Share the project direction (i.e., user profile, value proposition) you have decided upon.</li>
@@ -109,7 +111,7 @@
                 </ul>
               </li>
             </ul>
-            <h4 id="2-review-peer-ip-prs"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <strong>Review Peer iP PRs</strong><a class="fa fa-anchor" href="#2-review-peer-ip-prs"></a></h4>
+            <h4 id="2-review-peer-ip-prs"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <strong>Review Peer iP PRs</strong><a class="fa fa-anchor" href="#2-review-peer-ip-prs" onclick="event.stopPropagation()"></a></h4>
             <div class="indented-level2">
               <box type="important">
                 <ul>
@@ -121,7 +123,9 @@
 
               <p><strong>Review a PR</strong> created by your classmates by following the steps given below. Note that you are expected to have read the following guidelines as given in this week's iP tasks:</p>
               <div class="indented-level1">
-                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using GitHub → Guidelines for Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                    <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using GitHub → Guidelines for Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                  </template>
                   <div>
                     <box type="success">
                       <p>We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
@@ -129,12 +133,11 @@
                     </box>
                     <ul>
                       <li>If you are new to GitHub PRs, see <a href="https://help.github.com/en/articles/about-pull-request-reviews">GitHub help on how to review PRs</a>.</li>
-                      <li>Read the blog post <a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - by David Lloyd (a Red Hat developer). In particular,
-                        follow the tip about phrasing objections as questions.</li>
+                      <li>Read the blog post <a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - by David Lloyd (a Red Hat developer). In particular, follow the tip about phrasing objections as questions.</li>
                       <li>Rather than give one overall comment for the entire PR, add specific comments at relevant places of the code.</li>
                       <li>Feel free to ask for more info from the author, to help you understand the code/design. For example, you can ask why the author chose to write the code in a specific way.</li>
                       <li>Feel free to compliment the author when appropriate <span class="dimmed">e.g., <em>hey, I like how clean this bit of code is</em> 👍</span></li>
-                      <li>You can also suggest alternatives for the author to consider. Feel free to refer back to your own PR if you think a comparison would benefit the author. <mark>You are very welcome to offer to help the author with the project</mark>                        (in your PR review, or outside of it) if you think the author needs such help i.e., as an informal mentor. Such mentoring will help both the author and you to become stronger programmers.</li>
+                      <li>You can also suggest alternatives for the author to consider. Feel free to refer back to your own PR if you think a comparison would benefit the author. <mark>You are very welcome to offer to help the author with the project</mark> (in your PR review, or outside of it) if you think the author needs such help i.e., as an informal mentor. Such mentoring will help both the author and you to become stronger programmers.</li>
                       <li>You can use Markdown (specifically, <a href="https://guides.github.com/features/mastering-markdown/">GitHub-Flavored Markdown</a>) in your comments.</li>
                     </ul>
                     <p><strong>Guidelines for authors</strong>:</p>
@@ -152,7 +155,9 @@
               <li><span class="badge badge-dark">Step 2</span> <strong>Open the PR allocated to you</strong>, as given in the panel below.</li>
             </ul>
             <div class="indented-level2">
-              <panel minimized class="algolia-no-index"><template slot="_header"><p>iP PR review allocation</p></template>
+              <panel minimized class="algolia-no-index"><template slot="_header">
+                  <p>iP PR review allocation</p>
+                </template>
                 <div class="table-responsive">
                   <table class="markbind-table table table-bordered table-striped">
                     <thead>
@@ -543,18 +548,17 @@
                 </div>
               </panel>
               <p></p>
-              <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can choose another PR that is allocated to another
-                student in your own tutorial <ins>but not in your sub-team</ins>.</p>
+              <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can choose another PR that is allocated to another student in your own tutorial <ins>but not in your sub-team</ins>.</p>
               <p></p>
               <box type="tip" light>
-                <p>Tip for future reference: GitHub allows you to filter PRs/Issues using various criteria such as <code>author:AuthorUsername</code> (<a href="https://github.com/reposense/RepoSense/pulls?utf8=%E2%9C%93&amp;q=is%3Apr+author%3Afzdy1914+">example</a>                  -- see the <code>filters</code> text box in the target page).</p>
+                <p>Tip for future reference: GitHub allows you to filter PRs/Issues using various criteria such as <code>author:AuthorUsername</code> (<a href="https://github.com/reposense/RepoSense/pulls?utf8=%E2%9C%93&amp;q=is%3Apr+author%3Afzdy1914+">example</a> -- see the <code>filters</code> text box in the target page).</p>
                 <p>Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
                   <img src="/website/admin/images/filterPrsUsingLabels.png"></p>
               </box>
             </div>
             <ul>
               <li>
-                <p><span class="badge badge-dark">Step 3</span> <strong>Review the code for <a href="/website/coding-standards/java/basic.html">coding standard</a> compliance</strong>. You can view the code in the PR by clicking on the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small>Files changed</small></span>                  tab. When you find a possible coding standard violation, do the following:</p>
+                <p><span class="badge badge-dark">Step 3</span> <strong>Review the code for <a href="/website/coding-standards/java/basic.html">coding standard</a> compliance</strong>. You can view the code in the PR by clicking on the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small>Files changed</small></span> tab. When you find a possible coding standard violation, do the following:</p>
                 <ol>
                   <li><strong>Show it to your review partner(s) to confirm</strong> it is indeed a violation. You can seek tutor's opinion if you are not sure.</li>
                   <li><strong>Add a comment</strong> to communicate your finding with the author.<br>
@@ -563,8 +567,8 @@
                         <p>Hover over the offending line of code and click on the <button type="button" class="btn btn-primary btn-sm "><strong>+</strong></button> that appears to start the comment.</p>
                       </li>
                       <li>
-                        <p>Write your comment (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <a href="https://guides.github.com/features/mastering-markdown/">GFMD</a> syntax in your
-                          comment)<br> e.g., <code>Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:</code><br></p>
+                        <p>Write your comment (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <a href="https://guides.github.com/features/mastering-markdown/">GFMD</a> syntax in your comment)<br>
+                          e.g., <code>Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:</code><br></p>
                         <blockquote>
                           <p>Shouldn't this be <strong>in a new line</strong>, as per our <em>coding standard</em>? 🤔<br></p>
                         </blockquote>
@@ -574,19 +578,17 @@
                         </blockquote>
                       </li>
                       <li>
-                        <p>As illustrated in the examples above, <mark>phrasing comments as questions or using words such as 'consider'</mark> (instead of <code>You should do X</code> or <code>Change this to X</code>) is recommended to reflect that you are
-                          a peer, not a superior.</p>
+                        <p>As illustrated in the examples above, <mark>phrasing comments as questions or using words such as 'consider'</mark> (instead of <code>You should do X</code> or <code>Change this to X</code>) is recommended to reflect that you are a peer, not a superior.</p>
                       </li>
                       <li>
-                        <p>When you are done writing the comment, click on the <button type="button" class="btn btn-success btn-sm "><strong>Start a review</strong></button> (not the <button type="button" class="btn btn-light btn-sm border"><strong>Add single comment</strong></button>                          button)</p>
+                        <p>When you are done writing the comment, click on the <button type="button" class="btn btn-success btn-sm "><strong>Start a review</strong></button> (not the <button type="button" class="btn btn-light btn-sm border"><strong>Add single comment</strong></button> button)</p>
                       </li>
                     </ul>
                   </li>
                 </ol>
               </li>
               <li>
-                <p><span class="badge badge-dark">Step 4</span> <strong>Review the code for code quality</strong> best practices you have learned so far. When you find a potential opportunity to improve the code quality, confirm with your review partners
-                  (and the tutor, if needed) and add a comment as before. Some code quality issues you can check for (not an exhaustive list):</p>
+                <p><span class="badge badge-dark">Step 4</span> <strong>Review the code for code quality</strong> best practices you have learned so far. When you find a potential opportunity to improve the code quality, confirm with your review partners (and the tutor, if needed) and add a comment as before. Some code quality issues you can check for (not an exhaustive list):</p>
                 <ul>
                   <li>Methods that are too long</li>
                   <li>Code nested too deeply</li>
@@ -612,18 +614,19 @@
                   <li>Click on the <button type="button" class="btn btn-success btn-sm "><strong>Finish your review</strong></button> at the top of the page.</li>
                   <li>Choose the <code>Comment</code> option (not <code>Approve</code> or <code>Request changes</code>).</li>
                   <li>In the comment box, mention your review partners e.g., <code>Also took part in this review @JonhDoe</code>. You can also give an overall comment about the code e.g.,
-                    <pre><code class="hljs"><span>Overall, we found your code easy to read for the most part except a few places</span><span>where the nesting was too deep. Hope our comments help you improve the code further.</span><span>All the best for your iP :-)</span><span>[Also took part in this review: @JonhDoe]</span></code></pre>
+                    <pre><code class="hljs"><span>Overall, we found your code easy to read for the most part except a few places<br></span><span>where the nesting was too deep. Hope our comments help you improve the code further.<br></span><span>All the best for your iP :-)<br></span><span>[Also took part in this review: @JonhDoe]<br></span></code></pre>
                   </li>
                   <li>Click on the <button type="button" class="btn btn-success btn-sm "><strong>Submit review</strong></button> button to finish the review.</li>
                 </ol>
               </li>
               <li>
-                <p><span class="badge badge-dark">Step 6</span> <strong>[After the tutorial] Respond to comments received</strong>. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you
-                  for more info. As mentioned in the guidelines below, do not get into arguments with PR reviewers/authors.</p>
+                <p><span class="badge badge-dark">Step 6</span> <strong>[After the tutorial] Respond to comments received</strong>. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in the guidelines below, do not get into arguments with PR reviewers/authors.</p>
               </li>
             </ul>
             <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using GitHub → Guidelines for Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using GitHub → Guidelines for Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                </template>
                 <div>
                   <box type="success">
                     <p>We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
@@ -631,12 +634,11 @@
                   </box>
                   <ul>
                     <li>If you are new to GitHub PRs, see <a href="https://help.github.com/en/articles/about-pull-request-reviews">GitHub help on how to review PRs</a>.</li>
-                    <li>Read the blog post <a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - by David Lloyd (a Red Hat developer). In particular,
-                      follow the tip about phrasing objections as questions.</li>
+                    <li>Read the blog post <a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - by David Lloyd (a Red Hat developer). In particular, follow the tip about phrasing objections as questions.</li>
                     <li>Rather than give one overall comment for the entire PR, add specific comments at relevant places of the code.</li>
                     <li>Feel free to ask for more info from the author, to help you understand the code/design. For example, you can ask why the author chose to write the code in a specific way.</li>
                     <li>Feel free to compliment the author when appropriate <span class="dimmed">e.g., <em>hey, I like how clean this bit of code is</em> 👍</span></li>
-                    <li>You can also suggest alternatives for the author to consider. Feel free to refer back to your own PR if you think a comparison would benefit the author. <mark>You are very welcome to offer to help the author with the project</mark>                      (in your PR review, or outside of it) if you think the author needs such help i.e., as an informal mentor. Such mentoring will help both the author and you to become stronger programmers.</li>
+                    <li>You can also suggest alternatives for the author to consider. Feel free to refer back to your own PR if you think a comparison would benefit the author. <mark>You are very welcome to offer to help the author with the project</mark> (in your PR review, or outside of it) if you think the author needs such help i.e., as an informal mentor. Such mentoring will help both the author and you to become stronger programmers.</li>
                     <li>You can use Markdown (specifically, <a href="https://guides.github.com/features/mastering-markdown/">GitHub-Flavored Markdown</a>) in your comments.</li>
                   </ul>
                   <p><strong>Guidelines for authors</strong>:</p>
@@ -651,6 +653,7 @@
           </div>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -667,7 +670,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, 15 Apr 2020, 23:57:00 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sat, 18 Apr 2020, 19:21:51 GMT+8</small></div>
     </footer>
   </div>
 </body>

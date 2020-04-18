@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2113/T Website - Admin: Grade Breakdown</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -84,18 +85,12 @@
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
           <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/website/admin/moduleOverview.html" class="site-nav__a">CS2113/T Software Engineering & Object-Oriented Programming</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/usingThisWebsite.html" class="site-nav__a"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/moduleExpectations.html" class="site-nav__a">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Module Structure 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+            <li class="mt-2"><a href="/website/admin/moduleOverview.html" class="site-nav__a">CS2113/T Software Engineering & Object-Oriented Programming</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/usingThisWebsite.html" class="site-nav__a"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/moduleExpectations.html" class="site-nav__a">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Module Structure
+                <i class="dropdown-btn-icon rotate-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
               <div class="dropdown-container dropdown-container-open">
                 <ul class="pl-3 site-nav-list">
                   <li class="mt-2"><small><a href="/website/admin/weeklySchedule.html" class="site-nav__a">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
@@ -104,18 +99,12 @@
                 </ul>
               </div>
             </li>
-            <li class="mt-2"><a href="/website/admin/instructors.html" class="site-nav__a">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/textbooks.html" class="site-nav__a">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/programmingLanguages.html" class="site-nav__a">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
+            <li class="mt-2"><a href="/website/admin/instructors.html" class="site-nav__a">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/textbooks.html" class="site-nav__a">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/programmingLanguages.html" class="site-nav__a">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
             <li class="mt-2"><button class="dropdown-btn">Individual Project (iP)
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
               <div class="dropdown-container">
                 <ul class="pl-3 site-nav-list">
                   <li class="mt-2"><small><a href="/website/admin/ip-overview.html" class="site-nav__a">iP (Individual Project): Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
@@ -131,8 +120,8 @@
               </div>
             </li>
             <li class="mt-2"><button class="dropdown-btn">Team Project (tP)
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
               <div class="dropdown-container">
                 <ul class="pl-3 site-nav-list">
                   <li class="mt-2"><small><a href="/website/admin/tp-expectations.html" class="site-nav__a">tP (team project): Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
@@ -155,24 +144,14 @@
                 </ul>
               </div>
             </li>
-            <li class="mt-2"><a href="/website/admin/peerEvaluations.html" class="site-nav__a">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/tools.html" class="site-nav__a">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/exams.html" class="site-nav__a">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/participation.html" class="site-nav__a">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><a href="/website/admin/gradeBreakdown.html" class="site-nav__a current">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
-            </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Appendices 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+            <li class="mt-2"><a href="/website/admin/peerEvaluations.html" class="site-nav__a">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/tools.html" class="site-nav__a">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/exams.html" class="site-nav__a">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/participation.html" class="site-nav__a">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><a href="/website/admin/gradeBreakdown.html" class="site-nav__a current">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></li>
+            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Appendices
+                <i class="dropdown-btn-icon rotate-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
               <div class="dropdown-container dropdown-container-open">
                 <ul class="pl-3 site-nav-list">
                   <li class="mt-2"><small><a href="/website/admin/appendixA-principles.html" class="site-nav__a">Apdx A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
@@ -187,26 +166,27 @@
           </ul>
         </div>
       </nav>
+
       <div id="content-wrapper">
         <div class="website-content">
-          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/participation.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Participation Marks</span>
-            </b-btn>
-            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/appendixA-principles.html"><span>Apdx A: Module Principles <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-            </b-btn>
-            </span>
-          </p>
+          <p><span class="float-left algolia-no-index">
+              <b-btn variant="light" href="/website/admin/participation.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Participation Marks</span></b-btn>
+            </span><span class="float-right algolia-no-index">
+              <b-btn variant="light" href="/website/admin/appendixA-principles.html"><span>Apdx A: Module Principles <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+            </span></p>
           <br>
           <p>
-            <div>
-              <h1 id="grade-breakdown">Grade Breakdown <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span><a class="fa fa-anchor" href="#grade-breakdown"></a></h1>
-            </div>
+          <div>
+            <h1 id="grade-breakdown">Grade Breakdown <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span><a class="fa fa-anchor" href="#grade-breakdown" onclick="event.stopPropagation()"></a></h1>
+          </div>
           </p>
           <div id="main">
             <p>
               <pic src="/website/admin/images/grade-breakdown.png"></pic>
             </p>
-            <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Participation Marks <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+            <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Participation Marks <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+              </template>
               <div>
                 <p><strong>To receive full 5 marks allocated for participation, meet the criteria <span class="badge badge-pill badge-info p-2"><big><big>A</big></big></span>, <span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span>, and <span class="badge badge-pill badge-info p-2"><big><big>C</big></big></span>.</strong></p>
                 <p><strong><span class="badge badge-pill badge-info p-2"><big><big>A</big></big></span> Earned at least half of weekly participation points in at least 10 weeks.</strong></p>
@@ -236,16 +216,19 @@
                 </div>
                 <p><strong><span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span> Received good peer evaluations</strong></p>
                 <div class="indented">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Conduct) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Conduct) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template>
                     <div>
                       <p>
-                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' conduct in the project and during tutorials,</strong></p>
+                        <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' conduct in the project and during tutorials,</strong>
+                      </p>
                       <ul>
                         <li>Evaluated based on the following criteria, on a scale <code>Poor</code>/<code>Below Average</code>/<code>Average</code>/<code>Good</code>/<code>Excellent</code>:</li>
                       </ul>
                       <div class="indented-level2">
                         <box background-color="white" border-color="grey" border-left-color="#28a745">
-                          <h4 id="peer-evaluation-criteria-professional-conduct">Peer Evaluation Criteria: Professional Conduct<a class="fa fa-anchor" href="#peer-evaluation-criteria-professional-conduct"></a></h4>
+                          <h4 id="peer-evaluation-criteria-professional-conduct">Peer Evaluation Criteria: Professional Conduct<a class="fa fa-anchor" href="#peer-evaluation-criteria-professional-conduct" onclick="event.stopPropagation()"></a></h4>
                           <ul>
                             <li><strong>Professional Communication</strong> :
                               <ul>
@@ -270,17 +253,20 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Competency) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Competency) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template>
                     <div>
                       <p>
-                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The competency of the team member demonstrated in the project and during the tutorials,</strong></p>
+                        <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The competency of the team member demonstrated in the project and during the tutorials,</strong>
+                      </p>
                       <ul>
                         <li>Considered only for bonus marks, A+ grades, and tutor recruitment</li>
                         <li>Evaluated based on the following criteria, on a scale <code>Poor</code>/<code>Below Average</code>/<code>Average</code>/<code>Good</code>/<code>Excellent</code>:</li>
                       </ul>
                       <div class="indented-level2">
                         <box background-color="white" border-color="grey" border-left-color="#28a745">
-                          <h4 id="peer-evaluation-criteria-competency">Peer Evaluation Criteria: Competency<a class="fa fa-anchor" href="#peer-evaluation-criteria-competency"></a></h4>
+                          <h4 id="peer-evaluation-criteria-competency">Peer Evaluation Criteria: Competency<a class="fa fa-anchor" href="#peer-evaluation-criteria-competency" onclick="event.stopPropagation()"></a></h4>
                           <ul>
                             <li><strong>Technical Competency</strong>: Able to gain competency in all the required tools and techniques.</li>
                             <li><strong>Mentoring skills</strong>: Helps others when possible. Able to mentor others well.</li>
@@ -290,10 +276,12 @@
                         </box>
                       </div>
                       <p>
-                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any ANONYMOUS feedback you want to give the classmates you reviewed above?</strong></p>
+                        <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any ANONYMOUS feedback you want to give the classmates you reviewed above?</strong>
+                      </p>
                       <p></p>
                       <p>
-                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any CONFIDENTIAL comments about any team members?</strong></p>
+                        <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any CONFIDENTIAL comments about any team members?</strong>
+                      </p>
                       <p></p>
                     </div>
                   </panel>
@@ -306,7 +294,9 @@
                 <div class="indented">
                   <p>Low attendance/participation can affect participation marks directly (i.e., attended fewer than 7) or indirectly (i.e., it might result in low peer evaluation ratings).</p>
                 </div>
-                <panel type="info" expanded no-close no-switch><template slot="_header"><p><strong>+ Bonus Marks</strong></p></template>
+                <panel type="info" expanded no-close no-switch><template slot="_header">
+                    <p><strong>+ Bonus Marks</strong></p>
+                  </template>
                   <p>In addition, you can receive bonus marks in the following ways. Bonus marks can be used to top up your participation marks <mark>but only if your marks from the above falls below 5</mark>.</p>
                   <ul>
                     <li>[For lecture participation] Received at least half of the points for lecture activities in at least 10 lectures: 1 mark
@@ -322,18 +312,21 @@
                 <p></p>
                 <p><span class="badge badge-pill badge-secondary p-2"><big><big>Examples:</big></big></span></p>
                 <ul>
-                  <li>Alicia earned 1/2, 3/5, <ins>2/5</ins>, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 4/5, 5/5 in the first 12 weeks. As she received at least half of the points in 11 of the weeks, she gets 5 participation marks. Bonus marks are not applicable
-                    as she has full marks already.</li>
+                  <li>Alicia earned 1/2, 3/5, <ins>2/5</ins>, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 4/5, 5/5 in the first 12 weeks. As she received at least half of the points in 11 of the weeks, she gets 5 participation marks. Bonus marks are not applicable as she has full marks already.</li>
                   <li>Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he participated in 10 lectures, and hence get a bonus mark to make it 5/5.</li>
                   <li>Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.</li>
                 </ul>
-                <panel type="info" expanded no-close no-switch id="where-to-find-your-participation-marks-progress"><template slot="_header"><h5 id="where-to-find-your-participation-marks-progress">Where to find your participation marks progress<a class="fa fa-anchor" href="#where-to-find-your-participation-marks-progress"></a></h5></template>
+                <panel type="info" expanded no-close no-switch id="where-to-find-your-participation-marks-progress"><template slot="_header">
+                    <h5 id="where-to-find-your-participation-marks-progress">Where to find your participation marks progress<a class="fa fa-anchor" href="#where-to-find-your-participation-marks-progress" onclick="event.stopPropagation()"></a></h5>
+                  </template>
                   <p><strong>Your participation progress can be tracked in <a href="/website/admin/participation-dashboard.html">this page</a></strong> from week 3 onward. The page will be updated about once a week.
                   </p>
                 </panel>
               </div>
             </panel>
-            <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Exams <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+            <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Exams <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+              </template>
               <div>
                 <p>There is no midterm.</p>
                 <box type="important">
@@ -345,19 +338,17 @@
                   <li>Part 1: MCQ questions (1 hour, 20 marks)</li>
                   <li>Part 2: Essay questions (1 hour, 20 marks)</li>
                 </ul>
-                <p>Both papers will be given to you at the start but you need to <strong>answer Part 1 first</strong> (i.e. MCQ paper). It will be <strong>collected 1 hour after the exam start time</strong> (even if arrived late for the exam). You are free
-                  to start part 2 early if you finish Part 1 early.</p>
+                <p>Both papers will be given to you at the start but you need to <strong>answer Part 1 first</strong> (i.e. MCQ paper). It will be <strong>collected 1 hour after the exam start time</strong> (even if arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.</p>
                 <box type="important">
-                  <p>Given the fast pace required by the paper, the large class size, and the need to collect part 1 answer scripts in the middle of the exam, to be fair to all students, <strong>invigilators will not answer queries about the questions in the exam paper</strong>                    (but <em>will</em> answer queries related to exam administration).</p>
+                  <p>Given the fast pace required by the paper, the large class size, and the need to collect part 1 answer scripts in the middle of the exam, to be fair to all students, <strong>invigilators will not answer queries about the questions in the exam paper</strong> (but <em>will</em> answer queries related to exam administration).</p>
                   <ul>
-                    <li>If you have a doubt/query about a question ,or would like to make an assumption about a question, or would like to report a potential error in the exam paper, write down your doubt/query/assumption in the space provided for it at the
-                      end of the exam paper.</li>
+                    <li>If you have a doubt/query about a question ,or would like to make an assumption about a question, or would like to report a potential error in the exam paper, write down your doubt/query/assumption in the space provided for it at the end of the exam paper.</li>
                     <li>Those doubts/queries/assumptions (if justified) will be taken into account when grading.
                     </li>
                   </ul>
                 </box>
 
-                <h2 id="final-exam-part-1-mcq">Final Exam: Part 1 (MCQ)<a class="fa fa-anchor" href="#final-exam-part-1-mcq"></a></h2>
+                <h2 id="final-exam-part-1-mcq">Final Exam: Part 1 (MCQ)<a class="fa fa-anchor" href="#final-exam-part-1-mcq" onclick="event.stopPropagation()"></a></h2>
                 <p>Each MCQ question gives you a statement to evaluate.</p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example statement</p>
@@ -390,34 +381,28 @@
                   <blockquote>
                     <p>Technique ABC <mark>can</mark> be used to generate more test cases.</p>
                   </blockquote>
-                  <p>The word <mark>can</mark> is highlighted because the decision you need to make is whether the ABC <em>can or cannot</em> be used to generate more test cases; the decision is not whether ABC can be used to generate <em>more or better</em>                    test cases.
-                  </p>
+                  <p>The word <mark>can</mark> is highlighted because the decision you need to make is whether the ABC <em>can or cannot</em> be used to generate more test cases; the decision is not whether ABC can be used to generate <em>more or better</em> test cases.</p>
                 </box>
-                <p>Markers such as the one given below appears at left margin of the paper to <strong>indicate where the question corresponds to a new column in the OCR form</strong>. E.g. questions 11, 21, 31, etc. (a column has 10 questions). Such markers
-                  can help you to detect if you missed a question in the previous 10 questions. You can safely ignore those markers if you are not interested in making use of that additional hint.</p>
+                <p>Markers such as the one given below appears at left margin of the paper to <strong>indicate where the question corresponds to a new column in the OCR form</strong>. E.g. questions 11, 21, 31, etc. (a column has 10 questions). Such markers can help you to detect if you missed a question in the previous 10 questions. You can safely ignore those markers if you are not interested in making use of that additional hint.</p>
                 <p><img src="/website/admin/images/columnMarker.png"><br></p>
-                <p>Some questions have tags e.g., the question below has a tag <strong><code>JAVA</code></strong>. These <strong>tags provide additional context about the question</strong>. In the example below, the tag indicates that the code given in the
-                  question is Java code.</p>
+                <p>Some questions have tags e.g., the question below has a tag <strong><code>JAVA</code></strong>. These <strong>tags provide additional context about the question</strong>. In the example below, the tag indicates that the code given in the question is Java code.</p>
                 <p><img src="/website/admin/images/contextTag.png"><br></p>
-                <p><strong>The exam paper is open-book</strong>: you may bring any printed or written materials to the exam in hard copy format. However, given the fast pace required by Part 1, you will not have time left to refer notes during that part
-                  of the exam.
-                </p>
-                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Mark the OCR form as you go</strong>, rather than planning to transfer your answers to the OCR form near the end.
-                  <span
-                    class="dimmed">Reason: Given there are 100 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.</span>
-                </p>
+                <p><strong>The exam paper is open-book</strong>: you may bring any printed or written materials to the exam in hard copy format.
+                  However, given the fast pace required by Part 1, you will not have time left to refer notes during that part of the exam.</p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Mark the OCR form as you go</strong>, rather than planning to transfer your answers to the OCR form near the end. <span class="dimmed">Reason: Given there are 100 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.</span></p>
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Write the answer in the exam paper as well</strong> when marking it in the OCR form. <span class="dimmed">Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.</span></p>
-                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> We have tried to <strong>avoid deliberately misleading/tricky questions</strong>. If a question seems to take a very long time
-                  to figure out, you are probably over-thinking it.</p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> We have tried to <strong>avoid deliberately misleading/tricky questions</strong>. If a question seems to take a very long time to figure out, you are probably over-thinking it.</p>
                 <box type="success">
                   <p>You will be given a practice exam paper to familiarize yourself with this slightly unusual exam format.
                   </p>
                 </box>
-                <h2 id="final-exam-part-2-essay">Final Exam: Part 2 (Essay)<a class="fa fa-anchor" href="#final-exam-part-2-essay"></a></h2>
+                <h2 id="final-exam-part-2-essay">Final Exam: Part 2 (Essay)<a class="fa fa-anchor" href="#final-exam-part-2-essay" onclick="event.stopPropagation()"></a></h2>
                 <p>Yes, <strong>you may use pencils</strong> when answering part 2.</p>
               </div>
             </panel>
-            <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Individual Project (iP) Grading <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+            <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Individual Project (iP) Grading <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+              </template>
               <div>
                 <div id="title"></div>
                 <div id="body">
@@ -425,8 +410,7 @@
                   <ul>
                     <li>Achieve <strong>more than 90% of all deliverables</strong> by the end.</li>
                     <li>Requirements marked as <span class="badge badge-pill badge-secondary">optional</span> or <span class="badge badge-pill badge-secondary">if-applicable</span> are not counted when calculating the percentage of deliverables.</li>
-                    <li>When a requirement specifies a <code>minimal</code> version of it, simply reaching that minimal version of the requirement is enough for it to be counted for grading -- however, we recommend you to go beyond the minimal; the farther
-                      you go, the more practice you will get.</li>
+                    <li>When a requirement specifies a <code>minimal</code> version of it, simply reaching that minimal version of the requirement is enough for it to be counted for grading -- however, we recommend you to go beyond the minimal; the farther you go, the more practice you will get.</li>
                   </ul>
                   <p><strong>Project Management [<code>5</code> marks]</strong>: To get full marks, you should achieve,</p>
                   <ul>
@@ -444,7 +428,9 @@
                 </div>
               </div>
             </panel>
-            <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Team Project (tP) Grading <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+            <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Team Project (tP) Grading <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+              </template>
               <div>
                 <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. CS2113T projects will be assessed separately from CS2113 projects. Given below is the marking scheme.</p>
                 <p><strong>Total</strong>: <s>35</s> 55 marks (<span><span aria-hidden="true" class="fas fa-user"></span></span> <s>25</s> 45 individual marks + <span><span aria-hidden="true" class="fas fa-users"></span></span> 10 team marks)</p>
@@ -453,18 +439,22 @@
 
                 <div id="criteria-productDesign">
                   <h4 id="1-project-grading-product-design-5-marks">
-                    <div class="bg-warning p-1">1. Project Grading: Product Design <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span>/<span><span aria-hidden="true" class="fas fa-user"></span></span> 5 marks]</span>
-                    </div><a class="fa fa-anchor" href="#1-project-grading-product-design-5-marks"></a></h4>
+                    <div class="bg-warning p-1">1. Project Grading: Product Design <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span>/<span><span aria-hidden="true" class="fas fa-user"></span></span> 5 marks]</span></div><a class="fa fa-anchor" href="#1-project-grading-product-design-5-marks" onclick="event.stopPropagation()"></a>
+                  </h4>
                   <p><strong>Evaluates:</strong> how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user</p>
                   <p><strong>Evaluated by:</strong></p>
                   <ul>
                     <li>tutors (based on product demo and user guide)</li>
                     <li>peers from other teams (based on peer testing and user guide)</li>
                   </ul>
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Product Design</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Product Design</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template>
                     <div>
                       <p>
-                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Quality of the product design,</strong><br> Evaluate based on the User Guide and the actual product behavior.</p>
+                        <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Quality of the product design,</strong><br>
+                        Evaluate based on the User Guide and the actual product behavior.
+                      </p>
                       <div class="table-responsive">
                         <table class="markbind-table table table-bordered table-striped">
                           <thead>
@@ -514,40 +504,41 @@
                     </div>
                   </box>
                   <box type="tip">
-                    <p>Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, <mark>the bar you need to reach to get full 5 marks will be quite low</mark>. For example, the <code>Medium</code> level in the
-                      rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of <em>excessive</em> 'feature flaw' bugs will affect the score.
+                    <p>Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, <mark>the bar you need to reach to get full 5 marks will be quite low</mark>. For example, the <code>Medium</code> level in the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of <em>excessive</em> 'feature flaw' bugs will affect the score.
                     </p>
                   </box>
                 </div>
 
                 <h4 id="2-project-grading-implementation-10-20-marks">
-                  <div class="bg-warning p-1">2. Project Grading: Implementation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> <s>10</s> 20 marks]</span>
-                  </div><a class="fa fa-anchor" href="#2-project-grading-implementation-10-20-marks"></a></h4>
+                  <div class="bg-warning p-1">2. Project Grading: Implementation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> <s>10</s> 20 marks]</span></div><a class="fa fa-anchor" href="#2-project-grading-implementation-10-20-marks" onclick="event.stopPropagation()"></a>
+                </h4>
                 <p><strong><big>2A. Code quality</big></strong></p>
                 <p><strong>Evaluates:</strong> the quality of the parts of the code you claim as written by you</p>
                 <p><strong>Evaluation method:</strong> manual inspection by tutors + automated-analysis by a script</p>
                 <p><strong>Criteria:</strong></p>
                 <span id="projectGrading-codeQuality-criteria">
-<ul>
-<li>
-<p>At least some evidence of these (see <a href="/website/se-book-adapted/chapters/errorHandling.html">here</a> for more info)</p>
-<ul>
-<li>logging</li>
-<li>exceptions</li>
-<li>assertions</li></ul></li>
-<li>
-<p>No <a href="/website/coding-standards/java/basic.html">coding standard</a> violations <span class="dimmed">e.g. all boolean variables/methods sounds like booleans</span>.</p>
-                </li>
-                <li>
-                  <p><a href="/website/se-book-adapted/chapters/codeQuality.html#slap-hard">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP.</p>
-                </li>
-                <li>
-                  <p>No noticeable code duplications <span class="dimmed">i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
-                </li>
-                <li>
-                  <p>Evidence of applying <a href="/website/book/codeQuality">code quality guidelines covered in the module</a>.</p>
-                </li>
-                </ul>
+                  <ul>
+                    <li>
+                      <p>At least some evidence of these (see <a href="/website/se-book-adapted/chapters/errorHandling.html">here</a> for more info)</p>
+                      <ul>
+                        <li>logging</li>
+                        <li>exceptions</li>
+                        <li>assertions</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>No <a href="/website/coding-standards/java/basic.html">coding standard</a> violations <span class="dimmed">e.g. all boolean variables/methods sounds like booleans</span>.</p>
+                    </li>
+                    <li>
+                      <p><a href="/website/se-book-adapted/chapters/codeQuality.html#slap-hard">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP.</p>
+                    </li>
+                    <li>
+                      <p>No noticeable code duplications <span class="dimmed">i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
+                    </li>
+                    <li>
+                      <p>Evidence of applying <a href="/website/book/codeQuality">code quality guidelines covered in the module</a>.</p>
+                    </li>
+                  </ul>
                 </span>
                 <p><strong><big>2B. Effort</big></strong></p>
                 <p><strong>Evaluates:</strong> how much value you contributed to the product</p>
@@ -556,16 +547,21 @@
                   <li>This is evaluated by peers who tested your product, and tutors.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Question used for Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Question used for Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template>
                     <div>
                       <p>
-                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong><br>
-                        <mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark><br> The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.<br>                        Use the person's PPP and RepoSense page to evaluate the effort.</p>
-                      <ul radio-group="301d7" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="301d7" type="radio">  Unable to judge</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="301d7" type="radio">  Significantly less than a typical iP</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="301d7" type="radio">  Slightly less than a typical iP</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="301d7" type="radio">  At least as much as a typical iP</label></li>
+                        <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong><br>
+                        <mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark><br>
+                        The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.<br>
+                        Use the person's PPP and RepoSense page to evaluate the effort.
+                      </p>
+                      <ul radio-group="82a77" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> Unable to judge</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> Significantly less than a typical iP</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> Slightly less than a typical iP</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> At least as much as a typical iP</label></li>
                       </ul>
                     </div>
                   </panel>
@@ -575,12 +571,17 @@
                   <li>The score could be further moderated by this question answered by team members.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template>
                     <div>
                       <p>
-                        <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong></p>
+                        <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong>
+                      </p>
                       <div>
-                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                            <p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p>
+                          </template>
                           <ul radio-group="c5570" class="radio-list">
                             <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
                             <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
@@ -597,26 +598,24 @@
                 <p></p>
 
                 <h4 id="3-project-grading-qa-10-15-marks">
-                  <div class="bg-warning p-1">3. Project Grading: QA <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> <s>10</s> 15 marks]</span>
-                  </div><a class="fa fa-anchor" href="#3-project-grading-qa-10-15-marks"></a></h4>
+                  <div class="bg-warning p-1">3. Project Grading: QA <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> <s>10</s> 15 marks]</span></div><a class="fa fa-anchor" href="#3-project-grading-qa-10-15-marks" onclick="event.stopPropagation()"></a>
+                </h4>
                 <p><big><strong>3A. Developer Testing:</strong></big></p>
                 <p><strong>Evaluates:</strong> How well you tested your own feature</p>
                 <p><strong>Based on:</strong></p>
                 <ol>
                   <li>functionality bugs in your work found by others during the <a href="/website/admin/tp-deliverables.html#deliverable-practical-exam">Practical Exam (PE)</a></li>
-                  <li>your test code <span class="dimmed">(note <span trigger="click" for="modal:projectGradingQA-testingExpectations" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectGradingQA-testingExpectations'].show()" class="trigger-click">our expectations for automated testing</span>)</span>
-                  </li>
+                  <li>your test code <span class="dimmed">(note <span trigger="click" for="modal:projectGradingQA-testingExpectations" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectGradingQA-testingExpectations'].show()" class="trigger-click">our expectations for automated testing</span>)</span></li>
                 </ol>
                 <b-modal id="modal:projectGradingQA-testingExpectations" hide-footer size="lg" modal-class="mb-zoom" ref="modal:projectGradingQA-testingExpectations"><template slot="modal-title">Our expectations for automated testing in the project</template>
-                  <div>
+                    <div>
                     <ul>
                       <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
                     </ul>
                     <div class="indented">
                       <box>
-                        <p><strong>🤔 How much testings is enough?</strong> We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can
-                          decide to what extent you want to automate tests, depending on the benefits and the effort required.<br> There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have
-                          at least 90% of the code covered by tests. In this project, it can be less. <mark>The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.</mark></p>
+                        <p><strong>🤔 How much testings is enough?</strong> We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.<br>
+                          There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. <mark>The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.</mark></p>
                       </box>
                     </div>
                   </div>
@@ -634,9 +633,9 @@
                 <p><strong>Based on:</strong> bugs you found in the PE. In addition to functionality bugs, you get credit for reporting documentation bugs and feature flaws.</p>
                 <box>
                   <div>
-                    <h5 id="grading-bugs-found-in-the-pe">Grading bugs found in the PE<a class="fa fa-anchor" href="#grading-bugs-found-in-the-pe"></a></h5>
+                    <h5 id="grading-bugs-found-in-the-pe">Grading bugs found in the PE<a class="fa fa-anchor" href="#grading-bugs-found-in-the-pe" onclick="event.stopPropagation()"></a></h5>
                     <ul>
-                      <li><mark>Of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>Developer Testing</em> component, based on the bugs found in your code</span>3A</span> and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>System/Acceptance Testing</em> component, based on the bugs found in others' code</span>3B</span> above, the one you do better will be given a 70% weight and the other a 30% weight</mark>                        so that your total score is driven by your strengths rather than weaknesses.</li>
+                      <li><mark>Of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>Developer Testing</em> component, based on the bugs found in your code</span>3A</span> and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>System/Acceptance Testing</em> component, based on the bugs found in others' code</span>3B</span> above, the one you do better will be given a 70% weight and the other a 30% weight</mark> so that your total score is driven by your strengths rather than weaknesses.</li>
                       <li>Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.</li>
                       <li>The penalty/credit for a bug varies based on,
                         <ul>
@@ -646,10 +645,8 @@
                       </li>
                       <li>The penalty for a bug is divided equally among assignees.</li>
                       <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
-                      <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span> earn less
-                        credit for the tester and slightly more penalty for the developer.</li>
-                      <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance
-                        testing.</li>
+                      <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the same bug reported by many testers</span><em>Obvious</em> bugs</span> earn less credit for the tester and slightly more penalty for the developer.</li>
+                      <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
                       <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
                         <ul>
                           <li><code>n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
@@ -657,48 +654,55 @@
                         </ul>
                       </li>
                       <li>You don't need to find <em>all</em> bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
-                      <li>Excessive incorrect downgrading/rejecting/<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">marking as duplicates</span>duplicate-flagging</span>,
-                        if deemed an attempt to <em>game the system</em>, will be penalized.</li>
+                      <li>Excessive incorrect downgrading/rejecting/<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">marking as duplicates</span>duplicate-flagging</span>, if deemed an attempt to <em>game the system</em>, will be penalized.</li>
                     </ul>
                   </div>
                 </box>
 
                 <div id="criteria-documentation">
                   <h4 id="4-project-grading-documentation-5-10-marks">
-                    <div class="bg-warning p-1">4. Project Grading: Documentation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> <s>5</s> 10 marks]</span>
-                    </div><a class="fa fa-anchor" href="#4-project-grading-documentation-5-10-marks"></a></h4>
+                    <div class="bg-warning p-1">4. Project Grading: Documentation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> <s>5</s> 10 marks]</span></div><a class="fa fa-anchor" href="#4-project-grading-documentation-5-10-marks" onclick="event.stopPropagation()"></a>
+                  </h4>
                   <p><strong>Evaluates:</strong> your contribution to project documents</p>
                   <p><strong>Method:</strong> Evaluated in two steps.</p>
                   <ul>
                     <li>Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.</li>
                   </ul>
                   <div class="indented-level2">
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for User Guide</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for User Guide</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                      </template>
                       <div>
                         <p>
-                          <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,</strong><br> Evaluate based on fit-for-purpose, from the perspective of a target user. For reference,
-                          the AB3 UG is <a href="https://se-education.org/addressbook-level3/UserGuide.html">here</a>.<br></p>
-                        <ul radio-group="f83ee" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Significantly lower</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Slightly lower</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Similar</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="f83ee" type="radio">  Higher</label></li>
+                          <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,</strong><br>
+                          Evaluate based on fit-for-purpose, from the perspective of a target user.
+                          For reference, the AB3 UG is <a href="https://se-education.org/addressbook-level3/UserGuide.html">here</a>.<br>
+                        </p>
+                        <ul radio-group="5de96" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Significantly lower</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Slightly lower</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Similar</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Higher</label></li>
                         </ul>
                       </div>
                     </panel>
                   </div>
                   <p></p>
                   <div class="indented-level2">
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Developer Guide</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Developer Guide</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                      </template>
                       <div>
                         <p>
-                          <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AB3, the overall quality of the DG you evaluated is,</strong><br> Evaluate based on fit-for-purpose from the perspective of a new team member trying to understand the product's
-                          internal design by reading the DG. For reference, the AB3 DG is <a href="https://se-education.org/addressbook-level3/DeveloperGuide.html">here</a>.<br></p>
-                        <ul radio-group="fd4bd" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Significantly lower</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Slightly lower</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Similar</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="fd4bd" type="radio">  Higher</label></li>
+                          <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AB3, the overall quality of the DG you evaluated is,</strong><br>
+                          Evaluate based on fit-for-purpose from the perspective of a new team member trying to understand the product's internal design by reading the DG.
+                          For reference, the AB3 DG is <a href="https://se-education.org/addressbook-level3/DeveloperGuide.html">here</a>.<br>
+                        </p>
+                        <ul radio-group="46156" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Significantly lower</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Slightly lower</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Similar</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Higher</label></li>
                         </ul>
                       </div>
                     </panel>
@@ -708,252 +712,261 @@
                     <li>Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.</li>
                   </ul>
                   <div class="indented-level2">
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the UG</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the UG</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                      </template>
                       <div>
                         <p>
-                          <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the User Guide is,</strong></p>
+                          <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the User Guide is,</strong>
+                        </p>
                         <span id="equalShareScale">
-<panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
-<ul radio-group="070b7" class="radio-list">
-<li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label>
-                        </li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> ...</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
-                        </ul>
-                    </panel>
-                    </span>
-                    </div>
-            </panel>
-            </div>
-            <p></p>
-            <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the DG</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
-                <div>
-                  <p>
-                    <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the Developer Guide is,</strong></p>
-                  <div>
-                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
-                      <ul radio-group="c5570" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
-                      </ul>
-                    </panel>
-                  </div>
-                </div>
-              </panel>
-            </div>
-            <p></p>
-            <ul>
-              <li>In addition, UG and DG bugs you received in the PE will be considered for grading this component.</li>
-            </ul>
-            <div class="indented-level2">
-              <box>
-                <div>
-                  <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
-                  <div>
-                    <span id="visualsBugs">
-<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
-                    <ul>
-                      <li>Not enough visuals e.g., screenshots/diagrams</li>
-                      <li>The visuals are not well integrated to the explanation</li>
-                      <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
-                      </li>
-                    </ul>
-                    </span>
-                    <span id="examplesBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
-                    <ul>
-                      <li>Not enough or too many examples e.g., sample inputs/outputs
-                      </li>
-                    </ul>
-                    </span>
-                    <span id="explanationBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
-                    <ul>
-                      <li>The explanation is too brief or unnecessarily long.</li>
-                      <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
-                      </li>
-                    </ul>
-                    </span>
-                    <span id="neatnessBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness/Correctness:</p>
-                    <ul>
-                      <li>looks messy</li>
-                      <li>not well-formatted</li>
-                      <li>broken links, other inaccuracies, typos, etc.
-                      </li>
-                    </ul>
-                    </span>
-                  </div>
-                </div>
-              </box>
-              <box>
-                <div>
-                  <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
-                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Those given as possible UG bugs ...</p></template>
-                    <div>
-                      <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
-                      <div>
-                        <span id="visualsBugs">
-<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
-                        <ul>
-                          <li>Not enough visuals e.g., screenshots/diagrams</li>
-                          <li>The visuals are not well integrated to the explanation</li>
-                          <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
-                          </li>
-                        </ul>
-                        </span>
-                        <span id="examplesBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
-                        <ul>
-                          <li>Not enough or too many examples e.g., sample inputs/outputs
-                          </li>
-                        </ul>
-                        </span>
-                        <span id="explanationBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
-                        <ul>
-                          <li>The explanation is too brief or unnecessarily long.</li>
-                          <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
-                          </li>
-                        </ul>
-                        </span>
-                        <span id="neatnessBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness/Correctness:</p>
-                        <ul>
-                          <li>looks messy</li>
-                          <li>not well-formatted</li>
-                          <li>broken links, other inaccuracies, typos, etc.
-                          </li>
-                        </ul>
+                          <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                              <p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p>
+                            </template>
+                            <ul radio-group="070b7" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> ...</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                            </ul>
+                          </panel>
                         </span>
                       </div>
-                    </div>
-                  </panel>
-                  <span id="umlDiagramBugs">
-<p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
-                  <ul>
-                    <li>Notation incorrect or not compliant with the notation covered in the module.</li>
-                    <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
-                    <li>The diagram used is not suitable for the purpose it is used.</li>
-                    <li>The diagram is too complicated.
-                    </li>
-                  </ul>
-                  </span>
-                  <span id="codeSnippetBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Code snippets:</p>
-                  <ul>
-                    <li>Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
-                    </li>
-                  </ul>
-                  </span>
-                  <span id="userStoryBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in User Stories. Examples:</p>
-                  <ul>
-                    <li>Incorrect format</li>
-                    <li>All three parts are not present</li>
-                    <li>Benefit does not match the function</li>
-                    <li>Important user stories missing
-                    </li>
-                  </ul>
-                  </span>
-                  <span id="nfrBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in NFRs. Examples:</p>
-                  <ul>
-                    <li>Not really a <em>Non-Functional</em> Requirement</li>
-                    <li>Not well-defined (i.e., hard to decide when it has been met)</li>
-                    <li>Not reasonably achievable</li>
-                    <li>Highly relevant NFRs missing
-                    </li>
-                  </ul>
-                  </span>
-                  <span id="glossaryBugs">
-
-<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Glossary. Examples:</p>
-                  <ul>
-                    <li>Unnecessary terms included</li>
-                    <li>Important terms missing
-                    </li>
-                  </ul>
-                  </span>
-                </div>
-              </box>
-            </div>
-            </div>
-
-            <h4 id="5-project-grading-project-management-5-marks">
-              <div class="bg-warning p-1">5. Project Grading: Project Management <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span>/<span><span aria-hidden="true" class="fas fa-user"></span></span> = 5 marks]</span>
-              </div><a class="fa fa-anchor" href="#5-project-grading-project-management-5-marks"></a></h4>
-            <div id="project-management-grading">
-              <p><big><strong>5A. Process:</strong></big></p>
-              <p><strong>Evaluates:</strong> How well you did in project management related aspects of the project, as an individual and as a team</p>
-              <p><strong>Based on:</strong> tutor/bot observations of project milestones and GitHub data</p>
-              <p><strong>Grading criteria:</strong></p>
-              <ul>
-                <li>No <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., the product is not working at all by the milestone deadline</span>major mishaps</span>
-                  at v1.0 and v2.0.</li>
-                <li>Good attempt to use of at least <em>some</em> Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)</li>
-                <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
-              </ul>
-              <p><big><strong>5B. Team-tasks:</strong></big></p>
-              <p><strong>Evaluates:</strong> How much you contributed to team-tasks</p>
-              <div class="indented-level1">
-                <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: Examples of team-tasks <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
-                  <div>
-                    <p>Here is a non-exhaustive list of team-tasks:</p>
-                    <ol>
-                      <li>Necessary general code enhancements</li>
-                      <li>Setting up tools e.g., GitHub, Gradle</li>
-                      <li>Maintaining the issue tracker</li>
-                      <li>Release management</li>
-                      <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
-                      <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
-                    </ol>
+                    </panel>
                   </div>
-                </panel>
+                  <p></p>
+                  <div class="indented-level2">
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the DG</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                      </template>
+                      <div>
+                        <p>
+                          <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the Developer Guide is,</strong>
+                        </p>
+                        <div>
+                          <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                              <p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p>
+                            </template>
+                            <ul radio-group="c5570" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                            </ul>
+                          </panel>
+                        </div>
+                      </div>
+                    </panel>
+                  </div>
+                  <p></p>
+                  <ul>
+                    <li>In addition, UG and DG bugs you received in the PE will be considered for grading this component.</li>
+                  </ul>
+                  <div class="indented-level2">
+                    <box>
+                      <div>
+                        <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                        <div>
+                          <span id="visualsBugs">
+                            <p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                            <ul>
+                              <li>Not enough visuals e.g., screenshots/diagrams</li>
+                              <li>The visuals are not well integrated to the explanation</li>
+                              <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                              </li>
+                            </ul>
+                          </span>
+                          <span id="examplesBugs">
+
+                            <p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                            <ul>
+                              <li>Not enough or too many examples e.g., sample inputs/outputs
+                              </li>
+                            </ul>
+                          </span>
+                          <span id="explanationBugs">
+
+                            <p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                            <ul>
+                              <li>The explanation is too brief or unnecessarily long.</li>
+                              <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                              </li>
+                            </ul>
+                          </span>
+                          <span id="neatnessBugs">
+
+                            <p><span aria-hidden="true" class="fas fa-bug"></span> Neatness/Correctness:</p>
+                            <ul>
+                              <li>looks messy</li>
+                              <li>not well-formatted</li>
+                              <li>broken links, other inaccuracies, typos, etc.
+                              </li>
+                            </ul>
+                          </span></div>
+                      </div>
+                    </box>
+                    <box>
+                      <div>
+                        <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                            <p>Those given as possible UG bugs ...</p>
+                          </template>
+                          <div>
+                            <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                            <div>
+                              <span id="visualsBugs">
+                                <p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                                <ul>
+                                  <li>Not enough visuals e.g., screenshots/diagrams</li>
+                                  <li>The visuals are not well integrated to the explanation</li>
+                                  <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                                  </li>
+                                </ul>
+                              </span>
+                              <span id="examplesBugs">
+
+                                <p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                                <ul>
+                                  <li>Not enough or too many examples e.g., sample inputs/outputs
+                                  </li>
+                                </ul>
+                              </span>
+                              <span id="explanationBugs">
+
+                                <p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                                <ul>
+                                  <li>The explanation is too brief or unnecessarily long.</li>
+                                  <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                                  </li>
+                                </ul>
+                              </span>
+                              <span id="neatnessBugs">
+
+                                <p><span aria-hidden="true" class="fas fa-bug"></span> Neatness/Correctness:</p>
+                                <ul>
+                                  <li>looks messy</li>
+                                  <li>not well-formatted</li>
+                                  <li>broken links, other inaccuracies, typos, etc.
+                                  </li>
+                                </ul>
+                              </span></div>
+                          </div>
+                        </panel>
+                        <span id="umlDiagramBugs">
+                          <p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
+                          <ul>
+                            <li>Notation incorrect or not compliant with the notation covered in the module.</li>
+                            <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
+                            <li>The diagram used is not suitable for the purpose it is used.</li>
+                            <li>The diagram is too complicated.
+                            </li>
+                          </ul>
+                        </span>
+                        <span id="codeSnippetBugs">
+
+                          <p><span aria-hidden="true" class="fas fa-bug"></span> Code snippets:</p>
+                          <ul>
+                            <li>Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
+                            </li>
+                          </ul>
+                        </span>
+                        <span id="userStoryBugs">
+
+                          <p><span aria-hidden="true" class="fas fa-bug"></span> Problems in User Stories. Examples:</p>
+                          <ul>
+                            <li>Incorrect format</li>
+                            <li>All three parts are not present</li>
+                            <li>Benefit does not match the function</li>
+                            <li>Important user stories missing
+                            </li>
+                          </ul>
+                        </span>
+                        <span id="nfrBugs">
+
+                          <p><span aria-hidden="true" class="fas fa-bug"></span> Problems in NFRs. Examples:</p>
+                          <ul>
+                            <li>Not really a <em>Non-Functional</em> Requirement</li>
+                            <li>Not well-defined (i.e., hard to decide when it has been met)</li>
+                            <li>Not reasonably achievable</li>
+                            <li>Highly relevant NFRs missing
+                            </li>
+                          </ul>
+                        </span>
+                        <span id="glossaryBugs">
+
+                          <p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Glossary. Examples:</p>
+                          <ul>
+                            <li>Unnecessary terms included</li>
+                            <li>Important terms missing
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </box>
+                  </div>
+                </div>
+
+                <h4 id="5-project-grading-project-management-5-marks">
+                  <div class="bg-warning p-1">5. Project Grading: Project Management <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span>/<span><span aria-hidden="true" class="fas fa-user"></span></span> = 5 marks]</span></div><a class="fa fa-anchor" href="#5-project-grading-project-management-5-marks" onclick="event.stopPropagation()"></a>
+                </h4>
+                <div id="project-management-grading">
+                  <p><big><strong>5A. Process:</strong></big></p>
+                  <p><strong>Evaluates:</strong> How well you did in project management related aspects of the project, as an individual and as a team</p>
+                  <p><strong>Based on:</strong> tutor/bot observations of project milestones and GitHub data</p>
+                  <p><strong>Grading criteria:</strong></p>
+                  <ul>
+                    <li>No <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., the product is not working at all by the milestone deadline</span>major mishaps</span> at v1.0 and v2.0.</li>
+                    <li>Good attempt to use of at least <em>some</em> Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)</li>
+                    <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
+                  </ul>
+                  <p><big><strong>5B. Team-tasks:</strong></big></p>
+                  <p><strong>Evaluates:</strong> How much you contributed to team-tasks</p>
+                  <div class="indented-level1">
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: Examples of team-tasks <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                      </template>
+                      <div>
+                        <p>Here is a non-exhaustive list of team-tasks:</p>
+                        <ol>
+                          <li>Necessary general code enhancements</li>
+                          <li>Setting up tools e.g., GitHub, Gradle</li>
+                          <li>Maintaining the issue tracker</li>
+                          <li>Release management</li>
+                          <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
+                          <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                        </ol>
+                      </div>
+                    </panel>
+                  </div>
+                  <p></p>
+                  <p><strong>Based on:</strong> peer evaluations, tutor observations</p>
+                  <p><strong>Grading criteria:</strong> To earn full marks,</p>
+                  <ul>
+                    <li>you have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.</li>
+                    <li>you have merged code in at least four of weeks 7, 8, 9, 10, 11, 12</li>
+                  </ul>
+                </div>
               </div>
-              <p></p>
-              <p><strong>Based on:</strong> peer evaluations, tutor observations</p>
-              <p><strong>Grading criteria:</strong> To earn full marks,</p>
-              <ul>
-                <li>you have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.</li>
-                <li>you have merged code in at least four of weeks 7, 8, 9, 10, 11, 12</li>
-              </ul>
-            </div>
-            </div>
             </panel>
           </div>
           <br>
-          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/participation.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Participation Marks</span>
-            </b-btn>
-            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/appendixA-principles.html"><span>Apdx A: Module Principles <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-            </b-btn>
-            </span>
-          </p>
+          <p><span class="float-left algolia-no-index">
+              <b-btn variant="light" href="/website/admin/participation.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Participation Marks</span></b-btn>
+            </span><span class="float-right algolia-no-index">
+              <b-btn variant="light" href="/website/admin/appendixA-principles.html"><span>Apdx A: Module Principles <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+            </span></p>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#grade-breakdown">Grade Breakdown 
-          &#x200E;</a>
+            <a class="nav-link py-1" href="#grade-breakdown">Grade Breakdown &#x200E;</a>
 
           </nav>
         </div>
@@ -961,7 +974,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Wed, 15 Apr 2020, 23:57:00 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sat, 18 Apr 2020, 19:21:51 GMT+8</small></div>
     </footer>
   </div>
 </body>
