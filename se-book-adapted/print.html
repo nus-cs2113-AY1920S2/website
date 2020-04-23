@@ -8417,7 +8417,7 @@ Extensions:
           <p style="page-break-after: always;">&nbsp;</p>
           <div id="title">
             <div>
-              <h1 id="git-and-github"><span>Git and Github</span><a class="fa fa-anchor" href="#git-and-github" onclick="event.stopPropagation()"></a></h1>
+              <h1 id="git-and-github"><span>Git and GitHub</span><a class="fa fa-anchor" href="#git-and-github" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
           <div class="indented-less">
@@ -8685,28 +8685,25 @@ Extensions:
                   <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <span trigger="click" for="modal:checkout-stash" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:checkout-stash'].show()" class="trigger-click">stash</span> them first to prevent them from being overwritten.</p>
                   <b-modal id="modal:checkout-stash" hide-footer size="lg" modal-class="mb-zoom" ref="modal:checkout-stash"><template slot="modal-title"><span class="dimmed">Extract</span></template>
                     <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
-                            </span></strong></span></p>
-                      <div id="title-and-body">
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Git to stash files</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
                         <div>
-                          <h4 id="stash"><span>Stash</span><a class="fa fa-anchor" href="#stash" onclick="event.stopPropagation()"></a></h4>
+                          <p><strong>You can use the git's <mark><em>stash</em></mark> feature to temporarily shelve (or stash) changes you've made to your working copy</strong> so that you can work on something else, and then come back and re-apply the stashed changes later on. <sub>-- adapted from <a href="https://www.atlassian.com/git/tutorials/git-stash">this</a></sub></p>
+                          <tabs>
+                            <tab><template slot="_header">Source Tree</template>
+                              <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
+                            </tab>
+                            <tab class="algolia-no-index"><template slot="_header">CLI</template>
+                              <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
+                            </tab>
+                          </tabs>
                         </div>
-                        <div id="main">
-                          <div>
-                            <p><strong>You can use the git's <mark><em>stash</em></mark> feature to temporarily shelve (or stash) changes you've made to your working copy</strong> so that you can work on something else, and then come back and re-apply the stashed changes later on. <sub>-- adapted from <a href="https://www.atlassian.com/git/tutorials/git-stash">this</a></sub></p>
-                            <tabs>
-                              <tab><template slot="_header">Source Tree</template>
-                                <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
-                              </tab>
-                              <tab class="algolia-no-index"><template slot="_header">CLI</template>
-                                <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
-                              </tab>
-                            </tabs>
-                          </div>
-                          <div></div>
-                        </div>
+                        <div></div>
                       </div>
                     </div>
                   </b-modal>
@@ -8746,9 +8743,9 @@ Extensions:
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="stash-2">Stash <span class="badge badge-light"><small><small>
+              <h4 id="stash">Stash <span class="badge badge-light"><small><small>
                       <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#stash-2" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#stash" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>You can use the git's <mark><em>stash</em></mark> feature to temporarily shelve (or stash) changes you've made to your working copy</strong> so that you can work on something else, and then come back and re-apply the stashed changes later on. <sub>-- adapted from <a href="https://www.atlassian.com/git/tutorials/git-stash">this</a></sub></p>
@@ -9340,7 +9337,7 @@ Extensions:
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Mon, 20 Apr 2020, 1:09:47 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Thu, 23 Apr 2020, 14:01:53 GMT+8</small></div>
     </footer>
   </div>
 </body>
