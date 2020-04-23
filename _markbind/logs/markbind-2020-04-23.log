@@ -147,3 +147,74 @@
 2020-04-23T06:07:02.559Z - info: Deployed!
 2020-04-23T07:26:32.921Z - info: Website generation started at 3:26:25 PM
 2020-04-23T07:26:40.021Z - info: Building assets...
+2020-04-23T07:26:45.047Z - info: Assets built
+2020-04-23T07:26:45.048Z - info: Generating pages...
+2020-04-23T07:29:40.969Z - debug: Exception in thread "main" java.lang.NoClassDefFoundError: net/sourceforge/plantuml/command/CommandTitle
+	at net.sourceforge.plantuml.command.UmlDiagramFactory.addTitleCommands(UmlDiagramFactory.java:249)
+	at net.sourceforge.plantuml.command.UmlDiagramFactory.addCommonCommands1(UmlDiagramFactory.java:213)
+	at net.sourceforge.plantuml.sequencediagram.SequenceDiagramFactory.createCommands(SequenceDiagramFactory.java:98)
+	at net.sourceforge.plantuml.command.UmlDiagramFactory.<init>(UmlDiagramFactory.java:70)
+	at net.sourceforge.plantuml.command.UmlDiagramFactory.<init>(UmlDiagramFactory.java:65)
+	at net.sourceforge.plantuml.sequencediagram.SequenceDiagramFactory.<init>(SequenceDiagramFactory.java:84)
+	at net.sourceforge.plantuml.PSystemBuilder.getAllFactories(PSystemBuilder.java:148)
+	at net.sourceforge.plantuml.PSystemBuilder.createPSystem(PSystemBuilder.java:120)
+	at net.sourceforge.plantuml.BlockUml.getDiagram(BlockUml.java:155)
+	at net.sourceforge.plantuml.SourceStringReader.outputImage(SourceStringReader.java:150)
+	at net.sourceforge.plantuml.Pipe.managePipe(Pipe.java:110)
+	at net.sourceforge.plantuml.Run.managePipe(Run.java:359)
+	at net.sourceforge.plantuml.Run.main(Run.java:166)
+Caused by: java.lang.ClassNotFoundException: net.sourceforge.plantuml.command.CommandTitle
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 13 more
+Caused by: java.util.zip.ZipException: error reading zip file
+	at java.util.zip.ZipFile.read(Native Method)
+	at java.util.zip.ZipFile.access$1400(Unknown Source)
+	at java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source)
+	at java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(Unknown Source)
+	at java.util.zip.InflaterInputStream.read(Unknown Source)
+	at sun.misc.Resource.getBytes(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	... 20 more
+
+2020-04-23T07:29:44.571Z - debug:  
+2020-04-23T07:29:44.613Z - debug:  
+2020-04-23T07:29:44.613Z - debug:  
+2020-04-23T07:29:44.613Z - debug:  
+2020-04-23T07:29:44.614Z - debug:  
+2020-04-23T07:29:44.614Z - debug:  
+2020-04-23T07:29:44.614Z - debug:  
+2020-04-23T07:29:44.614Z - debug:  
+2020-04-23T07:29:44.616Z - debug:  
+2020-04-23T07:29:44.617Z - debug:  
+2020-04-23T07:29:44.617Z - debug:  
+2020-04-23T07:29:44.617Z - debug:  
+2020-04-23T07:29:45.244Z - debug:  
+2020-04-23T07:29:45.245Z - debug:  
+2020-04-23T07:29:45.245Z - debug:  
+2020-04-23T07:29:45.245Z - debug:  
+2020-04-23T07:29:45.245Z - debug:  
+2020-04-23T07:29:45.491Z - debug:  
+2020-04-23T07:29:45.491Z - debug:  
+2020-04-23T07:29:53.935Z - debug:  
+2020-04-23T07:29:53.936Z - debug:  
+2020-04-23T07:29:53.936Z - debug:  
+2020-04-23T07:29:53.936Z - debug:  
+2020-04-23T07:29:53.937Z - debug:  
+2020-04-23T07:29:53.937Z - debug:  
+2020-04-23T07:29:53.937Z - debug:  
+2020-04-23T07:29:53.937Z - debug:  
+2020-04-23T07:29:53.937Z - debug:  
+2020-04-23T07:29:55.058Z - debug:  
+2020-04-23T07:29:55.068Z - debug:  
+2020-04-23T07:29:55.206Z - info: Pages built
+2020-04-23T07:30:37.929Z - info: Website generation complete! Total build time: 252.81s
+2020-04-23T07:30:37.930Z - info: Build success!
+2020-04-23T07:30:37.935Z - info: Site data built
+2020-04-23T07:31:29.478Z - info: Deployed!
