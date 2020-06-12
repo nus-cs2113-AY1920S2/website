@@ -36,7 +36,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="what">
+                  <panel type="seamless" expanded="" id="what">
                     <span slot="header" class="card-title">
                       <div>
                         <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
@@ -50,7 +50,7 @@
                       <div>
                         <p><strong><em>Logging</em> is the deliberate recording of certain information during a program execution for future reference.</strong> Logs are typically written to a log file but it is also possible to log information in other ways <span class="dimmed">e.g. into a database or a remote server</span>.</p>
                         <p><strong><em>Logging</em> can be useful for troubleshooting problems</strong>. A good logging system records some system information regularly. When bad things happen to a system <span class="dimmed">e.g. an unanticipated failure</span>, their associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again.</p>
-                        <div v-closeable alt="blackbox photo">
+                        <div v-closeable="" alt="blackbox photo">
                           <box>
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">flight data recorder</span>black box</span> of an airplane</strong>; they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
                             <div class="non-printable">
@@ -62,7 +62,7 @@
                       </div>
                       <div>
                         <div>
-                          <panel expandable class="algolia-no-index"><template slot="_header">
+                          <panel expandable="" class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                             </template>
                             <div>
@@ -90,7 +90,7 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="how">
+                  <panel type="seamless" expanded="" id="how">
                     <span slot="header" class="card-title">
                       <div>
                         <h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how" onclick="event.stopPropagation()"></a></h4>
@@ -106,16 +106,16 @@
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sample Java code uses Java’s default logging mechanism.</p>
                           <p>First, import the relevant Java package:</p>
-                          <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.logging.*;<br></span></code></pre>
-                          <p>Next, create a <code>Logger</code>:</p>
-                          <pre><code class="hljs java"><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);<br></span></code></pre>
-                          <p>Now, you can use the <code>Logger</code> object to log information. Note the use of <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content"><code>INFO</code>, <code>WARNING</code> etc.</span>logging level</span> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not be written to the log file at all.</p>
-                          <pre><code class="hljs java"><span><span class="hljs-comment">// log a message at INFO level</span><br></span><span>logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);<br></span><span><span class="hljs-comment">//...</span><br></span><span>processInput();<br></span><span><span class="hljs-keyword">if</span>(error){<br></span><span>    <span class="hljs-comment">//log a message at WARNING level</span><br></span><span>    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);<br></span><span>}<br></span><span><span class="hljs-comment">//...</span><br></span><span>logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">import</span> java.util.logging.*;<br></span></code></pre>
+                          <p>Next, create a <code v-pre="">Logger</code>:</p>
+                          <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);<br></span></code></pre>
+                          <p>Now, you can use the <code v-pre="">Logger</code> object to log information. Note the use of <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content"><code v-pre="">INFO</code>, <code v-pre="">WARNING</code> etc.</span>logging level</span> for each message. When running the code, the logging level can be set to <code v-pre="">WARNING</code> so that log messages specified as <code v-pre="">INFO</code> level (which is a lower level than <code v-pre="">WARNING</code>) will not be written to the log file at all.</p>
+                          <pre><code class="hljs java" v-pre=""><span><span class="hljs-comment">// log a message at INFO level</span><br></span><span>logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);<br></span><span><span class="hljs-comment">//...</span><br></span><span>processInput();<br></span><span><span class="hljs-keyword">if</span>(error){<br></span><span>    <span class="hljs-comment">//log a message at WARNING level</span><br></span><span>    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);<br></span><span>}<br></span><span><span class="hljs-comment">//...</span><br></span><span>logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);<br></span></code></pre>
                         </box>
                       </div>
                       <div>
                         <div>
-                          <panel expanded><template slot="_header">
+                          <panel expanded=""><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                             </template>
                             <p><strong>Tutorials</strong>:</p>
@@ -123,11 +123,11 @@
                               <li><a href="http://www.vogella.com/tutorials/Logging/article.html"><strong>Java Logging API - Tutorial</strong></a> -- A tutorial by <em>Lars Vogella</em></li>
                               <li><a href="http://tutorials.jenkov.com/java-logging/index.html"><strong>Java Logging Tutorial</strong></a> -- An alternative tutorial by <em>Jakob Jenkov</em></li>
                             </ul>
-                            <div v-closeable alt="video:logging">
+                            <div v-closeable="" alt="video:logging">
                               <ul>
                                 <li>A video tutorial by <em>SimplyCoded</em>:<br></li>
                               </ul>
-                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/W0_Man88Z3Q" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/W0_Man88Z3Q" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                             </div>
                             <p><strong>Best Practices</strong>:</p>
                             <ul>

@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -83,120 +84,178 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/website/se-book-adapted/index.html" class="site-nav__a">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
-                </ul>
-              </div>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/index.html">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Software Engineering</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Programming Paradigms</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Design</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/architecture.html" class="site-nav__a">Software Architecture</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designPatterns.html" class="site-nav__a">Software Design Patterns</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designApproaches.html" class="site-nav__a">Design Approaches</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Requirements</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/requirements.html">Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open"><strong>Implementation</strong>
-                <i class="dropdown-btn-icon rotate-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/errorHandling.html" class="site-nav__a current">Error Handling</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Design</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/design.html">Software Design</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/modeling.html">Modeling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/architecture.html">Software Architecture</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Implementation</strong>
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/ides.html">IDEs</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/codeQuality.html">Code Quality</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/refactoring.html">Refactoring</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/documentation.html">Documentation</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/errorHandling.html" class="current">Error Handling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/integration.html">Integration</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/reuse.html">Reuse</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Quality Assurance</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/testing.html">Testing</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Principles</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/principles.html" class="site-nav__a">Principles</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Project Management</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/revisionControl.html">Revision Control</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/teamwork.html">Teamwork</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/intellij.html" class="site-nav__a">Intellij IDEA</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/gitAndGithub.html" class="site-nav__a">Git and Github</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Principles</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/principles.html">Principles</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn">Supplementary
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/cppToJava.html" class="site-nav__a">C++ to Java</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/projectDuke/index.html" class="site-nav__a">Project Duke</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Tools</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/uml.html">UML</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">Supplementary
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/cppToJava.html">C++ to Java</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/projectDuke/index.html">Project Duke</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/common/exercises.html">Combined Exercises</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/common/definitions.html">List of Definitions</a></div>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -208,16 +267,16 @@
           <p><span class="dimmed"><strong><span></span></strong></span></p>
           <div id="title">
             <div>
-              <h1 id="error-handling"><span>Error Handling</span><a class="fa fa-anchor" href="#error-handling" onclick="event.stopPropagation()"></a></h1>
+              <h1 id="error-handling"><span>Error handling</span><a class="fa fa-anchor" href="#error-handling" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded id="introduction">
+          <panel type="seamless" expanded="" id="introduction">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what"><template slot="_header">
+            <panel type="seamless" expanded="" id="what"><template slot="_header">
                 <h4 id="what">What<a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -236,13 +295,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="exceptions">
+          <panel type="seamless" expanded="" id="exceptions">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="exceptions"><span>Exceptions</span><a class="fa fa-anchor" href="#exceptions" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what-2"><template slot="_header">
+            <panel type="seamless" expanded="" id="what-2"><template slot="_header">
                 <h4 id="what-2">What<a class="fa fa-anchor" href="#what-2" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -273,7 +332,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="how"><template slot="_header">
+            <panel type="seamless" expanded="" id="how"><template slot="_header">
                 <h4 id="how">How<a class="fa fa-anchor" href="#how" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -299,7 +358,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -325,7 +384,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="when"><template slot="_header">
+            <panel type="seamless" expanded="" id="when"><template slot="_header">
                 <h4 id="when">When<a class="fa fa-anchor" href="#when" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -336,19 +395,19 @@
                 <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can avoid using exceptions to control normal workflow</span></span></span></span>
                 <p></p>
                 <div>
-                  <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
+                  <p>In general, use exceptions only for 'unusual' conditions. Use normal <code v-pre="">return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
                 </div>
                 <div></div>
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="assertions">
+          <panel type="seamless" expanded="" id="assertions">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="assertions"><span>Assertions</span><a class="fa fa-anchor" href="#assertions" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what-3"><template slot="_header">
+            <panel type="seamless" expanded="" id="what-3"><template slot="_header">
                 <h4 id="what-3">What<a class="fa fa-anchor" href="#what-3" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -361,18 +420,18 @@
                 <div>
                   <p><strong><em>Assertions</em> are used to define assumptions about the program state so that the runtime can verify them.</strong> An assertion failure indicates a possible bug in the code <span class="dimmed">because the code has resulted in a program state that violates an assumption about how the code <em>should</em> behave</span>.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An assertion can be used to express something like <em>when the execution comes to this point, the variable <code>v</code> cannot be null</em>.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An assertion can be used to express something like <em>when the execution comes to this point, the variable <code v-pre="">v</code> cannot be null</em>.</p>
                   </box>
                   <p><strong>If the runtime detects an <em>assertion failure</em>, it typically take some drastic action</strong> such as terminating the execution with an error message. This is because an assertion failure indicates a possible bug and the sooner the execution stops, the safer it is.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the Java code below, suppose we set an assertion that <code>timeout</code> returned by <code>Config.getTimeout()</code> is greater than <code>0</code>. Now, if the <code>Config.getTimeout()</code> returned <code>-1</code> in a specific execution of this line, the runtime can detect it as a <em>assertion failure</em> -- i.e. an assumption about the expected behavior of the code turned out to be wrong which could potentially be the result of a bug -- and take some drastic action such as terminating the execution.</p>
-                    <pre><code class="hljs java"><span><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); <br></span></code></pre>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the Java code below, suppose you set an assertion that <code v-pre="">timeout</code> returned by <code v-pre="">Config.getTimeout()</code> is greater than <code v-pre="">0</code>. Now, if the <code v-pre="">Config.getTimeout()</code> returned <code v-pre="">-1</code> in a specific execution of this line, the runtime can detect it as a <em>assertion failure</em> -- i.e. an assumption about the expected behavior of the code turned out to be wrong which could potentially be the result of a bug -- and take some drastic action such as terminating the execution.</p>
+                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); <br></span></code></pre>
                   </box>
                 </div>
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="how-2"><template slot="_header">
+            <panel type="seamless" expanded="" id="how-2"><template slot="_header">
                 <h4 id="how-2">How<a class="fa fa-anchor" href="#how-2" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -383,24 +442,24 @@
                 <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use assertions</span></span></span></span>
                 <p></p>
                 <div>
-                  <p>Use the <code>assert</code> keyword to define assertions.</p>
+                  <p>Use the <code v-pre="">assert</code> keyword to define assertions.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This assertion will fail with the message <code>x should be 0</code> if <code>x</code> is not 0 at this point.</p>
-                    <pre><code class="hljs java"><span>x = getX();<br></span><span><span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;<br></span><span>...<br></span></code></pre>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This assertion will fail with the message <code v-pre="">x should be 0</code> if <code v-pre="">x</code> is not 0 at this point.</p>
+                    <pre><code class="hljs java" v-pre=""><span>x = getX();<br></span><span><span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;<br></span><span>...<br></span></code></pre>
                   </box>
                   <p><strong>Assertions can be disabled without modifying the code.</strong></p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>java -enableassertions HelloWorld</code> (or <code>java -ea HelloWorld</code>) will run <code>HelloWorld</code> with assertions enabled while <code>java -disableassertions HelloWorld</code> will run it without verifying assertions.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre="">java -enableassertions HelloWorld</code> (or <code v-pre="">java -ea HelloWorld</code>) will run <code v-pre="">HelloWorld</code> with assertions enabled while <code v-pre="">java -disableassertions HelloWorld</code> will run it without verifying assertions.</p>
                   </box>
                   <box type="important">
-                    <p><strong>Java disables assertions by default.</strong> This could create a situation where you think all assertions are being verified as <code>true</code> while in fact they are not being verified at all. Therefore, remember to enable assertions when you run the program if you want them to be in effect.</p>
+                    <p><strong>Java disables assertions by default.</strong> This could create a situation where you think all assertions are being verified as <code v-pre="">true</code> while in fact they are not being verified at all. Therefore, remember to enable assertions when you run the program if you want them to be in effect.</p>
                   </box>
-                  <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Enable assertions in Intellij (<a href="https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea">how?</a>) and get an assertion to fail temporarily (e.g. insert an <code>assert false</code> into the code temporarily) to confirm assertions are being verified.</p>
-                  <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <strong>Java <code>assert</code> vs JUnit assertions: They are similar in purpose but JUnit assertions are more powerful and customized for testing.</strong> In addition, JUnit assertions are not disabled by default. We recommend you use JUnit assertions in test code and Java <code>assert</code> in functional code.</p>
+                  <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Enable assertions in Intellij (<a href="https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea">how?</a>) and get an assertion to fail temporarily (e.g. insert an <code v-pre="">assert false</code> into the code temporarily) to confirm assertions are being verified.</p>
+                  <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <strong>Java <code v-pre="">assert</code> vs JUnit assertions: They are similar in purpose but JUnit assertions are more powerful and customized for testing.</strong> In addition, JUnit assertions are not disabled by default. You recommend you use JUnit assertions in test code and Java <code v-pre="">assert</code> in functional code.</p>
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                       </template>
                       <p><strong>Tutorials</strong>:</p>
@@ -417,7 +476,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="when-2"><template slot="_header">
+            <panel type="seamless" expanded="" id="when-2"><template slot="_header">
                 <h4 id="when-2">When<a class="fa fa-anchor" href="#when-2" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -431,8 +490,8 @@
                   <p><strong>It is recommended that assertions be used liberally in the code.</strong> Their impact on performance is considered low and worth the additional safety they provide.</p>
                   <p><strong>Do not use assertions to do <em>work</em></strong> because assertions can be disabled. If not, your program will stop working when assertions are not enabled.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below will not invoke the <code>writeFile()</code> method when assertions are disabled. <span class="dimmed">If that method is performing some work that is necessary for your program, your program will not work correctly when assertions are disabled.</span></p>
-                    <pre><code class="hljs java"><span>...<br></span><span><span class="hljs-function"><span class="hljs-keyword">assert</span> <span class="hljs-title">writeFile</span><span class="hljs-params">()</span> : "File writing is supposed to return <span class="hljs-keyword">true</span>"</span>;<br></span></code></pre>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below will not invoke the <code v-pre="">writeFile()</code> method when assertions are disabled. <span class="dimmed">If that method is performing some work that is necessary for your program, your program will not work correctly when assertions are disabled.</span></p>
+                    <pre><code class="hljs java" v-pre=""><span>...<br></span><span><span class="hljs-function"><span class="hljs-keyword">assert</span> <span class="hljs-title">writeFile</span><span class="hljs-params">()</span> : "File writing is supposed to return <span class="hljs-keyword">true</span>"</span>;<br></span></code></pre>
                   </box>
                   <p><strong>Assertions are suitable for verifying assumptions about <em>Internal Invariants</em>, <em>Control-Flow Invariants</em>,
                       <em>Preconditions</em>, <em>Postconditions</em>, and <em>Class Invariants</em>.</strong> Refer to [<a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html#usage">Programming with Assertions (second half)</a>] to learn more.</p>
@@ -444,7 +503,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -488,13 +547,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="logging">
+          <panel type="seamless" expanded="" id="logging">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="logging"><span>Logging</span><a class="fa fa-anchor" href="#logging" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what-4"><template slot="_header">
+            <panel type="seamless" expanded="" id="what-4"><template slot="_header">
                 <h4 id="what-4">What<a class="fa fa-anchor" href="#what-4" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -507,7 +566,7 @@
                 <div>
                   <p><strong><em>Logging</em> is the deliberate recording of certain information during a program execution for future reference.</strong> Logs are typically written to a log file but it is also possible to log information in other ways <span class="dimmed">e.g. into a database or a remote server</span>.</p>
                   <p><strong><em>Logging</em> can be useful for troubleshooting problems</strong>. A good logging system records some system information regularly. When bad things happen to a system <span class="dimmed">e.g. an unanticipated failure</span>, their associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again.</p>
-                  <div v-closeable alt="blackbox photo">
+                  <div v-closeable="" alt="blackbox photo">
                     <box>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">flight data recorder</span>black box</span> of an airplane</strong>; they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
                       <div class="non-printable">
@@ -519,7 +578,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -545,7 +604,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="how-3"><template slot="_header">
+            <panel type="seamless" expanded="" id="how-3"><template slot="_header">
                 <h4 id="how-3">How<a class="fa fa-anchor" href="#how-3" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -560,16 +619,16 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sample Java code uses Java’s default logging mechanism.</p>
                     <p>First, import the relevant Java package:</p>
-                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.logging.*;<br></span></code></pre>
-                    <p>Next, create a <code>Logger</code>:</p>
-                    <pre><code class="hljs java"><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);<br></span></code></pre>
-                    <p>Now, you can use the <code>Logger</code> object to log information. Note the use of <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content"><code>INFO</code>, <code>WARNING</code> etc.</span>logging level</span> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not be written to the log file at all.</p>
-                    <pre><code class="hljs java"><span><span class="hljs-comment">// log a message at INFO level</span><br></span><span>logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);<br></span><span><span class="hljs-comment">//...</span><br></span><span>processInput();<br></span><span><span class="hljs-keyword">if</span>(error){<br></span><span>    <span class="hljs-comment">//log a message at WARNING level</span><br></span><span>    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);<br></span><span>}<br></span><span><span class="hljs-comment">//...</span><br></span><span>logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);<br></span></code></pre>
+                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">import</span> java.util.logging.*;<br></span></code></pre>
+                    <p>Next, create a <code v-pre="">Logger</code>:</p>
+                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);<br></span></code></pre>
+                    <p>Now, you can use the <code v-pre="">Logger</code> object to log information. Note the use of <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content"><code v-pre="">INFO</code>, <code v-pre="">WARNING</code> etc.</span>logging level</span> for each message. When running the code, the logging level can be set to <code v-pre="">WARNING</code> so that log messages specified as <code v-pre="">INFO</code> level (which is a lower level than <code v-pre="">WARNING</code>) will not be written to the log file at all.</p>
+                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-comment">// log a message at INFO level</span><br></span><span>logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);<br></span><span><span class="hljs-comment">//...</span><br></span><span>processInput();<br></span><span><span class="hljs-keyword">if</span>(error){<br></span><span>    <span class="hljs-comment">//log a message at WARNING level</span><br></span><span>    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);<br></span><span>}<br></span><span><span class="hljs-comment">//...</span><br></span><span>logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);<br></span></code></pre>
                   </box>
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                       </template>
                       <p><strong>Tutorials</strong>:</p>
@@ -577,11 +636,11 @@
                         <li><a href="http://www.vogella.com/tutorials/Logging/article.html"><strong>Java Logging API - Tutorial</strong></a> -- A tutorial by <em>Lars Vogella</em></li>
                         <li><a href="http://tutorials.jenkov.com/java-logging/index.html"><strong>Java Logging Tutorial</strong></a> -- An alternative tutorial by <em>Jakob Jenkov</em></li>
                       </ul>
-                      <div v-closeable alt="video:logging">
+                      <div v-closeable="" alt="video:logging">
                         <ul>
                           <li>A video tutorial by <em>SimplyCoded</em>:<br></li>
                         </ul>
-                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/W0_Man88Z3Q" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/W0_Man88Z3Q" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                       </div>
                       <p><strong>Best Practices</strong>:</p>
                       <ul>
@@ -601,7 +660,7 @@
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#error-handling">Error Handling&#x200E;</a>
+            <a class="nav-link py-1" href="#error-handling">Error handling&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
@@ -632,7 +691,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -118,7 +119,7 @@
                     </ol>
                   </box>
                   <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
-                    <p>To keep things simple, we use a simple repo that uses two files <code>food.txt</code> and <code>stationary.txt</code> to keep track of items in the shop. There are 2 shop employees (John and Amy) and two vendors (Ravi and Musa) who have updated the files, but each person using their own branch. Your job is to merge the four branches so that the files reflect the final tally of goods in the shop.</p>
+                    <p>To keep things simple, we use a simple repo that uses two files <code v-pre="">food.txt</code> and <code v-pre="">stationary.txt</code> to keep track of items in the shop. There are 2 shop employees (John and Amy) and two vendors (Ravi and Musa) who have updated the files, but each person using their own branch. Your job is to merge the four branches so that the files reflect the final tally of goods in the shop.</p>
                     <p>First, let us set up the repo and checkout the branches.
                     </p>
                   </box>
@@ -130,29 +131,29 @@
                       <p><span class="badge badge-dark">Step 1.b</span> <strong>Clone it to your computer.</strong> <mark>No need to set it up in your IDE because it is not a Java project.</mark></p>
                     </li>
                     <li>
-                      <p><span class="badge badge-dark">Step 1.c</span> <strong>Note how the remote repo has 4 branches</strong> in addition to the <code>master</code> branch. If you can't see the branches, make sure you have ticked the <code>Show Remote Branches</code> box <span class="dimmed">(shown in the top center of the screenshot below)</span>.<br>
+                      <p><span class="badge badge-dark">Step 1.c</span> <strong>Note how the remote repo has 4 branches</strong> in addition to the <code v-pre="">master</code> branch. If you can't see the branches, make sure you have ticked the <code v-pre="">Show Remote Branches</code> box <span class="dimmed">(shown in the top center of the screenshot below)</span>.<br>
                         <img src="/website/schedule/week6/images/after-cloning.png"><br>
-                        Now you are in the <code>master</code> branch. Open the <code>food.txt</code> file to check its contents.</p>
+                        Now you are in the <code v-pre="">master</code> branch. Open the <code v-pre="">food.txt</code> file to check its contents.</p>
                     </li>
                     <li>
-                      <p><span class="badge badge-dark">Step 2</span> <strong>Checkout the <code>employee-john</code> branch</strong> by double-clicking it.</p>
+                      <p><span class="badge badge-dark">Step 2</span> <strong>Checkout the <code v-pre="">employee-john</code> branch</strong> by double-clicking it.</p>
                     </li>
                   </ul>
                   <div class="indented-level2">
-                    <panel type="light" minimized class="algolia-no-index"><template slot="_header">
+                    <panel type="light" minimized="" class="algolia-no-index"><template slot="_header">
                         <p><span aria-hidden="true" class="fas fa-play-circle"></span> See an animation of this step</p>
                       </template>
                       <p></p>
                       <pic src="/website/schedule/week6/images/checkout-branch.gif"></pic>
                     </panel>
-                    <p>Now, you should be in the <code>employee-john</code> branch. This also means now you have a local branch named <code>employee-john</code> which has the exact content of the remote branch <code>origin/employee-john</code> and it is <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., git knows that this branch is meant to be a copy of the corresponding remote branch</span>'tracking' the corresponding remote branch</span>. This is how the revision graph should look like now:
+                    <p>Now, you should be in the <code v-pre="">employee-john</code> branch. This also means now you have a local branch named <code v-pre="">employee-john</code> which has the exact content of the remote branch <code v-pre="">origin/employee-john</code> and it is <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., git knows that this branch is meant to be a copy of the corresponding remote branch</span>'tracking' the corresponding remote branch</span>. This is how the revision graph should look like now:
                       <br>
                       <pic src="/website/schedule/week6/images/after-checking-out-branch.png" width="682"></pic>
                     </p>
                   </div>
                   <ul>
                     <li><span class="badge badge-dark">Step 3</span> <strong>Checkout the other three branches</strong> one at a time to get local copies of them too.<br>
-                      <strong>After that, go back to the <code>master</code> branch.</strong> The revision graph should look this this now:<br>
+                      <strong>After that, go back to the <code v-pre="">master</code> branch.</strong> The revision graph should look this this now:<br>
                       <img src="/website/schedule/week6/images/checkout-master-again.png"></li>
                   </ul>
                   <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
@@ -160,10 +161,10 @@
                     </p>
                   </box>
                   <ul>
-                    <li><span class="badge badge-dark">Step 4</span> <strong>Merge the <code>employee-john</code> branch to the <code>master</code> branch</strong>: Right-click on the <code>employee-john</code> branch label and choose <code>merge</code>. Remember to request a merge commit even if a fast-forward merge is possible.</li>
+                    <li><span class="badge badge-dark">Step 4</span> <strong>Merge the <code v-pre="">employee-john</code> branch to the <code v-pre="">master</code> branch</strong>: Right-click on the <code v-pre="">employee-john</code> branch label and choose <code v-pre="">merge</code>. Remember to request a merge commit even if a fast-forward merge is possible.</li>
                   </ul>
                   <div class="indented-level2">
-                    <panel type="light" minimized class="algolia-no-index"><template slot="_header">
+                    <panel type="light" minimized="" class="algolia-no-index"><template slot="_header">
                         <p><span aria-hidden="true" class="fas fa-play-circle"></span> See an animation of this step</p>
                       </template>
                       <p>
@@ -177,14 +178,14 @@
                   <ul>
                     <li><span class="badge badge-dark">Step 5.a</span> <strong>Undo the merge</strong>: To learn how to undo a merge, let's undo the merge we did just now.
                       <ul>
-                        <li>First, ensure that you are still in the branch that received the merge (in this case, that's the <code>master</code> branch).</li>
+                        <li>First, ensure that you are still in the branch that received the merge (in this case, that's the <code v-pre="">master</code> branch).</li>
                         <li>Next, right-click on the commit in that branch that is just below the merge commit.</li>
-                        <li>Choose <code>Reset current branch to this commit</code> and choose the <code>Hard</code> option in the next dialog.</li>
+                        <li>Choose <code v-pre="">Reset current branch to this commit</code> and choose the <code v-pre="">Hard</code> option in the next dialog.</li>
                         <li>Proceed with the reset and note how the revision graph is in the state it was before the merge.</li>
                       </ul>
                     </li>
                   </ul>
-                  <panel type="light" add-class="d-block pl-5" minimized class="algolia-no-index"><template slot="_header">
+                  <panel type="light" add-class="d-block pl-5" minimized="" class="algolia-no-index"><template slot="_header">
                       <p><span aria-hidden="true" class="fas fa-play-circle"></span> See an animation of this step</p>
                     </template>
                     <p>
@@ -193,7 +194,7 @@
                   </panel>
                   <p></p>
                   <ul>
-                    <li><span class="badge badge-dark">Step 5.b</span> That was just to practice undoing of a merge. Let's merge the <code>employee-john</code> again by re-doing the <span class="badge badge-secondary">Step 4</span> again. The revision tree should look like this again:<br>
+                    <li><span class="badge badge-dark">Step 5.b</span> That was just to practice undoing of a merge. Let's merge the <code v-pre="">employee-john</code> again by re-doing the <span class="badge badge-secondary">Step 4</span> again. The revision tree should look like this again:<br>
                       <img src="/website/schedule/week6/images/after-merging-branch-employee-john.png"></li>
                   </ul>
                   <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
@@ -201,7 +202,7 @@
                     </p>
                   </box>
                   <ul>
-                    <li><span class="badge badge-dark">Step 6.a</span> <strong>Merge the <code>employee-amy</code> branch to the <code>master</code> branch</strong>, similar to the previous step. Note how git reports a <code>merge conflict</code> halfway into the merge, with a dialog like this:<br>
+                    <li><span class="badge badge-dark">Step 6.a</span> <strong>Merge the <code v-pre="">employee-amy</code> branch to the <code v-pre="">master</code> branch</strong>, similar to the previous step. Note how git reports a <code v-pre="">merge conflict</code> halfway into the merge, with a dialog like this:<br>
                       <img src="/website/schedule/week6/images/merge-conflict-dialog.png"><br>
                       Close the dialog.</li>
                   </ul>
@@ -212,22 +213,22 @@
                     <div class="indented-level2">
                       <ol>
                         <li>
-                          <p>When you open the conflicted file <code>food.txt</code>, the content will be like this:</p>
-                          <pre><code class="hljs"><span>banana<br></span><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br></span><span>carrot<br></span><span>cheese<br></span><span>=======<br></span><span>beans<br></span><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; employee-amy<br></span><span>dates<br></span><span>egg<br></span><span>fish<br></span><span>grapes<br></span><span><br></span></code></pre>
+                          <p>When you open the conflicted file <code v-pre="">food.txt</code>, the content will be like this:</p>
+                          <pre><code class="hljs" v-pre=""><span>banana<br></span><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br></span><span>carrot<br></span><span>cheese<br></span><span>=======<br></span><span>beans<br></span><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; employee-amy<br></span><span>dates<br></span><span>egg<br></span><span>fish<br></span><span>grapes<br></span><span><br></span></code></pre>
                         </li>
                         <li>
-                          <p>Note how git has marked the conflicting changes done by the two branches using markers <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></p>
+                          <p>Note how git has marked the conflicting changes done by the two branches using markers <code v-pre="">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code v-pre="">=======</code>, and <code v-pre="">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></p>
                         </li>
                         <li>
                           <p>We can modify that part in any way we like. For example, we can edit the file to make the content look like this.</p>
-                          <pre><code class="hljs"><span>banana<br></span><span>cheese<br></span><span>beans<br></span><span>dates<br></span><span>egg<br></span><span>fish<br></span><span>grapes<br></span><span><br></span></code></pre>
+                          <pre><code class="hljs" v-pre=""><span>banana<br></span><span>cheese<br></span><span>beans<br></span><span>dates<br></span><span>egg<br></span><span>fish<br></span><span>grapes<br></span><span><br></span></code></pre>
                         </li>
                         <li>
                           <p>When we are happy with the content of the conflicted file(s), we can simply stage the changes we did and complete the merge by committing the changes <span class="dimmed">(similar to how you do a normal commit)</span>.</p>
                         </li>
                       </ol>
                       <div class="indented-level2">
-                        <panel type="light" minimized class="algolia-no-index"><template slot="_header">
+                        <panel type="light" minimized="" class="algolia-no-index"><template slot="_header">
                             <p><span aria-hidden="true" class="fas fa-play-circle"></span> See an animation of this step</p>
                           </template>
                           <p>
@@ -246,18 +247,18 @@
                   </box>
                   <ul>
                     <li>
-                      <p><span class="badge badge-dark">Step 7</span> <strong>Push the <code>master</code> branch to the fork</strong>, to upload the new merge commits to the fork.<br>
+                      <p><span class="badge badge-dark">Step 7</span> <strong>Push the <code v-pre="">master</code> branch to the fork</strong>, to upload the new merge commits to the fork.<br>
                         <img src="/website/schedule/week6/images/push-master.png"></p>
                     </li>
                     <li>
-                      <p><span class="badge badge-dark">Step 8</span> <strong>Create a PR within your own fork, from the <code>vendor-ravi</code> branch to the <code>master</code> branch</strong>:</p>
+                      <p><span class="badge badge-dark">Step 8</span> <strong>Create a PR within your own fork, from the <code v-pre="">vendor-ravi</code> branch to the <code v-pre="">master</code> branch</strong>:</p>
                       <ol>
                         <li>Go to your fork on Github and click on the <button type="button" class="btn btn-light btn-sm border">New pull request</button> button.<br><br>
                           <img src="/website/schedule/week6/images/new-pull-request.png"></li>
                         <li>By default, GitHub tries to create a PR from your fork to the upstream repo. Change the base repo to your own fork instead.<br>
                           <pic src="/website/schedule/week6/images/choose-fork-as-base.png"></pic>
                         </li>
-                        <li>Set the <code>compare</code> field to the <code>vendor-ravi</code> branch.<br>
+                        <li>Set the <code v-pre="">compare</code> field to the <code v-pre="">vendor-ravi</code> branch.<br>
                           <img src="/website/schedule/week6/images/choose-vendor-ravi.png"></li>
                         <li>Complete the PR creation by filling in appropriate info as directed by GitHub.<br>
                           <pic src="/website/schedule/week6/images/create-pr-for-vendor-ravi.png" class="border"></pic>
@@ -268,18 +269,18 @@
                       </ol>
                     </li>
                     <li>
-                      <p><span class="badge badge-dark">Step 9</span> <strong>Create another PR for the <code>vendor-musa</code> branch</strong>. As you did in the previous step, create another PR to the <code>master</code> branch from the <code>vendor-musa</code> branch.</p>
+                      <p><span class="badge badge-dark">Step 9</span> <strong>Create another PR for the <code v-pre="">vendor-musa</code> branch</strong>. As you did in the previous step, create another PR to the <code v-pre="">master</code> branch from the <code v-pre="">vendor-musa</code> branch.</p>
                     </li>
                     <li>
-                      <p><span class="badge badge-dark">Step 10</span> <strong>Update the PR of <code>vendor-musa</code> with reviews and new commits</strong>, to simulate PRs going through a review process.</p>
+                      <p><span class="badge badge-dark">Step 10</span> <strong>Update the PR of <code v-pre="">vendor-musa</code> with reviews and new commits</strong>, to simulate PRs going through a review process.</p>
                       <ol>
                         <li>Add a review to the PR. Here is an example<br>
                           <pic src="/website/schedule/week6/images/review-pr.png"></pic>
                         </li>
-                        <li>In your local repo, switch to the <code>vendor-musa</code> branch, add a line at the end of the <code>stationary.txt</code> and commit it. This is to simulate a developer updating a PR based on review comments.<br>
+                        <li>In your local repo, switch to the <code v-pre="">vendor-musa</code> branch, add a line at the end of the <code v-pre="">stationary.txt</code> and commit it. This is to simulate a developer updating a PR based on review comments.<br>
                           <pic src="/website/schedule/week6/images/add-commit-to-vendor-musa.png"></pic>
                         </li>
-                        <li>Push the <code>vendor-musa</code> to your fork <span class="dimmed">to upload the new commit to the fork.</span></li>
+                        <li>Push the <code v-pre="">vendor-musa</code> to your fork <span class="dimmed">to upload the new commit to the fork.</span></li>
                         <li>Go to the corresponding PR and observe how the PR has updated itself to reflect the new commit you pushed.</li>
                       </ol>
                     </li>
@@ -290,7 +291,7 @@
                   </box>
                   <span id="11">
                     <ul>
-                      <li><span class="badge badge-dark">Step 11</span> <strong>Merge the PR</strong>. Use the GitHub UI to merge the PR you updated in the previous step <span class="dimmed">(i.e., the one for the <code>vendor-musa</code> branch)</span>.
+                      <li><span class="badge badge-dark">Step 11</span> <strong>Merge the PR</strong>. Use the GitHub UI to merge the PR you updated in the previous step <span class="dimmed">(i.e., the one for the <code v-pre="">vendor-musa</code> branch)</span>.
                         <ol>
                           <li>Click on the <button type="button" class="btn btn-success btn-sm ">Merge pull requset</button> button (at the bottom of the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small>conversation</small></span> tab)<br>
                             <pic src="/website/schedule/week6/images/click-merge-button.png"></pic>
@@ -315,21 +316,21 @@
                   </box>
                   <ul>
                     <li>
-                      <p><span class="badge badge-dark">Step 12</span> <strong>Observe the other PR is now showing conflicts</strong>: If you go to the <code>vendor-ravi</code> PR, it will show something like this at the bottom, indicating that the code in that branch has a conflict with the <code>master</code> branch (caused by the other PR we merged just now).<br>
+                      <p><span class="badge badge-dark">Step 12</span> <strong>Observe the other PR is now showing conflicts</strong>: If you go to the <code v-pre="">vendor-ravi</code> PR, it will show something like this at the bottom, indicating that the code in that branch has a conflict with the <code v-pre="">master</code> branch (caused by the other PR we merged just now).<br>
                         <img src="/website/schedule/week6/images/pr-shows-conflict.png"></p>
                     </li>
                     <li>
                       <p><span class="badge badge-dark">Step 13</span> <strong>Resolve the conflict</strong>. Note that GitHub gives a <button type="button" class="btn btn-light btn-sm border">Resolve conflicts</button> button that provides a way to resolve conflicts on the Web UI itself. However, that method is more suited for simple conflicts. In this activity, let's use the method that works for even more complicated conflicts.</p>
                       <ol>
-                        <li>As the merging the PRs on GitHub updates the <code>master</code> branch on the fork only, pull the <code>master</code> branch from your fork to your repo to get the latest <code>master</code> branch onto your Computer.</li>
-                        <li>Next, merge the local <code>master</code> branch to the <code>vendor-ravi</code> branch to <em>sync</em> the <code>vendor-ravi</code> branch with the latest <code>master</code>. This will result in a conflict due to both vendors editing the same location of the <code>stationary.txt</code>.</li>
+                        <li>As the merging the PRs on GitHub updates the <code v-pre="">master</code> branch on the fork only, pull the <code v-pre="">master</code> branch from your fork to your repo to get the latest <code v-pre="">master</code> branch onto your Computer.</li>
+                        <li>Next, merge the local <code v-pre="">master</code> branch to the <code v-pre="">vendor-ravi</code> branch to <em>sync</em> the <code v-pre="">vendor-ravi</code> branch with the latest <code v-pre="">master</code>. This will result in a conflict due to both vendors editing the same location of the <code v-pre="">stationary.txt</code>.</li>
                         <li>Resolve the conflict, <span trigger="click" for="modal:w6activity-6.b" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:w6activity-6.b'].show()" class="trigger-click">as you did in <span class="badge badge-secondary">Step 6.b</span></span>.</li>
-                        <li>Push the de-conflicted <code>vendor-ravi</code> branch to the fork.</li>
+                        <li>Push the de-conflicted <code v-pre="">vendor-ravi</code> branch to the fork.</li>
                         <li>Go to the PR again and note the warning about the conflict does not appear any more.</li>
                       </ol>
                     </li>
                   </ul>
-                  <b-modal id="modal:w6activity-6.b" hide-footer size="lg" modal-class="mb-zoom" ref="modal:w6activity-6.b"><template slot="modal-title">Step 6.b (for reference)</template>
+                  <b-modal id="modal:w6activity-6.b" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:w6activity-6.b" class="algolia-no-index"><template slot="modal-title">Step 6.b (for reference)</template>
                     <div>
                       <ul>
                         <li><span class="badge badge-dark">Step 6.b</span> <strong>Resolve the conflict</strong>: The conflict happened because both branches modified the same location of the same file and git could not decide which changes to keep. The straight-forward way to resolve this is to open the file yourself and manually edit the content to fit the desired state. Given below are the steps:</li>
@@ -337,22 +338,22 @@
                       <div class="indented-level2">
                         <ol>
                           <li>
-                            <p>When you open the conflicted file <code>food.txt</code>, the content will be like this:</p>
-                            <pre><code class="hljs"><span>banana<br></span><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br></span><span>carrot<br></span><span>cheese<br></span><span>=======<br></span><span>beans<br></span><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; employee-amy<br></span><span>dates<br></span><span>egg<br></span><span>fish<br></span><span>grapes<br></span><span><br></span></code></pre>
+                            <p>When you open the conflicted file <code v-pre="">food.txt</code>, the content will be like this:</p>
+                            <pre><code class="hljs" v-pre=""><span>banana<br></span><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br></span><span>carrot<br></span><span>cheese<br></span><span>=======<br></span><span>beans<br></span><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; employee-amy<br></span><span>dates<br></span><span>egg<br></span><span>fish<br></span><span>grapes<br></span><span><br></span></code></pre>
                           </li>
                           <li>
-                            <p>Note how git has marked the conflicting changes done by the two branches using markers <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></p>
+                            <p>Note how git has marked the conflicting changes done by the two branches using markers <code v-pre="">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code v-pre="">=======</code>, and <code v-pre="">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></p>
                           </li>
                           <li>
                             <p>We can modify that part in any way we like. For example, we can edit the file to make the content look like this.</p>
-                            <pre><code class="hljs"><span>banana<br></span><span>cheese<br></span><span>beans<br></span><span>dates<br></span><span>egg<br></span><span>fish<br></span><span>grapes<br></span><span><br></span></code></pre>
+                            <pre><code class="hljs" v-pre=""><span>banana<br></span><span>cheese<br></span><span>beans<br></span><span>dates<br></span><span>egg<br></span><span>fish<br></span><span>grapes<br></span><span><br></span></code></pre>
                           </li>
                           <li>
                             <p>When we are happy with the content of the conflicted file(s), we can simply stage the changes we did and complete the merge by committing the changes <span class="dimmed">(similar to how you do a normal commit)</span>.</p>
                           </li>
                         </ol>
                         <div class="indented-level2">
-                          <panel type="light" minimized class="algolia-no-index"><template slot="_header">
+                          <panel type="light" minimized="" class="algolia-no-index"><template slot="_header">
                               <p><span aria-hidden="true" class="fas fa-play-circle"></span> See an animation of this step</p>
                             </template>
                             <p>
@@ -365,14 +366,14 @@
                     </div>
                   </b-modal>
                   <ul>
-                    <li><span class="badge badge-dark">Step 14</span> <strong>Merge the <code>vendor-ravi</code> PR</strong> as you merged the previous PR in <span class="badge badge-secondary">Step 11</span>.</li>
+                    <li><span class="badge badge-dark">Step 14</span> <strong>Merge the <code v-pre="">vendor-ravi</code> PR</strong> as you merged the previous PR in <span class="badge badge-secondary">Step 11</span>.</li>
                   </ul>
-                  <panel add-class="d-block ml-5" minimized class="algolia-no-index"><template slot="_header">
+                  <panel add-class="d-block ml-5" minimized="" class="algolia-no-index"><template slot="_header">
                       <p>Step 11 (for reference)</p>
                     </template>
                     <div>
                       <ul>
-                        <li><span class="badge badge-dark">Step 11</span> <strong>Merge the PR</strong>. Use the GitHub UI to merge the PR you updated in the previous step <span class="dimmed">(i.e., the one for the <code>vendor-musa</code> branch)</span>.
+                        <li><span class="badge badge-dark">Step 11</span> <strong>Merge the PR</strong>. Use the GitHub UI to merge the PR you updated in the previous step <span class="dimmed">(i.e., the one for the <code v-pre="">vendor-musa</code> branch)</span>.
                           <ol>
                             <li>Click on the <button type="button" class="btn btn-success btn-sm ">Merge pull requset</button> button (at the bottom of the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small>conversation</small></span> tab)<br>
                               <pic src="/website/schedule/week6/images/click-merge-button.png"></pic>
@@ -391,7 +392,7 @@
                   </panel>
                   <p></p>
                   <ul>
-                    <li><span class="badge badge-dark">Step 15</span> <strong>Sync your local repo with the latest <code>master</code></strong> by pulling the <code>master</code> branch from your fork. After that, your revision graph should look like this:<br>
+                    <li><span class="badge badge-dark">Step 15</span> <strong>Sync your local repo with the latest <code v-pre="">master</code></strong> by pulling the <code v-pre="">master</code> branch from your fork. After that, your revision graph should look like this:<br>
                       <img src="/website/schedule/week6/images/after-pulling-updated-master.png"></li>
                   </ul>
                   <box type="success" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-map-signs"></span></template>
@@ -425,7 +426,7 @@
                 </li>
                 <li>
                   <p>Although the following video appears in an optional section, we recommend you to <mark>watch it before the next tutorial</mark> as you will be asked to demo debugging in an IDE during the tutorial. If you use a different IDE, learn how to debug in it from other resources.</p>
-                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                 </li>
               </ul>
               <h4 id="code-quality-w6-12"><span class="text-info">Code Quality [<a href="/website/schedule/week6/topics.html#W6-12">W6.12</a>]</span><a class="fa fa-anchor" href="#code-quality-w6-12" onclick="event.stopPropagation()"></a></h4>
@@ -513,15 +514,15 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-2a">W6.2a</a>] <span>C++ to Java → Collections →
-                                  </span></span> <span>The Collections Framework</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The collections framework</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-2b">W6.2b</a>] <span>C++ to Java → Collections →
-                                  </span></span> <span>The <code>ArrayList</code> Class</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">ArrayList</code> class</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-2c">W6.2c</a>] <span>C++ to Java → Collections →
-                                  </span></span> <span>The <code>HashMap</code> Class</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">HashMap</code> class</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -532,7 +533,7 @@
                         <small>
                           <ul>
                             <li><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-3a">W6.3a</a>] <span>C++ to Java → Miscellaneous Topics →
-                                </span></span> <span>File Access</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                                </span></span> <span>File access</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                           </ul>
                         </small></div>
                       <ul>
@@ -542,7 +543,7 @@
                         <small>
                           <ul>
                             <li><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-4a">W6.4a</a>] <span>C++ to Java → Miscellaneous Topics →
-                                </span></span> <span>Using JAR Files</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                                </span></span> <span>Using JAR files</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                           </ul>
                         </small></div>
                       <ul>
@@ -578,15 +579,15 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-7b">W6.7b</a>] <span>Requirements → Requirements →
-                                  </span></span> <span>Non-Functional Requirements</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Non-functional requirements</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-7c">W6.7c</a>] <span>Requirements → Requirements →
-                                  </span></span> <span>Prioritizing Requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Prioritizing requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-7d">W6.7d</a>] <span>Requirements → Requirements →
-                                  </span></span> <span>Quality of Requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Quality of requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -602,7 +603,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8b">W6.8b</a>] <span>Requirements → Gathering Requirements →
-                                  </span></span> <span>Product Surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Product surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8c">W6.8c</a>] <span>Requirements → Gathering Requirements →
@@ -610,7 +611,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8d">W6.8d</a>] <span>Requirements → Gathering Requirements →
-                                  </span></span> <span>User Surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>User surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8e">W6.8e</a>] <span>Requirements → Gathering Requirements →
@@ -618,7 +619,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8f">W6.8f</a>] <span>Requirements → Gathering Requirements →
-                                  </span></span> <span>Focus Groups</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Focus groups</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8g">W6.8g</a>] <span>Requirements → Gathering Requirements →
@@ -689,7 +690,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-10c">W6.10c</a>] <span>Tools → Intellij IDEA →
-                                  </span></span> <span>Productivity Shortcuts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                                  </span></span> <span>Productivity shortcuts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -702,7 +703,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-11a">W6.11a</a>] <span>Tools → Git and GitHub →
-                                  </span></span> <span>Merge Conflicts</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Merge conflicts</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-11b">W6.11b</a>] <span>Tools → Git and GitHub →
@@ -722,27 +723,27 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12b">W6.12b</a>] <span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                                  </span></span> <span>Use the Default Branch</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Use the default branch</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12c">W6.12c</a>] <span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                                  </span></span> <span>Don't Recycle Variables or Parameters</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Don't recycle variables or parameters</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12d">W6.12d</a>] <span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                                  </span></span> <span>Avoid Empty Catch Blocks</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Avoid empty catch blocks</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12e">W6.12e</a>] <span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                                  </span></span> <span>Delete Dead Code</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Delete dead code</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12f">W6.12f</a>] <span>Implementation → Code Quality → Error-Prone Practices → Intermediate →
-                                  </span></span> <span>Minimize Scope of Variables</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Minimize scope of variables</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12g">W6.12g</a>] <span>Implementation → Code Quality → Error-Prone Practices → Intermediate →
-                                  </span></span> <span>Minimize Code Duplication</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Minimize code duplication</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -763,8 +764,8 @@
                     <p><strong>iP:</strong></p>
                     <div>
                       <ol>
-                        <li>Add Increments as parallel branches: <code>Level-6</code>, <code>Level-7</code></li>
-                        <li>Add Increment: <code>A-Jar</code></li>
+                        <li>Add Increments as parallel branches: <code v-pre="">Level-6</code>, <code v-pre="">Level-7</code></li>
+                        <li>Add Increment: <code v-pre="">A-Jar</code></li>
                       </ol>
                     </div>
                     <p><strong>tP:</strong></p>
@@ -796,7 +797,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

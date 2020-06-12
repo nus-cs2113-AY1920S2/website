@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -119,7 +120,7 @@
                   <li>Learn the procedure for dealing with PED bugs you received:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → <strong>After the PED</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -143,7 +144,7 @@
                   <li><strong>Consider increasing test coverage</strong> by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading → Expectation on testing <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -164,7 +165,7 @@
                   <li><strong>After you have sufficient code coverage, fix remaining code quality problems</strong> and bring up the quality to your target level.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading → Code Quality Tips <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -203,7 +204,7 @@
                     Reason: <mark>Each member needs to create a PPP</mark> to describe your contribution to the project.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Project Portfolio Page <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -234,7 +235,7 @@
                             </ul>
                           </li>
                         </ul>
-                        <b-modal id="modal:deliverablesPPP-teamTasks" hide-footer size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
+                        <b-modal id="modal:deliverablesPPP-teamTasks" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks" class="algolia-no-index"><template slot="modal-title">Team-Based Tasks</template>
                           <div>
                             <box>
                               <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
@@ -276,30 +277,30 @@
                         </ul>
                         <h4 id="ppp-format"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span><a class="fa fa-anchor" href="#ppp-format" onclick="event.stopPropagation()"></a></h4>
                         <ul>
-                          <li>File name (i.e., in the repo): <code>docs/team/githbub_username_in_lower_case.md</code> e.g., <code>docs/team/goodcoder123.md</code></li>
+                          <li>File name (i.e., in the repo): <code v-pre="">docs/team/githbub_username_in_lower_case.md</code> e.g., <code v-pre="">docs/team/goodcoder123.md</code></li>
                           <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://se-edu.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
                         </ul>
                         <div class="indented-level2">
                           <div>
-                            <box type="important" light>
+                            <box type="important" light="">
                               <ul>
-                                <li><strong>To convert the UG/DG/PPP into PDF format</strong>, go to the generated page in your project's <a href="http://github.io">github.io</a> site and use <a href="/website/admin/usingThisWebsite.html#saving-as-pdf-files">this technique</a> to save as a pdf file. <mark>Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.</mark> You may un-tick the <code>background graphics</code> option as well if you wish.</li>
+                                <li><strong>To convert the UG/DG/PPP into PDF format</strong>, go to the generated page in your project's <a href="http://github.io">github.io</a> site and use <a href="/website/admin/usingThisWebsite.html#saving-as-pdf-files">this technique</a> to save as a pdf file. <mark>Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.</mark> You may un-tick the <code v-pre="">background graphics</code> option as well if you wish.</li>
                               </ul>
                               <div class="indented-level2">
-                                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                                <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                                     <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Using This Webiste → Saving as PDF Files <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                   </template>
                                   <div>
-                                    <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files" onclick="event.stopPropagation()"></a></h3>
+                                    <h3 id="saving-as-pdf-files">Saving as PDF files<a class="fa fa-anchor" href="#saving-as-pdf-files" onclick="event.stopPropagation()"></a></h3>
                                     <ol>
                                       <li>
                                         <p>Use Chrome to load the page you want to save as pdf.</p>
                                       </li>
                                       <li>
-                                        <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
+                                        <p>Click on the <code v-pre="">Print</code> option in Chrome’s menu.</p>
                                       </li>
                                       <li>
-                                        <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
+                                        <p>Set the destination to <code v-pre="">Save as PDF</code>, then click <code v-pre="">Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
                                           <img src="/website/book/about/images/chromeSaveAsPdf.png"></p>
                                       </li>
                                     </ol>
@@ -363,7 +364,7 @@
                   </li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → mid-v2.1 → Making the Code RepoSense-Compatible <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -371,7 +372,7 @@
                         <li>
                           <p><strong>Ensure your code is <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., RepoSense can detect your code as yours</span>RepoSense-compatible</span></strong> and the <strong>code it attributes to you is indeed the code written by you</strong>, as explained below:</p>
                           <ul>
-                            <li>Go to the <a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard/#breakdown=true">tp Code Dashboard</a>. Click on the <code>&lt;/&gt;</code> icon against your name and verify that the <mark>lines attributed to you (i.e., lines marked as green)</mark> reflects your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
+                            <li>Go to the <a href="https://nus-cs2113-ay1920s2.github.io/tp-dashboard/#breakdown=true">tp Code Dashboard</a>. Click on the <code v-pre="">&lt;/&gt;</code> icon against your name and verify that the <mark>lines attributed to you (i.e., lines marked as green)</mark> reflects your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
                                   <img src="/website/admin/images/greenLines.png" width="600"></li>
                           </ul>
                           <p></p>
@@ -381,7 +382,7 @@
                         </li>
                       </ul>
                       <div class="indented-level4">
-                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → RepoSense <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -415,7 +416,7 @@
                                 <box>
                                   <p><strong>For simple cases</strong> such as the following, you can create a PR to update our config files <a href="https://github.com/nus-cs2113-AY1920S2/tp-dashboard/tree/master/configs">here</a>. The meaning of the config files are given in the <a href="https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#customize-using-csv-config-files">RepoSense user guide</a>.</p>
                                   <ul>
-                                    <li>missing some commits due to using multiple git <code>user.name</code>s</li>
+                                    <li>missing some commits due to using multiple git <code v-pre="">user.name</code>s</li>
                                     <li>some commits/files need to be omitted from the analysis</li>
                                   </ul>
                                   <p>For more complicated needs, follow the instructions below this box. If you are not sure which option to use, please post in the <a href="https://github.com/nus-cs2113-AY1920S2/forum/issues">forum</a> to ask.
@@ -425,46 +426,46 @@
                               <ul>
                                 <li>Install RepoSense (see the <a href="https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#getting-started">Getting Started</a> section of the RepoSense User Guide)</li>
                                 <li>Use the two methods described in the RepoSense User Guide section <a href="https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#configuring-a-repo-to-provide-additional-data-to-reposense">Configuring a Repo to Provide Additional Data to RepoSense</a> to provide additional data to the authorship analysis to make it more accurate.</li>
-                                <li>If you add a <code>config.json</code> file to your repo (as specified by one of the two methods),
+                                <li>If you add a <code v-pre="">config.json</code> file to your repo (as specified by one of the two methods),
                                   <ul>
                                     <li><strong>Please use the exact partial name from <a href="https://github.com/nus-cs2113-AY1920S2/tp-dashboard/blob/master/configs/author-config.csv">here</a></strong> as the display name.<br>
-                                      e.g., <code>&quot;displayName&quot;: &quot;CS2113-T11-4 ABDUL ... JAVID&quot;,</code></li>
+                                      e.g., <code v-pre="">&quot;displayName&quot;: &quot;CS2113-T11-4 ABDUL ... JAVID&quot;,</code></li>
                                     <li>If your commits have multiple author names, specify all of them<br>
-                                      e.g., <code>&quot;authorNames&quot;: [&quot;theMyth&quot;, &quot;theLegend&quot;, &quot;The Gary&quot;]</code></li>
-                                    <li>Update the line <code>config.json</code> in the <code>.gitignore</code> file of your repo as <code>/config.json</code> so that it ignores the <code>config.json</code> produced by the app but not the <code>_reposense/config.json</code>.</li>
+                                      e.g., <code v-pre="">&quot;authorNames&quot;: [&quot;theMyth&quot;, &quot;theLegend&quot;, &quot;The Gary&quot;]</code></li>
+                                    <li>Update the line <code v-pre="">config.json</code> in the <code v-pre="">.gitignore</code> file of your repo as <code v-pre="">/config.json</code> so that it ignores the <code v-pre="">config.json</code> produced by the app but not the <code v-pre="">_reposense/config.json</code>.</li>
                                   </ul>
                                 </li>
-                                <li>If you add <code>@@author</code> annotations, please follow the guidelines below:</li>
+                                <li>If you add <code v-pre="">@@author</code> annotations, please follow the guidelines below:</li>
                               </ul>
                               <div class="indented-level2">
                                 <panel class="algolia-no-index"><template slot="_header">
-                                    <p>Adding <code>@@author</code> tags to indicate authorship</p>
+                                    <p>Adding <code v-pre="">@@author</code> tags to indicate authorship</p>
                                   </template>
                                   <div>
-                                    <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship" onclick="event.stopPropagation()"></a></h4>
+                                    <h4 id="adding-author-tags-indicate-authorship">Adding <code v-pre="">@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship" onclick="event.stopPropagation()"></a></h4>
                                     <ul>
                                       <li>
-                                        <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br>
-                                          The <code>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.
+                                        <p>Mark your code with a <code v-pre="">//@@author {yourGithubUsername}</code>. Note the double <code v-pre="">@</code>.<br>
+                                          The <code v-pre="">//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code v-pre="">//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.
                                           Here is a sample code file:</p>
-                                        <pre><code class="hljs"><span>//@@author johndoe<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span><span>//@@author sarahkhoo<br></span><span>method 3 ...<br></span><span>//@@author johndoe<br></span><span>method 4 ...<br></span></code></pre>
+                                        <pre><code class="hljs" v-pre=""><span>//@@author johndoe<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span><span>//@@author sarahkhoo<br></span><span>method 3 ...<br></span><span>//@@author johndoe<br></span><span>method 4 ...<br></span></code></pre>
                                       </li>
                                       <li>
-                                        <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
-                                          Here is a sample code with an empty <code>author</code> tag:</p>
-                                        <pre><code class="hljs"><span>method 0 ...<br></span><span>//@@author johndoe<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span><span>//@@author<br></span><span>method 3 ...<br></span><span>method 4 ...<br></span></code></pre>
+                                        <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code v-pre="">//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
+                                          Here is a sample code with an empty <code v-pre="">author</code> tag:</p>
+                                        <pre><code class="hljs" v-pre=""><span>method 0 ...<br></span><span>//@@author johndoe<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span><span>//@@author<br></span><span>method 3 ...<br></span><span>method 4 ...<br></span></code></pre>
                                       </li>
                                       <li>
                                         <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
                                           Here is an example code from an xml/fxml file.</p>
-                                        <pre><code class="hljs"><span>&lt;!-- @@author sereneWong --&gt;<br></span><span>&lt;textbox&gt;<br></span><span>  &lt;label&gt;...&lt;/label&gt;<br></span><span>  &lt;input&gt;...&lt;/input&gt;<br></span><span>&lt;/textbox&gt;<br></span><span>...<br></span></code></pre>
+                                        <pre><code class="hljs" v-pre=""><span>&lt;!-- @@author sereneWong --&gt;<br></span><span>&lt;textbox&gt;<br></span><span>  &lt;label&gt;...&lt;/label&gt;<br></span><span>  &lt;input&gt;...&lt;/input&gt;<br></span><span>&lt;/textbox&gt;<br></span><span>...<br></span></code></pre>
                                       </li>
                                       <li>
-                                        <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong>.<br>
+                                        <p><strong>Do not put the <code v-pre="">//@@author</code> inside java header comments</strong>.<br>
                                           👎<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-                                        <pre><code class="hljs"><span>/**<br></span><span>  * Returns true if ...<br></span><span>  * @@author johndoe<br></span><span>  */<br></span></code></pre>
+                                        <pre><code class="hljs" v-pre=""><span>/**<br></span><span>  * Returns true if ...<br></span><span>  * @@author johndoe<br></span><span>  */<br></span></code></pre>
                                         <p>👍<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-                                        <pre><code class="hljs"><span>//@@author johndoe<br></span><span>/**<br></span><span>  * Returns true if ...<br></span><span>  */<br></span></code></pre>
+                                        <pre><code class="hljs" v-pre=""><span>//@@author johndoe<br></span><span>/**<br></span><span>  * Returns true if ...<br></span><span>  */<br></span></code></pre>
                                       </li>
                                     </ul>
                                     <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate" onclick="event.stopPropagation()"></a></h4>
@@ -489,21 +490,21 @@
                                       <li>
                                         <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
                                         <ul>
-                                          <li>Create a folder called <code>{project root}/unused</code></li>
+                                          <li>Create a folder called <code v-pre="">{project root}/unused</code></li>
                                           <li>Move unused files (or copies of files containing unused code) to that folder</li>
-                                          <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>)
+                                          <li>use <code v-pre="">//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code v-pre="">unused</code>)
                                             e.g.</li>
                                         </ul>
-                                        <pre><code class="hljs"><span>//@@author johndoe-unused<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span></code></pre>
+                                        <pre><code class="hljs" v-pre=""><span>//@@author johndoe-unused<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span></code></pre>
                                         <p>Please put a comment in the code to explain why it was not used.</p>
                                       </li>
                                       <li>
-                                        <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>)
+                                        <p><strong>If you reused code from elsewhere,</strong> mark such code as <code v-pre="">//@@author {yourGithubUsername}-reused</code> (note the suffix <code v-pre="">reused</code>)
                                           e.g.</p>
-                                        <pre><code class="hljs"><span>//@@author johndoe-reused<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span></code></pre>
+                                        <pre><code class="hljs" v-pre=""><span>//@@author johndoe-reused<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span></code></pre>
                                       </li>
                                       <li>
-                                        <p><strong>You can use empty <code>@@author</code> tags to mark code as not yours when RepoSense attribute the to you incorrectly.</strong></p>
+                                        <p><strong>You can use empty <code v-pre="">@@author</code> tags to mark code as not yours when RepoSense attribute the to you incorrectly.</strong></p>
                                         <ul>
                                           <li>
                                             <p><strong>Code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
@@ -518,7 +519,7 @@
                                 </panel>
                               </div>
                               <ul>
-                                <li>After you are satisfied with the new results (i.e., results produced by running RepoSense locally), push the <code>config.json</code> file you added and/or the annotated code to your repo. We'll use that information the next time we run RepoSense (we run it at least once a week).</li>
+                                <li>After you are satisfied with the new results (i.e., results produced by running RepoSense locally), push the <code v-pre="">config.json</code> file you added and/or the annotated code to your repo. We'll use that information the next time we run RepoSense (we run it at least once a week).</li>
                                 <li>If you choose to annotate code, minimize annotating code chunks smaller than a method. We do not grade code snippets too small to be read meaningfully.</li>
                                 <li>If you encounter any problem when doing the above or if you have questions, please post in the <a href="https://github.com/nus-cs2113-AY1920S2/forum/issues">forum</a>.</li>
                               </ul>
@@ -559,7 +560,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

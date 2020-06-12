@@ -36,10 +36,10 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="do-not-repeat-the-obvious">
+                  <panel type="seamless" expanded="" id="do-not-repeat-the-obvious">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="do-not-repeat-the-obvious"><span>Do Not Repeat the Obvious</span><a class="fa fa-anchor" href="#do-not-repeat-the-obvious" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="do-not-repeat-the-obvious"><span>Do not repeat the obvious</span><a class="fa fa-anchor" href="#do-not-repeat-the-obvious" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -53,13 +53,13 @@
                           <p>
                             <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                           </p>
-                          <pre><code class="hljs java"><span><span class="hljs-comment">//increment x</span><br></span><span>x++;<br></span><span><br></span><span><span class="hljs-comment">//trim the input</span><br></span><span>trimInput();<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre=""><span><span class="hljs-comment">//increment x</span><br></span><span>x++;<br></span><span><br></span><span><span class="hljs-comment">//trim the input</span><br></span><span>trimInput();<br></span></code></pre>
                         </div>
                         <div class="alt-python">
                           <p>
                             <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                           </p>
-                          <pre><code class="hljs python"><span><span class="hljs-comment"># increment x</span><br></span><span>x = x + <span class="hljs-number">1</span><br></span><span><br></span><span><span class="hljs-comment"># trim the input</span><br></span><span>trim_input()<br></span></code></pre>
+                          <pre><code class="hljs python" v-pre=""><span><span class="hljs-comment"># increment x</span><br></span><span>x = x + <span class="hljs-number">1</span><br></span><span><br></span><span><span class="hljs-comment"># trim the input</span><br></span><span>trim_input()<br></span></code></pre>
                         </div>
                       </div>
                       <div></div>
@@ -67,10 +67,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="write-to-the-reader">
+                  <panel type="seamless" expanded="" id="write-to-the-reader">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="write-to-the-reader"><span>Write to the Reader</span><a class="fa fa-anchor" href="#write-to-the-reader" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="write-to-the-reader"><span>Write to the reader</span><a class="fa fa-anchor" href="#write-to-the-reader" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -87,11 +87,11 @@
                               <p>
                                 <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
                               </p>
-                              <pre><code class="hljs java"><span><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{<br></span><span>    ....<br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{<br></span><span>    ....<br></span><span>}<br></span></code></pre>
                               <p>
                                 <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                               </p>
-                              <pre><code class="hljs java"><span><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{<br></span><span>    ....<br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{<br></span><span>    ....<br></span><span>}<br></span></code></pre>
                             </div>
                           </div>
                           <div class="alt-python">
@@ -99,11 +99,11 @@
                               <p>
                                 <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
                               </p>
-                              <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span><br></span><span><span class="hljs-string">"""a quick trim function used to fix bug I detected overnight"""</span><br></span><span>    ...<br></span></code></pre>
+                              <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span><br></span><span><span class="hljs-string">"""a quick trim function used to fix bug I detected overnight"""</span><br></span><span>    ...<br></span></code></pre>
                               <p>
                                 <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                               </p>
-                              <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span><br></span><span><span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span><br></span><span>    ...<br></span></code></pre>
+                              <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span><br></span><span><span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span><br></span><span>    ...<br></span></code></pre>
                             </div>
                           </div>
                         </box>

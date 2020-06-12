@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -123,7 +124,7 @@
 
               <p><strong>Review a PR</strong> created by your classmates by following the steps given below. Note that you are expected to have read the following guidelines as given in this week's iP tasks:</p>
               <div class="indented-level1">
-                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                     <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using GitHub → Guidelines for Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                   </template>
                   <div>
@@ -155,7 +156,7 @@
               <li><span class="badge badge-dark">Step 2</span> <strong>Open the PR allocated to you</strong>, as given in the panel below.</li>
             </ul>
             <div class="indented-level2">
-              <panel minimized class="algolia-no-index"><template slot="_header">
+              <panel minimized="" class="algolia-no-index"><template slot="_header">
                   <p>iP PR review allocation</p>
                 </template>
                 <div class="table-responsive">
@@ -550,8 +551,8 @@
               <p></p>
               <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can choose another PR that is allocated to another student in your own tutorial <ins>but not in your sub-team</ins>.</p>
               <p></p>
-              <box type="tip" light>
-                <p>Tip for future reference: GitHub allows you to filter PRs/Issues using various criteria such as <code>author:AuthorUsername</code> (<a href="https://github.com/reposense/RepoSense/pulls?utf8=%E2%9C%93&amp;q=is%3Apr+author%3Afzdy1914+">example</a> -- see the <code>filters</code> text box in the target page).</p>
+              <box type="tip" light="">
+                <p>Tip for future reference: GitHub allows you to filter PRs/Issues using various criteria such as <code v-pre="">author:AuthorUsername</code> (<a href="https://github.com/reposense/RepoSense/pulls?utf8=%E2%9C%93&amp;q=is%3Apr+author%3Afzdy1914+">example</a> -- see the <code v-pre="">filters</code> text box in the target page).</p>
                 <p>Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
                   <img src="/website/admin/images/filterPrsUsingLabels.png"></p>
               </box>
@@ -568,17 +569,17 @@
                       </li>
                       <li>
                         <p>Write your comment (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <a href="https://guides.github.com/features/mastering-markdown/">GFMD</a> syntax in your comment)<br>
-                          e.g., <code>Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:</code><br></p>
+                          e.g., <code v-pre="">Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:</code><br></p>
                         <blockquote>
                           <p>Shouldn't this be <strong>in a new line</strong>, as per our <em>coding standard</em>? 🤔<br></p>
                         </blockquote>
                         <p>e.g., <br></p>
                         <blockquote>
-                          <p>Also consider alternative names such as <code>doX</code> or <code>putX</code> here, which might be more in line with the coding standard.</p>
+                          <p>Also consider alternative names such as <code v-pre="">doX</code> or <code v-pre="">putX</code> here, which might be more in line with the coding standard.</p>
                         </blockquote>
                       </li>
                       <li>
-                        <p>As illustrated in the examples above, <mark>phrasing comments as questions or using words such as 'consider'</mark> (instead of <code>You should do X</code> or <code>Change this to X</code>) is recommended to reflect that you are a peer, not a superior.</p>
+                        <p>As illustrated in the examples above, <mark>phrasing comments as questions or using words such as 'consider'</mark> (instead of <code v-pre="">You should do X</code> or <code v-pre="">Change this to X</code>) is recommended to reflect that you are a peer, not a superior.</p>
                       </li>
                       <li>
                         <p>When you are done writing the comment, click on the <button type="button" class="btn btn-success btn-sm "><strong>Start a review</strong></button> (not the <button type="button" class="btn btn-light btn-sm border"><strong>Add single comment</strong></button> button)</p>
@@ -599,11 +600,11 @@
               </li>
             </ul>
             <div class="indented-level2">
-              <box type="tip" light>
+              <box type="tip" light="">
                 <p><mark>As this is a <em>peer</em> review of PRs,</mark> you are not expected to always know better than the PR author. Feel free to,</p>
                 <ul>
-                  <li>Compliment the author if you learned a better way of implementing something by reviewing the PR. e.g., <code>This way of doing X seems much cleaner that the way I did. Nice :+1:</code></li>
-                  <li>Ask the author for more info. e.g., <code>I find this use of class X interesting? May I know why you did it this way instead of ...?</code></li>
+                  <li>Compliment the author if you learned a better way of implementing something by reviewing the PR. e.g., <code v-pre="">This way of doing X seems much cleaner that the way I did. Nice :+1:</code></li>
+                  <li>Ask the author for more info. e.g., <code v-pre="">I find this use of class X interesting? May I know why you did it this way instead of ...?</code></li>
                 </ul>
               </box>
             </div>
@@ -612,9 +613,9 @@
                 <p><span class="badge badge-dark">Step 5</span> <strong>Finish the review</strong>. When it is time to end the tutorial, finish the review as follows:</p>
                 <ol>
                   <li>Click on the <button type="button" class="btn btn-success btn-sm "><strong>Finish your review</strong></button> at the top of the page.</li>
-                  <li>Choose the <code>Comment</code> option (not <code>Approve</code> or <code>Request changes</code>).</li>
-                  <li>In the comment box, mention your review partners e.g., <code>Also took part in this review @JonhDoe</code>. You can also give an overall comment about the code e.g.,
-                    <pre><code class="hljs"><span>Overall, we found your code easy to read for the most part except a few places<br></span><span>where the nesting was too deep. Hope our comments help you improve the code further.<br></span><span>All the best for your iP :-)<br></span><span>[Also took part in this review: @JonhDoe]<br></span></code></pre>
+                  <li>Choose the <code v-pre="">Comment</code> option (not <code v-pre="">Approve</code> or <code v-pre="">Request changes</code>).</li>
+                  <li>In the comment box, mention your review partners e.g., <code v-pre="">Also took part in this review @JonhDoe</code>. You can also give an overall comment about the code e.g.,
+                    <pre><code class="hljs" v-pre=""><span>Overall, we found your code easy to read for the most part except a few places<br></span><span>where the nesting was too deep. Hope our comments help you improve the code further.<br></span><span>All the best for your iP :-)<br></span><span>[Also took part in this review: @JonhDoe]<br></span></code></pre>
                   </li>
                   <li>Click on the <button type="button" class="btn btn-success btn-sm "><strong>Submit review</strong></button> button to finish the review.</li>
                 </ol>
@@ -624,7 +625,7 @@
               </li>
             </ul>
             <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+              <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Using GitHub → Guidelines for Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                 </template>
                 <div>
@@ -670,7 +671,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

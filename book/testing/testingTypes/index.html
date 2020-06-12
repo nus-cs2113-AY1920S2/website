@@ -31,20 +31,20 @@
             <p><span class="dimmed"><strong><span>Quality Assurance → Testing →
                   </span></strong></span></p>
             <div id="title">
-              <h1 id="testing-types"><span>Testing Types</span><a class="fa fa-anchor" href="#testing-types" onclick="event.stopPropagation()"></a></h1>
+              <h1 id="testing-types"><span>Testing types</span><a class="fa fa-anchor" href="#testing-types" onclick="event.stopPropagation()"></a></h1>
             </div>
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="unit-testing">
+                  <panel type="seamless" expanded="" id="unit-testing">
                     <span slot="header" class="card-title">
                       <div>
-                        <h2 id="unit-testing"><span>Unit Testing</span><a class="fa fa-anchor" href="#unit-testing" onclick="event.stopPropagation()"></a></h2>
+                        <h2 id="unit-testing"><span>Unit testing</span><a class="fa fa-anchor" href="#unit-testing" onclick="event.stopPropagation()"></a></h2>
                       </div>
                     </span>
                     <div>
                       <div>
-                        <panel type="seamless" expanded id="what">
+                        <panel type="seamless" expanded="" id="what">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
@@ -63,16 +63,16 @@
                               </box>
                               <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
                               <box>
-                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
+                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code v-pre="">Foo</code> class containing two methods and a <code v-pre="">FooTest</code> class that contains unit tests for those two methods.</p>
                                 <div class="alt-java">
                                   <div>
-                                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>    <br></span><span>}<br></span></code></pre>
-                                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{<br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//a unit test for Foo#read() method</span><br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span><br></span><span>    }  <br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>    <br></span><span>}<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{<br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//a unit test for Foo#read() method</span><br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span><br></span><span>    }  <br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   </div>
                                 </div>
                                 <div class="alt-python">
                                   <div>
-                                    <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> unittest<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># ...</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span><br></span><span>      <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span><br></span><span>      <span class="hljs-comment"># a unit test for read() method</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># a unit tests for write(string) method</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># another unit tests for write(string) method</span><br></span></code></pre>
+                                    <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> unittest<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># ...</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span><br></span><span>      <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span><br></span><span>      <span class="hljs-comment"># a unit test for read() method</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># a unit tests for write(string) method</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># another unit tests for write(string) method</span><br></span></code></pre>
                                   </div>
                                 </div>
                               </box>
@@ -96,7 +96,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel type="seamless" expanded id="stubs">
+                        <panel type="seamless" expanded="" id="stubs">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="stubs"><span>Stubs</span><a class="fa fa-anchor" href="#stubs" onclick="event.stopPropagation()"></a></h4>
@@ -110,7 +110,7 @@
                             <div>
                               <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">code the unit depends on</span>dependencies</span> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                               <box>
-                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
+                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code v-pre="">Logic</code> class depends on a <code v-pre="">Storage</code> class, unit testing the <code v-pre="">Logic</code> class requires isolating the <code v-pre="">Logic</code> class from the <code v-pre="">Storage</code> class.</p>
                               </box>
                               <p><strong><em>Stubs</em> can isolate the <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Software Under Test (in this case, the <em>unit</em> being tested)</span>SUT</span> from its dependencies</strong>.</p>
                               <box type="definition">
@@ -120,25 +120,25 @@
                               </box>
                               <box>
                                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
-                                <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{<br></span><span>    Storage s;<br></span><span><br></span><span>    Logic(Storage s) {<br></span><span>        <span class="hljs-keyword">this</span>.s = s;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);<br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;<br></span><span>}<br></span></code></pre>
-                                <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-comment">// retrieve name from the database</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-                                <pre><code class="hljs java"><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>String name = logic.getName(<span class="hljs-number">23</span>);<br></span></code></pre>
+                                <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{<br></span><span>    Storage s;<br></span><span><br></span><span>    Logic(Storage s) {<br></span><span>        <span class="hljs-keyword">this</span>.s = s;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;<br></span><span>}<br></span></code></pre>
+                                <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-comment">// retrieve name from the database</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                <p>Normally, you would use the <code v-pre="">Logic</code> class as follows (note how the <code v-pre="">Logic</code> object depends on a <code v-pre="">DatabaseStorage</code> object to perform the <code v-pre="">getName()</code> operation):</p>
+                                <pre><code class="hljs java" v-pre=""><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>String name = logic.getName(<span class="hljs-number">23</span>);<br></span></code></pre>
                                 <p>You can test it like this:</p>
-                                <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
-                                <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
-                                <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-                                <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
-                                <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-                                <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());<br></span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
+                                <pre><code class="hljs java" v-pre=""><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
+                                <p>However, this <code v-pre="">logic</code> object being tested is making use of a <code v-pre="">DataBaseStorage</code> object which means a bug in the <code v-pre="">DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code v-pre="">Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
+                                <p>Here is a stub class you can use in place of <code v-pre="">DatabaseStorage</code>:</p>
+                                <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                <p>Note how the <code v-pre="">StorageStub</code> has the same interface as <code v-pre="">DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code v-pre="">DatabaseStorage</code> is expected to return for the given test input.</p>
+                                <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code v-pre="">DatabaseStorage</code> class and hence is a pure unit test.</p>
+                                <pre><code class="hljs java" v-pre=""><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());<br></span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
                               </box>
                               <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
                             </div>
                             <div>
                               <div>
-                                <panel expanded><template slot="_header">
+                                <panel expanded=""><template slot="_header">
                                     <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                                   </template>
                                   <ul>
@@ -147,7 +147,7 @@
                                 </panel>
                               </div>
                               <div>
-                                <panel expandable class="algolia-no-index"><template slot="_header">
+                                <panel expandable="" class="algolia-no-index"><template slot="_header">
                                     <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                   </template>
                                   <div>
@@ -176,15 +176,15 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="integration-testing">
+                  <panel type="seamless" expanded="" id="integration-testing">
                     <span slot="header" class="card-title">
                       <div>
-                        <h2 id="integration-testing"><span>Integration Testing</span><a class="fa fa-anchor" href="#integration-testing" onclick="event.stopPropagation()"></a></h2>
+                        <h2 id="integration-testing"><span>Integration testing</span><a class="fa fa-anchor" href="#integration-testing" onclick="event.stopPropagation()"></a></h2>
                       </div>
                     </span>
                     <div>
                       <div>
-                        <panel type="seamless" expanded id="what-2">
+                        <panel type="seamless" expanded="" id="what-2">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="what-2"><span>What</span><a class="fa fa-anchor" href="#what-2" onclick="event.stopPropagation()"></a></h4>
@@ -198,7 +198,7 @@
                             <div>
                               <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components interact with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
                               <box>
-                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>. If the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the actual <code>Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
+                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code v-pre="">Car</code> users classes <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>. If the <code v-pre="">Car</code> class assumed a <code v-pre="">Wheel</code> can support 200 mph speed but the actual <code v-pre="">Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
                               </box>
                             </div>
                             <div></div>
@@ -206,7 +206,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel type="seamless" expanded id="how">
+                        <panel type="seamless" expanded="" id="how">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how" onclick="event.stopPropagation()"></a></h4>
@@ -220,18 +220,18 @@
                             <div>
                               <p><strong>Integration testing is not simply a case of repeating the unit test cases using the actual dependencies</strong> (instead of the stubs used in unit testing). Instead, integration tests are additional test cases that focus on the interactions between the parts.</p>
                               <box>
-                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code>Car</code> uses classes <code>Engine</code> and <code>Wheel</code>. Here is how you would go about doing pure integration tests:</p>
-                                <p>a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br>
-                                  b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, <mark>using stubs for <code>Engine</code> and <code>Wheel</code></mark>.<br>
-                                  c) After that, do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>.</p>
+                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code v-pre="">Car</code> uses classes <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>. Here is how you would go about doing pure integration tests:</p>
+                                <p>a) First, unit test <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>.<br>
+                                  b) Next, unit test <code v-pre="">Car</code> in isolation of <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>, <mark>using stubs for <code v-pre="">Engine</code> and <code v-pre="">Wheel</code></mark>.<br>
+                                  c) After that, do an integration test for <code v-pre="">Car</code> using it together with the <code v-pre="">Engine</code> and <code v-pre="">Wheel</code> classes to ensure the <code v-pre="">Car</code> integrates properly with the <code v-pre="">Engine</code> and the <code v-pre="">Wheel</code>.</p>
                               </box>
                               <p><strong>In practice, developers often use a hybrid of unit+integration tests to minimize the need for stubs.</strong></p>
                               <box>
                                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's how a hybrid unit+integration approach could be applied to the same example used above:</p>
-                                <p>(a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br>
-                                  <s>(b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, using stubs for <code>Engine</code> and <code>Wheel</code>.</s><br>
-                                  (c) After that, do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>. <mark>This step should include test cases that are meant to test the unit <code>Car</code></mark> (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code>Car</code> with <code>Wheel</code> and <code>Engine</code> (i.e. pure integration test cases used of the step (c) in the example above).</p>
-                                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that you no longer need stubs for <code>Engine</code> and <code>Wheel</code>. The downside is that <code>Car</code> is never tested in isolation of its dependencies. Given that its dependencies are already unit tested, the risk of bugs in <code>Engine</code> and <code>Wheel</code> affecting the testing of <code>Car</code> can be considered minimal.</p>
+                                <p>(a) First, unit test <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>.<br>
+                                  <s>(b) Next, unit test <code v-pre="">Car</code> in isolation of <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>, using stubs for <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>.</s><br>
+                                  (c) After that, do an integration test for <code v-pre="">Car</code> using it together with the <code v-pre="">Engine</code> and <code v-pre="">Wheel</code> classes to ensure the <code v-pre="">Car</code> integrates properly with the <code v-pre="">Engine</code> and the <code v-pre="">Wheel</code>. <mark>This step should include test cases that are meant to test the unit <code v-pre="">Car</code></mark> (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code v-pre="">Car</code> with <code v-pre="">Wheel</code> and <code v-pre="">Engine</code> (i.e. pure integration test cases used of the step (c) in the example above).</p>
+                                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that you no longer need stubs for <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>. The downside is that <code v-pre="">Car</code> is never tested in isolation of its dependencies. Given that its dependencies are already unit tested, the risk of bugs in <code v-pre="">Engine</code> and <code v-pre="">Wheel</code> affecting the testing of <code v-pre="">Car</code> can be considered minimal.</p>
                               </box>
                             </div>
                             <div></div>
@@ -242,15 +242,15 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="system-testing">
+                  <panel type="seamless" expanded="" id="system-testing">
                     <span slot="header" class="card-title">
                       <div>
-                        <h2 id="system-testing"><span>System Testing</span><a class="fa fa-anchor" href="#system-testing" onclick="event.stopPropagation()"></a></h2>
+                        <h2 id="system-testing"><span>System testing</span><a class="fa fa-anchor" href="#system-testing" onclick="event.stopPropagation()"></a></h2>
                       </div>
                     </span>
                     <div>
                       <div>
-                        <panel type="seamless" expanded id="what-3">
+                        <panel type="seamless" expanded="" id="what-3">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="what-3"><span>What</span><a class="fa fa-anchor" href="#what-3" onclick="event.stopPropagation()"></a></h4>
@@ -271,7 +271,7 @@
                               <p><strong>System test cases are based on the specified external behavior of the system.</strong> Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails 'gracefully' having pushed beyond its limits.</p>
                               <box>
                                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose the SUT is a browser supposedly capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully if pushed beyond its limits.</p>
-                                <pre><code class="hljs"><span>Test case: load a web page that is too big<br></span><span>* Input: load a web page containing more than 5000 characters. <br></span><span>* Expected behavior: abort the loading of the page and show a meaningful error message. <br></span></code></pre>
+                                <pre><code class="hljs" v-pre=""><span>Test case: load a web page that is too big<br></span><span>* Input: load a web page containing more than 5000 characters. <br></span><span>* Expected behavior: abort the loading of the page and show a meaningful error message. <br></span></code></pre>
                                 <p>This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
                               </box>
                               <p><strong>System testing includes testing against non-functional requirements too.</strong> Here are some examples.</p>
@@ -292,15 +292,15 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="alpha-and-beta-testing">
+                  <panel type="seamless" expanded="" id="alpha-and-beta-testing">
                     <span slot="header" class="card-title">
                       <div>
-                        <h2 id="alpha-and-beta-testing"><span>Alpha and Beta Testing</span><a class="fa fa-anchor" href="#alpha-and-beta-testing" onclick="event.stopPropagation()"></a></h2>
+                        <h2 id="alpha-and-beta-testing"><span>Alpha and beta testing</span><a class="fa fa-anchor" href="#alpha-and-beta-testing" onclick="event.stopPropagation()"></a></h2>
                       </div>
                     </span>
                     <div>
                       <div>
-                        <panel type="seamless" expanded id="what-4">
+                        <panel type="seamless" expanded="" id="what-4">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="what-4"><span>What</span><a class="fa fa-anchor" href="#what-4" onclick="event.stopPropagation()"></a></h4>
@@ -324,7 +324,7 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="dogfooding">
+                  <panel type="seamless" expanded="" id="dogfooding">
                     <span slot="header" class="card-title">
                       <div>
                         <h2 id="dogfooding"><span>Dogfooding</span><a class="fa fa-anchor" href="#dogfooding" onclick="event.stopPropagation()"></a></h2>
@@ -332,7 +332,7 @@
                     </span>
                     <div>
                       <div>
-                        <panel type="seamless" expanded id="what-5">
+                        <panel type="seamless" expanded="" id="what-5">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="what-5"><span>What</span><a class="fa fa-anchor" href="#what-5" onclick="event.stopPropagation()"></a></h4>
@@ -348,7 +348,7 @@
                             </div>
                             <div>
                               <div>
-                                <panel expandable class="algolia-no-index"><template slot="_header">
+                                <panel expandable="" class="algolia-no-index"><template slot="_header">
                                     <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                   </template>
                                   <div>
@@ -377,15 +377,15 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="developer-testing">
+                  <panel type="seamless" expanded="" id="developer-testing">
                     <span slot="header" class="card-title">
                       <div>
-                        <h2 id="developer-testing"><span>Developer Testing</span><a class="fa fa-anchor" href="#developer-testing" onclick="event.stopPropagation()"></a></h2>
+                        <h2 id="developer-testing"><span>Developer testing</span><a class="fa fa-anchor" href="#developer-testing" onclick="event.stopPropagation()"></a></h2>
                       </div>
                     </span>
                     <div>
                       <div>
-                        <panel type="seamless" expanded id="what-6">
+                        <panel type="seamless" expanded="" id="what-6">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="what-6"><span>What</span><a class="fa fa-anchor" href="#what-6" onclick="event.stopPropagation()"></a></h4>
@@ -404,7 +404,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel type="seamless" expanded id="why">
+                        <panel type="seamless" expanded="" id="why">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="why"><span>Why</span><a class="fa fa-anchor" href="#why" onclick="event.stopPropagation()"></a></h4>
@@ -433,7 +433,7 @@
                             </div>
                             <div>
                               <div>
-                                <panel expandable class="algolia-no-index"><template slot="_header">
+                                <panel expandable="" class="algolia-no-index"><template slot="_header">
                                     <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                   </template>
                                   <div>
@@ -496,15 +496,15 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="exploratory-vs-scripted-testing">
+                  <panel type="seamless" expanded="" id="exploratory-versus-scripted-testing">
                     <span slot="header" class="card-title">
                       <div>
-                        <h2 id="exploratory-vs-scripted-testing"><span>Exploratory vs Scripted Testing</span><a class="fa fa-anchor" href="#exploratory-vs-scripted-testing" onclick="event.stopPropagation()"></a></h2>
+                        <h2 id="exploratory-versus-scripted-testing"><span>Exploratory versus scripted testing</span><a class="fa fa-anchor" href="#exploratory-versus-scripted-testing" onclick="event.stopPropagation()"></a></h2>
                       </div>
                     </span>
                     <div>
                       <div>
-                        <panel type="seamless" expanded id="what-7">
+                        <panel type="seamless" expanded="" id="what-7">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="what-7"><span>What</span><a class="fa fa-anchor" href="#what-7" onclick="event.stopPropagation()"></a></h4>
@@ -529,14 +529,14 @@
                               <box>
                                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                                 <blockquote>
-                                  <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon.
-                                    But before that, let us give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                                  <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; you need to look at them soon.
+                                    But before that, you should give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, you have a major problem and this has to be made known to the development team sooner rather than later...”</p>
                                 </blockquote>
                               </box>
                               <box>
                                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                               </box>
-                              <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                              <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer="" size="" modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                                 <div>
                                   <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                                 </div>
@@ -544,7 +544,7 @@
                             </div>
                             <div>
                               <div>
-                                <panel expandable class="algolia-no-index"><template slot="_header">
+                                <panel expandable="" class="algolia-no-index"><template slot="_header">
                                     <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                   </template>
                                   <div>
@@ -602,7 +602,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel type="seamless" expanded id="when">
+                        <panel type="seamless" expanded="" id="when">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="when"><span>When</span><a class="fa fa-anchor" href="#when" onclick="event.stopPropagation()"></a></h4>
@@ -621,7 +621,7 @@
                                 <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations benefit from a mix of scripted and exploratory approaches.
                                   --<span trigger="click" for="modal:ExploratoryWhen-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ExploratoryWhen-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span></p>
                               </blockquote>
-                              <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                              <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer="" size="" modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                                 <div>
                                   <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                                 </div>
@@ -629,7 +629,7 @@
                             </div>
                             <div>
                               <div>
-                                <panel expandable class="algolia-no-index"><template slot="_header">
+                                <panel expandable="" class="algolia-no-index"><template slot="_header">
                                     <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                   </template>
                                   <div>
@@ -659,15 +659,15 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="acceptance-testing">
+                  <panel type="seamless" expanded="" id="acceptance-testing">
                     <span slot="header" class="card-title">
                       <div>
-                        <h2 id="acceptance-testing"><span>Acceptance Testing</span><a class="fa fa-anchor" href="#acceptance-testing" onclick="event.stopPropagation()"></a></h2>
+                        <h2 id="acceptance-testing"><span>Acceptance testing</span><a class="fa fa-anchor" href="#acceptance-testing" onclick="event.stopPropagation()"></a></h2>
                       </div>
                     </span>
                     <div>
                       <div>
-                        <panel type="seamless" expanded id="what-8">
+                        <panel type="seamless" expanded="" id="what-8">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="what-8"><span>What</span><a class="fa fa-anchor" href="#what-8" onclick="event.stopPropagation()"></a></h4>
@@ -691,10 +691,10 @@
                         </panel>
                       </div>
                       <div>
-                        <panel type="seamless" expanded id="acceptance-vs-system-testing">
+                        <panel type="seamless" expanded="" id="acceptance-versus-system-testing">
                           <span slot="header" class="card-title">
                             <div>
-                              <h4 id="acceptance-vs-system-testing"><span>Acceptance vs System Testing</span><a class="fa fa-anchor" href="#acceptance-vs-system-testing" onclick="event.stopPropagation()"></a></h4>
+                              <h4 id="acceptance-versus-system-testing"><span>Acceptance versus system testing</span><a class="fa fa-anchor" href="#acceptance-versus-system-testing" onclick="event.stopPropagation()"></a></h4>
                             </div>
                           </span>
                           <div class="indented">
@@ -735,14 +735,14 @@
                               </div>
                               <p><span class="dimmed">Note: <em>negative</em> test cases: cases where the SUT is not expected to work normally e.g. incorrect inputs; <em>positive</em> test cases: cases where the SUT is expected to work normally</span></p>
                               <box>
-                                <p><strong>Requirement Specification vs System Specification</strong></p>
+                                <p><strong>Requirement specification versus system specification</strong></p>
                                 <p>The requirement specification need not be the same as the system specification. Some example differences:</p>
                                 <div class="table-responsive">
                                   <table class="markbind-table table table-bordered table-striped">
                                     <thead>
                                       <tr>
-                                        <th style="text-align:left">Requirements Specification</th>
-                                        <th style="text-align:left">System Specification</th>
+                                        <th style="text-align:left">Requirements specification</th>
+                                        <th style="text-align:left">System specification</th>
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -771,7 +771,7 @@
                             </div>
                             <div>
                               <div>
-                                <panel expandable class="algolia-no-index"><template slot="_header">
+                                <panel expandable="" class="algolia-no-index"><template slot="_header">
                                     <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                   </template>
                                   <div>
@@ -807,15 +807,15 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="regression-testing">
+                  <panel type="seamless" expanded="" id="regression-testing">
                     <span slot="header" class="card-title">
                       <div>
-                        <h2 id="regression-testing"><span>Regression Testing</span><a class="fa fa-anchor" href="#regression-testing" onclick="event.stopPropagation()"></a></h2>
+                        <h2 id="regression-testing"><span>Regression testing</span><a class="fa fa-anchor" href="#regression-testing" onclick="event.stopPropagation()"></a></h2>
                       </div>
                     </span>
                     <div>
                       <div>
-                        <panel type="seamless" expanded id="what-9">
+                        <panel type="seamless" expanded="" id="what-9">
                           <span slot="header" class="card-title">
                             <div>
                               <h4 id="what-9"><span>What</span><a class="fa fa-anchor" href="#what-9" onclick="event.stopPropagation()"></a></h4>
@@ -827,13 +827,13 @@
                             <p></p>
                             <p></p>
                             <div>
-                              <p><strong>When we modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</strong></p>
-                              <p><strong><em>Regression testing</em> is the re-testing of the software to detect regressions.</strong> Note that to detect regressions, we need to retest all related components, even if they had been tested before.</p>
+                              <p><strong>When you modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</strong></p>
+                              <p><strong><em>Regression testing</em> is the re-testing of the software to detect regressions.</strong> Note that to detect regressions, you need to retest all related components, even if they had been tested before.</p>
                               <p>Regression testing is more effective when it is done frequently, after each small change. However, doing so can be prohibitively expensive if testing is done manually. Hence, <strong>regression testing is more practical when it is automated</strong>.</p>
                             </div>
                             <div>
                               <div>
-                                <panel expandable class="algolia-no-index"><template slot="_header">
+                                <panel expandable="" class="algolia-no-index"><template slot="_header">
                                     <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                   </template>
                                   <div>
@@ -858,7 +858,7 @@
                                     <panel class="algolia-no-index"><template slot="_header">
                                         <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain regression testing</p>
                                       </template>
-                                      <question has-input>
+                                      <question has-input="">
                                         <p>Explain why and when you would do regression testing in a software project.</p>
                                       </question>
                                     </panel>

@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -117,7 +118,7 @@
                     </li>
                     <li><strong>We recommend that you do the tutorial activity during your actual tutorial time</strong> as both the forum and the Gitter channel will be closely watched by your tutor during that period (i.e., you'll get faster responses). But it is not a hard rule; it is fine as long as you finish the activities by the deadline.</li>
                     <li><strong>You are welcome (even encouraged) to discuss activities/answers with others, but the answers you submit must be your own</strong>.</li>
-                    <li><strong><mark>Use <a href="/website/schedule/week10/files/A________-Tutorial-10.docx">the file <code>A________-Tutorial-10.docx</code></a> as the template</mark></strong> for your submission. Do follow the submission instructions in that file closely or else our scripts will not be able to detect your submission.<br>
+                    <li><strong><mark>Use <a href="/website/schedule/week10/files/A________-Tutorial-10.docx">the file <code v-pre="">A________-Tutorial-10.docx</code></a> as the template</mark></strong> for your submission. Do follow the submission instructions in that file closely or else our scripts will not be able to detect your submission.<br>
                       <strong>Upload your submission to the matching folder on LumiNUS</strong>.</li>
                   </ul>
                 </div>
@@ -140,30 +141,30 @@
             <p></p>
             <div>
               <div class="indented-level2">
-                <box dismissible>
+                <box dismissible="">
                   <p><span class="dimmed"><strong><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Some background:</strong> As you know, our <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., Practical Exam</span>PE</span> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">CAT stands for Crowd-sourced Anonymous Testing</span>CATcher</span> that we would like to use for the PE this semester.</span></p>
                 </box>
                 <p>In this tutorial, we would like to smoke-test the CATcher app <strong>to ensure it can run in your computer</strong>.</p>
                 <p></p>
-                <panel type="info" minimized class="algolia-no-index"><template slot="_header">
+                <panel type="info" minimized="" class="algolia-no-index"><template slot="_header">
                     <p><strong>The steps for smoke-testing CATcher:</strong></p>
                   </template>
                   <ol>
                     <li><strong>Download the latest version</strong> of the CATcher executable from <a href="https://github.com/CATcher-org/CATcher/releases">https://github.com/CATcher-org/CATcher/releases</a>.</li>
-                    <li><strong>Launch the app.</strong> Allow the app to run if there are security warnings <span class="dimmed">(e.g., for Win 10, click the <code>More Info</code> link in the security warning and choose <code>Run anyway</code>)</span>.<br>
+                    <li><strong>Launch the app.</strong> Allow the app to run if there are security warnings <span class="dimmed">(e.g., for Win 10, click the <code v-pre="">More Info</code> link in the security warning and choose <code v-pre="">Run anyway</code>)</span>.<br>
                       <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If the app is blocked by your virus scanner, put it in a new folder and add the folder to the <em>exclusions</em> list of the virus scanner.<br>
                       <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If you encounter other problems at the app launch, refer to the <a href="https://github.com/CATcher-org/CATcher/blob/master/usage-notes.md">Notes on using the CATcher Desktop App</a>.</li>
-                    <li><strong>Login</strong>: Choose the <em>session</em> <code>CS2113/T Alpha Test</code>, and submit.
+                    <li><strong>Login</strong>: Choose the <em>session</em> <code v-pre="">CS2113/T Alpha Test</code>, and submit.
                       <img src="/website/admin/images/catcherLogin.png"></li>
-                    <li>In the next screen, submit your GitHub credentials directly or choose to the <code>Use GitHub login interface</code> to login to CATcher using your GitHub account.<br>
+                    <li>In the next screen, submit your GitHub credentials directly or choose to the <code v-pre="">Use GitHub login interface</code> to login to CATcher using your GitHub account.<br>
                       If the app asks for public repo access permissions, grant it (just go with the default settings).</li>
-                    <li><strong>Let CATcher create a repo named <code>alpha</code></strong> in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.</li>
+                    <li><strong>Let CATcher create a repo named <code v-pre="">alpha</code></strong> in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.</li>
                     <li><strong>Use the app to create 1-2 dummy bug reports</strong>, similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
                       <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> you can <mark>copy-paste screenshots</mark> into the bug description.<br>
                       <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use Markdown syntax in the bug descriptions.<br>
-                      <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> The <code>severity</code> and <code>type</code> labels are compulsory.</li>
+                      <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> The <code v-pre="">severity</code> and <code v-pre="">type</code> labels are compulsory.</li>
                     <li><strong>Report any problems you encounter</strong> at the <a href="https://github.com/CATcher-org/CATcher/issues">CATcher issue tracker</a>.</li>
-                    <li><strong>Do NOT delete the <code>alpha</code> repo</strong> created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.</li>
+                    <li><strong>Do NOT delete the <code v-pre="">alpha</code> repo</strong> created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.</li>
                   </ol>
                 </panel>
                 <p></p>
@@ -208,14 +209,14 @@
             <div class="indented-level2">
               <div>
                 <panel class="algolia-no-index"><template slot="_header">
-                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code>ParserFactory</code>)</p>
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code v-pre="">ParserFactory</code>)</p>
                   </template>
                   <question>
                     <p>Explain the interactions depicted in this sequence diagram.</p>
                     <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
                     <p></p>
                     <div slot="hint" class="algolia-no-index">
-                      <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                      <p>First, the <code v-pre="">createParser()</code> method of an existing <code v-pre="">ParserFactory</code> object is called. Then, ...</p>
                     </div>
                   </question>
                 </panel>
@@ -245,13 +246,13 @@
                   </template>
                   <question>
                     <p>Draw a sequence diagram to represent this code snippet.</p>
-                    <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isFirstPage) {<br></span><span>    <span class="hljs-keyword">new</span> Quote().print();<br></span><span>}<br></span></code></pre>
-                    <p>The <code>Quote</code> class:</p>
-                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{<br></span><span><br></span><span>    String q;<br></span><span><br></span><span>    Quote(){<br></span><span>        q = generate();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{<br></span><span>        System.out.println(q);<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre>
+                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">if</span> (isFirstPage) {<br></span><span>    <span class="hljs-keyword">new</span> Quote().print();<br></span><span>}<br></span></code></pre>
+                    <p>The <code v-pre="">Quote</code> class:</p>
+                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{<br></span><span><br></span><span>    String q;<br></span><span><br></span><span>    Quote(){<br></span><span>        q = generate();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{<br></span><span>        System.out.println(q);<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre>
                     <div slot="hint" class="algolia-no-index">
                       <ul>
-                        <li>Show <code>new Quote().print();</code> as two method calls.</li>
-                        <li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code>print()</code> method is called.</li>
+                        <li>Show <code v-pre="">new Quote().print();</code> as two method calls.</li>
+                        <li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code v-pre="">print()</code> method is called.</li>
                       </ul>
                     </div>
                   </question>
@@ -281,7 +282,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

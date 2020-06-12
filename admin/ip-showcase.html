@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -84,7 +85,7 @@
 
       <div id="content-wrapper">
         <h1 id="ip-showcase">iP Showcase<a class="fa fa-anchor" href="#ip-showcase" onclick="event.stopPropagation()"></a></h1>
-        <panel no-close expanded id="cs2103t-w11"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-w11"><template slot="_header">
             <h2 id="cs2103t-w11">CS2103T-W11<a class="fa fa-anchor" href="#cs2103t-w11" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-w11-1"><span class="badge badge-secondary">CS2103T-W11-1</span><a class="fa fa-anchor" href="#cs2103t-w11-1" onclick="event.stopPropagation()"></a></h3>
@@ -263,7 +264,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-w12"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-w12"><template slot="_header">
             <h2 id="cs2103t-w12">CS2103T-W12<a class="fa fa-anchor" href="#cs2103t-w12" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-w12-1"><span class="badge badge-secondary">CS2103T-W12-1</span><a class="fa fa-anchor" href="#cs2103t-w12-1" onclick="event.stopPropagation()"></a></h3>
@@ -442,7 +443,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-w13"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-w13"><template slot="_header">
             <h2 id="cs2103t-w13">CS2103T-W13<a class="fa fa-anchor" href="#cs2103t-w13" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-w13-1"><span class="badge badge-secondary">CS2103T-W13-1</span><a class="fa fa-anchor" href="#cs2103t-w13-1" onclick="event.stopPropagation()"></a></h3>
@@ -630,7 +631,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-t09"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-t09"><template slot="_header">
             <h2 id="cs2103t-t09">CS2103T-T09<a class="fa fa-anchor" href="#cs2103t-t09" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-t09-1"><span class="badge badge-secondary">CS2103T-T09-1</span><a class="fa fa-anchor" href="#cs2103t-t09-1" onclick="event.stopPropagation()"></a></h3>
@@ -809,7 +810,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-t10"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-t10"><template slot="_header">
             <h2 id="cs2103t-t10">CS2103T-T10<a class="fa fa-anchor" href="#cs2103t-t10" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-t10-1"><span class="badge badge-secondary">CS2103T-T10-1</span><a class="fa fa-anchor" href="#cs2103t-t10-1" onclick="event.stopPropagation()"></a></h3>
@@ -997,7 +998,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103-t11"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103-t11"><template slot="_header">
             <h2 id="cs2103-t11">CS2103-T11<a class="fa fa-anchor" href="#cs2103-t11" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103-t11-1"><span class="badge badge-secondary">CS2103-T11-1</span><a class="fa fa-anchor" href="#cs2103-t11-1" onclick="event.stopPropagation()"></a></h3>
@@ -1130,7 +1131,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-t11"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-t11"><template slot="_header">
             <h2 id="cs2103t-t11">CS2103T-T11<a class="fa fa-anchor" href="#cs2103t-t11" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-t11-1"><span class="badge badge-secondary">CS2103T-T11-1</span><a class="fa fa-anchor" href="#cs2103t-t11-1" onclick="event.stopPropagation()"></a></h3>
@@ -1318,7 +1319,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-t12"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-t12"><template slot="_header">
             <h2 id="cs2103t-t12">CS2103T-T12<a class="fa fa-anchor" href="#cs2103t-t12" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-t12-1"><span class="badge badge-secondary">CS2103T-T12-1</span><a class="fa fa-anchor" href="#cs2103t-t12-1" onclick="event.stopPropagation()"></a></h3>
@@ -1506,7 +1507,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-t13"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-t13"><template slot="_header">
             <h2 id="cs2103t-t13">CS2103T-T13<a class="fa fa-anchor" href="#cs2103t-t13" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-t13-1"><span class="badge badge-secondary">CS2103T-T13-1</span><a class="fa fa-anchor" href="#cs2103t-t13-1" onclick="event.stopPropagation()"></a></h3>
@@ -1694,7 +1695,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103-t14"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103-t14"><template slot="_header">
             <h2 id="cs2103-t14">CS2103-T14<a class="fa fa-anchor" href="#cs2103-t14" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103-t14-1"><span class="badge badge-secondary">CS2103-T14-1</span><a class="fa fa-anchor" href="#cs2103-t14-1" onclick="event.stopPropagation()"></a></h3>
@@ -1846,7 +1847,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103-t16"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103-t16"><template slot="_header">
             <h2 id="cs2103-t16">CS2103-T16<a class="fa fa-anchor" href="#cs2103-t16" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103-t16-1"><span class="badge badge-secondary">CS2103-T16-1</span><a class="fa fa-anchor" href="#cs2103-t16-1" onclick="event.stopPropagation()"></a></h3>
@@ -2025,7 +2026,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-t17"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-t17"><template slot="_header">
             <h2 id="cs2103t-t17">CS2103T-T17<a class="fa fa-anchor" href="#cs2103t-t17" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-t17-1"><span class="badge badge-secondary">CS2103T-T17-1</span><a class="fa fa-anchor" href="#cs2103t-t17-1" onclick="event.stopPropagation()"></a></h3>
@@ -2121,7 +2122,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103-f09"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103-f09"><template slot="_header">
             <h2 id="cs2103-f09">CS2103-F09<a class="fa fa-anchor" href="#cs2103-f09" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103-f09-1"><span class="badge badge-secondary">CS2103-F09-1</span><a class="fa fa-anchor" href="#cs2103-f09-1" onclick="event.stopPropagation()"></a></h3>
@@ -2318,7 +2319,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103-f10"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103-f10"><template slot="_header">
             <h2 id="cs2103-f10">CS2103-F10<a class="fa fa-anchor" href="#cs2103-f10" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103-f10-1"><span class="badge badge-secondary">CS2103-F10-1</span><a class="fa fa-anchor" href="#cs2103-f10-1" onclick="event.stopPropagation()"></a></h3>
@@ -2460,7 +2461,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-f11"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-f11"><template slot="_header">
             <h2 id="cs2103t-f11">CS2103T-F11<a class="fa fa-anchor" href="#cs2103t-f11" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-f11-1"><span class="badge badge-secondary">CS2103T-F11-1</span><a class="fa fa-anchor" href="#cs2103t-f11-1" onclick="event.stopPropagation()"></a></h3>
@@ -2648,7 +2649,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-f12"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-f12"><template slot="_header">
             <h2 id="cs2103t-f12">CS2103T-F12<a class="fa fa-anchor" href="#cs2103t-f12" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-f12-1"><span class="badge badge-secondary">CS2103T-F12-1</span><a class="fa fa-anchor" href="#cs2103t-f12-1" onclick="event.stopPropagation()"></a></h3>
@@ -2836,7 +2837,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-f13"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-f13"><template slot="_header">
             <h2 id="cs2103t-f13">CS2103T-F13<a class="fa fa-anchor" href="#cs2103t-f13" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-f13-1"><span class="badge badge-secondary">CS2103T-F13-1</span><a class="fa fa-anchor" href="#cs2103t-f13-1" onclick="event.stopPropagation()"></a></h3>
@@ -3024,7 +3025,7 @@
           </span>
           <hr>
         </panel>
-        <panel no-close expanded id="cs2103t-f14"><template slot="_header">
+        <panel no-close="" expanded="" id="cs2103t-f14"><template slot="_header">
             <h2 id="cs2103t-f14">CS2103T-F14<a class="fa fa-anchor" href="#cs2103t-f14" onclick="event.stopPropagation()"></a></h2>
           </template>
           <h3 id="cs2103t-f14-1"><span class="badge badge-secondary">CS2103T-F14-1</span><a class="fa fa-anchor" href="#cs2103t-f14-1" onclick="event.stopPropagation()"></a></h3>
@@ -3237,7 +3238,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

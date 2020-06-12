@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -89,48 +90,51 @@
           <div class="website-content">
             <nav>
               <ul class="pagination mt-2">
-                <li class="page-item"><a class="page-link" href="/website/schedule/week12"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+                <li class="page-item disabled"><a class="page-link" href="/website/schedule/week0"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
                 <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-                <li class="page-item active"><a class="page-link" href="/website/schedule/week13/index.html"><span><span aria-hidden="true" class="fas fa-bell"></span></span> Summary</a></li>
-                <li class="page-item"><a class="page-link" href="/website/schedule/week13/topics.html"><span><span aria-hidden="true" class="fas fa-book"></span></span> Topics</a></li>
-                <li class="page-item"><a class="page-link" href="/website/schedule/week13/project.html"><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project</a></li>
-                <li class="page-item"><a class="page-link" href="/website/schedule/week13/tutorial.html"><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> Tutorial</a></li>
-                <li class="page-item"><a class="page-link" href="/website/schedule/week13/admin.html"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Admin Info</a></li>
+                <li class="page-item active"><a class="page-link" href="/website/schedule/week1/index.html"><span><span aria-hidden="true" class="fas fa-bell"></span></span> Summary</a></li>
+                <li class="page-item"><a class="page-link" href="/website/schedule/week1/topics.html"><span><span aria-hidden="true" class="fas fa-book"></span></span> Topics</a></li>
+                <li class="page-item"><a class="page-link" href="/website/schedule/week1/project.html"><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project</a></li>
+                <li class="page-item"><a class="page-link" href="/website/schedule/week1/tutorial.html"><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> Tutorial</a></li>
+                <li class="page-item"><a class="page-link" href="/website/schedule/week1/admin.html"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Admin Info</a></li>
                 <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-                <li class="page-item disabled"><a class="page-link" href="/website/schedule/week14"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+                <li class="page-item"><a class="page-link" href="/website/schedule/week2"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
               </ul>
             </nav>
             <p></p>
-            <h1 id="week-13-from-wed-apr-8-noon-summary">Week 13 <small><small><span class="dimmed">[from Wed Apr 8 noon]</span> - Summary</small></small><a class="fa fa-anchor" href="#week-13-from-wed-apr-8-noon-summary" onclick="event.stopPropagation()"></a></h1>
-            <div></div>
+            <h1 id="week-1-from-mon-jan-13-summary">Week 1 <small><small><span class="dimmed">[from Mon Jan 13]</span> - Summary</small></small><a class="fa fa-anchor" href="#week-1-from-mon-jan-13-summary" onclick="event.stopPropagation()"></a></h1>
+            <div>
+              <div>
+                <box type="info" dismissible="">
+                  <p>A summary of the week, and announcements relevant to that week, will appear in this tab. Refer to the respective tabs (i.e., <a href="/website/schedule/week1/topics.html"><span class="border"> <span><span aria-hidden="true" class="fas fa-book"></span></span> Topics </span></a>, <a href="/website/schedule/week1/project.html"><span class="border"> <span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project </span></a>, ... given at the top of this page) for more details.</p>
+                  <p>A <strong><a href="/website/schedule/timeline.html">full timeline</a></strong> is available too.
+                  </p>
+                </box>
+              </div>
+              <box type="tip">
+                <ul>
+                  <li><strong>Our first lecture</strong> will be on week 1 Wednesday (Jan 15th).</li>
+                  <li><strong>Our tutorials</strong> start on week 3.</li>
+                  <li><strong>[CS2113T Students]</strong>: Of the many weekly sessions that appear under CS2113T, only two actually belong to CS2113T. Those are, the lecture on Wednesday 1200-1400, and the 1-hour tutorial slot on Monday or Tuesday. The other two 2-hour slots belong to the CS2101 module.
+                  </li>
+                </ul>
+              </box>
+            </div>
             <span id="summary">
               <div class="container">
                 <div class="row">
-                  <div class="col-sm border-right border-bottom">
-                    <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                        <p><span class="dimmed">Full ToC</span></p>
-                      </template>
-                      <div></div>
-                    </panel>
-                  </div>
+                  <div class="col-sm border-right border-bottom"></div>
                   <div class="col-sm border-bottom">
                     <p><strong>Admin:</strong></p>
                     <div>
                       <ol>
-                        <li><span>Submit Final Peer Evaluation on TEAMMATES</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Tuesday 14th 2359</span></span></li>
+                        <li><span>Set up the tools</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the lecture</span></span></li>
+                        <li><span>Submit the pre-module survey</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Wednesday 2359</span></span></li>
+                        <li><span>Learn about the module</span></li>
+                        <li><span>Attend the first lecture</span></li>
                       </ol>
                     </div>
-                    <div>
-                      <p><strong>tP:</strong> <span class="border rounded text-success border-success pr-1 pl-1"><span aria-hidden="true" class="fas fa-tag"></span> <strong>v2.1</strong></span></p>
-                      <div>
-                        <ol>
-                          <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span><span><span aria-hidden="true" class="fas fa-users"></span></span> Submit deliverables</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Saturday 11th Apr 23.59</span></span></li>
-                          <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Submit demo video</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Monday 13th Apr 23.59</span></span></li>
-                          <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Prepare for the practical exam</span> <span class="badge badge-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the lecture</span></span></li>
-                          <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Attend the practical exam</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> during the lecture</span></span></li>
-                        </ol>
-                      </div>
-                    </div>
+                    <div></div>
                   </div>
                 </div>
               </div>
@@ -144,7 +148,7 @@
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#week-13-from-wed-apr-8-noon-summary">Week 13 [from Wed Apr 8 noon] - Summary&#x200E;</a>
+            <a class="nav-link py-1" href="#week-1-from-mon-jan-13-summary">Week 1 [from Mon Jan 13] - Summary&#x200E;</a>
 
           </nav>
         </div>
@@ -152,7 +156,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

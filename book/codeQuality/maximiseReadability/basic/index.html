@@ -36,10 +36,10 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="avoid-long-methods">
+                  <panel type="seamless" expanded="" id="avoid-long-methods">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="avoid-long-methods"><span>Avoid Long Methods</span><a class="fa fa-anchor" href="#avoid-long-methods" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="avoid-long-methods"><span>Avoid long methods</span><a class="fa fa-anchor" href="#avoid-long-methods" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -55,10 +55,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="avoid-deep-nesting">
+                  <panel type="seamless" expanded="" id="avoid-deep-nesting">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="avoid-deep-nesting"><span>Avoid Deep Nesting</span><a class="fa fa-anchor" href="#avoid-deep-nesting" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="avoid-deep-nesting"><span>Avoid deep nesting</span><a class="fa fa-anchor" href="#avoid-deep-nesting" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -83,14 +83,14 @@
                                     <p>
                                       <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                                     </p>
-                                    <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (!age) {<br></span><span>        <span class="hljs-keyword">if</span> (!sub) {<br></span><span>            <span class="hljs-keyword">if</span> (!notFullTime) {<br></span><span>                subsidy = <span class="hljs-number">500</span>;<br></span><span>            } <span class="hljs-keyword">else</span> {<br></span><span>                subsidy = <span class="hljs-number">250</span>;<br></span><span>            }<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            subsidy = <span class="hljs-number">250</span>;<br></span><span>        }<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = -<span class="hljs-number">1</span>;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (!age) {<br></span><span>        <span class="hljs-keyword">if</span> (!sub) {<br></span><span>            <span class="hljs-keyword">if</span> (!notFullTime) {<br></span><span>                subsidy = <span class="hljs-number">500</span>;<br></span><span>            } <span class="hljs-keyword">else</span> {<br></span><span>                subsidy = <span class="hljs-number">250</span>;<br></span><span>            }<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            subsidy = <span class="hljs-number">250</span>;<br></span><span>        }<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = -<span class="hljs-number">1</span>;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
                                   </td>
                                   <td>&nbsp;&nbsp;<br><br></td>
                                   <td valign="top">
                                     <p>
                                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                                     </p>
-                                    <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (isSenior) {<br></span><span>        subsidy = REJECT_SENIOR;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {<br></span><span>        subsidy = SUBSIDISED_SUBSIDY;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {<br></span><span>        subsidy = FULLTIME_SUBSIDY * RATIO;<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = FULLTIME_SUBSIDY;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (isSenior) {<br></span><span>        subsidy = REJECT_SENIOR;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {<br></span><span>        subsidy = SUBSIDISED_SUBSIDY;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {<br></span><span>        subsidy = FULLTIME_SUBSIDY * RATIO;<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = FULLTIME_SUBSIDY;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
                                   </td>
                                 </tr>
                               </table>
@@ -104,14 +104,14 @@
                                     <p>
                                       <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                                     </p>
-                                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:<br></span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:<br></span><span>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:<br></span><span>                subsidy = <span class="hljs-number">500</span><br></span><span>            <span class="hljs-keyword">else</span>:<br></span><span>                subsidy = <span class="hljs-number">250</span><br></span><span>        <span class="hljs-keyword">else</span>:<br></span><span>            subsidy = <span class="hljs-number">250</span><br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        subsidy = <span class="hljs-number">-1</span><br></span><span>    <span class="hljs-keyword">return</span> subsidy<br></span></code></pre>
+                                    <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:<br></span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:<br></span><span>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:<br></span><span>                subsidy = <span class="hljs-number">500</span><br></span><span>            <span class="hljs-keyword">else</span>:<br></span><span>                subsidy = <span class="hljs-number">250</span><br></span><span>        <span class="hljs-keyword">else</span>:<br></span><span>            subsidy = <span class="hljs-number">250</span><br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        subsidy = <span class="hljs-number">-1</span><br></span><span>    <span class="hljs-keyword">return</span> subsidy<br></span></code></pre>
                                   </td>
                                   <td>&nbsp;&nbsp;<br><br></td>
                                   <td valign="top">
                                     <p>
                                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                                     </p>
-                                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> is_senior:<br></span><span>        <span class="hljs-keyword">return</span> REJECT_SENIOR<br></span><span>    <span class="hljs-keyword">elif</span> is_already_subsidised:<br></span><span>        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY<br></span><span>    <span class="hljs-keyword">elif</span> is_parttime:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY<br></span></code></pre>
+                                    <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> is_senior:<br></span><span>        <span class="hljs-keyword">return</span> REJECT_SENIOR<br></span><span>    <span class="hljs-keyword">elif</span> is_already_subsidised:<br></span><span>        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY<br></span><span>    <span class="hljs-keyword">elif</span> is_parttime:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY<br></span></code></pre>
                                   </td>
                                 </tr>
                               </table>
@@ -124,10 +124,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="avoid-complicated-expressions">
+                  <panel type="seamless" expanded="" id="avoid-complicated-expressions">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="avoid-complicated-expressions"><span>Avoid Complicated Expressions</span><a class="fa fa-anchor" href="#avoid-complicated-expressions" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="avoid-complicated-expressions"><span>Avoid complicated expressions</span><a class="fa fa-anchor" href="#avoid-complicated-expressions" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -144,11 +144,11 @@
                               <p>
                                 <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                               </p>
-                              <pre><code class="hljs java"><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);<br></span></code></pre>
                               <p>
                                 <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                               </p>
-                              <pre><code class="hljs java"><span><br></span><span><span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;<br></span><span><span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;<br></span><span><span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;<br></span><span><br></span><span><span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;<br></span><span><br></span><span><span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><br></span><span><span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;<br></span><span><span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;<br></span><span><span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;<br></span><span><br></span><span><span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;<br></span><span><br></span><span><span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;<br></span></code></pre>
                             </box>
                           </div>
                         </div>
@@ -159,11 +159,11 @@
                               <p>
                                 <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                               </p>
-                              <pre><code class="hljs python"><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)<br></span></code></pre>
+                              <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)<br></span></code></pre>
                               <p>
                                 <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                               </p>
-                              <pre><code class="hljs python"><span>is_within_size_limit = length &lt; MAX_LENGTH<br></span><span>is_same_size = previous_size != length<br></span><span>is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size<br></span><span><br></span><span>is_urgent = type_code == URGENT<br></span><span><br></span><span><span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent<br></span></code></pre>
+                              <pre><code class="hljs python" v-pre=""><span>is_within_size_limit = length &lt; MAX_LENGTH<br></span><span>is_same_size = previous_size != length<br></span><span>is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size<br></span><span><br></span><span>is_urgent = type_code == URGENT<br></span><span><br></span><span><span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent<br></span></code></pre>
                             </box>
                           </div>
                         </div>
@@ -176,10 +176,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="avoid-magic-numbers">
+                  <panel type="seamless" expanded="" id="avoid-magic-numbers">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="avoid-magic-numbers"><span>Avoid Magic Numbers</span><a class="fa fa-anchor" href="#avoid-magic-numbers" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="avoid-magic-numbers"><span>Avoid magic numbers</span><a class="fa fa-anchor" href="#avoid-magic-numbers" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -188,7 +188,7 @@
                       <p></p>
                       <p></p>
                       <div>
-                        <p>When the code has a number that does not explain the meaning of the number, we call that a &quot;magic number&quot; (as in &quot;the number appears as if by magic&quot;). Using a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., <code>PI</code></span><em>named constant</em></span> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
+                        <p>When the code has a number that does not explain the meaning of the number, it is called a &quot;magic number&quot; (as in &quot;the number appears as if by magic&quot;). Using a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., <code v-pre="">PI</code></span><em>named constant</em></span> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
                           <div class="alt-java">
@@ -199,14 +199,14 @@
                                     <p>
                                       <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                                     </p>
-                                    <pre><code class="hljs java"><span><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;<br></span></code></pre>
                                   </td>
                                   <td>&nbsp;&nbsp;<br><br></td>
                                   <td valign="top">
                                     <p>
                                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                                     </p>
-                                    <pre><code class="hljs java"><span><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;<br></span><span><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> PI;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;<br></span><span><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> PI;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;<br></span></code></pre>
                                   </td>
                                 </tr>
                               </table>
@@ -214,37 +214,37 @@
                           </div>
                           <div class="alt-python">
                             <div>
-                              <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
+                              <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code v-pre="">ALL_CAPS</code> name to simulate a constant.</p>
                               <table>
                                 <tr>
                                   <td valign="top">
                                     <p>
                                       <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                                     </p>
-                                    <pre><code class="hljs python"><span><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span><br></span><span>...<br></span><span><span class="hljs-keyword">return</span> <span class="hljs-number">9</span><br></span></code></pre>
+                                    <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span><br></span><span>...<br></span><span><span class="hljs-keyword">return</span> <span class="hljs-number">9</span><br></span></code></pre>
                                   </td>
                                   <td>&nbsp;&nbsp;<br><br></td>
                                   <td valign="top">
                                     <p>
                                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                                     </p>
-                                    <pre><code class="hljs python"><span>PI = <span class="hljs-number">3.14236</span><br></span><span>MAX_SIZE = <span class="hljs-number">10</span><br></span><span>...<br></span><span><span class="hljs-keyword">return</span> PI<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span><br></span></code></pre>
+                                    <pre><code class="hljs python" v-pre=""><span>PI = <span class="hljs-number">3.14236</span><br></span><span>MAX_SIZE = <span class="hljs-number">10</span><br></span><span>...<br></span><span><span class="hljs-keyword">return</span> PI<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span><br></span></code></pre>
                                   </td>
                                 </tr>
                               </table>
                             </div>
                           </div>
                         </box>
-                        <p>Similarly, we can have ‘magic’ values of other data types.</p>
+                        <p>Similarly, you can have ‘magic’ values of other data types.</p>
                         <box>
                           <p>
                             <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                           </p>
                           <div class="alt-java">
-                            <pre><code class="hljs java"><span><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span><br></span></code></pre>
+                            <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span><br></span></code></pre>
                           </div>
                           <div class="alt-python">
-                            <pre><code class="hljs python"><span><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment"># A magic string!</span><br></span></code></pre>
+                            <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment"># A magic string!</span><br></span></code></pre>
                           </div>
                         </box>
                         <p>In general, try to avoid any magic literals.</p>
@@ -254,10 +254,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="make-the-code-obvious">
+                  <panel type="seamless" expanded="" id="make-the-code-obvious">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="make-the-code-obvious"><span>Make the Code Obvious</span><a class="fa fa-anchor" href="#make-the-code-obvious" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="make-the-code-obvious"><span>Make the code obvious</span><a class="fa fa-anchor" href="#make-the-code-obvious" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -268,11 +268,11 @@
                       <div>
                         <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
                         <ul>
-                          <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
-                          <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
-                          <li>[<code>Java</code>, <code>Python</code>] Use <span trigger="click" for="modal:obviousCode-enums" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:obviousCode-enums'].show()" class="trigger-click">enumerations</span> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
+                          <li>[<code v-pre="">Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
+                          <li>[<code v-pre="">Java</code>, <code v-pre="">Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
+                          <li>[<code v-pre="">Java</code>, <code v-pre="">Python</code>] Use <span trigger="click" for="modal:obviousCode-enums" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:obviousCode-enums'].show()" class="trigger-click">enumerations</span> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled' respectively, declare 'state' as type <code v-pre="">SystemState</code> and define an enumeration <code v-pre="">SystemState</code> that has values <code v-pre="">'STARTING'</code>, <code v-pre="">'ENABLED'</code>, and <code v-pre="">'DISABLED'</code>.</li>
                         </ul>
-                        <b-modal id="modal:obviousCode-enums" hide-footer size modal-class="mb-zoom" ref="modal:obviousCode-enums"><template slot="modal-title">More about enumerations</template>
+                        <b-modal id="modal:obviousCode-enums" hide-footer="" size="" modal-class="mb-zoom" ref="modal:obviousCode-enums" class="algolia-no-index"><template slot="modal-title">More about enumerations</template>
                           <ul>
                             <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
                             <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>

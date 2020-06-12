@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -83,120 +84,178 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/website/se-book-adapted/index.html" class="site-nav__a">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
-                </ul>
-              </div>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/index.html">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Software Engineering</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Programming Paradigms</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open"><strong>Design</strong>
-                <i class="dropdown-btn-icon rotate-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/architecture.html" class="site-nav__a current">Software Architecture</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designPatterns.html" class="site-nav__a">Software Design Patterns</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designApproaches.html" class="site-nav__a">Design Approaches</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Requirements</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/requirements.html">Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Implementation</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Design</strong>
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/design.html">Software Design</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/modeling.html">Modeling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/architecture.html" class="current">Software Architecture</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Implementation</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/ides.html">IDEs</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/codeQuality.html">Code Quality</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/refactoring.html">Refactoring</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/documentation.html">Documentation</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/errorHandling.html">Error Handling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/integration.html">Integration</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/reuse.html">Reuse</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Quality Assurance</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/testing.html">Testing</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Principles</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/principles.html" class="site-nav__a">Principles</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Project Management</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/revisionControl.html">Revision Control</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/teamwork.html">Teamwork</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/intellij.html" class="site-nav__a">Intellij IDEA</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/gitAndGithub.html" class="site-nav__a">Git and Github</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Principles</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/principles.html">Principles</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn">Supplementary
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/cppToJava.html" class="site-nav__a">C++ to Java</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/projectDuke/index.html" class="site-nav__a">Project Duke</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Tools</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/uml.html">UML</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">Supplementary
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/cppToJava.html">C++ to Java</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/projectDuke/index.html">Project Duke</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/common/exercises.html">Combined Exercises</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/common/definitions.html">List of Definitions</a></div>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -208,16 +267,16 @@
           <p><span class="dimmed"><strong><span></span></strong></span></p>
           <div id="title">
             <div>
-              <h1 id="software-architecture"><span>Software Architecture</span><a class="fa fa-anchor" href="#software-architecture" onclick="event.stopPropagation()"></a></h1>
+              <h1 id="software-architecture"><span>Software architecture</span><a class="fa fa-anchor" href="#software-architecture" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded id="introduction">
+          <panel type="seamless" expanded="" id="introduction">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what"><template slot="_header">
+            <panel type="seamless" expanded="" id="what"><template slot="_header">
                 <h4 id="what">What<a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -245,18 +304,18 @@
                     <p></p>
                     <p>Main components:</p>
                     <ul>
-                      <li><code>GUI</code>: Graphical user interface</li>
-                      <li><code>TextUi</code>: Textual user interface</li>
-                      <li><code>ATD</code>: An automated test driver used for testing the game logic</li>
-                      <li><code>Logic</code>: computation and logic of the game</li>
-                      <li><code>Store</code>: storage and retrieval of game data (high scores etc.)</li>
+                      <li><code v-pre="">GUI</code>: Graphical user interface</li>
+                      <li><code v-pre="">TextUi</code>: Textual user interface</li>
+                      <li><code v-pre="">ATD</code>: An automated test driver used for testing the game logic</li>
+                      <li><code v-pre="">Logic</code>: computation and logic of the game</li>
+                      <li><code v-pre="">Store</code>: storage and retrieval of game data (high scores etc.)</li>
                     </ul>
                   </box>
                   <p><strong>The architecture is typically designed by the <em>software architect</em></strong>, who provides the technical vision of the system and makes high-level (i.e. architecture-level) technical decisions about the project.</p>
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -288,13 +347,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="architecture-diagrams">
+          <panel type="seamless" expanded="" id="architecture-diagrams">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="architecture-diagrams"><span>Architecture Diagrams</span><a class="fa fa-anchor" href="#architecture-diagrams" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="architecture-diagrams"><span>Architecture diagrams</span><a class="fa fa-anchor" href="#architecture-diagrams" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="reading"><template slot="_header">
+            <panel type="seamless" expanded="" id="reading"><template slot="_header">
                 <h4 id="reading">Reading<a class="fa fa-anchor" href="#reading" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -306,7 +365,7 @@
                 <p></p>
                 <div>
                   <p><strong>Architecture diagrams are free-form diagrams.</strong> There is no universally adopted standard notation for architecture diagrams. Any symbol that reasonably describes the architecture may be used.</p>
-                  <div v-closeable alt="architecture diagram examples" id="architecture-diagram-examples">
+                  <div v-closeable="" alt="architecture diagram examples" id="architecture-diagram-examples">
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some example architecture diagrams:</p>
                       <tabs>
@@ -335,7 +394,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="drawing"><template slot="_header">
+            <panel type="seamless" expanded="" id="drawing"><template slot="_header">
                 <h4 id="drawing">Drawing<a class="fa fa-anchor" href="#drawing" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -356,7 +415,7 @@
                     </li>
                   </ul>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the two architecture diagrams of the same software given below. Because <code>Diagram 2</code> uses double headed arrows, the important fact that GUI has a bi-directional dependency with the Logic component is no longer captured.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the two architecture diagrams of the same software given below. Because <code v-pre="">Diagram 2</code> uses double headed arrows, the important fact that GUI has a bi-directional dependency with the Logic component is no longer captured.</p>
                     <img src="/website/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190">
                     <p></p>
                   </box>
@@ -365,19 +424,19 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="architectural-styles">
+          <panel type="seamless" expanded="" id="architectural-styles">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="architectural-styles"><span>Architectural Styles</span><a class="fa fa-anchor" href="#architectural-styles" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="architectural-styles"><span>Architectural styles</span><a class="fa fa-anchor" href="#architectural-styles" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="introduction-2">
+            <panel type="seamless" expanded="" id="introduction-2">
               <span slot="header" class="card-title">
                 <div>
                   <h3 id="introduction-2"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-2" onclick="event.stopPropagation()"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" expanded id="what-2"><template slot="_header">
+              <panel type="seamless" expanded="" id="what-2"><template slot="_header">
                   <h4 id="what-2">What<a class="fa fa-anchor" href="#what-2" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -392,7 +451,7 @@
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style, ...</p>
                     </box>
-                    <b-modal id="modal:archiStyles-buildingArchitectures" hide-footer size="lg" modal-class="mb-zoom" ref="modal:archiStyles-buildingArchitectures"><template slot="modal-title">Building Architecture Styles</template>
+                    <b-modal id="modal:archiStyles-buildingArchitectures" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:archiStyles-buildingArchitectures" class="algolia-no-index"><template slot="modal-title">Building Architecture Styles</template>
                       <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg" width="600"><br>
                         <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
                     </b-modal>
@@ -401,13 +460,13 @@
                 </div>
               </panel>
             </panel>
-            <panel type="seamless" expanded id="n-tier-architectural-style">
+            <panel type="seamless" expanded="" id="n-tier-architectural-style">
               <span slot="header" class="card-title">
                 <div>
-                  <h3 id="n-tier-architectural-style"><span>N-tier Architectural Style</span><a class="fa fa-anchor" href="#n-tier-architectural-style" onclick="event.stopPropagation()"></a></h3>
+                  <h3 id="n-tier-architectural-style"><span>N-tier architectural style</span><a class="fa fa-anchor" href="#n-tier-architectural-style" onclick="event.stopPropagation()"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" expanded id="what-3"><template slot="_header">
+              <panel type="seamless" expanded="" id="what-3"><template slot="_header">
                   <h4 id="what-3">What<a class="fa fa-anchor" href="#what-3" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -430,13 +489,13 @@
                 </div>
               </panel>
             </panel>
-            <panel type="seamless" expanded id="client-server-architectural-style">
+            <panel type="seamless" expanded="" id="client-server-architectural-style">
               <span slot="header" class="card-title">
                 <div>
-                  <h3 id="client-server-architectural-style"><span>Client-server Architectural Style</span><a class="fa fa-anchor" href="#client-server-architectural-style" onclick="event.stopPropagation()"></a></h3>
+                  <h3 id="client-server-architectural-style"><span>Client-server architectural style</span><a class="fa fa-anchor" href="#client-server-architectural-style" onclick="event.stopPropagation()"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" expanded id="what-4"><template slot="_header">
+              <panel type="seamless" expanded="" id="what-4"><template slot="_header">
                   <h4 id="what-4">What<a class="fa fa-anchor" href="#what-4" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -459,13 +518,13 @@
                 </div>
               </panel>
             </panel>
-            <panel type="seamless" expanded id="transaction-processing-architectural-style">
+            <panel type="seamless" expanded="" id="transaction-processing-architectural-style">
               <span slot="header" class="card-title">
                 <div>
-                  <h3 id="transaction-processing-architectural-style"><span>Transaction Processing Architectural Style</span><a class="fa fa-anchor" href="#transaction-processing-architectural-style" onclick="event.stopPropagation()"></a></h3>
+                  <h3 id="transaction-processing-architectural-style"><span>Transaction processing architectural style</span><a class="fa fa-anchor" href="#transaction-processing-architectural-style" onclick="event.stopPropagation()"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" expanded id="what-5"><template slot="_header">
+              <panel type="seamless" expanded="" id="what-5"><template slot="_header">
                   <h4 id="what-5">What<a class="fa fa-anchor" href="#what-5" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -487,13 +546,13 @@
                 </div>
               </panel>
             </panel>
-            <panel type="seamless" expanded id="service-oriented-architectural-style">
+            <panel type="seamless" expanded="" id="service-oriented-architectural-style">
               <span slot="header" class="card-title">
                 <div>
-                  <h3 id="service-oriented-architectural-style"><span>Service-oriented Architectural Style</span><a class="fa fa-anchor" href="#service-oriented-architectural-style" onclick="event.stopPropagation()"></a></h3>
+                  <h3 id="service-oriented-architectural-style"><span>Service-oriented architectural style</span><a class="fa fa-anchor" href="#service-oriented-architectural-style" onclick="event.stopPropagation()"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" expanded id="what-6"><template slot="_header">
+              <panel type="seamless" expanded="" id="what-6"><template slot="_header">
                   <h4 id="what-6">What<a class="fa fa-anchor" href="#what-6" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -515,13 +574,13 @@
                 </div>
               </panel>
             </panel>
-            <panel type="seamless" expanded id="event-driven-architectural-style">
+            <panel type="seamless" expanded="" id="event-driven-architectural-style">
               <span slot="header" class="card-title">
                 <div>
-                  <h3 id="event-driven-architectural-style"><span>Event-driven Architectural Style</span><a class="fa fa-anchor" href="#event-driven-architectural-style" onclick="event.stopPropagation()"></a></h3>
+                  <h3 id="event-driven-architectural-style"><span>Event-driven architectural style</span><a class="fa fa-anchor" href="#event-driven-architectural-style" onclick="event.stopPropagation()"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" expanded id="what-7"><template slot="_header">
+              <panel type="seamless" expanded="" id="what-7"><template slot="_header">
                   <h4 id="what-7">What<a class="fa fa-anchor" href="#what-7" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -543,13 +602,13 @@
                 </div>
               </panel>
             </panel>
-            <panel type="seamless" expanded id="more">
+            <panel type="seamless" expanded="" id="more">
               <span slot="header" class="card-title">
                 <div>
                   <h3 id="more"><span>More</span><a class="fa fa-anchor" href="#more" onclick="event.stopPropagation()"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" expanded id="more-styles"><template slot="_header">
+              <panel type="seamless" expanded="" id="more-styles"><template slot="_header">
                   <h4 id="more-styles">More Styles<a class="fa fa-anchor" href="#more-styles" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -564,7 +623,7 @@
                   </div>
                   <div>
                     <div>
-                      <panel expanded><template slot="_header">
+                      <panel expanded=""><template slot="_header">
                           <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                         </template>
                         <ul>
@@ -586,7 +645,7 @@
                   </div>
                 </div>
               </panel>
-              <panel type="seamless" expanded id="using-styles"><template slot="_header">
+              <panel type="seamless" expanded="" id="using-styles"><template slot="_header">
                   <h4 id="using-styles">Using Styles<a class="fa fa-anchor" href="#using-styles" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -604,7 +663,7 @@
                   </div>
                   <div>
                     <div>
-                      <panel expandable class="algolia-no-index"><template slot="_header">
+                      <panel expandable="" class="algolia-no-index"><template slot="_header">
                           <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                         </template>
                         <div>
@@ -647,40 +706,40 @@
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#software-architecture">Software Architecture&#x200E;</a>
+            <a class="nav-link py-1" href="#software-architecture">Software architecture&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#what">What&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#architecture-diagrams">Architecture Diagrams&#x200E;</a>
+              <a class="nav-link py-1" href="#architecture-diagrams">Architecture diagrams&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#reading">Reading&#x200E;</a>
                 <a class="nav-link py-1" href="#drawing">Drawing&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#architectural-styles">Architectural Styles&#x200E;</a>
+              <a class="nav-link py-1" href="#architectural-styles">Architectural styles&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#introduction-2">Introduction&#x200E;</a>
                 <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                   <a class="nav-link py-1" href="#what-2">What&#x200E;</a>
                 </nav>
-                <a class="nav-link py-1" href="#n-tier-architectural-style">N-tier Architectural Style&#x200E;</a>
+                <a class="nav-link py-1" href="#n-tier-architectural-style">N-tier architectural style&#x200E;</a>
                 <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                   <a class="nav-link py-1" href="#what-3">What&#x200E;</a>
                 </nav>
-                <a class="nav-link py-1" href="#client-server-architectural-style">Client-server Architectural Style&#x200E;</a>
+                <a class="nav-link py-1" href="#client-server-architectural-style">Client-server architectural style&#x200E;</a>
                 <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                   <a class="nav-link py-1" href="#what-4">What&#x200E;</a>
                 </nav>
-                <a class="nav-link py-1" href="#transaction-processing-architectural-style">Transaction Processing Architectural Style&#x200E;</a>
+                <a class="nav-link py-1" href="#transaction-processing-architectural-style">Transaction processing architectural style&#x200E;</a>
                 <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                   <a class="nav-link py-1" href="#what-5">What&#x200E;</a>
                 </nav>
-                <a class="nav-link py-1" href="#service-oriented-architectural-style">Service-oriented Architectural Style&#x200E;</a>
+                <a class="nav-link py-1" href="#service-oriented-architectural-style">Service-oriented architectural style&#x200E;</a>
                 <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                   <a class="nav-link py-1" href="#what-6">What&#x200E;</a>
                 </nav>
-                <a class="nav-link py-1" href="#event-driven-architectural-style">Event-driven Architectural Style&#x200E;</a>
+                <a class="nav-link py-1" href="#event-driven-architectural-style">Event-driven architectural style&#x200E;</a>
                 <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                   <a class="nav-link py-1" href="#what-7">What&#x200E;</a>
                 </nav>
@@ -698,7 +757,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

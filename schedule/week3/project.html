@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -105,7 +106,7 @@
               <div>
                 <ol>
                   <li><span>Do any leftover iP tasks from the previous week</span></li>
-                  <li>Add Increments (+ commit, tag, push): <code>Level-1</code>, <code>Level-2</code>, <code>Level-3</code>, <code>A-CodingStandard</code></li>
+                  <li>Add Increments (+ commit, tag, push): <code v-pre="">Level-1</code>, <code v-pre="">Level-2</code>, <code v-pre="">Level-3</code>, <code v-pre="">A-CodingStandard</code></li>
                 </ol>
               </div>
               <p><strong>tP:</strong></p>
@@ -125,7 +126,7 @@
                 </ul>
               </div>
               <p></p>
-              <h4 id="2-add-increments-commit-tag-push-level-1-level-2-level-3-a-codingstandard"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Add Increments (+ commit, tag, push): <code>Level-1</code>, <code>Level-2</code>, <code>Level-3</code>, <code>A-CodingStandard</code><a class="fa fa-anchor" href="#2-add-increments-commit-tag-push-level-1-level-2-level-3-a-codingstandard" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="2-add-increments-commit-tag-push-level-1-level-2-level-3-a-codingstandard"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Add Increments (+ commit, tag, push): <code v-pre="">Level-1</code>, <code v-pre="">Level-2</code>, <code v-pre="">Level-3</code>, <code v-pre="">A-CodingStandard</code><a class="fa fa-anchor" href="#2-add-increments-commit-tag-push-level-1-level-2-level-3-a-codingstandard" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <div>
                   <ul>
@@ -136,8 +137,8 @@
                   <ul>
                     <li>From this point onward, after completing each increment,
                       <ul>
-                        <li><strong><code>git tag</code></strong> the commit with the exact increment ID e.g., <code>Level-2</code>, <code>A-TextUiTesting</code></li>
-                        <li><strong><code>git push</code></strong> the code to your fork (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> git doesn't push tags unless you specifically ask it to)</li>
+                        <li><strong><code v-pre="">git tag</code></strong> the commit with the exact increment ID e.g., <code v-pre="">Level-2</code>, <code v-pre="">A-TextUiTesting</code></li>
+                        <li><strong><code v-pre="">git push</code></strong> the code to your fork (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> git doesn't push tags unless you specifically ask it to)</li>
                       </ul>
                     </li>
                   </ul>
@@ -148,17 +149,17 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-1</code>: Greet, Echo, Exit</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre="">Level-1</code>: Greet, Echo, Exit</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <p><span>
                             <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-comments"></span></thumbnail>
                           </span></p>
                         <h3 id="level-1-greet-echo-exit">Level 1. Greet, Echo, Exit<a class="fa fa-anchor" href="#level-1-greet-echo-exit" onclick="event.stopPropagation()"></a></h3>
-                        <p>Implement a <em>skeletal</em> version of Duke that starts by greeting the user, simply echos commands entered by the user, and exits when the user types <code>bye</code>.
+                        <p>Implement a <em>skeletal</em> version of Duke that starts by greeting the user, simply echos commands entered by the user, and exits when the user types <code v-pre="">bye</code>.
                           <br>
                           Example:</p>
-                        <pre><code class="hljs"><span>    ____________________________________________________________<br></span><span>     Hello! I'm Duke<br></span><span>     What can I do for you?<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>list<br></span><span>    ____________________________________________________________<br></span><span>     list<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>blah<br></span><span>    ____________________________________________________________<br></span><span>     blah<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>bye<br></span><span>    ____________________________________________________________<br></span><span>     Bye. Hope to see you again soon!<br></span><span>    ____________________________________________________________<br></span><span><br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>    ____________________________________________________________<br></span><span>     Hello! I'm Duke<br></span><span>     What can I do for you?<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>list<br></span><span>    ____________________________________________________________<br></span><span>     list<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>blah<br></span><span>    ____________________________________________________________<br></span><span>     blah<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>bye<br></span><span>    ____________________________________________________________<br></span><span>     Bye. Hope to see you again soon!<br></span><span>    ____________________________________________________________<br></span><span><br></span></code></pre>
                         <ul>
                           <li>The indentation and horizontal lines are optional.</li>
                         </ul>
@@ -176,7 +177,7 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-2</code>: Add, List</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre="">Level-2</code>: Add, List</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <p><span>
@@ -185,10 +186,10 @@
                         <h3 id="level-2-add-list">Level 2. Add, List<a class="fa fa-anchor" href="#level-2-add-list" onclick="event.stopPropagation()"></a></h3>
                         <p>Add the ability to store whatever text entered by the user and display them back to the user when requested.</p>
                         <p>Example:</p>
-                        <pre><code class="hljs"><span>    ____________________________________________________________<br></span><span>     Hello! I'm Duke<br></span><span>     What can I do for you?<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>read book<br></span><span>    ____________________________________________________________<br></span><span>     added: read book<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>return book<br></span><span>    ____________________________________________________________<br></span><span>     added: return book<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>list<br></span><span>    ____________________________________________________________<br></span><span>     1. read book<br></span><span>     2. return book<br></span><span>    ____________________________________________________________<br></span><span>bye<br></span><span>    ____________________________________________________________<br></span><span>     Bye. Hope to see you again soon!<br></span><span>    ____________________________________________________________<br></span><span><br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>    ____________________________________________________________<br></span><span>     Hello! I'm Duke<br></span><span>     What can I do for you?<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>read book<br></span><span>    ____________________________________________________________<br></span><span>     added: read book<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>return book<br></span><span>    ____________________________________________________________<br></span><span>     added: return book<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>list<br></span><span>    ____________________________________________________________<br></span><span>     1. read book<br></span><span>     2. return book<br></span><span>    ____________________________________________________________<br></span><span>bye<br></span><span>    ____________________________________________________________<br></span><span>     Bye. Hope to see you again soon!<br></span><span>    ____________________________________________________________<br></span><span><br></span></code></pre>
                         <ul>
                           <li>There is no need to save the data to the hard disk.</li>
-                          <li>Assume there will be no more than 100 tasks. If you wish, you may use a fixed size array (e.g., <code>String[100]</code>) to store the items.</li>
+                          <li>Assume there will be no more than 100 tasks. If you wish, you may use a fixed size array (e.g., <code v-pre="">String[100]</code>) to store the items.</li>
                         </ul>
                       </div>
                     </panel>
@@ -200,7 +201,7 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-3</code>: Mark as Done</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre="">Level-3</code>: Mark as Done</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <p><span>
@@ -208,12 +209,12 @@
                           </span></p>
                         <h3 id="level-3-mark-as-done">Level 3. Mark as Done<a class="fa fa-anchor" href="#level-3-mark-as-done" onclick="event.stopPropagation()"></a></h3>
                         <p>Add the ability to mark tasks as <em>done</em>.<br><br></p>
-                        <pre><code class="hljs"><span>list<br></span><span>    ____________________________________________________________<br></span><span>     Here are the tasks in your list:<br></span><span>     1.[✓] read book<br></span><span>     2.[✗] return book<br></span><span>     3.[✗] buy bread<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>done 2<br></span><span>    ____________________________________________________________<br></span><span>     Nice! I've marked this task as done: <br></span><span>       [✓] return book<br></span><span>    ____________________________________________________________<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>list<br></span><span>    ____________________________________________________________<br></span><span>     Here are the tasks in your list:<br></span><span>     1.[✓] read book<br></span><span>     2.[✗] return book<br></span><span>     3.[✗] buy bread<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>done 2<br></span><span>    ____________________________________________________________<br></span><span>     Nice! I've marked this task as done: <br></span><span>       [✓] return book<br></span><span>    ____________________________________________________________<br></span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
                             <panel class="algolia-no-index"><template slot="_header">
-                                <p><strong>Extension: <code>A-Classes</code></strong></p>
+                                <p><strong>Extension: <code v-pre="">A-Classes</code></strong></p>
                               </template>
                               <div>
                                 <div>
@@ -221,12 +222,12 @@
                                   <h3 id="a-classes"><span class="badge badge-pill badge-primary">A-Classes</span><a class="fa fa-anchor" href="#a-classes" onclick="event.stopPropagation()"></a></h3>
                                   <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
                                 </div>
-                                <p>While it is possible to represent a task list as a multi-dimensional array containing <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code>String</code>, <code>int</code>, <code>boolean</code> etc.</span>primitive values</span>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
-                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header">
+                                <p>While it is possible to represent a task list as a multi-dimensional array containing <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code v-pre="">String</code>, <code v-pre="">int</code>, <code v-pre="">boolean</code> etc.</span>primitive values</span>, the more natural approach is to use a <code v-pre="">Task</code> class to represent tasks.</p>
+                                <panel type="seamless" minimized="" class="algolia-no-index"><template slot="_header">
                                     <p>Partial solution</p>
                                   </template>
-                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{<br></span><span>    <span class="hljs-keyword">protected</span> String description;<br></span><span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String description)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.description = description;<br></span><span>        <span class="hljs-keyword">this</span>.isDone = <span class="hljs-keyword">false</span>;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getStatusIcon</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> (isDone ? <span class="hljs-string">"\u2713"</span> : <span class="hljs-string">"\u2718"</span>); <span class="hljs-comment">//return tick or X symbols</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-comment">//...</span><br></span><span>}<br></span></code></pre>
-                                  <pre><code class="hljs java"><span>Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);<br></span><span>t.markAsDone()<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{<br></span><span>    <span class="hljs-keyword">protected</span> String description;<br></span><span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String description)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.description = description;<br></span><span>        <span class="hljs-keyword">this</span>.isDone = <span class="hljs-keyword">false</span>;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getStatusIcon</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> (isDone ? <span class="hljs-string">"\u2713"</span> : <span class="hljs-string">"\u2718"</span>); <span class="hljs-comment">//return tick or X symbols</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-comment">//...</span><br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span>Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);<br></span><span>t.markAsDone()<br></span></code></pre>
                                 </panel>
                               </div>
                             </panel>
@@ -242,7 +243,7 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-CodingStandard</code>: Follow the Coding Standard</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre="">A-CodingStandard</code>: Follow the Coding Standard</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <div>
@@ -267,7 +268,7 @@
                   <li>After forming teams, <strong>set up a weekly project meeting time/venue (and communication channels) with your team members</strong>:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Teams → Communication</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -312,7 +313,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

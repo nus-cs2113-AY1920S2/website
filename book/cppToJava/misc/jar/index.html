@@ -27,9 +27,9 @@
       <div id="content-wrapper">
         <div>
           <navbar placement="top" type="inverse" class="temp-navbar">
-            <a slot="brand" href="/" title="Home" class="navbar-brand">Software Engineering for Self-Directed Learners</a>
+            <a slot="brand" href="/" header="Home" class="navbar-brand">Software Engineering for Self-Directed Learners</a>
             <li slot="right">
-              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
             </li>
           </navbar>
         </div>
@@ -46,21 +46,21 @@
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="using-jar-files"><span>Using JAR Files</span><a class="fa fa-anchor" href="#using-jar-files" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="using-jar-files"><span>Using JAR files</span><a class="fa fa-anchor" href="#using-jar-files" onclick="event.stopPropagation()"></a></h4>
                 </div>
                 <div id="main">
                   <div>
                     <p><strong>Java applications are typically delivered as JAR (short for <em>Java Archive</em>) files.</strong> A JAR contains Java classes and other resources (icons, media files, etc.).</p>
-                    <p>An executable JAR file can be launched using the <code>java -jar</code> command.</p>
+                    <p>An executable JAR file can be launched using the <code v-pre="">java -jar</code> command.</p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>java -jar foo.jar</code> launches the <code>foo.jar</code> file.</p>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can download the Collate-TUI.jar from <a href="https://se-edu.github.io/collate/">https://se-edu.github.io/collate/</a> and run it using the command<code>java -jar Collate-TUI.jar</code> command. It's usage is given <a href="https://se-education.org/collate/docs/User-Guide.html#using-the-text-ui">here</a>.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre="">java -jar foo.jar</code> launches the <code v-pre="">foo.jar</code> file.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can download the Collate-TUI.jar from <a href="https://se-edu.github.io/collate/">https://se-edu.github.io/collate/</a> and run it using the command<code v-pre="">java -jar Collate-TUI.jar</code> command. It's usage is given <a href="https://se-education.org/collate/docs/User-Guide.html#using-the-text-ui">here</a>.</p>
                     </box>
                     <p>The IDE can help you to package your application as a JAR file.</p>
                   </div>
                   <div>
                     <div>
-                      <panel expanded><template slot="_header">
+                      <panel expanded=""><template slot="_header">
                           <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                         </template>
                         <div>
@@ -68,7 +68,7 @@
                             <li><a href="https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html">Oracle's tutorial on JAR files</a></li>
                           </ul>
                           <p><strong><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Creating a JAR file in Intellij</strong> - A video by Artur Spirin:</p>
-                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3Xo6zSBgdgk" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3Xo6zSBgdgk" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                         </div>
                       </panel>
                     </div>
@@ -83,7 +83,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

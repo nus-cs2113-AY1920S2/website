@@ -36,7 +36,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="introduction">
+                  <panel type="seamless" expanded="" id="introduction">
                     <span slot="header" class="card-title">
                       <div>
                         <h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h4>
@@ -68,10 +68,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="non-functional-requirements">
+                  <panel type="seamless" expanded="" id="non-functional-requirements">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="non-functional-requirements"><span>Non-Functional Requirements</span><a class="fa fa-anchor" href="#non-functional-requirements" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="non-functional-requirements"><span>Non-functional requirements</span><a class="fa fa-anchor" href="#non-functional-requirements" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -92,7 +92,7 @@
                             <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                             <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                           </ul>
-                          <panel type="seamless" expanded><template slot="_header">
+                          <panel type="seamless" expanded=""><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p>
                             </template>
                             <ul>
@@ -108,7 +108,7 @@
                             </ul>
                           </panel>
                         </box>
-                        <p>We may have to spend an extra effort in digging NFRs out as early as possible because,</p>
+                        <p>You may have to spend an extra effort in digging NFRs out as early as possible because,</p>
                         <ol>
                           <li><strong>NFRs are easier to miss</strong> <span class="dimmed">e.g., stakeholders tend to think of functional requirements first</span></li>
                           <li>sometimes <strong>NFRs are critical to the success of the software.</strong> <span class="dimmed">E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></li>
@@ -116,7 +116,7 @@
                       </div>
                       <div>
                         <div>
-                          <panel expandable class="algolia-no-index"><template slot="_header">
+                          <panel expandable="" class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                             </template>
                             <div>
@@ -148,10 +148,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="prioritizing-requirements">
+                  <panel type="seamless" expanded="" id="prioritizing-requirements">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="prioritizing-requirements"><span>Prioritizing Requirements</span><a class="fa fa-anchor" href="#prioritizing-requirements" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="prioritizing-requirements"><span>Prioritizing requirements</span><a class="fa fa-anchor" href="#prioritizing-requirements" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -165,15 +165,15 @@
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example scheme for categorizing requirements:</p>
                           <ul>
-                            <li><code>Essential</code>: The product must have this requirement fulfilled or else it does not get user acceptance</li>
-                            <li><code>Typical</code>: Most similar systems have this feature although the product can survive without it.</li>
-                            <li><code>Novel</code>: New features that could differentiate this product from the rest.</li>
+                            <li><code v-pre="">Essential</code>: The product must have this requirement fulfilled or else it does not get user acceptance</li>
+                            <li><code v-pre="">Typical</code>: Most similar systems have this feature although the product can survive without it.</li>
+                            <li><code v-pre="">Novel</code>: New features that could differentiate this product from the rest.</li>
                           </ul>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Other schemes:</p>
                           <ul>
-                            <li><code>High</code>, <code>Medium</code>, <code>Low</code></li>
-                            <li><code>Must-have</code>, <code>Nice-to-have</code>, <code>Unlikely-to-have</code></li>
-                            <li><code>Level 0</code>, <code>Level 1</code>, <code>Level 2</code>, ...</li>
+                            <li><code v-pre="">High</code>, <code v-pre="">Medium</code>, <code v-pre="">Low</code></li>
+                            <li><code v-pre="">Must-have</code>, <code v-pre="">Nice-to-have</code>, <code v-pre="">Unlikely-to-have</code></li>
+                            <li><code v-pre="">Level 0</code>, <code v-pre="">Level 1</code>, <code v-pre="">Level 2</code>, ...</li>
                           </ul>
                         </box>
                         <p><strong>Some requirements can be discarded if they are considered ‘out of <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the extent to which the software features should go</span>scope</span></em>’.</strong></p>
@@ -189,10 +189,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="quality-of-requirements">
+                  <panel type="seamless" expanded="" id="quality-of-requirements">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="quality-of-requirements"><span>Quality of Requirements</span><a class="fa fa-anchor" href="#quality-of-requirements" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="quality-of-requirements"><span>Quality of requirements</span><a class="fa fa-anchor" href="#quality-of-requirements" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -244,9 +244,9 @@
             <a class="nav-link py-1" href="#requirements">Requirements&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
-              <a class="nav-link py-1" href="#non-functional-requirements">Non-Functional Requirements&#x200E;</a>
-              <a class="nav-link py-1" href="#prioritizing-requirements">Prioritizing Requirements&#x200E;</a>
-              <a class="nav-link py-1" href="#quality-of-requirements">Quality of Requirements&#x200E;</a>
+              <a class="nav-link py-1" href="#non-functional-requirements">Non-functional requirements&#x200E;</a>
+              <a class="nav-link py-1" href="#prioritizing-requirements">Prioritizing requirements&#x200E;</a>
+              <a class="nav-link py-1" href="#quality-of-requirements">Quality of requirements&#x200E;</a>
             </nav>
 
           </nav>

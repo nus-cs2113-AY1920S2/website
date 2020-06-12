@@ -36,7 +36,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="what">
+                  <panel type="seamless" expanded="" id="what">
                     <span slot="header" class="card-title">
                       <div>
                         <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
@@ -55,14 +55,14 @@
                           <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li>
                         </ul>
                         <box>
-                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code>A</code> appears to have a more coupling between the components than design <code>B</code>.</p>
+                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code v-pre="">A</code> appears to have a more coupling between the components than design <code v-pre="">B</code>.</p>
                           <img src="/website/book/designFundamentals/coupling/what/images/playerPuzzleManager.png" height="220">
                           <p></p>
                         </box>
                       </div>
                       <div>
                         <div>
-                          <panel expandable class="algolia-no-index"><template slot="_header">
+                          <panel expandable="" class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                             </template>
                             <div>
@@ -76,7 +76,7 @@
                                     <p></p>
                                   </box>
                                   <div slot="answer" class="algolia-no-index">
-                                    <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code>A</code> is highly-coupled to the rest of the system while <code>B</code>, <code>C</code>, <code>D</code>, and <code>E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code>A</code> of <em>x</em>. However, only <code>D</code> and <code>E</code> are standalone.</p>
+                                    <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code v-pre="">A</code> is highly-coupled to the rest of the system while <code v-pre="">B</code>, <code v-pre="">C</code>, <code v-pre="">D</code>, and <code v-pre="">E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code v-pre="">A</code> of <em>x</em>. However, only <code v-pre="">D</code> and <code v-pre="">E</code> are standalone.</p>
                                   </div>
                                 </question>
                               </panel>
@@ -88,7 +88,7 @@
                                 <question has-input="true">
                                   <p>Explain the link (if any) between regressions and coupling.</p>
                                   <div slot="answer" class="algolia-no-index">
-                                    <p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code>A</code> is modified, all components ‘coupled’ to component <code>A</code> risk ‘unintended behavioral changes’</span>.</p>
+                                    <p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code v-pre="">A</code> is modified, all components ‘coupled’ to component <code v-pre="">A</code> risk ‘unintended behavioral changes’</span>.</p>
                                   </div>
                                 </question>
                               </panel>
@@ -132,7 +132,7 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="how">
+                  <panel type="seamless" expanded="" id="how">
                     <span slot="header" class="card-title">
                       <div>
                         <h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how" onclick="event.stopPropagation()"></a></h4>
@@ -146,28 +146,28 @@
                       <div>
                         <p><strong>X is <em>coupled</em> to Y if a change to Y can <mark>potentially</mark> require a change in X</strong>.</p>
                         <box>
-                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If <code>Foo</code> class calls the method <code>Bar#read()</code>, <code>Foo</code> is coupled to <code>Bar</code> because a change to <code>Bar</code> can potentially (but not always) require a change in the <code>Foo</code> class <span class="dimmed">e.g. if the signature of the <code>Bar#read()</code> is changed, <code>Foo</code> needs to change as well, but a change to the <code>Bar#write()</code> method may not require a change in the <code>Foo</code> class because <code>Foo</code> does not call <code>Bar#write()</code></span>.</p>
+                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If <code v-pre="">Foo</code> class calls the method <code v-pre="">Bar#read()</code>, <code v-pre="">Foo</code> is coupled to <code v-pre="">Bar</code> because a change to <code v-pre="">Bar</code> can potentially (but not always) require a change in the <code v-pre="">Foo</code> class <span class="dimmed">e.g. if the signature of the <code v-pre="">Bar#read()</code> is changed, <code v-pre="">Foo</code> needs to change as well, but a change to the <code v-pre="">Bar#write()</code> method may not require a change in the <code v-pre="">Foo</code> class because <code v-pre="">Foo</code> does not call <code v-pre="">Bar#write()</code></span>.</p>
                           <panel type="seamless" class="algolia-no-index"><template slot="_header">
                               <p><span class="dimmed">code for the above example</span></p>
                             </template>
-                            <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{<br></span><span>    ...<br></span><span>    <span class="hljs-keyword">new</span> Bar().read();<br></span><span>    ...<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{<br></span><span>        ...<br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span></span>{<br></span><span>        ...<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                            <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{<br></span><span>    ...<br></span><span>    <span class="hljs-keyword">new</span> Bar().read();<br></span><span>    ...<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{<br></span><span>        ...<br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span></span>{<br></span><span>        ...<br></span><span>    }<br></span><span>}<br></span></code></pre>
                           </panel>
                         </box>
                         <box>
-                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of coupling: <code>A</code> is coupled to <code>B</code> if,</p>
+                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of coupling: <code v-pre="">A</code> is coupled to <code v-pre="">B</code> if,</p>
                           <ul>
-                            <li><code>A</code> has access to the internal structure of <code>B</code> (this results in a very high level of coupling)</li>
-                            <li><code>A</code> and <code>B</code> depend on the same global variable</li>
-                            <li><code>A</code> calls <code>B</code></li>
-                            <li><code>A</code> receives an object of <code>B</code> as a parameter or a return value</li>
-                            <li><code>A</code> inherits from <code>B</code></li>
-                            <li><code>A</code> and <code>B</code> are required to follow the same data format or communication protocol</li>
+                            <li><code v-pre="">A</code> has access to the internal structure of <code v-pre="">B</code> (this results in a very high level of coupling)</li>
+                            <li><code v-pre="">A</code> and <code v-pre="">B</code> depend on the same global variable</li>
+                            <li><code v-pre="">A</code> calls <code v-pre="">B</code></li>
+                            <li><code v-pre="">A</code> receives an object of <code v-pre="">B</code> as a parameter or a return value</li>
+                            <li><code v-pre="">A</code> inherits from <code v-pre="">B</code></li>
+                            <li><code v-pre="">A</code> and <code v-pre="">B</code> are required to follow the same data format or communication protocol</li>
                           </ul>
                         </box>
                       </div>
                       <div>
                         <div>
-                          <panel expandable class="algolia-no-index"><template slot="_header">
+                          <panel expandable="" class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                             </template>
                             <div>
@@ -198,10 +198,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="types-of-coupling">
+                  <panel type="seamless" expanded="" id="types-of-coupling">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="types-of-coupling"><span>Types of Coupling</span><a class="fa fa-anchor" href="#types-of-coupling" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="types-of-coupling"><span>Types of coupling</span><a class="fa fa-anchor" href="#types-of-coupling" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">

@@ -48,26 +48,26 @@
                 </div>
                 <div id="main">
                   <div>
-                    <p>Add a file named <code>temp.txt</code> to the <code>things</code> repo you created. Suppose we don’t want this file to be revision controlled by Git. Let’s instruct Git to ignore <code>temp.txt</code></p>
+                    <p>Add a file named <code v-pre="">temp.txt</code> to the <code v-pre="">things</code> repo you created. Suppose you don’t want this file to be revision controlled by Git. Let’s instruct Git to ignore <code v-pre="">temp.txt</code></p>
                     <tabs>
                       <tab><template slot="_header">SourceTree</template>
                         <div>
-                          <p>The file should be currently listed under <code>Unstaged files</code>. Right-click it and choose <code>Ignore…</code>. Choose <code>Ignore exact filename(s)</code> and click <code>OK</code>.</p>
-                          <p>Observe that a file named <code>.gitignore</code> has been created in the working directory root and has the following line in it.</p>
-                          <pre><code class="hljs"><span>temp.txt<br></span></code></pre>
+                          <p>The file should be currently listed under <code v-pre="">Unstaged files</code>. Right-click it and choose <code v-pre="">Ignore…</code>. Choose <code v-pre="">Ignore exact filename(s)</code> and click <code v-pre="">OK</code>.</p>
+                          <p>Observe that a file named <code v-pre="">.gitignore</code> has been created in the working directory root and has the following line in it.</p>
+                          <pre><code class="hljs" v-pre=""><span>temp.txt<br></span></code></pre>
                         </div>
                       </tab>
                       <tab class="algolia-no-index"><template slot="_header">CLI</template>
                         <div>
-                          <p>Create a file named <code>.gitignore</code> in the working directory root and add the following line in it.</p>
-                          <pre><code class="hljs"><span>temp.txt<br></span></code></pre>
+                          <p>Create a file named <code v-pre="">.gitignore</code> in the working directory root and add the following line in it.</p>
+                          <pre><code class="hljs" v-pre=""><span>temp.txt<br></span></code></pre>
                         </div>
                       </tab>
                     </tabs>
-                    <p>The <code>.gitignore</code> file tells Git which files to ignore when tracking revision history. That file itself can be either revision controlled or ignored.</p>
+                    <p>The <code v-pre="">.gitignore</code> file tells Git which files to ignore when tracking revision history. That file itself can be either revision controlled or ignored.</p>
                     <ul>
-                      <li>To version control it (the more common choice – which allows you to track how the <code>.gitignore</code> file changed over time), simply commit it as you would commit any other file.</li>
-                      <li>To ignore it, follow the same steps we followed above when we set Git to ignore the <code>temp.txt</code> file.</li>
+                      <li>To version control it (the more common choice – which allows you to track how the <code v-pre="">.gitignore</code> file changed over time), simply commit it as you would commit any other file.</li>
+                      <li>To ignore it, follow the same steps you followed above when you set Git to ignore the <code v-pre="">temp.txt</code> file.</li>
                     </ul>
                   </div>
                   <div></div>

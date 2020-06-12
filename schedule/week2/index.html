@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -152,7 +153,7 @@
                         <small>
                           <ul>
                             <li><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-1a">W2.1a</a>] <span>Software Engineering → Introduction →
-                                </span></span> <span>Pros and Cons</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                                </span></span> <span>Pros and cons</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                           </ul>
                         </small></div>
                       <p></p>
@@ -164,7 +165,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-2a">W2.2a</a>] <span>C++ to Java →
-                                  </span></span> <span>About this Chapter</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>About this chapter</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-2b">W2.2b</a>] <span>C++ to Java → The Java World →
@@ -172,11 +173,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-2c">W2.2c</a>] <span>C++ to Java → The Java World →
-                                  </span></span> <span>How Java Works</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>How Java works</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-2d">W2.2d</a>] <span>C++ to Java → The Java World →
-                                  </span></span> <span>Java Editions</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Java editions</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -196,11 +197,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-3c">W2.3c</a>] <span>C++ to Java → Getting Started →
-                                  </span></span> <span>Compiling a Program</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Compiling a program</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-3d">W2.3d</a>] <span>C++ to Java → Getting Started →
-                                  </span></span> <span>Running a Program</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Running a program</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -212,7 +213,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-4a">W2.4a</a>] <span>C++ to Java → Data Types →
-                                  </span></span> <span>Primitive Data Types</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Primitive data types</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-4b">W2.4b</a>] <span>C++ to Java → Data Types →
@@ -269,7 +270,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-6d">W2.6d</a>] <span>Project Management → Revision Control →
-                                  </span></span> <span>Saving History</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Saving history</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-6e">W2.6e</a>] <span>Tools → Git and GitHub →
@@ -289,7 +290,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-7a">W2.7a</a>] <span>Project Management → Revision Control →
-                                  </span></span> <span>Remote Repositories</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Remote repositories</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-7b">W2.7b</a>] <span>Tools → Git and GitHub →
@@ -310,11 +311,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-8b">W2.8b</a>] <span>Tools → Intellij IDEA →
-                                  </span></span> <span>Project Setup</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Project setup</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-8c">W2.8c</a>] <span>Tools → Intellij IDEA →
-                                  </span></span> <span>Code Navigation</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Code navigation</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -353,7 +354,7 @@
                         <li><span>Learn about the project</span></li>
                         <li><span>Set up prerequisites</span></li>
                         <li><span>Set up the project in your computer</span></li>
-                        <li>Add Increment: <code>Level-0</code></li>
+                        <li>Add Increment: <code v-pre="">Level-0</code></li>
                       </ol>
                     </div>
                   </div>
@@ -377,7 +378,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

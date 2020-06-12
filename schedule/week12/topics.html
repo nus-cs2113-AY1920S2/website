@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -131,7 +132,7 @@
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-2b">W12.2b</a>] <span>Quality Assurance → Test Case Design → Combining Test Inputs →
-                          </span></span> <span>Test Input Combination Strategies</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span>Test input combination strategies</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
                 </small></div>
@@ -147,7 +148,7 @@
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3b">W12.3b</a>] <span>Quality Assurance → Quality Assurance → Introduction →
-                          </span></span> <span>Validation vs Verification</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span>Validation versus verification</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3c">W12.3c</a>] <span>Quality Assurance → Quality Assurance → Code Reviews →
@@ -172,7 +173,7 @@
                   <ul>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-4a">W12.4a</a>] <span>Project Management → SDLC Process Models → Introduction →
-                          </span></span> <span>Agile Models</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span>Agile models</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-4b">W12.4b</a>] <span>Project Management → SDLC Process Models →
@@ -198,7 +199,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w12-1-boundary-value-analysis">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w12-1-boundary-value-analysis">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w12-1-boundary-value-analysis"><span class="dimmed">[W12.1]</span> <strong>Boundary Value Analysis</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w12-1-boundary-value-analysis" onclick="event.stopPropagation()"></a></h2>
@@ -216,7 +217,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/boundaryValueAnalysis/what" id="quality-assurance-test-case-design-boundary-value-analysis-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/boundaryValueAnalysis/what" id="quality-assurance-test-case-design-boundary-value-analysis-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.1a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-boundary-value-analysis-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Boundary Value Analysis →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-boundary-value-analysis-what" onclick="event.stopPropagation()"></a></h4>
@@ -232,14 +233,14 @@
                     <div>
                       <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as the end points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence partitions.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre="">markCellAt(int x, int y)</code> operation could contain code such as if <code v-pre="">(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence partitions.</p>
                       </box>
                       <p><strong>BVA suggests that when picking test inputs from an equivalence partition, values near boundaries (i.e. boundary values) are more likely to find bugs.</strong></p>
                       <p>Boundary values are sometimes called <em>corner cases</em>.</p>
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -280,7 +281,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/boundaryValueAnalysis/how" id="quality-assurance-test-case-design-boundary-value-analysis-how">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/boundaryValueAnalysis/how" id="quality-assurance-test-case-design-boundary-value-analysis-how">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.1b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-boundary-value-analysis-how"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Boundary Value Analysis →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-boundary-value-analysis-how" onclick="event.stopPropagation()"></a></h4>
@@ -294,7 +295,7 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such as the cost of each test case.</p>
+                      <p><strong>Typically, you should choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such as the cost of each test case.</p>
                       <box>
                         <div class="text-monospace">
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples:</p>
@@ -343,7 +344,7 @@
                             <tr>
                               <td>
                                 <p>[non-empty Stack]<br>
-                                  <span class="dimmed">(we assume a fixed size stack)</span></p>
+                                  <span class="dimmed">(assuming a fixed size stack)</span></p>
                               </td>
                               <td>
                                 <p>Stack with: one element, two elements, no empty spaces, only one empty space</p>
@@ -378,7 +379,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w12-2-combining-multiple-test-inputs">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w12-2-combining-multiple-test-inputs">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w12-2-combining-multiple-test-inputs"><span class="dimmed">[W12.2]</span> <strong>Combining Multiple Test Inputs</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w12-2-combining-multiple-test-inputs" onclick="event.stopPropagation()"></a></h2>
@@ -387,7 +388,7 @@
             <div class="indented-level1">
               <p><span id="W12-2a"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/why" id="quality-assurance-test-case-design-combining-test-inputs-why">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/combiningTestInputs/why" id="quality-assurance-test-case-design-combining-test-inputs-why">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.2a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-combining-test-inputs-why"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Combining Test Inputs →</span></span></small> <strong><span>Why</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-combining-test-inputs-why" onclick="event.stopPropagation()"></a></h4>
@@ -405,7 +406,7 @@
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> an SUT that takes multiple inputs and some values chosen as values for each input:</p>
                         <ul>
-                          <li>Method to test: <code>calculateGrade(participation, projectGrade, isAbsent, examScore)</code></li>
+                          <li>Method to test: <code v-pre="">calculateGrade(participation, projectGrade, isAbsent, examScore)</code></li>
                           <li>Values to test:<div class="table-responsive">
                               <table class="markbind-table table table-bordered table-striped">
                                 <thead>
@@ -442,7 +443,7 @@
                           </li>
                         </ul>
                       </box>
-                      <p><strong>Testing all possible combinations is effective but not efficient.</strong> If you test all possible combinations for the above example, you need to test 6x5x2x6=360 cases. Doing so has a higher chance of discovering bugs (i.e. effective) but the number of test cases can be too high (i.e. not efficient). Therefore, <strong>we need smarter ways to combine test inputs that are both effective and efficient.</strong></p>
+                      <p><strong>Testing all possible combinations is effective but not efficient.</strong> If you test all possible combinations for the above example, you need to test 6x5x2x6=360 cases. Doing so has a higher chance of discovering bugs (i.e. effective) but the number of test cases can be too high (i.e. not efficient). Therefore, <strong>you need smarter ways to combine test inputs that are both effective and efficient.</strong></p>
                     </div>
                     <div></div>
                   </div>
@@ -454,10 +455,10 @@
               </div>
               <p><span id="W12-2b"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/combinationStrategies" id="quality-assurance-test-case-design-combining-test-inputs-test-input-combination-strategies">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/combiningTestInputs/combinationStrategies" id="quality-assurance-test-case-design-combining-test-inputs-test-input-combination-strategies">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.2b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="quality-assurance-test-case-design-combining-test-inputs-test-input-combination-strategies"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Combining Test Inputs →</span></span></small> <strong><span>Test Input Combination Strategies</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-combining-test-inputs-test-input-combination-strategies" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="quality-assurance-test-case-design-combining-test-inputs-test-input-combination-strategies"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Combining Test Inputs →</span></span></small> <strong><span>Test input combination strategies</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-combining-test-inputs-test-input-combination-strategies" onclick="event.stopPropagation()"></a></h4>
                 </span>
                 <div>
                   <div class="indented">
@@ -471,7 +472,7 @@
                       <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Let's assume the SUT has the following three inputs and you have selected the given values for testing:</p>
-                        <p>SUT: <code>foo(p1 char, p2 int, p3 boolean)</code></p>
+                        <p>SUT: <code v-pre="">foo(p1 char, p2 int, p3 boolean)</code></p>
                         <p>Values to test:</p>
                         <div class="table-responsive">
                           <table class="markbind-table table table-bordered table-striped">
@@ -787,7 +788,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w12-3-other-qa-techniques">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w12-3-other-qa-techniques">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w12-3-other-qa-techniques"><span class="dimmed">[W12.3]</span> <strong>Other QA Techniques</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w12-3-other-qa-techniques" onclick="event.stopPropagation()"></a></h2>
@@ -796,7 +797,7 @@
             <div class="indented-level1">
               <p><span id="W12-3a"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/introduction/what" id="quality-assurance-quality-assurance-introduction-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/qualityAssurance/introduction/what" id="quality-assurance-quality-assurance-introduction-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.3a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-quality-assurance-introduction-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-introduction-what" onclick="event.stopPropagation()"></a></h4>
@@ -832,10 +833,10 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/introduction/validationVsVerification" id="quality-assurance-quality-assurance-introduction-validation-vs-verification">
+              <panel type="seamless" expanded="" popup-url="/website/book/qualityAssurance/introduction/validationVsVerification" id="quality-assurance-quality-assurance-introduction-validation-versus-verification">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.3b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="quality-assurance-quality-assurance-introduction-validation-vs-verification"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Introduction →</span></span></small> <strong><span>Validation vs Verification</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-introduction-validation-vs-verification" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="quality-assurance-quality-assurance-introduction-validation-versus-verification"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Introduction →</span></span></small> <strong><span>Validation versus verification</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-introduction-validation-versus-verification" onclick="event.stopPropagation()"></a></h4>
                 </span>
                 <div>
                   <div class="indented">
@@ -849,14 +850,14 @@
                       <p><strong>Quality Assurance = Validation + Verification</strong></p>
                       <p>QA involves checking two aspects:</p>
                       <ol>
-                        <li>Validation: are we <em>building the right system</em> i.e., are the requirements correct?</li>
-                        <li>Verification: are we <em>building the system right</em> i.e., are the requirements implemented correctly?</li>
+                        <li>Validation: are you <em>building the right system</em> i.e., are the requirements correct?</li>
+                        <li>Verification: are you <em>building the system right</em> i.e., are the requirements implemented correctly?</li>
                       </ol>
                       <p>Whether something belongs under validation or verification is not that important. What is more important is both are done, instead of limiting to verification (i.e., remember that the requirements can be wrong too).</p>
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -905,7 +906,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/codeReviews/what" id="quality-assurance-quality-assurance-code-reviews-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/qualityAssurance/codeReviews/what" id="quality-assurance-quality-assurance-code-reviews-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.3c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-quality-assurance-code-reviews-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Code Reviews →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-code-reviews-what" onclick="event.stopPropagation()"></a></h4>
@@ -935,10 +936,10 @@
                           </ul>
                         </li>
                       </ul>
-                      <b-modal id="modal:codeReview-pairProgramming" hide-footer size="lg" modal-class="mb-zoom" ref="modal:codeReview-pairProgramming"><template slot="modal-title">Pair Programming</template>
+                      <b-modal id="modal:codeReview-pairProgramming" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:codeReview-pairProgramming" class="algolia-no-index"><template slot="modal-title">Pair Programming</template>
                         <box type="definition">
                           <div>
-                            <p><strong>Pair Programming</strong>:</p>
+                            <p><strong>Pair programming</strong>:</p>
                             <blockquote>
                               <p>Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently. <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">source: Wikipedia</a>]</sub></p>
                             </blockquote>
@@ -947,7 +948,7 @@
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pair_programming_1.jpg" width="400"><br>
                           <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">image credit: Wikipedia</a>]</sub></p>
                         <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> A good introduction to pair programming:</p>
-                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ET3Q6zNK3Io" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ET3Q6zNK3Io" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                       </b-modal>
                       <ul>
                         <li>
@@ -978,7 +979,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expanded><template slot="_header">
+                        <panel expanded=""><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                           </template>
                           <ul>
@@ -1005,7 +1006,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/staticAnalysis/what" id="quality-assurance-quality-assurance-static-analysis-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/qualityAssurance/staticAnalysis/what" id="quality-assurance-quality-assurance-static-analysis-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.3d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-quality-assurance-static-analysis-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Static Analysis →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-static-analysis-what" onclick="event.stopPropagation()"></a></h4>
@@ -1050,7 +1051,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/formalVerification/what" id="quality-assurance-quality-assurance-formal-verification-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/qualityAssurance/formalVerification/what" id="quality-assurance-quality-assurance-formal-verification-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.3e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-quality-assurance-formal-verification-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Formal Verification →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-formal-verification-what" onclick="event.stopPropagation()"></a></h4>
@@ -1068,7 +1069,7 @@
                       <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header">
                           <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> An introduction to Formal Methods</p>
                         </template>
-                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                         <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
                         <p></p>
                       </panel>
@@ -1085,7 +1086,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -1134,7 +1135,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w12-4-sdlc-process-models-xp-scrum">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w12-4-sdlc-process-models-xp-scrum">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w12-4-sdlc-process-models-xp-scrum"><span class="dimmed">[W12.4]</span> <strong>SDLC Process Models: XP/Scrum</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w12-4-sdlc-process-models-xp-scrum" onclick="event.stopPropagation()"></a></h2>
@@ -1143,10 +1144,10 @@
             <div class="indented-level1">
               <p><span id="W12-4a"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/processModels/introduction/agileModels" id="project-management-sdlc-process-models-introduction-agile-models">
+              <panel type="seamless" expanded="" popup-url="/website/book/processModels/introduction/agileModels" id="project-management-sdlc-process-models-introduction-agile-models">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.4a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="project-management-sdlc-process-models-introduction-agile-models"><small><span class="font-weight-bold text-muted"><span>Project Management → SDLC Process Models → Introduction →</span></span></small> <strong><span>Agile Models</span></strong><a class="fa fa-anchor" href="#project-management-sdlc-process-models-introduction-agile-models" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="project-management-sdlc-process-models-introduction-agile-models"><small><span class="font-weight-bold text-muted"><span>Project Management → SDLC Process Models → Introduction →</span></span></small> <strong><span>Agile models</span></strong><a class="fa fa-anchor" href="#project-management-sdlc-process-models-introduction-agile-models" onclick="event.stopPropagation()"></a></h4>
                 </span>
                 <div>
                   <div class="indented">
@@ -1159,15 +1160,15 @@
                     <div>
                       <p>In 2001, a group of prominent software engineering practitioners met and brainstormed for an alternative to documentation-driven, heavyweight software development processes that were used in most large projects at the time. This resulted in something called the <em>agile manifesto</em> (a vision statement of what they were looking to do).</p>
                       <blockquote>
-                        <p>We are uncovering better ways of developing software by doing it and helping others do it.</p>
-                        <p>Through this work we have come to value:</p>
+                        <p>You are uncovering better ways of developing software by doing it and helping others do it.</p>
+                        <p>Through this work you have come to value:</p>
                         <ul>
                           <li><strong>Individuals and interactions</strong> over processes and tools</li>
                           <li><strong>Working software</strong> over comprehensive documentation</li>
                           <li><strong>Customer collaboration</strong> over contract negotiation</li>
                           <li><strong>Responding to change</strong> over following a plan</li>
                         </ul>
-                        <p>That is, while there is value in the items on the right, we value the items on the left more.<br>
+                        <p>That is, while there is value in the items on the right, you value the items on the left more.<br>
                           <sub>Extract from the <a href="http://agilemanifesto.org/">Agile Manifesto</a></sub></p>
                       </blockquote>
                       <p>Subsequently, some of the signatories of the manifesto went on to create process models that try to follow it. These processes are collectively called agile processes. Some of the key features of agile approaches are:</p>
@@ -1180,7 +1181,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -1213,7 +1214,7 @@
               </div>
               <p><span id="W12-4b"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/processModels/exampleProcessModels/scrum" id="project-management-sdlc-process-models-scrum">
+              <panel type="seamless" expanded="" popup-url="/website/book/processModels/exampleProcessModels/scrum" id="project-management-sdlc-process-models-scrum">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.4b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="project-management-sdlc-process-models-scrum"><small><span class="font-weight-bold text-muted"><span>Project Management → SDLC Process Models →</span></span></small> <strong><span>Scrum</span></strong><a class="fa fa-anchor" href="#project-management-sdlc-process-models-scrum" onclick="event.stopPropagation()"></a></h4>
@@ -1259,7 +1260,7 @@
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Intro to Scrum in Under 10 Minutes</p>
                           </template>
                           <p><sub>(This is not an endorsement of the product mentioned in the video)</sub></p>
-                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/XU0llRltyFM" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/XU0llRltyFM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                         </panel>
                       </box>
                     </div>
@@ -1273,7 +1274,7 @@
               </div>
               <p><span id="W12-4c"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/processModels/exampleProcessModels/xp" id="project-management-sdlc-process-models-xp">
+              <panel type="seamless" expanded="" popup-url="/website/book/processModels/exampleProcessModels/xp" id="project-management-sdlc-process-models-xp">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W12.4c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="project-management-sdlc-process-models-xp"><small><span class="font-weight-bold text-muted"><span>Project Management → SDLC Process Models →</span></span></small> <strong><span>XP</span></strong><a class="fa fa-anchor" href="#project-management-sdlc-process-models-xp" onclick="event.stopPropagation()"></a></h4>
@@ -1335,7 +1336,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

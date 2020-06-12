@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -101,35 +102,35 @@
           <h1 id="week-6-from-wed-feb-12-noon-tutorial">Week 6 <small><small><span class="dimmed">[from Wed Feb 12 noon]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-6-from-wed-feb-12-noon-tutorial" onclick="event.stopPropagation()"></a></h1>
           <div>
             <h4 id="1-demo-debugging-in-an-ide"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Demo debugging in an IDE<a class="fa fa-anchor" href="#1-demo-debugging-in-an-ide" onclick="event.stopPropagation()"></a></h4>
-            <box light type="success" add-class="ml-4"><template slot="icon"><span aria-hidden="true" class="fas fa-lightbulb"></span></template>
+            <box light="" type="success" add-class="ml-4"><template slot="icon"><span aria-hidden="true" class="fas fa-lightbulb"></span></template>
               <p><strong>Suggested pre-tutorial preparations</strong>:</p>
               <ul>
                 <li>Clone the <a href="https://github.com/nus-cs2113-AY1920S2/personbook">https://github.com/nus-cs2113-AY1920S2/personbook</a> repo to your Computer (no need to fork first).</li>
                 <li>Set it up in your IDE.</li>
                 <li>Use the IDE debugging to step through the code to understand how the code works. For example, you can try to find answers to these questions:
                   <ul>
-                    <li>How to add a new <code>find</code> command to locate persons by name?</li>
-                    <li>What's the purpose of the variable <code>PersonBook#lastShownList</code>? Is it really needed?</li>
+                    <li>How to add a new <code v-pre="">find</code> command to locate persons by name?</li>
+                    <li>What's the purpose of the variable <code v-pre="">PersonBook#lastShownList</code>? Is it really needed?</li>
                   </ul>
                 </li>
               </ul>
               <panel type="seamless" class="algolia-no-index"><template slot="_header">
                   <p>FYI, here's a relevant video used in the textbook</p>
                 </template>
-                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
               </panel>
             </box>
             <div class="indented">
               <p>During the tutorial, <strong>demo your ability to do debugging using an IDE</strong> by performing the following tasks:</p>
               <ol>
-                <li>Set a breakpoint in the following method of the <code>Main</code> class.
-                  <pre><code class="hljs java"><span><span class="hljs-comment">/** Reads the user command and executes it, until the user issues the exit command.  */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">runCommandLoopUntilExitCommand</span><span class="hljs-params">()</span> </span>{<br></span><span>    Command command;<br></span><span>    <span class="hljs-keyword">do</span> {<br></span><span>        String userCommandText = ui.getUserCommand();<br></span><span>        command = <span class="hljs-keyword">new</span> Parser().parseCommand(userCommandText);<br></span><span>        CommandResult result = executeCommand(command);<br></span><span>        personBook.setLastShownList(result.getRelevantPersons());<br></span><span>        ui.showResultToUser(result);<br></span><span><br></span><span>    } <span class="hljs-keyword">while</span> (!ExitCommand.isExit(command));<br></span><span>}<br></span></code></pre>
+                <li>Set a breakpoint in the following method of the <code v-pre="">Main</code> class.
+                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-comment">/** Reads the user command and executes it, until the user issues the exit command.  */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">runCommandLoopUntilExitCommand</span><span class="hljs-params">()</span> </span>{<br></span><span>    Command command;<br></span><span>    <span class="hljs-keyword">do</span> {<br></span><span>        String userCommandText = ui.getUserCommand();<br></span><span>        command = <span class="hljs-keyword">new</span> Parser().parseCommand(userCommandText);<br></span><span>        CommandResult result = executeCommand(command);<br></span><span>        personBook.setLastShownList(result.getRelevantPersons());<br></span><span>        ui.showResultToUser(result);<br></span><span><br></span><span>    } <span class="hljs-keyword">while</span> (!ExitCommand.isExit(command));<br></span><span>}<br></span></code></pre>
                 </li>
-                <li>Show how to set a conditional breakpoint so that execution pauses when the user types in the command <code>list</code>.</li>
-                <li>Use the debugger to step through the code while explaining how the code works. Start from the <code>main</code> method.</li>
+                <li>Show how to set a conditional breakpoint so that execution pauses when the user types in the command <code v-pre="">list</code>.</li>
+                <li>Use the debugger to step through the code while explaining how the code works. Start from the <code v-pre="">main</code> method.</li>
                 <li>Explain your answer to the following question:
                   <blockquote>
-                    <p>What's the purpose of the variable <code>PersonBook#lastShownList</code>? Is it really needed?</p>
+                    <p>What's the purpose of the variable <code v-pre="">PersonBook#lastShownList</code>? Is it really needed?</p>
                   </blockquote>
                 </li>
               </ol>
@@ -164,7 +165,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

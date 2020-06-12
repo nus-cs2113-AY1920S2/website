@@ -36,10 +36,10 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="testing-based-on-use-cases">
+                  <panel type="seamless" expanded="" id="testing-based-on-use-cases">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="testing-based-on-use-cases"><span>Testing Based on Use Cases</span><a class="fa fa-anchor" href="#testing-based-on-use-cases" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="testing-based-on-use-cases"><span>Testing based on use cases</span><a class="fa fa-anchor" href="#testing-based-on-use-cases" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -48,9 +48,9 @@
                       <p></p>
                       <p></p>
                       <div>
-                        <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary values. The combinations of these could result in one use case producing many test cases.</p>
+                        <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do not specify the exact data entered into the system. Instead, it might say something like <code v-pre="">user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary values. The combinations of these could result in one use case producing many test cases.</p>
                         <p>To increase <span trigger="click" for="modal:usebaseBased-EandE" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usebaseBased-EandE'].show()" class="trigger-click">E&amp;E of testing</span>, high-priority use cases are given more attention. For example, a <span trigger="click" for="modal:usecaseBased-scripted" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usecaseBased-scripted'].show()" class="trigger-click">scripted approach</span> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-                        <b-modal id="modal:usebaseBased-EandE" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usebaseBased-EandE"><template slot="modal-title">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
+                        <b-modal id="modal:usebaseBased-EandE" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:usebaseBased-EandE" class="algolia-no-index"><template slot="modal-title">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
                           <div>
                             <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong> In particular:</p>
                             <ul>
@@ -61,10 +61,10 @@
                                 <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                               </li>
                             </ul>
-                            <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                            <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test you add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
                           </div>
                         </b-modal>
-                        <b-modal id="modal:usecaseBased-scripted" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usecaseBased-scripted"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                        <b-modal id="modal:usecaseBased-scripted" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:usecaseBased-scripted" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                           <div>
                             <div></div>
                             <p></p>
@@ -89,14 +89,14 @@
                                   <box>
                                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                                     <blockquote>
-                                      <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon.
-                                        But before that, let us give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                                      <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; you need to look at them soon.
+                                        But before that, you should give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, you have a major problem and this has to be made known to the development team sooner rather than later...”</p>
                                     </blockquote>
                                   </box>
                                   <box>
                                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                                   </box>
-                                  <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                                  <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer="" size="" modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                                     <div>
                                       <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                                     </div>
@@ -104,7 +104,7 @@
                                 </div>
                                 <div>
                                   <div>
-                                    <panel expandable class="algolia-no-index"><template slot="_header">
+                                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                       </template>
                                       <div>

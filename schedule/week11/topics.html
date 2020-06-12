@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -112,7 +113,7 @@
                   <ul>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-1a">W11.1a</a>] <span>Design → Introduction →
-                          </span></span> <span>Multi-Level Design</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span>Multi-level design</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-1b">W11.1b</a>] <span>Design → Architecture → Introduction →
@@ -183,7 +184,7 @@
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-2h">W11.2h</a>] <span>Quality Assurance → Testing → Test Automation →
-                          </span></span> <span>Automated Testing of GUIs</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span>Automated testing of GUIs</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
                   <p>   <strong>Acceptance Testing</strong></p>
@@ -194,7 +195,7 @@
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-2j">W11.2j</a>] <span>Quality Assurance → Testing → Acceptance Testing →
-                          </span></span> <span>Acceptance vs System Testing</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span>Acceptance versus system testing</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
                   <p>   <strong>Alpha/Beta Testing</strong></p>
@@ -223,15 +224,15 @@
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-3d">W11.3d</a>] <span>Quality Assurance → Test Case Design → Introduction →
-                          </span></span> <span>Positive vs Negative Test Cases</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span>Positive versus negative test cases</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-3e">W11.3e</a>] <span>Quality Assurance → Test Case Design → Introduction →
-                          </span></span> <span>Black Box vs Glass Box</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span>Black box versus glass box</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-3f">W11.3f</a>] <span>Quality Assurance → Test Case Design →
-                          </span></span> <span>Testing Based on Use Cases</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span>Testing based on use cases</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
                 </small></div>
@@ -269,7 +270,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w11-1-architecture">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w11-1-architecture">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w11-1-architecture"><span class="dimmed">[W11.1]</span> <strong>Architecture</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-1-architecture" onclick="event.stopPropagation()"></a></h2>
@@ -290,10 +291,10 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/designApproaches/multilevelDesign/what" id="design-introduction-multi-level-design">
+              <panel type="seamless" expanded="" popup-url="/website/book/designApproaches/multilevelDesign/what" id="design-introduction-multi-level-design">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.1a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="design-introduction-multi-level-design"><small><span class="font-weight-bold text-muted"><span>Design → Introduction →</span></span></small> <strong><span>Multi-Level Design</span></strong><a class="fa fa-anchor" href="#design-introduction-multi-level-design" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="design-introduction-multi-level-design"><small><span class="font-weight-bold text-muted"><span>Design → Introduction →</span></span></small> <strong><span>Multi-level design</span></strong><a class="fa fa-anchor" href="#design-introduction-multi-level-design" onclick="event.stopPropagation()"></a></h4>
                 </span>
                 <div>
                   <div class="indented">
@@ -305,14 +306,14 @@
                     <p></p>
                     <div>
                       <p>In a smaller system, design of the entire system can be shown in one place.</p>
-                      <div v-closeable alt="single-level design example">
+                      <div v-closeable="" alt="single-level design example">
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This class diagram of <a href="https://se-education.org/addressbook-level2">se-edu/addressbook-level2</a> depicts the design of the entire software.</p>
                           <img src="https://se-education.org/addressbook-level2/images/mainClassDiagram.png" width="600">
                         </box>
                       </div>
                       <p><strong>Design of bigger systems needs to be done/shown at multiple levels.</strong></p>
-                      <div v-closeable alt="multi-level design example">
+                      <div v-closeable="" alt="multi-level design example">
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This architecture diagram of <a href="https://se-education.org/addressbook-level3">se-edu/addressbook-level3</a> depicts the high-level design of the software.</p>
                           <img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300">
@@ -347,7 +348,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/architecture/introduction/what" id="design-architecture-introduction-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/architecture/introduction/what" id="design-architecture-introduction-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.1b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="design-architecture-introduction-what"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-architecture-introduction-what" onclick="event.stopPropagation()"></a></h4>
@@ -378,18 +379,18 @@
                         <p></p>
                         <p>Main components:</p>
                         <ul>
-                          <li><code>GUI</code>: Graphical user interface</li>
-                          <li><code>TextUi</code>: Textual user interface</li>
-                          <li><code>ATD</code>: An automated test driver used for testing the game logic</li>
-                          <li><code>Logic</code>: computation and logic of the game</li>
-                          <li><code>Store</code>: storage and retrieval of game data (high scores etc.)</li>
+                          <li><code v-pre="">GUI</code>: Graphical user interface</li>
+                          <li><code v-pre="">TextUi</code>: Textual user interface</li>
+                          <li><code v-pre="">ATD</code>: An automated test driver used for testing the game logic</li>
+                          <li><code v-pre="">Logic</code>: computation and logic of the game</li>
+                          <li><code v-pre="">Store</code>: storage and retrieval of game data (high scores etc.)</li>
                         </ul>
                       </box>
                       <p><strong>The architecture is typically designed by the <em>software architect</em></strong>, who provides the technical vision of the system and makes high-level (i.e. architecture-level) technical decisions about the project.</p>
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -427,7 +428,7 @@
               </div>
               <p><span id="W11-1c"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/architecture/architectureDiagrams/reading" id="design-architecture-architecture-diagrams-reading">
+              <panel type="seamless" expanded="" popup-url="/website/book/architecture/architectureDiagrams/reading" id="design-architecture-architecture-diagrams-reading">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.1c</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="design-architecture-architecture-diagrams-reading"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Architecture Diagrams →</span></span></small> <strong><span>Reading</span></strong><a class="fa fa-anchor" href="#design-architecture-architecture-diagrams-reading" onclick="event.stopPropagation()"></a></h4>
@@ -448,7 +449,7 @@
                     <p></p>
                     <div>
                       <p><strong>Architecture diagrams are free-form diagrams.</strong> There is no universally adopted standard notation for architecture diagrams. Any symbol that reasonably describes the architecture may be used.</p>
-                      <div v-closeable alt="architecture diagram examples" id="architecture-diagram-examples">
+                      <div v-closeable="" alt="architecture diagram examples" id="architecture-diagram-examples">
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some example architecture diagrams:</p>
                           <tabs>
@@ -496,7 +497,7 @@
               <h3 id="architectural-styles"><span class="dimmed"><strong>Architectural Styles</strong></span><a class="fa fa-anchor" href="#architectural-styles" onclick="event.stopPropagation()"></a></h3>
               <p><span id="W11-1d"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/introduction/what" id="design-architecture-styles-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/architecture/architecturalStyles/introduction/what" id="design-architecture-styles-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.1d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="design-architecture-styles-what"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Styles →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-architecture-styles-what" onclick="event.stopPropagation()"></a></h4>
@@ -520,7 +521,7 @@
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style, ...</p>
                       </box>
-                      <b-modal id="modal:archiStyles-buildingArchitectures" hide-footer size="lg" modal-class="mb-zoom" ref="modal:archiStyles-buildingArchitectures"><template slot="modal-title">Building Architecture Styles</template>
+                      <b-modal id="modal:archiStyles-buildingArchitectures" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:archiStyles-buildingArchitectures" class="algolia-no-index"><template slot="modal-title">Building Architecture Styles</template>
                         <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg" width="600"><br>
                           <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
                       </b-modal>
@@ -535,7 +536,7 @@
               </div>
               <p><span id="W11-1e"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/nTier/what" id="design-architecture-styles-n-tier-style-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/architecture/architecturalStyles/nTier/what" id="design-architecture-styles-n-tier-style-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.1e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="design-architecture-styles-n-tier-style-what"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Styles → n-Tier Style →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-architecture-styles-n-tier-style-what" onclick="event.stopPropagation()"></a></h4>
@@ -567,7 +568,7 @@
               </div>
               <p><span id="W11-1f"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/clientServer/what" id="design-architecture-styles-client-server-style-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/architecture/architecturalStyles/clientServer/what" id="design-architecture-styles-client-server-style-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.1f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="design-architecture-styles-client-server-style-what"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Styles → Client-Server Style →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-architecture-styles-client-server-style-what" onclick="event.stopPropagation()"></a></h4>
@@ -615,7 +616,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w11-2-types-of-testing">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w11-2-types-of-testing">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w11-2-types-of-testing"><span class="dimmed">[W11.2]</span> <strong>Types of Testing</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-2-types-of-testing" onclick="event.stopPropagation()"></a></h2>
@@ -627,7 +628,7 @@
               <h3 id="unit-testing"><span class="dimmed"><strong>Unit Testing</strong></span><a class="fa fa-anchor" href="#unit-testing" onclick="event.stopPropagation()"></a></h3>
               <p><span id="W11-2a"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/unitTesting/what" id="quality-assurance-testing-unit-testing-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testingTypes/unitTesting/what" id="quality-assurance-testing-unit-testing-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2a</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-testing-unit-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Unit Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-unit-testing-what" onclick="event.stopPropagation()"></a></h4>
@@ -648,16 +649,16 @@
                       </box>
                       <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code v-pre="">Foo</code> class containing two methods and a <code v-pre="">FooTest</code> class that contains unit tests for those two methods.</p>
                         <div class="alt-java">
                           <div>
-                            <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>    <br></span><span>}<br></span></code></pre>
-                            <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{<br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//a unit test for Foo#read() method</span><br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span><br></span><span>    }  <br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                            <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>    <br></span><span>}<br></span></code></pre>
+                            <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{<br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//a unit test for Foo#read() method</span><br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span><br></span><span>    }  <br></span><span>    <br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
                           </div>
                         </div>
                         <div class="alt-python">
                           <div>
-                            <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> unittest<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># ...</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span><br></span><span>      <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span><br></span><span>      <span class="hljs-comment"># a unit test for read() method</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># a unit tests for write(string) method</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># another unit tests for write(string) method</span><br></span></code></pre>
+                            <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> unittest<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># ...</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span><br></span><span>      <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span><br></span><span>      <span class="hljs-comment"># a unit test for read() method</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># a unit tests for write(string) method</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span><br></span><span>      <span class="hljs-comment"># another unit tests for write(string) method</span><br></span></code></pre>
                           </div>
                         </div>
                       </box>
@@ -686,7 +687,7 @@
               </div>
               <p><span id="W11-2b"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/unitTesting/stubs" id="quality-assurance-testing-unit-testing-stubs">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testingTypes/unitTesting/stubs" id="quality-assurance-testing-unit-testing-stubs">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-testing-unit-testing-stubs"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Unit Testing →</span></span></small> <strong><span>Stubs</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-unit-testing-stubs" onclick="event.stopPropagation()"></a></h4>
@@ -708,7 +709,7 @@
                     <div>
                       <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">code the unit depends on</span>dependencies</span> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code v-pre="">Logic</code> class depends on a <code v-pre="">Storage</code> class, unit testing the <code v-pre="">Logic</code> class requires isolating the <code v-pre="">Logic</code> class from the <code v-pre="">Storage</code> class.</p>
                       </box>
                       <p><strong><em>Stubs</em> can isolate the <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Software Under Test (in this case, the <em>unit</em> being tested)</span>SUT</span> from its dependencies</strong>.</p>
                       <box type="definition">
@@ -718,25 +719,25 @@
                       </box>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
-                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{<br></span><span>    Storage s;<br></span><span><br></span><span>    Logic(Storage s) {<br></span><span>        <span class="hljs-keyword">this</span>.s = s;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);<br></span><span>    }<br></span><span>}<br></span></code></pre>
-                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;<br></span><span>}<br></span></code></pre>
-                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-comment">// retrieve name from the database</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
-                        <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-                        <pre><code class="hljs java"><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>String name = logic.getName(<span class="hljs-number">23</span>);<br></span></code></pre>
+                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{<br></span><span>    Storage s;<br></span><span><br></span><span>    Logic(Storage s) {<br></span><span>        <span class="hljs-keyword">this</span>.s = s;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;<br></span><span>}<br></span></code></pre>
+                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-comment">// retrieve name from the database</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                        <p>Normally, you would use the <code v-pre="">Logic</code> class as follows (note how the <code v-pre="">Logic</code> object depends on a <code v-pre="">DatabaseStorage</code> object to perform the <code v-pre="">getName()</code> operation):</p>
+                        <pre><code class="hljs java" v-pre=""><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>String name = logic.getName(<span class="hljs-number">23</span>);<br></span></code></pre>
                         <p>You can test it like this:</p>
-                        <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
-                        <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
-                        <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
-                        <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
-                        <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-                        <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());<br></span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
+                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
+                        <p>However, this <code v-pre="">logic</code> object being tested is making use of a <code v-pre="">DataBaseStorage</code> object which means a bug in the <code v-pre="">DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code v-pre="">Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
+                        <p>Here is a stub class you can use in place of <code v-pre="">DatabaseStorage</code>:</p>
+                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                        <p>Note how the <code v-pre="">StorageStub</code> has the same interface as <code v-pre="">DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code v-pre="">DatabaseStorage</code> is expected to return for the given test input.</p>
+                        <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code v-pre="">DatabaseStorage</code> class and hence is a pure unit test.</p>
+                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());<br></span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
                       </box>
                       <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
                     </div>
                     <div>
                       <div>
-                        <panel expanded><template slot="_header">
+                        <panel expanded=""><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                           </template>
                           <ul>
@@ -745,7 +746,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -800,7 +801,7 @@
                     <p></p>
                     <div>
                       <p><strong><em>Dependency injection</em> is the process of 'injecting' objects to replace current dependencies with a different object.</strong> This is often used to inject <span trigger="click" for="modal:explainDi-stub" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:explainDi-stub'].show()" class="trigger-click">stubs</span> to isolate the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span> from its <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">objects it depends on</span>dependencies</span> so that it can be tested in isolation.</p>
-                      <b-modal id="modal:explainDi-stub" hide-footer size="lg" modal-class="mb-zoom" ref="modal:explainDi-stub"><template slot="modal-title"></template>
+                      <b-modal id="modal:explainDi-stub" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:explainDi-stub" class="algolia-no-index"><template slot="modal-title"></template>
                         <div>
                           <div>
                             <p>
@@ -820,7 +821,7 @@
                               <div>
                                 <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">code the unit depends on</span>dependencies</span> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                                 <box>
-                                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
+                                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code v-pre="">Logic</code> class depends on a <code v-pre="">Storage</code> class, unit testing the <code v-pre="">Logic</code> class requires isolating the <code v-pre="">Logic</code> class from the <code v-pre="">Storage</code> class.</p>
                                 </box>
                                 <p><strong><em>Stubs</em> can isolate the <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Software Under Test (in this case, the <em>unit</em> being tested)</span>SUT</span> from its dependencies</strong>.</p>
                                 <box type="definition">
@@ -830,25 +831,25 @@
                                 </box>
                                 <box>
                                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
-                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{<br></span><span>    Storage s;<br></span><span><br></span><span>    Logic(Storage s) {<br></span><span>        <span class="hljs-keyword">this</span>.s = s;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);<br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;<br></span><span>}<br></span></code></pre>
-                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-comment">// retrieve name from the database</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                  <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-                                  <pre><code class="hljs java"><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>String name = logic.getName(<span class="hljs-number">23</span>);<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{<br></span><span>    Storage s;<br></span><span><br></span><span>    Logic(Storage s) {<br></span><span>        <span class="hljs-keyword">this</span>.s = s;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-comment">// retrieve name from the database</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <p>Normally, you would use the <code v-pre="">Logic</code> class as follows (note how the <code v-pre="">Logic</code> object depends on a <code v-pre="">DatabaseStorage</code> object to perform the <code v-pre="">getName()</code> operation):</p>
+                                  <pre><code class="hljs java" v-pre=""><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>String name = logic.getName(<span class="hljs-number">23</span>);<br></span></code></pre>
                                   <p>You can test it like this:</p>
-                                  <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
-                                  <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
-                                  <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                  <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
-                                  <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-                                  <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());<br></span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
+                                  <p>However, this <code v-pre="">logic</code> object being tested is making use of a <code v-pre="">DataBaseStorage</code> object which means a bug in the <code v-pre="">DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code v-pre="">Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
+                                  <p>Here is a stub class you can use in place of <code v-pre="">DatabaseStorage</code>:</p>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <p>Note how the <code v-pre="">StorageStub</code> has the same interface as <code v-pre="">DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code v-pre="">DatabaseStorage</code> is expected to return for the given test input.</p>
+                                  <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code v-pre="">DatabaseStorage</code> class and hence is a pure unit test.</p>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());<br></span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
                                 </box>
                                 <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
                               </div>
                               <div>
                                 <div>
-                                  <panel expanded><template slot="_header">
+                                  <panel expanded=""><template slot="_header">
                                       <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                                     </template>
                                     <ul>
@@ -857,7 +858,7 @@
                                   </panel>
                                 </div>
                                 <div>
-                                  <panel expandable class="algolia-no-index"><template slot="_header">
+                                  <panel expandable="" class="algolia-no-index"><template slot="_header">
                                       <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                     </template>
                                     <div>
@@ -884,7 +885,7 @@
                         </div>
                       </b-modal>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code>Foo</code> object normally depends on a <code>Bar</code> object, but we can inject a <code>BarStub</code> object so that the <code>Foo</code> object no longer depends on a <code>Bar</code> object. Now we can test the <code>Foo</code> object in isolation from the <code>Bar</code> object.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code v-pre="">Foo</code> object normally depends on a <code v-pre="">Bar</code> object, but you can inject a <code v-pre="">BarStub</code> object so that the <code v-pre="">Foo</code> object no longer depends on a <code v-pre="">Bar</code> object. Now you can test the <code v-pre="">Foo</code> object in isolation from the <code v-pre="">Bar</code> object.</p>
                         <img src="/website/book/testing/dependencyInjection/what/images/diagram.png" height="150">
                       </box>
                     </div>
@@ -919,7 +920,7 @@
                     <p></p>
                     <div>
                       <p><strong>Polymorphism can be used to implement dependency injection</strong>, as can be seen in the example given in <span trigger="click" for="modal:useDi-stub" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:useDi-stub'].show()" class="trigger-click">[Quality Assurance → Testing → Unit Testing → Stubs]</span> where a stub is injected to replace a dependency.</p>
-                      <b-modal id="modal:useDi-stub" hide-footer size="lg" modal-class="mb-zoom" ref="modal:useDi-stub"><template slot="modal-title"></template>
+                      <b-modal id="modal:useDi-stub" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:useDi-stub" class="algolia-no-index"><template slot="modal-title"></template>
                         <div>
                           <div>
                             <p>
@@ -939,7 +940,7 @@
                               <div>
                                 <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">code the unit depends on</span>dependencies</span> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                                 <box>
-                                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
+                                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code v-pre="">Logic</code> class depends on a <code v-pre="">Storage</code> class, unit testing the <code v-pre="">Logic</code> class requires isolating the <code v-pre="">Logic</code> class from the <code v-pre="">Storage</code> class.</p>
                                 </box>
                                 <p><strong><em>Stubs</em> can isolate the <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Software Under Test (in this case, the <em>unit</em> being tested)</span>SUT</span> from its dependencies</strong>.</p>
                                 <box type="definition">
@@ -949,25 +950,25 @@
                                 </box>
                                 <box>
                                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
-                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{<br></span><span>    Storage s;<br></span><span><br></span><span>    Logic(Storage s) {<br></span><span>        <span class="hljs-keyword">this</span>.s = s;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);<br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;<br></span><span>}<br></span></code></pre>
-                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-comment">// retrieve name from the database</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                  <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-                                  <pre><code class="hljs java"><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>String name = logic.getName(<span class="hljs-number">23</span>);<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{<br></span><span>    Storage s;<br></span><span><br></span><span>    Logic(Storage s) {<br></span><span>        <span class="hljs-keyword">this</span>.s = s;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{<br></span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-comment">// retrieve name from the database</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <p>Normally, you would use the <code v-pre="">Logic</code> class as follows (note how the <code v-pre="">Logic</code> object depends on a <code v-pre="">DatabaseStorage</code> object to perform the <code v-pre="">getName()</code> operation):</p>
+                                  <pre><code class="hljs java" v-pre=""><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>String name = logic.getName(<span class="hljs-number">23</span>);<br></span></code></pre>
                                   <p>You can test it like this:</p>
-                                  <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
-                                  <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
-                                  <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                  <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
-                                  <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-                                  <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());<br></span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());<br></span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
+                                  <p>However, this <code v-pre="">logic</code> object being tested is making use of a <code v-pre="">DataBaseStorage</code> object which means a bug in the <code v-pre="">DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code v-pre="">Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
+                                  <p>Here is a stub class you can use in place of <code v-pre="">DatabaseStorage</code>:</p>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <p>Note how the <code v-pre="">StorageStub</code> has the same interface as <code v-pre="">DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code v-pre="">DatabaseStorage</code> is expected to return for the given test input.</p>
+                                  <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code v-pre="">DatabaseStorage</code> class and hence is a pure unit test.</p>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-meta">@Test</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{<br></span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());<br></span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));<br></span><span>}<br></span></code></pre>
                                 </box>
                                 <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
                               </div>
                               <div>
                                 <div>
-                                  <panel expanded><template slot="_header">
+                                  <panel expanded=""><template slot="_header">
                                       <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                                     </template>
                                     <ul>
@@ -976,7 +977,7 @@
                                   </panel>
                                 </div>
                                 <div>
-                                  <panel expandable class="algolia-no-index"><template slot="_header">
+                                  <panel expandable="" class="algolia-no-index"><template slot="_header">
                                       <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                     </template>
                                     <div>
@@ -1004,15 +1005,15 @@
                       </b-modal>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is another example of using polymorphism to implement dependency injection:</p>
-                        <p>Suppose we want to unit test the <code>Payroll#totalSalary()</code> given below. The method depends on the <code>SalaryManager</code> object to calculate the return value. Note how the <code>setSalaryManager(SalaryManager)</code> can be used to inject a <code>SalaryManager</code> object to replace the current <code>SalaryManager</code> object.</p>
-                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> SalaryManager manager = <span class="hljs-keyword">new</span> SalaryManager();<br></span><span>    <span class="hljs-keyword">private</span> String[] employees;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setEmployees</span><span class="hljs-params">(String[] employees)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.employees = employees;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSalaryManager</span><span class="hljs-params">(SalaryManager sm)</span> </span>{<br></span><span>       <span class="hljs-keyword">this</span>. manager = sm;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">totalSalary</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">double</span> total = <span class="hljs-number">0</span>;<br></span><span>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; employees.length; i++){<br></span><span>            total += manager.getSalaryForEmployee(employees[i]);<br></span><span>        }<br></span><span>        <span class="hljs-keyword">return</span> total;<br></span><span>    }<br></span><span>}<br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManager</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span></span>{<br></span><span>        <span class="hljs-comment">//code to access employee’s salary history</span><br></span><span>        <span class="hljs-comment">//code to calculate total salary paid and return it</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
-                        <p>During testing, you can inject a <code>SalaryManagerStub</code> object to replace the <code>SalaryManager</code> object.</p>
-                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTest</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        <span class="hljs-comment">//test setup</span><br></span><span>        Payroll p = <span class="hljs-keyword">new</span> Payroll();<br></span><span>        p.setSalaryManager(<span class="hljs-keyword">new</span> SalaryManagerStub()); <span class="hljs-comment">//dependency injection</span><br></span><span>        <span class="hljs-comment">//test case 1</span><br></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});<br></span><span>        assertEquals(<span class="hljs-number">2500.0</span>, p.totalSalary());<br></span><span>        <span class="hljs-comment">//test case 2</span><br></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});<br></span><span>        assertEquals(<span class="hljs-number">1000.0</span>, p.totalSalary());<br></span><span>        <span class="hljs-comment">//more tests ...</span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManagerStub</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SalaryManager</span> </span>{<br></span><span>    <span class="hljs-comment">/** Returns hard coded values used for testing */</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E001"</span>)) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-number">1000.0</span>;<br></span><span>        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E002"</span>)) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-number">1500.0</span>;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"unknown id"</span>);<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                        <p>Suppose you want to unit test the <code v-pre="">Payroll#totalSalary()</code> given below. The method depends on the <code v-pre="">SalaryManager</code> object to calculate the return value. Note how the <code v-pre="">setSalaryManager(SalaryManager)</code> can be used to inject a <code v-pre="">SalaryManager</code> object to replace the current <code v-pre="">SalaryManager</code> object.</p>
+                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> SalaryManager manager = <span class="hljs-keyword">new</span> SalaryManager();<br></span><span>    <span class="hljs-keyword">private</span> String[] employees;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setEmployees</span><span class="hljs-params">(String[] employees)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.employees = employees;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSalaryManager</span><span class="hljs-params">(SalaryManager sm)</span> </span>{<br></span><span>       <span class="hljs-keyword">this</span>. manager = sm;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">totalSalary</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">double</span> total = <span class="hljs-number">0</span>;<br></span><span>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; employees.length; i++){<br></span><span>            total += manager.getSalaryForEmployee(employees[i]);<br></span><span>        }<br></span><span>        <span class="hljs-keyword">return</span> total;<br></span><span>    }<br></span><span>}<br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManager</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span></span>{<br></span><span>        <span class="hljs-comment">//code to access employee’s salary history</span><br></span><span>        <span class="hljs-comment">//code to calculate total salary paid and return it</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                        <p>During testing, you can inject a <code v-pre="">SalaryManagerStub</code> object to replace the <code v-pre="">SalaryManager</code> object.</p>
+                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTest</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        <span class="hljs-comment">//test setup</span><br></span><span>        Payroll p = <span class="hljs-keyword">new</span> Payroll();<br></span><span>        p.setSalaryManager(<span class="hljs-keyword">new</span> SalaryManagerStub()); <span class="hljs-comment">//dependency injection</span><br></span><span>        <span class="hljs-comment">//test case 1</span><br></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});<br></span><span>        assertEquals(<span class="hljs-number">2500.0</span>, p.totalSalary());<br></span><span>        <span class="hljs-comment">//test case 2</span><br></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});<br></span><span>        assertEquals(<span class="hljs-number">1000.0</span>, p.totalSalary());<br></span><span>        <span class="hljs-comment">//more tests ...</span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManagerStub</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SalaryManager</span> </span>{<br></span><span>    <span class="hljs-comment">/** Returns hard coded values used for testing */</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E001"</span>)) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-number">1000.0</span>;<br></span><span>        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E002"</span>)) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-number">1500.0</span>;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"unknown id"</span>);<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
                       </box>
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -1049,7 +1050,7 @@
               <h3 id="integration-testing"><span class="dimmed"><strong>Integration Testing</strong></span><a class="fa fa-anchor" href="#integration-testing" onclick="event.stopPropagation()"></a></h3>
               <p><span id="W11-2e"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/integrationTesting/what" id="quality-assurance-testing-integration-testing-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testingTypes/integrationTesting/what" id="quality-assurance-testing-integration-testing-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2e</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-testing-integration-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Integration Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-integration-testing-what" onclick="event.stopPropagation()"></a></h4>
@@ -1071,7 +1072,7 @@
                     <div>
                       <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components interact with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>. If the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the actual <code>Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code v-pre="">Car</code> users classes <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>. If the <code v-pre="">Car</code> class assumed a <code v-pre="">Wheel</code> can support 200 mph speed but the actual <code v-pre="">Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
                       </box>
                     </div>
                     <div></div>
@@ -1084,7 +1085,7 @@
               </div>
               <p><span id="W11-2f"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/integrationTesting/how" id="quality-assurance-testing-integration-testing-how">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testingTypes/integrationTesting/how" id="quality-assurance-testing-integration-testing-how">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-testing-integration-testing-how"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Integration Testing →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-integration-testing-how" onclick="event.stopPropagation()"></a></h4>
@@ -1106,18 +1107,18 @@
                     <div>
                       <p><strong>Integration testing is not simply a case of repeating the unit test cases using the actual dependencies</strong> (instead of the stubs used in unit testing). Instead, integration tests are additional test cases that focus on the interactions between the parts.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code>Car</code> uses classes <code>Engine</code> and <code>Wheel</code>. Here is how you would go about doing pure integration tests:</p>
-                        <p>a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br>
-                          b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, <mark>using stubs for <code>Engine</code> and <code>Wheel</code></mark>.<br>
-                          c) After that, do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code v-pre="">Car</code> uses classes <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>. Here is how you would go about doing pure integration tests:</p>
+                        <p>a) First, unit test <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>.<br>
+                          b) Next, unit test <code v-pre="">Car</code> in isolation of <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>, <mark>using stubs for <code v-pre="">Engine</code> and <code v-pre="">Wheel</code></mark>.<br>
+                          c) After that, do an integration test for <code v-pre="">Car</code> using it together with the <code v-pre="">Engine</code> and <code v-pre="">Wheel</code> classes to ensure the <code v-pre="">Car</code> integrates properly with the <code v-pre="">Engine</code> and the <code v-pre="">Wheel</code>.</p>
                       </box>
                       <p><strong>In practice, developers often use a hybrid of unit+integration tests to minimize the need for stubs.</strong></p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's how a hybrid unit+integration approach could be applied to the same example used above:</p>
-                        <p>(a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br>
-                          <s>(b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, using stubs for <code>Engine</code> and <code>Wheel</code>.</s><br>
-                          (c) After that, do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>. <mark>This step should include test cases that are meant to test the unit <code>Car</code></mark> (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code>Car</code> with <code>Wheel</code> and <code>Engine</code> (i.e. pure integration test cases used of the step (c) in the example above).</p>
-                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that you no longer need stubs for <code>Engine</code> and <code>Wheel</code>. The downside is that <code>Car</code> is never tested in isolation of its dependencies. Given that its dependencies are already unit tested, the risk of bugs in <code>Engine</code> and <code>Wheel</code> affecting the testing of <code>Car</code> can be considered minimal.</p>
+                        <p>(a) First, unit test <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>.<br>
+                          <s>(b) Next, unit test <code v-pre="">Car</code> in isolation of <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>, using stubs for <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>.</s><br>
+                          (c) After that, do an integration test for <code v-pre="">Car</code> using it together with the <code v-pre="">Engine</code> and <code v-pre="">Wheel</code> classes to ensure the <code v-pre="">Car</code> integrates properly with the <code v-pre="">Engine</code> and the <code v-pre="">Wheel</code>. <mark>This step should include test cases that are meant to test the unit <code v-pre="">Car</code></mark> (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code v-pre="">Car</code> with <code v-pre="">Wheel</code> and <code v-pre="">Engine</code> (i.e. pure integration test cases used of the step (c) in the example above).</p>
+                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that you no longer need stubs for <code v-pre="">Engine</code> and <code v-pre="">Wheel</code>. The downside is that <code v-pre="">Car</code> is never tested in isolation of its dependencies. Given that its dependencies are already unit tested, the risk of bugs in <code v-pre="">Engine</code> and <code v-pre="">Wheel</code> affecting the testing of <code v-pre="">Car</code> can be considered minimal.</p>
                       </box>
                     </div>
                     <div></div>
@@ -1133,7 +1134,7 @@
               <h3 id="system-testing"><span class="dimmed"><strong>System Testing</strong></span><a class="fa fa-anchor" href="#system-testing" onclick="event.stopPropagation()"></a></h3>
               <p><span id="W11-2g"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/systemTesting/what" id="quality-assurance-testing-system-testing-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testingTypes/systemTesting/what" id="quality-assurance-testing-system-testing-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2g</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-testing-system-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → System Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-system-testing-what" onclick="event.stopPropagation()"></a></h4>
@@ -1156,7 +1157,7 @@
                       <p><strong>System test cases are based on the specified external behavior of the system.</strong> Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails 'gracefully' having pushed beyond its limits.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose the SUT is a browser supposedly capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully if pushed beyond its limits.</p>
-                        <pre><code class="hljs"><span>Test case: load a web page that is too big<br></span><span>* Input: load a web page containing more than 5000 characters. <br></span><span>* Expected behavior: abort the loading of the page and show a meaningful error message. <br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>Test case: load a web page that is too big<br></span><span>* Input: load a web page containing more than 5000 characters. <br></span><span>* Expected behavior: abort the loading of the page and show a meaningful error message. <br></span></code></pre>
                         <p>This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
                       </box>
                       <p><strong>System testing includes testing against non-functional requirements too.</strong> Here are some examples.</p>
@@ -1179,10 +1180,10 @@
               </div>
               <p><span id="W11-2h"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/testingGuis" id="quality-assurance-testing-test-automation-automated-testing-of-guis">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testAutomation/testingGuis" id="quality-assurance-testing-test-automation-automated-testing-of-guis">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2h</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="quality-assurance-testing-test-automation-automated-testing-of-guis"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Test Automation →</span></span></small> <strong><span>Automated Testing of GUIs</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-test-automation-automated-testing-of-guis" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="quality-assurance-testing-test-automation-automated-testing-of-guis"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Test Automation →</span></span></small> <strong><span>Automated testing of GUIs</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-test-automation-automated-testing-of-guis" onclick="event.stopPropagation()"></a></h4>
                 </span>
                 <div>
                   <div class="indented">
@@ -1193,7 +1194,7 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <p>If a software product has a GUI component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, <strong>testing the GUI is much harder than testing the CLI (command line interface) or API</strong>, for the following reasons:</p>
+                      <p>If a software product has a GUI(Graphical User Interface) component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, <strong>testing the GUI is much harder than testing the CLI (command line interface) or API</strong>, for the following reasons:</p>
                       <ul>
                         <li>Most GUIs can support a large number of different operations, many of which can be performed in any arbitrary order.</li>
                         <li>GUI operations are more difficult to automate than API testing. Reliably automating GUI operations and automatically verifying whether the GUI behaves as expected is harder than calling an operation and comparing its return value with an expected value. Therefore, automated regression testing of GUIs is rather difficult.</li>
@@ -1218,7 +1219,7 @@
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> demo video of automated testing of a Web application</p>
                               </template>
                               <p>This video shows automated testing of the <a href="http://github.com/teammates/teammates">TEAMMATES</a> Web app using Selenium</p>
-                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ihst69Zq1xM" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ihst69Zq1xM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                             </panel>
                           </li>
                         </ul>
@@ -1226,7 +1227,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -1260,7 +1261,7 @@
               <h3 id="acceptance-testing"><span class="dimmed"><strong>Acceptance Testing</strong></span><a class="fa fa-anchor" href="#acceptance-testing" onclick="event.stopPropagation()"></a></h3>
               <p><span id="W11-2i"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/acceptanceTesting/what" id="quality-assurance-testing-acceptance-testing-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testingTypes/acceptanceTesting/what" id="quality-assurance-testing-acceptance-testing-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2i</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-testing-acceptance-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Acceptance Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-acceptance-testing-what" onclick="event.stopPropagation()"></a></h4>
@@ -1291,10 +1292,10 @@
               </div>
               <p><span id="W11-2j"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting" id="quality-assurance-testing-acceptance-testing-acceptance-vs-system-testing">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting" id="quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2j</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="quality-assurance-testing-acceptance-testing-acceptance-vs-system-testing"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Acceptance Testing →</span></span></small> <strong><span>Acceptance vs System Testing</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-acceptance-testing-acceptance-vs-system-testing" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Acceptance Testing →</span></span></small> <strong><span>Acceptance versus system testing</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing" onclick="event.stopPropagation()"></a></h4>
                 </span>
                 <div>
                   <div class="indented">
@@ -1337,14 +1338,14 @@
                       </div>
                       <p><span class="dimmed">Note: <em>negative</em> test cases: cases where the SUT is not expected to work normally e.g. incorrect inputs; <em>positive</em> test cases: cases where the SUT is expected to work normally</span></p>
                       <box>
-                        <p><strong>Requirement Specification vs System Specification</strong></p>
+                        <p><strong>Requirement specification versus system specification</strong></p>
                         <p>The requirement specification need not be the same as the system specification. Some example differences:</p>
                         <div class="table-responsive">
                           <table class="markbind-table table table-bordered table-striped">
                             <thead>
                               <tr>
-                                <th style="text-align:left">Requirements Specification</th>
-                                <th style="text-align:left">System Specification</th>
+                                <th style="text-align:left">Requirements specification</th>
+                                <th style="text-align:left">System specification</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -1373,7 +1374,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -1414,7 +1415,7 @@
               <h3 id="alpha-beta-testing"><span class="dimmed"><strong>Alpha/Beta Testing</strong></span><a class="fa fa-anchor" href="#alpha-beta-testing" onclick="event.stopPropagation()"></a></h3>
               <p><span id="W11-2k"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/alphaBetaTesting/what" id="quality-assurance-testing-alpha-beta-testing-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testingTypes/alphaBetaTesting/what" id="quality-assurance-testing-alpha-beta-testing-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2k</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-testing-alpha-beta-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Alpha/Beta Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-alpha-beta-testing-what" onclick="event.stopPropagation()"></a></h4>
@@ -1458,7 +1459,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w11-3-test-case-design">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w11-3-test-case-design">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w11-3-test-case-design"><span class="dimmed">[W11.3]</span> <strong>Test Case Design</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-3-test-case-design" onclick="event.stopPropagation()"></a></h2>
@@ -1477,7 +1478,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/introduction/what" id="quality-assurance-test-case-design-introduction-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/introduction/what" id="quality-assurance-test-case-design-introduction-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.3a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-introduction-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-introduction-what" onclick="event.stopPropagation()"></a></h4>
@@ -1493,7 +1494,7 @@
                     <div>
                       <p><strong>Except for trivial <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUTs</span>, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">testing all possible cases</span>exhaustive testing</span> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the test cases for adding a string object to a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Java: <code>ArrayList</code>,<br>Python: <code>list</code></span>collection</span>:</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the test cases for adding a string object to a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Java: <code v-pre="">ArrayList</code>,<br>Python: <code v-pre="">list</code></span>collection</span>:</p>
                         <ul>
                           <li>Add an item to an empty collection.</li>
                           <li>Add an item when there is one item in the collection.</li>
@@ -1520,23 +1521,23 @@
                             <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                           </li>
                         </ul>
-                        <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                        <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test you add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
                       </div>
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
                             <panel class="algolia-no-index"><template slot="_header">
-                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Test cases for <code>TriangleDetector</code></p>
+                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Test cases for <code v-pre="">TriangleDetector</code></p>
                               </template>
                               <question has-input="true">
-                                <p>Given below is the sample output from a text-based program <code>TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test this software. Two sample test cases are given below.</p>
-                                <pre><code class="hljs"><span>C:\&gt; java TriangleDetector<br></span><span>Enter side 1: 34<br></span><span>Enter side 2: 34<br></span><span>Enter side 3: 32<br></span><span>Can this be a triangle?:  Yes<br></span><span>Enter side 1:<br></span></code></pre>
+                                <p>Given below is the sample output from a text-based program <code v-pre="">TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test this software. Two sample test cases are given below.</p>
+                                <pre><code class="hljs" v-pre=""><span>C:\&gt; java TriangleDetector<br></span><span>Enter side 1: 34<br></span><span>Enter side 2: 34<br></span><span>Enter side 3: 32<br></span><span>Can this be a triangle?:  Yes<br></span><span>Enter side 1:<br></span></code></pre>
                                 <p>Sample test cases,</p>
-                                <pre><code class="hljs"><span>34,34,34: Yes<br></span><span>0, any valid, any valid: No<br></span></code></pre>
+                                <pre><code class="hljs" v-pre=""><span>34,34,34: Yes<br></span><span>0, any valid, any valid: No<br></span></code></pre>
                                 <div slot="answer" class="algolia-no-index">
                                   <p>In addition to obvious test cases such as</p>
                                   <ul>
@@ -1546,7 +1547,7 @@
                                   <p>We may also devise some interesting test cases such as the ones depicted below.</p>
                                   <p>Note that their applicability depends on the context in which the software is operating.</p>
                                   <ul>
-                                    <li>Non-integer number, negative numbers, <code>0</code>, numbers formatted differently (e.g. <code>13F</code>), very large numbers (e.g. <code>MAX_INT</code>), numbers with many decimal places, empty string, ...</li>
+                                    <li>Non-integer number, negative numbers, <code v-pre="">0</code>, numbers formatted differently (e.g. <code v-pre="">13F</code>), very large numbers (e.g. <code v-pre="">MAX_INT</code>), numbers with many decimal places, empty string, ...</li>
                                     <li>Check many triangles one after the other (will the system run out of memory?)</li>
                                     <li><kbd>Backspace</kbd>, <kbd>tab</kbd>, <kbd>CTRL+C</kbd> , …</li>
                                     <li>Introduce a long delay between entering data (will the program be affected by, say the screensaver?), minimize and restore window during the operation, hibernate the system in the middle of a calculation, start with invalid inputs (the system may perform error handling differently for the very first test case), …</li>
@@ -1562,17 +1563,17 @@
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Exhaustive testing in Minesweeper</p>
                               </template>
                               <question has-input="true">
-                                <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
+                                <p>Explain the why exhaustive testing is not practical using the example of testing <code v-pre="">newGame()</code> operation in the <code v-pre="">Logic</code> class of a Minesweeper game.</p>
                                 <div slot="answer" class="algolia-no-index">
                                   <p>Consider this sequence of test cases:</p>
                                   <ul>
-                                    <li>Test case 1. Start Minesweeper. Activate <code>newGame()</code> and see if it works.</li>
-                                    <li>Test case 2. Start Minesweeper. Activate <code>newGame()</code>. Activate <code>newGame()</code> again and see if it works.</li>
-                                    <li>Test case 3. Start Minesweeper. Activate <code>newGame()</code> three times consecutively and see if it works.</li>
+                                    <li>Test case 1. Start Minesweeper. Activate <code v-pre="">newGame()</code> and see if it works.</li>
+                                    <li>Test case 2. Start Minesweeper. Activate <code v-pre="">newGame()</code>. Activate <code v-pre="">newGame()</code> again and see if it works.</li>
+                                    <li>Test case 3. Start Minesweeper. Activate <code v-pre="">newGame()</code> three times consecutively and see if it works.</li>
                                     <li>…</li>
-                                    <li>Test case 267. Start Minesweeper. Activate <code>newGame()</code> 267 times consecutively and see if it works.</li>
+                                    <li>Test case 267. Start Minesweeper. Activate <code v-pre="">newGame()</code> 267 times consecutively and see if it works.</li>
                                   </ul>
-                                  <p>Well, you get the idea. Exhaustive testing of <code>newGame()</code> is not practical.</p>
+                                  <p>Well, you get the idea. Exhaustive testing of <code v-pre="">newGame()</code> is not practical.</p>
                                 </div>
                               </question>
                             </panel>
@@ -1609,7 +1610,7 @@
               </div>
               <p><span id="W11-3b"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/exploratoryVsScriptedTesting/what" id="quality-assurance-testing-exploratory-and-scripted-testing-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testingTypes/exploratoryVsScriptedTesting/what" id="quality-assurance-testing-exploratory-and-scripted-testing-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.3b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-testing-exploratory-and-scripted-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Exploratory and Scripted Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-exploratory-and-scripted-testing-what" onclick="event.stopPropagation()"></a></h4>
@@ -1636,14 +1637,14 @@
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                         <blockquote>
-                          <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon.
-                            But before that, let us give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                          <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; you need to look at them soon.
+                            But before that, you should give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, you have a major problem and this has to be made known to the development team sooner rather than later...”</p>
                         </blockquote>
                       </box>
                       <box>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                       </box>
-                      <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                      <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer="" size="" modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                         <div>
                           <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                         </div>
@@ -1651,7 +1652,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -1714,7 +1715,7 @@
               </div>
               <p><span id="W11-3c"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/exploratoryVsScriptedTesting/when" id="quality-assurance-testing-exploratory-and-scripted-testing-when">
+              <panel type="seamless" expanded="" popup-url="/website/book/testing/testingTypes/exploratoryVsScriptedTesting/when" id="quality-assurance-testing-exploratory-and-scripted-testing-when">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.3c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-testing-exploratory-and-scripted-testing-when"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Exploratory and Scripted Testing →</span></span></small> <strong><span>When</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-exploratory-and-scripted-testing-when" onclick="event.stopPropagation()"></a></h4>
@@ -1735,7 +1736,7 @@
                         <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations benefit from a mix of scripted and exploratory approaches.
                           --<span trigger="click" for="modal:ExploratoryWhen-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ExploratoryWhen-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span></p>
                       </blockquote>
-                      <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                      <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer="" size="" modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                         <div>
                           <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                         </div>
@@ -1743,7 +1744,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -1775,10 +1776,10 @@
               </div>
               <p><span id="W11-3d"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/introduction/positiveVsNegative" id="quality-assurance-test-case-design-introduction-positive-vs-negative-test-cases">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/introduction/positiveVsNegative" id="quality-assurance-test-case-design-introduction-positive-versus-negative-test-cases">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.3d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="quality-assurance-test-case-design-introduction-positive-vs-negative-test-cases"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Introduction →</span></span></small> <strong><span>Positive vs Negative Test Cases</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-introduction-positive-vs-negative-test-cases" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="quality-assurance-test-case-design-introduction-positive-versus-negative-test-cases"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Introduction →</span></span></small> <strong><span>Positive versus negative test cases</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-introduction-positive-versus-negative-test-cases" onclick="event.stopPropagation()"></a></h4>
                 </span>
                 <div>
                   <div class="indented">
@@ -1791,10 +1792,10 @@
                     <div>
                       <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider testing of the method <code>print(Integer i)</code> which prints the value of <code>i</code>.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider testing of the method <code v-pre="">print(Integer i)</code> which prints the value of <code v-pre="">i</code>.</p>
                         <ul>
-                          <li>A positive test case: <code>i == new Integer(50)</code></li>
-                          <li>A negative test case: <code>i == null;</code></li>
+                          <li>A positive test case: <code v-pre="">i == new Integer(50)</code></li>
+                          <li>A negative test case: <code v-pre="">i == null;</code></li>
                         </ul>
                       </box>
                     </div>
@@ -1818,10 +1819,10 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/introduction/blackVsGlass" id="quality-assurance-test-case-design-introduction-black-box-vs-glass-box">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/introduction/blackVsGlass" id="quality-assurance-test-case-design-introduction-black-box-versus-glass-box">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.3e</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="quality-assurance-test-case-design-introduction-black-box-vs-glass-box"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Introduction →</span></span></small> <strong><span>Black Box vs Glass Box</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-introduction-black-box-vs-glass-box" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="quality-assurance-test-case-design-introduction-black-box-versus-glass-box"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Introduction →</span></span></small> <strong><span>Black box versus glass box</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-introduction-black-box-versus-glass-box" onclick="event.stopPropagation()"></a></h4>
                 </span>
                 <div>
                   <div class="indented">
@@ -1850,13 +1851,13 @@
                         <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
                         <tabs>
                           <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box vs White-box testing</template>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                           </tab>
                           <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box testing example</template>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                           </tab>
                           <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> White-box testing example</template>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                           </tab>
                         </tabs>
                       </panel>
@@ -1871,10 +1872,10 @@
               </div>
               <p><span id="W11-3f"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/more/testingUseCases" id="quality-assurance-test-case-design-testing-based-on-use-cases">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/more/testingUseCases" id="quality-assurance-test-case-design-testing-based-on-use-cases">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.3f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="quality-assurance-test-case-design-testing-based-on-use-cases"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design →</span></span></small> <strong><span>Testing Based on Use Cases</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-testing-based-on-use-cases" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="quality-assurance-test-case-design-testing-based-on-use-cases"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design →</span></span></small> <strong><span>Testing based on use cases</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-testing-based-on-use-cases" onclick="event.stopPropagation()"></a></h4>
                 </span>
                 <div>
                   <div class="indented">
@@ -1885,9 +1886,9 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary values. The combinations of these could result in one use case producing many test cases.</p>
+                      <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do not specify the exact data entered into the system. Instead, it might say something like <code v-pre="">user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary values. The combinations of these could result in one use case producing many test cases.</p>
                       <p>To increase <span trigger="click" for="modal:usebaseBased-EandE" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usebaseBased-EandE'].show()" class="trigger-click">E&amp;E of testing</span>, high-priority use cases are given more attention. For example, a <span trigger="click" for="modal:usecaseBased-scripted" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usecaseBased-scripted'].show()" class="trigger-click">scripted approach</span> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-                      <b-modal id="modal:usebaseBased-EandE" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usebaseBased-EandE"><template slot="modal-title">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
+                      <b-modal id="modal:usebaseBased-EandE" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:usebaseBased-EandE" class="algolia-no-index"><template slot="modal-title">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
                         <div>
                           <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong> In particular:</p>
                           <ul>
@@ -1898,10 +1899,10 @@
                               <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                             </li>
                           </ul>
-                          <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                          <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test you add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
                         </div>
                       </b-modal>
-                      <b-modal id="modal:usecaseBased-scripted" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usecaseBased-scripted"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                      <b-modal id="modal:usecaseBased-scripted" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:usecaseBased-scripted" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                         <div>
                           <div></div>
                           <p></p>
@@ -1926,14 +1927,14 @@
                                 <box>
                                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                                   <blockquote>
-                                    <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon.
-                                      But before that, let us give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                                    <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; you need to look at them soon.
+                                      But before that, you should give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, you have a major problem and this has to be made known to the development team sooner rather than later...”</p>
                                   </blockquote>
                                 </box>
                                 <box>
                                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                                 </box>
-                                <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                                <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer="" size="" modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                                   <div>
                                     <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                                   </div>
@@ -1941,7 +1942,7 @@
                               </div>
                               <div>
                                 <div>
-                                  <panel expandable class="algolia-no-index"><template slot="_header">
+                                  <panel expandable="" class="algolia-no-index"><template slot="_header">
                                       <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                     </template>
                                     <div>
@@ -2025,7 +2026,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w11-4-equivalence-partitioning">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w11-4-equivalence-partitioning">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w11-4-equivalence-partitioning"><span class="dimmed">[W11.4]</span> <strong>Equivalence Partitioning</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-4-equivalence-partitioning" onclick="event.stopPropagation()"></a></h2>
@@ -2043,7 +2044,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/equivalencePartitions/what" id="quality-assurance-test-case-design-equivalence-partitions-what">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/equivalencePartitions/what" id="quality-assurance-test-case-design-equivalence-partitions-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.4a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-equivalence-partitions-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Equivalence Partitions →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-equivalence-partitions-what" onclick="event.stopPropagation()"></a></h4>
@@ -2060,10 +2061,10 @@
                       <p>Consider the testing of the following operation.</p>
                       <box>
                         <div id="isValidMonth">
-                          <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
+                          <p><code v-pre="">isValidMonth(m)</code> : returns <code v-pre="">true</code> if <code v-pre="">m</code> (and <code v-pre="">int</code>) is in the range [1..12]</p>
                         </div>
                       </box>
-                      <p>It is inefficient and impractical to test this method for all integer values <code>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code>233</code> failed to produce the correct result, the input <code>234</code> is likely to fail too; there is no need to test both.</p>
+                      <p>It is inefficient and impractical to test this method for all integer values <code v-pre="">[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code v-pre="">233</code> failed to produce the correct result, the input <code v-pre="">234</code> is likely to fail too; there is no need to test both.</p>
                       <p>In general, <strong>most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways.</strong> That means a range of inputs is treated the same way inside the SUT.
                         <strong><em>Equivalence partitioning (EP)</em> is a test case design technique that uses the above observation to improve the E&amp;E of testing.</strong></p>
                       <box type="definition">
@@ -2071,7 +2072,7 @@
                           <p><strong>Equivalence partition (aka equivalence class)</strong>: A group of test inputs that are likely to be processed by the SUT in the same way.</p>
                         </div>
                       </box>
-                      <p><strong>By dividing possible inputs into equivalence partitions we can,</strong></p>
+                      <p><strong>By dividing possible inputs into equivalence partitions you can,</strong></p>
                       <ul>
                         <li><strong>avoid testing too many inputs from one partition.</strong> Testing too many inputs from the same partition is unlikely to find new bugs. This increases the efficiency of testing by reducing redundant test cases.</li>
                         <li><strong>ensure all partitions are tested.</strong> Missing partitions can result in bugs going unnoticed. This increases the effectiveness of testing by increasing the chance of finding bugs.</li>
@@ -2096,7 +2097,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/equivalencePartitions/basic" id="quality-assurance-test-case-design-equivalence-partitions-basic">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/equivalencePartitions/basic" id="quality-assurance-test-case-design-equivalence-partitions-basic">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.4b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-equivalence-partitions-basic"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Equivalence Partitions →</span></span></small> <strong><span>Basic</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-equivalence-partitions-basic" onclick="event.stopPropagation()"></a></h4>
@@ -2114,53 +2115,53 @@
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> These could be EPs for the <span for="pop:epBasic-isValidMonth" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:epBasic-isValidMonth'].show()" class="trigger">isValidMonth</span> example:</p>
                         <ul>
-                          <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
-                          <li>[1 … 12] : the range that produces <code>true</code></li>
-                          <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
+                          <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code v-pre="">true</code> (produces <code v-pre="">false</code>)</li>
+                          <li>[1 … 12] : the range that produces <code v-pre="">true</code></li>
+                          <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code v-pre="">true</code> (produces <code v-pre="">false</code>)</li>
                         </ul>
                       </box>
-                      <span id="pop:epBasic-isValidMonth" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><code>isValidMonth</code></span>
+                      <span id="pop:epBasic-isValidMonth" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><code v-pre="">isValidMonth</code></span>
                         <div data-mb-html-for="content">
                           <div>
-                            <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
+                            <p><code v-pre="">isValidMonth(m)</code> : returns <code v-pre="">true</code> if <code v-pre="">m</code> (and <code v-pre="">int</code>) is in the range [1..12]</p>
                           </div>
                         </div>
                       </span>
                       <p>When the SUT has multiple inputs, you should identify EPs for each input.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code>duplicate(String s, int n): String</code> which returns a <code>String</code> that contains <code>s</code> repeated <code>n</code> times.</p>
-                        <p>Example EPs for <code>s</code>:</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code v-pre="">duplicate(String s, int n): String</code> which returns a <code v-pre="">String</code> that contains <code v-pre="">s</code> repeated <code v-pre="">n</code> times.</p>
+                        <p>Example EPs for <code v-pre="">s</code>:</p>
                         <ul>
                           <li>zero-length strings</li>
                           <li>string containing whitespaces</li>
                           <li>...</li>
                         </ul>
-                        <p>Example EPs for <code>n</code>:</p>
+                        <p>Example EPs for <code v-pre="">n</code>:</p>
                         <ul>
-                          <li><code>0</code></li>
+                          <li><code v-pre="">0</code></li>
                           <li>negative values</li>
                           <li>...</li>
                         </ul>
                       </box>
                       <p>An EP may not have adjacent values.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code>isPrime(int i): boolean</code> that returns true if <code>i</code> is a prime number.</p>
-                        <p>EPs for <code>i</code>:</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code v-pre="">isPrime(int i): boolean</code> that returns true if <code v-pre="">i</code> is a prime number.</p>
+                        <p>EPs for <code v-pre="">i</code>:</p>
                         <ul>
                           <li>prime numbers</li>
                           <li>non-prime numbers</li>
                         </ul>
                       </box>
-                      <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases we have to consider each value as a partition by itself.</p>
+                      <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases you have to consider each value as a partition by itself.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code>showStatusMessage(GameStatus s): String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code> is an <code>enum</code>). In this case, each possible value for <code>s</code> will have to be considered as a partition.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code v-pre="">showStatusMessage(GameStatus s): String</code> that returns a unique <code v-pre="">String</code> for each of the possible value of s (<code v-pre="">GameStatus</code> is an <code v-pre="">enum</code>). In this case, each possible value for <code v-pre="">s</code> will have to be considered as a partition.</p>
                       </box>
                       <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’ the SUT to behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method EPs given above for the <code>isValidMonth</code>. A different tester might use these EPs instead:</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method EPs given above for the <code v-pre="">isValidMonth</code>. A different tester might use these EPs instead:</p>
                         <ul>
-                          <li>[1 … 12] : the range that produces <code>true</code></li>
-                          <li>[all other integers] : the range that produces <code>false</code></li>
+                          <li>[1 … 12] : the range that produces <code v-pre="">true</code></li>
+                          <li>[all other integers] : the range that produces <code v-pre="">false</code></li>
                         </ul>
                       </box>
                       <box>
@@ -2172,21 +2173,21 @@
                           </tr>
                           <tr>
                             <td>
-                              <p><code>isValidFlag(String s): boolean</code><br>
-                                Returns <code>true</code> if s is one of [<code>&quot;F&quot;</code>, <code>&quot;T&quot;</code>, <code>&quot;D&quot;</code>]. The comparison is case-sensitive.</p>
+                              <p><code v-pre="">isValidFlag(String s): boolean</code><br>
+                                Returns <code v-pre="">true</code> if s is one of [<code v-pre="">&quot;F&quot;</code>, <code v-pre="">&quot;T&quot;</code>, <code v-pre="">&quot;D&quot;</code>]. The comparison is case-sensitive.</p>
                             </td>
                             <td>
-                              <p>[<code>&quot;F&quot;</code>] [<code>&quot;T&quot;</code>] [<code>&quot;D&quot;</code>] [<code>&quot;f&quot;</code>, <code>&quot;t&quot;</code>, <code>&quot;d&quot;</code>] [any other string][null]</p>
+                              <p>[<code v-pre="">&quot;F&quot;</code>] [<code v-pre="">&quot;T&quot;</code>] [<code v-pre="">&quot;D&quot;</code>] [<code v-pre="">&quot;f&quot;</code>, <code v-pre="">&quot;t&quot;</code>, <code v-pre="">&quot;d&quot;</code>] [any other string][null]</p>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <p><code>squareRoot(String s): int</code><br>
+                              <p><code v-pre="">squareRoot(String s): int</code><br>
                                 Pre-conditions: s represents a positive integer<br>
-                                Returns the square root of <code>s</code> if the square root is an integer; returns <code>0</code> otherwise.</p>
+                                Returns the square root of <code v-pre="">s</code> if the square root is an integer; returns <code v-pre="">0</code> otherwise.</p>
                             </td>
                             <td>
-                              <p>[<code>s</code> is not a valid number] [<code>s</code> is a negative integer] [<code>s</code> has an integer square root] [<code>s</code> does not have an integer square root]</p>
+                              <p>[<code v-pre="">s</code> is not a valid number] [<code v-pre="">s</code> is a negative integer] [<code v-pre="">s</code> has an integer square root] [<code v-pre="">s</code> does not have an integer square root]</p>
                             </td>
                           </tr>
                         </table>
@@ -2194,18 +2195,18 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
                             <panel class="algolia-no-index"><template slot="_header">
-                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> EPs for <code>isValidName</code> method</p>
+                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> EPs for <code v-pre="">isValidName</code> method</p>
                               </template>
                               <question>
                                 <p>Consider this SUT:</p>
                                 <box>
-                                  <p><code>isValidName (String s): boolean</code></p>
-                                  <p>Description: returns true if <code>s</code> is not <code>null</code> and not longer than 50 characters.</p>
+                                  <p><code v-pre="">isValidName (String s): boolean</code></p>
+                                  <p>Description: returns true if <code v-pre="">s</code> is not <code v-pre="">null</code> and not longer than 50 characters.</p>
                                 </box>
                                 <p>A. Which one of these is least likely to be an equivalence partition for the parameter s of the isValidName method given below?</p>
                                 <ul radio-group="4c6ed" class="radio-list">
@@ -2242,7 +2243,7 @@
               </div>
               <p><span id="W11-4c"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/equivalencePartitions/intermediate" id="quality-assurance-test-case-design-equivalence-partitions-intermediate">
+              <panel type="seamless" expanded="" popup-url="/website/book/testCaseDesign/equivalencePartitions/intermediate" id="quality-assurance-test-case-design-equivalence-partitions-intermediate">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.4c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-equivalence-partitions-intermediate"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Equivalence Partitions →</span></span></small> <strong><span>Intermediate</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-equivalence-partitions-intermediate" onclick="event.stopPropagation()"></a></h4>
@@ -2256,51 +2257,51 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <p>When deciding EPs of OOP methods, we need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
+                      <p>When deciding EPs of OOP methods, you need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
                       <ul>
                         <li>the target object of the method call</li>
                         <li>input parameters of the method call</li>
                         <li>other data/objects accessed by the method such as global variables. This category may not be applicable if using the black box approach (because the test case designer using the black box approach will not know how the method is implemented)</li>
                       </ul>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this method in the <code>DataStack</code> class:
-                          <code>push(Object o): boolean</code></p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this method in the <code v-pre="">DataStack</code> class:
+                          <code v-pre="">push(Object o): boolean</code></p>
                         <ul>
                           <li>Adds o to the top of the stack if the stack is not full.</li>
-                          <li>returns <code>true</code> if the push operation was a success.</li>
+                          <li>returns <code v-pre="">true</code> if the push operation was a success.</li>
                           <li>throws
                             <ul>
-                              <li><code>MutabilityException</code> if the global flag <code>FREEZE==true</code>.</li>
-                              <li><code>InvalidValueException</code> if o is null.</li>
+                              <li><code v-pre="">MutabilityException</code> if the global flag <code v-pre="">FREEZE==true</code>.</li>
+                              <li><code v-pre="">InvalidValueException</code> if o is null.</li>
                             </ul>
                           </li>
                         </ul>
                         <p>EPs:</p>
                         <ul>
-                          <li><code>DataStack</code> object: [full] [not full]</li>
-                          <li><code>o</code>: [null] [not null]</li>
-                          <li><code>FREEZE</code>: [true][false]</li>
+                          <li><code v-pre="">DataStack</code> object: [full] [not full]</li>
+                          <li><code v-pre="">o</code>: [null] [not null]</li>
+                          <li><code v-pre="">FREEZE</code>: [true][false]</li>
                         </ul>
                       </box>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a simple Minesweeper app. What are the EPs for the <code>newGame()</code> method of the <code>Logic</code> component?</p>
-                        <p>As <code>newGame()</code> does not have any parameters, the only obvious participant is the <code>Logic</code> object itself.</p>
-                        <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code>Minefield</code> object can be considered as another participant of the <code>newGame()</code> method. Here, the black-box approach is assumed.</p>
-                        <p>Next, let us identify equivalence partitions for each participant. Will the <code>newGame()</code> method behave differently for different <code>Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently based on the game state. Therefore, the equivalence partitions are:</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a simple Minesweeper app. What are the EPs for the <code v-pre="">newGame()</code> method of the <code v-pre="">Logic</code> component?</p>
+                        <p>As <code v-pre="">newGame()</code> does not have any parameters, the only obvious participant is the <code v-pre="">Logic</code> object itself.</p>
+                        <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code v-pre="">Minefield</code> object can be considered as another participant of the <code v-pre="">newGame()</code> method. Here, the black-box approach is assumed.</p>
+                        <p>Next, let us identify equivalence partitions for each participant. Will the <code v-pre="">newGame()</code> method behave differently for different <code v-pre="">Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently based on the game state. Therefore, the equivalence partitions are:</p>
                         <ul>
-                          <li><code>PRE_GAME</code> : before the game starts, minefield does not exist yet</li>
-                          <li><code>READY</code> : a new minefield has been created and waiting for player’s first move</li>
-                          <li><code>IN_PLAY</code> : the current minefield is already in use</li>
-                          <li><code>WON</code>, <code>LOST</code> : let us assume the <code>newGame</code> behaves the same way for these two values</li>
+                          <li><code v-pre="">PRE_GAME</code> : before the game starts, minefield does not exist yet</li>
+                          <li><code v-pre="">READY</code> : a new minefield has been created and waiting for player’s first move</li>
+                          <li><code v-pre="">IN_PLAY</code> : the current minefield is already in use</li>
+                          <li><code v-pre="">WON</code>, <code v-pre="">LOST</code> : let us assume the <code v-pre="">newGame</code> behaves the same way for these two values</li>
                         </ul>
                       </box>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Logic</code> component of the Minesweeper application. What are the EPs for the <code>markCellAt(int x, int y)</code> method?. The partitions in <strong>bold</strong> represent valid inputs.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code v-pre="">Logic</code> component of the Minesweeper application. What are the EPs for the <code v-pre="">markCellAt(int x, int y)</code> method?. The partitions in <strong>bold</strong> represent valid inputs.</p>
                         <ul>
-                          <li><code>Logic</code>: PRE_GAME, <strong>READY</strong>, <strong>IN_PLAY</strong>, WON, LOST</li>
-                          <li><code>x</code>: [MIN_INT..-1] <strong>[0..(W-1)]</strong> [W..MAX_INT] <span class="dimmed">(we assume a minefield size of WxH)</span></li>
-                          <li><code>y</code>: [MIN_INT..-1] <strong>[0..(H-1)]</strong> [H..MAX_INT]</li>
-                          <li><code>Cell</code> at <code>(x,y)</code>: <strong>HIDDEN</strong>, MARKED, CLEARED</li>
+                          <li><code v-pre="">Logic</code>: PRE_GAME, <strong>READY</strong>, <strong>IN_PLAY</strong>, WON, LOST</li>
+                          <li><code v-pre="">x</code>: [MIN_INT..-1] <strong>[0..(W-1)]</strong> [W..MAX_INT] <span class="dimmed">(assuming a minefield size of WxH)</span></li>
+                          <li><code v-pre="">y</code>: [MIN_INT..-1] <strong>[0..(H-1)]</strong> [H..MAX_INT]</li>
+                          <li><code v-pre="">Cell</code> at <code v-pre="">(x,y)</code>: <strong>HIDDEN</strong>, MARKED, CLEARED</li>
                         </ul>
                       </box>
                     </div>
@@ -2351,7 +2352,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

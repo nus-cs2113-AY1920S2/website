@@ -38,25 +38,25 @@
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="running-a-program"><span>Running a Program</span><a class="fa fa-anchor" href="#running-a-program" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="running-a-program"><span>Running a program</span><a class="fa fa-anchor" href="#running-a-program" onclick="event.stopPropagation()"></a></h4>
                 </div>
                 <div id="main">
                   <div>
-                    <p>To run the HelloWorld program, in a command console, run the following command from the folder containing <code>HelloWorld.class</code> file.</p>
+                    <p>To run the HelloWorld program, in a command console, run the following command from the folder containing <code v-pre="">HelloWorld.class</code> file.</p>
                     <p>
-                      <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>java HelloWorld</code>
+                      <smal><span class="badge badge-secondary">&gt;_</span></smal> <code v-pre="">java HelloWorld</code>
                     </p>
                     <p>Notes:</p>
                     <ul>
-                      <li><code>java</code> in the command above refers to the Java interpreter installed in your computer.</li>
-                      <li>Similar to <code>javac</code>, your console should be able to find the java executable.</li>
+                      <li><code v-pre="">java</code> in the command above refers to the Java interpreter installed in your computer.</li>
+                      <li>Similar to <code v-pre="">javac</code>, your console should be able to find the java executable.</li>
                     </ul>
                     <p>When you run a Java program, you can encounter a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">so-called because it does not appear until after the program has started running</span>run-time error</span>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains what happened and where.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, modify the HelloWorld code to include the following line, compile it again, and run it.</p>
-                      <pre><code class="hljs java"><span>System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);<br></span></code></pre>
+                      <pre><code class="hljs java" v-pre=""><span>System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);<br></span></code></pre>
                       <p>You should get a message like this:</p>
-                      <pre><code class="hljs sh"><span>Exception <span class="hljs-keyword">in</span> thread <span class="hljs-string">"main"</span> java.lang.ArithmeticException: / by zero<br></span><span>    at Hello.main(Hello.java:5)<br></span></code></pre>
+                      <pre><code class="hljs sh" v-pre=""><span>Exception <span class="hljs-keyword">in</span> thread <span class="hljs-string">"main"</span> java.lang.ArithmeticException: / by zero<br></span><span>    at Hello.main(Hello.java:5)<br></span></code></pre>
                     </box>
                     <p><strong>Integrated Development Environments (IDEs)</strong> can automate the intermediate step of compiling. They usually have a <span style="color:green"><span aria-hidden="true" class="fas fa-play-circle"></span></span> <em>Run</em> button which compiles the code first and then runs it.</p>
                     <p>Example IDEs:</p>
@@ -68,12 +68,12 @@
                   </div>
                   <div>
                     <div>
-                      <panel expanded><template slot="_header">
+                      <panel expanded=""><template slot="_header">
                           <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                         </template>
                         <div>
                           <div>
-                            <panel type="dark" expanded id="key-exercise-run-helloworld"><template slot="_header">
+                            <panel type="dark" expanded="" id="key-exercise-run-helloworld"><template slot="_header">
                                 <h3 id="key-exercise-run-helloworld"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] Run HelloWorld</small></small><a class="fa fa-anchor" href="#key-exercise-run-helloworld" onclick="event.stopPropagation()"></a></h3>
                               </template>
                               <question>

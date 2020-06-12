@@ -36,7 +36,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="what">
+                  <panel type="seamless" expanded="" id="what">
                     <span slot="header" class="card-title">
                       <div>
                         <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
@@ -61,7 +61,7 @@
                           </ul>
                         </box>
                         <p>Given below are two common refactorings (<span trigger="click" for="modal:refactoring-catalog-what" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:refactoring-catalog-what'].show()" class="trigger-click">more</span>).</p>
-                        <b-modal id="modal:refactoring-catalog-what" hide-footer size modal-class="mb-zoom" ref="modal:refactoring-catalog-what"><template slot="modal-title"><strong>Refactoring Catalogs</strong></template>
+                        <b-modal id="modal:refactoring-catalog-what" hide-footer="" size="" modal-class="mb-zoom" ref="modal:refactoring-catalog-what" class="algolia-no-index"><template slot="modal-title"><strong>Refactoring Catalogs</strong></template>
                           <div>
                             <ul>
                               <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
@@ -79,11 +79,11 @@
                               <table>
                                 <tr>
                                   <td valign="top">
-                                    <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isSpecialDeal()) {<br></span><span>    total = price * <span class="hljs-number">0.95</span>;<br></span><span>    send();<br></span><span>} <span class="hljs-keyword">else</span> {<br></span><span>    total = price * <span class="hljs-number">0.98</span>;<br></span><span>    send();<br></span><span>}<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">if</span> (isSpecialDeal()) {<br></span><span>    total = price * <span class="hljs-number">0.95</span>;<br></span><span>    send();<br></span><span>} <span class="hljs-keyword">else</span> {<br></span><span>    total = price * <span class="hljs-number">0.98</span>;<br></span><span>    send();<br></span><span>}<br></span></code></pre>
                                   </td>
                                   <td valign="center">&nbsp;→&nbsp;</td>
                                   <td valign="top">
-                                    <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isSpecialDeal()){<br></span><span>    total = price * <span class="hljs-number">0.95</span>;<br></span><span>} <span class="hljs-keyword">else</span> {<br></span><span>    total = price * <span class="hljs-number">0.98</span>;<br></span><span>}<br></span><span>send();<br></span><span><br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">if</span> (isSpecialDeal()){<br></span><span>    total = price * <span class="hljs-number">0.95</span>;<br></span><span>} <span class="hljs-keyword">else</span> {<br></span><span>    total = price * <span class="hljs-number">0.98</span>;<br></span><span>}<br></span><span>send();<br></span><span><br></span></code></pre>
                                   </td>
                                 </tr>
                               </table>
@@ -94,11 +94,11 @@
                               <table>
                                 <tr>
                                   <td valign="top">
-                                    <pre><code class="hljs python"><span><span class="hljs-keyword">if</span> is_special_deal:<br></span><span>    total = price * <span class="hljs-number">0.95</span><br></span><span>    send()<br></span><span><span class="hljs-keyword">else</span>:<br></span><span>    total = price * <span class="hljs-number">0.98</span><br></span><span>    send()<br></span></code></pre>
+                                    <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">if</span> is_special_deal:<br></span><span>    total = price * <span class="hljs-number">0.95</span><br></span><span>    send()<br></span><span><span class="hljs-keyword">else</span>:<br></span><span>    total = price * <span class="hljs-number">0.98</span><br></span><span>    send()<br></span></code></pre>
                                   </td>
                                   <td valign="center">&nbsp;→&nbsp;</td>
                                   <td valign="top">
-                                    <pre><code class="hljs python"><span><span class="hljs-keyword">if</span> is_special_deal:<br></span><span>    total = price * <span class="hljs-number">0.95</span><br></span><span><span class="hljs-keyword">else</span>:<br></span><span>    total = price * <span class="hljs-number">0.98</span><br></span><span>    <br></span><span>send()<br></span></code></pre>
+                                    <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">if</span> is_special_deal:<br></span><span>    total = price * <span class="hljs-number">0.95</span><br></span><span><span class="hljs-keyword">else</span>:<br></span><span>    total = price * <span class="hljs-number">0.98</span><br></span><span>    <br></span><span>send()<br></span></code></pre>
                                   </td>
                                 </tr>
                               </table>
@@ -112,16 +112,16 @@
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
                           <div class="alt-java">
                             <div>
-                              <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{<br></span><span>    printBanner();<br></span><span><br></span><span>    <span class="hljs-comment">//print details</span><br></span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);<br></span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());<br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{<br></span><span>    printBanner();<br></span><span><br></span><span>    <span class="hljs-comment">//print details</span><br></span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);<br></span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());<br></span><span>}<br></span></code></pre>
                               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-                              <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{<br></span><span>    printBanner();<br></span><span>    printDetails(getOutstanding());<br></span><span>}<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printDetails</span> <span class="hljs-params">(<span class="hljs-keyword">double</span> outstanding)</span> </span>{<br></span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);<br></span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);<br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{<br></span><span>    printBanner();<br></span><span>    printDetails(getOutstanding());<br></span><span>}<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printDetails</span> <span class="hljs-params">(<span class="hljs-keyword">double</span> outstanding)</span> </span>{<br></span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);<br></span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);<br></span><span>}<br></span></code></pre>
                             </div>
                           </div>
                           <div class="alt-python">
                             <div>
-                              <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span><br></span><span>    print_banner()<br></span><span><br></span><span>    //<span class="hljs-keyword">print</span> details<br></span><span>    print(<span class="hljs-string">"name:	"</span> + name)<br></span><span>    print(<span class="hljs-string">"amount	"</span> + get_outstanding())<br></span></code></pre>
+                              <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span><br></span><span>    print_banner()<br></span><span><br></span><span>    //<span class="hljs-keyword">print</span> details<br></span><span>    print(<span class="hljs-string">"name:	"</span> + name)<br></span><span>    print(<span class="hljs-string">"amount	"</span> + get_outstanding())<br></span></code></pre>
                               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-                              <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span><br></span><span>    print_banner()<br></span><span>    print_details(get_outstanding())<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_details</span><span class="hljs-params">(amount)</span>:</span><br></span><span>    print(<span class="hljs-string">"name:	"</span> + name)<br></span><span>    print(<span class="hljs-string">"amount	"</span> + amount)<br></span></code></pre>
+                              <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span><br></span><span>    print_banner()<br></span><span>    print_details(get_outstanding())<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_details</span><span class="hljs-params">(amount)</span>:</span><br></span><span>    print(<span class="hljs-string">"name:	"</span> + name)<br></span><span>    print(<span class="hljs-string">"amount	"</span> + amount)<br></span></code></pre>
                             </div>
                           </div>
                         </box>
@@ -132,7 +132,7 @@
                       </div>
                       <div>
                         <div>
-                          <panel expandable class="algolia-no-index"><template slot="_header">
+                          <panel expandable="" class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                             </template>
                             <div>
@@ -164,14 +164,14 @@
                                 </template>
                                 <question has-input="true">
                                   <p>Do you agree with the following statement? Justify your answer.</p>
-                                  <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
+                                  <p>Statement: <code v-pre="">Whenever you refactor code to fix bugs, you need not do regression testing if the bug fix was minor.</code></p>
                                   <div slot="hint" class="algolia-no-index">
                                     <p>There are two flaws in the given statement.</p>
                                   </div>
                                   <div slot="answer" class="algolia-no-index">
                                     <p>DISAGREE.</p>
                                     <ol>
-                                      <li>Even a minor change can have major repercussions on the system. We MUST do regression testing after each change, no matter how minor it is.</li>
+                                      <li>Even a minor change can have major repercussions on the system. You MUST do regression testing after each change, no matter how minor it is.</li>
                                       <li>Fixing bugs is technically not refactoring.</li>
                                     </ol>
                                   </div>
@@ -182,7 +182,7 @@
                               <panel class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Refactoring</p>
                                 </template>
-                                <question has-input>
+                                <question has-input="">
                                   <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
                                 </question>
                               </panel>
@@ -194,7 +194,7 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="how">
+                  <panel type="seamless" expanded="" id="how">
                     <span slot="header" class="card-title">
                       <div>
                         <h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how" onclick="event.stopPropagation()"></a></h4>
@@ -207,7 +207,7 @@
                       <p></p>
                       <div>
                         <p>Given below are some more commonly used refactorings. A more comprehensive list is available at <span trigger="click" for="modal:refactoring-catalog-how" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:refactoring-catalog-how'].show()" class="trigger-click"> refactoring-catalog </span>.</p>
-                        <b-modal id="modal:refactoring-catalog-how" hide-footer size modal-class="mb-zoom" ref="modal:refactoring-catalog-how"><template slot="modal-title"><strong>Refactoring Catalog</strong></template>
+                        <b-modal id="modal:refactoring-catalog-how" hide-footer="" size="" modal-class="mb-zoom" ref="modal:refactoring-catalog-how" class="algolia-no-index"><template slot="modal-title"><strong>Refactoring Catalog</strong></template>
                           <div>
                             <ul>
                               <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
@@ -235,7 +235,7 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="when">
+                  <panel type="seamless" expanded="" id="when">
                     <span slot="header" class="card-title">
                       <div>
                         <h4 id="when"><span>When</span><a class="fa fa-anchor" href="#when" onclick="event.stopPropagation()"></a></h4>
@@ -247,11 +247,11 @@
                       <p></p>
                       <p></p>
                       <div>
-                        <p>We know that it is important to refactor frequently so as to avoid the accumulation of ‘messy’ code which might get out of control. But how much refactoring is too much refactoring? <strong>It is too much refactoring when the benefits no longer justify the cost.</strong> The costs and the benefits depend on the context. That is why some refactorings are ‘opposites’ of each other (e.g. <a href="https://refactoring.com/catalog/extractMethod.html"><em>extract method</em></a> vs <a href="https://refactoring.com/catalog/inlineMethod.html"><em>inline method</em></a>).</p>
+                        <p>You know that it is important to refactor frequently so as to avoid the accumulation of ‘messy’ code which might get out of control. But how much refactoring is too much refactoring? <strong>It is too much refactoring when the benefits no longer justify the cost.</strong> The costs and the benefits depend on the context. That is why some refactorings are ‘opposites’ of each other (e.g. <a href="https://refactoring.com/catalog/extractMethod.html"><em>extract method</em></a> vs <a href="https://refactoring.com/catalog/inlineMethod.html"><em>inline method</em></a>).</p>
                       </div>
                       <div>
                         <div>
-                          <panel expandable class="algolia-no-index"><template slot="_header">
+                          <panel expandable="" class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                             </template>
                             <div>

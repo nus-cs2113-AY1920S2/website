@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -118,16 +119,16 @@
               <h4 id="2-practice-peer-evaluation-on-teammates-by-sunday-feb-16th"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Practice peer evaluation on TEAMMATES</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Sunday (Feb 16th)</span></span><a class="fa fa-anchor" href="#2-practice-peer-evaluation-on-teammates-by-sunday-feb-16th" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
-                  <li>You should receive the submission link by Monday noon. Email <code>cs2113@comp.nus.edu.sg</code> if you did not receive the submission link on time.</li>
+                  <li>You should receive the submission link by Monday noon. Email <code v-pre="">cs2113@comp.nus.edu.sg</code> if you did not receive the submission link on time.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Introduction <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
                       <p>This module leverages peer feedback/evaluations in many ways. In particular, we do several rounds of peer evaluations using TEAMMATES.</p>
                       <div class="indented-level1">
-                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → TEAMMATES <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -139,7 +140,7 @@
                               <p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation:</strong></span>
                                 When the first feedback session is opne on TEAMMATES, you will receive an eamil from TEAMMATES. There is nothing for you to do until then.</p>
                               <p>When you do receive that email, TEAMMATES will allow you to access it without using a Google login. However, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a <span trigger="click" for="modal:peerEvaluations-suitablePhoto" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:peerEvaluations-suitablePhoto'].show()" class="trigger-click">suitable profile photo</span>. <span class="dimmed">Reason: CS2113/T is a big class. This profile helps us to remember you better, even after the module is over.</span></p>
-                              <b-modal id="modal:peerEvaluations-suitablePhoto" hide-footer size modal-class="mb-zoom" ref="modal:peerEvaluations-suitablePhoto"><template slot="modal-title"><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Website (extract)</span></template>
+                              <b-modal id="modal:peerEvaluations-suitablePhoto" hide-footer="" size="" modal-class="mb-zoom" ref="modal:peerEvaluations-suitablePhoto" class="algolia-no-index"><template slot="modal-title"><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Website (extract)</span></template>
                                   <div>
                                   <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
                                     <img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
@@ -159,12 +160,12 @@
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Session: Practice Peer Evaluation <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
                       <div>
-                        <h3 id="session-practice-peer-evaluation">Session: <code>Practice Peer Evaluation</code><a class="fa fa-anchor" href="#session-practice-peer-evaluation" onclick="event.stopPropagation()"></a></h3>
+                        <h3 id="session-practice-peer-evaluation">Session: <code v-pre="">Practice Peer Evaluation</code><a class="fa fa-anchor" href="#session-practice-peer-evaluation" onclick="event.stopPropagation()"></a></h3>
                         <ul>
                           <li>Objective: to give you a chance to familiarize with the TEAMMATES tool</li>
                           <li>Held early in the semester</li>
@@ -176,7 +177,7 @@
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type="primary" class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="primary" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module Policies → Policy on Deadline Extensions</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -196,7 +197,7 @@
           </div>
           <h4 id="other-info-relevant-to-this-week"><span class="badge badge-pill badge-dark p-2"><big><big>+</big></big></span> Other info relevant to this week:<a class="fa fa-anchor" href="#other-info-relevant-to-this-week" onclick="event.stopPropagation()"></a></h4>
           <div class="indented-level2">
-            <panel type minimized class="algolia-no-index">
+            <panel type="" minimized="" class="algolia-no-index">
               <span slot="header" class="card-title"> Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP: Grading <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
               <div>
                 <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. CS2113T projects will be assessed separately from CS2113 projects. Given below is the marking scheme.</p>
@@ -214,12 +215,12 @@
                     <li>tutors (based on product demo and user guide)</li>
                     <li>peers from other teams (based on peer testing and user guide)</li>
                   </ul>
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Product Design</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
                       <p>
-                        <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Quality of the product design,</strong><br>
+                        <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Quality of the product design,</strong><br>
                         Evaluate based on the User Guide and the actual product behavior.
                       </p>
                       <div class="table-responsive">
@@ -235,21 +236,21 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td><code>target user</code></td>
+                              <td><code v-pre="">target user</code></td>
                               <td>not specified</td>
                               <td></td>
                               <td></td>
                               <td>clearly specified and narrowed down appropriately</td>
                             </tr>
                             <tr>
-                              <td><code>value proposition</code></td>
+                              <td><code v-pre="">value proposition</code></td>
                               <td>not specified</td>
                               <td>The value to target user is low. App is not worth using</td>
                               <td>Some small group of target users might find the app worth using</td>
                               <td>Most of the target users are likely to find the app worth using</td>
                             </tr>
                             <tr>
-                              <td><code>optimized for target user</code></td>
+                              <td><code v-pre="">optimized for target user</code></td>
                               <td></td>
                               <td>Not enough focus for CLI users</td>
                               <td>Mostly CLI-based, but cumbersome to use most of the time</td>
@@ -271,7 +272,7 @@
                     </div>
                   </box>
                   <box type="tip">
-                    <p>Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, <mark>the bar you need to reach to get full 5 marks will be quite low</mark>. For example, the <code>Medium</code> level in the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of <em>excessive</em> 'feature flaw' bugs will affect the score.
+                    <p>Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, <mark>the bar you need to reach to get full 5 marks will be quite low</mark>. For example, the <code v-pre="">Medium</code> level in the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of <em>excessive</em> 'feature flaw' bugs will affect the score.
                     </p>
                   </box>
                 </div>
@@ -314,21 +315,21 @@
                   <li>This is evaluated by peers who tested your product, and tutors.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Question used for Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
                       <p>
-                        <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong><br>
+                        <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong><br>
                         <mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark><br>
                         The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.<br>
                         Use the person's PPP and RepoSense page to evaluate the effort.
                       </p>
-                      <ul radio-group="82a77" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> Unable to judge</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> Significantly less than a typical iP</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> Slightly less than a typical iP</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> At least as much as a typical iP</label></li>
+                      <ul radio-group="5b0e7" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="5b0e7" type="radio"> Unable to judge</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="5b0e7" type="radio"> Significantly less than a typical iP</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="5b0e7" type="radio"> Slightly less than a typical iP</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="5b0e7" type="radio"> At least as much as a typical iP</label></li>
                       </ul>
                     </div>
                   </panel>
@@ -338,24 +339,24 @@
                   <li>The score could be further moderated by this question answered by team members.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
                       <p>
-                        <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong>
+                        <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong>
                       </p>
                       <div>
                         <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                            <p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p>
+                            <p>Uses the <code v-pre="">Equal Share +/- N%</code> scale for the answer</p>
                           </template>
                           <ul radio-group="c5570" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
                             <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
                           </ul>
                         </panel>
                       </div>
@@ -374,7 +375,7 @@
                   <li>functionality bugs in your work found by others during the <a href="/website/admin/tp-deliverables.html#deliverable-practical-exam">Practical Exam (PE)</a></li>
                   <li>your test code <span class="dimmed">(note <span trigger="click" for="modal:projectGradingQA-testingExpectations" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectGradingQA-testingExpectations'].show()" class="trigger-click">our expectations for automated testing</span>)</span></li>
                 </ol>
-                <b-modal id="modal:projectGradingQA-testingExpectations" hide-footer size="lg" modal-class="mb-zoom" ref="modal:projectGradingQA-testingExpectations"><template slot="modal-title">Our expectations for automated testing in the project</template>
+                <b-modal id="modal:projectGradingQA-testingExpectations" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:projectGradingQA-testingExpectations" class="algolia-no-index"><template slot="modal-title">Our expectations for automated testing in the project</template>
                     <div>
                     <ul>
                       <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
@@ -406,8 +407,8 @@
                       <li>Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.</li>
                       <li>The penalty/credit for a bug varies based on,
                         <ul>
-                          <li>The severity of the bug: <code>severity.High</code> &gt; <code>severity.Medium</code> &gt; <code>severity.Low</code> &gt; <code>severity.VeryLow</code></li>
-                          <li>The type of the bug: <code>type.FunctionalityBug</code> &gt; <code>type.DocumentationBug</code> &gt; <code>type.FeatureFlaw</code></li>
+                          <li>The severity of the bug: <code v-pre="">severity.High</code> &gt; <code v-pre="">severity.Medium</code> &gt; <code v-pre="">severity.Low</code> &gt; <code v-pre="">severity.VeryLow</code></li>
+                          <li>The type of the bug: <code v-pre="">type.FunctionalityBug</code> &gt; <code v-pre="">type.DocumentationBug</code> &gt; <code v-pre="">type.FeatureFlaw</code></li>
                         </ul>
                       </li>
                       <li>The penalty for a bug is divided equally among assignees.</li>
@@ -416,8 +417,8 @@
                       <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
                       <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
                         <ul>
-                          <li><code>n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
-                          <li><code>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
+                          <li><code v-pre="">n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
+                          <li><code v-pre="">n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
                         </ul>
                       </li>
                       <li>You don't need to find <em>all</em> bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
@@ -436,40 +437,40 @@
                     <li>Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.</li>
                   </ul>
                   <div class="indented-level2">
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for User Guide</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                       </template>
                       <div>
                         <p>
-                          <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,</strong><br>
+                          <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,</strong><br>
                           Evaluate based on fit-for-purpose, from the perspective of a target user.
                           For reference, the AB3 UG is <a href="https://se-education.org/addressbook-level3/UserGuide.html">here</a>.<br>
                         </p>
-                        <ul radio-group="5de96" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Significantly lower</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Slightly lower</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Similar</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Higher</label></li>
+                        <ul radio-group="1da21" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1da21" type="radio"> Significantly lower</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1da21" type="radio"> Slightly lower</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1da21" type="radio"> Similar</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1da21" type="radio"> Higher</label></li>
                         </ul>
                       </div>
                     </panel>
                   </div>
                   <p></p>
                   <div class="indented-level2">
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Deliverables → PE → <mark>Grading Instructions for Developer Guide</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                       </template>
                       <div>
                         <p>
-                          <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AB3, the overall quality of the DG you evaluated is,</strong><br>
+                          <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AB3, the overall quality of the DG you evaluated is,</strong><br>
                           Evaluate based on fit-for-purpose from the perspective of a new team member trying to understand the product's internal design by reading the DG.
                           For reference, the AB3 DG is <a href="https://se-education.org/addressbook-level3/DeveloperGuide.html">here</a>.<br>
                         </p>
-                        <ul radio-group="46156" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Significantly lower</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Slightly lower</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Similar</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Higher</label></li>
+                        <ul radio-group="d0a98" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="d0a98" type="radio"> Significantly lower</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="d0a98" type="radio"> Slightly lower</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="d0a98" type="radio"> Similar</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="d0a98" type="radio"> Higher</label></li>
                         </ul>
                       </div>
                     </panel>
@@ -479,24 +480,24 @@
                     <li>Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.</li>
                   </ul>
                   <div class="indented-level2">
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the UG</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                       </template>
                       <div>
                         <p>
-                          <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the User Guide is,</strong>
+                          <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the User Guide is,</strong>
                         </p>
                         <span id="equalShareScale">
                           <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                              <p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p>
+                              <p>Uses the <code v-pre="">Equal Share +/- N%</code> scale for the answer</p>
                             </template>
                             <ul radio-group="070b7" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code v-pre="">Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code v-pre="">Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code v-pre="">Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> ...</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code v-pre="">Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code v-pre="">Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
                             </ul>
                           </panel>
                         </span>
@@ -505,24 +506,24 @@
                   </div>
                   <p></p>
                   <div class="indented-level2">
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating the Contribution to the DG</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                       </template>
                       <div>
                         <p>
-                          <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the Developer Guide is,</strong>
+                          <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the Developer Guide is,</strong>
                         </p>
                         <div>
                           <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                              <p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p>
+                              <p>Uses the <code v-pre="">Equal Share +/- N%</code> scale for the answer</p>
                             </template>
                             <ul radio-group="c5570" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
                             </ul>
                           </panel>
                         </div>
@@ -693,7 +694,7 @@
                   <p><big><strong>5B. Team-tasks:</strong></big></p>
                   <p><strong>Evaluates:</strong> How much you contributed to team-tasks</p>
                   <div class="indented-level1">
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: Examples of team-tasks <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                       </template>
                       <div>
@@ -720,14 +721,14 @@
               </div>
             </panel>
             <p></p>
-            <panel type minimized class="algolia-no-index">
+            <panel type="" minimized="" class="algolia-no-index">
               <span slot="header" class="card-title"> Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Apdx B (Policies) → Policy on project work distribution <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
               <div>
                 <h3 id="policy-on-project-work-distribution">Policy on project work distribution <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#policy-on-project-work-distribution" onclick="event.stopPropagation()"></a></h3>
                 <div class="indented">
                   <div>
                     <p>As most of the work is graded individually, it is OK to do less or more than equal share in your project team.</p>
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: from each student <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                       </template>
                       <div>
@@ -837,7 +838,7 @@
               </div>
             </panel>
             <p></p>
-            <panel type minimized class="algolia-no-index">
+            <panel type="" minimized="" class="algolia-no-index">
               <span slot="header" class="card-title"> Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Apdx B (Policies) → Policy on email response time <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
               <div>
                 <h3 id="policy-on-email-response-time">Policy on email response time <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#policy-on-email-response-time" onclick="event.stopPropagation()"></a></h3>
@@ -845,7 +846,7 @@
                   <div>
                     <p><strong>Normally, the prof will respond within 24 hours</strong> if it was an email sent to the prof or a forum post directed at the prof. If you don't get a response within that time, <strong>please feel free to remind the prof</strong>. It is likely that the prof did not notice your post or the email got stuck somewhere.</p>
                     <p>Similarly we expect you to check email regularly and respond to emails written to you personally (not mass email) promptly.</p>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p>Email etiquette: ALWAYS respond to direct emails</p>
                       </template>
                       <p>Not responding to a personal email is a major breach of professional etiquette (and general civility). Imagine how pissed off you would be if you met the prof along the corridor, said 'Hi prof, good morning' and the prof walked away without saying anything back. Not responding to a personal email is just as bad. Always take a few seconds to at least acknowledge such emails.  It doesn't take long to type &quot;Noted. Thanks&quot; and hit 'send'.</p>
@@ -856,7 +857,7 @@
               </div>
             </panel>
             <p></p>
-            <panel type minimized class="algolia-no-index">
+            <panel type="" minimized="" class="algolia-no-index">
               <span slot="header" class="card-title"> Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Apdx C (FAQs) → Why so much bean counting? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></span>
               <div>
                 <h3 id="why-so-much-bean-counting-optional">Why so much bean counting? <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><a class="fa fa-anchor" href="#why-so-much-bean-counting-optional" onclick="event.stopPropagation()"></a></h3>
@@ -892,7 +893,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

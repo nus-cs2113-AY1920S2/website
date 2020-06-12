@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -113,37 +114,37 @@
                   <li>Submission will open on Sunday morning (after the final submission deadline).</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding" expanded><template slot="_header">
+                  <panel type="" class="embedding" expanded=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Session: Final Peer Evaluation <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
                       <div>
-                        <h3 id="session-final-peer-evaluation">Session: <code>Final Peer Evaluation</code><a class="fa fa-anchor" href="#session-final-peer-evaluation" onclick="event.stopPropagation()"></a></h3>
+                        <h3 id="session-final-peer-evaluation">Session: <code v-pre="">Final Peer Evaluation</code><a class="fa fa-anchor" href="#session-final-peer-evaluation" onclick="event.stopPropagation()"></a></h3>
                         <ul>
                           <li>Held soon after the final project submission.</li>
                           <li>This peer evaluation is compulsory. Not only it will count for weekly participation, <mark>those who don't submit will not get a chance to rebut peer evaluations received</mark>.</li>
                           <li>This session includes all questions from the Midterm Peer Evaluation:</li>
                         </ul>
                         <div class="indented-level2">
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                          <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                               <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Session: Midterm Peer Evaluation Questions <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                             </template>
                             <div>
                               <div id="teamMemberEvaluation-ug">
                                 <p>
-                                  <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the User Guide is,</strong>
+                                  <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the User Guide is,</strong>
                                 </p>
                                 <span id="equalShareScale">
                                   <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                                      <p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p>
+                                      <p>Uses the <code v-pre="">Equal Share +/- N%</code> scale for the answer</p>
                                     </template>
                                     <ul radio-group="070b7" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code v-pre="">Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code v-pre="">Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code v-pre="">Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
                                       <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> ...</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code v-pre="">Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code v-pre="">Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
                                     </ul>
                                   </panel>
                                 </span>
@@ -151,19 +152,19 @@
                               <p></p>
                               <div id="teamMemberEvaluation-dg">
                                 <p>
-                                  <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the Developer Guide is,</strong>
+                                  <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the Developer Guide is,</strong>
                                 </p>
                                 <div>
                                   <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                                      <p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p>
+                                      <p>Uses the <code v-pre="">Equal Share +/- N%</code> scale for the answer</p>
                                     </template>
                                     <ul radio-group="c5570" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
                                       <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
                                     </ul>
                                   </panel>
                                 </div>
@@ -171,19 +172,19 @@
                               <p></p>
                               <div id="teamMemberEvaluation-teamTasks">
                                 <p>
-                                  <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the team-based tasks is,</strong>
+                                  <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the team-based tasks is,</strong>
                                 </p>
                                 <div>
                                   <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                                      <p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p>
+                                      <p>Uses the <code v-pre="">Equal Share +/- N%</code> scale for the answer</p>
                                     </template>
                                     <ul radio-group="c5570" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
                                       <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
                                     </ul>
                                   </panel>
                                 </div>
@@ -191,19 +192,19 @@
                               <p></p>
                               <div id="teamMemberEvaluation-implementation">
                                 <p>
-                                  <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong>
+                                  <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong>
                                 </p>
                                 <div>
                                   <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                                      <p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p>
+                                      <p>Uses the <code v-pre="">Equal Share +/- N%</code> scale for the answer</p>
                                     </template>
                                     <ul radio-group="c5570" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
                                       <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> ...</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="c5570" type="radio"> <code v-pre="">Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
                                     </ul>
                                   </panel>
                                 </div>
@@ -211,10 +212,10 @@
                               <p></p>
                               <div id="teamMemberEvaluation-conduct">
                                 <p>
-                                  <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' conduct in the project and during tutorials,</strong>
+                                  <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' conduct in the project and during tutorials,</strong>
                                 </p>
                                 <ul>
-                                  <li>Evaluated based on the following criteria, on a scale <code>Poor</code>/<code>Below Average</code>/<code>Average</code>/<code>Good</code>/<code>Excellent</code>:</li>
+                                  <li>Evaluated based on the following criteria, on a scale <code v-pre="">Poor</code>/<code v-pre="">Below Average</code>/<code v-pre="">Average</code>/<code v-pre="">Good</code>/<code v-pre="">Excellent</code>:</li>
                                 </ul>
                                 <div class="indented-level2">
                                   <box background-color="white" border-color="grey" border-left-color="#28a745">
@@ -245,11 +246,11 @@
                               <p></p>
                               <div id="teamMemberEvaluation-competency">
                                 <p>
-                                  <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The competency of the team member demonstrated in the project and during the tutorials,</strong>
+                                  <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The competency of the team member demonstrated in the project and during the tutorials,</strong>
                                 </p>
                                 <ul>
                                   <li>Considered only for bonus marks, A+ grades, and tutor recruitment</li>
-                                  <li>Evaluated based on the following criteria, on a scale <code>Poor</code>/<code>Below Average</code>/<code>Average</code>/<code>Good</code>/<code>Excellent</code>:</li>
+                                  <li>Evaluated based on the following criteria, on a scale <code v-pre="">Poor</code>/<code v-pre="">Below Average</code>/<code v-pre="">Average</code>/<code v-pre="">Good</code>/<code v-pre="">Excellent</code>:</li>
                                 </ul>
                                 <div class="indented-level2">
                                   <box background-color="white" border-color="grey" border-left-color="#28a745">
@@ -263,11 +264,11 @@
                                   </box>
                                 </div>
                                 <p>
-                                  <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any ANONYMOUS feedback you want to give the classmates you reviewed above?</strong>
+                                  <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any ANONYMOUS feedback you want to give the classmates you reviewed above?</strong>
                                 </p>
                                 <p></p>
                                 <p>
-                                  <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any CONFIDENTIAL comments about any team members?</strong>
+                                  <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Any CONFIDENTIAL comments about any team members?</strong>
                                 </p>
                                 <p></p>
                               </div>
@@ -280,7 +281,7 @@
                         </ul>
                         <box>
                           <p>
-                            <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Do you agree with the contributions claimed by team members, as stated in their PPP?</strong>
+                            <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Do you agree with the contributions claimed by team members, as stated in their PPP?</strong>
                           </p>
                           <p></p>
                         </box>
@@ -314,7 +315,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

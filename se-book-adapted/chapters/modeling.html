@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -83,120 +84,178 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/website/se-book-adapted/index.html" class="site-nav__a">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
-                </ul>
-              </div>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/index.html">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Software Engineering</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Programming Paradigms</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open"><strong>Design</strong>
-                <i class="dropdown-btn-icon rotate-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/modeling.html" class="site-nav__a current">Modeling</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/architecture.html" class="site-nav__a">Software Architecture</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designPatterns.html" class="site-nav__a">Software Design Patterns</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designApproaches.html" class="site-nav__a">Design Approaches</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Requirements</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/requirements.html">Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Implementation</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Design</strong>
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/design.html">Software Design</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/modeling.html" class="current">Modeling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/architecture.html">Software Architecture</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Implementation</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/ides.html">IDEs</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/codeQuality.html">Code Quality</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/refactoring.html">Refactoring</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/documentation.html">Documentation</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/errorHandling.html">Error Handling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/integration.html">Integration</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/reuse.html">Reuse</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Quality Assurance</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/testing.html">Testing</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Principles</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/principles.html" class="site-nav__a">Principles</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Project Management</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/revisionControl.html">Revision Control</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/teamwork.html">Teamwork</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/intellij.html" class="site-nav__a">Intellij IDEA</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/gitAndGithub.html" class="site-nav__a">Git and Github</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Principles</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/principles.html">Principles</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn">Supplementary
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/cppToJava.html" class="site-nav__a">C++ to Java</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/projectDuke/index.html" class="site-nav__a">Project Duke</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Tools</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/uml.html">UML</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">Supplementary
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/cppToJava.html">C++ to Java</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/projectDuke/index.html">Project Duke</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/common/exercises.html">Combined Exercises</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/common/definitions.html">List of Definitions</a></div>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -211,13 +270,13 @@
               <h1 id="modeling"><span>Modeling</span><a class="fa fa-anchor" href="#modeling" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded id="introduction">
+          <panel type="seamless" expanded="" id="introduction">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what"><template slot="_header">
+            <panel type="seamless" expanded="" id="what"><template slot="_header">
                 <h4 id="what">What<a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -232,13 +291,13 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <span trigger="click" for="modal:modellingIntro-classDiagram" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-classDiagram'].show()" class="trigger-click">class diagram</span> is a model that represents a software design.</p>
                   </box>
-                  <b-modal id="modal:modellingIntro-classDiagram" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-classDiagram"><template slot="modal-title">Class diagrams</template>
+                  <b-modal id="modal:modellingIntro-classDiagram" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-classDiagram" class="algolia-no-index"><template slot="modal-title">Class diagrams</template>
                     <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
                       <span><span aria-hidden="true" class="fas fa-cube"></span></span> An example class diagram:<br></p>
                     <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
                   </b-modal>
                   <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are <span trigger="click" for="modal:modellingIntro-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-abstraction'].show()" class="trigger-click">abstractions</span>.</p>
-                  <b-modal id="modal:modellingIntro-abstraction" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-abstraction"><template slot="modal-title"><span class="dimmed">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></span></template>
+                  <b-modal id="modal:modellingIntro-abstraction" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-abstraction" class="algolia-no-index"><template slot="modal-title"><span class="dimmed">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></span></template>
                     <div>
                       <div></div>
                       <p></p>
@@ -258,16 +317,16 @@
                             <p><strong>The guiding principle of abstraction is that only details that are relevant to the current perspective or the task at hand needs to be considered.</strong> As most programs are written to solve complex problems involving large amounts of intricate details, it is impossible to deal with all these details at the same time. That is where abstraction can help.</p>
                             <p><strong><mark><em>Data abstraction</em></mark>: abstracting away the lower level data items and thinking in terms of bigger entities</strong></p>
                             <box>
-                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
+                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Within a certain software component, you might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
                             </box>
                             <p><strong><mark><em>Control abstraction</em></mark>: abstracting away details of the actual control flow to focus on tasks at a higher level</strong></p>
                             <box>
-                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre="">print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
                             </box>
                             <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
                             <box>
-                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
-                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of data abstraction: a <code v-pre="">File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of control abstraction: <code v-pre="">execute(Game)</code> is at a higher level than <code v-pre="">print(Char)</code> which is at a higher than an Assembly language instruction <code v-pre="">MOV</code>.</p>
                             </box>
                             <p><strong>Abstraction is a general concept that is not limited to just data or control abstractions.</strong></p>
                             <box>
@@ -295,7 +354,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="how"><template slot="_header">
+            <panel type="seamless" expanded="" id="how"><template slot="_header">
                 <h4 id="how">How<a class="fa fa-anchor" href="#how" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -315,7 +374,7 @@
                       <li>When planning a software solution, models can be created to figure out how the solution is to be built. An <span trigger="click" for="modal:modelingIntro-archiDiagrams" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modelingIntro-archiDiagrams'].show()" class="trigger-click">architecture diagram</span> is such a model.</li>
                     </ol>
                   </box>
-                  <b-modal id="modal:modelingIntro-archiDiagrams" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modelingIntro-archiDiagrams"><template slot="modal-title">Architecture Diagrams</template>
+                  <b-modal id="modal:modelingIntro-archiDiagrams" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:modelingIntro-archiDiagrams" class="algolia-no-index"><template slot="modal-title">Architecture Diagrams</template>
                     <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
                     <div>
                       <box>
@@ -347,7 +406,7 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of using models to communicate:</p>
                     <ol>
-                      <li>We can use an architecture diagram to explain the high-level design of the software to developers.</li>
+                      <li>You can use an architecture diagram to explain the high-level design of the software to developers.</li>
                       <li>A business analyst can use a <em>use case diagram</em> to explain to the customer the functionality of the system.</li>
                       <li>A <em>class diagram</em> can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
                     </ol>
@@ -375,7 +434,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -415,7 +474,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="uml-models"><template slot="_header">
+            <panel type="seamless" expanded="" id="uml-models"><template slot="_header">
                 <h4 id="uml-models">UML Models<a class="fa fa-anchor" href="#uml-models" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -427,7 +486,7 @@
                 <p></p>
                 <div>
                   <p>The following diagram uses the class diagram notation to show the different types of <span trigger="click" for="modal:umlModels-uml" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:umlModels-uml'].show()" class="trigger-click">UML</span> diagrams.</p>
-                  <b-modal id="modal:umlModels-uml" hide-footer size="lg" modal-class="mb-zoom" ref="modal:umlModels-uml"><template slot="modal-title">UML (Unified Modeling Language)</template>
+                  <b-modal id="modal:umlModels-uml" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:umlModels-uml" class="algolia-no-index"><template slot="modal-title">UML (Unified Modeling Language)</template>
                     <div>
                       <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                     </div>
@@ -441,13 +500,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="modeling-structures">
+          <panel type="seamless" expanded="" id="modeling-structures">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="modeling-structures"><span>Modeling Structures</span><a class="fa fa-anchor" href="#modeling-structures" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="modeling-structures"><span>Modeling structures</span><a class="fa fa-anchor" href="#modeling-structures" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="oo-structures"><template slot="_header">
+            <panel type="seamless" expanded="" id="oo-structures"><template slot="_header">
                 <h4 id="oo-structures">OO Structures<a class="fa fa-anchor" href="#oo-structures" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -474,7 +533,7 @@
                   </box>
                   <p>However, object structures do not change at random; they change based on a set of rules, as was decided by the designer of that software. Those <strong>rules that object structures need to follow can be illustrated as a <em>class structure</em></strong> <span class="dimmed">i.e. a structure that exists among the relevant classes</span>.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is a class structure (drawn using an ad-hoc notation) that matches the object structures given in the previous two examples. For example, note how this class structure does not allow any connection between <code>Genre</code> objects and <code>Author</code> objects, a rule followed by the two object structures above.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is a class structure (drawn using an ad-hoc notation) that matches the object structures given in the previous two examples. For example, note how this class structure does not allow any connection between <code v-pre="">Genre</code> objects and <code v-pre="">Author</code> objects, a rule followed by the two object structures above.</p>
                     <p><img src="/website/book/modeling/modelingStructures/ooStructures/images/classesAdHoc.png" width="500"></p>
                     <p></p>
                     <p></p>
@@ -497,7 +556,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="class-diagrams-basics"><template slot="_header">
+            <panel type="seamless" expanded="" id="class-diagrams-basics"><template slot="_header">
                 <h4 id="class-diagrams-basics">Class Diagrams (Basics)<a class="fa fa-anchor" href="#class-diagrams-basics" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -589,7 +648,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -631,9 +690,9 @@
                             </template>
                             <question>
                               <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
-                              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];<br></span><span>    <span class="hljs-keyword">private</span> Item spareItem;<br></span><span>    <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span><br></span><span>    <span class="hljs-keyword">private</span> Box outerBox;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">open</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
-                              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;<br></span><span>}<br></span></code></pre>
-                              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{<br></span><span>    Box box; <span class="hljs-comment">// the box for which this is the lid</span><br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];<br></span><span>    <span class="hljs-keyword">private</span> Item spareItem;<br></span><span>    <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span><br></span><span>    <span class="hljs-keyword">private</span> Box outerBox;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">open</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;<br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{<br></span><span>    Box box; <span class="hljs-comment">// the box for which this is the lid</span><br></span><span>}<br></span></code></pre>
                             </question>
                           </panel>
                         </div>
@@ -643,7 +702,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="adding-more-info-to-uml-models"><template slot="_header">
+            <panel type="seamless" expanded="" id="adding-more-info-to-uml-models"><template slot="_header">
                 <h4 id="adding-more-info-to-uml-models">Adding More Info to UML Models<a class="fa fa-anchor" href="#adding-more-info-to-uml-models" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -656,7 +715,7 @@
                 <div>
                   <p><strong>UML notes can be used to add more info to any UML model.</strong></p>
                   <p>
-                    <panel src="/website/book/uml/notes/notes/unit-inElsewhere-asFlat._include_.html#title-and-body" expanded fragment="title-and-body"><template slot="_header">
+                    <panel src="/website/book/uml/notes/notes/unit-inElsewhere-asFlat._include_.html#title-and-body" expanded="" fragment="title-and-body"><template slot="_header">
                         <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Notes</p>
                       </template></panel>
                   </p>
@@ -664,7 +723,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="class-diagrams-intermediate"><template slot="_header">
+            <panel type="seamless" expanded="" id="class-diagrams-intermediate"><template slot="_header">
                 <h4 id="class-diagrams-intermediate">Class Diagrams - Intermediate<a class="fa fa-anchor" href="#class-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -775,7 +834,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -788,20 +847,20 @@
                               <img src="/website/book/modeling/modelingStructures/classDiagramsIntermediate/images/mismatch.png" height="290">
                               <p></p>
                               <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Snake</code> must belong to at least one <code>Board</code>.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A <code>SnakeHeadSquare</code> can contain only one <code>Snake</code> head.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code>Square</code> can contain a <code>Snake</code> head.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Snake</code> head can be in more than one <code>SnakeHeadSquare</code></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. The <code>Board</code> has exactly 5 <code>Snake</code>s.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code v-pre="">Snake</code> must belong to at least one <code v-pre="">Board</code>.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A <code v-pre="">SnakeHeadSquare</code> can contain only one <code v-pre="">Snake</code> head.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code v-pre="">Square</code> can contain a <code v-pre="">Snake</code> head.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code v-pre="">Snake</code> head can be in more than one <code v-pre="">SnakeHeadSquare</code></li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. The <code v-pre="">Board</code> has exactly 5 <code v-pre="">Snake</code>s.</li>
                               </ul>
                               <div slot="answer" class="algolia-no-index">
                                 <p><s>(a)</s>(b)(c)(d)(e)</p>
                                 <p>Explanation:</p>
-                                <p>(a) does not match because a <code>Snake</code> may or may not belong to a <code>Board</code> (multiplicity is <code>0..1</code>)<br>
-                                  (b) matches the diagram because the multiplicity given in <code>1</code><br>
-                                  (c) matches the diagram because <code>SnakeHeadSquare</code> is a <code>Square</code> (due to inheritance)<br>
-                                  (d) matches the diagram because the multiplicity given is <code>*</code><br>
-                                  (e) matches the diagram because the multiplicity given in <code>5</code><br></p>
+                                <p>(a) does not match because a <code v-pre="">Snake</code> may or may not belong to a <code v-pre="">Board</code> (multiplicity is <code v-pre="">0..1</code>)<br>
+                                  (b) matches the diagram because the multiplicity given in <code v-pre="">1</code><br>
+                                  (c) matches the diagram because <code v-pre="">SnakeHeadSquare</code> is a <code v-pre="">Square</code> (due to inheritance)<br>
+                                  (d) matches the diagram because the multiplicity given is <code v-pre="">*</code><br>
+                                  (e) matches the diagram because the multiplicity given in <code v-pre="">5</code><br></p>
                               </div>
                             </question>
                           </panel>
@@ -818,24 +877,24 @@
                         </div>
                         <div>
                           <panel class="algolia-no-index"><template slot="_header">
-                              <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Class Diagram for the code (<code>StokItem</code>, <code>Inventory</code>, <code>Review</code> etc.)</p>
+                              <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Class Diagram for the code (<code v-pre="">StokItem</code>, <code v-pre="">Inventory</code>, <code v-pre="">Review</code> etc.)</p>
                             </template>
                             <question>
                               <p>Consider the code below:</p>
                               <div class="row">
                                 <div class="col-sm-6">
-                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre>
-                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span><br></span><span><span class="hljs-class">         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre>
-                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> Review review;<br></span><span>    <span class="hljs-keyword">private</span> String name;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(</span></span><br></span><span><span class="hljs-function"><span class="hljs-params">        String name, Rating rating)</span></span>{<br></span><span><br></span><span>        <span class="hljs-keyword">this</span>.name = name;<br></span><span>        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span><br></span><span><span class="hljs-class">         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> Review review;<br></span><span>    <span class="hljs-keyword">private</span> String name;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(</span></span><br></span><span><span class="hljs-function"><span class="hljs-params">        String name, Rating rating)</span></span>{<br></span><span><br></span><span>        <span class="hljs-keyword">this</span>.name = name;<br></span><span>        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
                                 </div>
                                 <div class="col-sm-6">
-                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {<br></span><span>    GOOD, OK, POOR<br></span><span>}<br></span></code></pre>
-                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.rating = rating;<br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                  <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.List;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-keyword">return</span> items.size();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{<br></span><span>        items.add(s);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {<br></span><span>    GOOD, OK, POOR<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.rating = rating;<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">import</span> java.util.List;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-keyword">return</span> items.size();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{<br></span><span>        items.add(s);<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                 </div>
                               </div>
                               <p>(a) Draw a class diagram to represent the code. Show all attributes, methods, associations, navigabilities, visibilities, known multiplicities, and association roles. Show associations as lines.<br>
-                                (b) Draw an object diagram to represent the situation where the inventory has one item with a name <code>spanner</code> and a review of <code>POOR</code> rating.</p>
+                                (b) Draw an object diagram to represent the situation where the inventory has one item with a name <code v-pre="">spanner</code> and a review of <code v-pre="">POOR</code> rating.</p>
                             </question>
                           </panel>
                         </div>
@@ -845,7 +904,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="class-diagrams-advanced"><template slot="_header">
+            <panel type="seamless" expanded="" id="class-diagrams-advanced"><template slot="_header">
                 <h4 id="class-diagrams-advanced">Class Diagrams - Advanced<a class="fa fa-anchor" href="#class-diagrams-advanced" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -872,7 +931,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -880,10 +939,10 @@
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> draw class diagram: Player, Bot, etc.</p>
                           </template>
                           <p>(a) Draw a class diagram to represent the following code.</p>
-                          <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Player</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Trainable</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">train</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span><span><br></span><span><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bot</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Player</span></span>{<br></span><span><br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TrainableBot</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Bot</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Trainable</span></span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span> </span>{<br></span><span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">train</span><span class="hljs-params">()</span> </span>{<br></span><span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Human</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Player</span></span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span> </span>{<br></span><span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Player</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Trainable</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">train</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span><span><br></span><span><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bot</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Player</span></span>{<br></span><span><br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TrainableBot</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Bot</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Trainable</span></span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span> </span>{<br></span><span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">train</span><span class="hljs-params">()</span> </span>{<br></span><span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Human</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Player</span></span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span> </span>{<br></span><span><br></span><span>    }<br></span><span>}<br></span></code></pre>
                           <p>(b) Add these association classes to the diagram:<br>
-                            i. A <code>Player</code> can <em>challenge</em> another <code>Player</code> object. <code>Challenge</code> class keeps track that association between the two <code>Player</code> objects: the <em>challenger</em> and the <em>target</em> of the challenge.<br>
-                            ii. A <code>Human</code> can <em>train</em> a <code>SmartBot</code> object. <code>Lesson</code> class keeps track of that association.</p>
+                            i. A <code v-pre="">Player</code> can <em>challenge</em> another <code v-pre="">Player</code> object. <code v-pre="">Challenge</code> class keeps track that association between the two <code v-pre="">Player</code> objects: the <em>challenger</em> and the <em>target</em> of the challenge.<br>
+                            ii. A <code v-pre="">Human</code> can <em>train</em> a <code v-pre="">SmartBot</code> object. <code v-pre="">Lesson</code> class keeps track of that association.</p>
                           <p>(c) Convert the two association classes to normal classes.</p>
                           <panel class="algolia-no-index"><template slot="_header">
                               <p>🔑 (a)</p>
@@ -914,7 +973,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="object-diagrams"><template slot="_header">
+            <panel type="seamless" expanded="" id="object-diagrams"><template slot="_header">
                 <h4 id="object-diagrams">Object Diagrams<a class="fa fa-anchor" href="#object-diagrams" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -948,7 +1007,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -964,9 +1023,9 @@
                                   </template>
                                   <question>
                                     <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
-                                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];<br></span><span>    <span class="hljs-keyword">private</span> Item spareItem;<br></span><span>    <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span><br></span><span>    <span class="hljs-keyword">private</span> Box outerBox;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">open</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
-                                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;<br></span><span>}<br></span></code></pre>
-                                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{<br></span><span>    Box box; <span class="hljs-comment">// the box for which this is the lid</span><br></span><span>}<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];<br></span><span>    <span class="hljs-keyword">private</span> Item spareItem;<br></span><span>    <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span><br></span><span>    <span class="hljs-keyword">private</span> Box outerBox;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">open</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;<br></span><span>}<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{<br></span><span>    Box box; <span class="hljs-comment">// the box for which this is the lid</span><br></span><span>}<br></span></code></pre>
                                   </question>
                                 </panel>
                               </div>
@@ -980,7 +1039,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="object-oriented-domain-models"><template slot="_header">
+            <panel type="seamless" expanded="" id="object-oriented-domain-models"><template slot="_header">
                 <h4 id="object-oriented-domain-models">Object Oriented Domain Models<a class="fa fa-anchor" href="#object-oriented-domain-models" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1008,7 +1067,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -1058,7 +1117,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="deployment-diagrams"><template slot="_header">
+            <panel type="seamless" expanded="" id="deployment-diagrams"><template slot="_header">
                 <h4 id="deployment-diagrams">Deployment Diagrams<a class="fa fa-anchor" href="#deployment-diagrams" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1080,7 +1139,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="component-diagrams"><template slot="_header">
+            <panel type="seamless" expanded="" id="component-diagrams"><template slot="_header">
                 <h4 id="component-diagrams">Component Diagrams<a class="fa fa-anchor" href="#component-diagrams" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1101,7 +1160,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="package-diagrams"><template slot="_header">
+            <panel type="seamless" expanded="" id="package-diagrams"><template slot="_header">
                 <h4 id="package-diagrams">Package Diagrams<a class="fa fa-anchor" href="#package-diagrams" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1122,7 +1181,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="composite-structure-diagrams"><template slot="_header">
+            <panel type="seamless" expanded="" id="composite-structure-diagrams"><template slot="_header">
                 <h4 id="composite-structure-diagrams">Composite Structure Diagrams<a class="fa fa-anchor" href="#composite-structure-diagrams" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1145,13 +1204,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="modeling-behaviors">
+          <panel type="seamless" expanded="" id="modeling-behaviors">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="modeling-behaviors"><span>Modeling Behaviors</span><a class="fa fa-anchor" href="#modeling-behaviors" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="modeling-behaviors"><span>Modeling behaviors</span><a class="fa fa-anchor" href="#modeling-behaviors" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="activity-diagrams-basic"><template slot="_header">
+            <panel type="seamless" expanded="" id="activity-diagrams-basic"><template slot="_header">
                 <h4 id="activity-diagrams-basic">Activity Diagrams - Basic<a class="fa fa-anchor" href="#activity-diagrams-basic" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1202,7 +1261,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -1222,7 +1281,7 @@
                               <p></p>
                               <div slot="answer" class="algolia-no-index">
                                 <p>(iv)</p>
-                                <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
+                                <p>Explanation: <code v-pre="">-e-f-</code> and <code v-pre="">-g-</code> are parallel paths. Both paths should complete before the execution reaches <code v-pre="">c</code> again.</p>
                               </div>
                             </question>
                           </panel>
@@ -1239,7 +1298,7 @@
                                 <li>In the meantime, the customer pays for the order. If the customer has a voucher, she pays using the voucher; otherwise she pays using cash.</li>
                                 <li>After paying, the customer collects the food after all three parts of the order are ready.</li>
                               </ul>
-                              <panel type="seamless" minimized class="algolia-no-index"><template slot="_header">
+                              <panel type="seamless" minimized="" class="algolia-no-index"><template slot="_header">
                                   <p>Example Activity Diagram</p>
                                 </template>
                                 <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
@@ -1254,7 +1313,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="activity-diagrams-intermediate"><template slot="_header">
+            <panel type="seamless" expanded="" id="activity-diagrams-intermediate"><template slot="_header">
                 <h4 id="activity-diagrams-intermediate">Activity Diagrams - Intermediate<a class="fa fa-anchor" href="#activity-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1283,7 +1342,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="sequence-diagrams-basic"><template slot="_header">
+            <panel type="seamless" expanded="" id="sequence-diagrams-basic"><template slot="_header">
                 <h4 id="sequence-diagrams-basic">Sequence Diagrams - Basic<a class="fa fa-anchor" href="#sequence-diagrams-basic" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1330,7 +1389,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -1346,20 +1405,20 @@
                         </div>
                         <div>
                           <panel class="algolia-no-index"><template slot="_header">
-                              <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Sequence Diagram for the code (<code>PersonList</code>, <code>Person</code>, <code>Tag</code>)</p>
+                              <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Sequence Diagram for the code (<code v-pre="">PersonList</code>, <code v-pre="">Person</code>, <code v-pre="">Tag</code>)</p>
                             </template>
                             <question>
                               <p>Consider the code below:</p>
                               <div class="row">
                                 <div class="col-sm-7">
-                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{<br></span><span>    Tag tag;<br></span><span>    String name;<br></span><span><br></span><span>    Person(String personName, String tagName){<br></span><span>        name = personName;<br></span><span>        tag = <span class="hljs-keyword">new</span> Tag(tagName);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{<br></span><span>    Tag tag;<br></span><span>    String name;<br></span><span><br></span><span>    Person(String personName, String tagName){<br></span><span>        name = personName;<br></span><span>        tag = <span class="hljs-keyword">new</span> Tag(tagName);<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                 </div>
                                 <div class="col-sm-5">
-                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{<br></span><span>    Tag(String value){<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{<br></span><span>    Tag(String value){<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
                                 </div>
                               </div>
                               <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                              <pre><code class="hljs java"><span>PersonList personList = <span class="hljs-keyword">new</span> PersonList();<br></span><span><span class="hljs-keyword">while</span> (hasRoom){<br></span><span>    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);<br></span><span>    personList.addPerson(p);<br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span>PersonList personList = <span class="hljs-keyword">new</span> PersonList();<br></span><span><span class="hljs-keyword">while</span> (hasRoom){<br></span><span>    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);<br></span><span>    personList.addPerson(p);<br></span><span>}<br></span></code></pre>
                             </question>
                           </panel>
                         </div>
@@ -1379,7 +1438,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="sequence-diagrams-intermediate"><template slot="_header">
+            <panel type="seamless" expanded="" id="sequence-diagrams-intermediate"><template slot="_header">
                 <h4 id="sequence-diagrams-intermediate">Sequence Diagrams - Intermediate<a class="fa fa-anchor" href="#sequence-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1419,14 +1478,14 @@
                     </template>
                     <div>
                       <div>
-                        <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
+                        <p>Method calls to <code v-pre="">static</code> i.e., class-level method are received by the class itself, not an instance of that class. You can use the <code v-pre="">&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
                         <box>
-                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object <code>p</code>.</p>
+                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code v-pre="">m</code> calls the static method <code v-pre="">Person.getMaxAge()</code> and also the <code v-pre="">setAge()</code> method of a <code v-pre="">Person</code> object <code v-pre="">p</code>.</p>
                           <p>
                             <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
                           </p>
                           <p></p>
-                          <p>Here is the <code>Person</code> class, for reference:<br>
+                          <p>Here is the <code v-pre="">Person</code> class, for reference:<br>
                             <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
                           </p>
                         </box>
@@ -1437,7 +1496,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -1450,11 +1509,11 @@
                               <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
                               <p></p>
                               <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code>Logic</code> object is executing a parallel thread.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code>Logic</code> object is executing a loop.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code>Logic</code> object is creating another <code>Logic</code> instance.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code v-pre="">Logic</code> object is executing a parallel thread.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code v-pre="">Logic</code> object is executing a loop.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code v-pre="">Logic</code> object is creating another <code v-pre="">Logic</code> instance.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code v-pre="">Logic</code> object’s methods is calling another of its methods.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code v-pre="">Minefield</code> object is calling a method of <code v-pre="">Logic</code>.</li>
                               </ul>
                               <div slot="answer" class="algolia-no-index">
                                 <p>(d)</p>
@@ -1464,14 +1523,14 @@
                         </div>
                         <div>
                           <panel class="algolia-no-index"><template slot="_header">
-                              <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code>ParserFactory</code>)</p>
+                              <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code v-pre="">ParserFactory</code>)</p>
                             </template>
                             <question>
                               <p>Explain the interactions depicted in this sequence diagram.</p>
                               <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
                               <p></p>
                               <div slot="hint" class="algolia-no-index">
-                                <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                                <p>First, the <code v-pre="">createParser()</code> method of an existing <code v-pre="">ParserFactory</code> object is called. Then, ...</p>
                               </div>
                             </question>
                           </panel>
@@ -1482,13 +1541,13 @@
                             </template>
                             <question>
                               <p>Draw a sequence diagram to represent this code snippet.</p>
-                              <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isFirstPage) {<br></span><span>    <span class="hljs-keyword">new</span> Quote().print();<br></span><span>}<br></span></code></pre>
-                              <p>The <code>Quote</code> class:</p>
-                              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{<br></span><span><br></span><span>    String q;<br></span><span><br></span><span>    Quote(){<br></span><span>        q = generate();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{<br></span><span>        System.out.println(q);<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">if</span> (isFirstPage) {<br></span><span>    <span class="hljs-keyword">new</span> Quote().print();<br></span><span>}<br></span></code></pre>
+                              <p>The <code v-pre="">Quote</code> class:</p>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{<br></span><span><br></span><span>    String q;<br></span><span><br></span><span>    Quote(){<br></span><span>        q = generate();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{<br></span><span>        System.out.println(q);<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre>
                               <div slot="hint" class="algolia-no-index">
                                 <ul>
-                                  <li>Show <code>new Quote().print();</code> as two method calls.</li>
-                                  <li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code>print()</code> method is called.</li>
+                                  <li>Show <code v-pre="">new Quote().print();</code> as two method calls.</li>
+                                  <li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code v-pre="">print()</code> method is called.</li>
                                 </ul>
                               </div>
                             </question>
@@ -1500,7 +1559,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="use-case-diagrams"><template slot="_header">
+            <panel type="seamless" expanded="" id="use-case-diagrams"><template slot="_header">
                 <h4 id="use-case-diagrams">Use Case Diagrams<a class="fa fa-anchor" href="#use-case-diagrams" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1520,7 +1579,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="timing-diagrams"><template slot="_header">
+            <panel type="seamless" expanded="" id="timing-diagrams"><template slot="_header">
                 <h4 id="timing-diagrams">Timing Diagrams<a class="fa fa-anchor" href="#timing-diagrams" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1542,7 +1601,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="interaction-overview-diagrams"><template slot="_header">
+            <panel type="seamless" expanded="" id="interaction-overview-diagrams"><template slot="_header">
                 <h4 id="interaction-overview-diagrams">Interaction Overview Diagrams<a class="fa fa-anchor" href="#interaction-overview-diagrams" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1564,7 +1623,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="communication-diagrams"><template slot="_header">
+            <panel type="seamless" expanded="" id="communication-diagrams"><template slot="_header">
                 <h4 id="communication-diagrams">Communication Diagrams<a class="fa fa-anchor" href="#communication-diagrams" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1586,7 +1645,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="state-machine-diagrams"><template slot="_header">
+            <panel type="seamless" expanded="" id="state-machine-diagrams"><template slot="_header">
                 <h4 id="state-machine-diagrams">State Machine Diagrams<a class="fa fa-anchor" href="#state-machine-diagrams" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -1609,7 +1668,7 @@
                     </ul>
                     <p>What this means is that the CD player’s response to pushing the “eject CD” button depends on what it was doing at the time of the event. More generally, the CD player’s response to the event received depends on its internal state. Such a behavior is called a <em>state-dependent behavior</em>.</p>
                   </box>
-                  <p>Often, state-dependent behavior displayed by an object in a system is simple enough that it needs no extra attention; such a behavior can be as simple as a <em>conditional</em> behavior like <code>if x&gt;y, then x=x-y</code>.
+                  <p>Often, state-dependent behavior displayed by an object in a system is simple enough that it needs no extra attention; such a behavior can be as simple as a <em>conditional</em> behavior like <code v-pre="">if x&gt;y, then x=x-y</code>.
                     Occasionally, objects may exhibit state-dependent behavior that is complex enough such that it needs to be captured into a separate model. Such state-dependent behavior can be modelled using UML <em>state machine diagrams</em> (SMD for short, sometimes also called ‘state charts’, ‘state diagrams’ or ‘state machines’).</p>
                   <p>An SMD views the life-cycle of an object as consisting of a finite number of states where each state displays a unique behavior pattern. An SMD captures information such as the states an object can be in, during its lifetime, and how the object responds to various events while in each state and how the object transits from one state to another. In contrast to sequence diagrams that capture object behavior one scenario at a time, SMDs capture the object’s behavior over its full life cycle.</p>
                   <box>
@@ -1634,11 +1693,10 @@
               <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#what">What&#x200E;</a>
-                <a class="nav-link py-1" href="#what-2">What&#x200E;</a>
                 <a class="nav-link py-1" href="#how">How&#x200E;</a>
                 <a class="nav-link py-1" href="#uml-models">UML Models&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#modeling-structures">Modeling Structures&#x200E;</a>
+              <a class="nav-link py-1" href="#modeling-structures">Modeling structures&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#oo-structures">OO Structures&#x200E;</a>
                 <a class="nav-link py-1" href="#class-diagrams-basics">Class Diagrams (Basics)&#x200E;</a>
@@ -1652,7 +1710,7 @@
                 <a class="nav-link py-1" href="#package-diagrams">Package Diagrams&#x200E;</a>
                 <a class="nav-link py-1" href="#composite-structure-diagrams">Composite Structure Diagrams&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#modeling-behaviors">Modeling Behaviors&#x200E;</a>
+              <a class="nav-link py-1" href="#modeling-behaviors">Modeling behaviors&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#activity-diagrams-basic">Activity Diagrams - Basic&#x200E;</a>
                 <a class="nav-link py-1" href="#activity-diagrams-intermediate">Activity Diagrams - Intermediate&#x200E;</a>
@@ -1672,7 +1730,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

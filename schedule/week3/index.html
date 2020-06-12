@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -100,16 +101,16 @@
           <p></p>
           <h1 id="week-3-from-wed-jan-22-noon-summary">Week 3 <small><small><span class="dimmed">[from Wed Jan 22 noon]</span> - Summary</small></small><a class="fa fa-anchor" href="#week-3-from-wed-jan-22-noon-summary" onclick="event.stopPropagation()"></a></h1>
           <div>
-            <box type="info" dismissible>
+            <box type="info" dismissible="">
               <p>This URL will be needed during lecture activities: <a href="https://github.com/nus-cs2113-AY1920S2/lender">https://github.com/nus-cs2113-AY1920S2/lender</a></p>
             </box>
-            <box type="warning" dismissible>
+            <box type="warning" dismissible="">
               <ul>
                 <li>We start tutorials this week. The <a href="https://nus-cs2113-AY1920S2.github.io/website/admin/tutorials.html#tutorial-timetable">tutorial time table</a> is on the module website.
                 </li>
               </ul>
             </box>
-            <box dismissible>
+            <box dismissible="">
 
               <p>Reminder:</p>
               <div>
@@ -181,11 +182,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-1d">W3.1d</a>] <span>Paradigms → OOP → Objects →
-                                  </span></span> <span>Objects as Abstractions</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Objects as abstractions</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-1e">W3.1e</a>] <span>Paradigms → OOP → Objects →
-                                  </span></span> <span>Encapsulation of Objects</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Encapsulation of objects</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -198,19 +199,19 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-2a">W3.2a</a>] <span>C++ to Java → Objects →
-                                  </span></span> <span>Using Java Objects</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Using Java objects</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-2b">W3.2b</a>] <span>C++ to Java → Objects →
-                                  </span></span> <span>Instance Members</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Instance members</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-2c">W3.2c</a>] <span>C++ to Java → Objects →
-                                  </span></span> <span>Passing Objects Around</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Passing objects around</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-2d">W3.2d</a>] <span>C++ to Java → Objects →
-                                  </span></span> <span>Garbage Collection</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Garbage collection</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -222,7 +223,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-3a">W3.3a</a>] <span>C++ to Java → Classes →
-                                  </span></span> <span>Defining Classes</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Defining classes</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-3b">W3.3b</a>] <span>C++ to Java → Classes →
@@ -238,11 +239,11 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-4a">W3.4a</a>] <span>Paradigms → OOP → Classes →
-                                  </span></span> <span>Class-Level Members</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Class-level members</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-4b">W3.4b</a>] <span>C++ to Java → Classes →
-                                  </span></span> <span>Class-Level Members</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Class-level members</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -262,19 +263,19 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-5c">W3.5c</a>] <span>C++ to Java → Some Useful Classes →
-                                  </span></span> <span>The <code>String</code> Class</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">String</code> class</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-5d">W3.5d</a>] <span>C++ to Java → Some Useful Classes →
-                                  </span></span> <span>Wrapper Classes for Primitive Types</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Wrapper Classes for primitive types</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-5e">W3.5e</a>] <span>C++ to Java → Some Useful Classes →
-                                  </span></span> <span>The <code>Arrays</code> class</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">Arrays</code> class</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-5f">W3.5f</a>] <span>C++ to Java → Some Useful Classes →
-                                  </span></span> <span>The <code>Scanner</code> class</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">Scanner</code> class</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -291,23 +292,23 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6b">W3.6b</a>] <span>Implementation → Code Quality → Naming → Basic →
-                                  </span></span> <span>Use Nouns for Things and Verbs for Actions</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Use nouns for things and verbs for actions</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6c">W3.6c</a>] <span>Implementation → Code Quality → Naming → Basic →
-                                  </span></span> <span>Use Standard Words</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Use standard words</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6d">W3.6d</a>] <span>Implementation → Code Quality → Naming → Intermediate →
-                                  </span></span> <span>Use Name to Explain</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Use name to explain</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6e">W3.6e</a>] <span>Implementation → Code Quality → Naming → Intermediate →
-                                  </span></span> <span>Not Too Long, Not Too Short</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Not too long, not too short</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6f">W3.6f</a>] <span>Implementation → Code Quality → Naming → Intermediate →
-                                  </span></span> <span>Avoid Misleading Names</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Avoid misleading names</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -320,7 +321,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-7a">W3.7a</a>] <span>Project Management → Revision Control →
-                                  </span></span> <span>Using History</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Using history</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-7b">W3.7b</a>] <span>Tools → Git and GitHub →
@@ -369,7 +370,7 @@
                     <div>
                       <ol>
                         <li><span>Do any leftover iP tasks from the previous week</span></li>
-                        <li>Add Increments (+ commit, tag, push): <code>Level-1</code>, <code>Level-2</code>, <code>Level-3</code>, <code>A-CodingStandard</code></li>
+                        <li>Add Increments (+ commit, tag, push): <code v-pre="">Level-1</code>, <code v-pre="">Level-2</code>, <code v-pre="">Level-3</code>, <code v-pre="">A-CodingStandard</code></li>
                       </ol>
                     </div>
                     <p><strong>tP:</strong></p>
@@ -399,7 +400,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

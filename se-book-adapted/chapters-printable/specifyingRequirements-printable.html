@@ -30,16 +30,16 @@
         <div class="website-content">
           <div id="title">
             <div>
-              <h1 id="specifying-requirements"><span>Specifying Requirements</span><a class="fa fa-anchor" href="#specifying-requirements" onclick="event.stopPropagation()"></a></h1>
+              <h1 id="specifying-requirements"><span>Specifying requirements</span><a class="fa fa-anchor" href="#specifying-requirements" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
           <div>
             <p><small><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></p>
           </div>
           <p>
-          <div>
-            <h2 id="prose"><span>Prose</span><a class="fa fa-anchor" href="#prose" onclick="event.stopPropagation()"></a></h2>
-          </div>
+            <div>
+              <h2 id="prose"><span>Prose</span><a class="fa fa-anchor" href="#prose" onclick="event.stopPropagation()"></a></h2>
+            </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
@@ -63,9 +63,9 @@
             </div>
           </div>
           <p>
-          <div>
-            <h2 id="feature-lists"><span>Feature Lists</span><a class="fa fa-anchor" href="#feature-lists" onclick="event.stopPropagation()"></a></h2>
-          </div>
+            <div>
+              <h2 id="feature-lists"><span>Feature lists</span><a class="fa fa-anchor" href="#feature-lists" onclick="event.stopPropagation()"></a></h2>
+            </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
@@ -76,7 +76,7 @@
                 <div>
                   <box type="definition">
                     <div>
-                      <p><strong>Feature List</strong>: A list of features of a product <em>grouped according to some criteria</em> such as aspect, priority, order of delivery, etc.</p>
+                      <p><strong>Feature list</strong>: A list of features of a product <em>grouped according to some criteria</em> such as aspect, priority, order of delivery, etc.</p>
                     </div>
                   </box>
                   <box>
@@ -99,9 +99,9 @@
             </div>
           </div>
           <p>
-          <div>
-            <h2 id="user-stories"><span>User Stories</span><a class="fa fa-anchor" href="#user-stories" onclick="event.stopPropagation()"></a></h2>
-          </div>
+            <div>
+              <h2 id="user-stories"><span>User stories</span><a class="fa fa-anchor" href="#user-stories" onclick="event.stopPropagation()"></a></h2>
+            </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
@@ -118,7 +118,7 @@
                   <p><strong>A common format</strong> for writing user stories is:</p>
                   <box type="definition">
                     <div>
-                      <p><strong>User story format</strong>: <code>As a {user type/role} I can {function} so that {benefit}</code></p>
+                      <p><strong>User story format</strong>: <code v-pre="">As a {user type/role} I can {function} so that {benefit}</code></p>
                     </div>
                   </box>
                   <box>
@@ -132,23 +132,23 @@
                     </div>
                   </box>
                   <p></p>
-                  <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>, Trello, Google Docs, ...) to manage user stories digitally.</p>
-                  <panel class="non-printable" expanded><template slot="_header">
+                  <p><strong>You can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, you can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>, Trello, Google Docs, ...) to manage user stories digitally.</p>
+                  <panel class="non-printable" expanded=""><template slot="_header">
                       <p><span class="dimmed">User stories in use</span></p>
                     </template>
-                    <panel type="seamless" expanded><template slot="_header">
+                    <panel type="seamless" expanded=""><template slot="_header">
                         <p>With sticky notes</p>
                       </template>
                       <img src="/website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
                       <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
                     </panel>
-                    <panel type="seamless" expanded><template slot="_header">
+                    <panel type="seamless" expanded=""><template slot="_header">
                         <p>With paper</p>
                       </template>
                       <img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg" height="400">
                       <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/with/2726048607/">https://www.flickr.com/photos/jakuza/with/2726048607/</a>]</sup></span></p>
                     </panel>
-                    <panel type="seamless" expanded><template slot="_header">
+                    <panel type="seamless" expanded=""><template slot="_header">
                         <p>With software</p>
                       </template>
                       <img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png" height="400">
@@ -164,14 +164,14 @@
                     </small></small></span><a class="fa fa-anchor" href="#details" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p><strong>The <code>{benefit}</code> can be omitted</strong> if it is obvious.</p>
+                  <p><strong>The <code v-pre="">{benefit}</code> can be omitted</strong> if it is obvious.</p>
                   <box>
                     <div class="text-monospace">
                       <p>As a user, I can login to the system <s>so that I can access my data</s></p>
                     </div>
                   </box>
                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> It is recommended to confirm there is a concrete benefit even if you omit it from the user story. If not, you could end up adding features that have no real benefit.</p>
-                  <p>You can add more characteristics to the <code>{user role}</code> to provide more context to the user story.</p>
+                  <p>You can add more characteristics to the <code v-pre="">{user role}</code> to provide more context to the user story.</p>
                   <box>
                     <div class="text-monospace">
                       <ul>
@@ -211,7 +211,7 @@
                     <li>Urgency: how soon the feature is needed</li>
                   </ul>
                   <span class="non-printable">
-                    <panel minimized class="algolia-no-index">
+                    <panel minimized="" class="algolia-no-index">
                       <span slot="header" class="card-title"><span><span aria-hidden="true" class="fas fa-cube"></span></span> More examples <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span></span></span>
                       <p>User stories for a travel website (credit: Mike Cohen)</p>
                       <box>
@@ -254,7 +254,7 @@
                   </blockquote>
                   <p><strong>User stories differ from <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">e.g. a description of the requirements written in prose</span>traditional requirements specifications</span> mainly in the level of detail.</strong> User stories should only provide enough details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face to work out a more detailed description of the requirements. <span class="dimmed">[<span for="modal:xp-user-stories" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:xp-user-stories'].show()" class="trigger-click">more...</span>]</span></p>
                   <p><strong>User stories can capture <span trigger="click" for="modal:userStoriesUsage-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:userStoriesUsage-nfr'].show()" class="trigger-click">non-functional requirements</span> too</strong> because even NFRs must benefit some stakeholder.</p>
-                  <b-modal id="modal:userStoriesUsage-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:userStoriesUsage-nfr"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                  <b-modal id="modal:userStoriesUsage-nfr" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:userStoriesUsage-nfr" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                     <div>
                       <div></div>
                       <p></p>
@@ -262,7 +262,7 @@
                             </span></strong></span></p>
                       <div id="title-and-body">
                         <div>
-                          <h4 id="non-functional-requirements"><span>Non-Functional Requirements</span><a class="fa fa-anchor" href="#non-functional-requirements" onclick="event.stopPropagation()"></a></h4>
+                          <h4 id="non-functional-requirements"><span>Non-functional requirements</span><a class="fa fa-anchor" href="#non-functional-requirements" onclick="event.stopPropagation()"></a></h4>
                         </div>
                         <div id="main">
                           <div>
@@ -278,7 +278,7 @@
                                 <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                                 <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                               </ul>
-                              <panel type="seamless" expanded><template slot="_header">
+                              <panel type="seamless" expanded=""><template slot="_header">
                                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p>
                                 </template>
                                 <ul>
@@ -294,7 +294,7 @@
                                 </ul>
                               </panel>
                             </box>
-                            <p>We may have to spend an extra effort in digging NFRs out as early as possible because,</p>
+                            <p>You may have to spend an extra effort in digging NFRs out as early as possible because,</p>
                             <ol>
                               <li><strong>NFRs are easier to miss</strong> <span class="dimmed">e.g., stakeholders tend to think of functional requirements first</span></li>
                               <li>sometimes <strong>NFRs are critical to the success of the software.</strong> <span class="dimmed">E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></li>
@@ -302,7 +302,7 @@
                           </div>
                           <div>
                             <div>
-                              <panel expandable class="algolia-no-index"><template slot="_header">
+                              <panel expandable="" class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                 </template>
                                 <div>
@@ -367,7 +367,7 @@
                         <li><strong>Don't be too hasty to discard 'unusual' user stories:</strong><br>
                           Those might make your product unique and stand out from the rest, at least for the target users.</li>
                         <li><strong>Don't go into too much details:</strong><br>
-                          For example, consider this user story: <code>As a user, I want to see a list of tasks that needs my attention most at the present time, so that I pay attention to them first.</code><br>
+                          For example, consider this user story: <code v-pre="">As a user, I want to see a list of tasks that needs my attention most at the present time, so that I pay attention to them first.</code><br>
                           When discussing this user story, don't worry about what tasks should be considered <em>needs my attention most at the present time</em>. Those details can be worked out later.</li>
                         <li><strong>Don't be biased by preconceived product ideas:</strong><br>
                           When you are at the stage of identifying user needs, clear your mind of ideas you have about what your end product will look like.</li>
@@ -396,7 +396,7 @@
                             <p></p>
                             <p></p>
                             <p>A video on GitHub Project Boards:</p>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                           </tab>
                           <tab class="algolia-no-index"><template slot="_header">Google Sheets</template>
                             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example Google Sheet for recording user stories:</p>
@@ -414,7 +414,7 @@
                       </div>
                     </panel>
                   </span>
-                  <b-modal id="modal:xp-user-stories" hide-footer size modal-class="mb-zoom" ref="modal:xp-user-stories"><template slot="modal-title">🔖 User stories vs traditional requirement specifications, according to XP</template>
+                  <b-modal id="modal:xp-user-stories" hide-footer="" size="" modal-class="mb-zoom" ref="modal:xp-user-stories" class="algolia-no-index"><template slot="modal-title">🔖 User stories vs traditional requirement specifications, according to XP</template>
                     <p><span>
                         <span id="pop:xp" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header">eXtreme Programming (XP)</span>eXtreme Programming (XP)</span></span></p>
                     <div slot="content">
@@ -432,9 +432,9 @@
             </div>
           </div>
           <p>
-          <div>
-            <h2 id="use-cases"><span>Use Cases</span><a class="fa fa-anchor" href="#use-cases" onclick="event.stopPropagation()"></a></h2>
-          </div>
+            <div>
+              <h2 id="use-cases"><span>Use cases</span><a class="fa fa-anchor" href="#use-cases" onclick="event.stopPropagation()"></a></h2>
+            </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
@@ -445,7 +445,7 @@
                 <div>
                   <box type="definition">
                     <div>
-                      <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an <span for="pop:actor" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:actor'].show()" class="trigger">actor</span>.[ 📖 : <span effect="fade" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">uml-user-guide<span data-mb-html-for="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span></span>]</p>
+                      <p><strong>Use case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an <span for="pop:actor" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:actor'].show()" class="trigger">actor</span>.[ 📖 : <span effect="fade" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">uml-user-guide<span data-mb-html-for="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span></span>]</p>
                       <span id="pop:actor" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></span>
                         <div data-mb-html-for="content">
                           <div>
@@ -457,7 +457,7 @@
                   </box>
                   <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
                   <box>
-                    <panel type="seamless" expanded><template slot="_header">
+                    <panel type="seamless" expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 1: 'transfer money' use case for an online banking system</p>
                       </template>
                       <pre>
@@ -515,7 +515,7 @@ Extensions:
                     <img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
                     <p><strong><span for="modal:uml" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:uml'].show()" class="trigger-click">UML</span> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.</p>
                     <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                    <b-modal id="modal:uml" hide-footer size modal-class="mb-zoom" ref="modal:uml"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
+                    <b-modal id="modal:uml" hide-footer="" size="" modal-class="mb-zoom" ref="modal:uml" class="algolia-no-index"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
                       <div>
                         <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                       </div>
@@ -527,9 +527,9 @@ Extensions:
             </div>
           </div>
           <p>
-          <div>
-            <h2 id="glossary"><span>Glossary</span><a class="fa fa-anchor" href="#glossary" onclick="event.stopPropagation()"></a></h2>
-          </div>
+            <div>
+              <h2 id="glossary"><span>Glossary</span><a class="fa fa-anchor" href="#glossary" onclick="event.stopPropagation()"></a></h2>
+            </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
@@ -555,9 +555,9 @@ Extensions:
             </div>
           </div>
           <p>
-          <div>
-            <h2 id="supplementary-requirements"><span>Supplementary Requirements</span><a class="fa fa-anchor" href="#supplementary-requirements" onclick="event.stopPropagation()"></a></h2>
-          </div>
+            <div>
+              <h2 id="supplementary-requirements"><span>Supplementary requirements</span><a class="fa fa-anchor" href="#supplementary-requirements" onclick="event.stopPropagation()"></a></h2>
+            </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
@@ -567,7 +567,7 @@ Extensions:
               <div class="indented-less">
                 <div>
                   <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most <span trigger="click" for="modal:supplementary-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:supplementary-nfr'].show()" class="trigger-click">Non Functional Requirements</span> will be listed.</p>
-                  <b-modal id="modal:supplementary-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:supplementary-nfr"><template slot="modal-title"><span class="dimmed">Textbook »</span></template>
+                  <b-modal id="modal:supplementary-nfr" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:supplementary-nfr" class="algolia-no-index"><template slot="modal-title"><span class="dimmed">Textbook »</span></template>
                     <div>
                       <div></div>
                       <p></p>
@@ -575,7 +575,7 @@ Extensions:
                             </span></strong></span></p>
                       <div id="title-and-body">
                         <div>
-                          <h4 id="non-functional-requirements-2"><span>Non-Functional Requirements</span><a class="fa fa-anchor" href="#non-functional-requirements-2" onclick="event.stopPropagation()"></a></h4>
+                          <h4 id="non-functional-requirements-2"><span>Non-functional requirements</span><a class="fa fa-anchor" href="#non-functional-requirements-2" onclick="event.stopPropagation()"></a></h4>
                         </div>
                         <div id="main">
                           <div>
@@ -591,7 +591,7 @@ Extensions:
                                 <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                                 <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                               </ul>
-                              <panel type="seamless" expanded><template slot="_header">
+                              <panel type="seamless" expanded=""><template slot="_header">
                                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p>
                                 </template>
                                 <ul>
@@ -607,7 +607,7 @@ Extensions:
                                 </ul>
                               </panel>
                             </box>
-                            <p>We may have to spend an extra effort in digging NFRs out as early as possible because,</p>
+                            <p>You may have to spend an extra effort in digging NFRs out as early as possible because,</p>
                             <ol>
                               <li><strong>NFRs are easier to miss</strong> <span class="dimmed">e.g., stakeholders tend to think of functional requirements first</span></li>
                               <li>sometimes <strong>NFRs are critical to the success of the software.</strong> <span class="dimmed">E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></li>
@@ -615,7 +615,7 @@ Extensions:
                           </div>
                           <div>
                             <div>
-                              <panel expandable class="algolia-no-index"><template slot="_header">
+                              <panel expandable="" class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                 </template>
                                 <div>
@@ -657,7 +657,7 @@ Extensions:
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

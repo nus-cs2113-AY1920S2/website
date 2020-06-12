@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -150,25 +151,25 @@
                   <p><big><strong>Submissions:</strong></big></p>
                 </div>
                 <div class="indented-level2" id="tip-how-to-convert-to-pdf">
-                  <box type="important" light>
+                  <box type="important" light="">
                     <ul>
-                      <li><strong>To convert the UG/DG/PPP into PDF format</strong>, go to the generated page in your project's <a href="http://github.io">github.io</a> site and use <a href="/website/admin/usingThisWebsite.html#saving-as-pdf-files">this technique</a> to save as a pdf file. <mark>Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.</mark> You may un-tick the <code>background graphics</code> option as well if you wish.</li>
+                      <li><strong>To convert the UG/DG/PPP into PDF format</strong>, go to the generated page in your project's <a href="http://github.io">github.io</a> site and use <a href="/website/admin/usingThisWebsite.html#saving-as-pdf-files">this technique</a> to save as a pdf file. <mark>Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.</mark> You may un-tick the <code v-pre="">background graphics</code> option as well if you wish.</li>
                     </ul>
                     <div class="indented-level2">
-                      <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                      <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                           <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Using This Webiste → Saving as PDF Files <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                         </template>
                         <div>
-                          <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files" onclick="event.stopPropagation()"></a></h3>
+                          <h3 id="saving-as-pdf-files">Saving as PDF files<a class="fa fa-anchor" href="#saving-as-pdf-files" onclick="event.stopPropagation()"></a></h3>
                           <ol>
                             <li>
                               <p>Use Chrome to load the page you want to save as pdf.</p>
                             </li>
                             <li>
-                              <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
+                              <p>Click on the <code v-pre="">Print</code> option in Chrome’s menu.</p>
                             </li>
                             <li>
-                              <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
+                              <p>Set the destination to <code v-pre="">Save as PDF</code>, then click <code v-pre="">Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
                                 <img src="/website/book/about/images/chromeSaveAsPdf.png"></p>
                             </li>
                           </ol>
@@ -185,14 +186,14 @@
                 <ul>
                   <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Product</strong>:
                     <ul>
-                      <li>Do a release on GitHub, tagged as <code>v2.1</code>.</li>
+                      <li>Do a release on GitHub, tagged as <code v-pre="">v2.1</code>.</li>
                       <li>Upload the jar file <mark>to LumiNUS</mark> (in addition making a release on GitHub). <br>
-                        File name: <code>[team][product name].jar</code> <span class="dimmed">e.g. [CS2113T-W09-1][ContactsPlus].jar</span></li>
+                        File name: <code v-pre="">[team][product name].jar</code> <span class="dimmed">e.g. [CS2113T-W09-1][ContactsPlus].jar</span></li>
                     </ul>
                   </li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Executable <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -203,7 +204,7 @@
                           <li>Also note the following constraint:</li>
                         </ul>
                         <div class="indented-level2">
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                          <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                               <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-File-Size <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                             </template>
                             <div>
@@ -226,10 +227,10 @@
                 </div>
                 <p></p>
                 <ul>
-                  <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Source Code</strong>: Push the code to GitHub and tag with the version number. Source code (<mark>please ensure the code reported by RepoSense as yours is correct;</mark> any updates to RepoSense config files or <code>@@author</code> annotations after the deadline will be considered a later submission). Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually.</li>
+                  <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Source Code</strong>: Push the code to GitHub and tag with the version number. Source code (<mark>please ensure the code reported by RepoSense as yours is correct;</mark> any updates to RepoSense config files or <code v-pre="">@@author</code> annotations after the deadline will be considered a later submission). Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Source Code <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -246,10 +247,10 @@
                 <ul>
                   <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>User Guide</strong>: Convert to pdf and upload to LumiNUS.<br>
                     Upload to LumiNUS.<br>
-                    File name: <code>[TEAM_ID][product Name]UG.pdf</code> <span class="dimmed">e.g.[CS2113T-W09-1][Contacts Plus]UG.pdf</span></li>
+                    File name: <code v-pre="">[TEAM_ID][product Name]UG.pdf</code> <span class="dimmed">e.g.[CS2113T-W09-1][Contacts Plus]UG.pdf</span></li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → User Guide <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -257,18 +258,18 @@
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <strong>In UG/DG, using hierarchical section numbering and figure numbering is optional</strong> (reason: it's not easy to do in MarkDown), but make sure it does not inconvenience the reader (e.g., use section/figure title and/or hyperlinks to point to the section/figure being referred to). Examples:</p>
                           <blockquote>
-                            <p>In the section <a href><em>Implementation</em></a> given above ...</p>
+                            <p>In the section <a href=""><em>Implementation</em></a> given above ...</p>
                           </blockquote>
                         </box>
                         <ul>
                           <li><strong>Follow the <a href="https://se-edu.github.io/addressbook-level3/UserGuide.html">AddressBook-Level3 (AB3) UG</a> structure</strong>.</li>
                           <li><strong>Should cover all v2.1 features</strong>.<br>
                             <strong>Ensure those descriptions match the product precisely</strong>, as it will be used by peer testers (<mark>inaccuracies will be considered bugs</mark>).</li>
-                          <li><strong>Optionally, can also cover future features</strong>. Mark those as <code>Coming in v3.0</code>.</li>
+                          <li><strong>Optionally, can also cover future features</strong>. Mark those as <code v-pre="">Coming in v3.0</code>.</li>
                           <li>Also note the following constraint:</li>
                         </ul>
                         <div class="indented-level2">
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                          <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                               <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-File-Size <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                             </template>
                             <div>
@@ -293,10 +294,10 @@
                 <ul>
                   <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Developer Guide</strong>: submit similar to UG<br>
                     Upload to LumiNUS.<br>
-                    File name: <code>[TEAM_ID][product Name]DG.pdf</code> <span class="dimmed">e.g. [CS2113T-W09-1][Contacts Plus]DG.pdf</span></li>
+                    File name: <code v-pre="">[TEAM_ID][product Name]DG.pdf</code> <span class="dimmed">e.g. [CS2113T-W09-1][Contacts Plus]DG.pdf</span></li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Developer Guide <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -348,12 +349,12 @@
                                     <li>a sequence diagram can omit less important interactions, self-calls.</li>
                                   </ul>
                                 </li>
-                                <li><strong>Omit repetitive details</strong> e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <span trigger="click" for="modal:ipWeek10-logicClassDiagram" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipWeek10-logicClassDiagram'].show()" class="trigger-click">AB3 Logic class diagram</span> shows concrete <code>*Command</code> classes).</li>
+                                <li><strong>Omit repetitive details</strong> e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <span trigger="click" for="modal:ipWeek10-logicClassDiagram" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipWeek10-logicClassDiagram'].show()" class="trigger-click">AB3 Logic class diagram</span> shows concrete <code v-pre="">*Command</code> classes).</li>
                                 <li><strong>Limit the scope of a diagram.</strong> Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not relevant to that purpose.</li>
                                 <li><strong>Break diagrams into smaller fragments</strong> when possible.
                                   <ul>
                                     <li>If a component has a lot of classes, consider further dividing into sub-components (e.g., a Parser sub-component inside the Logic component). After that, sub-components can be shown as black-boxes in the main diagram and their details can be shown as separate diagrams.</li>
-                                    <li>You can use <code>ref</code> frames to break sequence diagrams to multiple diagrams.</li>
+                                    <li>You can use <code v-pre="">ref</code> frames to break sequence diagrams to multiple diagrams.</li>
                                   </ul>
                                 </li>
                               </ul>
@@ -362,7 +363,7 @@
                             <li><strong>Use code snippets sparingly.</strong> The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only.</li>
                             <li><strong>Resize diagrams</strong> so that the text size in the diagram matches the the text size of the main text of the diagram. See <span trigger="click" for="modal:ipWeek10-diagramSizeNegative" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ipWeek10-diagramSizeNegative'].show()" class="trigger-click">example</span>.</li>
                           </ul>
-                          <b-modal id="modal:ipWeek10-umlExamples" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-umlExamples"><template slot="modal-title">UML Diagrams: Negative Examples </template>
+                          <b-modal id="modal:ipWeek10-umlExamples" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-umlExamples" class="algolia-no-index"><template slot="modal-title">UML Diagrams: Negative Examples </template>
                             <p>These class diagrams seem to have lot of member details, which can get outdated pretty quickly:<br>
                               <img src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750"><br>
                               <img src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750"></p>
@@ -375,17 +376,17 @@
                             <p></p>
                             <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750">
                           </b-modal>
-                          <b-modal id="modal:ipWeek10-diagramSizeNegative" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-diagramSizeNegative"><template slot="modal-title">Diagram resizing: a negative example</template>
+                          <b-modal id="modal:ipWeek10-diagramSizeNegative" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-diagramSizeNegative" class="algolia-no-index"><template slot="modal-title">Diagram resizing: a negative example</template>
                             <p>In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br>
                               <img src="/website/admin/images/diagramSizeNegativeExample.png" width="200"><br>
                               It will look more 'polished' if the two text sizes match.
                             </p>
                           </b-modal>
-                          <b-modal id="modal:ipWeek10-logicClassDiagram" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-logicClassDiagram"><template slot="modal-title">AB3 - Class Diagram of the Logic Component</template>
+                          <b-modal id="modal:ipWeek10-logicClassDiagram" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-logicClassDiagram" class="algolia-no-index"><template slot="modal-title">AB3 - Class Diagram of the Logic Component</template>
                             <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="900"></b-modal>
-                          <b-modal id="modal:ipWeek10-deleteSd" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-deleteSd"><template slot="modal-title">AB3 - Sequence Diagram for the <code>delete</code> command</template>
+                          <b-modal id="modal:ipWeek10-deleteSd" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-deleteSd" class="algolia-no-index"><template slot="modal-title">AB3 - Sequence Diagram for the <code v-pre="">delete</code> command</template>
                             <img src="https://se-edu.github.io/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"></b-modal>
-                          <b-modal id="modal:ipWeek10-archiSd" hide-footer size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-archiSd"><template slot="modal-title">AB3 - Architecture-Level Sequence Diagram</template>
+                          <b-modal id="modal:ipWeek10-archiSd" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:ipWeek10-archiSd" class="algolia-no-index"><template slot="modal-title">AB3 - Architecture-Level Sequence Diagram</template>
                             <img src="https://se-edu.github.io/addressbook-level3/images/ArchitectureSequenceDiagram.png"></b-modal>
                         </span>
                       </div>
@@ -397,14 +398,14 @@
                   <li><span><span aria-hidden="true" class="fas fa-user"></span></span> <strong>Project Portfolio Page (PPP)</strong>:
                     <ul>
                       <li>PDF version: upload to LumiNUS<br>
-                        File name: <code>[TEAM_ID][Your full Name as Given in LumiNUS]PPP.pdf</code> <span class="dimmed">e.g.[CS2113T-W09-1][Leow Wai Kit, John]PPP.pdf</span><br>
-                        <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Use <code>-</code> in place of <code>/</code> if your name has it e.g., <code>Ravi s/o Veegan</code> → <code>Ravi s-o Veegan</code> (reason: Windows does not allow <code>/</code> in file names)</li>
-                      <li>HTML version: make available on <code>github.io</code></li>
+                        File name: <code v-pre="">[TEAM_ID][Your full Name as Given in LumiNUS]PPP.pdf</code> <span class="dimmed">e.g.[CS2113T-W09-1][Leow Wai Kit, John]PPP.pdf</span><br>
+                        <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Use <code v-pre="">-</code> in place of <code v-pre="">/</code> if your name has it e.g., <code v-pre="">Ravi s/o Veegan</code> → <code v-pre="">Ravi s-o Veegan</code> (reason: Windows does not allow <code v-pre="">/</code> in file names)</li>
+                      <li>HTML version: make available on <code v-pre="">github.io</code></li>
                     </ul>
                   </li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Project Portfolio Page <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -435,7 +436,7 @@
                             </ul>
                           </li>
                         </ul>
-                        <b-modal id="modal:deliverablesPPP-teamTasks" hide-footer size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
+                        <b-modal id="modal:deliverablesPPP-teamTasks" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks" class="algolia-no-index"><template slot="modal-title">Team-Based Tasks</template>
                           <div>
                             <box>
                               <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
@@ -477,30 +478,30 @@
                         </ul>
                         <h4 id="ppp-format"><span class="badge badge-info">PPP</span> <span class="text-info">Format</span><a class="fa fa-anchor" href="#ppp-format" onclick="event.stopPropagation()"></a></h4>
                         <ul>
-                          <li>File name (i.e., in the repo): <code>docs/team/githbub_username_in_lower_case.md</code> e.g., <code>docs/team/goodcoder123.md</code></li>
+                          <li>File name (i.e., in the repo): <code v-pre="">docs/team/githbub_username_in_lower_case.md</code> e.g., <code v-pre="">docs/team/goodcoder123.md</code></li>
                           <li><span><span aria-hidden="true" class="fas fa-cube"></span></span> Follow the <a href="https://se-edu.github.io/addressbook-level3/team/johndoe.html">example in the AddressBook-Level3</a></li>
                         </ul>
                         <div class="indented-level2">
                           <div>
-                            <box type="important" light>
+                            <box type="important" light="">
                               <ul>
-                                <li><strong>To convert the UG/DG/PPP into PDF format</strong>, go to the generated page in your project's <a href="http://github.io">github.io</a> site and use <a href="/website/admin/usingThisWebsite.html#saving-as-pdf-files">this technique</a> to save as a pdf file. <mark>Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.</mark> You may un-tick the <code>background graphics</code> option as well if you wish.</li>
+                                <li><strong>To convert the UG/DG/PPP into PDF format</strong>, go to the generated page in your project's <a href="http://github.io">github.io</a> site and use <a href="/website/admin/usingThisWebsite.html#saving-as-pdf-files">this technique</a> to save as a pdf file. <mark>Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.</mark> You may un-tick the <code v-pre="">background graphics</code> option as well if you wish.</li>
                               </ul>
                               <div class="indented-level2">
-                                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                                <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                                     <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Using This Webiste → Saving as PDF Files <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                   </template>
                                   <div>
-                                    <h3 id="saving-as-pdf-files-2">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files-2" onclick="event.stopPropagation()"></a></h3>
+                                    <h3 id="saving-as-pdf-files-2">Saving as PDF files<a class="fa fa-anchor" href="#saving-as-pdf-files-2" onclick="event.stopPropagation()"></a></h3>
                                     <ol>
                                       <li>
                                         <p>Use Chrome to load the page you want to save as pdf.</p>
                                       </li>
                                       <li>
-                                        <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
+                                        <p>Click on the <code v-pre="">Print</code> option in Chrome’s menu.</p>
                                       </li>
                                       <li>
-                                        <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
+                                        <p>Set the destination to <code v-pre="">Save as PDF</code>, then click <code v-pre="">Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
                                           <img src="/website/book/about/images/chromeSaveAsPdf.png"></p>
                                       </li>
                                     </ol>
@@ -558,7 +559,7 @@
                   <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Product Website</strong>: Ensure the website is updated and auto-published.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Product Website <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -569,12 +570,12 @@
                         <h4 id="website-optional-readme"><span class="badge badge-info">Website</span> <span class="text-info">[optional] README</span><a class="fa fa-anchor" href="#website-optional-readme" onclick="event.stopPropagation()"></a></h4>
                         <p><mark><strong>This deliverable is optional.</strong></mark></p>
                         <ul>
-                          <li><mark>Ensure the <code>Ui.png</code> matches the current product</mark></li>
+                          <li><mark>Ensure the <code v-pre="">Ui.png</code> matches the current product</mark></li>
                         </ul>
                         <div class="indented-level3" id="tips-for-product-screenshot">
                           <box>
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Some common sense tips for a good product screenshot</strong></p>
-                            <p><code>Ui.png</code> represents your product in its full glory.</p>
+                            <p><code v-pre="">Ui.png</code> represents your product in its full glory.</p>
                             <ul>
                               <li>Before taking the screenshot, populate the product with data that makes the product look good. For example,</li>
                               <li>If the product is supposed to show photos, use real photos instead of dummy placeholders.</li>
@@ -584,7 +585,7 @@
                               <li>Take a clean screenshot with a decent resolution. Some screenshot tools can capture a specified window only. If your tool cannot do that, make sure you crop away the extraneous parts captured by the screenshot.</li>
                               <li>Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is in use for real.</li>
                             </ul>
-                            <panel type="seamless" expanded><template slot="_header">
+                            <panel type="seamless" expanded=""><template slot="_header">
                                 <p>Examples</p>
                               </template>
                               <tabs>
@@ -643,18 +644,18 @@
                   <li>Submit the demo video to LumiNUS.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Demo <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
                       <div>
-                        <box type="important" light>
+                        <box type="important" light="">
                           <p>Due to the COVID-19 situation, this deliverable has been changed as follows:</p>
                           <ul>
                             <li><strong>Screen-record a demo</strong> of all the product features, in a reasonable order.</li>
                             <li><strong>Including an audio explanation is strongly encouraged</strong> (not compulsory) -- alternatively, you can switch between slides and the app to give additional explanations. Annotations and other enhancements to the video are optional (those will not earn any extra marks).</li>
                             <li>All members taking part in the demo video is encouraged but not compulsory.</li>
-                            <li><strong>File name:</strong> <code>[TEAM_ID][product Name].mp4</code> <span class="dimmed">e.g.[CS2113T-W09-1][Contacts Plus].mp4</span> (other video formats are acceptable but use a format that works on all major OS'es).</li>
+                            <li><strong>File name:</strong> <code v-pre="">[TEAM_ID][product Name].mp4</code> <span class="dimmed">e.g.[CS2113T-W09-1][Contacts Plus].mp4</span> (other video formats are acceptable but use a format that works on all major OS'es).</li>
                             <li><strong>File size:</strong> Recommended to keep below 200Mb. You can use a low resolution as long as the video is in usable quality.</li>
                             <li><strong>Submission:</strong> Submit to LumiNUS (different folder).</li>
                             <li><strong>Deadline:</strong> Monday 13th April 23.59 (i.e., 2 days after the main deadline)</li>
@@ -685,7 +686,7 @@
                         <div class="indented-level2">
                           <box>
                             <p>Here is an example:</p>
-                            <pre><code class="no-line-numbers hljs"><span>Hi, welcome to the demo of our product FooBar. It is a product to ensure the user takes<br></span><span>frequent standing-breaks while working.<br></span><span>It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods<br></span><span>of sitting.<br></span><span>The user first sets the parameters such as frequency and targets, and then enters a<br></span><span>command to record the start of the sitting time, ... The app shows the length of the<br></span><span>sitting periods, and alerts the user if ...<br></span><span>...<br></span></code></pre>
+                            <pre><code class="no-line-numbers hljs" v-pre=""><span>Hi, welcome to the demo of our product FooBar. It is a product to ensure the user takes<br></span><span>frequent standing-breaks while working.<br></span><span>It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods<br></span><span>of sitting.<br></span><span>The user first sets the parameters such as frequency and targets, and then enters a<br></span><span>command to record the start of the sitting time, ... The app shows the length of the<br></span><span>sitting periods, and alerts the user if ...<br></span><span>...<br></span></code></pre>
                           </box>
                         </div>
                         <ul>
@@ -699,7 +700,7 @@
                         <h4 id="demo-structure"><span class="badge badge-info">Demo</span> <span class="text-info">Structure</span><a class="fa fa-anchor" href="#demo-structure" onclick="event.stopPropagation()"></a></h4>
                         <ul>
                           <li><strong>Demo the product using the same executable</strong> you submitted </li>
-                          <li><strong>Use a sufficient amount of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code>Mr aaa</code> is not a realistic person name</span><em>realistic</em></span> demo data.</strong> <span class="dimmed">e.g at least 20 data items</span>. Trying to demo a product using just 1-2 sample data creates a bad impression.</li>
+                          <li><strong>Use a sufficient amount of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code v-pre="">Mr aaa</code> is not a realistic person name</span><em>realistic</em></span> demo data.</strong> <span class="dimmed">e.g at least 20 data items</span>. Trying to demo a product using just 1-2 sample data creates a bad impression.</li>
                         </ul>
 
                         <h4 id="demo-tips"><span class="badge badge-info">Demo</span> <span class="text-info">Tips</span><a class="fa fa-anchor" href="#demo-tips" onclick="event.stopPropagation()"></a></h4>
@@ -716,7 +717,7 @@
               <h4 id="3-prepare-for-the-practical-exam-before-the-lecture"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Prepare for the practical exam</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the lecture</span></span><a class="fa fa-anchor" href="#3-prepare-for-the-practical-exam-before-the-lecture" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <div class="indented-level2">
-                  <panel type="primary" minimized class="algolia-no-index"><template slot="_header">
+                  <panel type="primary" minimized="" class="algolia-no-index"><template slot="_header">
                       <p>Admin → Deliverables → <strong>PE Overview</strong></p>
                     </template>
                     <div>
@@ -734,7 +735,7 @@
                         <li>Also see:</li>
                       </ul>
                       <div class="indented-level2">
-                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → Notes on how marks are calculated for PE <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -744,8 +745,8 @@
                               <li>Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.</li>
                               <li>The penalty/credit for a bug varies based on,
                                 <ul>
-                                  <li>The severity of the bug: <code>severity.High</code> &gt; <code>severity.Medium</code> &gt; <code>severity.Low</code> &gt; <code>severity.VeryLow</code></li>
-                                  <li>The type of the bug: <code>type.FunctionalityBug</code> &gt; <code>type.DocumentationBug</code> &gt; <code>type.FeatureFlaw</code></li>
+                                  <li>The severity of the bug: <code v-pre="">severity.High</code> &gt; <code v-pre="">severity.Medium</code> &gt; <code v-pre="">severity.Low</code> &gt; <code v-pre="">severity.VeryLow</code></li>
+                                  <li>The type of the bug: <code v-pre="">type.FunctionalityBug</code> &gt; <code v-pre="">type.DocumentationBug</code> &gt; <code v-pre="">type.FeatureFlaw</code></li>
                                 </ul>
                               </li>
                               <li>The penalty for a bug is divided equally among assignees.</li>
@@ -754,8 +755,8 @@
                               <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
                               <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
                                 <ul>
-                                  <li><code>n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
-                                  <li><code>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
+                                  <li><code v-pre="">n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
+                                  <li><code v-pre="">n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
                                 </ul>
                               </li>
                               <li>You don't need to find <em>all</em> bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
@@ -767,7 +768,7 @@
                     </div>
                   </panel>
                   <p></p>
-                  <panel type="primary" minimized class="algolia-no-index"><template slot="_header">
+                  <panel type="primary" minimized="" class="algolia-no-index"><template slot="_header">
                       <p>Admin → Deliverables → <strong>PE-D/PE Preparation</strong></p>
                     </template>
                     <div>
@@ -783,7 +784,7 @@
                         </li>
                       </ul>
                       <div class="indented-level2">
-                        <panel minimized class="algolia-no-index"><template slot="_header">
+                        <panel minimized="" class="algolia-no-index"><template slot="_header">
                             <p>If not using CATcher</p>
                           </template>
                           <box type="warning">
@@ -793,8 +794,8 @@
                           <ul>
                             <li>Create a public repo in your GitHub account with the following name:
                               <ul>
-                                <li>PE Dry Run: <code>ped</code></li>
-                                <li>PE: <code>pe</code></li>
+                                <li>PE Dry Run: <code v-pre="">ped</code></li>
+                                <li>PE: <code v-pre="">pe</code></li>
                               </ul>
                             </li>
                             <li>Enable its issue tracker and add the following labels to it (the label names should be precisely as given).</li>
@@ -803,10 +804,10 @@
                             <box>
                               <p><strong>Bug Severity</strong> labels:</p>
                               <ul>
-                                <li><code>severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
-                                <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
-                                <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
-                                <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                                <li><code v-pre="">severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
+                                <li><code v-pre="">severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                                <li><code v-pre="">severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                                <li><code v-pre="">severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
                               </ul>
                             </box>
                           </div>
@@ -814,9 +815,9 @@
                             <box>
                               <p><strong>Type</strong> labels:</p>
                               <ul>
-                                <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                                <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
-                                <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
+                                <li><code v-pre="">type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
+                                <li><code v-pre="">type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                                <li><code v-pre="">type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
                               </ul>
                             </box>
                           </div>
@@ -862,7 +863,7 @@
                   <li>Attend the practical test, to be done during the lecture.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                  <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Practical Exam <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -883,7 +884,7 @@
                             <li>Also see:</li>
                           </ul>
                           <div class="indented-level2">
-                            <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                            <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                                 <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → Notes on how marks are calculated for PE <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                               </template>
                               <div>
@@ -893,8 +894,8 @@
                                   <li>Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.</li>
                                   <li>The penalty/credit for a bug varies based on,
                                     <ul>
-                                      <li>The severity of the bug: <code>severity.High</code> &gt; <code>severity.Medium</code> &gt; <code>severity.Low</code> &gt; <code>severity.VeryLow</code></li>
-                                      <li>The type of the bug: <code>type.FunctionalityBug</code> &gt; <code>type.DocumentationBug</code> &gt; <code>type.FeatureFlaw</code></li>
+                                      <li>The severity of the bug: <code v-pre="">severity.High</code> &gt; <code v-pre="">severity.Medium</code> &gt; <code v-pre="">severity.Low</code> &gt; <code v-pre="">severity.VeryLow</code></li>
+                                      <li>The type of the bug: <code v-pre="">type.FunctionalityBug</code> &gt; <code v-pre="">type.DocumentationBug</code> &gt; <code v-pre="">type.FeatureFlaw</code></li>
                                     </ul>
                                   </li>
                                   <li>The penalty for a bug is divided equally among assignees.</li>
@@ -903,8 +904,8 @@
                                   <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
                                   <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
                                     <ul>
-                                      <li><code>n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
-                                      <li><code>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
+                                      <li><code v-pre="">n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
+                                      <li><code v-pre="">n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
                                     </ul>
                                   </li>
                                   <li>You don't need to find <em>all</em> bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
@@ -919,7 +920,7 @@
                           <li>It's similar to,</li>
                         </ul>
                         <div class="indented-level2">
-                          <panel type="primary" minimized class="algolia-no-index"><template slot="_header">
+                          <panel type="primary" minimized="" class="algolia-no-index"><template slot="_header">
                               <p>PE-D Preparation</p>
                             </template>
                             <div>
@@ -935,7 +936,7 @@
                                 </li>
                               </ul>
                               <div class="indented-level2">
-                                <panel minimized class="algolia-no-index"><template slot="_header">
+                                <panel minimized="" class="algolia-no-index"><template slot="_header">
                                     <p>If not using CATcher</p>
                                   </template>
                                   <box type="warning">
@@ -945,8 +946,8 @@
                                   <ul>
                                     <li>Create a public repo in your GitHub account with the following name:
                                       <ul>
-                                        <li>PE Dry Run: <code>ped</code></li>
-                                        <li>PE: <code>pe</code></li>
+                                        <li>PE Dry Run: <code v-pre="">ped</code></li>
+                                        <li>PE: <code v-pre="">pe</code></li>
                                       </ul>
                                     </li>
                                     <li>Enable its issue tracker and add the following labels to it (the label names should be precisely as given).</li>
@@ -955,10 +956,10 @@
                                     <box>
                                       <p><strong>Bug Severity</strong> labels:</p>
                                       <ul>
-                                        <li><code>severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
-                                        <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
-                                        <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
-                                        <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                                        <li><code v-pre="">severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
+                                        <li><code v-pre="">severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                                        <li><code v-pre="">severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                                        <li><code v-pre="">severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
                                       </ul>
                                     </box>
                                   </div>
@@ -966,9 +967,9 @@
                                     <box>
                                       <p><strong>Type</strong> labels:</p>
                                       <ul>
-                                        <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                                        <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
-                                        <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
+                                        <li><code v-pre="">type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
+                                        <li><code v-pre="">type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                                        <li><code v-pre="">type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
                                       </ul>
                                     </box>
                                   </div>
@@ -1008,7 +1009,7 @@
                         </div>
                         <p></p>
                         <h4 id="pe-phase-1-bug-reporting"><span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span><a class="fa fa-anchor" href="#pe-phase-1-bug-reporting" onclick="event.stopPropagation()"></a></h4>
-                        <box type="important" light icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-exclamation-circle"></span></template>
+                        <box type="important" light="" icon-size="2x"><template slot="icon"><span aria-hidden="true" class="fas fa-exclamation-circle"></span></template>
                           <p><strong>PE Phase 1 is an 'exam', to be done under exam conditions:</strong></p>
                           <ul>
                             <li>You are not allowed to communicate with others (except the invigilators).</li>
@@ -1016,13 +1017,13 @@
                             <li>Violators will be reported to the university for disciplinary action.</li>
                           </ul>
                         </box>
-                        <box type="info" light>
+                        <box type="info" light="">
                           <p><strong>Online channels used for the PE</strong>:</p>
                           <ul>
                             <li><strong><strong>Gitter</strong></strong>:
                               <ul>
                                 <li>Prof will be online in <a href="https://gitter.im/nus-cs2113-AY1920S2/community">Gitter</a>.</li>
-                                <li><mark>Direct all your queries to prof as private messages to <code>@damithc</code>. <span class="text-danger">Do not use the public chat channel</span> .</mark> If you use the main channel, you might accidentally reveal which team you are testing.</li>
+                                <li><mark>Direct all your queries to prof as private messages to <code v-pre="">@damithc</code>. <span class="text-danger">Do not use the public chat channel</span> .</mark> If you use the main channel, you might accidentally reveal which team you are testing.</li>
                               </ul>
                             </li>
                             <li><strong><strong>Zoom</strong></strong>:
@@ -1063,7 +1064,7 @@
                                 <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v2.1</strong>)</template>
                                   <ul>
                                     <li>Download the zip file from the given location, if you haven't done that already.</li>
-                                    <li>Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix <code>_inner.zip</code>.</li>
+                                    <li>Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix <code v-pre="">_inner.zip</code>.</li>
                                     <li>Unzip the inner zip file. This will give you the jar file and other PDF files needed for the PE. <mark>Warning: do not run the jar file while it is still inside the zip file</mark>.</li>
                                   </ul>
                                 </tab>
@@ -1071,8 +1072,8 @@
                               <p></p>
                               <ul>
                                 <li>Put the downloaded jar file <mark>in an empty folder</mark>.</li>
-                                <li>Open a command window. Run the <code>java -version</code> command to ensure you are using Java 11.</li>
-                                <li>Launch the jar file <mark>using the <code>java -jar</code> command</mark> (do not use double-clicking).</li>
+                                <li>Open a command window. Run the <code v-pre="">java -version</code> command to ensure you are using Java 11.</li>
+                                <li>Launch the jar file <mark>using the <code v-pre="">java -jar</code> command</mark> (do not use double-clicking).</li>
                                 <li><strong>If the product doesn't work at all:</strong> If the product fails catastrophically <span class="dimmed">e.g., cannot even launch, or even the basic commands crash the app</span>, contact the invigilator (via Gitter or Zoom chat) to receive a <em>fallback</em> team to test.</li>
                               </ul>
                               <h6 id="b-what-to-test">
@@ -1081,7 +1082,7 @@
                               <tabs active="1">
                                 <tab><template slot="_header"><s>PE Dry Run (at <strong>v2.0</strong>)</s></template>
                                   <ul>
-                                    <li>Test the product <mark>based on the User Guide</mark> available from their GitHub website <code>https://{team-id}.github.io/tp/UserGuide.html</code>.</li>
+                                    <li>Test the product <mark>based on the User Guide</mark> available from their GitHub website <code v-pre="">https://{team-id}.github.io/tp/UserGuide.html</code>.</li>
                                     <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
                                   </ul>
                                 </tab>
@@ -1102,7 +1103,7 @@
                                     <li>You may report functionality bugs, UG bugs, and feature flaws.</li>
                                   </ul>
                                   <div class="indented-level2">
-                                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                       </template>
                                       <div>
@@ -1112,7 +1113,7 @@
                                           <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
                                       </div>
                                     </panel>
-                                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                       </template>
                                       <div>
@@ -1123,7 +1124,7 @@
                                           <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
                                       </div>
                                     </panel>
-                                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                       </template>
                                       <div>
@@ -1179,7 +1180,7 @@
                                     <li>Report functionality bugs:</li>
                                   </ul>
                                   <div class="indented-level2">
-                                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                       </template>
                                       <div>
@@ -1192,10 +1193,10 @@
                                   </div>
                                   <p></p>
                                   <ul>
-                                    <li>Do not post suggestions but if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code>Type.FeatureFlaw</code>.</li>
+                                    <li>Do not post suggestions but if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code v-pre="">Type.FeatureFlaw</code>.</li>
                                   </ul>
                                   <div class="indented-level2">
-                                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                       </template>
                                       <div>
@@ -1212,7 +1213,7 @@
                                     <li>You may also report UG bugs.</li>
                                   </ul>
                                   <div class="indented-level2">
-                                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                                    <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                                         <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                       </template>
                                       <div>
@@ -1275,8 +1276,8 @@
                                     <ul>
                                       <li>Launch CATcher, and login to the correct profile:
                                         <ul>
-                                          <li>PE Dry Run: <code>CS2113/T PE Dry run</code></li>
-                                          <li>PE: <code>CS2113/T PE</code></li>
+                                          <li>PE Dry Run: <code v-pre="">CS2113/T PE Dry run</code></li>
+                                          <li>PE: <code v-pre="">CS2113/T PE</code></li>
                                         </ul>
                                       </li>
                                       <li>Post bugs using CATcher.
@@ -1290,8 +1291,8 @@
                                         <ul>
                                           <li>Post bug reports in the following repo you created earlier:
                                             <ul>
-                                              <li>PE Dry Run: <code>ped</code></li>
-                                              <li>PE: <code>pe</code></li>
+                                              <li>PE Dry Run: <code v-pre="">ped</code></li>
+                                              <li>PE: <code v-pre="">pe</code></li>
                                             </ul>
                                           </li>
                                           <li>The whole description of the bug should be in the issue description i.e., <mark>do not add comments to the issue</mark>.</li>
@@ -1309,32 +1310,32 @@
                                 <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                                 <li>Use a descriptive title.</li>
                                 <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.</li>
-                                <li>Assign exactly one <code>severity.*</code> label to the bug report. Bug report without a severity label are considered <code>severity.Low</code> (lower severity bugs earn lower credit)<br></li>
+                                <li>Assign exactly one <code v-pre="">severity.*</code> label to the bug report. Bug report without a severity label are considered <code v-pre="">severity.Low</code> (lower severity bugs earn lower credit)<br></li>
                               </ul>
                               <div class="indented-level2">
                                 <div>
                                   <box>
                                     <p><strong>Bug Severity</strong> labels:</p>
                                     <ul>
-                                      <li><code>severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
-                                      <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
-                                      <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
-                                      <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                                      <li><code v-pre="">severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
+                                      <li><code v-pre="">severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                                      <li><code v-pre="">severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                                      <li><code v-pre="">severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
                                     </ul>
                                   </box>
                                 </div>
                               </div>
                               <ul>
-                                <li>Assign exactly one <code>type.*</code> label to the issue.</li>
+                                <li>Assign exactly one <code v-pre="">type.*</code> label to the issue.</li>
                               </ul>
                               <div class="indented-level2">
                                 <div>
                                   <box>
                                     <p><strong>Type</strong> labels:</p>
                                     <ul>
-                                      <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                                      <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
-                                      <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
+                                      <li><code v-pre="">type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
+                                      <li><code v-pre="">type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                                      <li><code v-pre="">type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
                                     </ul>
                                   </box>
                                 </div>
@@ -1348,7 +1349,7 @@
                           <li><strong>For each bug reported, cite evidence and justify.</strong> For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.</li>
                         </ul>
                         <div class="indented-level2">
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                          <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                               <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                             </template>
                             <div>
@@ -1395,7 +1396,7 @@
                         </div>
                         <p></p>
                         <div class="indented-level2">
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                          <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                               <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                             </template>
                             <div>
@@ -1507,7 +1508,7 @@
                             <h5 id="important-questions-included-in-the-evaluation"><strong>Important questions included in the evaluation:</strong><a class="fa fa-anchor" href="#important-questions-included-in-the-evaluation" onclick="event.stopPropagation()"></a></h5>
                             <div id="projectGrading-featureFit-instructions">
                               <p>
-                                <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Quality of the product design,</strong><br>
+                                <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Quality of the product design,</strong><br>
                                 Evaluate based on the User Guide and the actual product behavior.
                               </p>
                               <div class="table-responsive">
@@ -1523,21 +1524,21 @@
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <td><code>target user</code></td>
+                                      <td><code v-pre="">target user</code></td>
                                       <td>not specified</td>
                                       <td></td>
                                       <td></td>
                                       <td>clearly specified and narrowed down appropriately</td>
                                     </tr>
                                     <tr>
-                                      <td><code>value proposition</code></td>
+                                      <td><code v-pre="">value proposition</code></td>
                                       <td>not specified</td>
                                       <td>The value to target user is low. App is not worth using</td>
                                       <td>Some small group of target users might find the app worth using</td>
                                       <td>Most of the target users are likely to find the app worth using</td>
                                     </tr>
                                     <tr>
-                                      <td><code>optimized for target user</code></td>
+                                      <td><code v-pre="">optimized for target user</code></td>
                                       <td></td>
                                       <td>Not enough focus for CLI users</td>
                                       <td>Mostly CLI-based, but cumbersome to use most of the time</td>
@@ -1550,48 +1551,48 @@
                             <p></p>
                             <div id="projectGrading-userGuide-instructions">
                               <p>
-                                <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,</strong><br>
+                                <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,</strong><br>
                                 Evaluate based on fit-for-purpose, from the perspective of a target user.
                                 For reference, the AB3 UG is <a href="https://se-education.org/addressbook-level3/UserGuide.html">here</a>.<br>
                               </p>
-                              <ul radio-group="5de96" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Significantly lower</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Slightly lower</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Similar</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="5de96" type="radio"> Higher</label></li>
+                              <ul radio-group="1da21" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="1da21" type="radio"> Significantly lower</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="1da21" type="radio"> Slightly lower</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="1da21" type="radio"> Similar</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="1da21" type="radio"> Higher</label></li>
                               </ul>
                             </div>
                             <p></p>
                             <div id="projectGrading-devGuide-instructions">
                               <p>
-                                <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AB3, the overall quality of the DG you evaluated is,</strong><br>
+                                <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>Compared to AB3, the overall quality of the DG you evaluated is,</strong><br>
                                 Evaluate based on fit-for-purpose from the perspective of a new team member trying to understand the product's internal design by reading the DG.
                                 For reference, the AB3 DG is <a href="https://se-education.org/addressbook-level3/DeveloperGuide.html">here</a>.<br>
                               </p>
-                              <ul radio-group="46156" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Significantly lower</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Slightly lower</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Similar</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="46156" type="radio"> Higher</label></li>
+                              <ul radio-group="d0a98" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="d0a98" type="radio"> Significantly lower</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="d0a98" type="radio"> Slightly lower</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="d0a98" type="radio"> Similar</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="d0a98" type="radio"> Higher</label></li>
                               </ul>
                             </div>
                             <p></p>
                             <div id="projectGrading-effort-instructions">
                               <p>
-                                <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong><br>
+                                <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[For each member] The functional code contributed by the person is,</strong><br>
                                 <mark>Consider implementation work only (i.e., exclude testing, documentation, project management etc.)</mark><br>
                                 The <em>typical iP</em> refers to an iP where all the requirements are met at the minimal expectations given.<br>
                                 Use the person's PPP and RepoSense page to evaluate the effort.
                               </p>
-                              <ul radio-group="82a77" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> Unable to judge</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> Significantly less than a typical iP</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> Slightly less than a typical iP</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="82a77" type="radio"> At least as much as a typical iP</label></li>
+                              <ul radio-group="5b0e7" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="5b0e7" type="radio"> Unable to judge</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="5b0e7" type="radio"> Significantly less than a typical iP</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="5b0e7" type="radio"> Slightly less than a typical iP</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="5b0e7" type="radio"> At least as much as a typical iP</label></li>
                               </ul>
                             </div>
                             <p>
-                              <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Concerns or any noteworthy observations about the product you evaluated</strong>
+                              <thumbnail circle="" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>[Optional] Concerns or any noteworthy observations about the product you evaluated</strong>
                             </p>
                           </box>
                         </div>
@@ -1609,15 +1610,15 @@
                               <box type="info"><template slot="icon"><span aria-hidden="true" class="fas fa-hard-hat"></span></template>
                                 <ul>
                                   <li>CATcher does not come with a UG, but the UI is fairly intuitive (there are tool tips too). Do post in the forum if you need any guidance with its usage.</li>
-                                  <li>Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together. If you think others might be editing the same issues at the same time, use the <code>Sync</code> button at the top to force-sync your view with the latest data from GitHub.
+                                  <li>Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together. If you think others might be editing the same issues at the same time, use the <code v-pre="">Sync</code> button at the top to force-sync your view with the latest data from GitHub.
                                   </li>
                                 </ul>
                               </box>
-                              <li>Launch CATcher, and login to the profile <code>CS2113/T PE</code>. It will show all the bugs assigned to your team, divided into three sections:
+                              <li>Launch CATcher, and login to the profile <code v-pre="">CS2113/T PE</code>. It will show all the bugs assigned to your team, divided into three sections:
                                 <ol>
-                                  <li><code>Issues Pending Responses</code> - Issues that your team has not processed yet.</li>
-                                  <li><code>Issues Responded</code> - Your job is to get all issues to the second category.</li>
-                                  <li><code>Faulty Issues</code> - e.g., Bugs marked as duplicates of each other, or causing circular <em>duplicate</em> relationships. Fix the problem given so that no issues remain in this category.</li>
+                                  <li><code v-pre="">Issues Pending Responses</code> - Issues that your team has not processed yet.</li>
+                                  <li><code v-pre="">Issues Responded</code> - Your job is to get all issues to the second category.</li>
+                                  <li><code v-pre="">Faulty Issues</code> - e.g., Bugs marked as duplicates of each other, or causing circular <em>duplicate</em> relationships. Fix the problem given so that no issues remain in this category.</li>
                                 </ol>
                               </li>
                               <li>Respond to the bug reports shown.
@@ -1643,39 +1644,39 @@
                             <li><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know ASAP.</li>
                             <li><strong>If the bug is reported multiple times</strong>,
                               <ul>
-                                <li>Mark <span class="text-danger">all copies <mark>EXCEPT one</mark></span> as duplicates of the one left out (let's call that one the <em>original</em>) using the <span aria-hidden="true" class="fas fa-check-square"></span> <code>A Duplicate of</code> tick box..</li>
+                                <li>Mark <span class="text-danger">all copies <mark>EXCEPT one</mark></span> as duplicates of the one left out (let's call that one the <em>original</em>) using the <span aria-hidden="true" class="fas fa-check-square"></span> <code v-pre="">A Duplicate of</code> tick box..</li>
                                 <li>If the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark> as the <em>original</em>. But you can downgrade the severity of the original or the duplicates.</li>
                                 <li>For each group of duplicates, all duplicates should point to one <em>original</em> i.e., no multiple levels of duplicates, and no cyclical duplication relationships.</li>
-                                <li>If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the <code>type.*</code> and <code>severity.*</code> from the <em>original</em>.</li>
+                                <li>If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the <code v-pre="">type.*</code> and <code v-pre="">severity.*</code> from the <em>original</em>.</li>
                               </ul>
                             </li>
                           </ul>
                           <p></p>
                           <ul>
-                            <li><strong>Apply one of these labels</strong> (if missing, we assign: <code>response.Accepted</code>)</li>
+                            <li><strong>Apply one of these labels</strong> (if missing, we assign: <code v-pre="">response.Accepted</code>)</li>
                           </ul>
                           <div class="indented">
                             <box>
                               <p><strong>Response</strong> Labels:</p>
                               <ul>
-                                <li><code>response.Accepted</code>: You accept it as a bug.</li>
-                                <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for <span class="dimmed">e.g., it was not related to features delivered in v2.1</span>.</li>
-                                <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. You can reject bugs that you inherited from AB3.</li>
-                                <li><code>response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
-                                <li><code>response.IssueUnclear</code>: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.</li>
+                                <li><code v-pre="">response.Accepted</code>: You accept it as a bug.</li>
+                                <li><code v-pre="">response.NotInScope</code>: It is a valid issue but not something the team should be penalized for <span class="dimmed">e.g., it was not related to features delivered in v2.1</span>.</li>
+                                <li><code v-pre="">response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. You can reject bugs that you inherited from AB3.</li>
+                                <li><code v-pre="">response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
+                                <li><code v-pre="">response.IssueUnclear</code>: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.</li>
                               </ul>
                             </box>
                           </div>
                           <ul>
-                            <li><strong>Apply one of these labels</strong> (if missing, we assign: <code>type.FunctionalityBug</code>)</li>
+                            <li><strong>Apply one of these labels</strong> (if missing, we assign: <code v-pre="">type.FunctionalityBug</code>)</li>
                           </ul>
                           <div class="indented" id="type-labels">
                             <box>
                               <p><strong>Type</strong> labels:</p>
                               <ul>
-                                <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                                <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
-                                <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
+                                <li><code v-pre="">type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
+                                <li><code v-pre="">type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v2.1 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v2.1 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                                <li><code v-pre="">type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
                               </ul>
                             </box>
                           </div>
@@ -1687,10 +1688,10 @@
                               <box>
                                 <p><strong>Bug Severity</strong> labels:</p>
                                 <ul>
-                                  <li><code>severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
-                                  <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
-                                  <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
-                                  <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                                  <li><code v-pre="">severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
+                                  <li><code v-pre="">severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                                  <li><code v-pre="">severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                                  <li><code v-pre="">severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
                                 </ul>
                               </box>
                             </div>
@@ -1707,7 +1708,7 @@
                                 <li><strong>UML notation variations</strong> caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
                                   If the same problem is reported for multiple diagrams, can be flagged as duplicates.<br>
                                   Omit optional notations is not a bug as long it doesn't hinder understanding.</li>
-                                <li><strong>Minor typos and grammar errors</strong>: These are still considered as <code>severity.VeryLow</code> <code>type.DocumentationBug</code> bugs (even if it is in the actual UI) which carry a very tiny penalty.</li>
+                                <li><strong>Minor typos and grammar errors</strong>: These are still considered as <code v-pre="">severity.VeryLow</code> <code v-pre="">type.DocumentationBug</code> bugs (even if it is in the actual UI) which carry a very tiny penalty.</li>
                                 <li><strong>How to prove that something is 'not in scope'</strong>: The following (at least one) can be used to prove that a feature was left out deliberately because it was <em>not in scope</em>:
                                   <ul>
                                     <li>The UG specifies it as not supported or coming in a future version.</li>
@@ -1720,7 +1721,7 @@
                             </box>
                           </div>
                           <ul>
-                            <li><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong>
+                            <li><strong>Decide who should fix the bug</strong>. Use the <code v-pre="">Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong>
                               <ul>
                                 <li>If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.</li>
                                 <li>It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never reviewed it), provided the bug should have been reasonably apparent to a reviewer. For example, if someone put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.</li>
@@ -1730,7 +1731,7 @@
                           <p></p>
                           <ul>
                             <li>
-                              <p>As far as possible, <strong>choose the correct <code>type.*</code>, <code>severity.*</code>, and assignees even for bugs you are not accepting or for bugs that are marked as duplicates</strong>. Reason: your <em>non-acceptance</em> or duplication status may be rejected in a later phase, in which case we need to grade it as an accepted/non-duplicate bug.</p>
+                              <p>As far as possible, <mark><strong>choose the correct <code v-pre="">type.*</code>, <code v-pre="">severity.*</code>, <code v-pre="">response.*</code>, assignees, and duplicate status even for bugs you are not accepting or marking as duplicates</strong></mark>. Reason: your <em>non-acceptance</em> or duplication status may be rejected in a later phase, in which case we need to grade it as an accepted/non-duplicate bug.</p>
                             </li>
                             <li>
                               <p><strong>Justify your response.</strong> For all of the following cases, <mark>you must add a comment justifying your stance</mark>. Testers will get to respond to all those cases and will be double-checked by the teaching team in later phases. <mark><span class="text-danger">Indiscriminate/unreasonable dev/tester responses, if deemed as a case of trying to <em>game the system</em>, will be penalized.</span></mark></p>
@@ -1757,7 +1758,7 @@
                           <li>You can also refer to the below guidelines:</li>
                         </ul>
                         <div class="indented-level2">
-                          <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                          <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                               <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> PE → Phase 2 → Additional Guidelines for Bug Triaging</p>
                             </template>
                             <div>
@@ -1769,7 +1770,7 @@
                                   <li><strong>UML notation variations</strong> caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
                                     If the same problem is reported for multiple diagrams, can be flagged as duplicates.<br>
                                     Omit optional notations is not a bug as long it doesn't hinder understanding.</li>
-                                  <li><strong>Minor typos and grammar errors</strong>: These are still considered as <code>severity.VeryLow</code> <code>type.DocumentationBug</code> bugs (even if it is in the actual UI) which carry a very tiny penalty.</li>
+                                  <li><strong>Minor typos and grammar errors</strong>: These are still considered as <code v-pre="">severity.VeryLow</code> <code v-pre="">type.DocumentationBug</code> bugs (even if it is in the actual UI) which carry a very tiny penalty.</li>
                                   <li><strong>How to prove that something is 'not in scope'</strong>: The following (at least one) can be used to prove that a feature was left out deliberately because it was <em>not in scope</em>:
                                     <ul>
                                       <li>The UG specifies it as not supported or coming in a future version.</li>
@@ -1793,12 +1794,12 @@
                           <tabs>
                             <tab><template slot="_header">Using CATcher</template>
                               <ul>
-                                <li>When the phase has been announced as open, login to CATcher as usual (profile: <code>CS2113/T PE</code>).</li>
-                                <li>For each issues listed in the <code>Issues Pending Responses</code> section:,
+                                <li>When the phase has been announced as open, login to CATcher as usual (profile: <code v-pre="">CS2113/T PE</code>).</li>
+                                <li>For each issues listed in the <code v-pre="">Issues Pending Responses</code> section:,
                                   <ul>
                                     <li>Go to the details, and read the dev team's response.</li>
-                                    <li>If you disagree with any of the items listed, tick on the <code>I disagree</code> tick box and enter your justification for the disagreement, and click <code>Save</code>.</li>
-                                    <li>If you are fine with the team's changes, click <code>Save</code> without any other changes upon which the issue will move to the <code>Issue Responded</code> section.</li>
+                                    <li>If you disagree with any of the items listed, tick on the <code v-pre="">I disagree</code> tick box and enter your justification for the disagreement, and click <code v-pre="">Save</code>.</li>
+                                    <li>If you are fine with the team's changes, click <code v-pre="">Save</code> without any other changes upon which the issue will move to the <code v-pre="">Issue Responded</code> section.</li>
                                   </ul>
                                 </li>
                                 <li>Note that only bugs that require your response will be shown by CATcher. <strong>Bugs already accepted by the team will not appear in CATcher</strong> as there is nothing for you to do about them.</li>
@@ -1858,7 +1859,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>

@@ -31,15 +31,15 @@
             <p><span class="dimmed"><strong><span>Design → Modeling →
                   </span></strong></span></p>
             <div id="title">
-              <h1 id="modeling-behaviors"><span>Modeling Behaviors</span><a class="fa fa-anchor" href="#modeling-behaviors" onclick="event.stopPropagation()"></a></h1>
+              <h1 id="modeling-behaviors"><span>Modeling behaviors</span><a class="fa fa-anchor" href="#modeling-behaviors" onclick="event.stopPropagation()"></a></h1>
             </div>
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded id="activity-diagrams-basic">
+                  <panel type="seamless" expanded="" id="activity-diagrams-basic">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="activity-diagrams-basic"><span>Activity Diagrams - Basic</span><a class="fa fa-anchor" href="#activity-diagrams-basic" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="activity-diagrams-basic"><span>Activity diagrams - basic</span><a class="fa fa-anchor" href="#activity-diagrams-basic" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -88,7 +88,7 @@
                       </div>
                       <div>
                         <div>
-                          <panel expanded><template slot="_header">
+                          <panel expanded=""><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                             </template>
                             <div>
@@ -108,7 +108,7 @@
                                     <p></p>
                                     <div slot="answer" class="algolia-no-index">
                                       <p>(iv)</p>
-                                      <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
+                                      <p>Explanation: <code v-pre="">-e-f-</code> and <code v-pre="">-g-</code> are parallel paths. Both paths should complete before the execution reaches <code v-pre="">c</code> again.</p>
                                     </div>
                                   </question>
                                 </panel>
@@ -125,7 +125,7 @@
                                       <li>In the meantime, the customer pays for the order. If the customer has a voucher, she pays using the voucher; otherwise she pays using cash.</li>
                                       <li>After paying, the customer collects the food after all three parts of the order are ready.</li>
                                     </ul>
-                                    <panel type="seamless" minimized class="algolia-no-index"><template slot="_header">
+                                    <panel type="seamless" minimized="" class="algolia-no-index"><template slot="_header">
                                         <p>Example Activity Diagram</p>
                                       </template>
                                       <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
@@ -142,10 +142,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="activity-diagrams-intermediate">
+                  <panel type="seamless" expanded="" id="activity-diagrams-intermediate">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="activity-diagrams-intermediate"><span>Activity Diagrams - Intermediate</span><a class="fa fa-anchor" href="#activity-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="activity-diagrams-intermediate"><span>Activity diagrams - intermediate</span><a class="fa fa-anchor" href="#activity-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -174,10 +174,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="sequence-diagrams-basic">
+                  <panel type="seamless" expanded="" id="sequence-diagrams-basic">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="sequence-diagrams-basic"><span>Sequence Diagrams - Basic</span><a class="fa fa-anchor" href="#sequence-diagrams-basic" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="sequence-diagrams-basic"><span>Sequence diagrams - basic</span><a class="fa fa-anchor" href="#sequence-diagrams-basic" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -222,7 +222,7 @@
                       </div>
                       <div>
                         <div>
-                          <panel expanded><template slot="_header">
+                          <panel expanded=""><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                             </template>
                             <div>
@@ -238,20 +238,20 @@
                               </div>
                               <div>
                                 <panel class="algolia-no-index"><template slot="_header">
-                                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Sequence Diagram for the code (<code>PersonList</code>, <code>Person</code>, <code>Tag</code>)</p>
+                                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Sequence Diagram for the code (<code v-pre="">PersonList</code>, <code v-pre="">Person</code>, <code v-pre="">Tag</code>)</p>
                                   </template>
                                   <question>
                                     <p>Consider the code below:</p>
                                     <div class="row">
                                       <div class="col-sm-7">
-                                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{<br></span><span>    Tag tag;<br></span><span>    String name;<br></span><span><br></span><span>    Person(String personName, String tagName){<br></span><span>        name = personName;<br></span><span>        tag = <span class="hljs-keyword">new</span> Tag(tagName);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{<br></span><span>    Tag tag;<br></span><span>    String name;<br></span><span><br></span><span>    Person(String personName, String tagName){<br></span><span>        name = personName;<br></span><span>        tag = <span class="hljs-keyword">new</span> Tag(tagName);<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                       </div>
                                       <div class="col-sm-5">
-                                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{<br></span><span>    Tag(String value){<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{<br></span><span>    Tag(String value){<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
                                       </div>
                                     </div>
                                     <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                                    <pre><code class="hljs java"><span>PersonList personList = <span class="hljs-keyword">new</span> PersonList();<br></span><span><span class="hljs-keyword">while</span> (hasRoom){<br></span><span>    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);<br></span><span>    personList.addPerson(p);<br></span><span>}<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span>PersonList personList = <span class="hljs-keyword">new</span> PersonList();<br></span><span><span class="hljs-keyword">while</span> (hasRoom){<br></span><span>    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);<br></span><span>    personList.addPerson(p);<br></span><span>}<br></span></code></pre>
                                   </question>
                                 </panel>
                               </div>
@@ -273,10 +273,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="sequence-diagrams-intermediate">
+                  <panel type="seamless" expanded="" id="sequence-diagrams-intermediate">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="sequence-diagrams-intermediate"><span>Sequence Diagrams - Intermediate</span><a class="fa fa-anchor" href="#sequence-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="sequence-diagrams-intermediate"><span>Sequence diagrams - intermediate</span><a class="fa fa-anchor" href="#sequence-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -314,14 +314,14 @@
                           </template>
                           <div>
                             <div>
-                              <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
+                              <p>Method calls to <code v-pre="">static</code> i.e., class-level method are received by the class itself, not an instance of that class. You can use the <code v-pre="">&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
                               <box>
-                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object <code>p</code>.</p>
+                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code v-pre="">m</code> calls the static method <code v-pre="">Person.getMaxAge()</code> and also the <code v-pre="">setAge()</code> method of a <code v-pre="">Person</code> object <code v-pre="">p</code>.</p>
                                 <p>
                                   <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
                                 </p>
                                 <p></p>
-                                <p>Here is the <code>Person</code> class, for reference:<br>
+                                <p>Here is the <code v-pre="">Person</code> class, for reference:<br>
                                   <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
                                 </p>
                               </box>
@@ -332,7 +332,7 @@
                       </div>
                       <div>
                         <div>
-                          <panel expanded><template slot="_header">
+                          <panel expanded=""><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                             </template>
                             <div>
@@ -345,11 +345,11 @@
                                     <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
                                     <p></p>
                                     <ul class="task-list">
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code>Logic</code> object is executing a parallel thread.</li>
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code>Logic</code> object is executing a loop.</li>
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code>Logic</code> object is creating another <code>Logic</code> instance.</li>
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code v-pre="">Logic</code> object is executing a parallel thread.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code v-pre="">Logic</code> object is executing a loop.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code v-pre="">Logic</code> object is creating another <code v-pre="">Logic</code> instance.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code v-pre="">Logic</code> object’s methods is calling another of its methods.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code v-pre="">Minefield</code> object is calling a method of <code v-pre="">Logic</code>.</li>
                                     </ul>
                                     <div slot="answer" class="algolia-no-index">
                                       <p>(d)</p>
@@ -359,14 +359,14 @@
                               </div>
                               <div>
                                 <panel class="algolia-no-index"><template slot="_header">
-                                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code>ParserFactory</code>)</p>
+                                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code v-pre="">ParserFactory</code>)</p>
                                   </template>
                                   <question>
                                     <p>Explain the interactions depicted in this sequence diagram.</p>
                                     <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
                                     <p></p>
                                     <div slot="hint" class="algolia-no-index">
-                                      <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                                      <p>First, the <code v-pre="">createParser()</code> method of an existing <code v-pre="">ParserFactory</code> object is called. Then, ...</p>
                                     </div>
                                   </question>
                                 </panel>
@@ -377,13 +377,13 @@
                                   </template>
                                   <question>
                                     <p>Draw a sequence diagram to represent this code snippet.</p>
-                                    <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isFirstPage) {<br></span><span>    <span class="hljs-keyword">new</span> Quote().print();<br></span><span>}<br></span></code></pre>
-                                    <p>The <code>Quote</code> class:</p>
-                                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{<br></span><span><br></span><span>    String q;<br></span><span><br></span><span>    Quote(){<br></span><span>        q = generate();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{<br></span><span>        System.out.println(q);<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">if</span> (isFirstPage) {<br></span><span>    <span class="hljs-keyword">new</span> Quote().print();<br></span><span>}<br></span></code></pre>
+                                    <p>The <code v-pre="">Quote</code> class:</p>
+                                    <pre><code class="hljs java" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{<br></span><span><br></span><span>    String q;<br></span><span><br></span><span>    Quote(){<br></span><span>        q = generate();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{<br></span><span>        System.out.println(q);<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre>
                                     <div slot="hint" class="algolia-no-index">
                                       <ul>
-                                        <li>Show <code>new Quote().print();</code> as two method calls.</li>
-                                        <li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code>print()</code> method is called.</li>
+                                        <li>Show <code v-pre="">new Quote().print();</code> as two method calls.</li>
+                                        <li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code v-pre="">print()</code> method is called.</li>
                                       </ul>
                                     </div>
                                   </question>
@@ -397,10 +397,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="sequence-diagrams-advanced">
+                  <panel type="seamless" expanded="" id="sequence-diagrams-advanced">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="sequence-diagrams-advanced"><span>Sequence Diagrams - Advanced</span><a class="fa fa-anchor" href="#sequence-diagrams-advanced" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="sequence-diagrams-advanced"><span>Sequence diagrams - advanced</span><a class="fa fa-anchor" href="#sequence-diagrams-advanced" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -410,7 +410,7 @@
                       <p></p>
                       <div>
                         <p>
-                          <panel src="/website/book/uml/sequenceDiagrams/parallelPaths/embed._include_.html" is-open class="algolia-no-index"><template slot="_header">
+                          <panel src="/website/book/uml/sequenceDiagrams/parallelPaths/embed._include_.html" is-open="" class="algolia-no-index"><template slot="_header">
                               <p>UML: Sequence Diagrams: Parallel Paths</p>
                             </template></panel>
                         </p>
@@ -420,10 +420,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="use-case-diagrams">
+                  <panel type="seamless" expanded="" id="use-case-diagrams">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="use-case-diagrams"><span>Use Case Diagrams</span><a class="fa fa-anchor" href="#use-case-diagrams" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="use-case-diagrams"><span>Use case diagrams</span><a class="fa fa-anchor" href="#use-case-diagrams" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -443,10 +443,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="timing-diagrams">
+                  <panel type="seamless" expanded="" id="timing-diagrams">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="timing-diagrams"><span>Timing Diagrams</span><a class="fa fa-anchor" href="#timing-diagrams" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="timing-diagrams"><span>Timing diagrams</span><a class="fa fa-anchor" href="#timing-diagrams" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -468,10 +468,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="interaction-overview-diagrams">
+                  <panel type="seamless" expanded="" id="interaction-overview-diagrams">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="interaction-overview-diagrams"><span>Interaction Overview Diagrams</span><a class="fa fa-anchor" href="#interaction-overview-diagrams" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="interaction-overview-diagrams"><span>Interaction overview diagrams</span><a class="fa fa-anchor" href="#interaction-overview-diagrams" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -493,10 +493,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="communication-diagrams">
+                  <panel type="seamless" expanded="" id="communication-diagrams">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="communication-diagrams"><span>Communication Diagrams</span><a class="fa fa-anchor" href="#communication-diagrams" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="communication-diagrams"><span>Communication diagrams</span><a class="fa fa-anchor" href="#communication-diagrams" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -518,10 +518,10 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded id="state-machine-diagrams">
+                  <panel type="seamless" expanded="" id="state-machine-diagrams">
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="state-machine-diagrams"><span>State Machine Diagrams</span><a class="fa fa-anchor" href="#state-machine-diagrams" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="state-machine-diagrams"><span>State machine diagrams</span><a class="fa fa-anchor" href="#state-machine-diagrams" onclick="event.stopPropagation()"></a></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -542,7 +542,7 @@
                           </ul>
                           <p>What this means is that the CD player’s response to pushing the “eject CD” button depends on what it was doing at the time of the event. More generally, the CD player’s response to the event received depends on its internal state. Such a behavior is called a <em>state-dependent behavior</em>.</p>
                         </box>
-                        <p>Often, state-dependent behavior displayed by an object in a system is simple enough that it needs no extra attention; such a behavior can be as simple as a <em>conditional</em> behavior like <code>if x&gt;y, then x=x-y</code>.
+                        <p>Often, state-dependent behavior displayed by an object in a system is simple enough that it needs no extra attention; such a behavior can be as simple as a <em>conditional</em> behavior like <code v-pre="">if x&gt;y, then x=x-y</code>.
                           Occasionally, objects may exhibit state-dependent behavior that is complex enough such that it needs to be captured into a separate model. Such state-dependent behavior can be modelled using UML <em>state machine diagrams</em> (SMD for short, sometimes also called ‘state charts’, ‘state diagrams’ or ‘state machines’).</p>
                         <p>An SMD views the life-cycle of an object as consisting of a finite number of states where each state displays a unique behavior pattern. An SMD captures information such as the states an object can be in, during its lifetime, and how the object responds to various events while in each state and how the object transits from one state to another. In contrast to sequence diagrams that capture object behavior one scenario at a time, SMDs capture the object’s behavior over its full life cycle.</p>
                         <box>

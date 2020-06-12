@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2113">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-primary">CS2113/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -44,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [from Wed Mar 18 noon] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [from Wed Mar 25 noon] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [from Wed Apr 1 noon] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [from Wed Apr 8 noon] </span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -56,7 +57,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
           <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jmu7TQ6" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="/website/coding-standards/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li><a href="/website/admin/forum-activities-dashboard.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Forum Activities Dashboard</span></a></li>
           <li><a href="/website/admin/participation-dashboard.html" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -75,7 +76,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -85,7 +86,7 @@
       <div id="content-wrapper">
         <div class="website-content">
           <h1 id="summary-of-the-module-timeline">Summary of the Module Timeline<a class="fa fa-anchor" href="#summary-of-the-module-timeline" onclick="event.stopPropagation()"></a></h1>
-          <box type="warning" dismissible>
+          <box type="warning" dismissible="">
             <span id="warnings">
               <ul>
                 <li>Please try to <strong>follow instructions closely</strong>. If you deviate, our grading scripts will not be able to detect your work.</li>
@@ -166,7 +167,7 @@
                         <small>
                           <ul>
                             <li><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-1a">W2.1a</a>] <span>Software Engineering → Introduction →
-                                </span></span> <span>Pros and Cons</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                                </span></span> <span>Pros and cons</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                           </ul>
                         </small></div>
                       <p></p>
@@ -178,7 +179,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-2a">W2.2a</a>] <span>C++ to Java →
-                                  </span></span> <span>About this Chapter</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>About this chapter</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-2b">W2.2b</a>] <span>C++ to Java → The Java World →
@@ -186,11 +187,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-2c">W2.2c</a>] <span>C++ to Java → The Java World →
-                                  </span></span> <span>How Java Works</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>How Java works</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-2d">W2.2d</a>] <span>C++ to Java → The Java World →
-                                  </span></span> <span>Java Editions</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Java editions</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -210,11 +211,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-3c">W2.3c</a>] <span>C++ to Java → Getting Started →
-                                  </span></span> <span>Compiling a Program</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Compiling a program</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-3d">W2.3d</a>] <span>C++ to Java → Getting Started →
-                                  </span></span> <span>Running a Program</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Running a program</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -226,7 +227,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-4a">W2.4a</a>] <span>C++ to Java → Data Types →
-                                  </span></span> <span>Primitive Data Types</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Primitive data types</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-4b">W2.4b</a>] <span>C++ to Java → Data Types →
@@ -283,7 +284,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-6d">W2.6d</a>] <span>Project Management → Revision Control →
-                                  </span></span> <span>Saving History</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Saving history</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-6e">W2.6e</a>] <span>Tools → Git and GitHub →
@@ -303,7 +304,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-7a">W2.7a</a>] <span>Project Management → Revision Control →
-                                  </span></span> <span>Remote Repositories</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Remote repositories</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-7b">W2.7b</a>] <span>Tools → Git and GitHub →
@@ -324,11 +325,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-8b">W2.8b</a>] <span>Tools → Intellij IDEA →
-                                  </span></span> <span>Project Setup</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Project setup</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-8c">W2.8c</a>] <span>Tools → Intellij IDEA →
-                                  </span></span> <span>Code Navigation</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Code navigation</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -367,7 +368,7 @@
                         <li><span>Learn about the project</span></li>
                         <li><span>Set up prerequisites</span></li>
                         <li><span>Set up the project in your computer</span></li>
-                        <li>Add Increment: <code>Level-0</code></li>
+                        <li>Add Increment: <code v-pre="">Level-0</code></li>
                       </ol>
                     </div>
                   </div>
@@ -436,11 +437,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-1d">W3.1d</a>] <span>Paradigms → OOP → Objects →
-                                  </span></span> <span>Objects as Abstractions</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Objects as abstractions</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-1e">W3.1e</a>] <span>Paradigms → OOP → Objects →
-                                  </span></span> <span>Encapsulation of Objects</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Encapsulation of objects</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -453,19 +454,19 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-2a">W3.2a</a>] <span>C++ to Java → Objects →
-                                  </span></span> <span>Using Java Objects</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Using Java objects</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-2b">W3.2b</a>] <span>C++ to Java → Objects →
-                                  </span></span> <span>Instance Members</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Instance members</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-2c">W3.2c</a>] <span>C++ to Java → Objects →
-                                  </span></span> <span>Passing Objects Around</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Passing objects around</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-2d">W3.2d</a>] <span>C++ to Java → Objects →
-                                  </span></span> <span>Garbage Collection</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Garbage collection</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -477,7 +478,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-3a">W3.3a</a>] <span>C++ to Java → Classes →
-                                  </span></span> <span>Defining Classes</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Defining classes</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-3b">W3.3b</a>] <span>C++ to Java → Classes →
@@ -493,11 +494,11 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-4a">W3.4a</a>] <span>Paradigms → OOP → Classes →
-                                  </span></span> <span>Class-Level Members</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Class-level members</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-4b">W3.4b</a>] <span>C++ to Java → Classes →
-                                  </span></span> <span>Class-Level Members</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Class-level members</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -517,19 +518,19 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-5c">W3.5c</a>] <span>C++ to Java → Some Useful Classes →
-                                  </span></span> <span>The <code>String</code> Class</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">String</code> class</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-5d">W3.5d</a>] <span>C++ to Java → Some Useful Classes →
-                                  </span></span> <span>Wrapper Classes for Primitive Types</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Wrapper Classes for primitive types</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-5e">W3.5e</a>] <span>C++ to Java → Some Useful Classes →
-                                  </span></span> <span>The <code>Arrays</code> class</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">Arrays</code> class</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-5f">W3.5f</a>] <span>C++ to Java → Some Useful Classes →
-                                  </span></span> <span>The <code>Scanner</code> class</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">Scanner</code> class</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -546,23 +547,23 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6b">W3.6b</a>] <span>Implementation → Code Quality → Naming → Basic →
-                                  </span></span> <span>Use Nouns for Things and Verbs for Actions</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Use nouns for things and verbs for actions</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6c">W3.6c</a>] <span>Implementation → Code Quality → Naming → Basic →
-                                  </span></span> <span>Use Standard Words</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Use standard words</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6d">W3.6d</a>] <span>Implementation → Code Quality → Naming → Intermediate →
-                                  </span></span> <span>Use Name to Explain</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Use name to explain</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6e">W3.6e</a>] <span>Implementation → Code Quality → Naming → Intermediate →
-                                  </span></span> <span>Not Too Long, Not Too Short</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Not too long, not too short</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6f">W3.6f</a>] <span>Implementation → Code Quality → Naming → Intermediate →
-                                  </span></span> <span>Avoid Misleading Names</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Avoid misleading names</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -575,7 +576,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-7a">W3.7a</a>] <span>Project Management → Revision Control →
-                                  </span></span> <span>Using History</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Using history</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-7b">W3.7b</a>] <span>Tools → Git and GitHub →
@@ -624,7 +625,7 @@
                     <div>
                       <ol>
                         <li><span>Do any leftover iP tasks from the previous week</span></li>
-                        <li>Add Increments (+ commit, tag, push): <code>Level-1</code>, <code>Level-2</code>, <code>Level-3</code>, <code>A-CodingStandard</code></li>
+                        <li>Add Increments (+ commit, tag, push): <code v-pre="">Level-1</code>, <code v-pre="">Level-2</code>, <code v-pre="">Level-3</code>, <code v-pre="">A-CodingStandard</code></li>
                       </ol>
                     </div>
                     <p><strong>tP:</strong></p>
@@ -699,7 +700,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-1e">W4.1e</a>] <span>C++ to Java → Inheritance →
-                                  </span></span> <span>The <code>Object</code> Class</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">Object</code> class</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -719,7 +720,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-2c">W4.2c</a>] <span>Paradigms → OOP → Inheritance →
-                                  </span></span> <span>Dynamic and Static Binding</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Dynamic and static binding</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-2d">W4.2d</a>] <span>Paradigms → OOP → Polymorphism →
@@ -770,31 +771,31 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5b">W4.5b</a>] <span>Implementation → Code Quality → Readability → Basic →
-                                  </span></span> <span>Avoid Long Methods</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Avoid long methods</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5c">W4.5c</a>] <span>Implementation → Code Quality → Readability → Basic →
-                                  </span></span> <span>Avoid Deep Nesting</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Avoid deep nesting</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5d">W4.5d</a>] <span>Implementation → Code Quality → Readability → Basic →
-                                  </span></span> <span>Avoid Complicated Expressions</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Avoid complicated expressions</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5e">W4.5e</a>] <span>Implementation → Code Quality → Readability → Basic →
-                                  </span></span> <span>Avoid Magic Numbers</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Avoid magic numbers</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5f">W4.5f</a>] <span>Implementation → Code Quality → Readability → Basic →
-                                  </span></span> <span>Make the Code Obvious</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Make the code obvious</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5g">W4.5g</a>] <span>Implementation → Code Quality → Readability → Intermediate →
-                                  </span></span> <span>Structure Code Logically</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Structure code logically</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5h">W4.5h</a>] <span>Implementation → Code Quality → Readability → Intermediate →
-                                  </span></span> <span>Do Not 'Trip Up' Reader</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Do not 'Trip Up' reader</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5i">W4.5i</a>] <span>Implementation → Code Quality → Readability → Intermediate →
@@ -802,15 +803,15 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5j">W4.5j</a>] <span>Implementation → Code Quality → Readability → Intermediate →
-                                  </span></span> <span>Avoid Premature Optimizations</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Avoid premature optimizations</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5k">W4.5k</a>] <span>Implementation → Code Quality → Readability → Intermediate →
-                                  </span></span> <span>SLAP Hard</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>SLAP hard</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-5l">W4.5l</a>] <span>Implementation → Code Quality → Readability → Advanced →
-                                  </span></span> <span>Make the Happy Path Prominent</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Make the happy path prominent</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -859,7 +860,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week4/topics.html#W4-7d">W4.7d</a>] <span>Quality Assurance → Testing → Test Automation →
-                                  </span></span> <span>Automated Testing of CLI Apps</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Automated testing of CLI applications</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -880,7 +881,7 @@
                     <div>
                       <ol>
                         <li><span>Create a PR to the upstream repo</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Friday before the tutorial</span></span></li>
-                        <li>Add Increments: <code>Level-4</code>, <code>A-TextUiTesting</code>, <code>A-CodeQuality</code></li>
+                        <li>Add Increments: <code v-pre="">Level-4</code>, <code v-pre="">A-TextUiTesting</code>, <code v-pre="">A-CodeQuality</code></li>
                         <li><span>Get ready to review PRs</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the tutorial</span></span></li>
                       </ol>
                     </div>
@@ -954,11 +955,11 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week5/topics.html#W5-2a">W5.2a</a>] <span>Paradigms → OOP → Inheritance →
-                                  </span></span> <span>Abstract Classes and Methods</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Abstract classes and methods</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week5/topics.html#W5-2b">W5.2b</a>] <span>C++ to Java → Inheritance →
-                                  </span></span> <span>Abstract Classes and Methods</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Abstract classes and methods</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -995,7 +996,7 @@
                         <small>
                           <ul>
                             <li><span class="dimmed">[<a href="/website/schedule/week5/topics.html#W5-5a">W5.5a</a>] <span>C++ to Java → Miscellaneous Topics →
-                                </span></span> <span>Access Modifiers</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                                </span></span> <span>Access modifiers</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                           </ul>
                         </small></div>
                       <p></p>
@@ -1023,7 +1024,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week5/topics.html#W5-6e">W5.6e</a>] <span>C++ to Java → Exceptions →
-                                  </span></span> <span>How to Use Exceptions</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>How to use Exceptions</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week5/topics.html#W5-6f">W5.6f</a>] <span>Implementation → Error Handling → Exceptions →
@@ -1095,8 +1096,8 @@
                     <p><strong>iP:</strong></p>
                     <div>
                       <ol>
-                        <li>Add Increment as a branch: <code>Level-5</code></li>
-                        <li>Add Increment: <code>A-Packages</code></li>
+                        <li>Add Increment as a branch: <code v-pre="">Level-5</code></li>
+                        <li>Add Increment: <code v-pre="">A-Packages</code></li>
                       </ol>
                     </div>
                     <p><strong>tP:</strong></p>
@@ -1190,15 +1191,15 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-2a">W6.2a</a>] <span>C++ to Java → Collections →
-                                  </span></span> <span>The Collections Framework</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The collections framework</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-2b">W6.2b</a>] <span>C++ to Java → Collections →
-                                  </span></span> <span>The <code>ArrayList</code> Class</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">ArrayList</code> class</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-2c">W6.2c</a>] <span>C++ to Java → Collections →
-                                  </span></span> <span>The <code>HashMap</code> Class</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>The <code v-pre="">HashMap</code> class</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -1209,7 +1210,7 @@
                         <small>
                           <ul>
                             <li><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-3a">W6.3a</a>] <span>C++ to Java → Miscellaneous Topics →
-                                </span></span> <span>File Access</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                                </span></span> <span>File access</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                           </ul>
                         </small></div>
                       <ul>
@@ -1219,7 +1220,7 @@
                         <small>
                           <ul>
                             <li><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-4a">W6.4a</a>] <span>C++ to Java → Miscellaneous Topics →
-                                </span></span> <span>Using JAR Files</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                                </span></span> <span>Using JAR files</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                           </ul>
                         </small></div>
                       <ul>
@@ -1255,15 +1256,15 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-7b">W6.7b</a>] <span>Requirements → Requirements →
-                                  </span></span> <span>Non-Functional Requirements</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Non-functional requirements</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-7c">W6.7c</a>] <span>Requirements → Requirements →
-                                  </span></span> <span>Prioritizing Requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Prioritizing requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-7d">W6.7d</a>] <span>Requirements → Requirements →
-                                  </span></span> <span>Quality of Requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Quality of requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -1279,7 +1280,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8b">W6.8b</a>] <span>Requirements → Gathering Requirements →
-                                  </span></span> <span>Product Surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Product surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8c">W6.8c</a>] <span>Requirements → Gathering Requirements →
@@ -1287,7 +1288,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8d">W6.8d</a>] <span>Requirements → Gathering Requirements →
-                                  </span></span> <span>User Surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>User surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8e">W6.8e</a>] <span>Requirements → Gathering Requirements →
@@ -1295,7 +1296,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8f">W6.8f</a>] <span>Requirements → Gathering Requirements →
-                                  </span></span> <span>Focus Groups</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Focus groups</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-8g">W6.8g</a>] <span>Requirements → Gathering Requirements →
@@ -1366,7 +1367,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-10c">W6.10c</a>] <span>Tools → Intellij IDEA →
-                                  </span></span> <span>Productivity Shortcuts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                                  </span></span> <span>Productivity shortcuts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -1379,7 +1380,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-11a">W6.11a</a>] <span>Tools → Git and GitHub →
-                                  </span></span> <span>Merge Conflicts</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Merge conflicts</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-11b">W6.11b</a>] <span>Tools → Git and GitHub →
@@ -1399,27 +1400,27 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12b">W6.12b</a>] <span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                                  </span></span> <span>Use the Default Branch</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Use the default branch</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12c">W6.12c</a>] <span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                                  </span></span> <span>Don't Recycle Variables or Parameters</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Don't recycle variables or parameters</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12d">W6.12d</a>] <span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                                  </span></span> <span>Avoid Empty Catch Blocks</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Avoid empty catch blocks</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12e">W6.12e</a>] <span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                                  </span></span> <span>Delete Dead Code</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Delete dead code</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12f">W6.12f</a>] <span>Implementation → Code Quality → Error-Prone Practices → Intermediate →
-                                  </span></span> <span>Minimize Scope of Variables</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Minimize scope of variables</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week6/topics.html#W6-12g">W6.12g</a>] <span>Implementation → Code Quality → Error-Prone Practices → Intermediate →
-                                  </span></span> <span>Minimize Code Duplication</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Minimize code duplication</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -1440,8 +1441,8 @@
                     <p><strong>iP:</strong></p>
                     <div>
                       <ol>
-                        <li>Add Increments as parallel branches: <code>Level-6</code>, <code>Level-7</code></li>
-                        <li>Add Increment: <code>A-Jar</code></li>
+                        <li>Add Increments as parallel branches: <code v-pre="">Level-6</code>, <code v-pre="">Level-7</code></li>
+                        <li>Add Increment: <code v-pre="">A-Jar</code></li>
                       </ol>
                     </div>
                     <p><strong>tP:</strong></p>
@@ -1547,11 +1548,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-3b">W7.3b</a>] <span>Implementation → Code Quality → Comments → Basic →
-                                  </span></span> <span>Do Not Repeat the Obvious</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Do not repeat the obvious</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-3c">W7.3c</a>] <span>Implementation → Code Quality → Comments → Basic →
-                                  </span></span> <span>Write to the Reader</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Write to the reader</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-3d">W7.3d</a>] <span>Implementation → Code Quality → Comments → Intermediate →
@@ -1572,11 +1573,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-4b">W7.4b</a>] <span>Project Management → SDLC Process Models → Introduction →
-                                  </span></span> <span>Sequential Models</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Sequential models</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-4c">W7.4c</a>] <span>Project Management → SDLC Process Models → Introduction →
-                                  </span></span> <span>Iterative Models</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Iterative models</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -1596,7 +1597,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-5c">W7.5c</a>] <span>Implementation → Integration → Build Automation →
-                                  </span></span> <span>Continuous Integration and Continuous Deployment</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Continuous integration and continuous deployment</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -1608,11 +1609,11 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6a">W7.6a</a>] <span>Project Management → Revision Control →
-                                  </span></span> <span>Forking Flow</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Forking flow</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6b">W7.6b</a>] <span>Tools → Git and GitHub →
-                                  </span></span> <span>Forking Workflow</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Forking workflow</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6c">W7.6c</a>] <span>Project Management → Revision Control →
@@ -1620,11 +1621,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6d">W7.6d</a>] <span>Project Management → Revision Control →
-                                  </span></span> <span>Feature Branch Flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                                  </span></span> <span>Feature branch flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week7/topics.html#W7-6e">W7.6e</a>] <span>Project Management → Revision Control →
-                                  </span></span> <span>Centralized Flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                                  </span></span> <span>Centralized flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -1643,8 +1644,8 @@
                     <p><strong>iP:</strong></p>
                     <div>
                       <ol>
-                        <li>Add Increment: <code>A-MoreOOP</code></li>
-                        <li>Add Increments as PRs: <code>Level-8</code>, <code>Level-9</code>, <code>A-JavaDoc</code></li>
+                        <li>Add Increment: <code v-pre="">A-MoreOOP</code></li>
+                        <li>Add Increments as PRs: <code v-pre="">Level-8</code>, <code v-pre="">Level-9</code>, <code v-pre="">A-JavaDoc</code></li>
                         <li><span>Add a brief user guide</span></li>
                         <li><span>Release the product</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Monday (March 2) 1200</span></span></li>
                       </ol>
@@ -1707,11 +1708,11 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-1c">W8.1c</a>] <span>Quality Assurance → Testing → Test Automation →
-                                  </span></span> <span>Test Automation Using Test Drivers</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Test automation using test drivers</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-1d">W8.1d</a>] <span>Quality Assurance → Testing → Test Automation →
-                                  </span></span> <span>Test Automation Tools</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Test automation tools</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-1e">W8.1e</a>] <span>C++ to Java → JUnit →
@@ -1759,23 +1760,23 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-4a">W8.4a</a>] <span>Design → Modelling → Modelling Structure →
-                                  </span></span> <span>OO Structures</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>OO structures</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-4b">W8.4b</a>] <span>Design → Modelling → Modelling Structure →
-                                  </span></span> <span>Class Diagrams (Basics)</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Class diagrams - basic </span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-4c">W8.4c</a>] <span>Design → Modelling → Modelling Structure →
-                                  </span></span> <span>Object Diagrams</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Object diagrams</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-4d">W8.4d</a>] <span>Tools → UML →
-                                  </span></span> <span>Object vs Class Diagrams</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Object versus class diagrams</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-4e">W8.4e</a>] <span>Tools → UML → Class Diagrams →
-                                  </span></span> <span>Associations as Attributes</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Associations as attributes</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-4f">W8.4f</a>] <span>Tools → UML →
@@ -1800,23 +1801,23 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-5c">W8.5c</a>] <span>Project Management → Project Planning →
-                                  </span></span> <span>Issue Trackers</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Issue trackers</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-5d">W8.5d</a>] <span>Project Management → Project Planning →
-                                  </span></span> <span>Work Breakdown Structure</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Work breakdown structure</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-5e">W8.5e</a>] <span>Project Management → Project Planning →
-                                  </span></span> <span>GANTT Charts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                                  </span></span> <span>Gantt charts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-5f">W8.5f</a>] <span>Project Management → Project Planning →
-                                  </span></span> <span>PERT Charts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                                  </span></span> <span>PERT charts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-5g">W8.5g</a>] <span>Project Management → Teamwork →
-                                  </span></span> <span>Team Structures</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Team structures</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -1889,7 +1890,7 @@
                         <small>
                           <ul>
                             <li><span class="dimmed">[<a href="/website/schedule/week9/topics.html#W9-1a">W9.1a</a>] <span>Design → Modelling → Modelling Structure →
-                                </span></span> <span>Class Diagrams - Intermediate</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                                </span></span> <span>Class diagrams - intermediate</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                           </ul>
                         </small></div>
                       <p></p>
@@ -1952,7 +1953,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week9/topics.html#W9-4d">W9.4d</a>] <span>Design → Design Fundamentals → Coupling →
-                                  </span></span> <span>Types of Coupling</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                                  </span></span> <span>Types of coupling</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
                             </li>
                           </ul>
                           <p>   <strong>Cohesion</strong></p>
@@ -1969,10 +1970,10 @@
                           <p>   <strong>Some other principles</strong></p>
                           <ul>
                             <li>
-                              <p><span class="dimmed">[<a href="/website/schedule/week9/topics.html#W9-4g">W9.4g</a>] <span>Principles →</span></span> <span>Single Responsibility Principle</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                              <p><span class="dimmed">[<a href="/website/schedule/week9/topics.html#W9-4g">W9.4g</a>] <span>Principles →</span></span> <span>Single responsibility principle</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
-                              <p><span class="dimmed">[<a href="/website/schedule/week9/topics.html#W9-4h">W9.4h</a>] <span>Principles →</span></span> <span>Separation of Concerns Principle</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                              <p><span class="dimmed">[<a href="/website/schedule/week9/topics.html#W9-4h">W9.4h</a>] <span>Principles →</span></span> <span>Separation of concerns principle</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -2056,7 +2057,7 @@
                         <small>
                           <ul>
                             <li><span class="dimmed">[<a href="/website/schedule/week10/topics.html#W10-1a">W10.1a</a>] <span>Design → Modelling → Modelling Behaviors
-                                </span></span> <span>Sequence Diagrams - Basic</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                                </span></span> <span>Sequence diagrams - basic</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                           </ul>
                         </small></div>
                       <ul>
@@ -2067,15 +2068,15 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week10/topics.html#W10-2a">W10.2a</a>] <span>Design → Modelling → Modelling Behaviors
-                                  </span></span> <span>Sequence Diagrams - Intermediate</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Sequence diagrams - intermediate</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week10/topics.html#W10-2b">W10.2b</a>] <span>Tools → UML → Sequence Diagrams →
-                                  </span></span> <span>Parallel Paths</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Parallel paths</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week10/topics.html#W10-2c">W10.2c</a>] <span>Tools → UML → Sequence Diagrams →
-                                  </span></span> <span>Reference Frames</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
+                                  </span></span> <span>Reference frames</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -2193,7 +2194,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-1a">W11.1a</a>] <span>Design → Introduction →
-                                  </span></span> <span>Multi-Level Design</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Multi-level design</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-1b">W11.1b</a>] <span>Design → Architecture → Introduction →
@@ -2264,7 +2265,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-2h">W11.2h</a>] <span>Quality Assurance → Testing → Test Automation →
-                                  </span></span> <span>Automated Testing of GUIs</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Automated testing of GUIs</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                           <p>   <strong>Acceptance Testing</strong></p>
@@ -2275,7 +2276,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-2j">W11.2j</a>] <span>Quality Assurance → Testing → Acceptance Testing →
-                                  </span></span> <span>Acceptance vs System Testing</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Acceptance versus system testing</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                           <p>   <strong>Alpha/Beta Testing</strong></p>
@@ -2304,15 +2305,15 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-3d">W11.3d</a>] <span>Quality Assurance → Test Case Design → Introduction →
-                                  </span></span> <span>Positive vs Negative Test Cases</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Positive versus negative test cases</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-3e">W11.3e</a>] <span>Quality Assurance → Test Case Design → Introduction →
-                                  </span></span> <span>Black Box vs Glass Box</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Black box versus glass box</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week11/topics.html#W11-3f">W11.3f</a>] <span>Quality Assurance → Test Case Design →
-                                  </span></span> <span>Testing Based on Use Cases</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Testing based on use cases</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -2415,7 +2416,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-2b">W12.2b</a>] <span>Quality Assurance → Test Case Design → Combining Test Inputs →
-                                  </span></span> <span>Test Input Combination Strategies</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Test input combination strategies</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -2431,7 +2432,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3b">W12.3b</a>] <span>Quality Assurance → Quality Assurance → Introduction →
-                                  </span></span> <span>Validation vs Verification</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Validation versus verification</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3c">W12.3c</a>] <span>Quality Assurance → Quality Assurance → Code Reviews →
@@ -2456,7 +2457,7 @@
                           <ul>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-4a">W12.4a</a>] <span>Project Management → SDLC Process Models → Introduction →
-                                  </span></span> <span>Agile Models</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Agile models</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-4b">W12.4b</a>] <span>Project Management → SDLC Process Models →
@@ -2556,7 +2557,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Wed, 29 Apr 2020, 22:14:58 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 13:24:21 GMT+8</small></div>
     </footer>
   </div>
 </body>
